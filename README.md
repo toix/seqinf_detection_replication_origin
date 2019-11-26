@@ -21,3 +21,29 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 	* xGC_plot.pdf
         + plot on plasmid by xGC_skew
 
+### Literature Research (Skew)
+Strand Composition Asymmetry:<br/>
+* leading strand: more G and A
+* lagging strang: more C and T
+* nucleotide composition changes at ori and terminus:
+	* usually at pos. of 50% of the genome length (?)
+	* E. coli: 
+		* G > C clockwise from ori to terminus
+		* C > G counterclockwise
+
+GC-Skew:<br/>
+* regular GC-skew: uses sliding window approach
+* cumulative GC-skew: without sliding window, (G-C)/(G+C)
+* window size is critical:
+	*too small: many fluctuations
+	*too large: might hide precise coordinates of minima/maxima
+
+Z-curve:<br/>
+* three dimensional curve
+* arrows indicate ori; use RY minimum (marks change from CT rich to AG rich region)
+* inverse Z-transform used to reconstruct corresponding DNA sequence
+* paper by Zhang (2004): Z-curve suggests 3 oris in Sulfolobus sulfataricus
+* software: Zplotter online
+
+Tools for skew:<br/>
+see paper Development Skew Calculation in articles directory
