@@ -40,6 +40,7 @@ GC-Skew:<br/>
 
 Z-curve:<br/>
 * three dimensional curve
+* "purple diamonds" indicate distribution of DnaA boxes (they can be all over the genome)
 * arrows indicate ori; use RY minimum (marks change from CT rich to AG rich region)
 * inverse Z-transform used to reconstruct corresponding DNA sequence
 * paper by Zhang (2004): Z-curve suggests 3 oris in Sulfolobus sulfataricus
@@ -47,3 +48,13 @@ Z-curve:<br/>
 
 Tools for skew:<br/>
 see paper Development Skew Calculation in articles directory
+
+### Literature Research (OriFinder)
+See papers: Recent development of Ori-Finder; Ident. of repl. origins
+* input: fasta
+* approximate oriC location defined with skew
+* use window in this region to search for clusters of DnaA motifs
+	* use can pre-define DnaA boxes depending on species
+	* check for motifs differing by not more than 1 base (can be adapted)
+	* idea for our project: search for potential motifs in this window rather than working with predefined consensus sequ.
+	
