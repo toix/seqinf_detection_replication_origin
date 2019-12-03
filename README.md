@@ -2,7 +2,7 @@
 Sequence Bioinformatics, WS 2019/20<br/>
 Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 
-### Git einrichten:
+### Git setup:
 * download and install git with default parameters: https://git-scm.com/downloads<br/>
 * navigate to your workspace directory with cli (or git bash)<br/>
 * git clone https://github.com/toix/seqinf_detection_replication_origin.git seqinf_project<br/>
@@ -58,8 +58,8 @@ See papers: Recent development of Ori-Finder; Ident. of repl. origins
 	* check for motifs differing by not more than 1 base (can be adapted)
 	* idea for our project: search for potential motifs in this window rather than working with predefined consensus sequ.
 	
-Identification of replication origins.pdf (2008):
-# only smooth gc-curves (class 1 and 2a) with global minima are OK to predict origins (~80% of Eubacterial and none of Archaeal chromosomes)
-# Over-represented motifs identified in this region (GC skew) are likely DnaA-boxes. The positional weight matrix (PWM) may be derived from these boxes and used to find clusters of candidate DnaA-boxes in the remaining genomes from this taxon.
-# clusters of the DnaA-boxes may occur not only at the replication origins. For example REGULATION of replication initiation in e.coli
-# Prediction with DnaA motif (no skew?) for a Actinobacteria worked but didn't for a Cyanobacteria
+### Identification of replication origins.pdf (2008):
+* only smooth gc-curves (class 1 and 2a) with global minima are OK to predict origins (~80% of Eubacterial and none of Archaeal chromosomes)
+* Over-represented motifs identified in this region (GC skew) are likely DnaA-boxes. The positional weight matrix (PWM) may be derived from these boxes and used to find clusters of candidate DnaA-boxes in the remaining genomes from this taxon.
+* clusters of the DnaA-boxes may occur not only at the replication origins. For example REGULATION of replication initiation in e.coli
+* Prediction with DnaA motif (no skew?) for a Actinobacteria worked but didn't for a Cyanobacteria
