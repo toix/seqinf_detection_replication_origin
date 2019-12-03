@@ -8,7 +8,7 @@ ecoli = seqio.read('ecoli.fasta', 'fasta')
 
 
 
-dnaa = "TTATNCACA"
+dnaa = "TTATCCACA"
 
 
 def similarity(char1, char2):
@@ -27,7 +27,6 @@ def hamming_dist(seq1, seq2):
 def motif_distances(seq, motif):
     distances = []
     for i in range(len(seq)):
-        print(i)
         if i+len(motif)-1 < len(seq):
             distances.append(hamming_dist(motif, seq[i:i+len(motif)]))
         else:
@@ -68,12 +67,12 @@ for s in skew:
 ax2.plot(pos, skew_acc)
 
 
-regionsize = 4000
+regionsize = 1000
 half_regionsize = int(regionsize/2)
 
 # ax3
-oriC_mid = np.argmin(np.array(skew_acc))
-search_region = min_region(ecoli.seq, oriC_mid*500, regionsize)
+oriC_mid = np.argmin(np.array(skew_acc))*500 + 250
+search_region = min_region(ecoli.seq, oriC_mid, regionsize)
 scores = motif_distances(search_region, dnaa)
 ax3.plot(range(oriC_mid-half_regionsize, oriC_mid+half_regionsize), scores)
 
