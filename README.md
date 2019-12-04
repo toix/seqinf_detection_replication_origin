@@ -62,4 +62,4 @@ See papers: Recent development of Ori-Finder; Ident. of repl. origins
 * only smooth gc-curves (class 1 and 2a) with global minima are OK to predict origins (~80% of Eubacterial and none of Archaeal chromosomes)
 * Over-represented motifs identified in this region (GC skew) are likely DnaA-boxes. The positional weight matrix (PWM) may be derived from these boxes and used to find clusters of candidate DnaA-boxes in the remaining genomes from this taxon.
 * clusters of the DnaA-boxes may occur not only at the replication origins. For example REGULATION of replication initiation in e.coli
-* Prediction with DnaA motif (no skew?) for a Actinobacteria worked but didn't for a Cyanobacteria
+* Prediction with DnaA motif (no skew?) from related bacterias for a Actinobacteria worked but didn't for two Cyanobacteria (class 3a and 2b)
