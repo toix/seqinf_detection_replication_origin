@@ -54,7 +54,7 @@ See papers: Recent development of Ori-Finder; Ident. of repl. origins
 * input: fasta
 * approximate oriC location defined with skew
 * use window in this region to search for clusters of DnaA motifs
-	* use can pre-define DnaA boxes depending on species
+	* user can pre-define DnaA boxes depending on species
 	* check for motifs differing by not more than 1 base (can be adapted)
 	* idea for our project: search for potential motifs in this window rather than working with predefined consensus sequ.
 	
