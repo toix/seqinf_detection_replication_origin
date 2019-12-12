@@ -7,6 +7,19 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * navigate to your workspace directory with cli (or git bash)<br/>
 * git clone https://github.com/toix/seqinf_detection_replication_origin.git seqinf_project<br/>
 
+
+## TODOs
+* test meme for all ecoli oriC sequences
+* AT Skew
+* (find and download reference sequences)
+* (?Skew quality: throw out low organisms with chaotic curves)
+* find minimum
+* Skew at minimum with higher resolution
+* DoriC: Where is the minimum related to DnaA motif in ecoli (expected position, high variance?)
+* create a fasta file with all regions
+* tasks from project sheet
+
+## Literature
 ### Skew
 * new directory skew  
     * ecoli.fasta:  
