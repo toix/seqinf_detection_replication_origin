@@ -9,15 +9,19 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 
 
 ## TODOs
-* test meme for all ecoli oriC sequences
-* AT Skew
-* (find and download reference sequences)
-* (?Skew quality: throw out low organisms with chaotic curves)
+* [Tobias] test meme on multiple ecoli oriC sequences 👍 worked for DoriC of all ecoli references (first motif is DnaA): http://meme-suite.org/opal-jobs/appMEME_5.1.015761936134292082624049/mast.html
+* [Antonia] AT Skew
+* [Tobias] (find and download reference sequences) 👍 @see download fasta files of genomes
+* (Skew quality: throw out low organisms with chaotic curves)
 * find minimum
 * Skew at minimum with higher resolution
-* DoriC: Where is the minimum related to DnaA motif in ecoli (expected relative position, high variance?)
+* [Lena] DoriC: Where is the minimum related to DnaA motif in ecoli (expected relative position, high variance?)
 * create a fasta file with all regions
 * tasks from project sheet
+
+## download fasta files of genomes
++ URL: https://www.ncbi.nlm.nih.gov/assembly
++ example search query for ecoli: "Escherichia coli"[Organism] AND (bacteria[filter] AND "latest refseq"[filter] AND "complete genome"[filter] AND (all[filter] NOT "derived from surveillance project"[filter] AND all[filter] NOT anomalous[filter] AND all[filter] NOT partial[filter]))
 
 ## Literature
 ### Skew
