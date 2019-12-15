@@ -22,7 +22,8 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 ## download fasta files of genomes
 + URL: https://www.ncbi.nlm.nih.gov/assembly
 + example search query for ecoli: "Escherichia coli"[Organism] AND (bacteria[filter] AND "latest refseq"[filter] AND "complete genome"[filter] AND (all[filter] NOT "derived from surveillance project"[filter] AND all[filter] NOT anomalous[filter] AND all[filter] NOT partial[filter]))
-## GC-minimum realted to oriC (for zoom function)
+
+## GC-minimum related to oriC (for zoom function)
 * See xlxs dist_min_to_oriC
 	* E.coli: max range 451 nucleotides around min
 	* V. cholarea: max range 18331
