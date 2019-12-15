@@ -20,6 +20,21 @@ def cskew(skew):
     return skew_acc
 
 
+def cwindowskew(skew):
+    windowsize = int(len(skew ) /2)
+    window_skew = np.zeros(len(skew))
+
+    long_skew = 3* skew
+    ls_pos = len(window_skew) - int(windowsize/2)
+
+    window_skew[0] = np.sum(long_skew[ls_pos:ls_pos + windowsize])
+
+    for i in range(1, len(window_skew)):
+        window_skew[i] = window_skew[i - 1] - long_skew[ls_pos+i-1] + long_skew[ls_pos + windowsize+i-1]
+
+    return window_skew.tolist()
+
+
 def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors = None, save=None):
     if colors == None:
         colors = ['xkcd:blue' for i in range(4)]
@@ -32,6 +47,22 @@ def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors = None, sa
     # ax2
     skew_acc = cskew(skew)
     ax2.plot(pos, skew_acc,color=colors[1])
+
+    # other quality score
+    #x = 0
+    #for i in range(len(skew_acc)-100):
+    #    x += ((skew_acc[i+51]-skew_acc[i+50]) - (skew_acc[i+100] - skew_acc[i])/100)**2
+    #x = x/(len(skew_acc)-100)
+    #print(x)
+
+    # descent = (max(skew_acc) - min(skew_acc)) / abs(np.argmin(np.array(skew_acc)) - np.argmax(np.array(skew_acc)))
+    # x = 0
+    # for i in range(len(skew_acc)-1):
+    #     x += (abs(skew_acc[i+1]-skew_acc[i]) - descent)**2
+    # x = x/len(skew_acc)
+    # print(x)
+    #window_skew_acc = cwindowskew(skew)
+    #ax2.plot(pos, window_skew_acc, color='r')
 
     # ax3
     x, scores = calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta)
