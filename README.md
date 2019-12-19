@@ -77,6 +77,13 @@ Z-curve:<br/>
 Tools for skew:<br/>
 see paper Development Skew Calculation in articles directory
 
+### OriFinder (2008)
++ "Jointly using the three methods (GC-skew, location of the dnaA gene and distribution of DnaA boxes)" (information how to join the methods is missing)
++ "DnaA and its binding sites are well conserved throughout the bacterial kingdom"
++ "Out of the 568 chromosomes, there are only 342 chromosomes (342/ 568 = 60.2%) whose oriCs are adjacent to dnaA gene and near the switch of GC-skew"
++ ~40% of 568 genomes cannot be solved using only the information of GC-skew, location of the dnaA gene and distribution of DnaA boxes.
++ "the oriC regions can be identified for over 98% chromosomes out of the 568 bacterial chromosomes analyzed"
+
 ### Literature Research (OriFinder, 2018)
 See papers: Recent development of Ori-Finder; Ident. of repl. origins
 * input: fasta
