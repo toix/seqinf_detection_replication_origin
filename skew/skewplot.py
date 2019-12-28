@@ -81,7 +81,7 @@ def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors = None, sa
     for ax in [ax1, ax2]:
         ax.set_xlim(1, (len(skew_acc)+1)*windowsize)
     plt.suptitle('GC skew')
-    print('Position of minimum (OriC): ' + str(skew_acc.index(min(skew_acc))))
+    print('Position of minimum (OriC): ' + str(skew_acc.index(min(skew_acc))*windowsize)) #added *windowsize for correct position
 
     plt.subplots_adjust(wspace=0, hspace=0.4, left=0.1, right=0.9)
 
