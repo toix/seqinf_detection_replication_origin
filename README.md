@@ -44,7 +44,7 @@ we are working in a different range/position
 * Code: 
 	* I've added the motif count and adapted the y-axis of the 
 distance plot so it has a fixed height of the maximal Hamming score 
-(otherwise the axis would be different in everey plot)
+(otherwise the axis would be different in every plot)
 	* Can we somehow read the positions of the motifs directly or 
 even print them? Ideas?
 
