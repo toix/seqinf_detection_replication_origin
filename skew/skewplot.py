@@ -8,8 +8,9 @@ def calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta):
     oriC_mid = np.argmin(np.array(skew_acc)) * windowsize + int(windowsize / 2)
     search_region = min_region(fasta.seq, oriC_mid, regionsize)
     scores = motif_distances(search_region, dnaa)
+    motif_count = count_motif(scores)
     x = range(oriC_mid-half_regionsize, oriC_mid+half_regionsize)
-    return x, scores
+    return x, scores, motif_count
 
 def cskew(skew):
     y = 0
@@ -68,6 +69,7 @@ def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors = None, sa
     x, scores = calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta)
     ax3.plot(x, scores, color=colors[2])
     ax3.set_xlim(x[0], x[-1])
+    ax3.set_ylim(0, len(dnaa))  # limit y-axis to motif length
 
     ax3.set_xlabel('Genome Position', labelpad=10)
     ax1.set_ylabel('GC skew')
@@ -82,6 +84,7 @@ def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors = None, sa
         ax.set_xlim(1, (len(skew_acc)+1)*windowsize)
     plt.suptitle('GC skew')
     print('Position of minimum (OriC): ' + str(skew_acc.index(min(skew_acc))*windowsize)) #added *windowsize for correct position
+    print('Motif count (allows 1 mismatch): ' + str(motif_count))
 
     plt.subplots_adjust(wspace=0, hspace=0.4, left=0.1, right=0.9)
 
