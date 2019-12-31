@@ -15,13 +15,38 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * (Skew quality: throw out low organisms with chaotic curves)
 * find minimum
 * Skew at minimum with higher resolution
-* [Lena] DoriC: Where is the minimum related to DnaA motif in ecoli (expected relative position, high variance?)
+* done! [Lena] DoriC: Where is the minimum related to DnaA motif in 
+ecoli (expected relative position, high variance?)
 * create a fasta file with all regions
 * tasks from project sheet
 
 ## download fasta files of genomes
 + URL: https://www.ncbi.nlm.nih.gov/assembly
 + example search query for ecoli: "Escherichia coli"[Organism] AND (bacteria[filter] AND "latest refseq"[filter] AND "complete genome"[filter] AND (all[filter] NOT "derived from surveillance project"[filter] AND all[filter] NOT anomalous[filter] AND all[filter] NOT partial[filter]))
+
+## OriEval
+* see plots, genomes, OriEval.xlsx
+* plotted 10 organisms for each strain
+* (for Thermotoga petrophila only one genome was available, hence other 
+strains were plotted too for comparison)
+* The Excel table lists the GC minimum for each strain in comparison 
+with the DoriC minimum and checks whether our minimum lies at least 
+within the oriC region given in the DoriC database
+* Furthermore, number of DNAa motifs were counted in the zoom region 
+around our minimum (allowing for one mismatch position; see also in the 
+code)
+* Motif positions were read approximately from the plot and compared to 
+the oriC range given in the DoriC database
+* Note: DoriC gives the number of DNAa motifs in the oriC region hence a 
+comparision between our motif count and DoriC would not make sense since 
+we are working in a different range/position
+
+* Code: 
+	* I've added the motif count and adapted the y-axis of the 
+distance plot so it has a fixed height of the maximal Hamming score 
+(otherwise the axis would be different in everey plot)
+	* Can we somehow read the positions of the motifs directly or 
+even print them? Ideas?
 
 ## GC-minimum related to oriC (for zoom function)
 * See xlxs dist_min_to_oriC
