@@ -66,7 +66,7 @@ def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors = None, sa
     #ax2.plot(pos, window_skew_acc, color='r')
 
     # ax3
-    x, scores = calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta)
+    x, scores, motif_count = calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta)
     ax3.plot(x, scores, color=colors[2])
     ax3.set_xlim(x[0], x[-1])
     ax3.set_ylim(0, len(dnaa))  # limit y-axis to motif length
