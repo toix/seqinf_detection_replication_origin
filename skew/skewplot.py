@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from findmotif import *
-from zoomeffect import zoom_effect
+from skew.findmotif import *
+from skew.zoomeffect import zoom_effect
 
 def calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta):
     half_regionsize = int(regionsize / 2)

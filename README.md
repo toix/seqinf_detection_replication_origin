@@ -15,8 +15,7 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * (Skew quality: throw out low organisms with chaotic curves)
 * find minimum
 * Skew at minimum with higher resolution
-* done! [Lena] DoriC: Where is the minimum related to DnaA motif in 
-ecoli (expected relative position, high variance?)
+* done! [Lena] DoriC: Where is the minimum related to DnaA motif in ecoli (expected relative position, high variance?)
 * [Tobias] create a fasta file with all OriC regions 👍 done for all bacteria reference sequences
 * tasks from project sheet
 

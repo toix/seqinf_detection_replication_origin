@@ -2,7 +2,7 @@ import argparse
 from Bio import SeqIO as seqio
 from Bio import SeqUtils as seq
 # from inspect import signature
-from skewplot import *
+from skew.skewplot import *
 
 def parseargs():
     parser = argparse.ArgumentParser(
@@ -31,8 +31,6 @@ if __name__ == '__main__':
     elif args.plot:
         plot(fasta, skew, args.window, args.searchwindow, True, dnaa=args.motif,
              colors=args.colors)
-        from numpy import argmin
-        argmin(skew).tolist() * args.window
     elif args.saveplot != None:
         plot(fasta, skew, args.window, args.searchwindow, False, dnaa=args.motif, save=args.saveplot,
              colors=args.colors)

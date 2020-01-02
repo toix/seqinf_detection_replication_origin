@@ -1,7 +1,7 @@
 import os
 from Bio import SeqIO as seqio
 from Bio import SeqUtils as seq
-from skewplot import *
+from skew.skewplot import *
 
 path = "../data/bacteria_references/"
 out_path = '../data/skew_regions.fasta'
@@ -44,7 +44,7 @@ for file in os.listdir(path):
         print("Probably there is more than one read in: " + file)
         continue
 
-    window = 10000
+    window = 500
 
 
     skew = seq.GC_skew(fasta.seq, window=window)
@@ -52,7 +52,7 @@ for file in os.listdir(path):
     idx_base_min = argmin(skew).tolist() * window
     subsequence, sub_seq_start = get_min_sequence(fasta, idx_base_min, window * 2)
 
-    # plot(fasta, skew, window, 1000, True, dnaa='TTATCCACA', colors=['xkcd:blue' for i in range(4)])
+    plot(fasta, skew, window, 1000, True, dnaa='TTATCCACA', colors=['xkcd:blue' for i in range(4)])
 
     skew = seq.GC_skew(subsequence.seq, window=10)
     idx_base_min_zoom = sub_seq_start + argmin(skew).tolist() * 10
