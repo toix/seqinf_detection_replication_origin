@@ -1,0 +1,13 @@
+HistoryId: NCID_1_22865679_130.14.22.76_5555_1576761631_3462694559_0MetA0_S_HStore
+QueryKey: 35
+ReleaseType: RefSeq
+FileType: GENOME_FASTA
+Flat: true
+
+Query title: Search ("bacteria"[Organism]) AND "reference genome"[RefSeq Category] AND bacteria[filter] AND "complete genome"[filter] AND "reference genome"[filter]  Sort by: SORTORDER
+Search results count: 118
+Entries to download: 118
+
+GENOME_FASTA files in archive: 118
+Total size (bytes): 132806096
+Total time: 28.1 seconds

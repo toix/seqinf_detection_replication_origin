@@ -17,12 +17,14 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * Skew at minimum with higher resolution
 * done! [Lena] DoriC: Where is the minimum related to DnaA motif in 
 ecoli (expected relative position, high variance?)
-* create a fasta file with all regions
+* [Tobias] create a fasta file with all OriC regions 👍 done for all bacteria reference sequences
 * tasks from project sheet
 
 ## download fasta files of genomes
 + URL: https://www.ncbi.nlm.nih.gov/assembly
 + example search query for ecoli: "Escherichia coli"[Organism] AND (bacteria[filter] AND "latest refseq"[filter] AND "complete genome"[filter] AND (all[filter] NOT "derived from surveillance project"[filter] AND all[filter] NOT anomalous[filter] AND all[filter] NOT partial[filter]))
++ query for all bacteria reference sequences: bacteria[filter] AND "complete genome"[filter] AND "reference genome"[filter]
++ For Organisms replace "bacteria"[Organism] with: "Escherichia coli"[Organism], "Vibrio cholerae"[Organism], "Thermotoga petrophila"[Organism], "Salmonella enterica"[Organism]
 
 ## OriEval
 * see plots, genomes, OriEval.xlsx

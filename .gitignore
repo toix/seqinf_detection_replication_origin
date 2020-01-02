@@ -1,4 +1,5 @@
 # google drive
 desktop.ini
 
-
+# bacteria whole genome
+data/bacteria_references/*.fna
