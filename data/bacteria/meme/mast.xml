@@ -1,0 +1,2143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<mast version="5.1.0" release="Fri Oct 11 15:53:28 2019 -0700">
+	<command_line><arg>mast</arg><arg>-oc</arg><arg>.</arg><arg>-nostatus</arg><arg>meme.xml</arg><arg>/mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta</arg></command_line>
+	<settings strand_handling="combine" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
+	<alphabet name="DNA" like="dna">
+		<letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+		<letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+		<letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+		<letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+		<letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+		<letter id="V" symbol="V" equals="ACG" name="Not T"/>
+		<letter id="H" symbol="H" equals="ACT" name="Not G"/>
+		<letter id="D" symbol="D" equals="AGT" name="Not C"/>
+		<letter id="B" symbol="B" equals="CGT" name="Not A"/>
+		<letter id="M" symbol="M" equals="AC" name="Amino"/>
+		<letter id="R" symbol="R" equals="AG" name="Purine"/>
+		<letter id="W" symbol="W" equals="AT" name="Weak"/>
+		<letter id="S" symbol="S" equals="CG" name="Strong"/>
+		<letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+		<letter id="K" symbol="K" equals="GT" name="Keto"/>
+	</alphabet>
+	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
+	<motif_dbs>
+		<motif_db source="meme.xml" last_mod_date="Fri Jan  3 17:06:43 2020">
+			<background A="0.267465" C="0.232535" G="0.232535" T="0.267465"/>
+		</motif_db>
+	</motif_dbs>
+	<motifs>
+		<motif db="0" id="TGTGGATAA" alt="MEME-1" length="9" nsites="288" evalue="1.2e-086">
+			<pos A="-1481" C="-1481" G="-1481" T="190"/>
+			<pos A="-1481" C="-1481" G="207" T="-346"/>
+			<pos A="-1481" C="-1481" G="-1481" T="190"/>
+			<pos A="-1481" C="-1481" G="195" T="-141"/>
+			<pos A="-268" C="-216" G="177" T="-127"/>
+			<pos A="183" C="-1481" G="-226" T="-1481"/>
+			<pos A="-98" C="-236" G="-1481" T="162"/>
+			<pos A="190" C="-1481" G="-1481" T="-1481"/>
+			<pos A="185" C="-1481" G="-274" T="-626"/>
+		</motif>
+		<motif db="0" id="GCCBKSGCC" alt="MEME-2" length="9" nsites="308" evalue="2.6e-020">
+			<pos A="-1491" C="-1491" G="210" T="-1491"/>
+			<pos A="-478" C="209" G="-1491" T="-1491"/>
+			<pos A="-1491" C="164" G="25" T="-1491"/>
+			<pos A="-69" C="68" G="9" T="-32"/>
+			<pos A="-378" C="-99" G="124" T="24"/>
+			<pos A="-1491" C="103" G="118" T="-1491"/>
+			<pos A="-1491" C="-1491" G="184" T="-69"/>
+			<pos A="-1491" C="210" G="-1491" T="-1491"/>
+			<pos A="-1491" C="192" G="-95" T="-1491"/>
+		</motif>
+		<motif db="0" id="GCTGGGATC" alt="MEME-3" length="9" nsites="31" evalue="2.4e+003">
+			<pos A="-1160" C="-1160" G="210" T="-1160"/>
+			<pos A="-1160" C="210" G="-1160" T="-1160"/>
+			<pos A="-1160" C="-1160" G="-126" T="176"/>
+			<pos A="-1160" C="-185" G="167" T="-47"/>
+			<pos A="-1160" C="-1160" G="210" T="-1160"/>
+			<pos A="-1160" C="-1160" G="210" T="-1160"/>
+			<pos A="181" C="-1160" G="-185" T="-1160"/>
+			<pos A="-1160" C="-1160" G="-1160" T="190"/>
+			<pos A="-1160" C="210" G="-1160" T="-1160"/>
+		</motif>
+	</motifs>
+	<correlations>
+		<correlation idx_a="0" idx_b="1" value="0.09"/>
+		<correlation idx_a="0" idx_b="2" value="0.41"/>
+		<correlation idx_a="1" idx_b="2" value="0.41"/>
+	</correlations>
+	<sequence_dbs>
+		<sequence_db source="/mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta" last_mod_date="Fri Jan  3 16:59:39 2020" seq_count="118" residue_count="235953"/>
+	</sequence_dbs>
+	<sequences>
+		<sequence db="0" name="NC_016845.1" comment="Klebsiella pneumoniae subsp. pneumoniae HS11286 chromosome, oric at -130 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="1.30e-04" evalue="0.015"/>
+			<seg start="76">
+				<data>
+TCGCGCGGGTCGAAGAAATCGTACTCAATAGCGTAGCCTGGACGGACGATCCGCGCATTCTCCATCCCCTGCATC
+				</data>
+				<hit pos="78" idx="2" rc="n" pvalue="2.9e-05" match="++  ++ ++"/>
+				<hit pos="123" idx="2" rc="y" pvalue="2.1e-05" match="+++++  ++"/>
+			</seg>
+			<seg start="601">
+				<data>
+TCGCCGGCGCGGCCGCCGCTGTAGTTGTCCAGACCAATATGGATTTTGCCGTCAAGGAAGGTCCCGACAGTCAGC
+				</data>
+				<hit pos="603" idx="1" rc="n" pvalue="9.9e-05" match="++++++++ "/>
+			</seg>
+			<seg start="1051">
+				<data>
+CGCGCTGCGGCCATTGCGGCCTCAGTGCCTGCATGACCCCCGCCAATGATAATGACGTCAAAAGGATCCTGATAA
+				</data>
+				<hit pos="1085" idx="2" rc="y" pvalue="2.2e-05" match="++ +++ ++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+AACAGGTGGTCTGCCTCGCATAAAGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTCG
+				</data>
+				<hit pos="1171" idx="1" rc="n" pvalue="1.5e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+CTTATTAGGATCGACTCTCTTTGTGGATAAGTCGGATCCGCGAAGTAAGATCAAAAGCTTAAGAAGGATCACTAT
+				</data>
+				<hit pos="1297" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+CTGTGAATGATCGGTGATCCTGGTCCGTATAAGCTGGGATCAGAATGAAGGGTTATGCACAGCTCAAAAACCATA
+				</data>
+				<hit pos="1383" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="1403" idx="0" rc="y" pvalue="3.0e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+CTACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTTAAGCATGGTTATCCACAGAAGATCGGACGATC
+				</data>
+				<hit pos="1438" idx="0" rc="n" pvalue="5.6e-05" match="+ +++++++"/>
+				<hit pos="1456" idx="2" rc="y" pvalue="6.0e-06" match="+++++ +++"/>
+				<hit pos="1477" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+TTTACAATTCTCAGAGCAAATTTTTCCAGGATCCCAGCCAGATTTCCGCTGGATCCTCCGGAATTTCGTGTTCAA
+				</data>
+				<hit pos="1530" idx="2" rc="y" pvalue="2.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+TCTCCTGCAGCGCGTCATAGAAGGGAACCAGGTTGTCGGGAACGTCGCCGGCGCCATGGGTGGAAGAGATAATTA
+				</data>
+				<hit pos="1772" idx="1" rc="n" pvalue="6.0e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002695.2" comment="Escherichia coli O157:H7 str. Sakai DNA, oric at 4719160 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="1.30e-04" evalue="0.015"/>
+			<seg start="151">
+				<data>
+CAAGGAAGATCTGATGCTGATTTCTGTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGC
+CGACACCTTCGATCACCCCTGCGTACATTGGGCTACGATCGAGGTTACTGCGGATCACATCATGGGTTTTCTCGT
+				</data>
+				<hit pos="218" idx="1" rc="n" pvalue="4.1e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+TCAGACGACCAACGCGCAGCGGAAGTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGC
+CACCGCTGTAGTTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACGGCTTTGG
+				</data>
+				<hit pos="523" idx="1" rc="y" pvalue="6.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTG
+				</data>
+				<hit pos="997" idx="2" rc="y" pvalue="2.2e-05" match="++ +++ ++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CCTCGCATAACGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTGTCGGCTTGAGAAAG
+				</data>
+				<hit pos="1083" idx="1" rc="n" pvalue="1.5e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+ACCTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTTATCTCTTATTAGGATC
+				</data>
+				<hit pos="1127" idx="2" rc="n" pvalue="9.5e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATC
+				</data>
+				<hit pos="1210" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+GGTGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAACAACGGTTGTTC
+				</data>
+				<hit pos="1296" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="1316" idx="0" rc="y" pvalue="1.6e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATT
+				</data>
+				<hit pos="1351" idx="0" rc="n" pvalue="5.6e-05" match="+ +++++++"/>
+				<hit pos="1369" idx="2" rc="y" pvalue="6.0e-06" match="+++++ +++"/>
+				<hit pos="1390" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+TGAGTAAATTAATCCACGATCCCAGCCATTCTTCTGCCGGATCTTCCGGAATGTCGTGATCAAGAATGTTGATCT
+				</data>
+				<hit pos="1443" idx="2" rc="y" pvalue="2.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+TTTATTAAGAGTGGCGTATTGTACGCTGTGAACGCGTTGGGATCTACCTGTGGAAAAGTATGGGATTAAAAAAGC
+				</data>
+				<hit pos="1911" idx="2" rc="n" pvalue="9.5e-05" match="+ +++++++"/>
+				<hit pos="1924" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_017634.1" comment="Escherichia coli O83:H1 str. NRG 857C chromosome, oric at 3946680 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="1.30e-04" evalue="0.015"/>
+			<seg start="151">
+				<data>
+AGGAAGATCTGATGCTGATTTCTGTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGCCG
+				</data>
+				<hit pos="216" idx="1" rc="n" pvalue="4.1e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+AGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAGAGCGGAATGGACGGCGGATCACCAGCACGGCCA
+CCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTTTGGCA
+				</data>
+				<hit pos="521" idx="1" rc="y" pvalue="6.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+CAGCTCATCTGCCCCAGAGTGTCGATATTGTGTGTCAAAAGCAGAGTCTGTTGACCCATACGCGCCGCGGCCATC
+				</data>
+				<hit pos="964" idx="1" rc="n" pvalue="5.6e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+GCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTGCC
+				</data>
+				<hit pos="995" idx="2" rc="y" pvalue="2.2e-05" match="++ +++ ++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+TCGCATAACGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTGTCGGCTTGAGAAAGAC
+CTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGGATCGC
+				</data>
+				<hit pos="1081" idx="1" rc="n" pvalue="1.5e-06" match="+++++++++"/>
+				<hit pos="1125" idx="2" rc="n" pvalue="9.5e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GCTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATCGG
+				</data>
+				<hit pos="1208" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+TGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAACAACCGTTGTTCTT
+TGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATTTG
+				</data>
+				<hit pos="1294" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="1314" idx="0" rc="y" pvalue="1.6e-05" match="++++ ++++"/>
+				<hit pos="1349" idx="0" rc="n" pvalue="5.6e-05" match="+ +++++++"/>
+				<hit pos="1367" idx="2" rc="y" pvalue="6.0e-06" match="+++++ +++"/>
+				<hit pos="1388" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+AGTAAATTAATCCACGATCCCAGCCATTCTTCTGCCGGATCTTCCGGAATGTCGTGATCAAGAATGTTGATCTTC
+				</data>
+				<hit pos="1441" idx="2" rc="y" pvalue="2.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+TATTAAGAGTGGCGTATTGTACGCTGTGAAAGCGTTGGGATCTACCTGTGGAAAAGTATGGGATTAAAAAAGCCG
+				</data>
+				<hit pos="1909" idx="2" rc="n" pvalue="9.5e-05" match="+ +++++++"/>
+				<hit pos="1922" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_015663.1" comment="Enterobacter aerogenes KCTC 2190 chromosome, oric at 1496990 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="1.30e-04" evalue="0.015"/>
+			<seg start="76">
+				<data>
+CATTCGCGCTGCTGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCTG
+				</data>
+				<hit pos="114" idx="2" rc="y" pvalue="2.2e-05" match="++ +++ ++"/>
+			</seg>
+			<seg start="151">
+				<data>
+ATAAAACATGGTGATCTGCCTCGCATAACGCGGTTTGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAAC
+				</data>
+				<hit pos="201" idx="1" rc="n" pvalue="1.5e-06" match="+++++++++"/>
+			</seg>
+			<seg start="226">
+				<data>
+TTTGCTCTTTCGAGAAAGGGGCCGGGATCCTGAGTATTAAAAAGAAGATCTTTTATTTAGAGATCTGTTCTATTG
+				</data>
+				<hit pos="246" idx="2" rc="n" pvalue="4.2e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+TGATCTCTTATTAGGATCGACTCTCTTTGTGGATAAGTCGGATCCACTGTTTAAGATCAAACGCTTAAGAAGGAT
+				</data>
+				<hit pos="328" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+CGCAATCTGTGAATGATCGGTGATCCTGTTCCGTATAAGCTGGGATCAGAATGAAGGGTTATGCACAGCTCAAAA
+				</data>
+				<hit pos="414" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="434" idx="0" rc="y" pvalue="3.0e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+AGCGTACTCCGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTTGAGCAGGGTTATCCACAGAAGAAGCT
+				</data>
+				<hit pos="469" idx="0" rc="n" pvalue="5.6e-05" match="+ +++++++"/>
+				<hit pos="487" idx="2" rc="y" pvalue="6.0e-06" match="+++++ +++"/>
+				<hit pos="508" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+GCGGATCTTTACAAAACTCAGAGTAAATCTTTCCAGGATCCCACCCAAACCTCGGCCGGATCTTCAGGAATCTCG
+				</data>
+				<hit pos="562" idx="2" rc="y" pvalue="9.5e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="751">
+				<data>
+ACCTGCTTCTCCAGCAACGCTTCATAAAAGGGGACCAGGTTGTCCGGAATATCGCCGGCGCCATGGGTAGAAGAG
+				</data>
+				<hit pos="804" idx="1" rc="n" pvalue="6.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TCTGCCATGATCGCCGATCGCTCGCTCAACTATTCTGAGTGGCGTATTGTACGCTGTGAGCGAGCTGGGATCTAC
+				</data>
+				<hit pos="1039" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CTGTGGAAAAATGTGGGATTAAAAAAAACGATCAGGGCTTGATGGTACGCATGATCGGGTTTTGCAGCACGATCA
+				</data>
+				<hit pos="1052" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+GGGTTTCAGTGGACTGAATTTCATCGATTGTTTGGATCTTGTTGATAAGTACCTGCTGCAGGGCATCGATGGATT
+				</data>
+				<hit pos="1165" idx="0" rc="n" pvalue="2.2e-05" match="+++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_003197.2" comment="Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, oric at 4084370 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="1.14e-03" evalue="0.13"/>
+			<seg start="301">
+				<data>
+GTCCCAACGTGTCAATATTGTGTGTCAAAAGCAGAGTCTGTTGACCCATACGCGCTGCGGCCATCGCGGCCTCAG
+				</data>
+				<hit pos="359" idx="1" rc="y" pvalue="9.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="376">
+				<data>
+TGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTAATTGCCTCGCATAACG
+				</data>
+				<hit pos="385" idx="2" rc="y" pvalue="2.2e-05" match="++ +++ ++"/>
+			</seg>
+			<seg start="451">
+				<data>
+CGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCG
+				</data>
+				<hit pos="471" idx="1" rc="n" pvalue="5.6e-05" match="++++++++ "/>
+			</seg>
+			<seg start="526">
+				<data>
+GGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGGATCGCGCCAGGCTGT
+GGATAACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGT
+				</data>
+				<hit pos="598" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+CCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACTA
+				</data>
+				<hit pos="684" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="704" idx="0" rc="y" pvalue="1.6e-05" match="++++ ++++"/>
+				<hit pos="739" idx="0" rc="n" pvalue="5.6e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+CCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAGTAAATTAA
+				</data>
+				<hit pos="757" idx="2" rc="y" pvalue="6.0e-06" match="+++++ +++"/>
+				<hit pos="778" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TCCAGGATCCGAGCCAAATCTCCGCTGGATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCC
+				</data>
+				<hit pos="831" idx="2" rc="y" pvalue="1.1e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="901">
+				<data>
+CAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCTC
+				</data>
+				<hit pos="914" idx="1" rc="n" pvalue="2.0e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+GCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGAAAAATGTGGGATTAAAAAAGCCGATCATGGCTT
+				</data>
+				<hit pos="1299" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="1312" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GATGGTGCGCATGATCGGGTTCTGCAAGACGATCAGTGTCTCAGTGGACTGAATTTCATCAATTGTTTGGATCTT
+GTTGATAAGTACGTGCTGAAGCGCGTCGATTGATTTGCACATCACTTTTATAAAGATGCTGTAGTGACCGGTGGT
+				</data>
+				<hit pos="1425" idx="0" rc="n" pvalue="2.2e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+GATGATGCCAATAAAGCAGCCCACATCGTAGCCCAGTTGTTTAGGGCTGACGTCAATCCGTGCGCCCGTAATGAT
+CCCGGCCTGCTTCATTTTCTCGACGCGAACGTGAATGGTTCCAGGGCTAACGCCAAATTGTTTGGCCAGTTCGGC
+				</data>
+				<hit pos="1648" idx="2" rc="y" pvalue="4.2e-05" match="++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_003198.1" comment="Salmonella enterica subsp. enterica serovar Typhi str. CT18, oric at 3765460 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="1.14e-03" evalue="0.13"/>
+			<seg start="76">
+				<data>
+AATCCCACATTTTTCCACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGA
+				</data>
+				<hit pos="86" idx="0" rc="y" pvalue="9.7e-06" match="++ ++++++"/>
+				<hit pos="99" idx="2" rc="y" pvalue="2.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+GGCGCGATTGAGAAAATAGAAGCGGAACTGAAAGGCGCTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAAC
+				</data>
+				<hit pos="484" idx="1" rc="y" pvalue="2.0e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="526">
+				<data>
+ATCCTTGAACATGAGATTCCGGAAGATCCAGCGGAGATTTGGCTCGGATCCTGGATTAATTTACTCAAATAAGTG
+				</data>
+				<hit pos="567" idx="2" rc="n" pvalue="1.1e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+TAAAGATCGTGCGATCTATTGTGGATAAATATGGTGAAAAGCTTGGATCAACCGGTAGTTATCCAAAGAATAACC
+				</data>
+				<hit pos="620" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="641" idx="2" rc="n" pvalue="6.0e-06" match="+++ +++++"/>
+				<hit pos="659" idx="0" rc="y" pvalue="5.6e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="676">
+				<data>
+TTTGTTCACTTTTTGAGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTC
+				</data>
+				<hit pos="694" idx="0" rc="n" pvalue="1.6e-05" match="++++ ++++"/>
+				<hit pos="714" idx="2" rc="y" pvalue="2.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+ACAGCTAGTGATCCTTTCCAACGCATTGATCTTTATTACAGGATCCGGGTTATCCACAGCCTGGTGCGATCCTAA
+				</data>
+				<hit pos="800" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+ATCGGCTAAAGTTGAGTAGAATCCACCGCCCGGGCTTCAATCCATTTTCACACCGCGTTATGCGAGGCAATTACC
+				</data>
+				<hit pos="927" idx="1" rc="y" pvalue="5.6e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+ATGTTTTATCAGGATCCTTTTGACGTCATTATTATTGGCGGGGGTCATGCAGGCACTGAGGCCGCGATGGCCGCA
+				</data>
+				<hit pos="1013" idx="2" rc="n" pvalue="2.2e-05" match="++ +++ ++"/>
+				<hit pos="1039" idx="1" rc="n" pvalue="9.9e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+ACCCATGACGTGATTCGTAATAACCTCGATCGTAGCCCAATGTACGCTGGCGTGATCGAAGGGATCGGCCCACGC
+				</data>
+				<hit pos="1792" idx="1" rc="y" pvalue="4.1e-05" match="+++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_006461.1" comment="Thermus thermophilus HB8 chromosome, oric at 1849980 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="2.32e-03" evalue="0.27"/>
+			<seg start="76">
+				<data>
+CCCTGGAGTACATCGCCCGGCAGGTCACCTCCAACATCCGGGAGTTGGAAGGGGCCCTCATGCGGGCCATCGCCT
+TCGCCTCCCTCAACGGCGTTGAGCTGACCCGCGCCGTGGCCGCCAAGGCCCTCTCCGACATCTTCGCCCCCAGGG
+				</data>
+				<hit pos="147" idx="1" rc="n" pvalue="3.2e-05" match="+++ +++++"/>
+				<hit pos="183" idx="1" rc="n" pvalue="2.2e-05" match="+++++++++"/>
+				<hit pos="198" idx="1" rc="n" pvalue="8.8e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="451">
+				<data>
+AGCTCGCGGAAAGCGACCGGGAGGTGCAGGGCCTCCTCCGCACCCTCCGGGAGGCGTGCACATGACCCCTGTGGA
+TAACCTGTGGATAACCCTGTGGATAACCGGGCTCAAGCTGTGGATAACCCTGTGGATAACCTGTGGAAAACTCCG
+				</data>
+				<hit pos="520" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="531" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="543" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="564" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="576" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="587" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
+			</seg>
+			<seg start="601">
+				<data>
+GGGGGGCCGACCCCTGTGGATAACCCGCCCTTTATCCACAGGTTATCCACAGGCCGGGGCCAGTTATCCACAGCA
+				</data>
+				<hit pos="615" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="632" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="643" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="653" idx="1" rc="n" pvalue="4.5e-06" match="+++++++++"/>
+				<hit pos="664" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+GTTATCCACAGCCCGTTTCTCGTCCTGGAGGGCGTTTTCCCCCGCTTATCCACATTTCCACAGGCCCTACTACTA
+				</data>
+				<hit pos="677" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="721" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+CCGCGAGCAACGAGGAGTACCGGGCCATCTTCCGCGGGGTGCAGCTGGAGTTCTCCCCCCAGGGCTTCCGGGCGG
+TGGCCTCCGACGGGTACCGCCTCGCCCTCTACGACCTGCCCCTGCCCCAAGGGTTCCAGGCCAAGGCCGTGGTCC
+				</data>
+				<hit pos="1347" idx="1" rc="n" pvalue="6.2e-05" match="+++++++++"/>
+				<hit pos="1409" idx="1" rc="y" pvalue="2.7e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+CCGCCCGGAGCGTGGACGAGATGGTGCGGGTCCTGAAGGGGGCGGACGGGGCCGAGGCCGACCTCGCCCTGGGCG
+				</data>
+				<hit pos="1475" idx="1" rc="y" pvalue="6.8e-05" match="++++  +++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+AGGGGGTGTTGGCCCTGGCCCTCGAGGGCGGAAGCGGGGTCCGGATGGCCCTCCGCCTCATGGAAGGGGAGTTCC
+				</data>
+				<hit pos="1512" idx="1" rc="n" pvalue="9.6e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+TCTCCGCCGAGGGGGACTACGGCAAGGGGCAGGAGGAGGTGCCCGCCCAGGTGGAGGGGCCGGGCATGGCCGTGG
+CCTACAACGCCCGCTACCTCCTCGAGGCCCTCGCCCCCGTGGGGGACCGGGCCCACCTGGGCATCTCCGGGCCCA
+				</data>
+				<hit pos="1794" idx="1" rc="n" pvalue="2.2e-05" match="+++++++++"/>
+				<hit pos="1827" idx="1" rc="n" pvalue="1.3e-05" match="+++++++++"/>
+				<hit pos="1844" idx="1" rc="y" pvalue="4.1e-05" match="++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_010397.1" comment="Mycobacterium abscessus chromosome, oric at 5066860 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="2.93e-03" evalue="0.35"/>
+			<seg start="601">
+				<data>
+CCGGCCGGCAATGATGGCGCGACCCGCGCGGGTACGCATGCGCAACCGGAAACCGTGGGTGCGTGCGCGACGCCG
+				</data>
+				<hit pos="621" idx="2" rc="y" pvalue="2.9e-05" match="++ ++  ++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GTGGTCGGCTTTGTTGTCCACAGCTGTGGATAACCGTGTGGAAACCCACGACCGATCGTTCAAAAGGGGCTAGTG
+				</data>
+				<hit pos="1214" idx="0" rc="y" pvalue="3.0e-05" match="++ ++++++"/>
+				<hit pos="1225" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+GAGTTGGGTGTACGCATCGCGGCGCCGGCCCCTGGCGAAGATTCGGAAGTCGCCGGAGCGGCCCCAGAAGTCGAG
+				</data>
+				<hit pos="1596" idx="1" rc="y" pvalue="6.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+CTCGACGAGGTCGATGAGACCACCGAGGCGCTTGCTAGCGCACATGAATCCTGGCCGTCCTACTTCATCAATCGC
+CCGGGCGGCGCCGACAAGGCCGAGACACCCGATACGAGCCTCAACGCGCGCTACACCTTCGAATCCTTTGTTATC
+				</data>
+				<hit pos="1723" idx="1" rc="y" pvalue="5.6e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+GGAGCATCCAACCGGTTCTCCCACGCCGCCGCCGTGGCCGTGTCCGAGGCCCCCGCTCGGGCCTACAACCCGCTG
+				</data>
+				<hit pos="1831" idx="1" rc="n" pvalue="2.2e-05" match="+++++++++"/>
+				<hit pos="1848" idx="1" rc="y" pvalue="2.7e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_018828.1" comment="Bordetella parapertussis Bpp5, oric at 2960 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="3.33e-03" evalue="0.39"/>
+			<seg start="1">
+				<data>
+GGCCCAGGCCTGCGATGCGCTGCGATTGCCGGCCGACGCCGGCCAGCAGCAGAAGCTGCTGCGCTATATCGAGCA
+				</data>
+				<hit pos="1" idx="1" rc="y" pvalue="9.6e-06" match="+++++ +++"/>
+			</seg>
+			<seg start="226">
+				<data>
+GGACGTCACATGCGTGGACGCAGTCGAGAAGAAAACCGCATTCGTGCGGCAGATGGCCGGCGCGCTCGGACTGCC
+				</data>
+				<hit pos="280" idx="1" rc="y" pvalue="8.8e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+CTGGTGCAGATGGACGAGCGCGAGCGCCAGCTCAAGGCCGCCATCGACAAGATCGCCGGCGAATACGATTTCGTG
+				</data>
+				<hit pos="920" idx="1" rc="n" pvalue="5.6e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+AACAACGAACTCCGTGTCATCGGTTTGTTGCGCGTGATGTTCGATCCGCGCATGACCTTGCAGCAGCAGGTGTCG
+				</data>
+				<hit pos="1168" idx="2" rc="y" pvalue="2.1e-05" match="+++++  ++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GCTCAGCTCGAATCCCACTTCGGCGACAAGGTCTTCACCACGGTGGTGCCACGCAATGTGCGGTTGGCCGAGGCG
+				</data>
+				<hit pos="1266" idx="1" rc="y" pvalue="6.8e-05" match="++++  +++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GAAATGATAGAACGCGTCAAAGAGCTGGATTGAACCTCGATGCCAGCTGTGCTTGCTGTTCCGGCCGCCCACCCC
+				</data>
+				<hit pos="1389" idx="2" rc="y" pvalue="9.5e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+CTCTACGAAGGATGGCTGGTGCGTTGGGCGCCTTCGCGGGCCAAGCGCGCGCGCTGCGTCAATGTACTCGGGTTA
+TCCACACGTCCGCTCGATGAGCGGCTGGCGTACTGTACCCGATGGTATGCGGGCCACGGGGTGCCGCTGATCGTG
+				</data>
+				<hit pos="1573" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+CCTGGGCGGTTCGCACAGGAAGCAGGGCGCCTGCGTGGCCACGACGATGCGGCCACGGCCGAACACGCGGCGCGC
+				</data>
+				<hit pos="1851" idx="1" rc="y" pvalue="2.2e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_003062.2" comment="Agrobacterium fabrum str. C58 chromosome circular, oric at 2841380 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="3.96e-03" evalue="0.47"/>
+			<seg start="1">
+				<data>
+GGGTGACGTTTTCCGGGTCTGCTTGCGGGGTGATGCCATGGCCGAGATTGAAGATCAGCGGACCCTGCCCAAGCG
+				</data>
+				<hit pos="35" idx="1" rc="n" pvalue="4.1e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="226">
+				<data>
+CCGTCTTGCGGCGATAATCCCTCAGCAGATAACCAGCGCCCTTGGCGAAAGCGATGATCTTTGCCGAAGGTCGGC
+GGGCGCGCACAGACGCGATAATCCTGGCGACCGGCTTGATCGCATATTCCTCGAATTCCTTTTCGCCGAGCACGC
+				</data>
+				<hit pos="298" idx="1" rc="y" pvalue="9.9e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+CAGCCCAGGAATCGAAGATCTGAACCGCGTCGGCGCCGGCATCGATCTGCGCCACCAGATAATCGGCTGAGACCT
+				</data>
+				<hit pos="407" idx="1" rc="y" pvalue="6.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+CAGCGAGGAGAGCCAGCAGCTTTTCCATCGCGGCCGGTTCCTGATAACCGAACAGCCGCGCCGGCGCCTGGTCCG
+				</data>
+				<hit pos="510" idx="1" rc="n" pvalue="6.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+CCGGAAGATAACGCCCAGCCTGGCGCATCAGCCATATTGGCGGCGGCGTAACCGTCTTCCCGTTCAAAACAGTCA
+				</data>
+				<hit pos="939" idx="1" rc="y" pvalue="6.2e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+AGACCGAAATTTACGCACCTGTGGACAATCTGGGGAGAATTTTGAACAGTTCCGTCTTATTCCAGTAATTCACAG
+				</data>
+				<hit pos="1220" idx="0" rc="n" pvalue="3.0e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+GCGTCTCGAAGACGAGAGACGCCACTTGCGGATTGTGGAAAAACACCACCTTATTCACCCCGCGGCTCGGCCCGT
+				</data>
+				<hit pos="1309" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+CGGACAATTCAGAGATTTGTCCCGGTTTATCAACAGGGGGAGAAAAACAGCGTGGAGAACAAAAAAAGCTTCTTC
+				</data>
+				<hit pos="1377" idx="0" rc="y" pvalue="2.2e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+AGGCGGCGGGTGGGTGCGCAACACGCGCTGAATGCCGATTATTTCGCGCGGATCGAAGCACTCAATTTCGCCATG
+				</data>
+				<hit pos="1771" idx="2" rc="n" pvalue="2.1e-05" match="++  +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_008800.1" comment="Yersinia enterocolitica subsp. enterocolitica 8081 chromosome, oric at 4615910 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="4.32e-03" evalue="0.51"/>
+			<seg start="1">
+				<data>
+TGTGAATTACGATCAGCAAAGCGCATGACTTTGTCTTCGATCGACGGGCAATAACGTGGCCCGATCCCCTCAATG
+ATCCCCGCATACATCGGGCTGCGATCCAGGTTATTACGGATCACTTCGTGGGTTTTTTCATTGGTGTAGGTGATA
+				</data>
+				<hit pos="75" idx="2" rc="y" pvalue="8.2e-06" match="++++++ ++"/>
+				<hit pos="93" idx="2" rc="n" pvalue="9.5e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+CCCATTTTGGTCACAGCACCGACCACACGATCGTTTTCAACAATCAGATCTTCTACCGGCTGTTGGAAAATCATC
+				</data>
+				<hit pos="484" idx="0" rc="y" pvalue="6.2e-05" match="++ ++ +++"/>
+			</seg>
+			<seg start="976">
+				<data>
+CTTAATTAAAAGAGATCTTTTTATTTAAAGATCTCTTTATTAGATCTCTTATTAGGATCATGACCTTCTGTGGAT
+AAGTGATTATTCACATTTAAGATCATGTGATTAAGGAGGATCGTTTGCTGTGAATGATCGGTGATCCTATTGCGT
+				</data>
+				<hit pos="1044" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1057" idx="0" rc="y" pvalue="4.0e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+ATAAGCTGGGATCTAAATGGCATGTTATGCACAGGCACTTTAAGTTACTAAGGTTGTTATGTGGATATGTACTGC
+				</data>
+				<hit pos="1130" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="1150" idx="0" rc="y" pvalue="3.0e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+TTATACCCTGCTTTCAAGCTTACTTATCCACATTCGTTCGCGTGATCTTTAAGCAAATTAGAGTAAATTAATCCA
+				</data>
+				<hit pos="1224" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+GTATTGTACGCTGTGAATCAGCTGGGATCTACCTGTGGATAATGTGGGTATAGTTATTTAGTGCTCAGGGCACGA
+				</data>
+				<hit pos="1746" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="1759" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+TGGTACGCATGATGGGGTTTTGCAGGGAAATAAGAGTCTCGGTTGACTGGATCTCATCAATAGTTTGGATCTTGT
+TGATAAGTACCTGTTGCAGTGCATCTATCGATTTACACATGACCTTAATAAAGATGCTGTAATGGCCAGTGGTGT
+				</data>
+				<hit pos="1873" idx="0" rc="n" pvalue="2.2e-05" match="+++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_007005.1" comment="Pseudomonas syringae pv. syringae B728a chromosome, oric at 6086840 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="6.62e-03" evalue="0.78"/>
+			<seg start="1">
+				<data>
+CCCAGATCGCATTCGCCGATCAACAGGTCGTAGACGGAGTTTTCCAGGTTGTGTTTATCCACACCGCTGCCCATG
+				</data>
+				<hit pos="55" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="226">
+				<data>
+CCCAGTCATGCCGTGCGGCGCAGTATCAGCAGATGGCGTTGGCCTTGGCAACCCGGAACGGTCAAGGCGTGTGCG
+				</data>
+				<hit pos="261" idx="1" rc="n" pvalue="7.6e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+TCGAAAGGCACTTCGGGCTGATAACTTTCTGCACGGCTGTGGATAACTTCAAGATTATCCAGTTTCAGCTCAAGT
+				</data>
+				<hit pos="488" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+GCACCGGTGGATAACTCTTGGGCGTGTTGCGGGGTGACCATAGAACTCAAGCGCTTTGCTCCAACTGACGGCCCG
+CGCCGCGTTTTTTCAAATGAATCATCAACAGCGATATCGCTGCAGGCGTAACACCGGGGATGCGCGATGCCTGTC
+				</data>
+				<hit pos="896" idx="1" rc="n" pvalue="3.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+CGTATTTTGTCTTGATCTCGACCTGCTCGGCGACCTGGGGATCGGTGCAGCCCTGGCCAGTGATTGAAATCAGGC
+				</data>
+				<hit pos="1175" idx="1" rc="n" pvalue="9.6e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_004578.1" comment="[Pseudomonas syringae] pv. tomato str. DC3000 chromosome, oric at 6390420 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="7.94e-03" evalue="0.94"/>
+			<seg start="226">
+				<data>
+GTTTTCCAGAGTGTGTTTATCCACACCGCTGCCCATGGTCGCGTTGCCCTGGGGATCGAGATCGATCAACAGCAC
+				</data>
+				<hit pos="242" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+CGCTATCGCGAATACCTTAGCCATTCTTGCTTGTGTTCCCAATCATGCCGTGCGGCGCAGTATCAGCAGATGGCG
+TTGGCCTTGGCAACCCGGAACGGTCAAGGCTTGTGCGCTATCGAGGTGAAAATCCGAGGGCAATGCTACCAGCTC
+				</data>
+				<hit pos="448" idx="1" rc="n" pvalue="7.6e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+GTCTTCGAGGCTGCTGAAGGCCCTGGAAATGATCCCGTCGAACGGCACATCAGGCTGATAATTTTCTGCACGGCT
+GTGGATAACTTCAAGATTGTCCAGTTTCAGCTCCAGTTTGACCTGTGTCTGAAACCGGGTCTTCTTGCCGTTGCT
+				</data>
+				<hit pos="675" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+GTGCTGAGCCTCGCTGAGGTCAATGCCCAATTCCCGGGCACCTGTGGATAACTCTTGGGCATGTTGCGGGGTGAC
+				</data>
+				<hit pos="1018" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CATAGAACTCAAGCGCTTTGCTCCAACTGACGGCCCGCGCCGCGTTTTTTCAAATGAATCATCAACAGGGAAATA
+				</data>
+				<hit pos="1083" idx="1" rc="n" pvalue="3.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GGATCAGCACAGCCCTGGCCTGTGAGGGCAATCAGGCTGTTGTAATCGATTTCCGGACGGGTCAGCAGATTGAGC
+				</data>
+				<hit pos="1362" idx="1" rc="n" pvalue="9.6e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002505.1" comment="Vibrio cholerae O1 biovar El Tor str. N16961 chromosome I, oric at -260 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="8.05e-03" evalue="0.95"/>
+			<seg start="301">
+				<data>
+CGCATCACTTTATCTTCGATCGATGGACAGTAACGCGGGCCGATCCCTTCGATGATCCCGGCATACATAGGGCTG
+CGATCAAGGTTAGCGCGGATCACATCATGGGTGCGCTCATTGGTGTGCGTGATGTAACACGGAATTTGGCGTGGA
+				</data>
+				<hit pos="354" idx="2" rc="y" pvalue="4.2e-05" match="++++++ ++"/>
+				<hit pos="372" idx="2" rc="n" pvalue="9.5e-05" match="++++ ++++"/>
+				<hit pos="388" idx="2" rc="n" pvalue="2.1e-05" match="++  +++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TTGACTAAATGACCTTTACCGATCCCACCAATGGCAGGGTTACAGGACATTTGGCCTAGGGTGTCAATATTGTGG
+GTAAGAAGTAACGTACGCTGTCCTGTACGTGCTGCAGCGAGAGCGGCTTCCGTTCCTGCGTGACCGCCACCAACC
+				</data>
+				<hit pos="996" idx="2" rc="y" pvalue="9.5e-05" match="+++++++ +"/>
+				<hit pos="1046" idx="0" rc="n" pvalue="3.4e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+TATAAAGATCTATATAGAGATCTTTTTATTAGATCTACTATTAAGGAGCAGGATCTTTGTGGATAAGTGAAAAAT
+				</data>
+				<hit pos="1333" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GATCAACAAGATCATGCGATTCAGAAGGATCAGATCGTGTGATCAACCACTGATCTGTTCAAGGATTAGCTGGGA
+TCAAAAACCTATGTTATACACAGCCACCTTGGGATCTAAAACTTGTTATATGGATAACTATAGGAAGATCACCGG
+				</data>
+				<hit pos="1419" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="1439" idx="0" rc="y" pvalue="1.6e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+ATAATCGTATAGTTATCCACATGAGATTTGATTGAAAAAGCATCAATCAATTTTTTCACTACCGTTAAATTTATC
+CACAATCCAAAAAAAAGAGCGGCATTAAGCCGCTCTGCATGGAATAGGTCATTATTTAGAAGCGATTGATGACGC
+				</data>
+				<hit pos="1513" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1571" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+TATTATCCGGGTACTCACCAGCCCCGTGGGTTGAGGTGATGATCAGCCAAGTCCCTTTAGCAGGGATCTCACTCA
+				</data>
+				<hit pos="1935" idx="2" rc="n" pvalue="4.2e-05" match="++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_003143.1" comment="Yersinia pestis CO92 chromosome, oric at 1490 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="8.59e-03" evalue="1"/>
+			<seg start="226">
+				<data>
+GAACCCAACTGAAGTAAAGAGCTGGCATTGTACTCTGTGAATCAGCTGGGATCTAGCTGTGGATAATGTGGGTAT
+				</data>
+				<hit pos="270" idx="2" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="283" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+TCTCATCAATAGTCTGGATTTTGTTGATAAGTACCTGCTGCAATGCATCAATGGATTTACACATCACTTTAATAA
+				</data>
+				<hit pos="397" idx="0" rc="n" pvalue="2.2e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+GTACACAAGCTGCGGTAATGATCCCTGCTTGCCGCATCTTTTCTACTCTTACATGAATAGTTCCGGGGCTAACAG
+				</data>
+				<hit pos="620" idx="2" rc="y" pvalue="4.2e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="676">
+				<data>
+CGAGGTTTTTGGCTAATTCAGCATAGGGTGTGCGTGCATTTTCCATTAATGCTTTCAGGATGCTGCGATCGAGAT
+				</data>
+				<hit pos="737" idx="2" rc="n" pvalue="9.5e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+AAGCCAGTAGGCATAACTAAACATAACGAATTGAGAAAACAGCAATGAAAAAACAATTTATCCAAAAACAACAAC
+				</data>
+				<hit pos="958" idx="0" rc="y" pvalue="5.6e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="1426">
+				<data>
+TGCCGGATCATATTCAGTTTATCCACAGTGAAAGCCTGCGGGCCAGATTCCCTGATTTAGATGCTAAAGGCCGTG
+				</data>
+				<hit pos="1444" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002947.4" comment="Pseudomonas putida KT2440 chromosome, oric at 450 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="8.69e-03" evalue="1"/>
+			<seg start="1126">
+				<data>
+AATTCCTGTTGCAGGCGCTGCAGGGCCATGGCCTCTTCCAGTGGGTTGAGGTCTTCGCGCTGGATGTTCTCGATC
+				</data>
+				<hit pos="1149" idx="1" rc="y" pvalue="4.1e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+AATGCCATGGCGATGGCGGCTTCGTCGGGCACTTCGCGGACCATGGCCGGGATCGTGTCCAGGCCGGCCTGCTGG
+				</data>
+				<hit pos="1209" idx="1" rc="y" pvalue="4.9e-05" match="+++++ +++"/>
+				<hit pos="1246" idx="2" rc="n" pvalue="4.2e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+CCTTAAGTTGTTTGTGCAGTGCGTGATGGACGGCGTTGACGGCGTACCAGTTCCCCAGCCAGGGCCAGGTACGCC
+				</data>
+				<hit pos="1633" idx="1" rc="n" pvalue="1.7e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+AGCGCGCCCCGCGATTGCTTGTCGTAAGCAAGGGCTGGCATGCCGAAGCTGGGGGCCTCGGCCAAGCGAATGTTG
+				</data>
+				<hit pos="1705" idx="1" rc="n" pvalue="6.8e-05" match="+++  ++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+ATGTTATCCACAAGGTCGCTGAGACCTTCCAGTGCGTAGTACTCACACTGCATGGGGATAATCACGCCATCGGAA
+				</data>
+				<hit pos="1879" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_013853.1" comment="Streptococcus mitis B6, oric at 2144260 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="9.18e-03" evalue="1.1"/>
+			<seg start="301">
+				<data>
+TATCCCCAAGTGTACTTTTTTAAGAAAAAAGCCGGGAAAATTCCCAGCTTTGCTACTATATTGATCCCAGCAGGA
+				</data>
+				<hit pos="363" idx="2" rc="y" pvalue="2.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TTCTTTATTTTTTAACATCTTATTCACAAAATAAAAGGTTAATTTTAACCGAGAAAACCACAGATTTTTGAAAGT
+TATCCACAATCTGTGAAAAACTTTTGTGTTTAAGTTATAATTAAGCTAGTCAGTTTATACTTTCAGTAATTTCAA
+				</data>
+				<hit pos="995" idx="0" rc="y" pvalue="4.0e-05" match="++++ ++++"/>
+				<hit pos="1050" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1062" idx="0" rc="n" pvalue="8.9e-05" match="++++ + ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_009009.1" comment="Streptococcus sanguinis SK36 chromosome, oric at 2387820 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="9.32e-03" evalue="1.1"/>
+			<seg start="1051">
+				<data>
+CTCTTTTCTTGGCCTAGAAACGATCCCAGCTGTCGTCAAAGAATTATCTGATGATGACATGCTGAAACAGGCCAT
+				</data>
+				<hit pos="1072" idx="2" rc="y" pvalue="2.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+ATTATCCAAAGAAGTTCGTCAAGCTATCAAGGAAGAAGAGATATCTCAAGGACATTCTCGCCTGCTGGTCCCCTT
+				</data>
+				<hit pos="1277" idx="0" rc="y" pvalue="5.6e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="1576">
+				<data>
+CGAAGAAGAATATCAAAGAATTATAAACAGTTTTAAATAAACTGTTATTTTCTTTTTTAAAAATAACAAAATTAT
+				</data>
+				<hit pos="1596" idx="0" rc="y" pvalue="7.4e-05" match="++++  +++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+CCACTGTTAAATTAATTAGGAAGCTTATTAAAATAAGAAATTTTAGCTTTATTCACATTCTGTGGATAACTTCAG
+				</data>
+				<hit pos="1699" idx="0" rc="y" pvalue="4.0e-05" match="++++ ++++"/>
+				<hit pos="1711" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+CTAACAATGTGAATTCTTTTCCAGTTCTTGTGGAAAACTTTGAACCTTTATGATAAAATAAGATGCGTATGAATC
+				</data>
+				<hit pos="1754" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_008596.1" comment="Mycobacterium smegmatis str. MC2 155 chromosome, oric at 6988460 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="1.09e-02" evalue="1.3"/>
+			<seg start="376">
+				<data>
+ATCATGGCGGTGACCGCCGAGTACTTCGAGACCACGGTCGAGGAGTTGCGCGGCCCGGGCAAGACCAGGGCGCTG
+GCCCAGTCTCGCCAGATCGCGATGTACCTGTGCCGTGAGCTCACCGACCTGTCGCTGCCCAAGATCGGTCAGGCG
+				</data>
+				<hit pos="427" idx="1" rc="y" pvalue="1.5e-06" match="+++++++++"/>
+				<hit pos="444" idx="1" rc="y" pvalue="2.0e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+CTTGAAGTTTCGCGTCGTCCGCGAGGACTTCGCGGATGCGGTGGCCTGGGTAGCCCGCAGCTTGCCGACCCGGCC
+				</data>
+				<hit pos="1313" idx="1" rc="n" pvalue="6.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+TGTGATCGCGTCGGATCTGTTCGCCGAGGCCATCGGCCAGGTGGCGGTGGCGGCAGGCCGCGACGACACGCTGCC
+				</data>
+				<hit pos="1693" idx="1" rc="y" pvalue="9.9e-05" match="++++  +++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+GGTGCGTGAGCTCACGTGGGTCACCACGGCAGGTGACGTCGAGGCCGCGGTGCTGGTGCCGGCGAAGACGCTGGC
+CGAGGCCGCCAAGGCCGGCACGGACGGCAACCAGGTGCATCTGGCGCTGGGGTCCGGTGCGTCGGTCGGCAAGGA
+				</data>
+				<hit pos="1873" idx="1" rc="y" pvalue="6.8e-05" match="++++  +++"/>
+				<hit pos="1921" idx="2" rc="n" pvalue="1.3e-05" match="++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_018658.1" comment="Escherichia coli O104:H4 str. 2011C-3493 chromosome, oric at -410 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="1.24e-02" evalue="1.5"/>
+			<seg start="1201">
+				<data>
+CACTTAGCGAGTTCTGGAAAGTCCTGTGGATAAATCGGGAAAATCTGTGAGAAACAGAAGATCTCTTGCGCAGTT
+				</data>
+				<hit pos="1225" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+CCCGGCCCCGGCAGAACCGACCTATCGTTCTAACGTAAACGTCAAACACACGTTTGATAACTTCGTTGAAGGTAA
+				</data>
+				<hit pos="1804" idx="1" rc="y" pvalue="4.5e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+ATCTAACCAACTGGCGCGCGCGGCGGCTCGCCAGGTGGCGGATAACCCTGGCGGTGCCTATAACCCGTTGTTCCT
+				</data>
+				<hit pos="1888" idx="1" rc="y" pvalue="2.0e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002946.2" comment="Neisseria gonorrhoeae FA 1090 chromosome, oric at 1891450 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="1.64e-02" evalue="1.9"/>
+			<seg start="1">
+				<data>
+CCCGATTCCGCGCCCGCCGGATTGCTGATTGAAAAGCTTACCTCCCCATTTTAACTTTGCGCACTTATCACGGTA
+				</data>
+				<hit pos="10" idx="1" rc="n" pvalue="9.9e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+CGGGATGAAGCCTACCCTATAGCCCGCCTTTTATAGCGGATTAACAAAAACCGGTACGGCGTTGCCCCGCCCCGG
+CTCAAAGGGAACGGTTCCCTAGGGCGCCCAAGCACCAGGCGGATCGGTTCCGTACCATTTGTACTGCCTGCGGCC
+				</data>
+				<hit pos="443" idx="1" rc="y" pvalue="8.8e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+CGCCGCCTTGTCCTGATTTTTGTTAATCCGCTATGCTTATACACAACCAGCCAAAAGCCATCTTATTGAAATATC
+				</data>
+				<hit pos="562" idx="0" rc="y" pvalue="1.6e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+ATAAGATTTACTCAAAAATCTTATTTTCTCCACCACTTATGCACAAACTCGGATACACACTCTGCCAATATGCAG
+				</data>
+				<hit pos="637" idx="0" rc="y" pvalue="3.0e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+ATTCCCGTTCTTAAAGGCACCGGCAGCCATTCGGTAAAGAAAAGCGGGATGTCGTCCGCACAACAAGCAAACTAT
+CCACAAAACCTATTCCCCACGAAAAACAATCCACAGGTATGCACAAAAGGGAATCCTCCTTACCGACACCCTTTT
+				</data>
+				<hit pos="822" idx="0" rc="y" pvalue="4.4e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+AAAACGGCAATTCAGATGATTTTAAAAATAAAAAAAAGTTACCCACAGAAAATTCCCCATATCAATATAATCATC
+				</data>
+				<hit pos="939" idx="0" rc="y" pvalue="3.4e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+TTTGTTTGTCGGCGCGGGCGTATCCGGCGGCGAAGAAGGCGCGCGGCGCGGGCCGTCCATCATGCCGGGCGGGGA
+				</data>
+				<hit pos="1511" idx="1" rc="y" pvalue="3.0e-06" match="+++++++++"/>
+				<hit pos="1545" idx="1" rc="y" pvalue="3.0e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_003112.2" comment="Neisseria meningitidis MC58 chromosome, oric at 13690 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="1.64e-02" evalue="1.9"/>
+			<seg start="451">
+				<data>
+GCGGCAATCGCCTGAAAAATCGGCTTGACCGCATCCCAAGCGCGCTTATCCCCGCCCGGCATAATGGACGGCCCG
+CGCCGCGCCCCTTCTTCCCCGCCGGACACGCCCGCGCCGACAAACAAAATCCCTTTTTCAGCAAGGTAATGTGTC
+				</data>
+				<hit pos="521" idx="1" rc="n" pvalue="3.0e-06" match="+++++++++"/>
+				<hit pos="555" idx="1" rc="n" pvalue="3.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+CTGTGGGTAACTTTTTTTTATTTTAAAAATCATCAGGATTTCTTTTTTTTAGGGTGTCGGTAAGGCGGATTCCCT
+				</data>
+				<hit pos="1127" idx="0" rc="n" pvalue="3.4e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+TTGTGTATAAGTGGTGGAAAAAATGAGATTTGCGGGTAAATCTCACAATATTTCAGTCAGATAACTTTGGATTGC
+				</data>
+				<hit pos="1427" idx="0" rc="n" pvalue="1.6e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+TTGTGTATAAGTAAACTTTCGGATGGGGATACGTAACGGAAACCTGTACCGCGTCATTCCCACGAACCTACATTC
+				</data>
+				<hit pos="1502" idx="0" rc="n" pvalue="1.6e-05" match="++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_007643.1" comment="Rhodospirillum rubrum ATCC 11170 chromosome, oric at 4158870 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="1.78e-02" evalue="2.1"/>
+			<seg start="226">
+				<data>
+TCGGCTTCCTGCGGGCGCCCGAGTCCAATTACCTGCCCGGGCCCGATGATATTTATGTCTCGCCCAGTCAGGTCC
+				</data>
+				<hit pos="236" idx="1" rc="n" pvalue="3.2e-05" match="+++++++++"/>
+				<hit pos="260" idx="1" rc="n" pvalue="1.5e-06" match="+++++++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+GTCGCTTCGGTCTGCGCACCGGCGATACGGTCGAGGGCCAGATCCGCGCCCCCAAGGATGGCGAGCGCTATTTCG
+				</data>
+				<hit pos="341" idx="2" rc="y" pvalue="2.1e-05" match="+++++  ++"/>
+				<hit pos="360" idx="1" rc="y" pvalue="4.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+TCGATCTCATCACGCCGCTGGGCAAGGGCCAGCGCGCCCTGATCGTGGCGCCGCCGCGCACCGGTAAAACGGTGA
+				</data>
+				<hit pos="552" idx="1" rc="y" pvalue="4.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TCCTTCTTGATTCGATCACCCGTCTCGCCCGCGCCTATAACACCGTGGTGCCCAGTTCGGGCAAGGTGCTGACCG
+				</data>
+				<hit pos="852" idx="1" rc="n" pvalue="3.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+GTGGTGCGGCGGCCGGCCAGATCCTGATGGGCTTTGACCGCATCGGCCAGGGCATAGGTCTGGCCGATATCGATC
+				</data>
+				<hit pos="1470" idx="1" rc="y" pvalue="9.6e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+TGGGCCAGGGTCGGCCGGGTCAGGAACAGCGAGCCCTTTTGGCTGAGCAGGGCGGGGGCGATCGGCGGCACCGGT
+				</data>
+				<hit pos="1626" idx="1" rc="y" pvalue="4.1e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+CCGACCCCGTCGTAAACCACGGGTACGCCCTGGCCGCCGGTGATCTCGCGTACCCGCTCGACGAAGTTCTCGGTG
+				</data>
+				<hit pos="1752" idx="1" rc="n" pvalue="9.6e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+CTGTAGTTGATGACGTGGCTGCAGCCGTGGGCGCGGGCGAGGGCGGCCTTTTCGTCGCTGCCAACCGTGCCGATG
+				</data>
+				<hit pos="1830" idx="1" rc="y" pvalue="3.0e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_014121.1" comment="Enterobacter cloacae subsp. cloacae ATCC 13047 chromosome, oric at 5288300 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="1.86e-02" evalue="2.2"/>
+			<seg start="1">
+				<data>
+TCCACGGCCCGGGCTTCAATCCATTTTCATACCGCTTTACGCGAGGCAGACCACCATGTTTTATCAGGATCCTTT
+				</data>
+				<hit pos="6" idx="1" rc="y" pvalue="1.5e-06" match="+++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+TGACGTCATCATCATTGGCGGGGGTCACGCAGGCACTGAGGCCGCAATGGCCGCAGCGCGAATGGGTCAGCAGAC
+				</data>
+				<hit pos="93" idx="2" rc="n" pvalue="2.2e-05" match="++ +++ ++"/>
+			</seg>
+			<seg start="301">
+				<data>
+GATACTAAACGCCAGTAAAGGCCCCGCTGTCCGTGCGACCCGCGCTCAGGCAGACCGGGTACTTTATCGTCAGGC
+				</data>
+				<hit pos="337" idx="2" rc="y" pvalue="2.9e-05" match="++ ++  ++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TAACCTCGATCGCAGCCCGATGTACGCCGGCGTGATCGAAGGGATCGGCCCACGCTATTGCCCGTCGATCGAAGA
+				</data>
+				<hit pos="833" idx="2" rc="y" pvalue="9.5e-05" match="++++ ++++"/>
+				<hit pos="872" idx="1" rc="y" pvalue="4.1e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+ACAGGGCCTGCTGGCCGGTCTGAACGCCGCCCGTTTCTCTGCCGAGAAAGAGGGCTGGGCTCCGGCGCGTTCTCA
+				</data>
+				<hit pos="1254" idx="2" rc="n" pvalue="4.2e-05" match="++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_000964.3" comment="Bacillus subtilis subsp. subtilis str. 168 oric at 4215680 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="2.14e-02" evalue="2.5"/>
+			<seg start="601">
+				<data>
+TGCGGCGACGGCGTGCTAAAACTAGACGACCGTTTTTTGAACTCATACGGCTTCTGAAGCCATGAACTTTGCTGC
+				</data>
+				<hit pos="604" idx="1" rc="y" pvalue="2.3e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+ACATTACCAACCCCTGTGGACAAGGTTTTTTCAACAGGTTGTCCGCTTTGTGGATAAGATTGTGACAACCATTGC
+				</data>
+				<hit pos="990" idx="0" rc="n" pvalue="3.0e-05" match="++++++ ++"/>
+				<hit pos="1003" idx="0" rc="y" pvalue="6.2e-05" match="++ ++ +++"/>
+				<hit pos="1024" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+AAGCTCTCGTTTATTTTGGTATTATATTTGTGTTTTAACTCTTGATTACTAATCCTACCTTTCCTCTTTATCCAC
+AAAGTGTGGATAAGTTGTGGATTGATTTCACACAGCTTGTGTAGAAGGTTGTCCACAAGTTGTGAAATTTGTCGA
+				</data>
+				<hit pos="1118" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1130" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1174" idx="0" rc="y" pvalue="3.0e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+AAAGCTATTTATCTACTATATTATATGTTTTCAACATTTAATGTGTACGAATGGTAAGCGCCATTTGCTCTTTTT
+				</data>
+				<hit pos="1228" idx="0" rc="y" pvalue="6.2e-05" match="++ ++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_007644.1" comment="Moorella thermoacetica ATCC 39073 chromosome, oric at 2710 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="2.29e-02" evalue="2.7"/>
+			<seg start="76">
+				<data>
+GCCCGGAGGTTCCAACAGCCAGCCATCTATCCCTTATTCACAAATCCACAGGCCCTATTACTACGGTTACTAAGA
+				</data>
+				<hit pos="109" idx="0" rc="y" pvalue="4.0e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+ATCGTTTAAGATGATGATGGAGGAAAAAATGCCATGCATATCCTTTGTCCTCAACCCCAACTTGTTAATGCTGTG
+CAAAAGGTATACCGGGCGGTAGCCACAACGACAACCTATCACGCTATTACCGGGATTCTATTGCAGGCCCATGAA
+				</data>
+				<hit pos="222" idx="0" rc="n" pvalue="7.4e-05" match="++++ + ++"/>
+			</seg>
+			<seg start="976">
+				<data>
+GATCTCCTGGACACCGTTGAACGGGCTACCTTACTGGCCCGGGATGAGAATAAAGCCAGGGCCCATATTATTATT
+				</data>
+				<hit pos="1030" idx="1" rc="n" pvalue="1.7e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+CTTACCTGGGATTGCCGGCCCGGGCTAAATATTATTTTTGGGCCCAATGCTGCCGGTAAAACTAATCTCCTGGAA
+				</data>
+				<hit pos="1592" idx="1" rc="y" pvalue="1.5e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+GCCATTGGTTACCTGGCCCTCGCCCGATCCTTCAGGCAGCAACAGGACCAGCAATTGTTGACCTGGGGAGCAAGC
+				</data>
+				<hit pos="1666" idx="1" rc="n" pvalue="1.3e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_019382.1" comment="Bordetella bronchiseptica 253, oric at 3687420 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="2.31e-02" evalue="2.7"/>
+			<seg start="76">
+				<data>
+TGGCCAGCCCCAGGCCCGCCCCCGACTTGTTCTTGCCGGCTGCGCCCCGGCGGAACCGTACGCTGGCGCGCGCAA
+				</data>
+				<hit pos="118" idx="1" rc="y" pvalue="8.8e-05" match=" ++++++++"/>
+				<hit pos="140" idx="1" rc="y" pvalue="2.0e-05" match="+++++++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+ACTCGACAGCCTGTACCCGGACCGGCGCGGCCTGCACATCCAGCCCCAGGTCCAGTTGCCTGGCCCGGGCAGCCG
+				</data>
+				<hit pos="362" idx="1" rc="y" pvalue="1.5e-06" match="+++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+GCGAGGCGTCCTTGGCGCGCGCCAGCGCGAGCATCTGGTTGGTGGTGCGTACCGCCCTGTCCAGGCCGTCCTGCA
+				</data>
+				<hit pos="464" idx="1" rc="y" pvalue="2.0e-05" match="+++++++++"/>
+				<hit pos="504" idx="1" rc="n" pvalue="7.6e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="976">
+				<data>
+GCCGCGCCAGCGCCGCCACCCGTACCGGCTGGCCCAGGTACTCGGCGTAGAAAAACTGCGGCTGGCCGGAGACCA
+				</data>
+				<hit pos="981" idx="1" rc="n" pvalue="2.0e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+TGGATATGTTGTGGTCGATGGATCGCAGCGCTCCGGAAAGCGAGCGGTCGTAGGCGATGTCGACCTGGTTGCGCA
+				</data>
+				<hit pos="1221" idx="2" rc="y" pvalue="9.5e-05" match="++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002929.2" comment="Bordetella pertussis Tohama I chromosome, oric at 69990 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="2.34e-02" evalue="2.8"/>
+			<seg start="151">
+				<data>
+AGCAATTGATCGCCCATCAAGTTTGTGTGCCTGAAGCGGCCCGCGCCTATGGGGTCACCGCGCCGACTGTGCGCA
+				</data>
+				<hit pos="189" idx="1" rc="n" pvalue="3.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+GAGCGATTGCGCCGGCCAAGGCGCTGGCTATCGTGGAGCTGCGCCGCAAGCGGCTGACCCAAGCGCGCATCGCCC
+				</data>
+				<hit pos="320" idx="1" rc="y" pvalue="2.0e-05" match="+++++ +++"/>
+				<hit pos="356" idx="2" rc="y" pvalue="1.8e-05" match="++ ++ +++"/>
+			</seg>
+			<seg start="376">
+				<data>
+AGGCGCTGGGCGTGTCAGCCAGCACCGTCAGCCGCGTCCTGGCCCGCGCCGGTCTGTCGCACCTGGCCGACCTGG
+AGCCGGCCGAGCCGGTGGTGCGCTACGAGCATCAGGCCCCCGGCGATCTGCTGCACATCGACATCAAGAAGCTGG
+				</data>
+				<hit pos="417" idx="1" rc="n" pvalue="3.0e-06" match="+++++++++"/>
+				<hit pos="449" idx="1" rc="y" pvalue="6.8e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+GACGTATCCAGCGCCCTGGCCACCGGGTCACGGGCAACCGACGCGATACCGTTGAGGGGGCCGGCTGGGACTTCG
+				</data>
+				<hit pos="538" idx="1" rc="n" pvalue="9.6e-06" match="+++++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+GCTCGGCCTTTCGCAGCCGCGCCTTCGCCGCGCTGTGCCATGAGCTGGGCATCAAGCACCGCTTTACCCGACCTT
+				</data>
+				<hit pos="771" idx="1" rc="n" pvalue="3.2e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1951">
+				<data>
+CGGGACGTTGGGCCGCGTGCCGGCGCCGTTCCTGCTGCGATCGGACAACG
+				</data>
+				<hit pos="1969" idx="1" rc="n" pvalue="6.0e-06" match="+++++++++"/>
+				<hit pos="1984" idx="2" rc="n" pvalue="9.5e-05" match="++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_006350.1" comment="Burkholderia pseudomallei K96243 chromosome 1, oric at 4074470 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="2.83e-02" evalue="3.3"/>
+			<seg start="226">
+				<data>
+CCTTCTTCGCCGCCGTGCGGCCGCGCGCGCTCAGGCGCACCGCGAGTGCGCGGCCGTCGTCGAGCGCGCGCCGCT
+				</data>
+				<hit pos="289" idx="1" rc="n" pvalue="2.0e-05" match="+++++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+CGAGAGCGGAAAATCGCACAGCTAAGTTATCCCACCAAATCTGTGGATAACACCCAAATAACCACAGGAACGAAC
+				</data>
+				<hit pos="792" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+CAGCTCGATCCACTTCGTTGTCAATGTCACAGGCCCTTGACTTTGCGGCGAAATATCAAGTTATCCACAGAATCG
+GCGGGGGCTTGTTAACTACTACTACGTTTACATACGTATACGTCGAGGTAAACCTAAACCCGGGCTCGCCGGGTG
+				</data>
+				<hit pos="961" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="975" idx="1" rc="y" pvalue="4.1e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+GCGCTCGCCCGTCTGCGGATTCACGCAGGTGCCCTCGAGTCCGAAGCGGCATGCCTCGAAACGGTTGAACGTGTA
+				</data>
+				<hit pos="1276" idx="1" rc="n" pvalue="4.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+TTGCTGGAATGCGTGCGTGCCGCCGCCGCAAAGGCCGACGTTGAGCTGGTCGGCCGCGCTCACGAGCGTGTCGCG
+				</data>
+				<hit pos="1894" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_010175.1" comment="Chloroflexus aurantiacus J-10-fl chromosome, oric at 1967130 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="2.96e-02" evalue="3.5"/>
+			<seg start="376">
+				<data>
+GAGGCAACCGGGCAGCAAGGGCTGTGGCCAGCGCCGGTGGAATACCACTTGCCTCTGCGGTCAGAATTAACTCAG
+				</data>
+				<hit pos="402" idx="1" rc="n" pvalue="2.0e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+ATCAAAATAATAAAGCGCAAGAAGAAATTCGTCATGATCGTAGGCTTGTGGAAAGTGTGGACAGCAGTCTTTCCA
+				</data>
+				<hit pos="722" idx="0" rc="n" pvalue="9.3e-05" match="++++++ + "/>
+			</seg>
+			<seg start="751">
+				<data>
+GCTTATTCTAATGCCTCAAACCGCATGTGGACGACTTGTGAACGTCTATCCACAAAAGGAGTGATCAAAACAATG
+				</data>
+				<hit pos="796" idx="0" rc="y" pvalue="4.4e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TACGAAGTGTCTTACGCAAATCCTCCACGAGCTATCAACGACTTGTTCCGCAGGTTATCCACAAACAGTCCAAGT
+TTTCCACATAATATCGCAAGTTATCCACAAGCCGGTCAAAATAACAGAGGGCGGTTTAACCGCCCTCTGTTAAAC
+				</data>
+				<hit pos="880" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="900" idx="0" rc="y" pvalue="9.7e-06" match="++ ++++++"/>
+				<hit pos="921" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+CTGAATGGCCATCGCGATGGCATCGGCTTCAAACTGGCCGATCCAGATGGGCAGGTAGCGATTCCCTTCGGTTTC
+				</data>
+				<hit pos="1432" idx="1" rc="y" pvalue="9.9e-05" match="+++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_007606.1" comment="Shigella dysenteriae Sd197 chromosome, oric at 4309300 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="3.20e-02" evalue="3.8"/>
+			<seg start="151">
+				<data>
+CTGATGTTGGCGCACGCGATTAAGCAATCCGGCCAGGGTGAAAACGACGATAACGACTGCCACAACGGCTAACAG
+				</data>
+				<hit pos="159" idx="1" rc="y" pvalue="4.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+AGCCGGGGCCAGACTGACATCGGCATTAAAATCACGGACCACATTAATGATCCCTGGCTGGATCAGGTCCGTCGA
+				</data>
+				<hit pos="1202" idx="1" rc="n" pvalue="4.5e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+GCCTGGAAAGCACCTCGGGGAATGGGAAATTACCGGGTGAGAATGGTTTTGTTAGTCGCTAAAGTCGGGCCATCT
+TATCAACAGGTGACGGATCGCCATGACAAACTTCACGACCAGTACGCCGCATGACGCATTATTTAAATCCTTTCT
+				</data>
+				<hit pos="1800" idx="0" rc="y" pvalue="2.2e-05" match="+++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002937.3" comment="Desulfovibrio vulgaris str. Hildenborough chromosome, oric at 3533710 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="3.25e-02" evalue="3.8"/>
+			<seg start="676">
+				<data>
+ACTTCAATGCCATCAATGGCAAGCGGGCTGCCGCCATCGCCACAACTCCCGGCCCGGGCCATGCTGGCGGCGCAA
+				</data>
+				<hit pos="708" idx="1" rc="n" pvalue="4.9e-05" match="+++ +++++"/>
+				<hit pos="726" idx="1" rc="y" pvalue="1.5e-06" match="+++++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+CTGAAAGGCGGGCGCACAGCAGAGGCACGCACCGCAAGCGGCACCGGAAGACCGAGTCTTGCGAAATCGCGGCGC
+				</data>
+				<hit pos="757" idx="1" rc="y" pvalue="9.9e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+TTCCCACCCCGTCCGCAACAGCAGTCCCATACGGGACCCGGCCATACCTCGGGTTCAAGTGCCGCAAGGGCCGAC
+				</data>
+				<hit pos="934" idx="1" rc="y" pvalue="6.2e-05" match="++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_004347.2" comment="Shewanella oneidensis MR-1 chromosome, oric at 80 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="3.25e-02" evalue="3.8"/>
+			<seg start="376">
+				<data>
+AAAGGCTAAACCCATTTGGGTAACTACACCCACAACGTGATCGTTTTCCACAACAATATCATCTACTGCTTGTTG
+				</data>
+				<hit pos="419" idx="0" rc="y" pvalue="9.7e-06" match="++ ++++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+TCGAGTGGCTCTTACTGCTGGACCTTTACTCGAGTTTAATGTTCTAAATTGGATCCCTGCATAGTCGGTAGCGAT
+				</data>
+				<hit pos="577" idx="2" rc="y" pvalue="4.2e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="976">
+				<data>
+CGCACTTTGCTGTGGGTAAGCCTATTTTCCCTTTTAGATCATTAGGTAACGTGTAATCAATCCTGTGATCTACGC
+				</data>
+				<hit pos="986" idx="0" rc="n" pvalue="3.4e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+GAGATCTATTACCATAAAAGGTGGGGATAGATCCGCCTTTTATCCACAGGGTGGATCTTTGAGCGGATCATGATG
+				</data>
+				<hit pos="1090" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+TGAATAGCACAGAGGTTGATCAGATCTAAATAATAGTTTATCCACAAAAATATACATAAAATTAGTTTTTTGTGG
+ATAATTTGGATCTAAACTGTGGGTTGTTTAAGGTATTTTCCAAAAGAAGATCTTAAATTTGATCTTGCCATTGTG
+				</data>
+				<hit pos="1163" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1196" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+CCAACCACGCTAAAGCAGGGTCTTCTGGCACAGGATCTTGTTGTACATCGATCTGGATCTTATCCACAACGGCTT
+				</data>
+				<hit pos="1335" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_004337.2" comment="Shigella flexneri 2a str. 301 chromosome, oric at 3821370 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="4.23e-02" evalue="5"/>
+			<seg start="376">
+				<data>
+TTATTTGTAAAATTAATTTATCTGACAATAACATTTATTGTTGATAATGAGAATCATTATTGACATAATTGTTAT
+				</data>
+				<hit pos="414" idx="0" rc="n" pvalue="2.2e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+TATTTACCGTGACTGTCAGGGCAGCGCTTTTATGCCTCACGCGACAGACTGGCTCGATTCTATTGGCGAGGCGCA
+GGCGGAAAATATTTTCACCCATGAGCAGTTGCTGCGCTATTTCCCTTATTACCTGCTGGTTAACTCCACTTTTGC
+				</data>
+				<hit pos="1870" idx="1" rc="y" pvalue="1.3e-05" match="+++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002945.4" comment="Mycobacterium bovis AF2122/97 genome assembly, chromosome: Mycobacterium_bovis_AF2122/97oric at 4349590 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="4.39e-02" evalue="5.2"/>
+			<seg start="226">
+				<data>
+TCCGCAAGCCGCATCGCAGTTGCTGCTCCAACCGAGCCGAGGAGACATGCCGGCTGCTCGGCAGCGCGCGGATCA
+				</data>
+				<hit pos="291" idx="2" rc="n" pvalue="2.1e-05" match="++  +++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+GGTTGCGTGCACGAAGCACCGCAAATAAGCCCGGTGTTGCAATCAAGCACTGAGCGTGCGCCGACCCTTGCGTCG
+				</data>
+				<hit pos="579" idx="1" rc="n" pvalue="4.9e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+CCACTCACTGCCTTCCAACTCGATTGGCCCGCGGGACAGTCGGAGGTGGTTTTCGCTGCTGGCCGGCGCGGTCCC
+				</data>
+				<hit pos="811" idx="1" rc="y" pvalue="8.8e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TGGACTAATCCAGGTCGCAGCCGCATCGCCGACTTTCGGGCGACTGTTCGAGGGTACTTACGCGCCTTCGCCTGG
+				</data>
+				<hit pos="889" idx="1" rc="n" pvalue="3.2e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+CCGGACAACTTGAACCGGGTGTTTTCAACACGAGGATCGCGAGCCGTTGCCGGTAGGTTGCGGCTGGTTATCGAC
+				</data>
+				<hit pos="1147" idx="0" rc="y" pvalue="6.2e-05" match="++ ++ +++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GGTACTGTCCACATTTGTGGATAGCCATGTGGACAGTTCACCTGCCCACAACAACGGTTGTAGCTCGACCCGGAA
+				</data>
+				<hit pos="1216" idx="0" rc="n" pvalue="4.4e-05" match="++++++++ "/>
+			</seg>
+			<seg start="1801">
+				<data>
+CTGGCGTAACCAGCCTTAACCGTCGCTACACCTTTGATACGTTCGTTATCGGCGCCTCCAACCGGTTCGCGCACG
+CCGCCGCCTTGGCGATCGCAGAAGCACCCGCCCGCGCTTACAACCCCCTGTTCATCTGGGGCGAGTCCGGTCTCG
+				</data>
+				<hit pos="1875" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_000962.3" comment="Mycobacterium tuberculosis H37Rv, oric at 4411220 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="4.39e-02" evalue="5.2"/>
+			<seg start="226">
+				<data>
+CGCAAGCCGCATCGCAGTTGCTGCTCCAACCGAGCCGAGGAGACATGCCGGCTGCTCGGCAGCGCGCGGATCACC
+				</data>
+				<hit pos="289" idx="2" rc="n" pvalue="2.1e-05" match="++  +++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+TTGCGTGCACGAAGCACCGCAAATAAGCCCGGTGTTGCAATCAAGCACTGAGCGTGCGCCGACCCTTGCGTCGCC
+				</data>
+				<hit pos="577" idx="1" rc="n" pvalue="4.9e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+ACTCACTGCCTTCCAACTCGATTGGCCCGCGGGACAGTCGGAGGTGGTTTTCGCTGCTGGCCGGCGCGGTCCCTG
+				</data>
+				<hit pos="809" idx="1" rc="y" pvalue="8.8e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+GACTAATCCAGGTCGCAGCCGCATCGCCGACTTTCGGGCGACTGTTCGAGGGTACTTACGCGCCTTCGCCTGGTC
+				</data>
+				<hit pos="887" idx="1" rc="n" pvalue="3.2e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+GGACAACTTGAACCGGGTGTTTTCAACACGAGGATCGCGAGCCGTTGCCGGTAGGTTGCGGCTGGTTATCGACGG
+				</data>
+				<hit pos="1145" idx="0" rc="y" pvalue="6.2e-05" match="++ ++ +++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+TACTGTCCACATTTGTGGATAGCCATGTGGACAGTTCACCTGCCCACAACAACGGTTGTAGCTCGACCCGGAACC
+				</data>
+				<hit pos="1214" idx="0" rc="n" pvalue="4.4e-05" match="++++++++ "/>
+			</seg>
+			<seg start="1801">
+				<data>
+GGCGTAACCAGCCTTAACCGTCGCTACACCTTTGATACGTTCGTTATCGGCGCCTCCAACCGGTTCGCGCACGCC
+GCCGCCTTGGCGATCGCAGAAGCACCCGCCCGCGCTTACAACCCCCTGTTCATCTGGGGCGAGTCCGGTCTCGGC
+				</data>
+				<hit pos="1873" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_005125.1" comment="Gloeobacter violaceus PCC 7421 chromosome, oric at 1729700 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="4.52e-02" evalue="5.3"/>
+			<seg start="601">
+				<data>
+CTTCACTTTTCTTGAGACCGTTGAGTTCGATGGCTTGCAGGACTTTTTGGCGGAAGTCGTAACTGTAGGGTTTTG
+CCATGGCCGGTCGCCGAGAGACTACTGGTAGTTATAGCCTATGTCCTAATAGAGCTGACGACAGCTATACCATCC
+				</data>
+				<hit pos="675" idx="1" rc="n" pvalue="4.1e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+ATTTTTTTCGCGCCAGCGCCGGACGCTGGTTCTCGCAGCGCAATCGCCTCGACCTGACCGGCCGCCGCAGCGAGG
+				</data>
+				<hit pos="1137" idx="1" rc="n" pvalue="2.0e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GGAGTCGCTCCGAAGTCGAAATTGCCTGTCTGGAAGCCGACGATCCGCGCGCGATTGAATTGTGCCGTCTCGGCG
+				</data>
+				<hit pos="1242" idx="2" rc="y" pvalue="2.1e-05" match="+++++  ++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+GCGCCGTCGAAATCAAGGAGCGGTTACTGTTCGCCAGCCCGAACCTGCGCCTGCGCGCGGGCGTGGTCACCGGCC
+				</data>
+				<hit pos="1554" idx="1" rc="y" pvalue="6.2e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+CGGCGAAGTTGAGCTGGGATTTGAGTCTTGGGATCAAATTGGGCGCACTTACCCAGACGAGAAGTTCGAGATTGA
+				</data>
+				<hit pos="1888" idx="2" rc="n" pvalue="9.5e-05" match="++++++++ "/>
+			</seg>
+			<seg start="1951">
+				<data>
+GCGACGAATCGCCGAAGCCCGCCAGCCACACCTCCGGCGCCGGCTCGGCC
+				</data>
+				<hit pos="1986" idx="1" rc="y" pvalue="6.0e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_003902.1" comment="Xanthomonas campestris pv. campestris str. ATCC 33913 chromosome, oric at 260970 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="4.93e-02" evalue="5.8"/>
+			<seg start="226">
+				<data>
+ATCGAACTGTTTTCTGGAGTTAGGAATGTCCGACGAAATCCTCAACGGCGCCGCTGCGCCGGCCGACGCCGCTGC
+				</data>
+				<hit pos="281" idx="1" rc="n" pvalue="8.8e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+TGGCCCCGCTTTCACCATCGAAAAGATTTACGTCAAGGACGTTTCTTTCGAATCGCCGAACGCCCCGGCCGTCTT
+				</data>
+				<hit pos="362" idx="1" rc="n" pvalue="3.2e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TGGGGCACGGCCCTGGCGGCGCTGGTTGCCCGGCACGGTCACCCGACCGTGCTCTGGGGCCGCGATGCGGCGATG
+				</data>
+				<hit pos="834" idx="1" rc="y" pvalue="1.7e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="976">
+				<data>
+ACCACCGACCTGCAGCAGACCATCGCCGGCGCCAGCTGGATCCTGGTGGTGGTGCCGTCGCACGCGTTTACCGAA
+				</data>
+				<hit pos="1000" idx="1" rc="n" pvalue="6.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+ACAATCAAGCTGCTCGCGCCGCTGCGCCCAGCTGGCGCGGGCATCGCCTGGGCCACCAAGGGCTTCGAGCCGGGA
+TCCGGGCGCTTCCTGCATGAAGTGGCGCGCGACATCCTTGGCCCCAGCGTGCCGCTGGCCGTGGTGACCGGGCCC
+				</data>
+				<hit pos="1084" idx="1" rc="y" pvalue="3.0e-06" match="+++++++++"/>
+				<hit pos="1096" idx="1" rc="n" pvalue="9.6e-06" match="+++ +++++"/>
+				<hit pos="1119" idx="2" rc="n" pvalue="4.2e-05" match="++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_000922.1" comment="Chlamydophila pneumoniae CWL029 chromosome, oric at 841450 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="6.02e-02" evalue="7.1"/>
+			<seg start="1051">
+				<data>
+GGAAGTTTATGTGGTTTTGTTGTTCAAAACTTTGTTAAAACATTGTTCATTTTGTTGATAAGTGAGGATTTTGCA
+				</data>
+				<hit pos="1103" idx="0" rc="n" pvalue="2.2e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+TGTTTATAAACACAAGATCAACCCTTTTTCTACATCAATTTTTCAAAGAAAAATAGGATGAGGGAATTTTTGTTA
+				</data>
+				<hit pos="1126" idx="0" rc="n" pvalue="7.4e-05" match="+++  ++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GTTGTGTAGAAACTGTGATCTTTTGGCTTTGATTTGGATAAAAAATTTCTGTTTTCTCTCTGTTTTTTGTATGCA
+				</data>
+				<hit pos="1233" idx="0" rc="n" pvalue="5.6e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+AAAGTTTTAGAGGATGCTCGAATTGGCGGATCCCCGCTAGAAAAGTCCACAAGATACGTCTATTTCGATCAAAAG
+				</data>
+				<hit pos="1904" idx="2" rc="y" pvalue="8.2e-06" match="++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_013522.1" comment="Thermanaerovibrio acidaminovorans DSM 6589 chromosome, oric at 1791460 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="6.03e-02" evalue="7.1"/>
+			<seg start="451">
+				<data>
+TATCACCCAAGGGGGGGCCGCCCCCAGTTGATCCAGCCGGTCCGCCAGGTCCTTGGGGGTGTTGACCCCCAGGAA
+				</data>
+				<hit pos="494" idx="1" rc="n" pvalue="9.9e-05" match="+++ ++ ++"/>
+			</seg>
+			<seg start="751">
+				<data>
+CGCGTGCTGGACCAGGGGCATGTCGCACCCCACCGCGAAGGCCCAGCCGGAGCGGGCCTCCGCCAGGGCGGATCT
+				</data>
+				<hit pos="799" idx="1" rc="y" pvalue="4.9e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+GAGAGGAAGGGTGGCCTTCGACCCCAAGTACCTGATCCGGGTAATGCCGGCGTAGGGAGGGAAGCGGCGGGCGCG
+CGCATTAGACCGGCGCTCCGGGGGCCCCCCGGGGCGCCGGTTCGATTTTGAGGGGGGATGAGATTTGTACAGGGG
+				</data>
+				<hit pos="1345" idx="1" rc="y" pvalue="2.0e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+TGTTGCCATGACCATCGCGGGGAGCGACTCCGGCGGTGGGGCGGGGATCCAGGCGGATCTCAAGACCTTCATGGG
+				</data>
+				<hit pos="1466" idx="2" rc="n" pvalue="8.2e-06" match="++ ++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+CATGCTGTCCACCGGGGAGATCATGGAGGCGGTGGCGGAGGAGCTCTCCTCCTACCCGGGGCCGGTGGTGCTGGA
+				</data>
+				<hit pos="1678" idx="1" rc="y" pvalue="9.9e-05" match="++++  +++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+TCCCCTGGCGTCATTGGTGACCCCGAACCTGCCCGAGGCGGAGCGGCTGCTGGGCCTTCCGCCGGGATCCATAGC
+				</data>
+				<hit pos="1861" idx="2" rc="n" pvalue="4.2e-05" match="++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_008526.1" comment="Lactobacillus paracasei ATCC 334 chromosome, oric at 2894940 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="6.13e-02" evalue="7.2"/>
+			<seg start="751">
+				<data>
+GAACCTGTGGATAACTTGTGTCTCAAATTTTTAGGTTTCGGTCATTTCCACAAACCAATCACAGGAAATTCGCAG
+				</data>
+				<hit pos="756" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+ATAAACAGGGGTGTGAAGAAAGTTATCCACAAGTTGTCAAAGCCCTGTTCATATCTTGTGAAACACTTACTGCTA
+				</data>
+				<hit pos="848" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+CAAGGTTTTTGTTCCACAGTGTCAATGTGCATAACTGCGAATTTATTGTCATCACGCTTTCGTTGTCCCCGACCT
+				</data>
+				<hit pos="926" idx="0" rc="n" pvalue="3.0e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TGGGGATAGTCTGTTCGCACCCTGTTCATTTCTCAATTTTTTGTTTGTAGAAAACTGTGCTTTCTGTGGAAAACT
+				</data>
+				<hit pos="1040" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+AAACCCATTTAAATCCGAAATATACGTTTGACCACTTCGTGATTGGTAAGGGAAACCAAATGGCCCACGCGGCTG
+				</data>
+				<hit pos="1787" idx="1" rc="y" pvalue="4.1e-05" match="+++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_001263.1" comment="Deinococcus radiodurans R1 chromosome 1, oric at 2493940 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="6.30e-02" evalue="7.4"/>
+			<seg start="76">
+				<data>
+GCTCGCGGCCAGGGGCCACGCGCCGGCGCCTCCGCGCTGGCCGCACTTCGAGTTTTCTTTCCCTCCGAGGGGTGG
+				</data>
+				<hit pos="97" idx="1" rc="n" pvalue="6.0e-06" match="+++++++++"/>
+				<hit pos="109" idx="1" rc="n" pvalue="4.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+TCATTCGTGTCGGCCACGCCGCCGCCCACGATCAATTCGCCGTGCCACAGCCCGCGCACCTGCCGCATCAGGTCA
+				</data>
+				<hit pos="618" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+CGGTCCAGGCCGCGCAGGGTGCCGTCGCGGGTCACGTCGGTAAAAATCAGGGTTCGCAGCCCAGCCTCCGCCAGC
+				</data>
+				<hit pos="739" idx="1" rc="n" pvalue="7.6e-05" match="+++  ++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+GCCGTGCCGATCACGACCCGCGCGACGCCCGCCGTGAGGAGGGATTGCGCCGCCGCCCGGTCGCGCACGCCGCCG
+CCCACTTCGACCGGCACGCCCAGCTCGCGCACGATTTCGGCGATGACGGCGCGGTTCTCGCCGCGTCCGGTGGCG
+				</data>
+				<hit pos="915" idx="2" rc="y" pvalue="2.9e-05" match="++ ++  ++"/>
+				<hit pos="949" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
+				<hit pos="969" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+ATGACCTGAGGCAAAGGAAGCGTCATGGCGAGCAGAATAGGTCAGCGCGCCGCGCGGGCCCGGCAATTCGCCTGG
+				</data>
+				<hit pos="1252" idx="1" rc="n" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+GGGCGTGCCGATCGACCACCGTGACCTGCGGGTGCTCGCCGGGCGCGGCGCCGAGATCATCGGCGAGGTGGCGCT
+CGCGGCGCGGCTGCGGCCAGAGCTCCCGATGGTCGGCATCACCGGCACGGCGGGCAAGGGCAGCACCACCGTTTT
+				</data>
+				<hit pos="1720" idx="1" rc="y" pvalue="5.6e-05" match="+++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_014638.1" comment="Bifidobacterium bifidum PRL2010 chromosome, oric at 2214490 +- 1000&#13;" length="1999">
+			<score strand="both" combined_pvalue="6.82e-02" evalue="8.1"/>
+			<seg start="976">
+				<data>
+GCCAAAACATGTAGAAAAGTTATCCACAAATTACATGAATGTTATTCACAATTGAGGCGACACAACACGCTAAGC
+				</data>
+				<hit pos="995" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1017" idx="0" rc="y" pvalue="4.0e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+TGTGGATAACTTGGCTAAAGTGGAGTACATATATCCTGTTGTTGTTGTACTTATTATAGCTACCGTAGCGCATCC
+				</data>
+				<hit pos="1051" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+CAAAAACTCGACGTTCGACACGTTCGTTCCCGGTGATTCCAACCGTTTCGCACGCACTGTCGCGCTTGCGGTCGC
+CGAGGGAACCGGGCAGGAATTCAACCCGTTGTGTATCTACGGCGGATCGGGACTGGGCAAGACCCACCTGCTCAA
+				</data>
+				<hit pos="1793" idx="1" rc="n" pvalue="6.8e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002939.5" comment="Geobacter sulfurreducens PCA chromosome, oric at 8840 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="7.28e-02" evalue="8.6"/>
+			<seg start="151">
+				<data>
+GTCGAGGAGGACGTGGTGGTCACCGTCTCCCACACCGGCTACATCAAGCGGACCGCAGTTTCCCAGTACCGCTCC
+CAGCGCAGGGGGGGCAAGGGGAAGACCGGCATGAAGACCAAGGAGGAGGATTTCGTCGAGCACCTCTTCGTCGCC
+				</data>
+				<hit pos="221" idx="2" rc="y" pvalue="4.9e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+CTGCGGGAATATGCCAACATCCGCAGCGGCGGGATCATTGCCGTGAATCTGGACGATGGGGACAAGCTGATTGCC
+GTGGCCCTGACCGATGGCAGGCAGGACGTGCTCCTGGCATCGAAGAACGGCAAGTCGATCCGCTTCCACGAGGAT
+				</data>
+				<hit pos="598" idx="1" rc="n" pvalue="2.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CGGATCGTGGCCGTGGCAAAGCTGGCCGAGAAGGATGAAGGGGACGACGGCGCCGACGGAGGCGATGATCTCCCC
+				</data>
+				<hit pos="1059" idx="1" rc="y" pvalue="8.8e-05" match="++++  +++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GGGACGCCGGGCCCTTTCCCCTCTCTTCCGGTGCCTGCGCCGCGAGACGGACCCGGAGATGATCGCCCGCTACGC
+				</data>
+				<hit pos="1383" idx="1" rc="n" pvalue="1.3e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+ACCGATCACGGATCGGGCGGGCGGCCTGCGCCTCACTCTCCCGCGGCTTCTGGACAGGGGTGAGCGGGGACTCGT
+				</data>
+				<hit pos="1599" idx="1" rc="n" pvalue="1.3e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+CCGGGCCCCGGCTGAGCGGAGTCTGCGTCGGCTTGCTTTTCTGGGGTTCACGCCGGCGGGTGAAACTCCTGCTCC
+				</data>
+				<hit pos="1879" idx="1" rc="y" pvalue="4.5e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_013172.1" comment="Brachybacterium faecium DSM 4810 chromosome, oric at 1750390 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="7.31e-02" evalue="8.6"/>
+			<seg start="226">
+				<data>
+CCGCGGTCCCGCCGCCTGCAAGGCCGCCGGGATCACCTATCGCCAGCTGGACTACTGGGCCCGCACCGGCCTGGT
+				</data>
+				<hit pos="251" idx="2" rc="n" pvalue="4.2e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+CGAGCCCAGCGTCCGCGCCGCGCACGGCTCCGGCAGCCAGCGCCTCTACGGCTTCCGCGACATCCTCGTGCTCAA
+				</data>
+				<hit pos="302" idx="2" rc="y" pvalue="4.2e-05" match="++ ++++++"/>
+				<hit pos="336" idx="1" rc="n" pvalue="2.0e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+CGACCTCTCCGTCCTGCCGGGCGTGGATCCGGCGGACGATGCCGCCCTCGCCCTCCAGGACGAGCTGGCCGCACG
+				</data>
+				<hit pos="621" idx="2" rc="n" pvalue="1.6e-05" match="++  +++++"/>
+				<hit pos="644" idx="1" rc="n" pvalue="1.3e-05" match="+++++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+CCGTTCTCGTCGTGCGCGGTCCGTCTCGACGGCGGGAGGCGGCAGGCTCATCCCGCCGCCGATCGGCTCAGGAGT
+				</data>
+				<hit pos="764" idx="1" rc="n" pvalue="9.9e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CGAGCCCCAGGGGCTGCAGGCGGGGGGCGATGCCGTCGTCATGCATCTCCACGGAGAGCTTCAGGGCGCGGTCCG
+				</data>
+				<hit pos="1116" idx="1" rc="n" pvalue="9.9e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+CGGCGGTGACGGCGAAGAACCCGGGCTCGGCGACCACGAGCGCCCGGTCCGAGGCGGCGAGCGCCATCTGCGTGA
+				</data>
+				<hit pos="1167" idx="1" rc="n" pvalue="4.1e-05" match="++++++ ++"/>
+				<hit pos="1181" idx="1" rc="y" pvalue="4.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GATGGGAGGCGGCGCCCGCGGCCCACGGGGTCTCGATGATCGCCCGATCGATCGTCTCGGTGCGCGGGGAGGTGA
+				</data>
+				<hit pos="1361" idx="1" rc="y" pvalue="3.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+CGCCCTTCAGGGAACACACACTCACGATGTACACGTGCGCCAGTCTACCGACCCGAGCCCGTGCACCCCGGGTGC
+				</data>
+				<hit pos="1625" idx="2" rc="y" pvalue="2.5e-05" match="++ ++ +++"/>
+			</seg>
+			<seg start="1951">
+				<data>
+GCTGTTCGAGCAGATCCGCCGCCAGCGGCCGCGGCAGCGGTTCCACGGTC
+				</data>
+				<hit pos="1977" idx="1" rc="y" pvalue="5.6e-05" match="++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002696.2" comment="Caulobacter crescentus CB15 chromosome, oric at 4011490 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="7.45e-02" evalue="8.8"/>
+			<seg start="1">
+				<data>
+ACCAGGTGGTCGTTCAAGGCGCTCACATCTGGCAGGCCCAGAAAGGCGCGCGCCTCCACCGGGGTGCAGTCAATC
+				</data>
+				<hit pos="45" idx="1" rc="y" pvalue="2.0e-05" match="+++++++++"/>
+			</seg>
+			<seg start="226">
+				<data>
+AGACCCTCACGATCAACACCCCGGATGGCGCCTTCTCGGCCTATGTGGCGCGCCCGAAGGCGGCAAGCGCCCCGG
+CCATTGTCGTGATCCAAGAGATCTTCGGCGTGAACAAGGTGATGCGCGACATCTGTGACGGCCTGGCCGCCCAGG
+				</data>
+				<hit pos="294" idx="1" rc="n" pvalue="3.2e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+AATGGAAGAAAGCGTTCGAGCTGTTCAACGCGTTTGACGTGGACGCGGGGGTCACGGACATCGCCGCGACCATCG
+CCGCCGCCCGTAAGCTGGACGGCGTCAACGGCAAGGTCGGCGCGGTCGGCTACTGCCTCGGCGGCCTGCTGGCCT
+				</data>
+				<hit pos="495" idx="2" rc="n" pvalue="2.2e-05" match="++ +++ ++"/>
+				<hit pos="525" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+AGCTGATCCTCAGCGCGCTCAAGGATCATCCCCAGATCGAGATCCATATCTACGAAGGCCGAGACCACGCCTTCG
+CCCGCGAGGGTGGCGCGCACTACGACGCGGCCGACGCCGCCAAGGCCAACGGCCGCAGCCTGACCTTCTTCCAGC
+				</data>
+				<hit pos="819" idx="1" rc="n" pvalue="3.2e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+AGGCCCTGGCCTGATGCTGGCGGTCCAAGCGGTCAGGACCGGCGGCCCCGAGGTTCTGGAGGTCGTCGATCTTCC
+				</data>
+				<hit pos="903" idx="1" rc="n" pvalue="9.6e-06" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+CCTACCCTCGCCGGGTCCGGGTCAGATCCTCGTCCGCCACCAGGCGGTGGGTCTGAACTATATCGACACCTATCA
+				</data>
+				<hit pos="985" idx="1" rc="n" pvalue="6.2e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+GACGGCGAAGGCCACGATCGCCCGCGATCTCGGCGCCGACCATGTCATCGACTACAGCCACGAGGATGTCGCGGC
+TCGGGTCGCCGAACTCACGGGCGGCCGGGGCGTCGCGGTCGTCTATGACGGTGTCGGCAAGGATACCTGGGAGGC
+				</data>
+				<hit pos="1429" idx="1" rc="y" pvalue="3.2e-05" match="+++++ +++"/>
+				<hit pos="1499" idx="2" rc="n" pvalue="2.5e-05" match="+++ ++ ++"/>
+				<hit pos="1523" idx="1" rc="y" pvalue="3.2e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+CAGTCTCGCCAGCCTCGCCCGGCGCGGCATGCTGGTGACGTTCGGCAACGCCTCGGGTCCGGCGCCCGCCTTCCC
+				</data>
+				<hit pos="1636" idx="1" rc="y" pvalue="3.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+GCCGCTGGCGCTGGCGCCCAAGTCCGCCTTCGTCACCCGGCCCAAGCTGTTCGACTACATCGTCACGACCGAGGA
+				</data>
+				<hit pos="1657" idx="1" rc="y" pvalue="2.0e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+CCCCCTCGCCGAGGCCCGCGCGGCGCACGAGGCCCTGGAAGGCCGTCGCACCACCGGCGCCACCCTGCTCCTTCC
+				</data>
+				<hit pos="1813" idx="1" rc="y" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_011916.1" comment="Caulobacter crescentus NA1000, oric at 4037480 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="7.45e-02" evalue="8.8"/>
+			<seg start="1">
+				<data>
+GTCGTTCAAGGCGCTCACATCTGGCAGGCCCAGAAAGGCGCGCGCCTCCACCGGGGTGCAGTCAATCTCGATCGT
+				</data>
+				<hit pos="37" idx="1" rc="y" pvalue="2.0e-05" match="+++++++++"/>
+			</seg>
+			<seg start="226">
+				<data>
+ACGATCAACACCCCGGATGGCGCCTTCTCGGCCTATGTGGCGCGCCCGAAGGCGGCAAGCGCCCCGGCCATTGTC
+				</data>
+				<hit pos="286" idx="1" rc="n" pvalue="3.2e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+AAAGCGTTCGAGCTGTTCAACGCGTTTGACGTGGACGCGGGGGTCACGGACATCGCCGCGACCATCGCCGCCGCC
+				</data>
+				<hit pos="487" idx="2" rc="n" pvalue="2.2e-05" match="++ +++ ++"/>
+				<hit pos="517" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+CTCAGCGCGCTCAAGGATCATCCCCAGATCGAGATCCATATCTACGAAGGCCGAGACCACGCCTTCGCCCGCGAG
+				</data>
+				<hit pos="811" idx="1" rc="n" pvalue="3.2e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+GGTGGCGCGCACTACGACGCGGCCGACGCCGCCAAGGCCAACGGCCGCAGCCTGACCTTCTTCCAGCAGGCCCTG
+GCCTGATGCTGGCGGTCCAAGCGGTCAGGACCGGCGGCCCCGAGGTTCTGGAGGTCGTCGATCTTCCCCTACCCT
+				</data>
+				<hit pos="895" idx="1" rc="n" pvalue="9.6e-06" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+CGCCGGGTCCGGGTCAGATCCTCGTCCGCCACCAGGCGGTGGGTCTGAACTATATCGACACCTATCACCGATCCG
+				</data>
+				<hit pos="977" idx="1" rc="n" pvalue="6.2e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GCGTCGGTCAGATCCTGGTCCAATGGTGCAAGGCCCTTGGCGCCACGGTGGTGGCCACAGTCGGATCGACGGCGA
+AGGCCACGATCGCCCGCGATCTCGGCGCCGACCATGTCATCGACTACAGCCACGAGGATGTCGCGGCTCGGGTCG
+				</data>
+				<hit pos="1421" idx="1" rc="y" pvalue="3.2e-05" match="+++++ +++"/>
+				<hit pos="1491" idx="2" rc="n" pvalue="2.5e-05" match="+++ ++ ++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+CCGAACTCACGGGCGGCCGGGGCGTCGCGGTCGTCTATGACGGTGTCGGCAAGGATACCTGGGAGGCCAGTCTCG
+				</data>
+				<hit pos="1515" idx="1" rc="y" pvalue="3.2e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+CCAGCCTCGCCCGGCGCGGCATGCTGGTGACGTTCGGCAACGCCTCGGGTCCGGCGCCCGCCTTCCCGCCGCTGG
+CGCTGGCGCCCAAGTCCGCCTTCGTCACCCGGCCCAAGCTGTTCGACTACATCGTCACGACCGAGGAACTGGACG
+				</data>
+				<hit pos="1628" idx="1" rc="y" pvalue="3.2e-05" match="+++++++++"/>
+				<hit pos="1649" idx="1" rc="y" pvalue="2.0e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+CCGAGGCCCGCGCGGCGCACGAGGCCCTGGAAGGCCGTCGCACCACCGGCGCCACCCTGCTCCTTCCGTAGGGCC
+				</data>
+				<hit pos="1805" idx="1" rc="y" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002677.1" comment="Mycobacterium leprae TN chromosome, oric at 1950 +- 1000&#13;" length="2000">
+			<score strand="both" combined_pvalue="8.26e-02" evalue="9.7"/>
+			<seg start="301">
+				<data>
+CGCAGACGCCAGCACGATGCAAATCAGTGCGGCAACCATAATGACAGCCACCGCCGAATACTTCGATACCACCAT
+				</data>
+				<hit pos="347" idx="1" rc="n" pvalue="9.9e-05" match="+++  ++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+TCACATTTCCAAAGTGTGTATATTTCTGTGGACAAACTAAGTATACTGACATGCAACAATCCTTGATTTCATGCA
+				</data>
+				<hit pos="702" idx="0" rc="n" pvalue="3.0e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="751">
+				<data>
+CACCCATAGTCGATCCACAACGGCGAATCGCAGATTCTTTATTATCAACACTGACATCCACACCTCAACAGCTCA
+				</data>
+				<hit pos="792" idx="0" rc="y" pvalue="2.2e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TCTAGCTCAACAAAATCCGGTTATCCACAAGATCCACACCCTTTAATACTGATACTAAGATTTCTTCGTGTTCTT
+				</data>
+				<hit pos="846" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+ACGTTCGTTACAGTGGGCTCACGCTAGCGGGGGCGGAGGCTAGCCGTTGGATTTCAACGATTTTTAGGTGAAGGG
+				</data>
+				<hit pos="1082" idx="1" rc="y" pvalue="7.6e-05" match="++++  +++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+GCGCCATGGACCTGGCCAAAACCAATGTTGGTTGCAGCGATTTAAAATTTTGTTTAGCACGTGAGTCGTTCGCCA
+				</data>
+				<hit pos="1133" idx="1" rc="y" pvalue="9.9e-05" match="++ ++ +++"/>
+			</seg>
+		</sequence>
+	</sequences>
+	<runtime host="PC0028" when="Fri Jan  3 17:10:36 2020" cycles="62500" seconds="0.062"/>
+</mast>

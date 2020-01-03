@@ -2,4 +2,7 @@
 desktop.ini
 
 # bacteria whole genome
-data/bacteria_references/*.fna
+data/bacteria/ref_seq/*.fna
+
+# tools
+tools/meme/*

@@ -16,7 +16,9 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * find minimum
 * Skew at minimum with higher resolution
 * done! [Lena] DoriC: Where is the minimum related to DnaA motif in ecoli (expected relative position, high variance?)
-* [Tobias] create a fasta file with all OriC regions 👍 done for all bacteria reference sequences
+* [Tobias] create a fasta file with all OriC regions 👍 skript: skew/create_oric_fasta.py; results all bacteria reference sequences: data/bacteria/skew_regions.fasta
+* [Tobias] execute local version of meme 👍 results for all bacteria reference sequences: data/bacteria/meme/mast.html
+* [Tobias] test meme on species specific sequences (skew/Thermotoga)
 * tasks from project sheet
 
 ## download fasta files of genomes
@@ -24,8 +26,9 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 + example search query for ecoli: "Escherichia coli"[Organism] AND (bacteria[filter] AND "latest refseq"[filter] AND "complete genome"[filter] AND (all[filter] NOT "derived from surveillance project"[filter] AND all[filter] NOT anomalous[filter] AND all[filter] NOT partial[filter]))
 + query for all bacteria reference sequences: bacteria[filter] AND "complete genome"[filter] AND "reference genome"[filter]
 + For Organisms replace "bacteria"[Organism] with: "Escherichia coli"[Organism], "Vibrio cholerae"[Organism], "Thermotoga petrophila"[Organism], "Salmonella enterica"[Organism]
++ keep the report.txt file for other downloads
 
-## OriEval
+## OriEval (evaluate skew)
 * see plots, genomes, OriEval.xlsx
 * plotted 10 organisms for each strain
 * (for Thermotoga petrophila only one genome was available, hence other 
@@ -48,6 +51,31 @@ distance plot so it has a fixed height of the maximal Hamming score
 (otherwise the axis would be different in every plot)
 	* Can we somehow read the positions of the motifs directly or 
 even print them? Ideas?
+
+## HowTo meme
++ http://meme-suite.org/tools/meme
++ Input the primary sequences: Upload a fasta file with multiple sequences
++ Select the site distribution: any (anr)
++ Enter a job description
++ What should be used as the background model: 4th
++ How wide can motifs be: 9 to 9
+
+## HowTo use meme cli
++ use Ubuntu terminal or Windows WSL: https://www.microsoft.com/de-de/p/ubuntu/9nblggh4msv6
++ sudo apt update
++ sudo apt install ghostscript zlib1g-dev perl libxml2-dev libexpat1-dev libxslt1.1 libxslt1-dev autoconf automake libtool libxml-parser-perl
++ tar zxf meme-5.1.0.tar.gz
++ cd meme-5.1.0
++ ./configure --prefix=/mnt/c/drive/uni/seq_inf/seqinf_project/tools/meme --with-url=http://meme-suite.org/ --enable-build-libxml2 --enable-build-libxslt
++ make
++ make test
++ make install
++ export PATH=/mnt/c/drive/uni/seq_inf/seqinf_project/tools/meme/bin:/mnt/c/drive/uni/seq_inf/seqinf_project/tools/meme/libexec/meme-5.1.0:$PATH
++ cd /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/meme
++ meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4
++ mast meme.xml /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta -oc . -nostatus
+
+-----
 
 ## GC-minimum related to oriC (for zoom function)
 * See xlxs dist_min_to_oriC

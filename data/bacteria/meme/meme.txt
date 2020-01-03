@@ -1,0 +1,2213 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.1.0 (Release date: Fri Oct 11 15:53:28 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org/.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+NC_000913.3              1.0000   2000  NC_002505.1              1.0000   1999  
+NC_002516.2              1.0000   2000  NC_002737.2              1.0000   2000  
+NC_002946.2              1.0000   2000  NC_002662.1              1.0000   1999  
+NC_002696.2              1.0000   2000  NC_004337.2              1.0000   2000  
+NC_003197.2              1.0000   2000  NC_003047.1              1.0000   2000  
+NC_002932.3              1.0000   1999  NC_003098.1              1.0000   2000  
+NC_003902.1              1.0000   2000  NC_004116.1              1.0000   2000  
+NC_003454.1              1.0000   2000  NC_004350.2              1.0000   2000  
+NC_004307.2              1.0000   2000  NC_002947.4              1.0000   1999  
+NC_004461.1              1.0000   1999  NC_002971.4              1.0000   2000  
+NC_004668.1              1.0000   1999  NC_004578.1              1.0000   2000  
+NC_004722.1              1.0000   1999  NC_003997.3              1.0000   1999  
+NC_005042.1              1.0000   1999  NC_002939.5              1.0000   2000  
+NC_005945.1              1.0000   1999  NC_002967.9              1.0000   1999  
+NC_006055.1              1.0000   1999  NC_002942.5              1.0000   1999  
+NC_005957.1              1.0000   1999  NC_000915.1              1.0000   2000  
+NC_000853.1              1.0000   2000  NC_001263.1              1.0000   2000  
+NC_000918.1              1.0000   2000  NC_001318.1              1.0000   2000  
+NC_000117.1              1.0000   2000  NC_000922.1              1.0000   2000  
+NC_003030.1              1.0000   1999  NC_003112.2              1.0000   2000  
+NC_002695.2              1.0000   2000  NC_007929.1              1.0000   2000  
+NC_006570.2              1.0000   1999  NC_000964.3              1.0000   1999  
+NC_003143.1              1.0000   2000  NC_002163.1              1.0000   1999  
+NC_009089.1              1.0000   1999  NC_008800.1              1.0000   1999  
+NC_002528.1              1.0000   1999  NC_006347.1              1.0000   1999  
+NC_004663.1              1.0000   2000  NC_003450.3              1.0000   2000  
+NC_004113.1              1.0000   2000  NC_004463.1              1.0000   2000  
+NC_005125.1              1.0000   2000  NC_005364.2              1.0000   2000  
+NC_006350.1              1.0000   1999  NC_006348.1              1.0000   2000  
+NC_006840.2              1.0000   1999  NC_006814.3              1.0000   1999  
+NC_007606.1              1.0000   2000  NC_007005.1              1.0000   2000  
+NC_007677.1              1.0000   2000  NC_007643.1              1.0000   2000  
+NC_007644.1              1.0000   2000  NC_007795.1              1.0000   1999  
+NC_009009.1              1.0000   1999  NC_008526.1              1.0000   1999  
+NC_008570.1              1.0000   2000  NC_008596.1              1.0000   1999  
+NC_009698.1              1.0000   1999  NC_009636.1              1.0000   2000  
+NC_012587.1              1.0000   2000  NC_010175.1              1.0000   2000  
+NC_011296.1              1.0000   1999  NC_011661.1              1.0000   2000  
+NC_011916.1              1.0000   2000  NC_013172.1              1.0000   2000  
+NC_013522.1              1.0000   2000  NC_014121.1              1.0000   2000  
+NC_011750.1              1.0000   2000  NC_012926.1              1.0000   2000  
+NC_013853.1              1.0000   2000  NC_000907.1              1.0000   2000  
+NC_000912.1              1.0000   2000  NC_009495.1              1.0000   1999  
+NC_009613.3              1.0000   1999  NC_010287.1              1.0000   1999  
+NC_010397.1              1.0000   1999  NC_006461.1              1.0000   1999  
+NC_003062.2              1.0000   1999  NC_004342.2              1.0000   1999  
+NC_004347.2              1.0000   1999  NC_014644.1              1.0000   2000  
+NC_014638.1              1.0000   1999  NC_017960.1              1.0000   2000  
+NC_017634.1              1.0000   2000  NC_014923.1              1.0000   2000  
+NC_016603.1              1.0000   2000  NC_002929.2              1.0000   2000  
+NC_000963.1              1.0000   1999  NC_002937.3              1.0000   2000  
+NC_002945.4              1.0000   1999  NC_002677.1              1.0000   2000  
+NC_000962.3              1.0000   1999  NC_003198.1              1.0000   2000  
+NC_003210.1              1.0000   1999  NC_004603.1              1.0000   2000  
+NC_005027.1              1.0000   2000  NC_014318.1              1.0000   2000  
+NC_003888.3              1.0000   2000  NC_004567.2              1.0000   1999  
+NC_015663.1              1.0000   2000  NC_017384.1              1.0000   2000  
+NC_016845.1              1.0000   1999  NC_018658.1              1.0000   1999  
+NC_018828.1              1.0000   2000  NC_019382.1              1.0000   2000  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 
+
+model:  mod=           anr    nmotifs=         3    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: + -
+width:  minw=            9    maxw=            9
+nsites: minsites=        2    maxsites=      590    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=          235953    N=             118
+sample: seed=            0    hsfrac=          0
+        searchsize= 100000    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.267 C 0.233 G 0.233 T 0.267 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.268 C 0.233 G 0.233 T 0.268 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTGGATAA MEME-1	width =   9  sites = 288  llr = 2929  E-value = 1.2e-086
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTGGATAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::::a1aa
+pos.-specific     C  ::::1::::
+probability       G  :a:98::::
+matrix            T  a:a11:8::
+
+         bits    2.1          
+                 1.9 ***    * 
+                 1.7 **** * **
+                 1.5 **** * **
+Relative         1.3 **** * **
+Entropy          1.1 *********
+(14.7 bits)      0.8 *********
+                 0.6 *********
+                 0.4 *********
+                 0.2 *********
+                 0.0 ---------
+
+Multilevel           TGTGGATAA
+consensus                     
+sequence                      
+                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGATAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value              Site 
+-------------            ------  ----- ---------            ---------
+NC_018828.1                  -   1573  4.63e-06 CGAGCGGACG TGTGGATAA CCCGAGTACA
+NC_018658.1                  +   1225  4.63e-06 TGGAAAGTCC TGTGGATAA ATCGGGAAAA
+NC_016845.1                  -   1477  4.63e-06 TCCGATCTTC TGTGGATAA CCATGCTTAA
+NC_016845.1                  +   1297  4.63e-06 CGACTCTCTT TGTGGATAA GTCGGATCCG
+NC_015663.1                  -    508  4.63e-06 CAGCTTCTTC TGTGGATAA CCCTGCTCAA
+NC_015663.1                  +    328  4.63e-06 CGACTCTCTT TGTGGATAA GTCGGATCCA
+NC_004567.2                  +   1249  4.63e-06 AACTCGTTTT TGTGGATAA GTGCTGTTTT
+NC_004567.2                  -   1172  4.63e-06 AAATACGCCC TGTGGATAA CTAAATAACA
+NC_003210.1                  +   1303  4.63e-06 TTTTTCTATC TGTGGATAA CTTTATAGCA
+NC_003210.1                  +   1249  4.63e-06 ATTTTTACTT TGTGGATAA TTTTTTAACA
+NC_003210.1                  -   1226  4.63e-06 AAAAATGTAT TGTGGATAA CTTTAGTTTT
+NC_003210.1                  +    968  4.63e-06 GCCTTTTTAT TGTGGATAA CCTTTTCAAT
+NC_003210.1                  +    937  4.63e-06 TCCTAGAAAG TGTGGATAA CTCCTGAATA
+NC_003198.1                  -    800  4.63e-06 CGCACCAGGC TGTGGATAA CCCGGATCCT
+NC_003198.1                  +    620  4.63e-06 TGCGATCTAT TGTGGATAA ATATGGTGAA
+NC_002677.1                  -    846  4.63e-06 GTGTGGATCT TGTGGATAA CCGGATTTTG
+NC_000963.1                  -   1206  4.63e-06 CACATGTAAT TGTGGATAA AATTTTTAAA
+NC_000963.1                  -   1092  4.63e-06 AGAAACAGTT TGTGGATAA AATTGTGAAT
+NC_017634.1                  -   1388  4.63e-06 TGCGATCTAC TGTGGATAA CTCTGTCAGG
+NC_017634.1                  +   1208  4.63e-06 CGCGCTGCCC TGTGGATAA CAAGGATCCG
+NC_017960.1                  +    285  4.63e-06 GAAAATAGCA TGTGGATAA AAGAAAAAAA
+NC_014638.1                  +   1051  4.63e-06 CACGCTAAGC TGTGGATAA CTTGGCTAAA
+NC_014638.1                  -    995  4.63e-06 TCATGTAATT TGTGGATAA CTTTTCTACA
+NC_014644.1                  +    252  4.63e-06 CACGCTAGGC TGTGGATAA CTTCTTAGGG
+NC_014644.1                  -    196  4.63e-06 GTGTGTAATT TGTGGATAA TGTAAAACTT
+NC_004347.2                  -   1335  4.63e-06 CAAAAGCCGT TGTGGATAA GATCCAGATC
+NC_004347.2                  +   1196  4.63e-06 ATTAGTTTTT TGTGGATAA TTTGGATCTA
+NC_004347.2                  -   1163  4.63e-06 TGTATATTTT TGTGGATAA ACTATTATTT
+NC_004347.2                  -   1090  4.63e-06 AGATCCACCC TGTGGATAA AAGGCGGATC
+NC_006461.1                  -    721  4.63e-06 CCTGTGGAAA TGTGGATAA GCGGGGGAAA
+NC_006461.1                  -    677  4.63e-06 AGAAACGGGC TGTGGATAA CTGCTGTGGA
+NC_006461.1                  -    664  4.63e-06 GGATAACTGC TGTGGATAA CTGGCCCCGG
+NC_006461.1                  -    643  4.63e-06 GGCCCCGGCC TGTGGATAA CCTGTGGATA
+NC_006461.1                  -    632  4.63e-06 GTGGATAACC TGTGGATAA AGGGCGGGTT
+NC_006461.1                  +    615  4.63e-06 GGCCGACCCC TGTGGATAA CCCGCCCTTT
+NC_006461.1                  +    576  4.63e-06 TGGATAACCC TGTGGATAA CCTGTGGAAA
+NC_006461.1                  +    564  4.63e-06 GGGCTCAAGC TGTGGATAA CCCTGTGGAT
+NC_006461.1                  +    543  4.63e-06 TGGATAACCC TGTGGATAA CCGGGCTCAA
+NC_006461.1                  +    531  4.63e-06 GTGGATAACC TGTGGATAA CCCTGTGGAT
+NC_006461.1                  +    520  4.63e-06 ACATGACCCC TGTGGATAA CCTGTGGATA
+NC_010397.1                  +   1225  4.63e-06 TGTCCACAGC TGTGGATAA CCGTGTGGAA
+NC_009495.1                  -   1158  4.63e-06 TATCAACAGC TGTGGATAA GTTATATGTA
+NC_009495.1                  +   1079  4.63e-06 TTTATTTTTT TGTGGATAA CTTCTTGAAT
+NC_013853.1                  -   1050  4.63e-06 TTTCACAGAT TGTGGATAA CTTTCAAAAA
+NC_012926.1                  -   1461  4.63e-06 AACTGCAAGC TGTGGATAA CTTTCTTTTA
+NC_010175.1                  -    921  4.63e-06 TTGACCGGCT TGTGGATAA CTTGCGATAT
+NC_010175.1                  -    880  4.63e-06 TTGGACTGTT TGTGGATAA CCTGCGGAAC
+NC_009698.1                  -    802  4.63e-06 TATCAACAGC TGTGGATAA GTTATATGTA
+NC_009698.1                  +    723  4.63e-06 TTTATTTTTT TGTGGATAA CTTCTTGAAT
+NC_008526.1                  -    848  4.63e-06 TTTGACAACT TGTGGATAA CTTTCTTCAC
+NC_008526.1                  +    756  4.63e-06 GTTATGAACC TGTGGATAA CTTGTGTCTC
+NC_009009.1                  +   1711  4.63e-06 ATTCACATTC TGTGGATAA CTTCAGCTAA
+NC_007795.1                  +   1294  4.63e-06 GTTATTAACT TGTGGATAA TTATTAACAT
+NC_007795.1                  +   1179  4.63e-06 AGTATAATTG TGTGGATAA GTCGTCCAAC
+NC_007795.1                  +   1086  4.63e-06 TTTTCAGAAT TGTGGATAA TTAGAAATTA
+NC_007005.1                  +    488  4.63e-06 TCTGCACGGC TGTGGATAA CTTCAAGATT
+NC_007005.1                  -     55  4.63e-06 TGGGCAGCGG TGTGGATAA ACACAACCTG
+NC_006814.3                  +    449  4.63e-06 ATTCACACCA TGTGGATAA CGCCTATAGA
+NC_006814.3                  +    347  4.63e-06 CAAAATTTTG TGTGGATAA AATCTAAGTC
+NC_006840.2                  -   1498  4.63e-06 ATACCTACTA TGTGGATAA CTATAGAAAG
+NC_006840.2                  -   1424  4.63e-06 CCTCCCCCCT TGTGGATAA CTAACTCTTT
+NC_006840.2                  +   1318  4.63e-06 CGTCGATCTC TGTGGATAA GTGATAAATG
+NC_006350.1                  -    961  4.63e-06 CCGCCGATTC TGTGGATAA CTTGATATTT
+NC_006350.1                  +    792  4.63e-06 CCACCAAATC TGTGGATAA CACCCAAATA
+NC_002528.1                  -    980  4.63e-06 AGAACAAATC TGTGGATAA TAGTCTGAAG
+NC_008800.1                  +   1759  4.63e-06 GGGATCTACC TGTGGATAA TGTGGGTATA
+NC_008800.1                  -   1224  4.63e-06 CGCGAACGAA TGTGGATAA GTAAGCTTGA
+NC_008800.1                  +   1044  4.63e-06 CATGACCTTC TGTGGATAA GTGATTATTC
+NC_009089.1                  +    726  4.63e-06 TAGTTAATAT TGTGGATAA ATTAGTTACA
+NC_003143.1                  -   1444  4.63e-06 AGGCTTTCAC TGTGGATAA ACTGAATATG
+NC_003143.1                  +    283  4.63e-06 GGGATCTAGC TGTGGATAA TGTGGGTATA
+NC_000964.3                  +   1130  4.63e-06 ATCCACAAAG TGTGGATAA GTTGTGGATT
+NC_000964.3                  -   1118  4.63e-06 ATCCACACTT TGTGGATAA AGAGGAAAGG
+NC_000964.3                  +   1024  4.63e-06 TTGTCCGCTT TGTGGATAA GATTGTGACA
+NC_006570.2                  -    944  4.63e-06 TAAGTAAGCC TGTGGATAA TTATGTTAAT
+NC_006570.2                  +    839  4.63e-06 TTAATAAAAA TGTGGATAA AAAATTATCA
+NC_006570.2                  +    739  4.63e-06 AGTATTTTGT TGTGGATAA CTTTTTAAAA
+NC_007929.1                  -    850  4.63e-06 CTGTTCATAC TGTGGATAA GTATGAAAAA
+NC_007929.1                  -    797  4.63e-06 GTGGAATTGT TGTGGATAA AATCATTAGG
+NC_002695.2                  -   1390  4.63e-06 TGCGATCTAC TGTGGATAA CTCTGTCAGG
+NC_002695.2                  +   1210  4.63e-06 CGCACTGCCC TGTGGATAA CAAGGATCCG
+NC_003030.1                  +   1206  4.63e-06 ACTATAGATT TGTGGATAA CTAATTTCTA
+NC_003030.1                  +   1012  4.63e-06 AAAAACTTTT TGTGGATAA TTTCTTGAAT
+NC_005957.1                  -   1057  4.63e-06 AAAAAGCAAA TGTGGATAA TCATTTACCC
+NC_005957.1                  -   1001  4.63e-06 ATACACAAAT TGTGGATAA GATAAAGATG
+NC_005957.1                  +    908  4.63e-06 GTATTGATTT TGTGGATAA CTTTCTTAAT
+NC_005957.1                  +    805  4.63e-06 TATATTCCCT TGTGGATAA TATTTTTTCT
+NC_002942.5                  +   1190  4.63e-06 ATTATGGCTT TGTGGATAA CTTTGCCTTT
+NC_002942.5                  +    829  4.63e-06 AACTGCTTAT TGTGGATAA TTTAAAAAAA
+NC_006055.1                  -   1298  4.63e-06 TTCCACAATG TGTGGATAA AAAAATATTT
+NC_005945.1                  -   1058  4.63e-06 AAAAAGCAAA TGTGGATAA TCATTTACCC
+NC_005945.1                  -   1002  4.63e-06 ATACACAAAT TGTGGATAA GATAAAGATG
+NC_005945.1                  +    909  4.63e-06 GTATTGATTT TGTGGATAA CTTTCTTAAT
+NC_005945.1                  +    806  4.63e-06 TATATTTCCT TGTGGATAA TATTTTTTCT
+NC_003997.3                  -   1057  4.63e-06 AAAAAGCAAA TGTGGATAA TCATTTACCC
+NC_003997.3                  -   1001  4.63e-06 ATACACAAAT TGTGGATAA GATAAAGATG
+NC_003997.3                  +    908  4.63e-06 GTATTGATTT TGTGGATAA CTTTCTTAAT
+NC_003997.3                  +    805  4.63e-06 TATATTTCCT TGTGGATAA TATTTTTTCT
+NC_004722.1                  -   1986  4.63e-06      GGATA TGTGGATAA CCCCGCTAAA
+NC_004722.1                  -    344  4.63e-06 ATACACAAAT TGTGGATAA GATAAAGATG
+NC_004722.1                  +    252  4.63e-06 GTATTGATTT TGTGGATAA CTTTCTTAAA
+NC_004722.1                  +    148  4.63e-06 TATATTTCCT TGTGGATAA ATATTTTTTC
+NC_004578.1                  +   1018  4.63e-06 CCCGGGCACC TGTGGATAA CTCTTGGGCA
+NC_004578.1                  +    675  4.63e-06 TCTGCACGGC TGTGGATAA CTTCAAGATT
+NC_004578.1                  -    242  4.63e-06 TGGGCAGCGG TGTGGATAA ACACACTCTG
+NC_004668.1                  -   1068  4.63e-06 ATCTAAAAAA TGTGGATAA CTTAAAAAAT
+NC_004668.1                  +    913  4.63e-06 CTCAACTTTT TGTGGATAA CTCATTCAAC
+NC_004668.1                  -    723  4.63e-06 AAATTTAATT TGTGGATAA TTGAAACGAA
+NC_004461.1                  +   1148  4.63e-06 GTGATTAACT TGTGGATAA TTATTAACAT
+NC_004461.1                  +   1032  4.63e-06 AGTATAATTA TGTGGATAA GTCGTTCAAA
+NC_004461.1                  +    938  4.63e-06 TCGCAAAAAT TGTGGATAA CACATGCGCT
+NC_002947.4                  -   1879  4.63e-06 TCAGCGACCT TGTGGATAA CATCAAGCGT
+NC_004116.1                  -   1001  4.63e-06 ATCCACAACT TGTGGATAA CCTTGATTAT
+NC_004116.1                  -    937  4.63e-06 AGGATAAACA TGTGGATAA ATTGTGAAAA
+NC_003098.1                  -     84  4.63e-06 GTTTAAAAAA TGTGGATAA AAAAGATAAA
+NC_003098.1                  +     55  4.63e-06 TCAAATAATT TGTGGATAA CTTTTAGTTT
+NC_003197.2                  -    778  4.63e-06 TGCGATCCAT TGTGGATAA ATCTGGTGGA
+NC_003197.2                  +    598  4.63e-06 CGCGCCAGGC TGTGGATAA CCCGGATCCT
+NC_002662.1                  -    985  4.63e-06 TTAACAAAAC TGTGGATAA TGTGTAAAAG
+NC_002662.1                  +    961  4.63e-06 CATTTTTTTC TGTGGATAA GAAAACTTTT
+NC_002662.1                  +    919  4.63e-06 TTTTTTGATT TGTGGATAA GTCTGTATGC
+NC_002737.2                  -    709  4.63e-06 GTTCACAACT TGTGGATAA CTATTTCATA
+NC_002505.1                  -   1571  4.63e-06 TTTTTTGGAT TGTGGATAA ATTTAACGGT
+NC_002505.1                  -   1513  4.63e-06 TCAAATCTCA TGTGGATAA CTATACGATT
+NC_002505.1                  +   1333  4.63e-06 GCAGGATCTT TGTGGATAA GTGAAAAATG
+NC_015663.1                  +   1052  9.25e-06 GGGATCTACC TGTGGAAAA ATGTGGGATT
+NC_004567.2                  +   1350  9.25e-06 CTTGTCCACT TGTGGAAAA CTCTATATGT
+NC_003198.1                  -     86  9.25e-06 GGGATCTACC TGTGGAAAA ATGTGGGATT
+NC_017634.1                  +   1922  9.25e-06 GGGATCTACC TGTGGAAAA GTATGGGATT
+NC_017960.1                  -    368  9.25e-06 ATGTTGATTC TGTGGAAAA CTCAAAAAAC
+NC_017960.1                  -    325  9.25e-06 AAAAAACAGC TGTGGAAAA AGTGTGTATA
+NC_004347.2                  -    419  9.25e-06 ATGATATTGT TGTGGAAAA CGATCACGTT
+NC_003062.2                  +   1309  9.25e-06 ACTTGCGGAT TGTGGAAAA ACACCACCTT
+NC_006461.1                  +    587  9.25e-06 GTGGATAACC TGTGGAAAA CTCCGGGGGG
+NC_012926.1                  -     89  9.25e-06 CTGTGTATTC TGTGGAAAA GTGATGAAAG
+NC_012926.1                  -     34  9.25e-06 GTTCACAACT TGTGGAAAA AACAGAGTTT
+NC_010175.1                  -    900  9.25e-06 TGCGATATTA TGTGGAAAA CTTGGACTGT
+NC_008526.1                  +   1040  9.25e-06 CTGTGCTTTC TGTGGAAAA CTTACGCCAG
+NC_009009.1                  +   1754  9.25e-06 TTCCAGTTCT TGTGGAAAA CTTTGAACCT
+NC_006814.3                  +    616  9.25e-06 TTTTTTCGCT TGTGGAAAA CTTTCTAATA
+NC_006814.3                  -    407  9.25e-06 TGGTGTGAGT TGTGGAAAA TGATGGGAAT
+NC_006814.3                  -    369  9.25e-06 GATTTTTACT TGTGGAAAA AATGACTTAG
+NC_009089.1                  +   1062  9.25e-06 TTAATAACTT TGTGGAAAA TATTAATTAT
+NC_002695.2                  +   1924  9.25e-06 GGGATCTACC TGTGGAAAA GTATGGGATT
+NC_005957.1                  -    984  9.25e-06 AAGATAAAGA TGTGGAAAA CTTATTCAAA
+NC_006055.1                  +   1310  9.25e-06 ATCCACACAT TGTGGAAAA CTTTTATTAT
+NC_006055.1                  +   1210  9.25e-06 TATAACCTTT TGTGGAAAA GTGGAAAAAA
+NC_005945.1                  -    985  9.25e-06 AAGATAAAGA TGTGGAAAA CTTATTCAAA
+NC_005042.1                  +   1389  9.25e-06 AGTGATATTC TGTGGAAAA ACAAGAAATC
+NC_003997.3                  -    984  9.25e-06 AAGATAAAGA TGTGGAAAA CTTATTCAAA
+NC_004722.1                  -    327  9.25e-06 AAGATAAAGA TGTGGAAAA CTTATTCAAA
+NC_004668.1                  +   1016  9.25e-06 AACAATTGCT TGTGGAAAA AGTTTTAAAA
+NC_004668.1                  -    994  9.25e-06 AATTGTTCAA TGTGGAAAA AAAGTACACA
+NC_004668.1                  +    962  9.25e-06 GTCGACACCC TGTGGAAAA CTTTTTTCAC
+NC_004668.1                  -    765  9.25e-06 CAGAAAAAAA TGTGGAAAA CTATCCACAA
+NC_004350.2                  -    983  9.25e-06 ATCCACAAGT TGTGGAAAA CTTTCAGAAA
+NC_004350.2                  -    907  9.25e-06 TTTAAAAAAC TGTGGAAAA GTATATTAAA
+NC_003098.1                  -    139  9.25e-06 CTGTGAAATC TGTGGAAAA CAGCCTTTAA
+NC_003197.2                  +   1312  9.25e-06 GGGATCTACC TGTGGAAAA ATGTGGGATT
+NC_002662.1                  +   1052  9.25e-06 TTCAACAGAC TGTGGAAAA ATATAATGTG
+NC_002662.1                  -    877  9.25e-06 GATTATTTAC TGTGGAAAA AGAAAAAATT
+NC_002737.2                  +    680  9.25e-06 TTAAATAACA TGTGGAAAA GAATATCTTT
+NC_004567.2                  +   1195  1.46e-05 GTATTTGTTG TGTGTATAA CTCCGATAAA
+NC_003210.1                  -   1082  1.46e-05 CCAGTTAACT TGTGTATAA CTTGTGTGTA
+NC_003210.1                  -    997  1.46e-05 AACCACTAAT TGTGTATAA GTTTAAACTA
+NC_003198.1                  +    694  1.46e-05 CTTTTTGAGT TGTGTATAA GTACCCGTTT
+NC_000963.1                  -   1413  1.46e-05 GATCAGCAAT TGTGTATAA TACTATTCCA
+NC_017634.1                  -   1314  1.46e-05 GTTTTTGAGT TGTGTATAA CCCCTCATTC
+NC_017960.1                  -    314  1.46e-05 GTGGAAAAAG TGTGTATAA CTTTTGAACG
+NC_004342.2                  -     89  1.46e-05 GGATGTGAGT TGTGTATAA AAGATTTACA
+NC_012926.1                  +      5  1.46e-05       AACC TGTGTATAA CTTTTTTAAA
+NC_007795.1                  +   1347  1.46e-05 CTGTTATTTT TGTGTATAA CTTAAAAATT
+NC_009089.1                  +    851  1.46e-05 TGGATACTTT TGTGTATAA CTTTTAAGAT
+NC_002695.2                  -   1316  1.46e-05 GTTTTTGAGT TGTGTATAA CCCCTCATTC
+NC_003112.2                  +   1502  1.46e-05 TTGGATTGCT TGTGTATAA GTAAACTTTC
+NC_003112.2                  +   1427  1.46e-05 CATCCGAATT TGTGTATAA GTGGTGGAAA
+NC_003030.1                  -   1090  1.46e-05 ATGCACAGAT TGTGTATAA CTTGTTTTTA
+NC_005957.1                  +   1013  1.46e-05 ATCCACAATT TGTGTATAA CATGTGGACA
+NC_005945.1                  +   1014  1.46e-05 ATCCACAATT TGTGTATAA CATGTGGACA
+NC_003997.3                  +   1013  1.46e-05 ATCCACAATT TGTGTATAA CATGTGGACA
+NC_004722.1                  +    356  1.46e-05 ATCCACAATT TGTGTATAA CATGTGGACA
+NC_004461.1                  +   1200  1.46e-05 ATGTTATTTC TGTGTATAA GTCTAAAATT
+NC_004461.1                  -    912  1.46e-05 CGAGAAATTA TGTGTATAA GTGGATAACT
+NC_003197.2                  -    704  1.46e-05 CTTTTTGAGT TGTGTATAA GTACCCGTTT
+NC_002946.2                  -    562  1.46e-05 TTTGGCTGGT TGTGTATAA GCATAGCGGA
+NC_002505.1                  -   1439  1.46e-05 CCAAGGTGGC TGTGTATAA CATAGGTTTT
+NC_015663.1                  +   1165  1.99e-05 GTTTGGATCT TGTTGATAA GTACCTGCTG
+NC_002677.1                  -    792  1.99e-05 TGGATGTCAG TGTTGATAA TAAAGAATCT
+NC_000963.1                  -    927  1.99e-05 ATGAAAATTT TGTTGATAA CTATGTTTGA
+NC_003062.2                  -   1377  1.99e-05 TTTCTCCCCC TGTTGATAA ACCGGGACAA
+NC_009495.1                  +   1169  1.99e-05 TATCCACAGC TGTTGATAA CTTTGTGCAT
+NC_009495.1                  +   1132  1.99e-05 ATTAAAGGAC TGTTGATAA CTTTTAATAC
+NC_009698.1                  +    813  1.99e-05 TATCCACAGC TGTTGATAA CTTTGTGCAT
+NC_009698.1                  +    776  1.99e-05 ATTAAAGGAC TGTTGATAA CTTTTAATAC
+NC_007606.1                  -   1800  1.99e-05 ATCCGTCACC TGTTGATAA GATGGCCCGA
+NC_004663.1                  +   1730  1.99e-05 CTGTTGATGC TGTTGATAA CCTCCGTAAA
+NC_004663.1                  -   1398  1.99e-05 TTAACAGAGG TGTTGATAA CGGTTTAAAA
+NC_004663.1                  +   1199  1.99e-05 ATTAACTCCC TGTTGATAA AGTGCAAAGT
+NC_006347.1                  -   1360  1.99e-05 TTAACATAGG TGTTGATAA GGTTTAAAAC
+NC_006347.1                  +   1162  1.99e-05 ATTAACACCT TGTTGATAA AGTGCAAAGT
+NC_008800.1                  +   1873  1.99e-05 GTTTGGATCT TGTTGATAA GTACCTGTTG
+NC_009089.1                  -    987  1.99e-05 TGGATAATGG TGTTGATAA ATTAATAATA
+NC_009089.1                  +    788  1.99e-05 TAAATATACT TGTTGATAA TGTGCATAAA
+NC_009089.1                  -    705  1.99e-05 ATTAACTAAT TGTTGATAA AAATATAAAC
+NC_003143.1                  +    397  1.99e-05 GTCTGGATTT TGTTGATAA GTACCTGCTG
+NC_006570.2                  -   1246  1.99e-05 ACTCTTGGAT TGTTGATAA AATAAGATTT
+NC_003030.1                  +   1114  1.99e-05 TGCATAACTC TGTTGATAA CTTGTTTTTA
+NC_003030.1                  +    979  1.99e-05 TTTTCACTTC TGTTGATAA ATTATTCACA
+NC_000922.1                  +   1103  1.99e-05 TTGTTCATTT TGTTGATAA GTGAGGATTT
+NC_001318.1                  +   1913  1.99e-05 TCAATTTATA TGTTGATAA ATCAAGAAAG
+NC_005042.1                  -   1943  1.99e-05 TAGAATCATC TGTTGATAA AGTTATAGAA
+NC_004668.1                  +    859  1.99e-05 TTTTTTCAGC TGTTGATAA GTTCTTGAAA
+NC_003197.2                  +   1425  1.99e-05 GTTTGGATCT TGTTGATAA GTACGTGCTG
+NC_004337.2                  +    414  1.99e-05 TAACATTTAT TGTTGATAA TGAGAATCAT
+NC_002662.1                  -   1086  1.99e-05 CTTTTTAGTT TGTTGATAA CTCATTATAT
+NC_016845.1                  -   1403  2.86e-05 GTTTTTGAGC TGTGCATAA CCCTTCATTC
+NC_015663.1                  -    434  2.86e-05 CTTTTTGAGC TGTGCATAA CCCTTCATTC
+NC_003210.1                  +   1102  2.86e-05 GTTAACTGGC TGTGGACAA CCGTTTTTCA
+NC_002677.1                  +    702  2.86e-05 TGTATATTTC TGTGGACAA ACTAAGTATA
+NC_003062.2                  +   1220  2.86e-05 TTTACGCACC TGTGGACAA TCTGGGGAGA
+NC_010397.1                  -   1214  2.86e-05 TATCCACAGC TGTGGACAA CAAAGCCGAC
+NC_009495.1                  +   1181  2.86e-05 TTGATAACTT TGTGCATAA CTTGTTCACT
+NC_009698.1                  +    825  2.86e-05 TTGATAACTT TGTGCATAA CTTGTTCACT
+NC_008526.1                  +    926  2.86e-05 ACAGTGTCAA TGTGCATAA CTGCGAATTT
+NC_007795.1                  +   1244  2.86e-05 ATAAAAATAC TGTGCATAA CTAATAAGCA
+NC_007795.1                  -   1060  2.86e-05 AAACTATAAA TGTGCATAA GTGGATAACT
+NC_006814.3                  +    517  2.86e-05 ACAACATGCT TGTGCATAA TTGATATGTC
+NC_008800.1                  -   1150  2.86e-05 TTAAAGTGCC TGTGCATAA CATGCCATTT
+NC_009089.1                  +    797  2.86e-05 TTGTTGATAA TGTGCATAA ATGTTATCAA
+NC_000964.3                  -   1174  2.86e-05 TTTCACAACT TGTGGACAA CCTTCTACAC
+NC_000964.3                  +    990  2.86e-05 TACCAACCCC TGTGGACAA GGTTTTTTCA
+NC_003030.1                  -   1244  2.86e-05 AATATTCACA TGTGCATAA AAATGTTAAT
+NC_003030.1                  +   1102  2.86e-05 ATACACAATC TGTGCATAA CTCTGTTGAT
+NC_005957.1                  +    875  2.86e-05 TATATCGTGT TGTGGACAA GTTTATTCCA
+NC_005945.1                  +    876  2.86e-05 TATATCGTGT TGTGGACAA TTTTATTCCA
+NC_003997.3                  +    875  2.86e-05 TATATCGTGT TGTGGACAA TTTTATTCCA
+NC_004722.1                  -    400  2.86e-05 AAAAAGCAAA TGTGGACAA CTATTTACCC
+NC_004722.1                  +    219  2.86e-05 TATATCGTGT TGTGGACAA GTTTATTCCA
+NC_004461.1                  +   1098  2.86e-05 ACATAAATGG TGTGCATAA ATCATAGTTA
+NC_002946.2                  -    637  2.86e-05 TATCCGAGTT TGTGCATAA GTGGTGGAGA
+NC_004567.2                  -   1130  3.26e-05 TCGAAAAACT TGTGGGTAA ATTGCGAATA
+NC_004347.2                  +    986  3.26e-05 CGCACTTTGC TGTGGGTAA GCCTATTTTC
+NC_004113.1                  -    798  3.26e-05 GACCTAGTGG TGTGGGTAA AAGTTCGCTG
+NC_003112.2                  +   1127  3.26e-05 AGAAATTTTC TGTGGGTAA CTTTTTTTTA
+NC_005957.1                  +   1044  3.26e-05 TTTAATCACA TGTGGGTAA ATGATTATCC
+NC_005945.1                  +   1045  3.26e-05 TTTAATCACA TGTGGGTAA ATGATTATCC
+NC_003997.3                  +   1044  3.26e-05 TTTAATCACA TGTGGGTAA ATGATTATCC
+NC_004722.1                  +    387  3.26e-05 TTTAATCACA TGTGGGTAA ATAGTTGTCC
+NC_002946.2                  -    939  3.26e-05 GGGAATTTTC TGTGGGTAA CTTTTTTTTA
+NC_002505.1                  +   1046  3.26e-05 GTGTCAATAT TGTGGGTAA GAAGTAACGT
+NC_000963.1                  -   1080  3.79e-05 TGGATAAAAT TGTGAATAA ATATCACTTT
+NC_000963.1                  -    980  3.79e-05 TATAAATTTA TGTGAATAA TAATTAAAAT
+NC_014638.1                  -   1017  3.79e-05 TCGCCTCAAT TGTGAATAA CATTCATGTA
+NC_013853.1                  -    995  3.79e-05 CCTTTTATTT TGTGAATAA GATGTTAAAA
+NC_009009.1                  -   1699  3.79e-05 ATCCACAGAA TGTGAATAA AGCTAAAATT
+NC_007644.1                  -    109  3.79e-05 CCTGTGGATT TGTGAATAA GGGATAGATG
+NC_008800.1                  -   1057  3.79e-05 TGATCTTAAA TGTGAATAA TCACTTATCC
+NC_009089.1                  -    827  3.79e-05 ATCCACAAGC TGTGAATAA TTTCTAATAA
+NC_006570.2                  -   1177  3.79e-05 TACAGTAAAC TGTGAATAA GTTACTATTT
+NC_006570.2                  +    886  3.79e-05 TTAACATATT TGTGAATAA CTTATTAAAC
+NC_003030.1                  -    989  3.79e-05 GTTTTTTTTA TGTGAATAA TTTATCAACA
+NC_004722.1                  +   1912  3.79e-05 AGCTGAATAG TGTGAATAA CTTACCTTGT
+NC_003210.1                  +   1135  4.19e-05 TGGACAGTTT TGTGGATAG ATTTGGTAAG
+NC_000962.3                  +   1214  4.19e-05 TGTCCACATT TGTGGATAG CCATGTGGAC
+NC_002945.4                  +   1216  4.19e-05 TGTCCACATT TGTGGATAG CCATGTGGAC
+NC_010175.1                  -    796  4.19e-05 TCACTCCTTT TGTGGATAG ACGTTCACAA
+NC_000918.1                  +   1353  4.19e-05 GAGGGAAAAG TGTGGATAG ACTTAACAAA
+NC_002942.5                  +   1364  4.19e-05 TATTTAATAC TGTGGATAG ATAGTTTTAA
+NC_004722.1                  -   1943  4.19e-05 TCTATCTACA TGTGGATAG ACTGTGCGTA
+NC_004668.1                  +    756  4.19e-05 GTGAGTAGCT TGTGGATAG TTTTCCACAT
+NC_002946.2                  -    822  4.19e-05 GAATAGGTTT TGTGGATAG TTTGCTTGTT
+NC_003210.1                  +   1271  5.26e-05 TTTAACAGTG TTTGGATAA CCTTATCCAT
+NC_003198.1                  -    659  5.26e-05 AAGGTTATTC TTTGGATAA CTACCGGTTG
+NC_017634.1                  +   1349  5.26e-05 ACCGTTGTTC TTTGGATAA CTACCGTTTG
+NC_014644.1                  -    645  5.26e-05 TTCTCACTAT TTTGGATAA TTTTAAATGC
+NC_009009.1                  -   1277  5.26e-05 GACGAACTTC TTTGGATAA TTGTAAAAGT
+NC_002695.2                  +   1351  5.26e-05 ACGGTTGTTC TTTGGATAA CTACCGGTTG
+NC_000922.1                  +   1233  5.26e-05 TTGGCTTTGA TTTGGATAA AAAATTTCTG
+NC_004722.1                  -    199  5.26e-05 CACGATATAC TGTGTAAAA GTGCGAAAAA
+NC_000907.1                  -   1945  6.88e-05 ATGAAAAAAC TGTGCAAAA TGCACTTTCT
+NC_002528.1                  -    926  8.27e-05 ATTAATTAAC TGTGTACAA TTAGTGATTT
+NC_006055.1                  -    353  8.27e-05 GATTTGAGGT TGTGTACAA ATGTATCAAG
+NC_003210.1                  -   1018  1.01e-04 CACAAGCCAT TGTGTGTAA TTAACCACTA
+NC_002937.3                  -   1265  1.01e-04 CGCGACAGGC TGTGTGTAA GGCACTCCGC
+NC_014644.1                  -    207  1.01e-04 GTTAATAACA TGTGTGTAA TTTGTGGATA
+NC_007795.1                  -   1102  1.01e-04 AGTATAACTT TGTGTGTAA TTTCTAATTA
+NC_004461.1                  -    955  1.11e-04 TGAATAACTG TGTGTATAG CGCATGTGTT
+NC_019382.1                  +   1199  1.43e-04 CCCCGCTGGC TGTGGATAT GTTGTGGTCG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGATAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NC_018828.1                       4.6e-06  1572_[-1]_419
+NC_018658.1                       4.6e-06  1224_[+1]_766
+NC_016845.1                       2.9e-05  1296_[+1]_97_[-1]_65_[-1]_514
+NC_015663.1                         2e-05  327_[+1]_97_[-1]_65_[-1]_535_[+1]_
+                                           104_[+1]_827
+NC_004567.2                       9.3e-06  1129_[-1]_33_[-1]_14_[+1]_45_[+1]_
+                                           92_[+1]_641
+NC_003210.1                        0.0001  936_[+1]_22_[+1]_20_[-1]_12_[-1]_
+                                           55_[-1]_11_[+1]_24_[+1]_82_[-1]_
+                                           14_[+1]_13_[+1]_23_[+1]_688
+NC_003198.1                       5.3e-05  85_[-1]_525_[+1]_30_[-1]_26_[+1]_
+                                           97_[-1]_1192
+NC_002677.1                         2e-05  701_[+1]_81_[-1]_45_[-1]_1146
+NC_000963.1                         2e-05  926_[-1]_44_[-1]_91_[-1]_3_[-1]_
+                                           105_[-1]_198_[-1]_578
+NC_017634.1                       5.3e-05  1207_[+1]_97_[-1]_26_[+1]_30_[-1]_
+                                           525_[+1]_70
+NC_017960.1                       9.3e-06  284_[+1]_20_[-1]_2_[-1]_34_[-1]_1624
+NC_014638.1                       3.8e-05  994_[-1]_13_[-1]_25_[+1]_940
+NC_014644.1                        0.0001  195_[-1]_2_[-1]_36_[+1]_384_[-1]_1347
+NC_004347.2                       3.3e-05  418_[-1]_558_[+1]_95_[-1]_64_[-1]_
+                                           24_[+1]_130_[-1]_656
+NC_006461.1                       9.3e-06  519_[+1]_2_[+1]_3_[+1]_12_[+1]_
+                                           3_[+1]_2_[+1]_19_[+1]_8_[-1]_2_
+                                           [-1]_12_[-1]_4_[-1]_35_[-1]_1270
+NC_010397.1                       2.9e-05  1213_[-1]_2_[+1]_766
+NC_009495.1                         2e-05  1078_[+1]_44_[+1]_17_[-1]_2_[+1]_
+                                           3_[+1]_810
+NC_013853.1                       3.8e-05  994_[-1]_46_[-1]_942
+NC_012926.1                       9.3e-06  4_[+1]_20_[-1]_46_[-1]_1363_[-1]_531
+NC_010175.1                       9.3e-06  795_[-1]_75_[-1]_11_[-1]_12_[-1]_1071
+NC_009698.1                         2e-05  722_[+1]_44_[+1]_17_[-1]_2_[+1]_
+                                           3_[+1]_1166
+NC_008526.1                       9.3e-06  755_[+1]_83_[-1]_69_[+1]_105_[+1]_951
+NC_009009.1                       9.3e-06  1276_[-1]_413_[-1]_3_[+1]_34_[+1]_237
+NC_007795.1                        0.0001  1059_[-1]_17_[+1]_7_[-1]_68_[+1]_
+                                           56_[+1]_41_[+1]_44_[+1]_644
+NC_007005.1                       4.6e-06  54_[-1]_424_[+1]_1504
+NC_006814.3                       9.3e-06  346_[+1]_13_[-1]_29_[-1]_33_[+1]_
+                                           59_[+1]_90_[+1]_1375
+NC_006840.2                       4.6e-06  1317_[+1]_97_[-1]_65_[-1]_493
+NC_006350.1                       4.6e-06  791_[+1]_160_[-1]_1030
+NC_002528.1                       8.3e-05  925_[-1]_45_[-1]_1011
+NC_008800.1                         2e-05  1043_[+1]_4_[-1]_84_[-1]_65_[-1]_
+                                           526_[+1]_105_[+1]_118
+NC_009089.1                         2e-05  704_[-1]_12_[+1]_53_[+1]_[+1]_21_
+                                           [-1]_15_[+1]_127_[-1]_66_[+1]_929
+NC_003143.1                         2e-05  282_[+1]_105_[+1]_1038_[-1]_548
+NC_000964.3                       2.9e-05  989_[+1]_25_[+1]_85_[-1]_3_[+1]_
+                                           35_[-1]_817
+NC_006570.2                         2e-05  738_[+1]_91_[+1]_38_[+1]_49_[-1]_
+                                           224_[-1]_60_[-1]_745
+NC_007929.1                       4.6e-06  796_[-1]_44_[-1]_1142
+NC_002695.2                       5.3e-05  1209_[+1]_97_[-1]_26_[+1]_30_[-1]_
+                                           525_[+1]_68
+NC_003030.1                         2e-05  978_[+1]_1_[-1]_14_[+1]_69_[-1]_
+                                           3_[+1]_3_[+1]_83_[+1]_29_[-1]_747
+NC_005957.1                       2.9e-05  804_[+1]_61_[+1]_24_[+1]_67_[-1]_
+                                           8_[-1]_3_[+1]_22_[+1]_4_[-1]_934
+NC_002942.5                       4.2e-05  828_[+1]_352_[+1]_165_[+1]_627
+NC_006055.1                       8.3e-05  352_[-1]_848_[+1]_79_[-1]_3_[+1]_681
+NC_005945.1                       2.9e-05  805_[+1]_61_[+1]_24_[+1]_67_[-1]_
+                                           8_[-1]_3_[+1]_22_[+1]_4_[-1]_933
+NC_003997.3                       2.9e-05  804_[+1]_61_[+1]_24_[+1]_67_[-1]_
+                                           8_[-1]_3_[+1]_22_[+1]_4_[-1]_934
+NC_004722.1                       5.3e-05  147_[+1]_42_[-1]_11_[+1]_24_[+1]_
+                                           66_[-1]_8_[-1]_3_[+1]_22_[+1]_4_
+                                           [-1]_1503_[+1]_22_[-1]_34_[-1]_5
+NC_004578.1                       4.6e-06  241_[-1]_424_[+1]_334_[+1]_974
+NC_004668.1                       9.3e-06  722_[-1]_24_[+1]_[-1]_85_[+1]_45_
+                                           [+1]_40_[+1]_23_[-1]_13_[+1]_43_
+                                           [-1]_923
+NC_004461.1                       0.00011  911_[-1]_17_[+1]_8_[-1]_68_[+1]_
+                                           57_[+1]_41_[+1]_43_[+1]_791
+NC_002947.4                       4.6e-06  1878_[-1]_112
+NC_004116.1                       4.6e-06  936_[-1]_55_[-1]_991
+NC_003098.1                       9.3e-06  54_[+1]_20_[-1]_46_[-1]_1853
+NC_003197.2                         2e-05  597_[+1]_97_[-1]_65_[-1]_525_[+1]_
+                                           104_[+1]_567
+NC_002662.1                       9.3e-06  876_[-1]_33_[+1]_33_[+1]_15_[-1]_
+                                           58_[+1]_25_[-1]_905
+NC_002737.2                       9.3e-06  679_[+1]_20_[-1]_1283
+NC_002505.1                       3.3e-05  1045_[+1]_278_[+1]_97_[-1]_65_[-1]_
+                                           49_[-1]_420
+NC_003062.2                         2e-05  1219_[+1]_80_[+1]_59_[-1]_614
+NC_005042.1                         2e-05  1388_[+1]_545_[-1]_48
+NC_004350.2                       9.3e-06  906_[-1]_67_[-1]_1009
+NC_004342.2                       1.5e-05  88_[-1]_1902
+NC_003112.2                       3.3e-05  1126_[+1]_291_[+1]_66_[+1]_490
+NC_002946.2                       4.2e-05  561_[-1]_66_[-1]_176_[-1]_108_[-1]_
+                                           1053
+NC_007606.1                         2e-05  1799_[-1]_192
+NC_004663.1                         2e-05  1198_[+1]_190_[-1]_323_[+1]_262
+NC_006347.1                         2e-05  1161_[+1]_189_[-1]_631
+NC_000922.1                         2e-05  1102_[+1]_121_[+1]_759
+NC_001318.1                         2e-05  1912_[+1]_79
+NC_004337.2                         2e-05  413_[+1]_1578
+NC_004113.1                       3.3e-05  797_[-1]_1194
+NC_007644.1                       3.8e-05  108_[-1]_1883
+NC_000962.3                       4.2e-05  1213_[+1]_777
+NC_002945.4                       4.2e-05  1215_[+1]_775
+NC_000918.1                       4.2e-05  1352_[+1]_639
+NC_000907.1                       6.9e-05  1944_[-1]_47
+NC_002937.3                        0.0001  1264_[-1]_727
+NC_019382.1                       0.00014  1198_[+1]_793
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGATAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTGGATAA width=9 seqs=288
+NC_018828.1              ( 1573) TGTGGATAA  1 
+NC_018658.1              ( 1225) TGTGGATAA  1 
+NC_016845.1              ( 1477) TGTGGATAA  1 
+NC_016845.1              ( 1297) TGTGGATAA  1 
+NC_015663.1              (  508) TGTGGATAA  1 
+NC_015663.1              (  328) TGTGGATAA  1 
+NC_004567.2              ( 1249) TGTGGATAA  1 
+NC_004567.2              ( 1172) TGTGGATAA  1 
+NC_003210.1              ( 1303) TGTGGATAA  1 
+NC_003210.1              ( 1249) TGTGGATAA  1 
+NC_003210.1              ( 1226) TGTGGATAA  1 
+NC_003210.1              (  968) TGTGGATAA  1 
+NC_003210.1              (  937) TGTGGATAA  1 
+NC_003198.1              (  800) TGTGGATAA  1 
+NC_003198.1              (  620) TGTGGATAA  1 
+NC_002677.1              (  846) TGTGGATAA  1 
+NC_000963.1              ( 1206) TGTGGATAA  1 
+NC_000963.1              ( 1092) TGTGGATAA  1 
+NC_017634.1              ( 1388) TGTGGATAA  1 
+NC_017634.1              ( 1208) TGTGGATAA  1 
+NC_017960.1              (  285) TGTGGATAA  1 
+NC_014638.1              ( 1051) TGTGGATAA  1 
+NC_014638.1              (  995) TGTGGATAA  1 
+NC_014644.1              (  252) TGTGGATAA  1 
+NC_014644.1              (  196) TGTGGATAA  1 
+NC_004347.2              ( 1335) TGTGGATAA  1 
+NC_004347.2              ( 1196) TGTGGATAA  1 
+NC_004347.2              ( 1163) TGTGGATAA  1 
+NC_004347.2              ( 1090) TGTGGATAA  1 
+NC_006461.1              (  721) TGTGGATAA  1 
+NC_006461.1              (  677) TGTGGATAA  1 
+NC_006461.1              (  664) TGTGGATAA  1 
+NC_006461.1              (  643) TGTGGATAA  1 
+NC_006461.1              (  632) TGTGGATAA  1 
+NC_006461.1              (  615) TGTGGATAA  1 
+NC_006461.1              (  576) TGTGGATAA  1 
+NC_006461.1              (  564) TGTGGATAA  1 
+NC_006461.1              (  543) TGTGGATAA  1 
+NC_006461.1              (  531) TGTGGATAA  1 
+NC_006461.1              (  520) TGTGGATAA  1 
+NC_010397.1              ( 1225) TGTGGATAA  1 
+NC_009495.1              ( 1158) TGTGGATAA  1 
+NC_009495.1              ( 1079) TGTGGATAA  1 
+NC_013853.1              ( 1050) TGTGGATAA  1 
+NC_012926.1              ( 1461) TGTGGATAA  1 
+NC_010175.1              (  921) TGTGGATAA  1 
+NC_010175.1              (  880) TGTGGATAA  1 
+NC_009698.1              (  802) TGTGGATAA  1 
+NC_009698.1              (  723) TGTGGATAA  1 
+NC_008526.1              (  848) TGTGGATAA  1 
+NC_008526.1              (  756) TGTGGATAA  1 
+NC_009009.1              ( 1711) TGTGGATAA  1 
+NC_007795.1              ( 1294) TGTGGATAA  1 
+NC_007795.1              ( 1179) TGTGGATAA  1 
+NC_007795.1              ( 1086) TGTGGATAA  1 
+NC_007005.1              (  488) TGTGGATAA  1 
+NC_007005.1              (   55) TGTGGATAA  1 
+NC_006814.3              (  449) TGTGGATAA  1 
+NC_006814.3              (  347) TGTGGATAA  1 
+NC_006840.2              ( 1498) TGTGGATAA  1 
+NC_006840.2              ( 1424) TGTGGATAA  1 
+NC_006840.2              ( 1318) TGTGGATAA  1 
+NC_006350.1              (  961) TGTGGATAA  1 
+NC_006350.1              (  792) TGTGGATAA  1 
+NC_002528.1              (  980) TGTGGATAA  1 
+NC_008800.1              ( 1759) TGTGGATAA  1 
+NC_008800.1              ( 1224) TGTGGATAA  1 
+NC_008800.1              ( 1044) TGTGGATAA  1 
+NC_009089.1              (  726) TGTGGATAA  1 
+NC_003143.1              ( 1444) TGTGGATAA  1 
+NC_003143.1              (  283) TGTGGATAA  1 
+NC_000964.3              ( 1130) TGTGGATAA  1 
+NC_000964.3              ( 1118) TGTGGATAA  1 
+NC_000964.3              ( 1024) TGTGGATAA  1 
+NC_006570.2              (  944) TGTGGATAA  1 
+NC_006570.2              (  839) TGTGGATAA  1 
+NC_006570.2              (  739) TGTGGATAA  1 
+NC_007929.1              (  850) TGTGGATAA  1 
+NC_007929.1              (  797) TGTGGATAA  1 
+NC_002695.2              ( 1390) TGTGGATAA  1 
+NC_002695.2              ( 1210) TGTGGATAA  1 
+NC_003030.1              ( 1206) TGTGGATAA  1 
+NC_003030.1              ( 1012) TGTGGATAA  1 
+NC_005957.1              ( 1057) TGTGGATAA  1 
+NC_005957.1              ( 1001) TGTGGATAA  1 
+NC_005957.1              (  908) TGTGGATAA  1 
+NC_005957.1              (  805) TGTGGATAA  1 
+NC_002942.5              ( 1190) TGTGGATAA  1 
+NC_002942.5              (  829) TGTGGATAA  1 
+NC_006055.1              ( 1298) TGTGGATAA  1 
+NC_005945.1              ( 1058) TGTGGATAA  1 
+NC_005945.1              ( 1002) TGTGGATAA  1 
+NC_005945.1              (  909) TGTGGATAA  1 
+NC_005945.1              (  806) TGTGGATAA  1 
+NC_003997.3              ( 1057) TGTGGATAA  1 
+NC_003997.3              ( 1001) TGTGGATAA  1 
+NC_003997.3              (  908) TGTGGATAA  1 
+NC_003997.3              (  805) TGTGGATAA  1 
+NC_004722.1              ( 1986) TGTGGATAA  1 
+NC_004722.1              (  344) TGTGGATAA  1 
+NC_004722.1              (  252) TGTGGATAA  1 
+NC_004722.1              (  148) TGTGGATAA  1 
+NC_004578.1              ( 1018) TGTGGATAA  1 
+NC_004578.1              (  675) TGTGGATAA  1 
+NC_004578.1              (  242) TGTGGATAA  1 
+NC_004668.1              ( 1068) TGTGGATAA  1 
+NC_004668.1              (  913) TGTGGATAA  1 
+NC_004668.1              (  723) TGTGGATAA  1 
+NC_004461.1              ( 1148) TGTGGATAA  1 
+NC_004461.1              ( 1032) TGTGGATAA  1 
+NC_004461.1              (  938) TGTGGATAA  1 
+NC_002947.4              ( 1879) TGTGGATAA  1 
+NC_004116.1              ( 1001) TGTGGATAA  1 
+NC_004116.1              (  937) TGTGGATAA  1 
+NC_003098.1              (   84) TGTGGATAA  1 
+NC_003098.1              (   55) TGTGGATAA  1 
+NC_003197.2              (  778) TGTGGATAA  1 
+NC_003197.2              (  598) TGTGGATAA  1 
+NC_002662.1              (  985) TGTGGATAA  1 
+NC_002662.1              (  961) TGTGGATAA  1 
+NC_002662.1              (  919) TGTGGATAA  1 
+NC_002737.2              (  709) TGTGGATAA  1 
+NC_002505.1              ( 1571) TGTGGATAA  1 
+NC_002505.1              ( 1513) TGTGGATAA  1 
+NC_002505.1              ( 1333) TGTGGATAA  1 
+NC_015663.1              ( 1052) TGTGGAAAA  1 
+NC_004567.2              ( 1350) TGTGGAAAA  1 
+NC_003198.1              (   86) TGTGGAAAA  1 
+NC_017634.1              ( 1922) TGTGGAAAA  1 
+NC_017960.1              (  368) TGTGGAAAA  1 
+NC_017960.1              (  325) TGTGGAAAA  1 
+NC_004347.2              (  419) TGTGGAAAA  1 
+NC_003062.2              ( 1309) TGTGGAAAA  1 
+NC_006461.1              (  587) TGTGGAAAA  1 
+NC_012926.1              (   89) TGTGGAAAA  1 
+NC_012926.1              (   34) TGTGGAAAA  1 
+NC_010175.1              (  900) TGTGGAAAA  1 
+NC_008526.1              ( 1040) TGTGGAAAA  1 
+NC_009009.1              ( 1754) TGTGGAAAA  1 
+NC_006814.3              (  616) TGTGGAAAA  1 
+NC_006814.3              (  407) TGTGGAAAA  1 
+NC_006814.3              (  369) TGTGGAAAA  1 
+NC_009089.1              ( 1062) TGTGGAAAA  1 
+NC_002695.2              ( 1924) TGTGGAAAA  1 
+NC_005957.1              (  984) TGTGGAAAA  1 
+NC_006055.1              ( 1310) TGTGGAAAA  1 
+NC_006055.1              ( 1210) TGTGGAAAA  1 
+NC_005945.1              (  985) TGTGGAAAA  1 
+NC_005042.1              ( 1389) TGTGGAAAA  1 
+NC_003997.3              (  984) TGTGGAAAA  1 
+NC_004722.1              (  327) TGTGGAAAA  1 
+NC_004668.1              ( 1016) TGTGGAAAA  1 
+NC_004668.1              (  994) TGTGGAAAA  1 
+NC_004668.1              (  962) TGTGGAAAA  1 
+NC_004668.1              (  765) TGTGGAAAA  1 
+NC_004350.2              (  983) TGTGGAAAA  1 
+NC_004350.2              (  907) TGTGGAAAA  1 
+NC_003098.1              (  139) TGTGGAAAA  1 
+NC_003197.2              ( 1312) TGTGGAAAA  1 
+NC_002662.1              ( 1052) TGTGGAAAA  1 
+NC_002662.1              (  877) TGTGGAAAA  1 
+NC_002737.2              (  680) TGTGGAAAA  1 
+NC_004567.2              ( 1195) TGTGTATAA  1 
+NC_003210.1              ( 1082) TGTGTATAA  1 
+NC_003210.1              (  997) TGTGTATAA  1 
+NC_003198.1              (  694) TGTGTATAA  1 
+NC_000963.1              ( 1413) TGTGTATAA  1 
+NC_017634.1              ( 1314) TGTGTATAA  1 
+NC_017960.1              (  314) TGTGTATAA  1 
+NC_004342.2              (   89) TGTGTATAA  1 
+NC_012926.1              (    5) TGTGTATAA  1 
+NC_007795.1              ( 1347) TGTGTATAA  1 
+NC_009089.1              (  851) TGTGTATAA  1 
+NC_002695.2              ( 1316) TGTGTATAA  1 
+NC_003112.2              ( 1502) TGTGTATAA  1 
+NC_003112.2              ( 1427) TGTGTATAA  1 
+NC_003030.1              ( 1090) TGTGTATAA  1 
+NC_005957.1              ( 1013) TGTGTATAA  1 
+NC_005945.1              ( 1014) TGTGTATAA  1 
+NC_003997.3              ( 1013) TGTGTATAA  1 
+NC_004722.1              (  356) TGTGTATAA  1 
+NC_004461.1              ( 1200) TGTGTATAA  1 
+NC_004461.1              (  912) TGTGTATAA  1 
+NC_003197.2              (  704) TGTGTATAA  1 
+NC_002946.2              (  562) TGTGTATAA  1 
+NC_002505.1              ( 1439) TGTGTATAA  1 
+NC_015663.1              ( 1165) TGTTGATAA  1 
+NC_002677.1              (  792) TGTTGATAA  1 
+NC_000963.1              (  927) TGTTGATAA  1 
+NC_003062.2              ( 1377) TGTTGATAA  1 
+NC_009495.1              ( 1169) TGTTGATAA  1 
+NC_009495.1              ( 1132) TGTTGATAA  1 
+NC_009698.1              (  813) TGTTGATAA  1 
+NC_009698.1              (  776) TGTTGATAA  1 
+NC_007606.1              ( 1800) TGTTGATAA  1 
+NC_004663.1              ( 1730) TGTTGATAA  1 
+NC_004663.1              ( 1398) TGTTGATAA  1 
+NC_004663.1              ( 1199) TGTTGATAA  1 
+NC_006347.1              ( 1360) TGTTGATAA  1 
+NC_006347.1              ( 1162) TGTTGATAA  1 
+NC_008800.1              ( 1873) TGTTGATAA  1 
+NC_009089.1              (  987) TGTTGATAA  1 
+NC_009089.1              (  788) TGTTGATAA  1 
+NC_009089.1              (  705) TGTTGATAA  1 
+NC_003143.1              (  397) TGTTGATAA  1 
+NC_006570.2              ( 1246) TGTTGATAA  1 
+NC_003030.1              ( 1114) TGTTGATAA  1 
+NC_003030.1              (  979) TGTTGATAA  1 
+NC_000922.1              ( 1103) TGTTGATAA  1 
+NC_001318.1              ( 1913) TGTTGATAA  1 
+NC_005042.1              ( 1943) TGTTGATAA  1 
+NC_004668.1              (  859) TGTTGATAA  1 
+NC_003197.2              ( 1425) TGTTGATAA  1 
+NC_004337.2              (  414) TGTTGATAA  1 
+NC_002662.1              ( 1086) TGTTGATAA  1 
+NC_016845.1              ( 1403) TGTGCATAA  1 
+NC_015663.1              (  434) TGTGCATAA  1 
+NC_003210.1              ( 1102) TGTGGACAA  1 
+NC_002677.1              (  702) TGTGGACAA  1 
+NC_003062.2              ( 1220) TGTGGACAA  1 
+NC_010397.1              ( 1214) TGTGGACAA  1 
+NC_009495.1              ( 1181) TGTGCATAA  1 
+NC_009698.1              (  825) TGTGCATAA  1 
+NC_008526.1              (  926) TGTGCATAA  1 
+NC_007795.1              ( 1244) TGTGCATAA  1 
+NC_007795.1              ( 1060) TGTGCATAA  1 
+NC_006814.3              (  517) TGTGCATAA  1 
+NC_008800.1              ( 1150) TGTGCATAA  1 
+NC_009089.1              (  797) TGTGCATAA  1 
+NC_000964.3              ( 1174) TGTGGACAA  1 
+NC_000964.3              (  990) TGTGGACAA  1 
+NC_003030.1              ( 1244) TGTGCATAA  1 
+NC_003030.1              ( 1102) TGTGCATAA  1 
+NC_005957.1              (  875) TGTGGACAA  1 
+NC_005945.1              (  876) TGTGGACAA  1 
+NC_003997.3              (  875) TGTGGACAA  1 
+NC_004722.1              (  400) TGTGGACAA  1 
+NC_004722.1              (  219) TGTGGACAA  1 
+NC_004461.1              ( 1098) TGTGCATAA  1 
+NC_002946.2              (  637) TGTGCATAA  1 
+NC_004567.2              ( 1130) TGTGGGTAA  1 
+NC_004347.2              (  986) TGTGGGTAA  1 
+NC_004113.1              (  798) TGTGGGTAA  1 
+NC_003112.2              ( 1127) TGTGGGTAA  1 
+NC_005957.1              ( 1044) TGTGGGTAA  1 
+NC_005945.1              ( 1045) TGTGGGTAA  1 
+NC_003997.3              ( 1044) TGTGGGTAA  1 
+NC_004722.1              (  387) TGTGGGTAA  1 
+NC_002946.2              (  939) TGTGGGTAA  1 
+NC_002505.1              ( 1046) TGTGGGTAA  1 
+NC_000963.1              ( 1080) TGTGAATAA  1 
+NC_000963.1              (  980) TGTGAATAA  1 
+NC_014638.1              ( 1017) TGTGAATAA  1 
+NC_013853.1              (  995) TGTGAATAA  1 
+NC_009009.1              ( 1699) TGTGAATAA  1 
+NC_007644.1              (  109) TGTGAATAA  1 
+NC_008800.1              ( 1057) TGTGAATAA  1 
+NC_009089.1              (  827) TGTGAATAA  1 
+NC_006570.2              ( 1177) TGTGAATAA  1 
+NC_006570.2              (  886) TGTGAATAA  1 
+NC_003030.1              (  989) TGTGAATAA  1 
+NC_004722.1              ( 1912) TGTGAATAA  1 
+NC_003210.1              ( 1135) TGTGGATAG  1 
+NC_000962.3              ( 1214) TGTGGATAG  1 
+NC_002945.4              ( 1216) TGTGGATAG  1 
+NC_010175.1              (  796) TGTGGATAG  1 
+NC_000918.1              ( 1353) TGTGGATAG  1 
+NC_002942.5              ( 1364) TGTGGATAG  1 
+NC_004722.1              ( 1943) TGTGGATAG  1 
+NC_004668.1              (  756) TGTGGATAG  1 
+NC_002946.2              (  822) TGTGGATAG  1 
+NC_003210.1              ( 1271) TTTGGATAA  1 
+NC_003198.1              (  659) TTTGGATAA  1 
+NC_017634.1              ( 1349) TTTGGATAA  1 
+NC_014644.1              (  645) TTTGGATAA  1 
+NC_009009.1              ( 1277) TTTGGATAA  1 
+NC_002695.2              ( 1351) TTTGGATAA  1 
+NC_000922.1              ( 1233) TTTGGATAA  1 
+NC_004722.1              (  199) TGTGTAAAA  1 
+NC_000907.1              ( 1945) TGTGCAAAA  1 
+NC_002528.1              (  926) TGTGTACAA  1 
+NC_006055.1              (  353) TGTGTACAA  1 
+NC_003210.1              ( 1018) TGTGTGTAA  1 
+NC_002937.3              ( 1265) TGTGTGTAA  1 
+NC_014644.1              (  207) TGTGTGTAA  1 
+NC_007795.1              ( 1102) TGTGTGTAA  1 
+NC_004461.1              (  955) TGTGTATAG  1 
+NC_019382.1              ( 1199) TGTGGATAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGATAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 9 n= 235009 bayes= 11.0762 E= 1.2e-086 
+ -1481  -1481  -1481    190 
+ -1481  -1481    207   -346 
+ -1481  -1481  -1481    190 
+ -1481  -1481    195   -141 
+  -268   -216    177   -127 
+   183  -1481   -226  -1481 
+   -98   -236  -1481    162 
+   190  -1481  -1481  -1481 
+   185  -1481   -274   -626 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGATAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 9 nsites= 288 E= 1.2e-086 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.975694  0.024306 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.899306  0.100694 
+ 0.041667  0.052083  0.795139  0.111111 
+ 0.951389  0.000000  0.048611  0.000000 
+ 0.135417  0.045139  0.000000  0.819444 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.961806  0.000000  0.034722  0.003472 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGGATAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGTGGATAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time 96.98 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GCCBKSGCC MEME-2	width =   9  sites = 308  llr = 2615  E-value = 2.6e-020
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GCCBKSGCC MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::2:::::
+pos.-specific     C  :a7415:a9
+probability       G  a:32558:1
+matrix            T  :::23:2::
+
+         bits    2.1 **     * 
+                 1.9 **     * 
+                 1.7 **     * 
+                 1.5 **    ***
+Relative         1.3 ***   ***
+Entropy          1.1 ***  ****
+(12.3 bits)      0.8 ***  ****
+                 0.6 *** *****
+                 0.4 *** *****
+                 0.2 *** *****
+                 0.0 ---------
+
+Multilevel           GCCCGGGCC
+consensus              GGTC   
+sequence                T     
+                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCCBKSGCC MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value              Site 
+-------------            ------  ----- ---------            ---------
+NC_019382.1                  -    362  1.95e-06 GTTGCCGGCT GCCCGGGCC AGGCAACTGG
+NC_016845.1                  +   1171  1.95e-06 ATGGATTGAA GCCCGGGCC GTGGATTCTA
+NC_015663.1                  +    201  1.95e-06 ATGGATTGAA GCCCGGGCC GTGGATTCTA
+NC_002937.3                  +    727  1.95e-06 ACAACTCCCG GCCCGGGCC ATGCTGGCGG
+NC_017634.1                  +   1081  1.95e-06 ATGGATTGAA GCCCGGGCC GTGGATTCTA
+NC_014121.1                  -      6  1.95e-06 ATGGATTGAA GCCCGGGCC GTGGA     
+NC_008596.1                  -    427  1.95e-06 CCCTGGTCTT GCCCGGGCC GCGCAACTCC
+NC_007644.1                  -   1592  1.95e-06 ATAATATTTA GCCCGGGCC GGCAATCCCA
+NC_007643.1                  +    260  1.95e-06 CCAATTACCT GCCCGGGCC CGATGATATT
+NC_002695.2                  +   1083  1.95e-06 ATGGATTGAA GCCCGGGCC GTGGATTCTA
+NC_014318.1                  +    690  3.89e-06 GAGCGGCATG GCCCGCGCC ACCGACGGGA
+NC_002929.2                  +    417  3.89e-06 CCGCGTCCTG GCCCGCGCC GGTCTGTCGC
+NC_002929.2                  +    189  3.89e-06 GCCTGAAGCG GCCCGCGCC TATGGGGTCA
+NC_012587.1                  -    912  3.89e-06 GCGAGCCTTC GCCCGCGCC CTCACGCCGG
+NC_007643.1                  -   1830  3.89e-06 GGCCGCCCTC GCCCGCGCC CACGGCTGCA
+NC_007643.1                  +    852  3.89e-06 CACCCGTCTC GCCCGCGCC TATAACACCG
+NC_007005.1                  +    896  3.89e-06 CCAACTGACG GCCCGCGCC GCGTTTTTTC
+NC_003112.2                  +    555  3.89e-06 CGCCGGACAC GCCCGCGCC GACAAACAAA
+NC_003112.2                  +    521  3.89e-06 ATAATGGACG GCCCGCGCC GCGCCCCTTC
+NC_004578.1                  +   1083  3.89e-06 CCAACTGACG GCCCGCGCC GCGTTTTTTC
+NC_003902.1                  -   1084  3.89e-06 CCCAGGCGAT GCCCGCGCC AGCTGGGCGC
+NC_002946.2                  -   1545  3.89e-06 ATGATGGACG GCCCGCGCC GCGCGCCTTC
+NC_002946.2                  -   1511  3.89e-06 CGCCGGATAC GCCCGCGCC GACAAACAAA
+NC_002516.2                  +   1852  3.89e-06 CAGCCTCGAT GCCCGCGCC TTCGTCGGCG
+NC_018658.1                  -   1804  5.84e-06 GGTCGGTTCT GCCGGGGCC GGGACGTTAT
+NC_014318.1                  +   1369  5.84e-06 GACCGGCAGG GCCGGGGCC GCGACGGGCA
+NC_006461.1                  +    653  5.84e-06 TTATCCACAG GCCGGGGCC AGTTATCCAC
+NC_012587.1                  -    545  5.84e-06 ACAGCGTGAA GCCGGGGCC GGTCGAAACG
+NC_007677.1                  +    861  5.84e-06 GCTGAGCAGT GCCGGGGCC GAGGCCGACA
+NC_007606.1                  +   1202  5.84e-06 ACTGACGGCA GCCGGGGCC AGACTGACAT
+NC_002939.5                  -   1879  5.84e-06 ACTCCGCTCA GCCGGGGCC CGGTATGCGT
+NC_002516.2                  +   1635  5.84e-06 GACAGCGAGC GCCGGGGCC GCATGCCTGC
+NC_016845.1                  +   1772  7.79e-06 CGGGAACGTC GCCGGCGCC ATGGGTGGAA
+NC_015663.1                  +    804  7.79e-06 CCGGAATATC GCCGGCGCC ATGGGTAGAA
+NC_003888.3                  -    559  7.79e-06 GGTAGGCCCA GCCGGCGCC GTTGGTCCGG
+NC_014318.1                  -    800  7.79e-06 GAGCGTCGCC GCCGGCGCC TTGTGCCGGA
+NC_002929.2                  +   1969  7.79e-06 TGGGCCGCGT GCCGGCGCC GTTCCTGCTG
+NC_003062.2                  +    510  7.79e-06 GAACAGCCGC GCCGGCGCC TGGTCCGGCG
+NC_003062.2                  -    407  7.79e-06 GCAGATCGAT GCCGGCGCC GACGCGGTTC
+NC_010397.1                  -   1596  7.79e-06 TTCGCCAGGG GCCGGCGCC GCGATGCGTA
+NC_012587.1                  +   1940  7.79e-06 GATCGCGCAG GCCGGCGCC TTTTCCGGCA
+NC_012587.1                  +   1447  7.79e-06 GGCTCATCTG GCCGGCGCC GATGCCGGCG
+NC_012587.1                  -   1285  7.79e-06 GGCGATCGCC GCCGGCGCC ACAGCCGTCA
+NC_005125.1                  -   1986  7.79e-06     GGCCGA GCCGGCGCC GGAGGTGTGG
+NC_004463.1                  -   1526  7.79e-06 GCCGCTGCTG GCCGGCGCC CTCATGGCGC
+NC_001263.1                  +     97  7.79e-06 GGGGCCACGC GCCGGCGCC TCCGCGCTGG
+NC_003902.1                  +   1000  7.79e-06 GCAGACCATC GCCGGCGCC AGCTGGATCC
+NC_002516.2                  +    372  7.79e-06 GGCTCCACGA GCCGGCGCC CCCTTGGCGT
+NC_002516.2                  -    356  7.79e-06 GGCTCGTGGA GCCGGCGCC AGGGTCAGGG
+NC_018828.1                  -      1  1.23e-05 CGCATCGCAG GCCTGGGCC           
+NC_017384.1                  -    949  1.23e-05 CGATCCGGCG GCCTGGGCC GCGCTGGTCA
+NC_003888.3                  +   1903  1.23e-05 GCCGTCGGCT GCCTGGGCC TCCAGGAAGG
+NC_003888.3                  +    727  1.23e-05 GACCGACAAC GCCTGGGCC TACAGCAAGA
+NC_002929.2                  +    538  1.23e-05 CGTATCCAGC GCCCTGGCC ACCGGGTCAC
+NC_006461.1                  +   1512  1.23e-05 GGGGGTGTTG GCCCTGGCC CTCGAGGGCG
+NC_011916.1                  +    895  1.23e-05 CTTCCAGCAG GCCCTGGCC TGATGCTGGC
+NC_012587.1                  +   1385  1.23e-05 GAGGCCATGC GCCCTGGCC GCTTCCTCGG
+NC_007643.1                  +   1752  1.23e-05 CCACGGGTAC GCCCTGGCC GCCGGTGATC
+NC_007643.1                  -   1470  1.23e-05 CCAGACCTAT GCCCTGGCC GATGCGGTCA
+NC_007677.1                  +   1665  1.23e-05 GGGGGCGTAC GCCTGGGCC ATCGAGGAGG
+NC_007005.1                  +   1175  1.23e-05 GATCGGTGCA GCCCTGGCC AGTGATTGAA
+NC_004578.1                  +   1362  1.23e-05 GATCAGCACA GCCCTGGCC TGTGAGGGCA
+NC_003902.1                  +   1096  1.23e-05 CGCGGGCATC GCCTGGGCC ACCAAGGGCT
+NC_002696.2                  +    903  1.23e-05 CTTCCAGCAG GCCCTGGCC TGATGCTGGC
+NC_017384.1                  +   1535  1.68e-05 CGCTTGAGAC GCCTGCGCC GCCATAGATG
+NC_006461.1                  +   1827  1.68e-05 CCTCCTCGAG GCCCTCGCC CCCGTGGGGG
+NC_013172.1                  +    644  1.68e-05 GGACGATGCC GCCCTCGCC CTCCAGGACG
+NC_012587.1                  +   1060  1.68e-05 TCCTGGTGAG GCCTGCGCC TGGATCCTCG
+NC_007644.1                  +   1666  1.68e-05 TGGTTACCTG GCCCTCGCC CGATCCTTCA
+NC_007677.1                  -    332  1.68e-05 GGACTTCCGA GCCCTCGCC CTTGAGGTAG
+NC_002939.5                  +   1599  1.68e-05 CGGGCGGGCG GCCTGCGCC TCACTCTCCC
+NC_002939.5                  +   1383  1.68e-05 CTCTTCCGGT GCCTGCGCC GCGAGACGGA
+NC_004337.2                  -   1870  1.68e-05 AATATTTTCC GCCTGCGCC TCGCCAATAG
+NC_002516.2                  +   1834  1.68e-05 CCACATGGGT GCCCTCGCC AGCCTCGATG
+NC_002516.2                  -    543  1.68e-05 GGTGTGGAAC GCCTGCGCC AGCGGCCCGA
+NC_003888.3                  -    797  2.10e-05 GTCTGGGGCC GCCAGGGCC TAGTCCAGCG
+NC_011916.1                  -   1805  2.10e-05 CTCGTGCGCC GCGCGGGCC TCGGCGAGGG
+NC_007644.1                  +   1030  2.10e-05 TGAGAATAAA GCCAGGGCC CATATTATTA
+NC_006348.1                  -      9  2.10e-05 CATCGGTCAC GCGCGGGCC GCGCCGCG  
+NC_001263.1                  +   1252  2.10e-05 TCAGCGCGCC GCGCGGGCC CGGCAATTCG
+NC_002947.4                  +   1633  2.10e-05 CAGTTCCCCA GCCAGGGCC AGGTACGCCA
+NC_003902.1                  -    834  2.10e-05 AACCAGCGCC GCCAGGGCC GTGCCCCAGG
+NC_002696.2                  -   1813  2.10e-05 CTCGTGCGCC GCGCGGGCC TCGGCGAGGG
+NC_019382.1                  +    981  2.52e-05 CATCGGCCGC GCCAGCGCC GCCACCCGTA
+NC_019382.1                  -    464  2.52e-05 GCTCGCGCTG GCGCGCGCC AAGGACGCCT
+NC_019382.1                  -    140  2.52e-05 CGAGGACATT GCGCGCGCC AGCGTACGGT
+NC_018658.1                  -   1888  2.52e-05 GCGAGCCGCC GCGCGCGCC AGTTGGTTAG
+NC_017384.1                  -   1154  2.52e-05 CGTCATTGGC GCGCGCGCC ACCAGCGAAA
+NC_017384.1                  +    839  2.52e-05 AAGGCCCACA GCGCGCGCC ATCGGGCGCA
+NC_003198.1                  -    484  2.52e-05 CCTGTTTTGC GCCAGCGCC TTTCAGTTCC
+NC_002929.2                  -    320  2.52e-05 CTCCACGATA GCCAGCGCC TTGGCCGGCG
+NC_013522.1                  -   1345  2.52e-05 CCGGTCTAAT GCGCGCGCC CGCCGCTTCC
+NC_013172.1                  +    336  2.52e-05 GGCTCCGGCA GCCAGCGCC TCTACGGCTT
+NC_011916.1                  -   1649  2.52e-05 GGACTTGGGC GCCAGCGCC AGCGGCGGGA
+NC_011916.1                  -     37  2.52e-05 CCCGGTGGAG GCGCGCGCC TTTCTGGGCC
+NC_010175.1                  +    402  2.52e-05 AAGGGCTGTG GCCAGCGCC GGTGGAATAC
+NC_008596.1                  -    444  2.52e-05 GCGAGACTGG GCCAGCGCC CTGGTCTTGC
+NC_006348.1                  -   1133  2.52e-05 GCTGATGCGC GCGCGCGCC GTGCCGGGTA
+NC_006348.1                  +    465  2.52e-05 CTCCTCGCCC GCGCGCGCC GCCTCGACGG
+NC_006350.1                  +    289  2.52e-05 CCGTCGTCGA GCGCGCGCC GCTTTTCGAC
+NC_005125.1                  +   1137  2.52e-05 TTTTTTTCGC GCCAGCGCC GGACGCTGGT
+NC_003047.1                  -    697  2.52e-05 TGGACATATC GCGCGCGCC GGCTTGGCCG
+NC_003197.2                  +    914  2.52e-05 CCTGTTTTGC GCCAGCGCC TTTCAGTTCC
+NC_002696.2                  -   1657  2.52e-05 GGACTTGGGC GCCAGCGCC AGCGGCGGGA
+NC_002696.2                  -     45  2.52e-05 CCCGGTGGAG GCGCGCGCC TTTCTGGGCC
+NC_002516.2                  +    980  2.52e-05 CTGATGGCAC GCCAGCGCC TTCCCGTGCA
+NC_018828.1                  -   1851  2.74e-05 CGCGTGTTCG GCCGTGGCC GCATCGTCGT
+NC_003888.3                  -    669  2.74e-05 TGCGAAGTAG GCCGTGGCC CGGACGAGGA
+NC_006461.1                  +   1794  2.74e-05 GCCGGGCATG GCCGTGGCC TACAACGCCC
+NC_006461.1                  +    183  2.74e-05 GCTGACCCGC GCCGTGGCC GCCAAGGCCC
+NC_010397.1                  +   1831  2.74e-05 CCACGCCGCC GCCGTGGCC GTGTCCGAGG
+NC_008570.1                  -    606  2.74e-05 CGGTACGCAG GCCGTGGCC CTCGCTCTCA
+NC_002939.5                  +    598  2.74e-05 CAAGCTGATT GCCGTGGCC CTGACCGATG
+NC_006348.1                  -   1016  2.97e-05 CGCGCTTGCC GCCGTCGCC GCGCTGATCG
+NC_000964.3                  -    604  2.97e-05 GTTTTAGCAC GCCGTCGCC GCAAAGGCAG
+NC_006461.1                  -   1409  3.42e-05 GGGGACCACG GCCTTGGCC TGGAACCCTT
+NC_010397.1                  -   1848  3.42e-05 GTAGGCCCGA GCGGGGGCC TCGGACACGG
+NC_017384.1                  +    199  4.07e-05 GATCTTCCTG GCCTTCGCC GCCCGTAAAT
+NC_014318.1                  -   1302  4.07e-05 GCTGCCCGCC GCCCCGGCC CTGCCGGTGA
+NC_000962.3                  +    887  4.07e-05 GTACTTACGC GCCTTCGCC TGGTCAAACC
+NC_002945.4                  +    889  4.07e-05 GTACTTACGC GCCTTCGCC TGGTCAAACC
+NC_002929.2                  +    771  4.07e-05 TCGCAGCCGC GCCTTCGCC GCGCTGTGCC
+NC_006461.1                  +    147  4.07e-05 GCGGGCCATC GCCTTCGCC TCCCTCAACG
+NC_000912.1                  -   1813  4.07e-05 CAACGGGAAT GCCCCGGCC ATCATCCTCC
+NC_013172.1                  -   1361  4.07e-05 CCCGTGGGCC GCGGGCGCC GCCTCCCATC
+NC_011916.1                  -   1628  4.07e-05 CGGCGGGAAG GCGGGCGCC GGACCCGAGG
+NC_011916.1                  -   1515  4.07e-05 CGACCGCGAC GCCCCGGCC GCCCGTGAGT
+NC_011916.1                  -   1421  4.07e-05 GGCGATCGTG GCCTTCGCC GTCGATCCGA
+NC_011916.1                  +    811  4.07e-05 CCGAGACCAC GCCTTCGCC CGCGAGGGTG
+NC_011916.1                  +    286  4.07e-05 GGCGGCAAGC GCCCCGGCC ATTGTCGTGA
+NC_007643.1                  +    236  4.07e-05 TCGGCTTCCT GCGGGCGCC CGAGTCCAAT
+NC_003902.1                  +    362  4.07e-05 ATCGCCGAAC GCCCCGGCC GTCTTCAATG
+NC_002696.2                  -   1636  4.07e-05 CGGCGGGAAG GCGGGCGCC GGACCCGAGG
+NC_002696.2                  -   1523  4.07e-05 CGACCGCGAC GCCCCGGCC GCCCGTGAGT
+NC_002696.2                  -   1429  4.07e-05 GGCGATCGTG GCCTTCGCC GTCGATCCGA
+NC_002696.2                  +    819  4.07e-05 CCGAGACCAC GCCTTCGCC CGCGAGGGTG
+NC_002696.2                  +    294  4.07e-05 GGCGGCAAGC GCCCCGGCC ATTGTCGTGA
+NC_003888.3                  +   1392  5.20e-05 TCTGGGACTG GCCCGGTCC GCCGTCCCAG
+NC_003888.3                  -    408  5.20e-05 CTCGCCGGTG GCCCGGTCC AGGGCGGCCA
+NC_003198.1                  -   1792  5.20e-05 AAGGACAGTA GCGTGGGCC GATCCCTTCG
+NC_017634.1                  +    216  5.20e-05 ACGGGCAGTA GCGTGGGCC GACACCTTCG
+NC_003062.2                  +     35  5.20e-05 GCGGGGTGAT GCCATGGCC GAGATTGAAG
+NC_006461.1                  -   1844  5.20e-05 GCCCAGGTGG GCCCGGTCC CCCACGGGGG
+NC_011750.1                  +   1169  5.20e-05 ACGGGCAGTA GCGTGGGCC GACACCTTCG
+NC_014121.1                  -    872  5.20e-05 ACGGGCAATA GCGTGGGCC GATCCCTTCG
+NC_013172.1                  +   1167  5.20e-05 GACCACGAGC GCCCGGTCC GAGGCGGCGA
+NC_012587.1                  +    666  5.20e-05 ATCGCCTTCG GCCCGGTCC AGGCCTCGTC
+NC_008526.1                  -   1787  5.20e-05 CAAAGCAGCC GCGTGGGCC ATTTGGTTTC
+NC_007643.1                  -   1626  5.20e-05 GCCGCCGATC GCCCCCGCC CTGCTCAGCC
+NC_007643.1                  -    552  5.20e-05 CGATCAGGGC GCGCTGGCC CTTGCCCAGC
+NC_007677.1                  +   1314  5.20e-05 GAGTGAGGGC GCGTGGGCC CGCTCGTTCG
+NC_006350.1                  -    975  5.20e-05 TAGTTAACAA GCCCCCGCC GATTCTGTGG
+NC_005125.1                  +    675  5.20e-05 GTAGGGTTTT GCCATGGCC GGTCGCCGAG
+NC_002695.2                  +    218  5.20e-05 ACGGGCAGTA GCGTGGGCC GACACCTTCG
+NC_001263.1                  +    109  5.20e-05 CGGCGCCTCC GCGCTGGCC GCACTTCGAG
+NC_002947.4                  +   1150  5.20e-05 GCGCTGCAGG GCCATGGCC TCTTCCAGTG
+NC_002516.2                  +   1187  5.20e-05 GCCGCCTTCG GCGTGGGCC TGGCCGTGGG
+NC_000913.3                  +   1169  5.20e-05 ACGGGCAGTA GCGTGGGCC GACACCTTCG
+NC_003888.3                  -   1476  6.14e-05 CGTGGTGCAC GCCATCGCC ACGCAGACGA
+NC_005027.1                  +    153  6.14e-05 CCGGCTGACT GCCATCGCC ACCGGCCCCT
+NC_000962.3                  +    577  6.14e-05 CAAGCACTGA GCGTGCGCC GACCCTTGCG
+NC_002945.4                  +    579  6.14e-05 CAAGCACTGA GCGTGCGCC GACCCTTGCG
+NC_002937.3                  +    708  6.14e-05 GCGGGCTGCC GCCATCGCC ACAACTCCCG
+NC_013522.1                  -    799  6.14e-05 CCTGGCGGAG GCCCGCTCC GGCTGGGCCT
+NC_013172.1                  -   1181  6.14e-05 CACGCAGATG GCGCTCGCC GCCTCGGACC
+NC_012587.1                  -   1858  6.14e-05 CTATCGCCGG GCGCTCGCC TGCGATTCGA
+NC_007643.1                  -    360  6.14e-05 GGGCGAAATA GCGCTCGCC ATCCTTGGGG
+NC_007606.1                  -    159  6.14e-05 TTGCTTAATC GCGTGCGCC AACATCAGGC
+NC_006348.1                  -   1211  6.14e-05 GAGCATCGAC GCGCTCGCC GCGGCGTCGG
+NC_006350.1                  +   1276  6.14e-05 CGATCGTCCG GCGCTCGCC CGTCTGCGGA
+NC_002947.4                  -   1209  6.14e-05 CGACGAAGCC GCCATCGCC ATGGCATTGA
+NC_004463.1                  -   1076  6.36e-05 GCCCGAACAA GCGAGGGCC TTGTCAGCCG
+NC_018828.1                  +    920  6.97e-05 ATGGACGAGC GCGAGCGCC AGCTCAAGGC
+NC_003198.1                  -    927  6.97e-05 ATGGATTGAA GCCCGGGCG GTGGATTCTA
+NC_014923.1                  +   1697  6.97e-05 GCATCGTACA GCCGCGGCC GCAAAGTCCT
+NC_010397.1                  -   1723  6.97e-05 TGTCGGCGCC GCCCGGGCG ATTGATGAAG
+NC_013172.1                  -   1977  6.97e-05 TGGAACCGCT GCCGCGGCC GCTGGCGGCG
+NC_012587.1                  -   1228  6.97e-05 GGAGGTGATC GCCGCGGCC AACGAACACA
+NC_006348.1                  +    141  6.97e-05 CGCCGAGGCG GCCGCGGCC GACTGCTCGA
+NC_001263.1                  -   1720  6.97e-05 CAGCCGCGCC GCGAGCGCC ACCTCGCCGA
+NC_003197.2                  +    471  6.97e-05 ATGGATTGAA GCCCGGGCG GTGGATTCTA
+NC_003888.3                  -    538  7.81e-05 TGGTCCGGCT GCGGTGGCC TTCGGCCCGA
+NC_014318.1                  -   1701  7.81e-05 GGCCGTGCCC GCGGTGGCC GGGGTCGCCG
+NC_014318.1                  -   1641  7.81e-05 GGGCCTGCCG GCGGTGGCC GGTCTCGCGA
+NC_002937.3                  -    934  7.81e-05 CCGAGGTATG GCCGGGTCC CGTATGGGAC
+NC_017634.1                  -    521  7.81e-05 GATAATTACA GCGGTGGCC GTGCTGGTGA
+NC_003062.2                  -    939  7.81e-05 AGACGGTTAC GCCGCCGCC AATATGGCTG
+NC_006461.1                  +   1347  7.81e-05 GGGCTTCCGG GCGGTGGCC TCCGACGGGT
+NC_011750.1                  -   1474  7.81e-05 GATAACTACA GCGGTGGCC GTGCTGGTGA
+NC_011916.1                  +    977  7.81e-05 CCCTACCCTC GCCGGGTCC GGGTCAGATC
+NC_008596.1                  +   1313  7.81e-05 CTTCGCGGAT GCGGTGGCC TGGGTAGCCC
+NC_005125.1                  -   1554  7.81e-05 CGGTGACCAC GCCCGCGCG CAGGCGCAGG
+NC_002695.2                  -    523  7.81e-05 GATAACTACA GCGGTGGCC GTGCTGGTGA
+NC_002696.2                  +    985  7.81e-05 CCCTACCCTC GCCGGGTCC GGGTCAGATC
+NC_000913.3                  -   1474  7.81e-05 GATAATTACA GCGGTGGCC GTGCTGGTGA
+NC_018828.1                  -   1266  8.49e-05 ATAGCTGGGC GCCTCGGCC AACCGCACAT
+NC_014318.1                  -   1489  8.49e-05 TGGCGCACCT GCCGGCTCC GGCGCTGCCC
+NC_014318.1                  +    987  8.49e-05 CAGGAGCCAT GCCGGCTCC TGGGGCTCGT
+NC_002929.2                  -    449  8.49e-05 CACCGGCTCG GCCGGCTCC AGGTCGGCCA
+NC_014638.1                  +   1793  8.49e-05 TGTCGCGCTT GCGGTCGCC GAGGGAACCG
+NC_006461.1                  -   1475  8.49e-05 GGCGAGGTCG GCCTCGGCC CCGTCCGCCC
+NC_012587.1                  -   1342  8.49e-05 CCGCGGCTCG GCGGTCGCC TCGGAGGCCT
+NC_008596.1                  -   1873  8.49e-05 GGCCTTGGCG GCCTCGGCC AGCGTCTTCG
+NC_007677.1                  +   1134  8.49e-05 GGCCCACGTG GCCGGCTCC GTGGATCCGA
+NC_002947.4                  +   1705  8.49e-05 GAAGCTGGGG GCCTCGGCC AAGCGAATGT
+NC_019382.1                  +    504  9.49e-05 GGTGCGTACC GCCCTGTCC AGGCCGTCCT
+NC_009636.1                  -    110  9.49e-05 GGGCAATACG GCCCTGTCC ATGCCATCGC
+NC_007005.1                  +    261  9.49e-05 TCAGCAGATG GCGTTGGCC TTGGCAACCC
+NC_004463.1                  -   1363  9.49e-05 AACTTTCTCC GCCCTGTCC TGGTCGGCCA
+NC_003450.3                  -   1916  9.49e-05 ACCGGTTCTG GCGTTGGCC AGCTGGAAAT
+NC_001263.1                  +    739  9.49e-05 TCGCAGCCCA GCCTCCGCC AGCCGGGGGG
+NC_004578.1                  +    448  9.49e-05 TCAGCAGATG GCGTTGGCC TTGGCAACCC
+NC_019382.1                  -    118  1.09e-04 GTACGGTTCC GCCGGGGCG CAGCCGGCAA
+NC_018828.1                  -    280  1.09e-04 CAGTCCGAGC GCGCCGGCC ATCTGCCGCA
+NC_006461.1                  +    198  1.09e-04 GGCCGCCAAG GCCCTCTCC GACATCTTCG
+NC_000912.1                  -   1657  1.09e-04 CGATGTACAT GCCGGGGCG CTTACGCACG
+NC_012587.1                  -    277  1.09e-04 CAGGATTCCC GCCCTCTCC TTGAGTTCGC
+NC_008570.1                  -   1414  1.09e-04 CAGGGTAAAC GCCCTCTCC CCCTGGCGGA
+NC_002967.9                  +    195  1.09e-04 CAAGGATTGA GCCTGCTCC GGAACCGCGC
+NC_002939.5                  -   1059  1.09e-04 GGCCAGCTTT GCCACGGCC ACGATCCGCT
+NC_003047.1                  -   1622  1.09e-04 GGCGTGTCCA GCGCCGGCC TCTTCGTGCA
+NC_002946.2                  -    443  1.09e-04 TTCCCTTTGA GCCGGGGCG GGGCAACGCC
+NC_017384.1                  -    967  1.22e-04 GTTCATGGCC GCGATGGCC GATCCGGCGG
+NC_014318.1                  +   1109  1.22e-04 GCGCGGTGGA GCGCCCGCC GCCGTGACAG
+NC_003198.1                  +   1039  1.22e-04 CACTGAGGCC GCGATGGCC GCAGCGCGTA
+NC_000962.3                  +    814  1.22e-04 CTGCTGGCCG GCGCGGTCC CTGGACTAAT
+NC_002677.1                  -   1133  1.22e-04 ATTGGTTTTG GCCAGGTCC ATGGCGCCCC
+NC_002677.1                  +    347  1.22e-04 CATAATGACA GCCACCGCC GAATACTTCG
+NC_002945.4                  +    816  1.22e-04 CTGCTGGCCG GCGCGGTCC CTGGACTAAT
+NC_002937.3                  -    757  1.22e-04 CCTCTGCTGT GCGCCCGCC TTTCAGTTGC
+NC_017634.1                  -    969  1.22e-04 CACCGAGGCC GCGATGGCC GCGGCGCGTA
+NC_011750.1                  -   1922  1.22e-04 CACCGAGGCC GCGATGGCC GCGGCGCGTA
+NC_013522.1                  -   1678  1.22e-04 GAGCTCCTCC GCCACCGCC TCCATGATCT
+NC_013522.1                  +    494  1.22e-04 CAGCCGGTCC GCCAGGTCC TTGGGGGTGT
+NC_013172.1                  +   1116  1.22e-04 GAGCTTCAGG GCGCGGTCC GCGGCGGTGA
+NC_013172.1                  +    764  1.22e-04 TTCTCGTCGT GCGCGGTCC GTCTCGACGG
+NC_010175.1                  -   1432  1.22e-04 CGATGCCATC GCGATGGCC ATTCAGGGTC
+NC_009636.1                  -   1104  1.22e-04 GCCCACTGCC GCCGGCGCG TGTTGCGACC
+NC_008596.1                  -   1693  1.22e-04 GCGGCCTGCC GCCACCGCC ACCTGGCCGA
+NC_004463.1                  +    913  1.22e-04 CGACGAAGAA GCCACCGCC ACCGCGATCG
+NC_000915.1                  -    808  1.22e-04 CACTAAAAAA GCCACCGCC GAAATGAAAG
+NC_003197.2                  -    359  1.22e-04 CACTGAGGCC GCGATGGCC GCAGCGCGTA
+NC_002946.2                  +     10  1.22e-04  CCCGATTCC GCGCCCGCC GGATTGCTGA
+NC_000913.3                  -   1922  1.22e-04 CACCGAGGCC GCGATGGCC GCGGCGCGTA
+NC_018828.1                  -   1443  1.34e-04 TTCCAGGCGC GCCAGCTCC CCTCCCGCTG
+NC_016845.1                  +    835  1.34e-04 CACGCGGTCA GCCTGGGCG CGGGTGGCGC
+NC_003888.3                  -   1871  1.34e-04 CTCGACTACG GCCTGGGCG ACTGGTTCAC
+NC_014318.1                  +   1939  1.34e-04 CTCGTCAGCC GCCAGCTCC GAGCCCTCGG
+NC_002929.2                  +    712  1.34e-04 TACTACCAGC GCCTGGGCG TGACCATCCA
+NC_002929.2                  -    371  1.34e-04 CACGCCCAGC GCCTGGGCG ATGCGCGCTT
+NC_004347.2                  +    596  1.34e-04 ATAGTCGGTA GCGATCGCC ATTGCACCGC
+NC_013522.1                  -    811  1.34e-04 GCTAAGATCC GCCCTGGCG GAGGCCCGCT
+NC_011916.1                  -   1730  1.34e-04 CGCGAACAGC GCCTGGGCG CTTTCGTCCA
+NC_011916.1                  -   1205  1.34e-04 AACAAGCACC GCGCGCTCC GCTGGCACGA
+NC_009636.1                  -   1133  1.34e-04 AACAGCCGAC GCCCTGGCG CGATTGTGTG
+NC_003902.1                  +   1511  1.34e-04 GGCCTGGCTG GCCTGGGCG ATCTGGTGCT
+NC_003047.1                  -    607  1.34e-04 CTTGCTGAAC GCCCTGGCG CGAAGGGACA
+NC_002696.2                  -   1738  1.34e-04 CGCGAACAGC GCCTGGGCG CTTTCGTCCA
+NC_002696.2                  -   1213  1.34e-04 AACAAGCACC GCGCGCTCC GCTGGCACGA
+NC_002516.2                  +   1340  1.34e-04 GCGCTCTGCT GCCTGGGCG CCTGGGGCGC
+NC_002516.2                  +    610  1.34e-04 GTTCTCCTAT GCGATCGCC GCGCCGTTGC
+NC_003888.3                  +   1659  1.41e-04 GTGCCTCGGC GCCGTGTCC GCCGCCGCCG
+NC_014318.1                  +   1090  1.41e-04 GTGCGAGGTC GCCCTCGCG GCGCGGTGGA
+NC_009636.1                  -    406  1.41e-04 GACACGGCAG GCCTGCGCG AAACGGATGA
+NC_004463.1                  -   1150  1.41e-04 CAACCATGGA GCCCTCGCG CCTTCGATGC
+NC_003112.2                  -   1884  1.41e-04 CTGGATTCCC GCCTGCGCG GGAATGACGG
+NC_003112.2                  -   1733  1.41e-04 CTAGATTCCC GCCTGCGCG GGAATGACGG
+NC_003112.2                  -   1661  1.41e-04 CTAGATTCCC GCCTGCGCG GGAATGACGG
+NC_003902.1                  +    965  1.41e-04 CTGCCGGACA GCCTGCGCG CGACCACCGA
+NC_003047.1                  -    188  1.41e-04 CCTTGGCGAT GCCCTCGCG GAAGCGCCAT
+NC_015663.1                  +   1952  1.50e-04 CACGACTTCA GCGCGGGCG AAGGGCTGTA
+NC_000962.3                  -   1902  1.50e-04 GGGGTTGTAA GCGCGGGCG GGTGCTTCTG
+NC_002945.4                  -   1904  1.50e-04 GGGGTTGTAA GCGCGGGCG GGTGCTTCTG
+NC_012926.1                  -   1579  1.50e-04 TAGATAGTGT GCCGTCTCC GCCTAAAATC
+NC_014121.1                  -   1067  1.50e-04 CAATAGCGTA GCCAGGGCG AACGATTTTC
+NC_011916.1                  +    625  1.50e-04 CATCGACGCG GCCGTCTCC TACTACGGCG
+NC_002696.2                  +    633  1.50e-04 CATCGACGCG GCCGTCTCC TACTACGGCG
+NC_017384.1                  +   1969  1.62e-04 GTCGCTTGAA GCCTTGTCC GACGCGCCCG
+NC_006461.1                  +   1534  1.62e-04 GAGGGCGGAA GCGGGGTCC GGATGGCCCT
+NC_010397.1                  +   1527  1.62e-04 AACGGCATCT GCGGGGTCC TATCGTCGAG
+NC_004113.1                  -   1324  1.62e-04 TTTCGCTATG GCCTTGTCC ATGTGCGCGA
+NC_003888.3                  -   1242  1.74e-04 GACCTCCGCG GCGGGCTCC TACCGCACCC
+NC_011296.1                  -    795  1.74e-04 TTATTCTGAA GCCTTCTCC AGAGAACTCA
+NC_004663.1                  +     86  1.74e-04 AGGCCTCACT GCCTTCTCC GCTATTTCGG
+NC_004307.2                  -   1330  1.74e-04 GCTGTCCATC GCCGTGGCG ATTATTCAGG
+NC_008570.1                  -    365  1.89e-04 GCGAATGTCC GCCCCCTCC GGCAGACCGC
+NC_007677.1                  -   1019  1.89e-04 GCCCTCGGCC GCCCCCTCC ACGAGTCCGG
+NC_004668.1                  -    510  1.89e-04 ACTAAAAATG GCCGTCGCG TATTAGCAAG
+NC_002947.4                  +    946  1.89e-04 AACATGACGC GCCCCCTCC TCCTGACGAT
+NC_004337.2                  +    813  1.89e-04 GTGCTGGAAA GCCATGTCC ATACGCAACA
+NC_019382.1                  -    656  2.04e-04 CCGATTTACG GCCTTGGCG AGGGTGCAGC
+NC_002677.1                  +   1077  2.04e-04 GCTCACGCTA GCGGGGGCG GAGGCTAGCC
+NC_011750.1                  -    155  2.04e-04 CACGCCTGCG GCCATCTCC ATTCTGCTGG
+NC_003047.1                  -    199  2.04e-04 CGGTAGGACA GCCTTGGCG ATGCCCTCGC
+NC_000913.3                  -    155  2.04e-04 CACGCCTGCG GCCATCTCC ATTCTGCTGG
+NC_016845.1                  +    306  2.17e-04 ACGGGCAATA GCGAGGTCC GATCCCTTCG
+NC_008570.1                  +   1520  2.17e-04 GATCGCCGGT GCCCAGGCC CAGCGTCTGG
+NC_001263.1                  +     28  2.17e-04 CGGCCACCTT GCCCCGGCG CCGTCAGCGG
+NC_002516.2                  -   1543  2.17e-04 AGGCGCCGAT GCCCAGGCC GATGCCCAAT
+NC_002516.2                  -   1366  2.17e-04 CCGCCGGCGC GCCCAGGCC CAGCGCGGCG
+NC_009636.1                  -   1042  2.57e-04 CTGGACAGCG GCCTCGTCC TCTACTTCCC
+NC_008596.1                  -   1243  2.86e-04 CGTCGTCGTC GCCACGTCC TATGCGCCCC
+NC_003197.2                  -   1723  3.19e-04 TGCCCGCACC GCCTACGCC GAACTGGCCA
+NC_004347.2                  -   1390  3.35e-04 GACACCTTTT GCCAAGGCC CAGAGAAGCT
+NC_003902.1                  +   1191  3.66e-04 TGGCCGTGGT GACCGGGCC CTCGTTCGCC
+NC_014638.1                  -   1850  4.15e-04 GGTGGGTCTT GCCCAGTCC CGATCCGCCG
+NC_002937.3                  -   1410  4.53e-04 TGCCACCCTC GACTGGGCC GTATCCGCTG
+NC_004337.2                  +    851  4.53e-04 TGCCCGTCAT GACTGGGCC GCTCTGCGTG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCCBKSGCC MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NC_019382.1                        0.0002  117_[-2]_13_[-2]_213_[-2]_93_[-2]_
+                                           31_[+2]_143_[-2]_316_[+2]_1011
+NC_016845.1                       0.00013  305_[+2]_520_[+2]_327_[+2]_592_
+                                           [+2]_219
+NC_015663.1                       0.00015  200_[+2]_594_[+2]_1139_[+2]_40
+NC_002937.3                       0.00045  707_[+2]_10_[+2]_21_[-2]_168_[-2]_
+                                           467_[-2]_582
+NC_017634.1                       0.00012  215_[+2]_296_[-2]_439_[-2]_103_
+                                           [+2]_911
+NC_014121.1                       0.00015  5_[-2]_857_[-2]_186_[-2]_925
+NC_008596.1                       8.5e-05  426_[-2]_8_[-2]_790_[-2]_61_[+2]_
+                                           371_[-2]_171_[-2]_118
+NC_007644.1                       1.7e-05  1029_[+2]_553_[-2]_65_[+2]_326
+NC_007643.1                       4.1e-05  235_[+2]_15_[+2]_91_[-2]_183_[-2]_
+                                           291_[+2]_609_[-2]_147_[-2]_117_
+                                           [+2]_69_[-2]_162
+NC_002695.2                       7.8e-05  217_[+2]_296_[-2]_551_[+2]_909
+NC_014318.1                       0.00013  689_[+2]_101_[-2]_178_[+2]_94_[+2]_
+                                           10_[+2]_184_[-2]_58_[+2]_111_[-2]_
+                                           143_[-2]_51_[-2]_229_[+2]_53
+NC_002929.2                       0.00013  188_[+2]_122_[-2]_42_[-2]_37_[+2]_
+                                           23_[-2]_80_[+2]_165_[+2]_50_[+2]_
+                                           1189_[+2]_23
+NC_012587.1                       8.5e-05  276_[-2]_259_[-2]_112_[+2]_237_
+                                           [-2]_139_[+2]_159_[-2]_48_[-2]_
+                                           48_[-2]_34_[+2]_53_[+2]_402_[-2]_
+                                           73_[+2]_52
+NC_007005.1                       9.5e-05  260_[+2]_626_[+2]_270_[+2]_817
+NC_003112.2                       0.00014  520_[+2]_25_[+2]_1097_[-2]_63_[-2]_
+                                           142_[-2]_108
+NC_004578.1                       9.5e-05  447_[+2]_626_[+2]_270_[+2]_630
+NC_003902.1                       0.00037  361_[+2]_463_[-2]_122_[+2]_26_[+2]_
+                                           75_[-2]_3_[+2]_86_[+2]_311_[+2]_481
+NC_002946.2                       0.00012  9_[+2]_424_[-2]_1059_[-2]_25_[-2]_447
+NC_002516.2                       0.00013  355_[-2]_7_[+2]_162_[-2]_58_[+2]_
+                                           361_[+2]_198_[+2]_144_[+2]_17_[-2]_
+                                           168_[-2]_83_[+2]_190_[+2]_9_[+2]_140
+NC_018658.1                       2.5e-05  1803_[-2]_75_[-2]_103
+NC_006461.1                       7.8e-05  146_[+2]_27_[+2]_6_[+2]_446_[+2]_
+                                           685_[+2]_53_[-2]_57_[-2]_28_[+2]_
+                                           13_[+2]_251_[+2]_24_[+2]_8_[-2]_147
+NC_007677.1                       0.00019  331_[-2]_520_[+2]_149_[-2]_106_
+                                           [+2]_171_[+2]_342_[+2]_327
+NC_007606.1                       6.1e-05  158_[-2]_1034_[+2]_790
+NC_002939.5                       1.7e-05  597_[+2]_452_[-2]_315_[+2]_207_
+                                           [+2]_271_[-2]_113
+NC_003888.3                       0.00017  407_[-2]_121_[-2]_12_[-2]_101_[-2]_
+                                           49_[+2]_61_[-2]_436_[-2]_141_[+2]_
+                                           75_[-2]_174_[+2]_203_[-2]_23_[+2]_89
+NC_003062.2                       7.8e-05  34_[+2]_363_[-2]_94_[+2]_420_[-2]_
+                                           1052
+NC_010397.1                       0.00016  1526_[+2]_60_[-2]_118_[-2]_99_[+2]_
+                                           8_[-2]_143
+NC_005125.1                       7.8e-05  674_[+2]_453_[+2]_408_[-2]_423_[-2]_6
+NC_004463.1                       0.00012  912_[+2]_154_[-2]_65_[-2]_204_[-2]_
+                                           154_[-2]_466
+NC_001263.1                       0.00022  27_[+2]_60_[+2]_3_[+2]_621_[+2]_
+                                           504_[+2]_459_[-2]_272
+NC_018828.1                       0.00011  [-2]_270_[-2]_631_[+2]_337_[-2]_
+                                           168_[-2]_399_[-2]_141
+NC_017384.1                       0.00012  198_[+2]_631_[+2]_101_[-2]_9_[-2]_
+                                           178_[-2]_372_[+2]_425_[+2]_23
+NC_011916.1                       4.1e-05  36_[-2]_240_[+2]_330_[+2]_177_[+2]_
+                                           75_[+2]_73_[+2]_219_[-2]_207_[-2]_
+                                           85_[-2]_104_[-2]_12_[-2]_72_[-2]_
+                                           66_[-2]_187
+NC_002696.2                       4.1e-05  44_[-2]_240_[+2]_330_[+2]_177_[+2]_
+                                           75_[+2]_73_[+2]_219_[-2]_207_[-2]_
+                                           85_[-2]_104_[-2]_12_[-2]_72_[-2]_
+                                           66_[-2]_179
+NC_013172.1                       4.1e-05  335_[+2]_299_[+2]_111_[+2]_343_
+                                           [+2]_42_[+2]_5_[-2]_171_[-2]_607_
+                                           [-2]_15
+NC_004337.2                       0.00045  812_[+2]_29_[+2]_1010_[-2]_122
+NC_006348.1                         7e-05  8_[-2]_123_[+2]_315_[+2]_542_[-2]_
+                                           108_[-2]_69_[-2]_781
+NC_002947.4                       0.00019  945_[+2]_195_[+2]_50_[-2]_415_[+2]_
+                                           63_[+2]_286
+NC_003198.1                       0.00012  483_[-2]_434_[-2]_103_[+2]_744_
+                                           [-2]_200
+NC_013522.1                       0.00012  493_[+2]_296_[-2]_3_[-2]_525_[-2]_
+                                           324_[-2]_314
+NC_010175.1                       0.00012  401_[+2]_1021_[-2]_560
+NC_006350.1                       6.1e-05  288_[+2]_677_[-2]_292_[+2]_715
+NC_003047.1                        0.0002  187_[-2]_2_[-2]_399_[-2]_81_[-2]_
+                                           916_[-2]_370
+NC_003197.2                       0.00012  358_[-2]_103_[+2]_434_[+2]_800_
+                                           [-2]_269
+NC_008570.1                       0.00019  364_[-2]_232_[-2]_799_[-2]_97_[+2]_
+                                           472
+NC_000964.3                         3e-05  603_[-2]_1387
+NC_000962.3                       0.00015  576_[+2]_228_[+2]_64_[+2]_1006_
+                                           [-2]_89
+NC_002945.4                       0.00015  578_[+2]_228_[+2]_64_[+2]_1006_
+                                           [-2]_87
+NC_000912.1                       0.00011  1656_[-2]_147_[-2]_179
+NC_011750.1                        0.0002  154_[-2]_1005_[+2]_296_[-2]_439_
+                                           [-2]_70
+NC_008526.1                       5.2e-05  1786_[-2]_204
+NC_000913.3                        0.0002  154_[-2]_1005_[+2]_296_[-2]_439_
+                                           [-2]_70
+NC_005027.1                       6.1e-05  152_[+2]_1839
+NC_014923.1                         7e-05  1696_[+2]_295
+NC_014638.1                       0.00041  1792_[+2]_48_[-2]_141
+NC_009636.1                       0.00026  109_[-2]_287_[-2]_627_[-2]_53_[-2]_
+                                           20_[-2]_859
+NC_003450.3                       9.5e-05  1915_[-2]_76
+NC_002967.9                       0.00011  194_[+2]_1796
+NC_002677.1                       0.00012  346_[+2]_721_[+2]_47_[-2]_859
+NC_000915.1                       0.00012  807_[-2]_1184
+NC_004347.2                       0.00013  595_[+2]_785_[-2]_601
+NC_012926.1                       0.00015  1578_[-2]_413
+NC_004113.1                       0.00016  1323_[-2]_668
+NC_011296.1                       0.00017  794_[-2]_1196
+NC_004663.1                       0.00017  85_[+2]_1906
+NC_004307.2                       0.00017  1329_[-2]_662
+NC_004668.1                       0.00019  509_[-2]_1481
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCCBKSGCC MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GCCBKSGCC width=9 seqs=308
+NC_019382.1              (  362) GCCCGGGCC  1 
+NC_016845.1              ( 1171) GCCCGGGCC  1 
+NC_015663.1              (  201) GCCCGGGCC  1 
+NC_002937.3              (  727) GCCCGGGCC  1 
+NC_017634.1              ( 1081) GCCCGGGCC  1 
+NC_014121.1              (    6) GCCCGGGCC  1 
+NC_008596.1              (  427) GCCCGGGCC  1 
+NC_007644.1              ( 1592) GCCCGGGCC  1 
+NC_007643.1              (  260) GCCCGGGCC  1 
+NC_002695.2              ( 1083) GCCCGGGCC  1 
+NC_014318.1              (  690) GCCCGCGCC  1 
+NC_002929.2              (  417) GCCCGCGCC  1 
+NC_002929.2              (  189) GCCCGCGCC  1 
+NC_012587.1              (  912) GCCCGCGCC  1 
+NC_007643.1              ( 1830) GCCCGCGCC  1 
+NC_007643.1              (  852) GCCCGCGCC  1 
+NC_007005.1              (  896) GCCCGCGCC  1 
+NC_003112.2              (  555) GCCCGCGCC  1 
+NC_003112.2              (  521) GCCCGCGCC  1 
+NC_004578.1              ( 1083) GCCCGCGCC  1 
+NC_003902.1              ( 1084) GCCCGCGCC  1 
+NC_002946.2              ( 1545) GCCCGCGCC  1 
+NC_002946.2              ( 1511) GCCCGCGCC  1 
+NC_002516.2              ( 1852) GCCCGCGCC  1 
+NC_018658.1              ( 1804) GCCGGGGCC  1 
+NC_014318.1              ( 1369) GCCGGGGCC  1 
+NC_006461.1              (  653) GCCGGGGCC  1 
+NC_012587.1              (  545) GCCGGGGCC  1 
+NC_007677.1              (  861) GCCGGGGCC  1 
+NC_007606.1              ( 1202) GCCGGGGCC  1 
+NC_002939.5              ( 1879) GCCGGGGCC  1 
+NC_002516.2              ( 1635) GCCGGGGCC  1 
+NC_016845.1              ( 1772) GCCGGCGCC  1 
+NC_015663.1              (  804) GCCGGCGCC  1 
+NC_003888.3              (  559) GCCGGCGCC  1 
+NC_014318.1              (  800) GCCGGCGCC  1 
+NC_002929.2              ( 1969) GCCGGCGCC  1 
+NC_003062.2              (  510) GCCGGCGCC  1 
+NC_003062.2              (  407) GCCGGCGCC  1 
+NC_010397.1              ( 1596) GCCGGCGCC  1 
+NC_012587.1              ( 1940) GCCGGCGCC  1 
+NC_012587.1              ( 1447) GCCGGCGCC  1 
+NC_012587.1              ( 1285) GCCGGCGCC  1 
+NC_005125.1              ( 1986) GCCGGCGCC  1 
+NC_004463.1              ( 1526) GCCGGCGCC  1 
+NC_001263.1              (   97) GCCGGCGCC  1 
+NC_003902.1              ( 1000) GCCGGCGCC  1 
+NC_002516.2              (  372) GCCGGCGCC  1 
+NC_002516.2              (  356) GCCGGCGCC  1 
+NC_018828.1              (    1) GCCTGGGCC  1 
+NC_017384.1              (  949) GCCTGGGCC  1 
+NC_003888.3              ( 1903) GCCTGGGCC  1 
+NC_003888.3              (  727) GCCTGGGCC  1 
+NC_002929.2              (  538) GCCCTGGCC  1 
+NC_006461.1              ( 1512) GCCCTGGCC  1 
+NC_011916.1              (  895) GCCCTGGCC  1 
+NC_012587.1              ( 1385) GCCCTGGCC  1 
+NC_007643.1              ( 1752) GCCCTGGCC  1 
+NC_007643.1              ( 1470) GCCCTGGCC  1 
+NC_007677.1              ( 1665) GCCTGGGCC  1 
+NC_007005.1              ( 1175) GCCCTGGCC  1 
+NC_004578.1              ( 1362) GCCCTGGCC  1 
+NC_003902.1              ( 1096) GCCTGGGCC  1 
+NC_002696.2              (  903) GCCCTGGCC  1 
+NC_017384.1              ( 1535) GCCTGCGCC  1 
+NC_006461.1              ( 1827) GCCCTCGCC  1 
+NC_013172.1              (  644) GCCCTCGCC  1 
+NC_012587.1              ( 1060) GCCTGCGCC  1 
+NC_007644.1              ( 1666) GCCCTCGCC  1 
+NC_007677.1              (  332) GCCCTCGCC  1 
+NC_002939.5              ( 1599) GCCTGCGCC  1 
+NC_002939.5              ( 1383) GCCTGCGCC  1 
+NC_004337.2              ( 1870) GCCTGCGCC  1 
+NC_002516.2              ( 1834) GCCCTCGCC  1 
+NC_002516.2              (  543) GCCTGCGCC  1 
+NC_003888.3              (  797) GCCAGGGCC  1 
+NC_011916.1              ( 1805) GCGCGGGCC  1 
+NC_007644.1              ( 1030) GCCAGGGCC  1 
+NC_006348.1              (    9) GCGCGGGCC  1 
+NC_001263.1              ( 1252) GCGCGGGCC  1 
+NC_002947.4              ( 1633) GCCAGGGCC  1 
+NC_003902.1              (  834) GCCAGGGCC  1 
+NC_002696.2              ( 1813) GCGCGGGCC  1 
+NC_019382.1              (  981) GCCAGCGCC  1 
+NC_019382.1              (  464) GCGCGCGCC  1 
+NC_019382.1              (  140) GCGCGCGCC  1 
+NC_018658.1              ( 1888) GCGCGCGCC  1 
+NC_017384.1              ( 1154) GCGCGCGCC  1 
+NC_017384.1              (  839) GCGCGCGCC  1 
+NC_003198.1              (  484) GCCAGCGCC  1 
+NC_002929.2              (  320) GCCAGCGCC  1 
+NC_013522.1              ( 1345) GCGCGCGCC  1 
+NC_013172.1              (  336) GCCAGCGCC  1 
+NC_011916.1              ( 1649) GCCAGCGCC  1 
+NC_011916.1              (   37) GCGCGCGCC  1 
+NC_010175.1              (  402) GCCAGCGCC  1 
+NC_008596.1              (  444) GCCAGCGCC  1 
+NC_006348.1              ( 1133) GCGCGCGCC  1 
+NC_006348.1              (  465) GCGCGCGCC  1 
+NC_006350.1              (  289) GCGCGCGCC  1 
+NC_005125.1              ( 1137) GCCAGCGCC  1 
+NC_003047.1              (  697) GCGCGCGCC  1 
+NC_003197.2              (  914) GCCAGCGCC  1 
+NC_002696.2              ( 1657) GCCAGCGCC  1 
+NC_002696.2              (   45) GCGCGCGCC  1 
+NC_002516.2              (  980) GCCAGCGCC  1 
+NC_018828.1              ( 1851) GCCGTGGCC  1 
+NC_003888.3              (  669) GCCGTGGCC  1 
+NC_006461.1              ( 1794) GCCGTGGCC  1 
+NC_006461.1              (  183) GCCGTGGCC  1 
+NC_010397.1              ( 1831) GCCGTGGCC  1 
+NC_008570.1              (  606) GCCGTGGCC  1 
+NC_002939.5              (  598) GCCGTGGCC  1 
+NC_006348.1              ( 1016) GCCGTCGCC  1 
+NC_000964.3              (  604) GCCGTCGCC  1 
+NC_006461.1              ( 1409) GCCTTGGCC  1 
+NC_010397.1              ( 1848) GCGGGGGCC  1 
+NC_017384.1              (  199) GCCTTCGCC  1 
+NC_014318.1              ( 1302) GCCCCGGCC  1 
+NC_000962.3              (  887) GCCTTCGCC  1 
+NC_002945.4              (  889) GCCTTCGCC  1 
+NC_002929.2              (  771) GCCTTCGCC  1 
+NC_006461.1              (  147) GCCTTCGCC  1 
+NC_000912.1              ( 1813) GCCCCGGCC  1 
+NC_013172.1              ( 1361) GCGGGCGCC  1 
+NC_011916.1              ( 1628) GCGGGCGCC  1 
+NC_011916.1              ( 1515) GCCCCGGCC  1 
+NC_011916.1              ( 1421) GCCTTCGCC  1 
+NC_011916.1              (  811) GCCTTCGCC  1 
+NC_011916.1              (  286) GCCCCGGCC  1 
+NC_007643.1              (  236) GCGGGCGCC  1 
+NC_003902.1              (  362) GCCCCGGCC  1 
+NC_002696.2              ( 1636) GCGGGCGCC  1 
+NC_002696.2              ( 1523) GCCCCGGCC  1 
+NC_002696.2              ( 1429) GCCTTCGCC  1 
+NC_002696.2              (  819) GCCTTCGCC  1 
+NC_002696.2              (  294) GCCCCGGCC  1 
+NC_003888.3              ( 1392) GCCCGGTCC  1 
+NC_003888.3              (  408) GCCCGGTCC  1 
+NC_003198.1              ( 1792) GCGTGGGCC  1 
+NC_017634.1              (  216) GCGTGGGCC  1 
+NC_003062.2              (   35) GCCATGGCC  1 
+NC_006461.1              ( 1844) GCCCGGTCC  1 
+NC_011750.1              ( 1169) GCGTGGGCC  1 
+NC_014121.1              (  872) GCGTGGGCC  1 
+NC_013172.1              ( 1167) GCCCGGTCC  1 
+NC_012587.1              (  666) GCCCGGTCC  1 
+NC_008526.1              ( 1787) GCGTGGGCC  1 
+NC_007643.1              ( 1626) GCCCCCGCC  1 
+NC_007643.1              (  552) GCGCTGGCC  1 
+NC_007677.1              ( 1314) GCGTGGGCC  1 
+NC_006350.1              (  975) GCCCCCGCC  1 
+NC_005125.1              (  675) GCCATGGCC  1 
+NC_002695.2              (  218) GCGTGGGCC  1 
+NC_001263.1              (  109) GCGCTGGCC  1 
+NC_002947.4              ( 1150) GCCATGGCC  1 
+NC_002516.2              ( 1187) GCGTGGGCC  1 
+NC_000913.3              ( 1169) GCGTGGGCC  1 
+NC_003888.3              ( 1476) GCCATCGCC  1 
+NC_005027.1              (  153) GCCATCGCC  1 
+NC_000962.3              (  577) GCGTGCGCC  1 
+NC_002945.4              (  579) GCGTGCGCC  1 
+NC_002937.3              (  708) GCCATCGCC  1 
+NC_013522.1              (  799) GCCCGCTCC  1 
+NC_013172.1              ( 1181) GCGCTCGCC  1 
+NC_012587.1              ( 1858) GCGCTCGCC  1 
+NC_007643.1              (  360) GCGCTCGCC  1 
+NC_007606.1              (  159) GCGTGCGCC  1 
+NC_006348.1              ( 1211) GCGCTCGCC  1 
+NC_006350.1              ( 1276) GCGCTCGCC  1 
+NC_002947.4              ( 1209) GCCATCGCC  1 
+NC_004463.1              ( 1076) GCGAGGGCC  1 
+NC_018828.1              (  920) GCGAGCGCC  1 
+NC_003198.1              (  927) GCCCGGGCG  1 
+NC_014923.1              ( 1697) GCCGCGGCC  1 
+NC_010397.1              ( 1723) GCCCGGGCG  1 
+NC_013172.1              ( 1977) GCCGCGGCC  1 
+NC_012587.1              ( 1228) GCCGCGGCC  1 
+NC_006348.1              (  141) GCCGCGGCC  1 
+NC_001263.1              ( 1720) GCGAGCGCC  1 
+NC_003197.2              (  471) GCCCGGGCG  1 
+NC_003888.3              (  538) GCGGTGGCC  1 
+NC_014318.1              ( 1701) GCGGTGGCC  1 
+NC_014318.1              ( 1641) GCGGTGGCC  1 
+NC_002937.3              (  934) GCCGGGTCC  1 
+NC_017634.1              (  521) GCGGTGGCC  1 
+NC_003062.2              (  939) GCCGCCGCC  1 
+NC_006461.1              ( 1347) GCGGTGGCC  1 
+NC_011750.1              ( 1474) GCGGTGGCC  1 
+NC_011916.1              (  977) GCCGGGTCC  1 
+NC_008596.1              ( 1313) GCGGTGGCC  1 
+NC_005125.1              ( 1554) GCCCGCGCG  1 
+NC_002695.2              (  523) GCGGTGGCC  1 
+NC_002696.2              (  985) GCCGGGTCC  1 
+NC_000913.3              ( 1474) GCGGTGGCC  1 
+NC_018828.1              ( 1266) GCCTCGGCC  1 
+NC_014318.1              ( 1489) GCCGGCTCC  1 
+NC_014318.1              (  987) GCCGGCTCC  1 
+NC_002929.2              (  449) GCCGGCTCC  1 
+NC_014638.1              ( 1793) GCGGTCGCC  1 
+NC_006461.1              ( 1475) GCCTCGGCC  1 
+NC_012587.1              ( 1342) GCGGTCGCC  1 
+NC_008596.1              ( 1873) GCCTCGGCC  1 
+NC_007677.1              ( 1134) GCCGGCTCC  1 
+NC_002947.4              ( 1705) GCCTCGGCC  1 
+NC_019382.1              (  504) GCCCTGTCC  1 
+NC_009636.1              (  110) GCCCTGTCC  1 
+NC_007005.1              (  261) GCGTTGGCC  1 
+NC_004463.1              ( 1363) GCCCTGTCC  1 
+NC_003450.3              ( 1916) GCGTTGGCC  1 
+NC_001263.1              (  739) GCCTCCGCC  1 
+NC_004578.1              (  448) GCGTTGGCC  1 
+NC_019382.1              (  118) GCCGGGGCG  1 
+NC_018828.1              (  280) GCGCCGGCC  1 
+NC_006461.1              (  198) GCCCTCTCC  1 
+NC_000912.1              ( 1657) GCCGGGGCG  1 
+NC_012587.1              (  277) GCCCTCTCC  1 
+NC_008570.1              ( 1414) GCCCTCTCC  1 
+NC_002967.9              (  195) GCCTGCTCC  1 
+NC_002939.5              ( 1059) GCCACGGCC  1 
+NC_003047.1              ( 1622) GCGCCGGCC  1 
+NC_002946.2              (  443) GCCGGGGCG  1 
+NC_017384.1              (  967) GCGATGGCC  1 
+NC_014318.1              ( 1109) GCGCCCGCC  1 
+NC_003198.1              ( 1039) GCGATGGCC  1 
+NC_000962.3              (  814) GCGCGGTCC  1 
+NC_002677.1              ( 1133) GCCAGGTCC  1 
+NC_002677.1              (  347) GCCACCGCC  1 
+NC_002945.4              (  816) GCGCGGTCC  1 
+NC_002937.3              (  757) GCGCCCGCC  1 
+NC_017634.1              (  969) GCGATGGCC  1 
+NC_011750.1              ( 1922) GCGATGGCC  1 
+NC_013522.1              ( 1678) GCCACCGCC  1 
+NC_013522.1              (  494) GCCAGGTCC  1 
+NC_013172.1              ( 1116) GCGCGGTCC  1 
+NC_013172.1              (  764) GCGCGGTCC  1 
+NC_010175.1              ( 1432) GCGATGGCC  1 
+NC_009636.1              ( 1104) GCCGGCGCG  1 
+NC_008596.1              ( 1693) GCCACCGCC  1 
+NC_004463.1              (  913) GCCACCGCC  1 
+NC_000915.1              (  808) GCCACCGCC  1 
+NC_003197.2              (  359) GCGATGGCC  1 
+NC_002946.2              (   10) GCGCCCGCC  1 
+NC_000913.3              ( 1922) GCGATGGCC  1 
+NC_018828.1              ( 1443) GCCAGCTCC  1 
+NC_016845.1              (  835) GCCTGGGCG  1 
+NC_003888.3              ( 1871) GCCTGGGCG  1 
+NC_014318.1              ( 1939) GCCAGCTCC  1 
+NC_002929.2              (  712) GCCTGGGCG  1 
+NC_002929.2              (  371) GCCTGGGCG  1 
+NC_004347.2              (  596) GCGATCGCC  1 
+NC_013522.1              (  811) GCCCTGGCG  1 
+NC_011916.1              ( 1730) GCCTGGGCG  1 
+NC_011916.1              ( 1205) GCGCGCTCC  1 
+NC_009636.1              ( 1133) GCCCTGGCG  1 
+NC_003902.1              ( 1511) GCCTGGGCG  1 
+NC_003047.1              (  607) GCCCTGGCG  1 
+NC_002696.2              ( 1738) GCCTGGGCG  1 
+NC_002696.2              ( 1213) GCGCGCTCC  1 
+NC_002516.2              ( 1340) GCCTGGGCG  1 
+NC_002516.2              (  610) GCGATCGCC  1 
+NC_003888.3              ( 1659) GCCGTGTCC  1 
+NC_014318.1              ( 1090) GCCCTCGCG  1 
+NC_009636.1              (  406) GCCTGCGCG  1 
+NC_004463.1              ( 1150) GCCCTCGCG  1 
+NC_003112.2              ( 1884) GCCTGCGCG  1 
+NC_003112.2              ( 1733) GCCTGCGCG  1 
+NC_003112.2              ( 1661) GCCTGCGCG  1 
+NC_003902.1              (  965) GCCTGCGCG  1 
+NC_003047.1              (  188) GCCCTCGCG  1 
+NC_015663.1              ( 1952) GCGCGGGCG  1 
+NC_000962.3              ( 1902) GCGCGGGCG  1 
+NC_002945.4              ( 1904) GCGCGGGCG  1 
+NC_012926.1              ( 1579) GCCGTCTCC  1 
+NC_014121.1              ( 1067) GCCAGGGCG  1 
+NC_011916.1              (  625) GCCGTCTCC  1 
+NC_002696.2              (  633) GCCGTCTCC  1 
+NC_017384.1              ( 1969) GCCTTGTCC  1 
+NC_006461.1              ( 1534) GCGGGGTCC  1 
+NC_010397.1              ( 1527) GCGGGGTCC  1 
+NC_004113.1              ( 1324) GCCTTGTCC  1 
+NC_003888.3              ( 1242) GCGGGCTCC  1 
+NC_011296.1              (  795) GCCTTCTCC  1 
+NC_004663.1              (   86) GCCTTCTCC  1 
+NC_004307.2              ( 1330) GCCGTGGCG  1 
+NC_008570.1              (  365) GCCCCCTCC  1 
+NC_007677.1              ( 1019) GCCCCCTCC  1 
+NC_004668.1              (  510) GCCGTCGCG  1 
+NC_002947.4              (  946) GCCCCCTCC  1 
+NC_004337.2              (  813) GCCATGTCC  1 
+NC_019382.1              (  656) GCCTTGGCG  1 
+NC_002677.1              ( 1077) GCGGGGGCG  1 
+NC_011750.1              (  155) GCCATCTCC  1 
+NC_003047.1              (  199) GCCTTGGCG  1 
+NC_000913.3              (  155) GCCATCTCC  1 
+NC_016845.1              (  306) GCGAGGTCC  1 
+NC_008570.1              ( 1520) GCCCAGGCC  1 
+NC_001263.1              (   28) GCCCCGGCG  1 
+NC_002516.2              ( 1543) GCCCAGGCC  1 
+NC_002516.2              ( 1366) GCCCAGGCC  1 
+NC_009636.1              ( 1042) GCCTCGTCC  1 
+NC_008596.1              ( 1243) GCCACGTCC  1 
+NC_003197.2              ( 1723) GCCTACGCC  1 
+NC_004347.2              ( 1390) GCCAAGGCC  1 
+NC_003902.1              ( 1191) GACCGGGCC  1 
+NC_014638.1              ( 1850) GCCCAGTCC  1 
+NC_002937.3              ( 1410) GACTGGGCC  1 
+NC_004337.2              (  851) GACTGGGCC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCCBKSGCC MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 9 n= 235009 bayes= 11.3956 E= 2.6e-020 
+ -1491  -1491    210  -1491 
+  -478    209  -1491  -1491 
+ -1491    164     25  -1491 
+   -69     68      9    -32 
+  -378    -99    124     24 
+ -1491    103    118  -1491 
+ -1491  -1491    184    -69 
+ -1491    210  -1491  -1491 
+ -1491    192    -95  -1491 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCCBKSGCC MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 9 nsites= 308 E= 2.6e-020 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.009740  0.990260  0.000000  0.000000 
+ 0.000000  0.724026  0.275974  0.000000 
+ 0.165584  0.373377  0.246753  0.214286 
+ 0.019481  0.116883  0.548701  0.314935 
+ 0.000000  0.474026  0.525974  0.000000 
+ 0.000000  0.000000  0.834416  0.165584 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.879870  0.120130  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCCBKSGCC MEME-2 regular expression
+--------------------------------------------------------------------------------
+GC[CG][CGT][GT][GC]GCC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 187.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GCTGGGATC MEME-3	width =   9  sites =  31  llr = 354  E-value = 2.4e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GCTGGGATC MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::::9::
+pos.-specific     C  :a:1::::a
+probability       G  a:17aa1::
+matrix            T  ::92:::a:
+
+         bits    2.1 **  **  *
+                 1.9 **  ** **
+                 1.7 **  ** **
+                 1.5 *** *****
+Relative         1.3 *** *****
+Entropy          1.1 *********
+(16.5 bits)      0.8 *********
+                 0.6 *********
+                 0.4 *********
+                 0.2 *********
+                 0.0 ---------
+
+Multilevel           GCTGGGATC
+consensus                     
+sequence                      
+                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGGATC MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value              Site 
+-------------            ------  ----- ---------            ---------
+NC_016845.1                  -   1530  3.00e-06 CGGAAATCTG GCTGGGATC CTGGAAAAAT
+NC_016845.1                  +   1383  3.00e-06 GTCCGTATAA GCTGGGATC AGAATGAAGG
+NC_015663.1                  +   1039  3.00e-06 CTGTGAGCGA GCTGGGATC TACCTGTGGA
+NC_015663.1                  +    414  3.00e-06 TTCCGTATAA GCTGGGATC AGAATGAAGG
+NC_003198.1                  -    714  3.00e-06 GCCCGTATAA GCTGGGATC AAAACGGGTA
+NC_003198.1                  -     99  3.00e-06 CTGTGAACGA GCTGGGATC TACCTGTGGA
+NC_017634.1                  -   1441  3.00e-06 CAGAAGAATG GCTGGGATC GTGGATTAAT
+NC_017634.1                  +   1294  3.00e-06 GACCGTATAA GCTGGGATC AGAATGAGGG
+NC_013853.1                  -    363  3.00e-06 TTCGAATCCT GCTGGGATC AATATAGTAG
+NC_009009.1                  -   1072  3.00e-06 TTTGACGACA GCTGGGATC GTTTCTAGGC
+NC_008800.1                  +   1746  3.00e-06 CTGTGAATCA GCTGGGATC TACCTGTGGA
+NC_008800.1                  +   1130  3.00e-06 TTGCGTATAA GCTGGGATC TAAATGGCAT
+NC_003143.1                  +    270  3.00e-06 CTGTGAATCA GCTGGGATC TAGCTGTGGA
+NC_002695.2                  -   1443  3.00e-06 CAGAAGAATG GCTGGGATC GTGGATTAAT
+NC_002695.2                  +   1296  3.00e-06 GACCGTATAA GCTGGGATC AGAATGAGGG
+NC_003197.2                  +   1299  3.00e-06 CTGTGAACGA GCTGGGATC TACCTGTGGA
+NC_003197.2                  +    684  3.00e-06 GTCCGTATAA GCTGGGATC AAAACGGGTA
+NC_002505.1                  +   1419  3.00e-06 TCAAGGATTA GCTGGGATC AAAAACCTAT
+NC_016845.1                  -   1456  6.47e-06 ATGCTTAAAA GCTTGGATC AACCGGTAGT
+NC_015663.1                  -    487  6.47e-06 CTGCTCAAAA GCTTGGATC AACCGGTAGT
+NC_003198.1                  +    641  6.47e-06 ATGGTGAAAA GCTTGGATC AACCGGTAGT
+NC_017634.1                  -   1367  6.47e-06 CTGTCAGGAA GCTTGGATC AAACGGTAGT
+NC_002695.2                  -   1369  6.47e-06 CTGTCAGGAA GCTTGGATC AACCGGTAGT
+NC_003197.2                  -    757  6.47e-06 CTGGTGGAAA GCTTGGATC AACCGGTAGT
+NC_013522.1                  +   1466  9.07e-06 CGGCGGTGGG GCGGGGATC CAGGCGGATC
+NC_008800.1                  -     75  9.07e-06 CCCGATGTAT GCGGGGATC ATTGAGGGGA
+NC_000922.1                  -   1904  9.07e-06 GACTTTTCTA GCGGGGATC CGCCAATTCG
+NC_003198.1                  +    567  1.21e-05 CGGAGATTTG GCTCGGATC CTGGATTAAT
+NC_003197.2                  -    831  1.21e-05 CGGAGATTTG GCTCGGATC CTGGATTAAT
+NC_009636.1                  -   1178  1.47e-05 CTCGCCACCG GCTGGGGTC GCATTGATCC
+NC_008596.1                  +   1921  1.47e-05 TGCATCTGGC GCTGGGGTC CGGTGCGTCG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGGATC MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NC_016845.1                       6.5e-06  1382_[+3]_64_[-3]_65_[-3]_461
+NC_015663.1                       6.5e-06  413_[+3]_64_[-3]_543_[+3]_953
+NC_003198.1                       6.5e-06  98_[-3]_459_[+3]_65_[+3]_64_[-3]_1278
+NC_017634.1                       6.5e-06  1293_[+3]_64_[-3]_65_[-3]_551
+NC_013853.1                         3e-06  362_[-3]_1629
+NC_009009.1                         3e-06  1071_[-3]_919
+NC_008800.1                       9.1e-06  74_[-3]_1046_[+3]_607_[+3]_245
+NC_003143.1                         3e-06  269_[+3]_1722
+NC_002695.2                       6.5e-06  1295_[+3]_64_[-3]_65_[-3]_549
+NC_003197.2                       6.5e-06  683_[+3]_64_[-3]_65_[-3]_459_[+3]_693
+NC_002505.1                         3e-06  1418_[+3]_572
+NC_013522.1                       9.1e-06  1465_[+3]_526
+NC_000922.1                       9.1e-06  1903_[-3]_88
+NC_009636.1                       1.5e-05  1177_[-3]_814
+NC_008596.1                       1.5e-05  1920_[+3]_70
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGGATC MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GCTGGGATC width=9 seqs=31
+NC_016845.1              ( 1530) GCTGGGATC  1 
+NC_016845.1              ( 1383) GCTGGGATC  1 
+NC_015663.1              ( 1039) GCTGGGATC  1 
+NC_015663.1              (  414) GCTGGGATC  1 
+NC_003198.1              (  714) GCTGGGATC  1 
+NC_003198.1              (   99) GCTGGGATC  1 
+NC_017634.1              ( 1441) GCTGGGATC  1 
+NC_017634.1              ( 1294) GCTGGGATC  1 
+NC_013853.1              (  363) GCTGGGATC  1 
+NC_009009.1              ( 1072) GCTGGGATC  1 
+NC_008800.1              ( 1746) GCTGGGATC  1 
+NC_008800.1              ( 1130) GCTGGGATC  1 
+NC_003143.1              (  270) GCTGGGATC  1 
+NC_002695.2              ( 1443) GCTGGGATC  1 
+NC_002695.2              ( 1296) GCTGGGATC  1 
+NC_003197.2              ( 1299) GCTGGGATC  1 
+NC_003197.2              (  684) GCTGGGATC  1 
+NC_002505.1              ( 1419) GCTGGGATC  1 
+NC_016845.1              ( 1456) GCTTGGATC  1 
+NC_015663.1              (  487) GCTTGGATC  1 
+NC_003198.1              (  641) GCTTGGATC  1 
+NC_017634.1              ( 1367) GCTTGGATC  1 
+NC_002695.2              ( 1369) GCTTGGATC  1 
+NC_003197.2              (  757) GCTTGGATC  1 
+NC_013522.1              ( 1466) GCGGGGATC  1 
+NC_008800.1              (   75) GCGGGGATC  1 
+NC_000922.1              ( 1904) GCGGGGATC  1 
+NC_003198.1              (  567) GCTCGGATC  1 
+NC_003197.2              (  831) GCTCGGATC  1 
+NC_009636.1              ( 1178) GCTGGGGTC  1 
+NC_008596.1              ( 1921) GCTGGGGTC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGGATC MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 9 n= 235009 bayes= 13.5943 E= 2.4e+003 
+ -1160  -1160    210  -1160 
+ -1160    210  -1160  -1160 
+ -1160  -1160   -126    176 
+ -1160   -185    167    -47 
+ -1160  -1160    210  -1160 
+ -1160  -1160    210  -1160 
+   181  -1160   -185  -1160 
+ -1160  -1160  -1160    190 
+ -1160    210  -1160  -1160 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGGATC MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 9 nsites= 31 E= 2.4e+003 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.096774  0.903226 
+ 0.000000  0.064516  0.741935  0.193548 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.935484  0.000000  0.064516  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGGATC MEME-3 regular expression
+--------------------------------------------------------------------------------
+GCTGGGATC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 270.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NC_000913.3                      1.65e-01  1168_[+2(5.20e-05)]_296_\
+    [-2(7.81e-05)]_434_[+2(6.97e-05)]_22_[-3(2.55e-05)]_44
+NC_002505.1                      8.85e-03  353_[-3(4.76e-05)]_25_\
+    [+3(2.33e-05)]_649_[+1(3.26e-05)]_278_[+1(4.63e-06)]_77_[+3(3.00e-06)]_11_\
+    [-1(1.46e-05)]_65_[-1(4.63e-06)]_49_[-1(4.63e-06)]_355_[+3(4.76e-05)]_56
+NC_002516.2                      1.35e-01  23_[-2(7.81e-05)]_323_\
+    [-2(7.79e-06)]_7_[+2(7.79e-06)]_162_[-2(1.68e-05)]_428_[+2(2.52e-05)]_198_\
+    [+2(5.20e-05)]_439_[+2(5.84e-06)]_190_[+2(1.68e-05)]_9_[+2(3.89e-06)]_140
+NC_002737.2                      2.37e-01  679_[+1(9.25e-06)]_20_\
+    [-1(4.63e-06)]_1283
+NC_002946.2                      1.99e-02  561_[-1(1.46e-05)]_66_\
+    [-1(2.86e-05)]_176_[-1(4.19e-05)]_108_[-1(3.26e-05)]_563_[-2(3.89e-06)]_25_\
+    [-2(3.89e-06)]_447
+NC_002662.1                      2.19e-01  876_[-1(9.25e-06)]_33_\
+    [+1(4.63e-06)]_33_[+1(4.63e-06)]_6_[-1(5.26e-05)]_[-1(4.63e-06)]_58_\
+    [+1(9.25e-06)]_25_[-1(1.99e-05)]_905
+NC_002696.2                      9.61e-02  44_[-2(2.52e-05)]_240_\
+    [+2(4.07e-05)]_192_[+3(2.55e-05)]_21_[+2(7.81e-05)]_285_[+2(4.07e-05)]_75_\
+    [+2(1.23e-05)]_73_[+2(7.81e-05)]_435_[-2(4.07e-05)]_61_[+3(2.81e-05)]_15_\
+    [-2(4.07e-05)]_104_[-2(4.07e-05)]_12_[-2(2.52e-05)]_147_[-2(2.10e-05)]_179
+NC_004337.2                      5.03e-02  413_[+1(1.99e-05)]_1447_\
+    [-2(1.68e-05)]_122
+NC_003197.2                      1.45e-03  384_[-3(2.55e-05)]_77_\
+    [+2(6.97e-05)]_118_[+1(4.63e-06)]_77_[+3(3.00e-06)]_11_[-1(1.46e-05)]_26_\
+    [+1(5.26e-05)]_9_[-3(6.47e-06)]_12_[-1(4.63e-06)]_44_[-3(1.21e-05)]_74_\
+    [+2(2.52e-05)]_376_[+3(3.00e-06)]_4_[+1(9.25e-06)]_104_[+1(1.99e-05)]_214_\
+    [-3(4.76e-05)]_344
+NC_003047.1                      4.63e-01  696_[-2(2.52e-05)]_1295
+NC_002932.3                      9.91e-01  1999
+NC_003098.1                      2.33e-01  54_[+1(4.63e-06)]_20_[-1(4.63e-06)]_\
+    46_[-1(9.25e-06)]_1853
+NC_003902.1                      6.52e-02  361_[+2(4.07e-05)]_463_\
+    [-2(2.10e-05)]_157_[+2(7.79e-06)]_75_[-2(3.89e-06)]_3_[+2(1.23e-05)]_14_\
+    [+3(4.76e-05)]_873
+NC_004116.1                      1.14e-01  936_[-1(4.63e-06)]_55_\
+    [-1(4.63e-06)]_89_[+1(8.27e-05)]_204_[-1(6.88e-05)]_680
+NC_003454.1                      9.71e-01  2000
+NC_004350.2                      3.45e-01  906_[-1(9.25e-06)]_67_\
+    [-1(9.25e-06)]_1009
+NC_004307.2                      6.49e-01  2000
+NC_002947.4                      1.10e-02  1148_[-2(5.20e-05)]_51_\
+    [-2(6.14e-05)]_28_[+3(4.76e-05)]_378_[+2(2.10e-05)]_63_[+2(8.49e-05)]_165_\
+    [-1(4.63e-06)]_112
+NC_004461.1                      2.17e-01  911_[-1(1.46e-05)]_17_\
+    [+1(4.63e-06)]_85_[+1(4.63e-06)]_57_[+1(2.86e-05)]_41_[+1(4.63e-06)]_43_\
+    [+1(1.46e-05)]_420_[-1(7.28e-05)]_362
+NC_002971.4                      8.66e-01  2000
+NC_004668.1                      1.02e-01  722_[-1(4.63e-06)]_24_\
+    [+1(4.19e-05)]_[-1(9.25e-06)]_32_[-1(5.26e-05)]_21_[-1(6.88e-05)]_14_\
+    [+1(1.99e-05)]_45_[+1(4.63e-06)]_40_[+1(9.25e-06)]_23_[-1(9.25e-06)]_13_\
+    [+1(9.25e-06)]_43_[-1(4.63e-06)]_923
+NC_004578.1                      9.76e-03  241_[-1(4.63e-06)]_197_\
+    [+2(9.49e-05)]_218_[+1(4.63e-06)]_334_[+1(4.63e-06)]_56_[+2(3.89e-06)]_270_\
+    [+2(1.23e-05)]_630
+NC_004722.1                      2.30e-01  123_[-1(8.27e-05)]_15_\
+    [+1(4.63e-06)]_42_[-1(5.26e-05)]_11_[+1(2.86e-05)]_24_[+1(4.63e-06)]_66_\
+    [-1(9.25e-06)]_8_[-1(4.63e-06)]_3_[+1(1.46e-05)]_22_[+1(3.26e-05)]_4_\
+    [-1(2.86e-05)]_1503_[+1(3.79e-05)]_22_[-1(4.19e-05)]_34_[-1(4.63e-06)]_5
+NC_003997.3                      2.16e-01  780_[-1(8.27e-05)]_15_\
+    [+1(4.63e-06)]_41_[-1(5.26e-05)]_11_[+1(2.86e-05)]_24_[+1(4.63e-06)]_67_\
+    [-1(9.25e-06)]_8_[-1(4.63e-06)]_3_[+1(1.46e-05)]_22_[+1(3.26e-05)]_4_\
+    [-1(4.63e-06)]_934
+NC_005042.1                      2.17e-01  690_[+1(6.88e-05)]_689_\
+    [+1(9.25e-06)]_19_[-1(5.80e-05)]_517_[-1(1.99e-05)]_48
+NC_002939.5                      9.52e-02  220_[-3(5.58e-05)]_368_\
+    [+2(2.74e-05)]_776_[+2(1.68e-05)]_207_[+2(1.68e-05)]_271_[-2(5.84e-06)]_\
+    113
+NC_005945.1                      2.16e-01  781_[-1(8.27e-05)]_15_\
+    [+1(4.63e-06)]_41_[-1(5.26e-05)]_11_[+1(2.86e-05)]_24_[+1(4.63e-06)]_67_\
+    [-1(9.25e-06)]_8_[-1(4.63e-06)]_3_[+1(1.46e-05)]_22_[+1(3.26e-05)]_4_\
+    [-1(4.63e-06)]_933
+NC_002967.9                      7.20e-01  1999
+NC_006055.1                      2.38e-01  352_[-1(8.27e-05)]_824_\
+    [-1(5.80e-05)]_15_[+1(9.25e-06)]_79_[-1(4.63e-06)]_3_[+1(9.25e-06)]_681
+NC_002942.5                      2.37e-01  828_[+1(4.63e-06)]_352_\
+    [+1(4.63e-06)]_165_[+1(4.19e-05)]_627
+NC_005957.1                      2.16e-01  780_[-1(8.27e-05)]_15_\
+    [+1(4.63e-06)]_41_[-1(5.26e-05)]_11_[+1(2.86e-05)]_24_[+1(4.63e-06)]_67_\
+    [-1(9.25e-06)]_8_[-1(4.63e-06)]_3_[+1(1.46e-05)]_22_[+1(3.26e-05)]_4_\
+    [-1(4.63e-06)]_934
+NC_000915.1                      5.60e-01  2000
+NC_000853.1                      8.16e-01  2000
+NC_001263.1                      8.33e-02  96_[+2(7.79e-06)]_3_[+2(5.20e-05)]_\
+    500_[+2(7.81e-05)]_112_[+2(9.49e-05)]_167_[-3(3.30e-05)]_25_[+2(7.81e-05)]_\
+    11_[+2(7.81e-05)]_274_[+2(2.10e-05)]_459_[-2(6.97e-05)]_272
+NC_000918.1                      7.09e-01  78_[+1(8.67e-05)]_1265_\
+    [+1(4.19e-05)]_146_[+1(8.67e-05)]_484
+NC_001318.1                      5.25e-01  126_[-1(8.27e-05)]_316_\
+    [+1(5.80e-05)]_1452_[+1(1.99e-05)]_79
+NC_000117.1                      5.70e-01  664_[+1(5.80e-05)]_116_\
+    [-1(6.88e-05)]_1202
+NC_000922.1                      6.31e-02  1102_[+1(1.99e-05)]_14_\
+    [+1(6.88e-05)]_98_[+1(5.26e-05)]_662_[-3(9.07e-06)]_88
+NC_003030.1                      2.38e-01  978_[+1(1.99e-05)]_1_[-1(3.79e-05)]_\
+    14_[+1(4.63e-06)]_69_[-1(1.46e-05)]_3_[+1(2.86e-05)]_3_[+1(1.99e-05)]_83_\
+    [+1(4.63e-06)]_29_[-1(2.86e-05)]_747
+NC_003112.2                      1.99e-02  520_[+2(3.89e-06)]_25_\
+    [+2(3.89e-06)]_563_[+1(3.26e-05)]_291_[+1(1.46e-05)]_66_[+1(1.46e-05)]_490
+NC_002695.2                      1.72e-04  217_[+2(5.20e-05)]_296_\
+    [-2(7.81e-05)]_465_[-3(2.55e-05)]_77_[+2(1.95e-06)]_118_[+1(4.63e-06)]_77_\
+    [+3(3.00e-06)]_11_[-1(1.46e-05)]_26_[+1(5.26e-05)]_9_[-3(6.47e-06)]_12_\
+    [-1(4.63e-06)]_44_[-3(3.00e-06)]_472_[+1(9.25e-06)]_68
+NC_007929.1                      1.80e-01  796_[-1(4.63e-06)]_44_\
+    [-1(4.63e-06)]_1142
+NC_006570.2                      2.10e-01  738_[+1(4.63e-06)]_91_\
+    [+1(4.63e-06)]_38_[+1(3.79e-05)]_49_[-1(4.63e-06)]_224_[-1(3.79e-05)]_60_\
+    [-1(1.99e-05)]_745
+NC_000964.3                      2.60e-02  603_[-2(2.97e-05)]_377_\
+    [+1(2.86e-05)]_4_[-1(5.80e-05)]_12_[+1(4.63e-06)]_85_[-1(4.63e-06)]_3_\
+    [+1(4.63e-06)]_35_[-1(2.86e-05)]_45_[-1(5.80e-05)]_763
+NC_003143.1                      9.29e-03  269_[+3(3.00e-06)]_4_[+1(4.63e-06)]_\
+    105_[+1(1.99e-05)]_214_[-3(4.76e-05)]_329_[-1(5.26e-05)]_477_\
+    [-1(4.63e-06)]_548
+NC_002163.1                      7.80e-01  1999
+NC_009089.1                      2.33e-01  704_[-1(1.99e-05)]_12_\
+    [+1(4.63e-06)]_53_[+1(1.99e-05)]_[+1(2.86e-05)]_21_[-1(3.79e-05)]_15_\
+    [+1(1.46e-05)]_127_[-1(1.99e-05)]_66_[+1(9.25e-06)]_929
+NC_008800.1                      5.16e-03  74_[-3(9.07e-06)]_400_\
+    [-1(5.80e-05)]_551_[+1(4.63e-06)]_4_[-1(3.79e-05)]_64_[+3(3.00e-06)]_11_\
+    [-1(2.86e-05)]_65_[-1(4.63e-06)]_513_[+3(3.00e-06)]_4_[+1(4.63e-06)]_105_\
+    [+1(1.99e-05)]_118
+NC_002528.1                      2.16e-01  925_[-1(8.27e-05)]_45_\
+    [-1(4.63e-06)]_1011
+NC_006347.1                      2.95e-01  1161_[+1(1.99e-05)]_189_\
+    [-1(1.99e-05)]_631
+NC_004663.1                      1.93e-01  1198_[+1(1.99e-05)]_190_\
+    [-1(1.99e-05)]_323_[+1(1.99e-05)]_262
+NC_003450.3                      6.13e-01  1915_[-2(9.49e-05)]_76
+NC_004113.1                      3.05e-01  797_[-1(3.26e-05)]_1194
+NC_004463.1                      2.48e-01  601_[+2(7.81e-05)]_465_\
+    [-2(6.36e-05)]_278_[-2(9.49e-05)]_154_[-2(7.79e-06)]_466
+NC_005125.1                      5.85e-02  674_[+2(5.20e-05)]_453_\
+    [+2(2.52e-05)]_96_[-3(2.33e-05)]_303_[-2(7.81e-05)]_423_[-2(7.79e-06)]_6
+NC_005364.2                      9.96e-01  2000
+NC_006350.1                      3.37e-02  288_[+2(2.52e-05)]_494_\
+    [+1(4.63e-06)]_160_[-1(4.63e-06)]_5_[-2(5.20e-05)]_292_[+2(6.14e-05)]_609_\
+    [+2(7.81e-05)]_97
+NC_006348.1                      3.03e-01  8_[-2(2.10e-05)]_122_[-2(6.97e-05)]_\
+    316_[+2(2.52e-05)]_258_[+2(7.81e-05)]_275_[-2(2.97e-05)]_108_\
+    [-2(2.52e-05)]_69_[-2(6.14e-05)]_396_[-2(7.81e-05)]_376
+NC_006840.2                      9.89e-02  1317_[+1(4.63e-06)]_97_\
+    [-1(4.63e-06)]_65_[-1(4.63e-06)]_493
+NC_006814.3                      1.88e-01  346_[+1(4.63e-06)]_13_\
+    [-1(9.25e-06)]_29_[-1(9.25e-06)]_33_[+1(4.63e-06)]_59_[+1(2.86e-05)]_90_\
+    [+1(9.25e-06)]_1375
+NC_007606.1                      3.82e-02  158_[-2(6.14e-05)]_1034_\
+    [+2(5.84e-06)]_589_[-1(1.99e-05)]_192
+NC_007005.1                      8.22e-03  54_[-1(4.63e-06)]_197_\
+    [+2(9.49e-05)]_218_[+1(4.63e-06)]_399_[+2(3.89e-06)]_270_[+2(1.23e-05)]_\
+    817
+NC_007677.1                      1.82e-01  331_[-2(1.68e-05)]_520_\
+    [+2(5.84e-06)]_264_[+2(8.49e-05)]_171_[+2(5.20e-05)]_342_[+2(1.23e-05)]_\
+    327
+NC_007643.1                      2.38e-02  235_[+2(4.07e-05)]_15_\
+    [+2(1.95e-06)]_72_[-3(2.33e-05)]_10_[-2(6.14e-05)]_183_[-2(5.20e-05)]_291_\
+    [+2(3.89e-06)]_609_[-2(1.23e-05)]_147_[-2(5.20e-05)]_117_[+2(1.23e-05)]_69_\
+    [-2(3.89e-06)]_162
+NC_007644.1                      2.78e-02  108_[-1(3.79e-05)]_104_\
+    [+1(6.88e-05)]_799_[+2(2.10e-05)]_553_[-2(1.95e-06)]_65_[+2(1.68e-05)]_326
+NC_007795.1                      1.45e-01  1059_[-1(2.86e-05)]_17_\
+    [+1(4.63e-06)]_84_[+1(4.63e-06)]_56_[+1(2.86e-05)]_41_[+1(4.63e-06)]_44_\
+    [+1(1.46e-05)]_426_[-1(8.67e-05)]_209
+NC_009009.1                      9.76e-03  1071_[-3(3.00e-06)]_196_\
+    [-1(5.26e-05)]_310_[-1(6.88e-05)]_94_[-1(3.79e-05)]_3_[+1(4.63e-06)]_34_\
+    [+1(9.25e-06)]_237
+NC_008526.1                      7.01e-02  755_[+1(4.63e-06)]_83_\
+    [-1(4.63e-06)]_69_[+1(2.86e-05)]_105_[+1(9.25e-06)]_738_[-2(5.20e-05)]_204
+NC_008570.1                      3.47e-01  605_[-2(2.74e-05)]_1386
+NC_008596.1                      1.44e-02  426_[-2(1.95e-06)]_8_[-2(2.52e-05)]_\
+    860_[+2(7.81e-05)]_551_[-2(8.49e-05)]_39_[+3(1.47e-05)]_70
+NC_009698.1                      2.38e-01  722_[+1(4.63e-06)]_44_\
+    [+1(1.99e-05)]_17_[-1(4.63e-06)]_2_[+1(1.99e-05)]_3_[+1(2.86e-05)]_140_\
+    [-1(6.88e-05)]_11_[-1(5.80e-05)]_997
+NC_009636.1                      2.30e-01  109_[-2(9.49e-05)]_1059_\
+    [-3(1.47e-05)]_814
+NC_012587.1                      1.12e-01  544_[-2(5.84e-06)]_112_\
+    [+2(5.20e-05)]_237_[-2(3.89e-06)]_139_[+2(1.68e-05)]_159_[-2(6.97e-05)]_48_\
+    [-2(7.79e-06)]_48_[-2(8.49e-05)]_34_[+2(1.23e-05)]_53_[+2(7.79e-06)]_402_\
+    [-2(6.14e-05)]_73_[+2(7.79e-06)]_52
+NC_010175.1                      3.53e-02  401_[+2(2.52e-05)]_311_\
+    [+1(8.67e-05)]_65_[-1(4.19e-05)]_75_[-1(4.63e-06)]_11_[-1(9.25e-06)]_12_\
+    [-1(4.63e-06)]_1071
+NC_011296.1                      9.34e-01  1999
+NC_011661.1                      9.14e-01  2000
+NC_011916.1                      9.61e-02  36_[-2(2.52e-05)]_240_\
+    [+2(4.07e-05)]_192_[+3(2.55e-05)]_21_[+2(7.81e-05)]_285_[+2(4.07e-05)]_75_\
+    [+2(1.23e-05)]_73_[+2(7.81e-05)]_435_[-2(4.07e-05)]_61_[+3(2.81e-05)]_15_\
+    [-2(4.07e-05)]_104_[-2(4.07e-05)]_12_[-2(2.52e-05)]_147_[-2(2.10e-05)]_187
+NC_013172.1                      9.30e-02  250_[+3(4.76e-05)]_42_\
+    [-3(4.76e-05)]_25_[+2(2.52e-05)]_276_[+3(1.77e-05)]_14_[+2(1.68e-05)]_514_\
+    [+2(5.20e-05)]_5_[-2(6.14e-05)]_171_[-2(4.07e-05)]_255_[-3(2.81e-05)]_343_\
+    [-2(6.97e-05)]_15
+NC_013522.1                      7.60e-02  798_[-2(6.14e-05)]_537_\
+    [-2(2.52e-05)]_112_[+3(9.07e-06)]_386_[+3(4.76e-05)]_131
+NC_014121.1                      2.49e-02  5_[-2(1.95e-06)]_78_[+3(2.55e-05)]_\
+    235_[-3(3.30e-05)]_526_[-2(5.20e-05)]_373_[+3(4.76e-05)]_738
+NC_011750.1                      1.31e-01  940_[+3(1.77e-05)]_219_\
+    [+2(5.20e-05)]_296_[-2(7.81e-05)]_434_[+2(6.97e-05)]_22_[-3(2.55e-05)]_44
+NC_012926.1                      1.41e-01  4_[+1(1.46e-05)]_20_[-1(9.25e-06)]_\
+    46_[-1(9.25e-06)]_1363_[-1(4.63e-06)]_531
+NC_013853.1                      9.70e-03  362_[-3(3.00e-06)]_623_\
+    [-1(3.79e-05)]_46_[-1(4.63e-06)]_3_[+1(8.27e-05)]_930
+NC_000907.1                      7.44e-01  1944_[-1(6.88e-05)]_47
+NC_000912.1                      4.18e-01  1812_[-2(4.07e-05)]_179
+NC_009495.1                      2.38e-01  1078_[+1(4.63e-06)]_44_\
+    [+1(1.99e-05)]_17_[-1(4.63e-06)]_2_[+1(1.99e-05)]_3_[+1(2.86e-05)]_140_\
+    [-1(6.88e-05)]_11_[-1(5.80e-05)]_641
+NC_009613.3                      8.58e-01  1999
+NC_010287.1                      5.70e-01  666_[+1(5.80e-05)]_40_\
+    [-1(6.88e-05)]_67_[-1(6.88e-05)]_1199
+NC_010397.1                      3.88e-03  620_[-3(3.30e-05)]_584_\
+    [-1(2.86e-05)]_2_[+1(4.63e-06)]_362_[-2(7.79e-06)]_118_[-2(6.97e-05)]_99_\
+    [+2(2.74e-05)]_8_[-2(3.42e-05)]_143
+NC_006461.1                      3.08e-03  146_[+2(4.07e-05)]_27_\
+    [+2(2.74e-05)]_328_[+1(4.63e-06)]_2_[+1(4.63e-06)]_3_[+1(4.63e-06)]_12_\
+    [+1(4.63e-06)]_3_[+1(4.63e-06)]_2_[+1(9.25e-06)]_19_[+1(4.63e-06)]_8_\
+    [-1(4.63e-06)]_2_[-1(4.63e-06)]_1_[+2(5.84e-06)]_2_[-1(4.63e-06)]_4_\
+    [-1(4.63e-06)]_35_[-1(4.63e-06)]_617_[+2(7.81e-05)]_53_[-2(3.42e-05)]_57_\
+    [-2(8.49e-05)]_28_[+2(1.23e-05)]_273_[+2(2.74e-05)]_24_[+2(1.68e-05)]_8_\
+    [-2(5.20e-05)]_147
+NC_003062.2                      5.17e-03  34_[+2(5.20e-05)]_363_\
+    [-2(7.79e-06)]_94_[+2(7.79e-06)]_420_[-2(7.81e-05)]_272_[+1(2.86e-05)]_80_\
+    [+1(9.25e-06)]_59_[-1(1.99e-05)]_385_[+3(2.33e-05)]_220
+NC_004342.2                      4.51e-01  88_[-1(1.46e-05)]_1902
+NC_004347.2                      3.88e-02  418_[-1(9.25e-06)]_149_\
+    [-3(4.76e-05)]_400_[+1(3.26e-05)]_95_[-1(4.63e-06)]_64_[-1(4.63e-06)]_24_\
+    [+1(4.63e-06)]_130_[-1(4.63e-06)]_656
+NC_014644.1                      2.33e-01  195_[-1(4.63e-06)]_30_\
+    [-1(5.80e-05)]_8_[+1(4.63e-06)]_384_[-1(5.26e-05)]_1336_[-1(6.88e-05)]_2
+NC_014638.1                      7.85e-02  994_[-1(4.63e-06)]_13_\
+    [-1(3.79e-05)]_25_[+1(4.63e-06)]_733_[+2(8.49e-05)]_198
+NC_017960.1                      1.74e-01  284_[+1(4.63e-06)]_20_\
+    [-1(1.46e-05)]_2_[-1(9.25e-06)]_34_[-1(9.25e-06)]_249_[+1(5.80e-05)]_1366
+NC_017634.1                      1.72e-04  215_[+2(5.20e-05)]_296_\
+    [-2(7.81e-05)]_434_[+2(6.97e-05)]_22_[-3(2.55e-05)]_77_[+2(1.95e-06)]_118_\
+    [+1(4.63e-06)]_77_[+3(3.00e-06)]_11_[-1(1.46e-05)]_26_[+1(5.26e-05)]_9_\
+    [-3(6.47e-06)]_12_[-1(4.63e-06)]_44_[-3(3.00e-06)]_472_[+1(9.25e-06)]_70
+NC_014923.1                      4.45e-01  26_[+2(7.81e-05)]_1661_\
+    [+2(6.97e-05)]_295
+NC_016603.1                      9.33e-01  2000
+NC_002929.2                      3.04e-02  188_[+2(3.89e-06)]_122_\
+    [-2(2.52e-05)]_27_[-3(2.07e-05)]_52_[+2(3.89e-06)]_23_[-2(8.49e-05)]_80_\
+    [+2(1.23e-05)]_224_[+2(4.07e-05)]_1189_[+2(7.79e-06)]_23
+NC_000963.1                      2.38e-01  886_[-1(6.88e-05)]_31_\
+    [-1(1.99e-05)]_44_[-1(3.79e-05)]_91_[-1(3.79e-05)]_3_[-1(4.63e-06)]_105_\
+    [-1(4.63e-06)]_198_[-1(1.46e-05)]_329_[+1(6.88e-05)]_240
+NC_002937.3                      3.95e-02  707_[+2(6.14e-05)]_9_[-2(1.95e-06)]_\
+    199_[-2(7.81e-05)]_1058
+NC_002945.4                      5.38e-02  290_[+3(2.33e-05)]_279_\
+    [+2(6.14e-05)]_301_[+2(4.07e-05)]_249_[-1(5.80e-05)]_60_[+1(4.19e-05)]_650_\
+    [+2(7.81e-05)]_116
+NC_002677.1                      9.36e-02  701_[+1(2.86e-05)]_81_\
+    [-1(1.99e-05)]_45_[-1(4.63e-06)]_227_[-2(9.49e-05)]_910
+NC_000962.3                      5.38e-02  288_[+3(2.33e-05)]_279_\
+    [+2(6.14e-05)]_301_[+2(4.07e-05)]_249_[-1(5.80e-05)]_60_[+1(4.19e-05)]_650_\
+    [+2(7.81e-05)]_118
+NC_003198.1                      1.45e-03  85_[-1(9.25e-06)]_4_[-3(3.00e-06)]_\
+    376_[-2(2.52e-05)]_74_[+3(1.21e-05)]_44_[+1(4.63e-06)]_12_[+3(6.47e-06)]_9_\
+    [-1(5.26e-05)]_26_[+1(1.46e-05)]_11_[-3(3.00e-06)]_77_[-1(4.63e-06)]_118_\
+    [-2(6.97e-05)]_77_[+3(2.55e-05)]_770_[-2(5.20e-05)]_200
+NC_003210.1                      2.22e-01  850_[-1(8.27e-05)]_77_\
+    [+1(4.63e-06)]_22_[+1(4.63e-06)]_20_[-1(1.46e-05)]_76_[-1(1.46e-05)]_11_\
+    [+1(2.86e-05)]_3_[-1(8.27e-05)]_12_[+1(4.19e-05)]_82_[-1(4.63e-06)]_14_\
+    [+1(4.63e-06)]_13_[+1(5.26e-05)]_23_[+1(4.63e-06)]_688
+NC_004603.1                      5.79e-01  1296_[+3(4.76e-05)]_695
+NC_005027.1                      3.14e-01  152_[+2(6.14e-05)]_595_\
+    [+3(4.76e-05)]_245_[+3(5.58e-05)]_981
+NC_014318.1                      1.43e-01  689_[+2(3.89e-06)]_101_\
+    [-2(7.79e-06)]_178_[+2(8.49e-05)]_306_[-2(4.07e-05)]_58_[+2(5.84e-06)]_111_\
+    [-2(8.49e-05)]_143_[-2(7.81e-05)]_51_[-2(7.81e-05)]_291
+NC_003888.3                      2.43e-01  407_[-2(5.20e-05)]_88_\
+    [-2(7.81e-05)]_24_[-2(7.81e-05)]_12_[-2(7.79e-06)]_101_[-2(2.74e-05)]_49_\
+    [+2(1.23e-05)]_61_[-2(2.10e-05)]_586_[+2(5.20e-05)]_75_[-2(6.14e-05)]_183_\
+    [+2(7.81e-05)]_78_[-2(6.97e-05)]_139_[+2(1.23e-05)]_89
+NC_004567.2                      1.17e-01  1129_[-1(3.26e-05)]_33_\
+    [-1(4.63e-06)]_14_[+1(1.46e-05)]_45_[+1(4.63e-06)]_92_[+1(9.25e-06)]_641
+NC_015663.1                      1.72e-04  113_[-3(2.55e-05)]_78_\
+    [+2(1.95e-06)]_36_[+3(4.76e-05)]_73_[+1(4.63e-06)]_77_[+3(3.00e-06)]_11_\
+    [-1(2.86e-05)]_26_[+1(5.26e-05)]_9_[-3(6.47e-06)]_12_[-1(4.63e-06)]_287_\
+    [+2(7.79e-06)]_226_[+3(3.00e-06)]_4_[+1(9.25e-06)]_104_[+1(1.99e-05)]_827
+NC_017384.1                      3.17e-01  198_[+2(4.07e-05)]_631_\
+    [+2(2.52e-05)]_101_[-2(1.23e-05)]_196_[-2(2.52e-05)]_372_[+2(1.68e-05)]_\
+    457
+NC_016845.1                      1.72e-04  77_[+3(3.30e-05)]_36_[-3(2.33e-05)]_\
+    953_[-3(2.55e-05)]_77_[+2(1.95e-06)]_117_[+1(4.63e-06)]_77_[+3(3.00e-06)]_\
+    11_[-1(2.86e-05)]_26_[+1(5.26e-05)]_9_[-3(6.47e-06)]_12_[-1(4.63e-06)]_44_\
+    [-3(3.00e-06)]_233_[+2(7.79e-06)]_219
+NC_018658.1                      1.50e-02  1224_[+1(4.63e-06)]_570_\
+    [-2(5.84e-06)]_75_[-2(2.52e-05)]_103
+NC_018828.1                      4.27e-03  [-2(1.23e-05)]_910_[+2(6.97e-05)]_\
+    239_[-3(2.33e-05)]_89_[-2(8.49e-05)]_298_[-1(4.63e-06)]_269_[-2(2.74e-05)]_\
+    141
+NC_019382.1                      2.89e-02  139_[-2(2.52e-05)]_213_\
+    [-2(1.95e-06)]_93_[-2(2.52e-05)]_31_[+2(9.49e-05)]_468_[+2(2.52e-05)]_1011
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (3) found.
+********************************************************************************
+
+CPU: PC0028
+
+********************************************************************************

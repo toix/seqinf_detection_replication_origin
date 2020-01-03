@@ -12,7 +12,7 @@ def calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta):
     x = range(oriC_mid-half_regionsize, oriC_mid+half_regionsize)
     return x, scores, motif_count
 
-def cskew(skew):
+def accumlate_skew(skew):
     y = 0
     skew_acc = []
     for s in skew:
@@ -46,7 +46,7 @@ def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors = None, sa
     ax1.plot(pos, skew, colors[0])
 
     # ax2
-    skew_acc = cskew(skew)
+    skew_acc = accumlate_skew(skew)
     ax2.plot(pos, skew_acc,color=colors[1])
 
     # other quality score

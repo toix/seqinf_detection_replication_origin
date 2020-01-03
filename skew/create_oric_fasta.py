@@ -1,10 +1,9 @@
 import os
 from Bio import SeqIO as seqio
 from Bio import SeqUtils as seq
-from skew.skewplot import *
 
-path = "../data/bacteria_references/"
-out_path = '../data/skew_regions.fasta'
+path = "../data/bacteria/ref_seq/"
+out_path = '../data/bacteria/skew_regions.fasta'
 
 #def qual_score(skew):
 #    score = 0
@@ -44,22 +43,28 @@ for file in os.listdir(path):
         print("Probably there is more than one read in: " + file)
         continue
 
-    window = 500
+    skew_window = 500
+    oric_window = 1000
 
-
-    skew = seq.GC_skew(fasta.seq, window=window)
+    skew = seq.GC_skew(fasta.seq, window=skew_window)
+    from skew.skewplot import accumlate_skew
+    skew = accumlate_skew(skew)
     from numpy import argmin
-    idx_base_min = argmin(skew).tolist() * window
-    subsequence, sub_seq_start = get_min_sequence(fasta, idx_base_min, window * 2)
+    idx_base_min = argmin(skew).tolist() * skew_window
+    subsequence, sub_seq_start = get_min_sequence(fasta, idx_base_min, skew_window)
 
-    plot(fasta, skew, window, 1000, True, dnaa='TTATCCACA', colors=['xkcd:blue' for i in range(4)])
+    # from skew.skewplot import plot
+    # plot(fasta, skew, skew_window, oric_window, True, dnaa='TTATCCACA', colors=['xkcd:blue' for i in range(4)])
 
     skew = seq.GC_skew(subsequence.seq, window=10)
-    idx_base_min_zoom = sub_seq_start + argmin(skew).tolist() * 10
-    oric_sequence = get_min_sequence(fasta, idx_base_min_zoom, 1000)[0]
+    skew = accumlate_skew(skew)
+    idx_base_min = sub_seq_start + argmin(skew).tolist() * 10
+    oric_sequence = get_min_sequence(fasta, idx_base_min, oric_window)[0]
+
     oric_sequence.description = oric_sequence.description.replace('complete genome', '')
     oric_sequence.description = oric_sequence.description.replace('complete sequence', '')
-    oric_sequence.description = oric_sequence.description + 'oric at {} +- 1000'.format(idx_base_min_zoom)
+    oric_sequence.description = oric_sequence.description + 'oric at {} +- {}'.format(idx_base_min, oric_window)
+
     oric_sequences.append(oric_sequence)
 
     # out_file.write(sub_seq.name + "\n")
