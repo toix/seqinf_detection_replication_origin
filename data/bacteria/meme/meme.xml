@@ -364,7 +364,7 @@
 </background_frequencies>
 </model>
 <motifs>
-<motif id="motif_1" name="TGTGGATAA" alt="MEME-1" width="9" sites="288" ic="15.0" re="14.7" llr="2929" p_value="3.6e-563" e_value="1.2e-086" bayes_threshold="11.0762" elapsed_time="96.984375">
+<motif id="motif_1" name="TGTGGATAA" alt="MEME-1" width="9" sites="288" ic="15.0" re="14.7" llr="2929" p_value="3.6e-563" e_value="1.2e-086" bayes_threshold="11.0762" elapsed_time="128.156250">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
@@ -4807,7 +4807,7 @@ TGTGGATAA
 </contributing_site>
 </contributing_sites>
 </motif>
-<motif id="motif_2" name="GCCBKSGCC" alt="MEME-2" width="9" sites="308" ic="11.5" re="12.3" llr="2615" p_value="3.6e-637" e_value="2.6e-020" bayes_threshold="11.3956" elapsed_time="187.031250">
+<motif id="motif_2" name="GCCBKSGCC" alt="MEME-2" width="9" sites="308" ic="11.5" re="12.3" llr="2615" p_value="3.6e-637" e_value="2.6e-020" bayes_threshold="11.3956" elapsed_time="222.312500">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
@@ -9550,7 +9550,7 @@ GC[CG][CGT][GT][GC]GCC
 </contributing_site>
 </contributing_sites>
 </motif>
-<motif id="motif_3" name="GCTGGGATC" alt="MEME-3" width="9" sites="31" ic="16.2" re="16.5" llr="354" p_value="4.3e-089" e_value="2.4e+003" bayes_threshold="13.5943" elapsed_time="270.046875">
+<motif id="motif_3" name="GCTGGGATC" alt="MEME-3" width="9" sites="31" ic="16.2" re="16.5" llr="354" p_value="4.3e-089" e_value="2.4e+003" bayes_threshold="13.5943" elapsed_time="313.281250">
 <scores>
 <alphabet_matrix>
 <alphabet_array>

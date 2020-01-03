@@ -23,7 +23,7 @@ REFERENCE
 DATABASE AND MOTIFS
 ********************************************************************************
 	DATABASE skew_regions.fasta (nucleotide)
-	Last updated on Fri Jan  3 16:59:39 2020
+	Last updated on Fri Jan  3 19:42:26 2020
 	Database contains 118 sequences, 235953 residues
 
 	Scores for positive and reverse complement strands are combined.
@@ -1818,8 +1818,7 @@ NC_007606.1
 
 
 NC_002937.3
-  Desulfovibrio vulgaris str. Hildenborough chromosome, oric at 3533710 +- 
-  1000
+  Desulfovibrio vulgaris str. Hildenborough chromosome, oric at 3533710 +- 1000
   LENGTH = 2000  COMBINED P-VALUE = 3.25e-02  E-VALUE =      3.8
   DIAGRAM: 707-[+2]-9-[-2]-22-[-2]-168-[-2]-1058
 
@@ -2646,6 +2645,6 @@ NC_002677.1
 
 
 CPU: PC0028
-Time 0.062 secs.
+Time 0.094 secs.
 
 mast -oc . -nostatus meme.xml /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta

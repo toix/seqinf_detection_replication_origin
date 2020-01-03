@@ -18,7 +18,7 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * done! [Lena] DoriC: Where is the minimum related to DnaA motif in ecoli (expected relative position, high variance?)
 * [Tobias] create a fasta file with all OriC regions 👍 skript: skew/create_oric_fasta.py; results all bacteria reference sequences: data/bacteria/skew_regions.fasta
 * [Tobias] execute local version of meme 👍 results for all bacteria reference sequences: data/bacteria/meme/mast.html
-* [Tobias] test meme on species specific sequences (skew/Thermotoga)
+* [Tobias] test meme on species specific sequences (skew/Thermotoga) 👍 motif is shifted
 * tasks from project sheet
 
 ## download fasta files of genomes

@@ -1,0 +1,674 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<mast version="5.1.0" release="Fri Oct 11 15:53:28 2019 -0700">
+	<command_line><arg>mast</arg><arg>-oc</arg><arg>.</arg><arg>-nostatus</arg><arg>meme.xml</arg><arg>/mnt/c/drive/uni/seq_inf/seqinf_project/data/ecoli/skew_regions.fasta</arg></command_line>
+	<settings strand_handling="combine" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
+	<alphabet name="DNA" like="dna">
+		<letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+		<letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+		<letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+		<letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+		<letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+		<letter id="V" symbol="V" equals="ACG" name="Not T"/>
+		<letter id="H" symbol="H" equals="ACT" name="Not G"/>
+		<letter id="D" symbol="D" equals="AGT" name="Not C"/>
+		<letter id="B" symbol="B" equals="CGT" name="Not A"/>
+		<letter id="M" symbol="M" equals="AC" name="Amino"/>
+		<letter id="R" symbol="R" equals="AG" name="Purine"/>
+		<letter id="W" symbol="W" equals="AT" name="Weak"/>
+		<letter id="S" symbol="S" equals="CG" name="Strong"/>
+		<letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+		<letter id="K" symbol="K" equals="GT" name="Keto"/>
+	</alphabet>
+	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
+	<motif_dbs>
+		<motif_db source="meme.xml" last_mod_date="Fri Jan  3 19:42:59 2020">
+			<background A="0.241" C="0.259" G="0.259" T="0.241"/>
+		</motif_db>
+	</motif_dbs>
+	<motifs>
+		<motif db="0" id="TGGATAAMT" alt="MEME-1" length="9" nsites="50" evalue="5.4e-030">
+			<pos A="-1229" C="11" G="-1229" T="158"/>
+			<pos A="-1229" C="-1229" G="189" T="-259"/>
+			<pos A="-359" C="-1229" G="192" T="-1229"/>
+			<pos A="197" C="-1229" G="-1229" T="-200"/>
+			<pos A="-1229" C="-1229" G="-1229" T="205"/>
+			<pos A="205" C="-1229" G="-1229" T="-1229"/>
+			<pos A="205" C="-1229" G="-1229" T="-1229"/>
+			<pos A="41" C="95" G="-1229" T="-42"/>
+			<pos A="0" C="-1229" G="-1229" T="166"/>
+		</motif>
+		<motif db="0" id="GCRCGAWCT" alt="MEME-2" length="9" nsites="50" evalue="1.2e-009">
+			<pos A="-259" C="-1229" G="189" T="-1229"/>
+			<pos A="-1229" C="195" G="-1229" T="-1229"/>
+			<pos A="100" C="-1229" G="70" T="-127"/>
+			<pos A="-359" C="159" G="-1229" T="-27"/>
+			<pos A="-1229" C="-1229" G="195" T="-1229"/>
+			<pos A="184" C="-1229" G="-1229" T="-78"/>
+			<pos A="127" C="-1229" G="-1229" T="80"/>
+			<pos A="-1229" C="195" G="-1229" T="-1229"/>
+			<pos A="-1229" C="11" G="-1229" T="158"/>
+		</motif>
+		<motif db="0" id="ATGSTGATT" alt="MEME-3" length="9" nsites="19" evalue="1.9e-009">
+			<pos A="205" C="-1089" G="-1089" T="-1089"/>
+			<pos A="-1089" C="-1089" G="-1089" T="205"/>
+			<pos A="-1089" C="-1089" G="195" T="-1089"/>
+			<pos A="-1089" C="87" G="102" T="-1089"/>
+			<pos A="-1089" C="-1089" G="-1089" T="205"/>
+			<pos A="-1089" C="-230" G="187" T="-1089"/>
+			<pos A="205" C="-1089" G="-1089" T="-1089"/>
+			<pos A="-1089" C="-1089" G="-1089" T="205"/>
+			<pos A="-1089" C="-1089" G="-1089" T="205"/>
+		</motif>
+	</motifs>
+	<correlations>
+		<correlation idx_a="0" idx_b="1" value="0.20"/>
+		<correlation idx_a="0" idx_b="2" value="0.30"/>
+		<correlation idx_a="1" idx_b="2" value="0.18"/>
+	</correlations>
+	<sequence_dbs>
+		<sequence_db source="/mnt/c/drive/uni/seq_inf/seqinf_project/data/ecoli/skew_regions.fasta" last_mod_date="Fri Jan  3 19:42:37 2020" seq_count="10" residue_count="19999"/>
+	</sequence_dbs>
+	<sequences>
+		<sequence db="0" name="NC_002695.2" comment="Escherichia coli O157:H7 str. Sakai DNA, oric at 4719160 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="6.97e-04" evalue="0.007"/>
+			<seg start="1">
+				<data>
+AGAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATAGAGCGGACGATTT
+				</data>
+				<hit pos="31" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+GCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAAGTCAGCCCTTCCGGTT
+				</data>
+				<hit pos="116" idx="0" rc="n" pvalue="3.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CAAGGAAGATCTGATGCTGATTTCTGTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGC
+				</data>
+				<hit pos="164" idx="2" rc="n" pvalue="9.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+GGTTATCGCCATGCTGTTGCGCAAGCACGCTAAAGTCGATGGTTCGAGCATCAATACGCGGTGGTGTCCCGGTTT
+				</data>
+				<hit pos="416" idx="1" rc="y" pvalue="6.7e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="451">
+				<data>
+TCAGACGACCAACGCGCAGCGGAAGTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGC
+				</data>
+				<hit pos="474" idx="1" rc="y" pvalue="2.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="526">
+				<data>
+CACCGCTGTAGTTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACGGCTTTGG
+				</data>
+				<hit pos="535" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+GAGCTCGGGTAGCGCGAACTGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCG
+				</data>
+				<hit pos="762" idx="1" rc="n" pvalue="6.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTG
+				</data>
+				<hit pos="1031" idx="0" rc="n" pvalue="5.6e-05" match="+++++++++"/>
+				<hit pos="1041" idx="2" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATC
+				</data>
+				<hit pos="1212" idx="0" rc="n" pvalue="2.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATT
+				</data>
+				<hit pos="1353" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1388" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1406" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_008253.1" comment="Escherichia coli 536, oric at 4109380 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="1.00e-03" evalue="0.01"/>
+			<seg start="1">
+				<data>
+AGAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATGGAGCGGACGATTT
+				</data>
+				<hit pos="31" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+GCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAGGTCAGCCCTTCCGGTT
+				</data>
+				<hit pos="116" idx="0" rc="n" pvalue="3.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CAAGGAAGATCTGATGCTGATTTCTGTCGGCAAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGC
+				</data>
+				<hit pos="164" idx="2" rc="n" pvalue="9.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+GGTTATCGCCATGCTGTTGCGCCAGCACGCTGAAGTCGATAGTACGTGCATCAATACGCGGCGGTGTCCCGGTTT
+				</data>
+				<hit pos="416" idx="1" rc="y" pvalue="4.3e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+TCAGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAGAGCGGAATGGACGGCGGATCACCAGCACGGC
+				</data>
+				<hit pos="474" idx="1" rc="y" pvalue="2.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="526">
+				<data>
+CACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTTTGG
+				</data>
+				<hit pos="535" idx="0" rc="y" pvalue="1.7e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+GAGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCG
+				</data>
+				<hit pos="762" idx="1" rc="n" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTG
+				</data>
+				<hit pos="1031" idx="0" rc="n" pvalue="5.6e-05" match="+++++++++"/>
+				<hit pos="1041" idx="2" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATC
+				</data>
+				<hit pos="1212" idx="0" rc="n" pvalue="2.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TTTGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATT
+				</data>
+				<hit pos="1353" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1388" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1406" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_008563.1" comment="Escherichia coli APEC O1, oric at 4219250 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="1.00e-03" evalue="0.01"/>
+			<seg start="1">
+				<data>
+GATCGAAGAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATGGAGCGGA
+				</data>
+				<hit pos="37" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+CGATTTGCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTTGAGGTCAGCCCTT
+				</data>
+				<hit pos="122" idx="0" rc="n" pvalue="3.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CCGGTTCAAGGAAGATCTGATGCTGATTTCTTTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGC
+				</data>
+				<hit pos="170" idx="2" rc="n" pvalue="9.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+GCATTGGGTTATCGCCATGCTGTTGCGCCAGCACGCTGAAGTCGATAGTACGTGCATCAATACGCGGCGGTGTCC
+				</data>
+				<hit pos="422" idx="1" rc="y" pvalue="4.3e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+CGGTTTTCAGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAGAGCGGAATGGACGGCGGATCACCAG
+				</data>
+				<hit pos="480" idx="1" rc="y" pvalue="2.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="526">
+				<data>
+CACGGCCACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAG
+				</data>
+				<hit pos="541" idx="0" rc="y" pvalue="1.7e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+CTGCCTGAGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGAT
+				</data>
+				<hit pos="768" idx="1" rc="n" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+CGGCCATCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGG
+TGATTGCCTCGCATAAAGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTGTCGGCTTG
+				</data>
+				<hit pos="1037" idx="0" rc="n" pvalue="5.6e-05" match="+++++++++"/>
+				<hit pos="1047" idx="2" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+AGGATCGCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGA
+				</data>
+				<hit pos="1218" idx="0" rc="n" pvalue="2.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TTGTTCTTTGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATA
+				</data>
+				<hit pos="1359" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1394" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1412" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_004431.1" comment="Escherichia coli CFT073, oric at 4426530 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="1.00e-03" evalue="0.01"/>
+			<seg start="76">
+				<data>
+TTCAGGTCGCGTGGATCGAAGAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCC
+				</data>
+				<hit pos="125" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+TGCATGGAGCGGACGATTTGCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTA
+				</data>
+				<hit pos="210" idx="0" rc="n" pvalue="3.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="226">
+				<data>
+GAGGTCAGCCCTTCCGGTTCAAGGAAGATCTGATGCTGATTTCTGTCGGCGAAGCGCATGACTTTGTCTTCGATC
+				</data>
+				<hit pos="258" idx="2" rc="n" pvalue="9.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+AACGAGAATACTGGCATTGGGTTATCGCCATGCTGTTGCGCCAGTACGCTAAAGTCGATGGTTCGAGCATCAATA
+				</data>
+				<hit pos="510" idx="1" rc="y" pvalue="6.7e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="526">
+				<data>
+CGCGGTGGTGTCCCGGTTTTCAGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAAAGCGGAATGGAC
+				</data>
+				<hit pos="568" idx="1" rc="y" pvalue="2.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="601">
+				<data>
+GGCGGATCACCAGCACGGCCACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACG
+				</data>
+				<hit pos="629" idx="0" rc="y" pvalue="1.7e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TAGAGCACACGATCTGCCTGAGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGG
+				</data>
+				<hit pos="856" idx="1" rc="n" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CCCATACGCGCCGCGGCCATCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCC
+GGATAAAACATGGTGATTGCCTCGCATAACGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAA
+				</data>
+				<hit pos="1125" idx="0" rc="n" pvalue="5.6e-05" match="+++++++++"/>
+				<hit pos="1135" idx="2" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+GTGATCTCTTATTAGGATCGCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGA
+				</data>
+				<hit pos="1306" idx="0" rc="n" pvalue="2.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+AACTGAACAATCGTTGTTCTTTGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCG
+CACGATCTGTATACTTATTTGAGTAAATTAATCCACGATCCCAGCCATTCTTCTGCCGGATCCTCCGGAATGTCG
+				</data>
+				<hit pos="1447" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1482" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1500" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_009800.1" comment="Escherichia coli HS, oric at 3952770 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="1.00e-03" evalue="0.01"/>
+			<seg start="1">
+				<data>
+AGAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATAGAGCGGACGATTT
+				</data>
+				<hit pos="31" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+GCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAGGTCAGTCCTTCCGGTT
+				</data>
+				<hit pos="116" idx="0" rc="n" pvalue="3.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CAAGGAAGATCTGATGCTGATTTCTGTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGC
+				</data>
+				<hit pos="164" idx="2" rc="n" pvalue="9.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+GGTTATCGCCATGCTGTTGCGCCAGCACACTAAAGTCGATAGTTCGAGCATCAATACGCGGTGGTGTCCCGGTTT
+				</data>
+				<hit pos="416" idx="1" rc="y" pvalue="3.6e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="451">
+				<data>
+TCAGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGC
+				</data>
+				<hit pos="474" idx="1" rc="y" pvalue="2.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="526">
+				<data>
+CACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAATGTCCCAACGGTGAGCACGACGGCTTTGG
+				</data>
+				<hit pos="535" idx="0" rc="y" pvalue="1.7e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+GAGCTCGGGTAGCGCGAACCGCCGGTCCTTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCTTGATCGATCG
+				</data>
+				<hit pos="762" idx="1" rc="n" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTG
+				</data>
+				<hit pos="1031" idx="0" rc="n" pvalue="5.6e-05" match="+++++++++"/>
+				<hit pos="1041" idx="2" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATC
+				</data>
+				<hit pos="1212" idx="0" rc="n" pvalue="2.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+CTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATT
+				</data>
+				<hit pos="1353" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1388" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1406" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_011750.1" comment="Escherichia coli IAI39 chromosome, oric at 4528110 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="1.00e-03" evalue="0.01"/>
+			<seg start="376">
+				<data>
+CCGCCGCCTGTTCGTCTGTCAACGCAGGGGCAAACGGCGTCAGCGTGGTTAATTTTTCATAAGTCATTTCCGGAC
+				</data>
+				<hit pos="421" idx="0" rc="n" pvalue="9.1e-05" match="+++ +++ +"/>
+			</seg>
+			<seg start="751">
+				<data>
+CAACCAGTACGCCGAGATACGCCTGAGAACGCGCCGGAGCCCAACCTTCTTTGTCTGCAGACAGACGGGCAGCGT
+				</data>
+				<hit pos="776" idx="1" rc="y" pvalue="5.8e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+CCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATGGAGCGGACGATTTGCATCTGCACATCGAACGGCAGGC
+				</data>
+				<hit pos="982" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+TGGTGGAGATACCGTTCGGATAAATTTCGTTAGAGGTCAGCCCTTCCGGTTCAAGGAAGATCTGATGCTGATTTC
+				</data>
+				<hit pos="1067" idx="0" rc="n" pvalue="3.6e-05" match="+++++++++"/>
+				<hit pos="1115" idx="2" rc="n" pvalue="9.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GTACGCTAAAGTCGATGGTTCGAGCATCAATACGCGGTGGTGTCCCGGTTTTCAGACGACCAACGCGCAGCGGCA
+GTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGCCACCGCTGTAGTTATCCAGACCGA
+				</data>
+				<hit pos="1367" idx="1" rc="y" pvalue="6.7e-05" match="++++++ ++"/>
+				<hit pos="1425" idx="1" rc="y" pvalue="2.9e-05" match="+++++ +++"/>
+				<hit pos="1486" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+GGTTCTCCAGCGCCGTACGTACCGCCTGACGGTAGAGCACACGATCTGCCTGAGCTCGGGTAGCGCGAACCGCCG
+				</data>
+				<hit pos="1713" idx="1" rc="n" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1951">
+				<data>
+CCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATT
+				</data>
+				<hit pos="1982" idx="0" rc="n" pvalue="5.6e-05" match="+++++++++"/>
+				<hit pos="1992" idx="2" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_017634.1" comment="Escherichia coli O83:H1 str. NRG 857C chromosome, oric at 3946680 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="1.00e-03" evalue="0.01"/>
+			<seg start="1">
+				<data>
+AAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATGGAGCGGACGATTTGC
+				</data>
+				<hit pos="29" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+ATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTTGAGGTCAGCCCTTCCGGTTCA
+				</data>
+				<hit pos="114" idx="0" rc="n" pvalue="3.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+AGGAAGATCTGATGCTGATTTCTGTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGCCG
+				</data>
+				<hit pos="162" idx="2" rc="n" pvalue="9.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+TTATCGCCATGCTGTTGCGCCAGCACGCTGAAGTCGATAGTACGTGCATCAATACGCGGCGGTGTCCCGGTTTTC
+				</data>
+				<hit pos="414" idx="1" rc="y" pvalue="4.3e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+AGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAGAGCGGAATGGACGGCGGATCACCAGCACGGCCA
+				</data>
+				<hit pos="472" idx="1" rc="y" pvalue="2.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="526">
+				<data>
+CCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTTTGGCA
+				</data>
+				<hit pos="533" idx="0" rc="y" pvalue="1.7e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+GCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGCT
+				</data>
+				<hit pos="760" idx="1" rc="n" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+GCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTGCC
+				</data>
+				<hit pos="1029" idx="0" rc="n" pvalue="5.6e-05" match="+++++++++"/>
+				<hit pos="1039" idx="2" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+CTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGGATCGC
+GCTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATCGG
+				</data>
+				<hit pos="1194" idx="1" rc="y" pvalue="2.9e-05" match="+++++++++"/>
+				<hit pos="1210" idx="0" rc="n" pvalue="2.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATTTG
+				</data>
+				<hit pos="1351" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1386" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1404" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_007946.1" comment="Escherichia coli UTI89, oric at 4186460 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="1.00e-03" evalue="0.01"/>
+			<seg start="1">
+				<data>
+GAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATGGAGCGGACGATTTG
+				</data>
+				<hit pos="30" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+CATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTTGAGGTCAGCCCTTCCGGTTC
+				</data>
+				<hit pos="115" idx="0" rc="n" pvalue="3.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+AAGGAAGATCTGATGCTGATTTCTTTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGCC
+				</data>
+				<hit pos="163" idx="2" rc="n" pvalue="9.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+GTTATCGCCATGCTGTTGCGCCAGCACGCTGAAGTCGATAGTACGTGCATCAATACGCGGCGGTGTCCCGGTTTT
+				</data>
+				<hit pos="415" idx="1" rc="y" pvalue="4.3e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+CAGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAGAGCGGAATGGACGGCGGATCACCAGCACGGCC
+				</data>
+				<hit pos="473" idx="1" rc="y" pvalue="2.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="526">
+				<data>
+ACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTTTGGC
+				</data>
+				<hit pos="534" idx="0" rc="y" pvalue="1.7e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+AGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGC
+				</data>
+				<hit pos="761" idx="1" rc="n" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+CGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTGC
+				</data>
+				<hit pos="1030" idx="0" rc="n" pvalue="5.6e-05" match="+++++++++"/>
+				<hit pos="1040" idx="2" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+CACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATCG
+				</data>
+				<hit pos="1211" idx="0" rc="n" pvalue="2.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TTGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATTT
+				</data>
+				<hit pos="1352" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1387" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1405" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_000913.3" comment="Escherichia coli str. K-12 substr. MG1655, oric at 3924640 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="2.73e-03" evalue="0.027"/>
+			<seg start="376">
+				<data>
+CCGCCGCCTGTTCGTCTGTCAACGCAGGGGCAAACGGCGTCAGCGTGGTTAATTTTTCATAAGTCATTTCCGGAC
+				</data>
+				<hit pos="421" idx="0" rc="n" pvalue="9.1e-05" match="+++ +++ +"/>
+			</seg>
+			<seg start="751">
+				<data>
+CAACTAGTACGCCGAGATACGCCTGAGAACGTGCCGGAGCCCAACCTTCTTTGTCAGCAGACAGACGGGCAGCGT
+				</data>
+				<hit pos="776" idx="1" rc="y" pvalue="5.2e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+CCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATAGAGCGGACGATTTGCATCTGCACATCGAACGGCAGGC
+				</data>
+				<hit pos="982" idx="1" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+TGGTGGAGATACCGTTCGGATAAATTTCATTAGAGGTCAGTCCTTCCGGTTCAAGGAAGATCTGATGCTGATTTC
+				</data>
+				<hit pos="1067" idx="0" rc="n" pvalue="3.6e-05" match="+++++++++"/>
+				<hit pos="1115" idx="2" rc="n" pvalue="9.7e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GTACGCTAAAGTCGATGGTTCGAGCATCAATACGCGGTGGTGTCCCGGTTTTCAGACGACCAACGCGCAGCGGCA
+GTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGCCACCGCTGTAATTATCCAGACCGA
+				</data>
+				<hit pos="1367" idx="1" rc="y" pvalue="6.7e-05" match="++++++ ++"/>
+				<hit pos="1425" idx="1" rc="y" pvalue="2.9e-05" match="+++++ +++"/>
+				<hit pos="1486" idx="0" rc="y" pvalue="1.7e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+GGTTCTCCAGCGCCGTACGTACCGCCTGACGGTAGAGCACACGATCCGCCTGAGCTCGGGTAGCGCGAACCGCCG
+				</data>
+				<hit pos="1713" idx="1" rc="n" pvalue="1.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1951">
+				<data>
+CCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATT
+				</data>
+				<hit pos="1982" idx="0" rc="n" pvalue="5.6e-05" match="+++++++++"/>
+				<hit pos="1992" idx="2" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_018658.1" comment="Escherichia coli O104:H4 str. 2011C-3493 chromosome, oric at -410 +- 1000" length="1999">
+			<score strand="both" combined_pvalue="6.66e-03" evalue="0.067"/>
+			<seg start="526">
+				<data>
+CGACTGTAAGACCGATACGGGGATGCCCCAGCGAATTCAGGCGGCCGAGAATGGTAATTTGCGGCGTGCCAGCCC
+				</data>
+				<hit pos="576" idx="2" rc="n" pvalue="6.0e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+CCAATTTTTGTCTATGGTCATTAAATTTTCCAATATGCGGCGTAAATCGTGCCCGCCTCGCGGCAGGATCGTTTA
+				</data>
+				<hit pos="1139" idx="2" rc="n" pvalue="1.5e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+CACTTAGCGAGTTCTGGAAAGTCCTGTGGATAAATCGGGAAAATCTGTGAGAAACAGAAGATCTCTTGCGCAGTT
+				</data>
+				<hit pos="1227" idx="0" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+TAGGCTATGATCCGCGGTCCCGATCGTTTTGCAGGATCTTGATCGGGCATATAACCGCAGACAGCGGTTCGTGCG
+				</data>
+				<hit pos="1341" idx="1" rc="y" pvalue="1.5e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+CCCGGCCCCGGCAGAACCGACCTATCGTTCTAACGTAAACGTCAAACACACGTTTGATAACTTCGTTGAAGGTAA
+				</data>
+				<hit pos="1854" idx="0" rc="n" pvalue="7.8e-05" match="+ +++++++"/>
+			</seg>
+		</sequence>
+	</sequences>
+	<runtime host="PC0028" when="Fri Jan  3 19:42:59 2020" cycles="15625" seconds="0.016"/>
+</mast>

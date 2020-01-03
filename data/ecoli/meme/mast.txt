@@ -1,0 +1,790 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.1.0 (Release date: Fri Oct 11 15:53:28 2019 -0700)
+
+	For further information on how to interpret these results please access http://meme-suite.org/.
+	To get a copy of the MAST software please access http://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE skew_regions.fasta (nucleotide)
+	Last updated on Fri Jan  3 19:42:37 2020
+	Database contains 10 sequences, 19999 residues
+
+	Scores for positive and reverse complement strands are combined.
+
+	MOTIFS meme.xml (nucleotide)
+	MOTIF ID        ALT ID WIDTH BEST POSSIBLE MATCH
+	----- --------- ------ ----- -------------------
+	    1 TGGATAAMT MEME-1     9 TGGATAACT
+	    2 GCRCGAWCT MEME-2     9 GCACGAACT
+	    3 ATGSTGATT MEME-3     9 ATGGTGATT
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2
+	----- ----- -----
+	   2   0.20
+	   3   0.30  0.18
+	No overly similar pairs (correlation > 0.60) found.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.274 C 0.225 G 0.225 T 0.274 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 10 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+NC_002695.2                        Escherichia coli O157:H7 s...    0.007   2000
+NC_008253.1                        Escherichia coli 536, oric...     0.01   2000
+NC_008563.1                        Escherichia coli APEC O1, ...     0.01   2000
+NC_004431.1                        Escherichia coli CFT073, o...     0.01   2000
+NC_009800.1                        Escherichia coli HS, oric ...     0.01   2000
+NC_011750.1                        Escherichia coli IAI39 chr...     0.01   2000
+NC_017634.1                        Escherichia coli O83:H1 st...     0.01   2000
+NC_007946.1                        Escherichia coli UTI89, or...     0.01   2000
+NC_000913.3                        Escherichia coli str. K-12...    0.027   2000
+NC_018658.1                        Escherichia coli O104:H4 s...    0.067   1999
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [sn]  occurrence of motif `n' with p-value less than 0.0001.
+		    A minus sign indicates that the occurrence is on the
+		    reverse complement strand.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+NC_002695.2                           0.007  30-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-586
+NC_008253.1                            0.01  30-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-586
+NC_008563.1                            0.01  36-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-580
+NC_004431.1                            0.01  124-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-492
+NC_009800.1                            0.01  30-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-586
+NC_017634.1                            0.01  28-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-146-[-2]-7-[+1]-132-[+1]-26-[-1]-9-[+2]-588
+NC_007946.1                            0.01  29-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-587
+NC_018658.1                           0.067  575-[+3]-554-[+3]-79-[+1]-105-[-2]-504-[+1]-137
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence (a minus sign indicates that
+	  the occurrence is on the reverse complement strand),
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif (or its reverse complement), and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+NC_002695.2
+  Escherichia coli O157:H7 str. Sakai DNA, oric at 4719160 +- 1000
+  LENGTH = 2000  COMBINED P-VALUE = 6.97e-04  E-VALUE =    0.007
+  DIAGRAM: 30-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-586
+
+                                   [+2]
+                                   9.2e-06
+                                   GCACGAACT
+                                   +++++++++
+1    AGAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATAGAGCGGACGATTT
+
+                                             [+1]
+                                             3.6e-05
+                                             TGGATAACT
+                                             +++++++++
+76   GCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAAGTCAGCCCTTCCGGTT
+
+                  [+3]
+                  9.7e-06
+                  ATGGTGATT
+                  +++++++++
+151  CAAGGAAGATCTGATGCTGATTTCTGTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGC
+
+                                             [-2]
+                                             6.7e-05
+                                             AGTTCGTGC
+                                             ++++++ ++
+376  GGTTATCGCCATGCTGTTGCGCAAGCACGCTAAAGTCGATGGTTCGAGCATCAATACGCGGTGGTGTCCCGGTTT
+
+                            [-2]
+                            2.9e-05
+                            AGTTCGTGC
+                            +++++ +++
+451  TCAGACGACCAACGCGCAGCGGAAGTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGC
+
+              [-1]
+              4.9e-06
+              AGTTATCCA
+              +++++++++
+526  CACCGCTGTAGTTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACGGCTTTGG
+
+                [+2]
+                6.0e-06
+                GCACGAACT
+                +++++++++
+751  GAGCTCGGGTAGCGCGAACTGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCG
+
+                                                            [+1]      [+3]
+                                                            5.6e-05   4.9e-06
+                                                            TGGATAACT ATGGTGATT
+                                                            +++++++++ +++++++++
+976  TCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTG
+
+                [+1]
+                2.6e-05
+                TGGATAACT
+                +++++++++
+1201 GCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATC
+
+       [+1]                               [-1]              [+2]
+       4.9e-06                            4.9e-06           9.2e-06
+       TGGATAACT                          AGTTATCCA         GCACGAACT
+       +++++++++                          +++++++++         +++++++++
+1351 TTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATT
+
+
+NC_008253.1
+  Escherichia coli 536, oric at 4109380 +- 1000
+  LENGTH = 2000  COMBINED P-VALUE = 1.00e-03  E-VALUE =     0.01
+  DIAGRAM: 30-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-586
+
+                                   [+2]
+                                   9.2e-06
+                                   GCACGAACT
+                                   +++++++++
+1    AGAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATGGAGCGGACGATTT
+
+                                             [+1]
+                                             3.6e-05
+                                             TGGATAACT
+                                             +++++++++
+76   GCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAGGTCAGCCCTTCCGGTT
+
+                  [+3]
+                  9.7e-06
+                  ATGGTGATT
+                  +++++++++
+151  CAAGGAAGATCTGATGCTGATTTCTGTCGGCAAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGC
+
+                                             [-2]
+                                             4.3e-05
+                                             AGTTCGTGC
+                                             +++ +++++
+376  GGTTATCGCCATGCTGTTGCGCCAGCACGCTGAAGTCGATAGTACGTGCATCAATACGCGGCGGTGTCCCGGTTT
+
+                            [-2]
+                            2.9e-05
+                            AGTTCGTGC
+                            +++++ +++
+451  TCAGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAGAGCGGAATGGACGGCGGATCACCAGCACGGC
+
+              [-1]
+              1.7e-05
+              AGTTATCCA
+              + +++++++
+526  CACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTTTGG
+
+                [+2]
+                1.7e-05
+                GCACGAACT
+                +++++++++
+751  GAGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCG
+
+                                                            [+1]      [+3]
+                                                            5.6e-05   4.9e-06
+                                                            TGGATAACT ATGGTGATT
+                                                            +++++++++ +++++++++
+976  TCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTG
+
+                [+1]
+                2.6e-05
+                TGGATAACT
+                +++++++++
+1201 GCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATC
+
+       [+1]                               [-1]              [+2]
+       4.9e-06                            4.9e-06           9.2e-06
+       TGGATAACT                          AGTTATCCA         GCACGAACT
+       +++++++++                          +++++++++         +++++++++
+1351 TTTGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATT
+
+
+NC_008563.1
+  Escherichia coli APEC O1, oric at 4219250 +- 1000
+  LENGTH = 2000  COMBINED P-VALUE = 1.00e-03  E-VALUE =     0.01
+  DIAGRAM: 36-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-580
+
+                                         [+2]
+                                         9.2e-06
+                                         GCACGAACT
+                                         +++++++++
+1    GATCGAAGAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATGGAGCGGA
+
+                                                   [+1]
+                                                   3.6e-05
+                                                   TGGATAACT
+                                                   +++++++++
+76   CGATTTGCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTTGAGGTCAGCCCTT
+
+                        [+3]
+                        9.7e-06
+                        ATGGTGATT
+                        +++++++++
+151  CCGGTTCAAGGAAGATCTGATGCTGATTTCTTTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGC
+
+                                                   [-2]
+                                                   4.3e-05
+                                                   AGTTCGTGC
+                                                   +++ +++++
+376  GCATTGGGTTATCGCCATGCTGTTGCGCCAGCACGCTGAAGTCGATAGTACGTGCATCAATACGCGGCGGTGTCC
+
+                                  [-2]
+                                  2.9e-05
+                                  AGTTCGTGC
+                                  +++++ +++
+451  CGGTTTTCAGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAGAGCGGAATGGACGGCGGATCACCAG
+
+                    [-1]
+                    1.7e-05
+                    AGTTATCCA
+                    + +++++++
+526  CACGGCCACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAG
+
+                      [+2]
+                      1.7e-05
+                      GCACGAACT
+                      +++++++++
+751  CTGCCTGAGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGAT
+
+                                                                  [+1]      [+3]
+                                                                  5.6e-05   4.9e
+                                                                  TGGATAACT ATGG
+                                                                  +++++++++ ++++
+976  CGGCCATCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGG
+
+     
+     -06
+     TGATT
+     +++++
+1051 TGATTGCCTCGCATAAAGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTGTCGGCTTG
+
+                      [+1]
+                      2.6e-05
+                      TGGATAACT
+                      +++++++++
+1201 AGGATCGCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGA
+
+             [+1]                               [-1]              [+2]
+             4.9e-06                            4.9e-06           9.2e-06
+             TGGATAACT                          AGTTATCCA         GCACGAACT
+             +++++++++                          +++++++++         +++++++++
+1351 TTGTTCTTTGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATA
+
+
+NC_004431.1
+  Escherichia coli CFT073, oric at 4426530 +- 1000
+  LENGTH = 2000  COMBINED P-VALUE = 1.00e-03  E-VALUE =     0.01
+  DIAGRAM: 124-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-492
+
+                                                      [+2]
+                                                      9.2e-06
+                                                      GCACGAACT
+                                                      +++++++++
+76   TTCAGGTCGCGTGGATCGAAGAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCC
+
+                                                                [+1]
+                                                                3.6e-05
+                                                                TGGATAACT
+                                                                +++++++++
+151  TGCATGGAGCGGACGATTTGCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTA
+
+                                     [+3]
+                                     9.7e-06
+                                     ATGGTGATT
+                                     +++++++++
+226  GAGGTCAGCCCTTCCGGTTCAAGGAAGATCTGATGCTGATTTCTGTCGGCGAAGCGCATGACTTTGTCTTCGATC
+
+                                                                [-2]
+                                                                6.7e-05
+                                                                AGTTCGTGC
+                                                                ++++++ ++
+451  AACGAGAATACTGGCATTGGGTTATCGCCATGCTGTTGCGCCAGTACGCTAAAGTCGATGGTTCGAGCATCAATA
+
+                                               [-2]
+                                               2.9e-05
+                                               AGTTCGTGC
+                                               +++++ +++
+526  CGCGGTGGTGTCCCGGTTTTCAGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAAAGCGGAATGGAC
+
+                                 [-1]
+                                 1.7e-05
+                                 AGTTATCCA
+                                 + +++++++
+601  GGCGGATCACCAGCACGGCCACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACG
+
+                                   [+2]
+                                   1.7e-05
+                                   GCACGAACT
+                                   +++++++++
+826  TAGAGCACACGATCTGCCTGAGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGG
+
+                                                                               [
+                                                                               5
+                                                                               T
+                                                                               +
+1051 CCCATACGCGCCGCGGCCATCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCC
+
+     +1]      [+3]
+     .6e-05   4.9e-06
+     GGATAACT ATGGTGATT
+     ++++++++ +++++++++
+1126 GGATAAAACATGGTGATTGCCTCGCATAACGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAA
+
+                                   [+1]
+                                   2.6e-05
+                                   TGGATAACT
+                                   +++++++++
+1276 GTGATCTCTTATTAGGATCGCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGA
+
+                          [+1]                               [-1]              [
+                          4.9e-06                            4.9e-06           9
+                          TGGATAACT                          AGTTATCCA         G
+                          +++++++++                          +++++++++         +
+1426 AACTGAACAATCGTTGTTCTTTGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCG
+
+     +2]
+     .2e-06
+     CACGAACT
+     ++++++++
+1501 CACGATCTGTATACTTATTTGAGTAAATTAATCCACGATCCCAGCCATTCTTCTGCCGGATCCTCCGGAATGTCG
+
+
+NC_009800.1
+  Escherichia coli HS, oric at 3952770 +- 1000
+  LENGTH = 2000  COMBINED P-VALUE = 1.00e-03  E-VALUE =     0.01
+  DIAGRAM: 30-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-586
+
+                                   [+2]
+                                   9.2e-06
+                                   GCACGAACT
+                                   +++++++++
+1    AGAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATAGAGCGGACGATTT
+
+                                             [+1]
+                                             3.6e-05
+                                             TGGATAACT
+                                             +++++++++
+76   GCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAGGTCAGTCCTTCCGGTT
+
+                  [+3]
+                  9.7e-06
+                  ATGGTGATT
+                  +++++++++
+151  CAAGGAAGATCTGATGCTGATTTCTGTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGC
+
+                                             [-2]
+                                             3.6e-05
+                                             AGTTCGTGC
+                                             ++++++ ++
+376  GGTTATCGCCATGCTGTTGCGCCAGCACACTAAAGTCGATAGTTCGAGCATCAATACGCGGTGGTGTCCCGGTTT
+
+                            [-2]
+                            2.9e-05
+                            AGTTCGTGC
+                            +++++ +++
+451  TCAGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGC
+
+              [-1]
+              1.7e-05
+              AGTTATCCA
+              + +++++++
+526  CACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAATGTCCCAACGGTGAGCACGACGGCTTTGG
+
+                [+2]
+                1.7e-05
+                GCACGAACT
+                +++++++++
+751  GAGCTCGGGTAGCGCGAACCGCCGGTCCTTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCTTGATCGATCG
+
+                                                            [+1]      [+3]
+                                                            5.6e-05   4.9e-06
+                                                            TGGATAACT ATGGTGATT
+                                                            +++++++++ +++++++++
+976  TCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTG
+
+                [+1]
+                2.6e-05
+                TGGATAACT
+                +++++++++
+1201 GCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATC
+
+       [+1]                               [-1]              [+2]
+       4.9e-06                            4.9e-06           9.2e-06
+       TGGATAACT                          AGTTATCCA         GCACGAACT
+       +++++++++                          +++++++++         +++++++++
+1351 CTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATT
+
+
+NC_011750.1
+  Escherichia coli IAI39 chromosome, oric at 4528110 +- 1000
+  LENGTH = 2000  COMBINED P-VALUE = 1.00e-03  E-VALUE =     0.01
+
+                                                  [+1]
+                                                  9.1e-05
+                                                  TGGATAACT
+                                                  +++ +++ +
+376  CCGCCGCCTGTTCGTCTGTCAACGCAGGGGCAAACGGCGTCAGCGTGGTTAATTTTTCATAAGTCATTTCCGGAC
+
+                              [-2]
+                              5.8e-05
+                              AGTTCGTGC
+                              +++ +++++
+751  CAACCAGTACGCCGAGATACGCCTGAGAACGCGCCGGAGCCCAACCTTCTTTGTCTGCAGACAGACGGGCAGCGT
+
+           [+2]
+           9.2e-06
+           GCACGAACT
+           +++++++++
+976  CCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATGGAGCGGACGATTTGCATCTGCACATCGAACGGCAGGC
+
+                     [+1]                                            [+3]
+                     3.6e-05                                         9.7e-06
+                     TGGATAACT                                       ATGGTGATT
+                     +++++++++                                       +++++++++
+1051 TGGTGGAGATACCGTTCGGATAAATTTCGTTAGAGGTCAGCCCTTCCGGTTCAAGGAAGATCTGATGCTGATTTC
+
+                     [-2]                                                      [
+                     6.7e-05                                                   2
+                     AGTTCGTGC                                                 A
+                     ++++++ ++                                                 +
+1351 GTACGCTAAAGTCGATGGTTCGAGCATCAATACGCGGTGGTGTCCCGGTTTTCAGACGACCAACGCGCAGCGGCA
+
+     -2]                                                         [-1]
+     .9e-05                                                      4.9e-06
+     GTTCGTGC                                                    AGTTATCCA
+     ++++ +++                                                    +++++++++
+1426 GTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGCCACCGCTGTAGTTATCCAGACCGA
+
+                                                                   [+2]
+                                                                   1.7e-05
+                                                                   GCACGAACT
+                                                                   +++++++++
+1651 GGTTCTCCAGCGCCGTACGTACCGCCTGACGGTAGAGCACACGATCTGCCTGAGCTCGGGTAGCGCGAACCGCCG
+
+                                    [+1]      [+3]
+                                    5.6e-05   4.9e-06
+                                    TGGATAACT ATGGTGATT
+                                    +++++++++ +++++++++
+1951 CCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATT
+
+
+NC_017634.1
+  Escherichia coli O83:H1 str. NRG 857C chromosome, oric at 3946680 +- 1000
+  LENGTH = 2000  COMBINED P-VALUE = 1.00e-03  E-VALUE =     0.01
+  DIAGRAM: 28-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-146-[-2]-7-[+1]-132-[+1]-26-[-1]-9-[+2]-588
+
+                                 [+2]
+                                 9.2e-06
+                                 GCACGAACT
+                                 +++++++++
+1    AAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATGGAGCGGACGATTTGC
+
+                                           [+1]
+                                           3.6e-05
+                                           TGGATAACT
+                                           +++++++++
+76   ATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTTGAGGTCAGCCCTTCCGGTTCA
+
+                [+3]
+                9.7e-06
+                ATGGTGATT
+                +++++++++
+151  AGGAAGATCTGATGCTGATTTCTGTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGCCG
+
+                                           [-2]
+                                           4.3e-05
+                                           AGTTCGTGC
+                                           +++ +++++
+376  TTATCGCCATGCTGTTGCGCCAGCACGCTGAAGTCGATAGTACGTGCATCAATACGCGGCGGTGTCCCGGTTTTC
+
+                          [-2]
+                          2.9e-05
+                          AGTTCGTGC
+                          +++++ +++
+451  AGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAGAGCGGAATGGACGGCGGATCACCAGCACGGCCA
+
+            [-1]
+            1.7e-05
+            AGTTATCCA
+            + +++++++
+526  CCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTTTGGCA
+
+              [+2]
+              1.7e-05
+              GCACGAACT
+              +++++++++
+751  GCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGCT
+
+                                                          [+1]      [+3]
+                                                          5.6e-05   4.9e-06
+                                                          TGGATAACT ATGGTGATT
+                                                          +++++++++ +++++++++
+976  GCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTGCC
+
+                                                                         [-2]
+                                                                         2.9e-05
+                                                                         AGTTCGT
+                                                                         +++++++
+1126 CTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGGATCGC
+
+              [+1]
+              2.6e-05
+     GC       TGGATAACT
+     ++       +++++++++
+1201 GCTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATCGG
+
+     [+1]                               [-1]              [+2]
+     4.9e-06                            4.9e-06           9.2e-06
+     TGGATAACT                          AGTTATCCA         GCACGAACT
+     +++++++++                          +++++++++         +++++++++
+1351 TGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATTTG
+
+
+NC_007946.1
+  Escherichia coli UTI89, oric at 4186460 +- 1000
+  LENGTH = 2000  COMBINED P-VALUE = 1.00e-03  E-VALUE =     0.01
+  DIAGRAM: 29-[+2]-76-[+1]-39-[+3]-243-[-2]-49-[-2]-52-[-1]-218-[+2]-260-[+1]-1-[+3]-162-[+1]-132-[+1]-26-[-1]-9-[+2]-587
+
+                                  [+2]
+                                  9.2e-06
+                                  GCACGAACT
+                                  +++++++++
+1    GAAGTCATACTCAATGGCATAACCCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATGGAGCGGACGATTTG
+
+                                            [+1]
+                                            3.6e-05
+                                            TGGATAACT
+                                            +++++++++
+76   CATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTTGAGGTCAGCCCTTCCGGTTC
+
+                 [+3]
+                 9.7e-06
+                 ATGGTGATT
+                 +++++++++
+151  AAGGAAGATCTGATGCTGATTTCTTTCGGCGAAGCGCATGACTTTGTCTTCGATCGACGGGCAGTAGCGTGGGCC
+
+                                            [-2]
+                                            4.3e-05
+                                            AGTTCGTGC
+                                            +++ +++++
+376  GTTATCGCCATGCTGTTGCGCCAGCACGCTGAAGTCGATAGTACGTGCATCAATACGCGGCGGTGTCCCGGTTTT
+
+                           [-2]
+                           2.9e-05
+                           AGTTCGTGC
+                           +++++ +++
+451  CAGACGACCAACGCGCAGCGGCAGTTCACGCAAACGGCGAGAGAGCGGAATGGACGGCGGATCACCAGCACGGCC
+
+             [-1]
+             1.7e-05
+             AGTTATCCA
+             + +++++++
+526  ACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTTTGGC
+
+               [+2]
+               1.7e-05
+               GCACGAACT
+               +++++++++
+751  AGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGC
+
+                                                           [+1]      [+3]
+                                                           5.6e-05   4.9e-06
+                                                           TGGATAACT ATGGTGATT
+                                                           +++++++++ +++++++++
+976  CGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTGC
+
+               [+1]
+               2.6e-05
+               TGGATAACT
+               +++++++++
+1201 CACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATCG
+
+      [+1]                               [-1]              [+2]
+      4.9e-06                            4.9e-06           9.2e-06
+      TGGATAACT                          AGTTATCCA         GCACGAACT
+      +++++++++                          +++++++++         +++++++++
+1351 TTGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATTT
+
+
+NC_000913.3
+  Escherichia coli str. K-12 substr. MG1655, oric at 3924640 +- 1000
+  LENGTH = 2000  COMBINED P-VALUE = 2.73e-03  E-VALUE =    0.027
+
+                                                  [+1]
+                                                  9.1e-05
+                                                  TGGATAACT
+                                                  +++ +++ +
+376  CCGCCGCCTGTTCGTCTGTCAACGCAGGGGCAAACGGCGTCAGCGTGGTTAATTTTTCATAAGTCATTTCCGGAC
+
+                              [-2]
+                              5.2e-05
+                              AGTTCGTGC
+                              +++ +++++
+751  CAACTAGTACGCCGAGATACGCCTGAGAACGTGCCGGAGCCCAACCTTCTTTGTCAGCAGACAGACGGGCAGCGT
+
+           [+2]
+           9.2e-06
+           GCACGAACT
+           +++++++++
+976  CCGGACGCACGATCTTCGCGTTTTCCATCCCCTGCATAGAGCGGACGATTTGCATCTGCACATCGAACGGCAGGC
+
+                     [+1]                                            [+3]
+                     3.6e-05                                         9.7e-06
+                     TGGATAACT                                       ATGGTGATT
+                     +++++++++                                       +++++++++
+1051 TGGTGGAGATACCGTTCGGATAAATTTCATTAGAGGTCAGTCCTTCCGGTTCAAGGAAGATCTGATGCTGATTTC
+
+                     [-2]                                                      [
+                     6.7e-05                                                   2
+                     AGTTCGTGC                                                 A
+                     ++++++ ++                                                 +
+1351 GTACGCTAAAGTCGATGGTTCGAGCATCAATACGCGGTGGTGTCCCGGTTTTCAGACGACCAACGCGCAGCGGCA
+
+     -2]                                                         [-1]
+     .9e-05                                                      1.7e-05
+     GTTCGTGC                                                    AGTTATCCA
+     ++++ +++                                                    + +++++++
+1426 GTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGCCACCGCTGTAATTATCCAGACCGA
+
+                                                                   [+2]
+                                                                   1.7e-05
+                                                                   GCACGAACT
+                                                                   +++++++++
+1651 GGTTCTCCAGCGCCGTACGTACCGCCTGACGGTAGAGCACACGATCCGCCTGAGCTCGGGTAGCGCGAACCGCCG
+
+                                    [+1]      [+3]
+                                    5.6e-05   4.9e-06
+                                    TGGATAACT ATGGTGATT
+                                    +++++++++ +++++++++
+1951 CCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATT
+
+
+NC_018658.1
+  Escherichia coli O104:H4 str. 2011C-3493 chromosome, oric at -410 +- 1000
+  LENGTH = 1999  COMBINED P-VALUE = 6.66e-03  E-VALUE =    0.067
+  DIAGRAM: 575-[+3]-554-[+3]-79-[+1]-105-[-2]-504-[+1]-137
+
+                                                       [+3]
+                                                       6.0e-05
+                                                       ATGGTGATT
+                                                       +++++ +++
+526  CGACTGTAAGACCGATACGGGGATGCCCCAGCGAATTCAGGCGGCCGAGAATGGTAATTTGCGGCGTGCCAGCCC
+
+                  [+3]
+                  1.5e-05
+                  ATGGTGATT
+                  +++++ +++
+1126 CCAATTTTTGTCTATGGTCATTAAATTTTCCAATATGCGGCGTAAATCGTGCCCGCCTCGCGGCAGGATCGTTTA
+
+                               [+1]
+                               1.1e-05
+                               TGGATAACT
+                               +++++++++
+1201 CACTTAGCGAGTTCTGGAAAGTCCTGTGGATAAATCGGGAAAATCTGTGAGAAACAGAAGATCTCTTGCGCAGTT
+
+                                                                      [-2]
+                                                                      1.5e-05
+                                                                      AGTTCGTGC
+                                                                      +++++++++
+1276 TAGGCTATGATCCGCGGTCCCGATCGTTTTGCAGGATCTTGATCGGGCATATAACCGCAGACAGCGGTTCGTGCG
+
+                                                          [+1]
+                                                          7.8e-05
+                                                          TGGATAACT
+                                                          + +++++++
+1801 CCCGGCCCCGGCAGAACCGACCTATCGTTCTAACGTAAACGTCAAACACACGTTTGATAACTTCGTTGAAGGTAA
+
+********************************************************************************
+
+
+CPU: PC0028
+Time 0.016 secs.
+
+mast -oc . -nostatus meme.xml /mnt/c/drive/uni/seq_inf/seqinf_project/data/ecoli/skew_regions.fasta

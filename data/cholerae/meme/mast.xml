@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<mast version="5.1.0" release="Fri Oct 11 15:53:28 2019 -0700">
+	<command_line><arg>mast</arg><arg>-oc</arg><arg>.</arg><arg>-nostatus</arg><arg>meme.xml</arg><arg>/mnt/c/drive/uni/seq_inf/seqinf_project/data/cholerae/skew_regions.fasta</arg></command_line>
+	<settings strand_handling="combine" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
+	<alphabet name="DNA" like="dna">
+		<letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+		<letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+		<letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+		<letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+		<letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+		<letter id="V" symbol="V" equals="ACG" name="Not T"/>
+		<letter id="H" symbol="H" equals="ACT" name="Not G"/>
+		<letter id="D" symbol="D" equals="AGT" name="Not C"/>
+		<letter id="B" symbol="B" equals="CGT" name="Not A"/>
+		<letter id="M" symbol="M" equals="AC" name="Amino"/>
+		<letter id="R" symbol="R" equals="AG" name="Purine"/>
+		<letter id="W" symbol="W" equals="AT" name="Weak"/>
+		<letter id="S" symbol="S" equals="CG" name="Strong"/>
+		<letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+		<letter id="K" symbol="K" equals="GT" name="Keto"/>
+	</alphabet>
+	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
+	<motif_dbs>
+		<motif_db source="meme.xml" last_mod_date="Fri Jan  3 19:43:59 2020">
+			<background A="0.265" C="0.235" G="0.235" T="0.265"/>
+		</motif_db>
+	</motif_dbs>
+	<motifs>
+		<motif db="0" id="GAWGTGATC" alt="MEME-1" length="9" nsites="28" evalue="4.5e-007">
+			<pos A="-1145" C="-1145" G="209" T="-1145"/>
+			<pos A="192" C="-1145" G="-1145" T="-1145"/>
+			<pos A="57" C="-1145" G="-1145" T="120"/>
+			<pos A="-1145" C="-72" G="187" T="-1145"/>
+			<pos A="-1145" C="-1145" G="-13" T="157"/>
+			<pos A="-1145" C="-1145" G="209" T="-1145"/>
+			<pos A="192" C="-1145" G="-1145" T="-1145"/>
+			<pos A="-57" C="-1145" G="-272" T="157"/>
+			<pos A="-1145" C="209" G="-1145" T="-1145"/>
+		</motif>
+		<motif db="0" id="TGTCCTGYA" alt="MEME-2" length="9" nsites="13" evalue="1.8e+001">
+			<pos A="-1035" C="-1035" G="-1035" T="192"/>
+			<pos A="-1035" C="-1035" G="209" T="-1035"/>
+			<pos A="-1035" C="-1035" G="-1035" T="192"/>
+			<pos A="-1035" C="209" G="-1035" T="-1035"/>
+			<pos A="-1035" C="197" G="-1035" T="-178"/>
+			<pos A="-1035" C="-1035" G="-1035" T="192"/>
+			<pos A="-1035" C="-1035" G="209" T="-1035"/>
+			<pos A="-1035" C="97" G="-1035" T="102"/>
+			<pos A="192" C="-1035" G="-1035" T="-1035"/>
+		</motif>
+		<motif db="0" id="TGACTCAGA" alt="MEME-3" length="9" nsites="2" evalue="2.0e+007">
+			<pos A="-765" C="-765" G="-765" T="191"/>
+			<pos A="-765" C="-765" G="208" T="-765"/>
+			<pos A="191" C="-765" G="-765" T="-765"/>
+			<pos A="-765" C="208" G="-765" T="-765"/>
+			<pos A="-765" C="-765" G="-765" T="191"/>
+			<pos A="-765" C="208" G="-765" T="-765"/>
+			<pos A="191" C="-765" G="-765" T="-765"/>
+			<pos A="-765" C="-765" G="208" T="-765"/>
+			<pos A="191" C="-765" G="-765" T="-765"/>
+		</motif>
+	</motifs>
+	<correlations>
+		<correlation idx_a="0" idx_b="1" value="0.17"/>
+		<correlation idx_a="0" idx_b="2" value="0.22"/>
+		<correlation idx_a="1" idx_b="2" value="0.31"/>
+	</correlations>
+	<sequence_dbs>
+		<sequence_db source="/mnt/c/drive/uni/seq_inf/seqinf_project/data/cholerae/skew_regions.fasta" last_mod_date="Fri Jan  3 19:43:29 2020" seq_count="10" residue_count="19998"/>
+	</sequence_dbs>
+	<sequences>
+		<sequence db="0" name="NC_012578.1" comment="Vibrio cholerae M66-2 chromosome I, oric at -260 +- 1000" length="1999">
+			<score strand="both" combined_pvalue="5.90e-04" evalue="0.0059"/>
+			<seg start="1">
+				<data>
+ATCAAGCCTTGCGCAGCGGCTTCTTCGTAACCTGTAGTACCGTTGATTTGTCCTGCAAAGAACAAACCATGGATA
+				</data>
+				<hit pos="49" idx="1" rc="n" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+CGCATCACTTTATCTTCGATCGATGGACAGTAACGCGGGCCGATCCCTTCGATGATCCCGGCATACATAGGGCTG
+				</data>
+				<hit pos="342" idx="0" rc="y" pvalue="1.9e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+CGATCAAGGTTAGCGCGGATCACATCATGGGTGCGCTCATTGGTGTGCGTGATGTAACACGGAATTTGGCGTGGA
+				</data>
+				<hit pos="393" idx="0" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+CCGCCAAGGAAAGTCCCGACGGTTAACACTACCGCTTTGGCATGAAATTTCAGGCCCATCTGAGTCACAACACCA
+				</data>
+				<hit pos="734" idx="2" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+CGAATATGATCATGCTCGACGATCACATCATCTACCGCTTGTTGGAACAGGGTGAGATTCGGGGTGTTTTCTAAC
+				</data>
+				<hit pos="771" idx="0" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TTGACTAAATGACCTTTACCGATCCCACCAATGGCAGGGTTACAGGACATTTGGCCTAGGGTGTCAATATTGTGG
+				</data>
+				<hit pos="1016" idx="1" rc="y" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+GTAAGAAGTAACGTACGCTGTCCTGTACGTGCTGCAGCGAGAGCGGCTTCCGTTCCTGCGTGACCGCCACCAACC
+				</data>
+				<hit pos="1069" idx="1" rc="n" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GATCAACAAGATCATGCGATTCAGAAGGATCAGATCGTGTGATCAACCACTGATCTGTTCAAGGATTAGCTGGGA
+				</data>
+				<hit pos="1378" idx="0" rc="y" pvalue="2.3e-05" match="+++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_016445.1" comment="Vibrio cholerae O1 str. 2010EL-1786 chromosome 1, oric at 2555250 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="5.91e-04" evalue="0.0059"/>
+			<seg start="76">
+				<data>
+ACATTTGACGTCATTGTGGTTGGTGGCGGTCACGCAGGAACGGAAGCCGCTCTCGCTGCAGCACGTACAGGACAG
+				</data>
+				<hit pos="141" idx="1" rc="y" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CGTACGTTACTTCTTACCCACAATATTGACACCCTAGGCCAAATGTCCTGTAACCCTGCCATTGGTGGGATCGGT
+				</data>
+				<hit pos="194" idx="1" rc="n" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+GCCTATGTGCGTAATGTGTTAGAAAACACCCCGAATCTCACCCTGTTCCAACAAGCGGTAGATGATGTGATCGTC
+				</data>
+				<hit pos="439" idx="0" rc="n" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+GAGCATGATCATATTCGTGGTGTTGTGACTCAGATGGGCCTGAAATTTCATGCCAAAGCGGTAGTGTTAACCGTC
+				</data>
+				<hit pos="476" idx="2" rc="n" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+GGCAAGCGTGAGCACCATCCACGCCAAATTCCGTGTTACATCACGCACACCAATGAGCGCACCCATGATGTGATC
+				</data>
+				<hit pos="817" idx="0" rc="n" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+CGCGCTAACCTTGATCGCAGCCCTATGTATGCCGGGATCATCGAAGGGATCGGCCCGCGTTACTGTCCATCGATC
+				</data>
+				<hit pos="868" idx="0" rc="n" pvalue="1.9e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+ACGTATGAAACCAAATATATCCATGGTTTGTTCTTTGCAGGACAAATCAACGGTACTACAGGTTACGAAGAAGCC
+				</data>
+				<hit pos="1161" idx="1" rc="y" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+GATCAGGCGTACATGGGCGTGTTGATCGACGATCTTTCGACCATGGGCACTAAAGAACCTTACCGTATGTTCACT
+TCGCGTGCGGAATATCGTCTGCTGCTGCGTGAAGACAACGCTGATCTGCGTTTGACCGAAAAAGCGCGTGAGCTT
+				</data>
+				<hit pos="1344" idx="0" rc="y" pvalue="2.7e-05" match="+ +++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_009457.1" comment="Vibrio cholerae O395 chromosome 2, oric at 2669570 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="5.91e-04" evalue="0.0059"/>
+			<seg start="601">
+				<data>
+TCCTTGAACAGATCAGTGGTTGATCACACGATCTGATCCTTCTGAATCGCATGATCTTGTTGATCATTTTTCACT
+				</data>
+				<hit pos="630" idx="0" rc="n" pvalue="2.3e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+CGGTCACGCAGGAACGGAAGCCGCTCTCGCTGCAGCACGTACAGGACAGCGTACGTTACTTCTTACCCACAATAT
+				</data>
+				<hit pos="940" idx="1" rc="y" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TGACACCCTAGGCCAAATGTCCTGTAACCCTGCCATTGGTGGGATCGGTAAAGGTCATTTAGTCAAAGAAGTGGA
+				</data>
+				<hit pos="993" idx="1" rc="n" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+CACCCCGAATCTCACCCTGTTCCAACAAGCGGTAGATGATGTGATCGTCGAGCATGATCATATTCGTGGTGTTGT
+GACTCAGATGGGCCTGAAATTTCATGCCAAAGCGGTAGTGTTAACCGTCGGGACTTTCCTTGGCGGTAAGATCCA
+				</data>
+				<hit pos="1238" idx="0" rc="n" pvalue="4.0e-06" match="+++++++++"/>
+				<hit pos="1275" idx="2" rc="n" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+AATTCCGTGTTACATCACGCACACCAATGAGCGCACCCATGATGTGATCCGCGCTAACCTTGATCGCAGCCCTAT
+				</data>
+				<hit pos="1616" idx="0" rc="n" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+GTATGCCGGGATCATCGAAGGGATCGGCCCGCGTTACTGTCCATCGATCGAAGATAAAGTGATGCGTTTTGCCGA
+				</data>
+				<hit pos="1667" idx="0" rc="n" pvalue="1.9e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1951">
+				<data>
+TTTGTTCTTTGCAGGACAAATCAACGGTACTACAGGTTACGAAGAAGCCG
+				</data>
+				<hit pos="1960" idx="1" rc="y" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NZ_CP010811.1" comment="Vibrio cholerae strain 1154-74, oric at 3919750 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="5.91e-04" evalue="0.0059"/>
+			<seg start="826">
+				<data>
+CAGACGATATTCCGCGCGCGAAGTGAACATACGGTAAGGCTCTTTAGTGCCCATGGTCGAAAGATCGTCGATCAA
+				</data>
+				<hit pos="845" idx="0" rc="n" pvalue="2.7e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="976">
+				<data>
+CGCCATCAAGCCTTGCGCAGCGGCTTCTTCGTAACCAGTAGTGCCGTTGATTTGTCCTGCAAAGAACAAACCATG
+				</data>
+				<hit pos="1028" idx="1" rc="n" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+AAAACGCATCACTTTATCTTCGATCGATGGACAGTAACGCGGGCCGATCCCTTCGATGATCCCGGCATACATAGG
+				</data>
+				<hit pos="1321" idx="0" rc="y" pvalue="1.9e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GCTGCGATCAAGGTTAGCTCGGATCACATCATGGGTGCGCTCATTGGTGTGCGTTATGTAACACGGAATTTGGCG
+				</data>
+				<hit pos="1372" idx="0" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+CTTACCGCCAAGGAAAGTCCCGACGGTTAACACTACCGCTTTGGCATGAAATTTCAGGCCCATCTGAGTCACAAC
+				</data>
+				<hit pos="1713" idx="2" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+ACCACGAATATGATCATGCTCGACGATCACATCATCTACCGCTTGTTGGAACAGGGTGAGATTCGGGGTGTTTTC
+				</data>
+				<hit pos="1750" idx="0" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NZ_CP010812.1" comment="Vibrio cholerae strain 10432-62, oric at 4042220 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="7.73e-03" evalue="0.077"/>
+			<seg start="826">
+				<data>
+CAGACGATATTCCGCGCGCGAAGTGAACATACGGTAAGGCTCTTTAGTGCCCATGGTCGAAAGATCGTCGATCAA
+				</data>
+				<hit pos="845" idx="0" rc="n" pvalue="2.7e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="976">
+				<data>
+CGCCATCAAGCCTTGCGCAGCGGCTTCTTCGTAACCAGTAGTGCCGTTGATTTGTCCTGCAAAGAACAAACCATG
+				</data>
+				<hit pos="1028" idx="1" rc="n" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+AAAACGCATCACTTTATCTTCGATCGATGGACAGTAACGCGGGCCGATCCCTTCGATGATCCCGGCATACATAGG
+				</data>
+				<hit pos="1321" idx="0" rc="y" pvalue="1.9e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GCTGCGATCAAGGTTAGCGCGGATCACATCATGGGTGCGCTCATTGGTGTGCGTGATGTAACACGGAATTTGGCG
+				</data>
+				<hit pos="1372" idx="0" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+ACCACGAATATGATCATGCTCGACGATCACATCATCTACCGCTTGTTGGAACAGGGTGAGATTCGGGGTGTTTTC
+				</data>
+				<hit pos="1750" idx="0" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_012668.1" comment="Vibrio cholerae MJ-1236 chromosome 1, oric at 508620 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="1.71e-02" evalue="0.17"/>
+			<seg start="1276">
+				<data>
+AGCGTTGTCTTCACGCAGCAGCAGACGATATTCCGCACGCGAAGTGAACATACGGTAAGGTTCTTTAGTGCCCAT
+				</data>
+				<hit pos="1316" idx="0" rc="n" pvalue="2.7e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="1426">
+				<data>
+GTACAAGCTGGCGTTCAGACCCGCCATCAAGCCTTGCGCAGCGGCTTCTTCGTAACCTGTAGTACCGTTGATTTG
+TCCTGCAAAGAACAAACCATGGATATATTTGGTTTCATACGTTTGCTTCAAATCACGTGGATCGAAGAAGTCGTA
+				</data>
+				<hit pos="1499" idx="1" rc="n" pvalue="7.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+TTGGTGACTGTCTTTATCGGCAAAACGCATCACTTTATCTTCGATCGATGGACAGTAACGCGGGCCGATCCCTTC
+				</data>
+				<hit pos="1792" idx="0" rc="y" pvalue="1.9e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+GATGATCCCGGCATACATAGGGCTGCGATCAAGGTTAGCGCGGATCACATCATGGGTGCGCTCATTGGTGTGCGT
+				</data>
+				<hit pos="1843" idx="0" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_012667.1" comment="Vibrio cholerae MJ-1236 chromosome 2, oric at 269990 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="6.24e-02" evalue="0.62"/>
+			<seg start="1201">
+				<data>
+TCGGGATAGAAAGCACTGAGTCAGGATTTTGCCAAATCGTAGGCAAAAAAAGAGCGAGCTATTTAAACTCGCTTA
+				</data>
+				<hit pos="1215" idx="2" rc="y" pvalue="5.7e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+AAGCAGCTTGCTCAATGTCGGGTATTGGATCACATCGTTTTCAACACGCAGCCAATCTAGCTTGTCTATGAGCTC
+				</data>
+				<hit pos="1603" idx="0" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_016446.1" comment="Vibrio cholerae O1 str. 2010EL-1786 chromosome 2, oric at 771830 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="9.62e-02" evalue="0.96"/>
+			<seg start="301">
+				<data>
+CTCTTTGCCCGCCAAGATACAAGACATGCGACGACGGCTACCATCAAGCACTTCGATTTTGCCATCTGCGGTTTT
+				</data>
+				<hit pos="318" idx="1" rc="y" pvalue="1.6e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+TTCTGCAGGCGTCGTTGCACGGCGCTTATCCGCCTTTCCAAACAGCTTTGCGTTCAGTTCAGAAGTTTTAATTGC
+				</data>
+				<hit pos="652" idx="0" rc="y" pvalue="5.8e-05" match="+ +++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_012580.1" comment="Vibrio cholerae M66-2 chromosome II, oric at 1930 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="1.85e-01" evalue="1.8"/>
+			<seg start="1426">
+				<data>
+ACATCGAATGGCGACGGTTTTCTATGGATCTGATCCGCGAACTTCGTCGTCTCTCCGAAGGGAAGGGGAGTGAAG
+				</data>
+				<hit pos="1452" idx="0" rc="n" pvalue="2.3e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1951">
+				<data>
+AGCTCATAGACAAGCTAGATTGGCTGCGTGTTGAAAACGATGTGATCCAA
+				</data>
+				<hit pos="1989" idx="0" rc="n" pvalue="4.0e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_009456.1" comment="Vibrio cholerae O395 chromosome 1, oric at 1108350 +- 1000" length="1999">
+			<score strand="both" combined_pvalue="2.89e-01" evalue="2.9"/>
+			<seg start="451">
+				<data>
+GACTACCAATACAAAACTCGTGAAAGCAATCGCGACTAAGTCGATCAAACCTGTCTCAGATGGCAAAGGATTGCC
+				</data>
+				<hit pos="502" idx="2" rc="n" pvalue="5.7e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+CGCCATTTCTTTACTGCGGTGATGCTCACATCTGTACTGTGAGTTCCGATAGTAGAGGTTTATACCATCGCAAAA
+				</data>
+				<hit pos="849" idx="0" rc="y" pvalue="4.4e-05" match="+ +++++++"/>
+			</seg>
+		</sequence>
+	</sequences>
+	<runtime host="PC0028" when="Fri Jan  3 19:44:00 2020" cycles="31250" seconds="0.031"/>
+</mast>

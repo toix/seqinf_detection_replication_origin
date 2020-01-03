@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<mast version="5.1.0" release="Fri Oct 11 15:53:28 2019 -0700">
+	<command_line><arg>mast</arg><arg>-oc</arg><arg>.</arg><arg>-nostatus</arg><arg>meme.xml</arg><arg>/mnt/c/drive/uni/seq_inf/seqinf_project/data/thermotoga/skew_regions.fasta</arg></command_line>
+	<settings strand_handling="combine" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
+	<alphabet name="DNA" like="dna">
+		<letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+		<letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+		<letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+		<letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+		<letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+		<letter id="V" symbol="V" equals="ACG" name="Not T"/>
+		<letter id="H" symbol="H" equals="ACT" name="Not G"/>
+		<letter id="D" symbol="D" equals="AGT" name="Not C"/>
+		<letter id="B" symbol="B" equals="CGT" name="Not A"/>
+		<letter id="M" symbol="M" equals="AC" name="Amino"/>
+		<letter id="R" symbol="R" equals="AG" name="Purine"/>
+		<letter id="W" symbol="W" equals="AT" name="Weak"/>
+		<letter id="S" symbol="S" equals="CG" name="Strong"/>
+		<letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+		<letter id="K" symbol="K" equals="GT" name="Keto"/>
+	</alphabet>
+	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
+	<motif_dbs>
+		<motif_db source="meme.xml" last_mod_date="Fri Jan  3 19:43:13 2020">
+			<background A="0.29" C="0.21" G="0.21" T="0.29"/>
+		</motif_db>
+	</motif_dbs>
+	<motifs>
+		<motif db="0" id="GCRGRTWCR" alt="MEME-1" length="9" nsites="41" evalue="1.0e+002">
+			<pos A="-1200" C="-1200" G="214" T="-198"/>
+			<pos A="-1200" C="189" G="-1200" T="-40"/>
+			<pos A="68" C="-111" G="106" T="-1200"/>
+			<pos A="-1200" C="-1200" G="225" T="-1200"/>
+			<pos A="82" C="-1200" G="121" T="-1200"/>
+			<pos A="-1200" C="-211" G="-1200" T="171"/>
+			<pos A="113" C="-1200" G="-1200" T="34"/>
+			<pos A="-1200" C="225" G="-1200" T="-1200"/>
+			<pos A="113" C="-1200" G="80" T="-1200"/>
+		</motif>
+		<motif db="0" id="MGTTATAGA" alt="MEME-2" length="9" nsites="49" evalue="5.1e+001">
+			<pos A="113" C="80" G="-1226" T="-1226"/>
+			<pos A="-1226" C="-236" G="192" T="-83"/>
+			<pos A="-1226" C="-1226" G="22" T="138"/>
+			<pos A="-1226" C="-104" G="-104" T="146"/>
+			<pos A="142" C="-1226" G="9" T="-1226"/>
+			<pos A="-1226" C="9" G="-1226" T="142"/>
+			<pos A="179" C="-1226" G="-1226" T="-1226"/>
+			<pos A="-1226" C="-1226" G="225" T="-1226"/>
+			<pos A="179" C="-1226" G="-1226" T="-1226"/>
+		</motif>
+		<motif db="0" id="CAGTTTGGG" alt="MEME-3" length="9" nsites="2" evalue="7.2e+006">
+			<pos A="-765" C="224" G="-765" T="-765"/>
+			<pos A="178" C="-765" G="-765" T="-765"/>
+			<pos A="-765" C="-765" G="224" T="-765"/>
+			<pos A="-765" C="-765" G="-765" T="178"/>
+			<pos A="-765" C="-765" G="-765" T="178"/>
+			<pos A="-765" C="-765" G="-765" T="178"/>
+			<pos A="-765" C="-765" G="224" T="-765"/>
+			<pos A="-765" C="-765" G="224" T="-765"/>
+			<pos A="-765" C="-765" G="224" T="-765"/>
+		</motif>
+	</motifs>
+	<correlations>
+		<correlation idx_a="0" idx_b="1" value="0.34"/>
+		<correlation idx_a="0" idx_b="2" value="0.33"/>
+		<correlation idx_a="1" idx_b="2" value="0.24"/>
+	</correlations>
+	<sequence_dbs>
+		<sequence_db source="/mnt/c/drive/uni/seq_inf/seqinf_project/data/thermotoga/skew_regions.fasta" last_mod_date="Fri Jan  3 19:42:46 2020" seq_count="10" residue_count="20000"/>
+	</sequence_dbs>
+	<sequences>
+		<sequence db="0" name="NC_000853.1" comment="Thermotoga maritima MSB8 chromosome, oric at 156990 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="2.24e-03" evalue="0.022"/>
+			<seg start="226">
+				<data>
+TTTCACTCTATCACTCCGATATCTCAAGCACCTGTTTTCCTTTGTAGTAACCGCAGTGTAGACAGACCCTGTGTG
+				</data>
+				<hit pos="232" idx="1" rc="y" pvalue="5.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="301">
+				<data>
+GCATCTTGTATTCTCCACAGTTTGGGCACTTCTCAAGAGGCACGCTTATTGCTCTGTAGATCTTCGCTCTCTTGT
+				</data>
+				<hit pos="318" idx="2" rc="n" pvalue="3.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+TTAACTCGGCAAGGATTTCGAATCTGCTGTCAACCACAGGAATTTTATCACATTTATGATCGGGCTCTTCATTCA
+				</data>
+				<hit pos="469" idx="0" rc="y" pvalue="4.8e-05" match="+++++++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+TCTCTTCTTTTACATTTTTTCTCATGCTTTCTGGTAGATAGAGAGCTTCTATGACTCCTCTTATCTCAACACGAG
+CGGGTTCAAGACATCTGGCACAGGGGTGTTCTACCGCCGTGTGAACGTATCCACCAACGGTGAAACCATCTTTTG
+				</data>
+				<hit pos="723" idx="1" rc="y" pvalue="5.9e-05" match="+++++ +++"/>
+				<hit pos="750" idx="0" rc="n" pvalue="2.0e-05" match="+++++++++"/>
+				<hit pos="796" idx="0" rc="y" pvalue="8.6e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="826">
+				<data>
+TCTTTGCAACGACCATTTTCACCTGAACAGGTTCCAGGAATCTGCAAAAGCCAACATCGAGTTCTATACCGTCCT
+				</data>
+				<hit pos="888" idx="1" rc="y" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CGAGTATTGAAATTTTTGAACAGGCTTCTGATGAGGCTTTTAATGATGTCTGCAACTTACCACCCGGGTGGTAGG
+				</data>
+				<hit pos="1099" idx="1" rc="y" pvalue="5.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+TAAGTGGTAGGTAAGTGGTAGGTTTCTCTGAAATCGGCTTGGATACTGGATTTTAGGTGGTAGGTTTTCTGTAAC
+GCTCATTAAAAGGACGTTGTAGAATCTTGAATCTGAACGGTAATATTGTTTGTAAAGACTAAAATAGTCTATTGA
+				</data>
+				<hit pos="1193" idx="1" rc="y" pvalue="3.7e-05" match="+++++++++"/>
+				<hit pos="1215" idx="1" rc="n" pvalue="3.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+AAAATGTACACAAAACCTACCACTAAACCTACCATTTTAGTTTCAGTTAATAAGATTTTCTCTATAAATCACACA
+				</data>
+				<hit pos="1486" idx="1" rc="y" pvalue="7.3e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="1501">
+				<data>
+AATTCAACAAAAAGGAGGTATAGAGTTATGAGCTTGAGAGAGGAACTATGGCTATGGAAAAAAGAGAAACTCGCA
+				</data>
+				<hit pos="1516" idx="1" rc="n" pvalue="1.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+AGAGTGAAAGAGCTTATCCCGGAGGGTGCAACGGTATCGGCTGGTGGTTCCCTCACCCTGGCAGATACAGGTGTG
+				</data>
+				<hit pos="1711" idx="0" rc="n" pvalue="2.4e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+ATTGAACTTTTGCGCAGCGGCAGGTACAACTTCCTTGACAGGGCAGCTGCCAAAACGAGGGAGGAAGTGGAGGAG
+				</data>
+				<hit pos="1745" idx="0" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NZ_CP011108.1" comment="Thermotoga maritima strain Tma100, oric at 156990 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="2.24e-03" evalue="0.022"/>
+			<seg start="226">
+				<data>
+TTTCACTCTATCACTCCGATATCTCAAGCACCTGTTTTCCTTTGTAGTAACCGCAGTGTAGACAGACCCTGTGTG
+				</data>
+				<hit pos="232" idx="1" rc="y" pvalue="5.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="301">
+				<data>
+GCATCTTGTATTCTCCACAGTTTGGGCACTTCTCAAGAGGCACGCTTATTGCTCTGTAGATCTTCGCTCTCTTGT
+				</data>
+				<hit pos="318" idx="2" rc="n" pvalue="3.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+TTAACTCGGCAAGGATTTCGAATCTGCTGTCAACCACAGGAATTTTATCACATTTATGATCGGGCTCTTCATTCA
+				</data>
+				<hit pos="469" idx="0" rc="y" pvalue="4.8e-05" match="+++++++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+TCTCTTCTTTTACATTTTTTCTCATGCTTTCTGGTAGATAGAGAGCTTCTATGACTCCTCTTATCTCAACACGAG
+CGGGTTCAAGACATCTGGCACAGGGGTGTTCTACCGCCGTGTGAACGTATCCACCAACGGTGAAACCATCTTTTG
+				</data>
+				<hit pos="723" idx="1" rc="y" pvalue="5.9e-05" match="+++++ +++"/>
+				<hit pos="750" idx="0" rc="n" pvalue="2.0e-05" match="+++++++++"/>
+				<hit pos="796" idx="0" rc="y" pvalue="8.6e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="826">
+				<data>
+TCTTTGCAACGACCATTTTCACCTGAACAGGTTCCAGGAATCTGCAAAAGCCAACATCGAGTTCTATACCGTCCT
+				</data>
+				<hit pos="888" idx="1" rc="y" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CGAGTATTGAAATTTTTGAACAGGCTTCTGATGAGGCTTTTAATGATGTCTGCAACTTACCACCCGGGTGGTAGG
+				</data>
+				<hit pos="1099" idx="1" rc="y" pvalue="5.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+TAAGTGGTAGGTAAGTGGTAGGTTTCTCTGAAATCGGCTTGGATACTGGATTTTAGGTGGTAGGTTTTCTGTAAC
+GCTCATTAAAAGGACGTTGTAGAATCTTGAATCTGAACGGTAATATTGTTTGTAAAGACTAAAATAGTCTATTGA
+				</data>
+				<hit pos="1193" idx="1" rc="y" pvalue="3.7e-05" match="+++++++++"/>
+				<hit pos="1215" idx="1" rc="n" pvalue="3.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+AAAATGTACACAAAACCTACCACTAAACCTACCATTTTAGTTTCAGTTAATAAGATTTTCTCTATAAATCACACA
+				</data>
+				<hit pos="1486" idx="1" rc="y" pvalue="7.3e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="1501">
+				<data>
+AATTCAACAAAAAGGAGGTATAGAGTTATGAGCTTGAGAGAGGAACTATGGCTATGGAAAAAAGAGAAACTCGCA
+				</data>
+				<hit pos="1516" idx="1" rc="n" pvalue="1.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+AGAGTGAAAGAGCTTATCCCGGAGGGTGCAACGGTATCGGCTGGTGGTTCCCTCACCCTGGCAGATACAGGTGTG
+				</data>
+				<hit pos="1711" idx="0" rc="n" pvalue="2.4e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+ATTGAACTTTTGCGCAGCGGCAGGTACAACTTCCTTGACAGGGCAGCTGCCAAAACGAGGGAGGAAGTGGAGGAG
+				</data>
+				<hit pos="1745" idx="0" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NZ_CP010967.1" comment="Thermotoga maritima strain Tma200, oric at 156990 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="2.24e-03" evalue="0.022"/>
+			<seg start="226">
+				<data>
+TTTCACTCTATCACTCCGATATCTCAAGCACCTGTTTTCCTTTGTAGTAACCGCAGTGTAGACAGACCCTGTGTG
+				</data>
+				<hit pos="232" idx="1" rc="y" pvalue="5.9e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="301">
+				<data>
+GCATCTTGTATTCTCCACAGTTTGGGCACTTCTCAAGAGGCACGCTTATTGCTCTGTAGATCTTCGCTCTCTTGT
+				</data>
+				<hit pos="318" idx="2" rc="n" pvalue="3.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+TTAACTCGGCAAGGATTTCGAATCTGCTGTCAACCACAGGAATTTTATCACATTTATGATCGGGCTCTTCATTCA
+				</data>
+				<hit pos="469" idx="0" rc="y" pvalue="4.8e-05" match="+++++++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+TCTCTTCTTTTACATTTTTTCTCATGCTTTCTGGTAGATAGAGAGCTTCTATGACTCCTCTTATCTCAACACGAG
+CGGGTTCAAGACATCTGGCACAGGGGTGTTCTACCGCCGTGTGAACGTATCCACCAACGGTGAAACCATCTTTTG
+				</data>
+				<hit pos="723" idx="1" rc="y" pvalue="5.9e-05" match="+++++ +++"/>
+				<hit pos="750" idx="0" rc="n" pvalue="2.0e-05" match="+++++++++"/>
+				<hit pos="796" idx="0" rc="y" pvalue="8.6e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="826">
+				<data>
+TCTTTGCAACGACCATTTTCACCTGAACAGGTTCCAGGAATCTGCAAAAGCCAACATCGAGTTCTATACCGTCCT
+				</data>
+				<hit pos="888" idx="1" rc="y" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CGAGTATTGAAATTTTTGAACAGGCTTCTGATGAGGCTTTTAATGATGTCTGCAACTTACCACCCGGGTGGTAGG
+				</data>
+				<hit pos="1099" idx="1" rc="y" pvalue="5.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+TAAGTGGTAGGTAAGTGGTAGGTTTCTCTGAAATCGGCTTGGATACTGGATTTTAGGTGGTAGGTTTTCTGTAAC
+GCTCATTAAAAGGACGTTGTAGAATCTTGAATCTGAACGGTAATATTGTTTGTAAAGACTAAAATAGTCTATTGA
+				</data>
+				<hit pos="1193" idx="1" rc="y" pvalue="3.7e-05" match="+++++++++"/>
+				<hit pos="1215" idx="1" rc="n" pvalue="3.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+AAAATGTACACAAAACCTACCACTAAACCTACCATTTTAGTTTCAGTTAATAAGATTTTCTCTATAAATCACACA
+				</data>
+				<hit pos="1486" idx="1" rc="y" pvalue="7.3e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="1501">
+				<data>
+AATTCAACAAAAAGGAGGTATAGAGTTATGAGCTTGAGAGAGGAACTATGGCTATGGAAAAAAGAGAAACTCGCA
+				</data>
+				<hit pos="1516" idx="1" rc="n" pvalue="1.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+AGAGTGAAAGAGCTTATCCCGGAGGGTGCAACGGTATCGGCTGGTGGTTCCCTCACCCTGGCAGATACAGGTGTG
+				</data>
+				<hit pos="1711" idx="0" rc="n" pvalue="2.4e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+ATTGAACTTTTGCGCAGCGGCAGGTACAACTTCCTTGACAGGGCAGCTGCCAAAACGAGGGAGGAAGTGGAGGAG
+				</data>
+				<hit pos="1745" idx="0" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NZ_CP003408.1" comment="Thermotoga sp. 2812B, oric at 826970 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="2.24e-03" evalue="0.022"/>
+			<seg start="226">
+				<data>
+TTCCTCCCTCGTTTTGGCAGCTGCCCTGTCGAGGAAGTTGTACCTGCCACTGCGCAAAAGTTCGATCACACCTGT
+ATCTGCCAGGGTGAGGGAACCACCAGCCGATACCGTTGCACCCTCCGGGATAAGCTCTTTCACTCTCTCAAGAAT
+				</data>
+				<hit pos="264" idx="0" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+				<hit pos="298" idx="0" rc="y" pvalue="2.4e-05" match="+++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+CTCTTTTTTCCATAGCCATAGTTCCTCTCTCAAGCTCATAACTCTATACCTCCTTTTTGTTGAATTTGTGTGATT
+TATAGAGAAAATCTTATTAACTGAAACTAAAATGGTAGGTTTAGTGGTAGGTTTTGTGTACATTTTGTAGTATCT
+				</data>
+				<hit pos="493" idx="1" rc="y" pvalue="1.6e-05" match="+++++++++"/>
+				<hit pos="523" idx="1" rc="n" pvalue="7.3e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+TATTTTAGTCTTTACAAACAATATTACCGTTCAGATTCAAGATTCTACAACGTCCTTTTAATGAGCGTTACAGAA
+				</data>
+				<hit pos="794" idx="1" rc="y" pvalue="3.7e-05" match="+++++++++"/>
+				<hit pos="816" idx="1" rc="n" pvalue="3.7e-05" match="+++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+CGGGTGGTAAGTTGCAGACATCATTAAAAGCCTCATCAGAAGCCTGTTCAAAAATTTCAATACTCGAAACCTACC
+				</data>
+				<hit pos="910" idx="1" rc="n" pvalue="5.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+ACTGGAAAGTAGAACTCTCGGAAATAGAAAAAAAGAAGCGATTCTTTCTGGAAGGCATCTTTGATAAGGACGGTA
+TAGAACTCGATGTTGGCTTTTGCAGATTCCTGGAACCTGTTCAGGTGAAAATGGTCGTTGCAAAGACAAAAGATG
+				</data>
+				<hit pos="1121" idx="1" rc="n" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GTTTCACCGTTGGTGGATACGTTCACACGGCGGTAGAACACCCCTGTGCCAGATGTCTTGAACCCGCTCGTGTTG
+				</data>
+				<hit pos="1213" idx="0" rc="n" pvalue="8.6e-05" match="+ +++++++"/>
+				<hit pos="1259" idx="0" rc="y" pvalue="2.0e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+AGATAAGAGGAGTCATAGAAGCTCTCTATCTACCAGAAAGCATGAGAAAAAATGTAAAAGAAGAGAAACTTGAAT
+				</data>
+				<hit pos="1286" idx="1" rc="n" pvalue="5.9e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+AGCCCGATCATAAATGTGATAAAATTCCTGTGGTTGACAGCAGATTCGAAATCCTTGCCGAGTTAAAAAATAAAC
+				</data>
+				<hit pos="1540" idx="0" rc="n" pvalue="4.8e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+CGAAGATCTACAGAGCAATAAGCGTGCCTCTTGAGAAGTGCCCAAACTGTGGAGAATACAAGATGCCACACAGGG
+				</data>
+				<hit pos="1691" idx="2" rc="y" pvalue="3.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+TCTGTCTACACTGCGGTTACTACAAAGGAAAACAGGTGCTTGAGATATCGGAGTGATAGAGTGAAAATAGCGATC
+				</data>
+				<hit pos="1777" idx="1" rc="n" pvalue="5.9e-05" match="+++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_010483.1" comment="Thermotoga sp. RQ2, oric at 822200 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="1.34e-02" evalue="0.13"/>
+			<seg start="226">
+				<data>
+CCACTTCCTCCCTCGTTTTGGCAGCTGCCCTGTCAAGGAAGTTGTACCTGCCGCTGCGCAAAAGTTCAATCACAC
+				</data>
+				<hit pos="268" idx="0" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+CTGTATCTGCCAGGGTGAGGGAACCACCAGCCGATACCGTTGCACCCTCCGGGATAAGCTCTTTCACTCTCTCAA
+				</data>
+				<hit pos="302" idx="0" rc="y" pvalue="2.4e-05" match="+++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+GTTTCTCTTTTTTCCATAGCCATAGTTCCTCTCTCAAGCTCATAACTCTATACCTCCTTTTTGTCGAATTTGTGT
+				</data>
+				<hit pos="497" idx="1" rc="y" pvalue="1.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+GATTTATAGAGAAAATCTTATTAACTGAAACTAAAATGGTAGGTTTGGTGGTAGGTTTTGTATACATTTTGTAGT
+				</data>
+				<hit pos="527" idx="1" rc="n" pvalue="7.3e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+AGACTATTTTAGTCTTTACAAACAATATTACCGTTCAGATTCAAGATTCTACAACGTCCTTTTAATGAGCGTTGC
+AGAAAACCTACCACCTAAAATCCAGTATCCAAGCCGATTTCAGAGAAACCTACCACTTACCTACCACTTACCTAC
+				</data>
+				<hit pos="798" idx="1" rc="y" pvalue="3.7e-05" match="+++++++++"/>
+				<hit pos="820" idx="1" rc="n" pvalue="8.4e-05" match="+++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+CACCCGGGTGGTAAGTTGCAGACATTATTAAAAACCTCATCAGAAGCTTGTTCAAAAATTTCAATACTCGAAACC
+				</data>
+				<hit pos="914" idx="1" rc="n" pvalue="5.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+ATGAACTGGAAGGTAGAGCTCTCGGAAATAGAAAAAAAGAAGCGATTCTTTCTAGAAGGCATTTTTGAGAAAGAC
+GGTATAGAACTCGATGTTGGCTTTTGTAGATTCCTGGAACCTGTTCAGGTGAAAATGGTCGTTGCAAAAACGAAA
+				</data>
+				<hit pos="1125" idx="1" rc="n" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GATGGTTTTACAGTCGGTGGATACGTTCACACGGCAATAGAACACCCCTGTGCCAGATGTCTTGAACCCGCTCGT
+				</data>
+				<hit pos="1217" idx="0" rc="n" pvalue="8.6e-05" match="+ +++++++"/>
+				<hit pos="1263" idx="0" rc="y" pvalue="2.0e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+GTCGAAATAAGTGGAGTTATAGAAGCTCTTTATCTACCGGAAAGCATGAGAAAAAATGTAAAAGAAGAGAAACTT
+				</data>
+				<hit pos="1290" idx="1" rc="n" pvalue="5.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+GAAGAGCCCGATCATAAATGTGATAAAATTCCTGTGGTTGACAGCAGATTCGAAATCCTTGCCGAGTTAAAAAAT
+				</data>
+				<hit pos="1544" idx="0" rc="n" pvalue="4.8e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+AGAGCGAAGATCTACAGAGCGATAAGCGTGCCTCTTGAAAAGTGTCCAAACTGTGGAGAATACAAGATGCCACAC
+				</data>
+				<hit pos="1695" idx="2" rc="y" pvalue="9.4e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+AGGGTCTGTCTACACTGCGGTTACTACAAAGGAAAACAGGTGCTTGAGATATCGGAGTGATAGAGTGAAGATAGC
+				</data>
+				<hit pos="1781" idx="1" rc="n" pvalue="5.9e-05" match="+++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_009486.1" comment="Thermotoga petrophila RKU-1, oric at 786690 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="3.25e-02" evalue="0.33"/>
+			<seg start="751">
+				<data>
+GCTGCCCTGTCAAGGAAGTTGTACCTGCCGCTGCGCAAAAGTTCAATCACACCTGTATCTGCCAGAGTGAGGGAA
+				</data>
+				<hit pos="770" idx="0" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+				<hit pos="804" idx="0" rc="y" pvalue="2.4e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+AGTTCCTCTCTCAAGCTCATAACTCTATACCTCCTTTTTGTCGAATTTGTGTGATTTATAGAGAAAATCTTATTA
+				</data>
+				<hit pos="999" idx="1" rc="y" pvalue="1.6e-05" match="+++++++++"/>
+				<hit pos="1029" idx="1" rc="n" pvalue="7.3e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+AATATTACCGTTCAGATTCAAGATTCTACAACGCTGTTTTAATGGGCGTTGCAGAAAACTTACCACCTAAAATCC
+				</data>
+				<hit pos="1300" idx="1" rc="y" pvalue="3.7e-05" match="+++++++++"/>
+				<hit pos="1322" idx="1" rc="n" pvalue="8.4e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+AGTATCCAAGCCGATTTCAGAGAAACCTACCACTTACCTACCACTTACCTACCACCCGGGTGGTAAGTTGCAGAC
+				</data>
+				<hit pos="1416" idx="1" rc="n" pvalue="5.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+GGAAATAGAAAAAAAGAAGCGATTCTTTCTAGAAGGCATCTTTGATAAGGACGGTATAGAACTCGATGTGGGTTT
+				</data>
+				<hit pos="1627" idx="1" rc="n" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+CTGCAGATTCTTGGAACCTGTTCGAGTGAAAATGGTCGTTGCAAAGACAAAAGATGGTTTCACAGTCGGTGGATA
+CGTTCACACGGCAATAGAACATCCCTGTGCCAGGTGTCTTGAACCCGCTCGTGTCGAAATAAGTGGAGTTATAGA
+				</data>
+				<hit pos="1719" idx="0" rc="n" pvalue="8.6e-05" match="+ +++++++"/>
+				<hit pos="1765" idx="0" rc="y" pvalue="2.0e-05" match="+++++++++"/>
+				<hit pos="1792" idx="1" rc="n" pvalue="5.9e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_011978.1" comment="Thermotoga neapolitana DSM 4359, oric at 539410 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="2.97e-01" evalue="3"/>
+			<seg start="901">
+				<data>
+CCTGGGTGGTAAGTTGCAGACATGATTCTTTCTTGCATCAGAAAACGGATAGAAATTTTCAACTTGAGAAACCTA
+				</data>
+				<hit pos="912" idx="1" rc="n" pvalue="5.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+GATGTGGGTTTTTGTAAGTTCCTGGAGCCGGTTCGGGTGAAGATGGTTGTTGCAAAGACCAAAGATGGATTCACC
+				</data>
+				<hit pos="1152" idx="0" rc="n" pvalue="9.5e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+ATCGGTGGGTACGTTCACACAGCGATAGAGCACCCGTGTGCCAGATGTCTGGAACCAACGCGTGTGGAGATAAAA
+				</data>
+				<hit pos="1205" idx="0" rc="n" pvalue="5.9e-05" match="+ +++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NZ_CP007633.1" comment="Thermotoga sp. RQ7, oric at 816490 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="2.97e-01" evalue="3"/>
+			<seg start="901">
+				<data>
+AGCGACTTATAGAATAACTTACCACTAACCTACCACTAACCTACCACCTGGGTGGTAAGTTGCAGACATGATTCT
+				</data>
+				<hit pos="958" idx="1" rc="n" pvalue="5.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+ATTTTTTCTGGAAGGTGAGTACAAAAGTGAAGGAATAGAACTGGATGTGGGTTTTTGTAAGTTCCTGGAGCCGGT
+TCGGGTGAAGATGGTTGTTGCAAAGACCAAAGATGGATTCACCATCGGTGGGTACGTTCACACAGCGATAGAGCA
+				</data>
+				<hit pos="1195" idx="0" rc="n" pvalue="9.5e-05" match="++ ++++++"/>
+				<hit pos="1248" idx="0" rc="n" pvalue="5.9e-05" match="+ +++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_009828.1" comment="Pseudothermotoga lettingae TMO, oric at 140880 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="3.75e-01" evalue="3.7"/>
+			<seg start="151">
+				<data>
+TTTCGATATAATGCTGTGGCATTTGAATCTGCTGCGGAGCAATCAGATCGACCTCAACATTTTTGAAAATCTTCA
+				</data>
+				<hit pos="174" idx="0" rc="y" pvalue="4.5e-05" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TAAAAAAGGTCAGCTATTGCTGACCTTCTATAAATATTCAGATTTAAAAAACAAAAATATTCTTGCTGTGGCAAA
+				</data>
+				<hit pos="852" idx="1" rc="y" pvalue="7.3e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="1276">
+				<data>
+ATTCAATGCTCGAACACCTTTTGAATATTACGCATCAACAGCCGATACACCCAGGAAATTAAGAGATGTGAGAAG
+				</data>
+				<hit pos="1316" idx="0" rc="n" pvalue="7.0e-05" match="++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_013642.1" comment="Thermotoga naphthophila RKU-10, oric at 141840 +- 1000" length="2000">
+			<score strand="both" combined_pvalue="4.54e-01" evalue="4.5"/>
+			<seg start="1801">
+				<data>
+GGTGACCGCTTCCCTGCTTCTCATGATGGGAACCAGCTGTGAATCGAGGGTTCAGGTGCCGGTGCCTCTTCCCAA
+AGTGGATGTCGAAATGCCGAAGGTGGACCTCGGTTTCAAGGTAGTGGAACCAACGGGAACAGAGGATTTCTTTGA
+				</data>
+				<hit pos="1871" idx="2" rc="y" pvalue="9.4e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="1951">
+				<data>
+AGATTTTGAAGCTTACGGCCAGGGTCAGGTTGCCCCGTTTGGGCCCTGGA
+				</data>
+				<hit pos="1985" idx="2" rc="n" pvalue="3.8e-05" match="+ +++++++"/>
+			</seg>
+		</sequence>
+	</sequences>
+	<runtime host="PC0028" when="Fri Jan  3 19:43:13 2020" cycles="15625" seconds="0.016"/>
+</mast>

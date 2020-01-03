@@ -36,7 +36,7 @@ def cwindowskew(skew):
     return window_skew.tolist()
 
 
-def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors = None, save=None):
+def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors=None, save=None):
     if colors == None:
         colors = ['xkcd:blue' for i in range(4)]
     fig, (ax1, ax2, ax3) = plt.subplots(3, 1, sharex=False, figsize=(20, 5))
