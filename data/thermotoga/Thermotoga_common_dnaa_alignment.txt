@@ -1,0 +1,114 @@
+RID: 11N92SAN114	
+Job Title:Thermotoga maritima - common DNAa of all bacteria				
+Program: BLASTN 
+			            
+Subject #1:NC_009828.1 Pseudothermotoga lettingae TMO, oric at 140880 +- 1000 ID: lcl|Query_32682 Length: 2000
+Subject #2:NC_000853.1 Thermotoga maritima MSB8 chromosome, oric at 156990 +- 1000 ID: lcl|Query_32683 Length: 2000
+Subject #3:NZ_CP011108.1 Thermotoga maritima strain Tma100, oric at 156990 +- 1000 ID: lcl|Query_32684 Length: 2000
+Subject #4:NZ_CP010967.1 Thermotoga maritima strain Tma200, oric at 156990 +- 1000 ID: lcl|Query_32685 Length: 2000
+Subject #5:NC_013642.1 Thermotoga naphthophila RKU-10, oric at 141840 +- 1000 ID: lcl|Query_32686 Length: 2000
+Subject #6:NC_011978.1 Thermotoga neapolitana DSM 4359, oric at 539410 +- 1000 ID: lcl|Query_32687 Length: 2000
+Subject #7:NC_009486.1 Thermotoga petrophila RKU-1, oric at 786690 +- 1000 ID: lcl|Query_32688 Length: 2000
+Subject #8:NZ_CP003408.1 Thermotoga sp. 2812B, oric at 826970 +- 1000 ID: lcl|Query_32689 Length: 2000
+Subject #9:NC_010483.1 Thermotoga sp. RQ2, oric at 822200 +- 1000 ID: lcl|Query_32690 Length: 2000
+Subject #10:NZ_CP007633.1 Thermotoga sp. RQ7, oric at 816490 +- 1000 ID: lcl|Query_32691 Length: 2000
+	                    			
+Query #1:  Query ID: lcl|Query_32680 Length: 9
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+NC_010483.1 Thermotoga sp. RQ2, oric at 822200 +- 1000            14.4   14.4  77%   1.9   100.00 Query_32690      
+NZ_CP003408.1 Thermotoga sp. 2812B, oric at 826970 +- 1000        14.4   14.4  77%   1.9   100.00 Query_32689      
+NC_009486.1 Thermotoga petrophila RKU-1, oric at 786690 +- 1000   14.4   14.4  77%   1.9   100.00 Query_32688      
+NZ_CP010967.1 Thermotoga maritima strain Tma200, oric at 15699... 14.4   14.4  77%   1.9   100.00 Query_32685      
+NZ_CP011108.1 Thermotoga maritima strain Tma100, oric at 15699... 14.4   14.4  77%   1.9   100.00 Query_32684      
+NC_000853.1 Thermotoga maritima MSB8 chromosome, oric at 15699... 14.4   14.4  77%   1.9   100.00 Query_32683      
+
+
+Alignments:
+>NC_010483.1 Thermotoga sp. RQ2, oric at 822200 +- 1000
+Sequence ID: Query_32690 Length: 2000 
+Range 1: 1217 to 1223
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  2     TATCCAC  8
+             |||||||
+Sbjct  1223  TATCCAC  1217
+
+
+
+>NZ_CP003408.1 Thermotoga sp. 2812B, oric at 826970 +- 1000
+Sequence ID: Query_32689 Length: 2000 
+Range 1: 1213 to 1219
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  2     TATCCAC  8
+             |||||||
+Sbjct  1219  TATCCAC  1213
+
+
+
+>NC_009486.1 Thermotoga petrophila RKU-1, oric at 786690 +- 1000
+Sequence ID: Query_32688 Length: 2000 
+Range 1: 1719 to 1725
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  2     TATCCAC  8
+             |||||||
+Sbjct  1725  TATCCAC  1719
+
+
+
+>NZ_CP010967.1 Thermotoga maritima strain Tma200, oric at 156990 +- 1000
+Sequence ID: Query_32685 Length: 2000 
+Range 1: 798 to 804
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  2    TATCCAC  8
+            |||||||
+Sbjct  798  TATCCAC  804
+
+
+
+>NZ_CP011108.1 Thermotoga maritima strain Tma100, oric at 156990 +- 1000
+Sequence ID: Query_32684 Length: 2000 
+Range 1: 798 to 804
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  2    TATCCAC  8
+            |||||||
+Sbjct  798  TATCCAC  804
+
+
+
+>NC_000853.1 Thermotoga maritima MSB8 chromosome, oric at 156990 +- 1000
+Sequence ID: Query_32683 Length: 2000 
+Range 1: 798 to 804
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  2    TATCCAC  8
+            |||||||
+Sbjct  798  TATCCAC  804
+
+
+
+
+
+
+
+		
+
+

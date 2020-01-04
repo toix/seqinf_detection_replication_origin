@@ -1,0 +1,518 @@
+RID: 11N97E99114	
+Job Title:Escherichia coli - common DNAa of all bacteria				
+Program: BLASTN 
+			            
+Subject #1:NC_008253.1 Escherichia coli 536, oric at 4109380 +- 2000 ID: lcl|Query_35436 Length: 2000
+Subject #2:NC_008563.1 Escherichia coli APEC O1, oric at 4219250 +- 2000 ID: lcl|Query_35437 Length: 2000
+Subject #3:NC_004431.1 Escherichia coli CFT073, oric at 4426530 +- 2000 ID: lcl|Query_35438 Length: 2000
+Subject #4:NC_009800.1 Escherichia coli HS, oric at 3952770 +- 2000 ID: lcl|Query_35439 Length: 2000
+Subject #5:NC_011750.1 Escherichia coli IAI39 chromosome, oric at 4528110 +- 2000 ID: lcl|Query_35440 Length: 2000
+Subject #6:NC_018658.1 Escherichia coli O104:H4 str. 2011C-3493 chromosome, oric at -410 +- 2000 ID: lcl|Query_35441 Length: 1999
+Subject #7:NC_002695.2 Escherichia coli O157:H7 str. Sakai DNA, oric at 4719160 +- 2000 ID: lcl|Query_35442 Length: 2000
+Subject #8:NC_017634.1 Escherichia coli O83:H1 str. NRG 857C chromosome, oric at 3946680 +- 2000 ID: lcl|Query_35443 Length: 2000
+Subject #9:NC_000913.3 Escherichia coli str. K-12 substr. MG1655, oric at 3924640 +- 2000 ID: lcl|Query_35444 Length: 2000
+Subject #10:NC_007946.1 Escherichia coli UTI89, oric at 4186460 +- 2000 ID: lcl|Query_35445 Length: 2000
+	                    			
+Query #1:  Query ID: lcl|Query_35434 Length: 9
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+NC_007946.1 Escherichia coli UTI89, oric at 4186460 +- 2000       18.3   79.8  100%  0.12  100.00 Query_35445      
+NC_017634.1 Escherichia coli O83:H1 str. NRG 857C chromosome,...  18.3   79.8  100%  0.12  100.00 Query_35443      
+NC_002695.2 Escherichia coli O157:H7 str. Sakai DNA, oric at...   18.3   79.8  100%  0.12  100.00 Query_35442      
+NC_018658.1 Escherichia coli O104:H4 str. 2011C-3493 chromosom... 18.3   34.7  100%  0.12  100.00 Query_35441      
+NC_009800.1 Escherichia coli HS, oric at 3952770 +- 2000          18.3   65.4  100%  0.12  100.00 Query_35439      
+NC_004431.1 Escherichia coli CFT073, oric at 4426530 +- 2000      18.3   79.8  100%  0.12  100.00 Query_35438      
+NC_008563.1 Escherichia coli APEC O1, oric at 4219250 +- 2000     18.3   79.8  100%  0.12  100.00 Query_35437      
+NC_008253.1 Escherichia coli 536, oric at 4109380 +- 2000         18.3   65.4  100%  0.12  100.00 Query_35436      
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, oric at... 14.4   28.7  77%   1.9   100.00 Query_35444      
+NC_011750.1 Escherichia coli IAI39 chromosome, oric at 4528110... 14.4   28.7  77%   1.9   100.00 Query_35440      
+
+
+Alignments:
+>NC_007946.1 Escherichia coli UTI89, oric at 4186460 +- 2000
+Sequence ID: Query_35445 Length: 2000 
+Range 1: 1209 to 1217
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1217  TTATCCACA  1209
+
+
+
+
+Range 2: 1389 to 1397
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1389  TTATCCACA  1397
+
+
+
+
+Range 3: 329 to 335
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  3    ATCCACA  9
+            |||||||
+Sbjct  335  ATCCACA  329
+
+
+
+
+Range 4: 536 to 542
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  536  TTATCCA  542
+
+
+
+
+Range 5: 1352 to 1358
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1358  TTATCCA  1352
+
+
+
+>NC_017634.1 Escherichia coli O83:H1 str. NRG 857C chromosome, oric at 3946680 +- 2000
+Sequence ID: Query_35443 Length: 2000 
+Range 1: 1208 to 1216
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1216  TTATCCACA  1208
+
+
+
+
+Range 2: 1388 to 1396
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1388  TTATCCACA  1396
+
+
+
+
+Range 3: 328 to 334
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  3    ATCCACA  9
+            |||||||
+Sbjct  334  ATCCACA  328
+
+
+
+
+Range 4: 535 to 541
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  535  TTATCCA  541
+
+
+
+
+Range 5: 1351 to 1357
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1357  TTATCCA  1351
+
+
+
+>NC_002695.2 Escherichia coli O157:H7 str. Sakai DNA, oric at 4719160 +- 2000
+Sequence ID: Query_35442 Length: 2000 
+Range 1: 1210 to 1218
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1218  TTATCCACA  1210
+
+
+
+
+Range 2: 1390 to 1398
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1390  TTATCCACA  1398
+
+
+
+
+Range 3: 330 to 336
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  3    ATCCACA  9
+            |||||||
+Sbjct  336  ATCCACA  330
+
+
+
+
+Range 4: 537 to 543
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  537  TTATCCA  543
+
+
+
+
+Range 5: 1353 to 1359
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1359  TTATCCA  1353
+
+
+
+>NC_018658.1 Escherichia coli O104:H4 str. 2011C-3493 chromosome, oric at -410 +- 2000
+Sequence ID: Query_35441 Length: 1999 
+Range 1: 1225 to 1233
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1233  TTATCCACA  1225
+
+
+
+
+Range 2: 1512 to 1519
+
+Score:16.4 bits(8), Expect:0.48, 
+Identities:8/8(100%),  Gaps:0/8(0%), Strand: Plus/Minus
+
+Query  2     TATCCACA  9
+             ||||||||
+Sbjct  1519  TATCCACA  1512
+
+
+
+>NC_009800.1 Escherichia coli HS, oric at 3952770 +- 2000
+Sequence ID: Query_35439 Length: 2000 
+Range 1: 1210 to 1218
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1218  TTATCCACA  1210
+
+
+
+
+Range 2: 1390 to 1398
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1390  TTATCCACA  1398
+
+
+
+
+Range 3: 537 to 543
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  537  TTATCCA  543
+
+
+
+
+Range 4: 1353 to 1359
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1359  TTATCCA  1353
+
+
+
+>NC_004431.1 Escherichia coli CFT073, oric at 4426530 +- 2000
+Sequence ID: Query_35438 Length: 2000 
+Range 1: 1304 to 1312
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1312  TTATCCACA  1304
+
+
+
+
+Range 2: 1484 to 1492
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1484  TTATCCACA  1492
+
+
+
+
+Range 3: 49 to 55
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1   TTATCCA  7
+           |||||||
+Sbjct  55  TTATCCA  49
+
+
+
+
+Range 4: 631 to 637
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  631  TTATCCA  637
+
+
+
+
+Range 5: 1447 to 1453
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1453  TTATCCA  1447
+
+
+
+>NC_008563.1 Escherichia coli APEC O1, oric at 4219250 +- 2000
+Sequence ID: Query_35437 Length: 2000 
+Range 1: 1216 to 1224
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1224  TTATCCACA  1216
+
+
+
+
+Range 2: 1396 to 1404
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1396  TTATCCACA  1404
+
+
+
+
+Range 3: 336 to 342
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  3    ATCCACA  9
+            |||||||
+Sbjct  342  ATCCACA  336
+
+
+
+
+Range 4: 543 to 549
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  543  TTATCCA  549
+
+
+
+
+Range 5: 1359 to 1365
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1365  TTATCCA  1359
+
+
+
+>NC_008253.1 Escherichia coli 536, oric at 4109380 +- 2000
+Sequence ID: Query_35436 Length: 2000 
+Range 1: 1210 to 1218
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1218  TTATCCACA  1210
+
+
+
+
+Range 2: 1390 to 1398
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1390  TTATCCACA  1398
+
+
+
+
+Range 3: 537 to 543
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  537  TTATCCA  543
+
+
+
+
+Range 4: 1353 to 1359
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1359  TTATCCA  1353
+
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, oric at 3924640 +- 2000
+Sequence ID: Query_35444 Length: 2000 
+Range 1: 906 to 912
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  912  TTATCCA  906
+
+
+
+
+Range 2: 1488 to 1494
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1488  TTATCCA  1494
+
+
+
+>NC_011750.1 Escherichia coli IAI39 chromosome, oric at 4528110 +- 2000
+Sequence ID: Query_35440 Length: 2000 
+Range 1: 906 to 912
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  912  TTATCCA  906
+
+
+
+
+Range 2: 1488 to 1494
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1488  TTATCCA  1494
+
+
+
+
+
+
+
+		
+
+

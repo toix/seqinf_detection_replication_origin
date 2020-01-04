@@ -1,0 +1,248 @@
+RID: 11N9BAGP114	
+Job Title:Vibrio cholerae - common DNAa of all bacteria				
+Program: BLASTN 
+			            
+Subject #1:NC_012578.1 Vibrio cholerae M66-2 chromosome I, oric at -260 +- 1000 ID: lcl|Query_19610 Length: 1999
+Subject #2:NC_012580.1 Vibrio cholerae M66-2 chromosome II, oric at 1930 +- 1000 ID: lcl|Query_19611 Length: 2000
+Subject #3:NC_012668.1 Vibrio cholerae MJ-1236 chromosome 1, oric at 508620 +- 1000 ID: lcl|Query_19612 Length: 2000
+Subject #4:NC_012667.1 Vibrio cholerae MJ-1236 chromosome 2, oric at 269990 +- 1000 ID: lcl|Query_19613 Length: 2000
+Subject #5:NC_016445.1 Vibrio cholerae O1 str. 2010EL-1786 chromosome 1, oric at 2555250 +- 1000 ID: lcl|Query_19614 Length: 2000
+Subject #6:NC_016446.1 Vibrio cholerae O1 str. 2010EL-1786 chromosome 2, oric at 771830 +- 1000 ID: lcl|Query_19615 Length: 2000
+Subject #7:NC_009456.1 Vibrio cholerae O395 chromosome 1, oric at 1108350 +- 1000 ID: lcl|Query_19616 Length: 1999
+Subject #8:NC_009457.1 Vibrio cholerae O395 chromosome 2, oric at 2669570 +- 1000 ID: lcl|Query_19617 Length: 2000
+Subject #9:NZ_CP010812.1 Vibrio cholerae strain 10432-62, oric at 4042220 +- 1000 ID: lcl|Query_19618 Length: 2000
+Subject #10:NZ_CP010811.1 Vibrio cholerae strain 1154-74, oric at 3919750 +- 1000 ID: lcl|Query_19619 Length: 2000
+	                    			
+Query #1:  Query ID: lcl|Query_19608 Length: 9
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+NC_009457.1 Vibrio cholerae O395 chromosome 2, oric at 2669570... 18.3   69.4  100%  0.12  100.00 Query_19617      
+NC_012578.1 Vibrio cholerae M66-2 chromosome I, oric at -260 +... 18.3   69.4  100%  0.12  100.00 Query_19610      
+NZ_CP010811.1 Vibrio cholerae strain 1154-74, oric at 3919750 ... 14.4   28.7  100%  1.9   100.00 Query_19619      
+NZ_CP010812.1 Vibrio cholerae strain 10432-62, oric at 4042220... 14.4   28.7  100%  1.9   100.00 Query_19618      
+NC_016446.1 Vibrio cholerae O1 str. 2010EL-1786 chromosome 2,...  14.4   43.1  100%  1.9   100.00 Query_19615      
+NC_016445.1 Vibrio cholerae O1 str. 2010EL-1786 chromosome 1,...  14.4   14.4  77%   1.9   100.00 Query_19614      
+NC_012668.1 Vibrio cholerae MJ-1236 chromosome 1, oric at 5086... 14.4   14.4  77%   1.9   100.00 Query_19612      
+
+
+Alignments:
+>NC_009457.1 Vibrio cholerae O395 chromosome 2, oric at 2669570 +- 1000
+Sequence ID: Query_19617 Length: 2000 
+Range 1: 437 to 445
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  445  TTATCCACA  437
+
+
+
+
+Range 2: 495 to 503
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  503  TTATCCACA  495
+
+
+
+
+Range 3: 675 to 683
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  675  TTATCCACA  683
+
+
+
+
+Range 4: 534 to 540
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  534  TTATCCA  540
+
+
+
+>NC_012578.1 Vibrio cholerae M66-2 chromosome I, oric at -260 +- 1000
+Sequence ID: Query_19610 Length: 1999 
+Range 1: 1333 to 1341
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1341  TTATCCACA  1333
+
+
+
+
+Range 2: 1513 to 1521
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1513  TTATCCACA  1521
+
+
+
+
+Range 3: 1571 to 1579
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1571  TTATCCACA  1579
+
+
+
+
+Range 4: 1476 to 1482
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1482  TTATCCA  1476
+
+
+
+>NZ_CP010811.1 Vibrio cholerae strain 1154-74, oric at 3919750 +- 1000
+Sequence ID: Query_19619 Length: 2000 
+Range 1: 760 to 766
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  3    ATCCACA  9
+            |||||||
+Sbjct  760  ATCCACA  766
+
+
+
+
+Range 2: 1049 to 1055
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1055  TTATCCA  1049
+
+
+
+>NZ_CP010812.1 Vibrio cholerae strain 10432-62, oric at 4042220 +- 1000
+Sequence ID: Query_19618 Length: 2000 
+Range 1: 760 to 766
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  3    ATCCACA  9
+            |||||||
+Sbjct  760  ATCCACA  766
+
+
+
+
+Range 2: 1049 to 1055
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1055  TTATCCA  1049
+
+
+
+>NC_016446.1 Vibrio cholerae O1 str. 2010EL-1786 chromosome 2, oric at 771830 +- 1000
+Sequence ID: Query_19615 Length: 2000 
+Range 1: 1365 to 1371
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1365  TTATCCA  1371
+
+
+
+
+Range 2: 1422 to 1428
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  3     ATCCACA  9
+             |||||||
+Sbjct  1428  ATCCACA  1422
+
+
+
+
+Range 3: 1488 to 1494
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1488  TTATCCA  1494
+
+
+
+>NC_016445.1 Vibrio cholerae O1 str. 2010EL-1786 chromosome 1, oric at 2555250 +- 1000
+Sequence ID: Query_19614 Length: 2000 
+Range 1: 1431 to 1437
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  3     ATCCACA  9
+             |||||||
+Sbjct  1437  ATCCACA  1431
+
+
+
+>NC_012668.1 Vibrio cholerae MJ-1236 chromosome 1, oric at 508620 +- 1000
+Sequence ID: Query_19612 Length: 2000 
+Range 1: 1231 to 1237
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  3     ATCCACA  9
+             |||||||
+Sbjct  1231  ATCCACA  1237
+
+
+
+
+
+
+
+		
+
+

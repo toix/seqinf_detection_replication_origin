@@ -19,6 +19,9 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * [Tobias] create a fasta file with all OriC regions 👍 skript: skew/create_oric_fasta.py; results all bacteria reference sequences: data/bacteria/skew_regions.fasta
 * [Tobias] execute local version of meme 👍 results for all bacteria reference sequences: data/bacteria/meme/mast.html
 * [Tobias] test meme on species specific sequences (skew/Thermotoga) 👍 motif is shifted (data/ecoli/meme/meme.html) or no motif was found (data/thermotoga/meme/meme.html)
+* [Kilian] task 3 of the project sheet asks to compute the motifs of the 4 species, since using meme only one species does not give clear results 
+   I tried using BLAST on the cropped OriC regions with the common DNAa box of all bacteria as query, see the results in data/. The motif does not occur in thermotoga, but there is a very similar conserved motif.
+   TTATCCACA is conserved in the three other species 
 * tasks from project sheet
 
 ## download fasta files of genomes

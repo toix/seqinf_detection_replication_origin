@@ -1,0 +1,214 @@
+RID: 11NRMEPB114	
+Job Title:Thermotoga maritima - GTATCCACC				
+Program: BLASTN 
+			            
+Subject #1:NC_009828.1 Pseudothermotoga lettingae TMO, oric at 140880 +- 1000 ID: lcl|Query_56648 Length: 2000
+Subject #2:NC_000853.1 Thermotoga maritima MSB8 chromosome, oric at 156990 +- 1000 ID: lcl|Query_56649 Length: 2000
+Subject #3:NZ_CP011108.1 Thermotoga maritima strain Tma100, oric at 156990 +- 1000 ID: lcl|Query_56650 Length: 2000
+Subject #4:NZ_CP010967.1 Thermotoga maritima strain Tma200, oric at 156990 +- 1000 ID: lcl|Query_56651 Length: 2000
+Subject #5:NC_013642.1 Thermotoga naphthophila RKU-10, oric at 141840 +- 1000 ID: lcl|Query_56652 Length: 2000
+Subject #6:NC_011978.1 Thermotoga neapolitana DSM 4359, oric at 539410 +- 1000 ID: lcl|Query_56653 Length: 2000
+Subject #7:NC_009486.1 Thermotoga petrophila RKU-1, oric at 786690 +- 1000 ID: lcl|Query_56654 Length: 2000
+Subject #8:NZ_CP003408.1 Thermotoga sp. 2812B, oric at 826970 +- 1000 ID: lcl|Query_56655 Length: 2000
+Subject #9:NC_010483.1 Thermotoga sp. RQ2, oric at 822200 +- 1000 ID: lcl|Query_56656 Length: 2000
+Subject #10:NZ_CP007633.1 Thermotoga sp. RQ7, oric at 816490 +- 1000 ID: lcl|Query_56657 Length: 2000
+	                    			
+Query #1:  Query ID: lcl|Query_56646 Length: 9
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+NC_010483.1 Thermotoga sp. RQ2, oric at 822200 +- 1000            18.3   32.7  100%  0.12  100.00 Query_56656      
+NZ_CP003408.1 Thermotoga sp. 2812B, oric at 826970 +- 1000        18.3   32.7  100%  0.12  100.00 Query_56655      
+NC_009486.1 Thermotoga petrophila RKU-1, oric at 786690 +- 1000   18.3   32.7  100%  0.12  100.00 Query_56654      
+NZ_CP010967.1 Thermotoga maritima strain Tma200, oric at 15699... 18.3   32.7  100%  0.12  100.00 Query_56651      
+NZ_CP011108.1 Thermotoga maritima strain Tma100, oric at 15699... 18.3   32.7  100%  0.12  100.00 Query_56650      
+NC_000853.1 Thermotoga maritima MSB8 chromosome, oric at 15699... 18.3   32.7  100%  0.12  100.00 Query_56649      
+NC_011978.1 Thermotoga neapolitana DSM 4359, oric at 539410 +-... 14.4   14.4  77%   1.9   100.00 Query_56653      
+NC_013642.1 Thermotoga naphthophila RKU-10, oric at 141840 +-...  14.4   14.4  77%   1.9   100.00 Query_56652      
+
+
+Alignments:
+>NC_010483.1 Thermotoga sp. RQ2, oric at 822200 +- 1000
+Sequence ID: Query_56656 Length: 2000 
+Range 1: 1216 to 1224
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     GTATCCACC  9
+             |||||||||
+Sbjct  1224  GTATCCACC  1216
+
+
+
+
+Range 2: 850 to 856
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    GTATCCA  7
+            |||||||
+Sbjct  850  GTATCCA  856
+
+
+
+>NZ_CP003408.1 Thermotoga sp. 2812B, oric at 826970 +- 1000
+Sequence ID: Query_56655 Length: 2000 
+Range 1: 1212 to 1220
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     GTATCCACC  9
+             |||||||||
+Sbjct  1220  GTATCCACC  1212
+
+
+
+
+Range 2: 846 to 852
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    GTATCCA  7
+            |||||||
+Sbjct  846  GTATCCA  852
+
+
+
+>NC_009486.1 Thermotoga petrophila RKU-1, oric at 786690 +- 1000
+Sequence ID: Query_56654 Length: 2000 
+Range 1: 1718 to 1726
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     GTATCCACC  9
+             |||||||||
+Sbjct  1726  GTATCCACC  1718
+
+
+
+
+Range 2: 1352 to 1358
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1     GTATCCA  7
+             |||||||
+Sbjct  1352  GTATCCA  1358
+
+
+
+>NZ_CP010967.1 Thermotoga maritima strain Tma200, oric at 156990 +- 1000
+Sequence ID: Query_56651 Length: 2000 
+Range 1: 797 to 805
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1    GTATCCACC  9
+            |||||||||
+Sbjct  797  GTATCCACC  805
+
+
+
+
+Range 2: 1165 to 1171
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     GTATCCA  7
+             |||||||
+Sbjct  1171  GTATCCA  1165
+
+
+
+>NZ_CP011108.1 Thermotoga maritima strain Tma100, oric at 156990 +- 1000
+Sequence ID: Query_56650 Length: 2000 
+Range 1: 797 to 805
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1    GTATCCACC  9
+            |||||||||
+Sbjct  797  GTATCCACC  805
+
+
+
+
+Range 2: 1165 to 1171
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     GTATCCA  7
+             |||||||
+Sbjct  1171  GTATCCA  1165
+
+
+
+>NC_000853.1 Thermotoga maritima MSB8 chromosome, oric at 156990 +- 1000
+Sequence ID: Query_56649 Length: 2000 
+Range 1: 797 to 805
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1    GTATCCACC  9
+            |||||||||
+Sbjct  797  GTATCCACC  805
+
+
+
+
+Range 2: 1165 to 1171
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     GTATCCA  7
+             |||||||
+Sbjct  1171  GTATCCA  1165
+
+
+
+>NC_011978.1 Thermotoga neapolitana DSM 4359, oric at 539410 +- 1000
+Sequence ID: Query_56653 Length: 2000 
+Range 1: 1954 to 1960
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  3     ATCCACC  9
+             |||||||
+Sbjct  1954  ATCCACC  1960
+
+
+
+>NC_013642.1 Thermotoga naphthophila RKU-10, oric at 141840 +- 1000
+Sequence ID: Query_56652 Length: 2000 
+Range 1: 1247 to 1253
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1     GTATCCA  7
+             |||||||
+Sbjct  1247  GTATCCA  1253
+
+
+
+
+
+
+
+		
+
+

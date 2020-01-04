@@ -1,0 +1,482 @@
+RID: 11N9556J114	
+Job Title:Salmonella enterica - common DNAa of all bacteria				
+Program: BLASTN 
+			            
+Subject #1:NZ_CP015574.1 Salmonella enterica strain FORC_038, oric at 4902430 +- 1000 ID: lcl|Query_34214 Length: 2000
+Subject #2:NZ_CP007245.1 Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120008, oric at 3976720 +- 1000 ID: lcl|Query_34215 Length: 2000
+Subject #3:NC_011294.1 Salmonella enterica subsp. enterica serovar Enteritidis str. P125109 oric at 3953990 +- 1000 ID: lcl|Query_34216 Length: 2000
+Subject #4:NC_011083.1 Salmonella enterica subsp. enterica serovar Heidelberg str. SL476, oric at 4094240 +- 1000 ID: lcl|Query_34217 Length: 2000
+Subject #5:NC_011080.1 Salmonella enterica subsp. enterica serovar Newport str. SL254, oric at 4049920 +- 1000 ID: lcl|Query_34218 Length: 2000
+Subject #6:NC_006511.1 Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150, oric at 3859360 +- 1000 ID: lcl|Query_34219 Length: 2000
+Subject #7:NC_010102.1 Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7, oric at 4028930 +- 1000 ID: lcl|Query_34220 Length: 2000
+Subject #8:NC_003198.1 Salmonella enterica subsp. enterica serovar Typhi str. CT18, oric at 3765460 +- 1000 ID: lcl|Query_34221 Length: 2000
+Subject #9:NC_016854.1 Salmonella enterica subsp. enterica serovar Typhimurium str. D23580 oric at 4106620 +- 1000 ID: lcl|Query_34222 Length: 2000
+Subject #10:NC_016810.1 Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344, oric at 4104970 +- 1000 ID: lcl|Query_34223 Length: 2000
+	                    			
+Query #1:  Query ID: lcl|Query_34212 Length: 9
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+NC_016810.1 Salmonella enterica subsp. enterica serovar...        18.3   65.4  100%  0.12  100.00 Query_34223      
+NC_016854.1 Salmonella enterica subsp. enterica serovar...        18.3   65.4  100%  0.12  100.00 Query_34222      
+NC_003198.1 Salmonella enterica subsp. enterica serovar Typhi...  18.3   65.4  100%  0.12  100.00 Query_34221      
+NC_010102.1 Salmonella enterica subsp. enterica serovar...        18.3   51.0  100%  0.12  100.00 Query_34220      
+NC_006511.1 Salmonella enterica subsp. enterica serovar...        18.3   51.0  100%  0.12  100.00 Query_34219      
+NC_011080.1 Salmonella enterica subsp. enterica serovar Newpor... 18.3   65.4  100%  0.12  100.00 Query_34218      
+NC_011083.1 Salmonella enterica subsp. enterica serovar...        18.3   51.0  100%  0.12  100.00 Query_34217      
+NC_011294.1 Salmonella enterica subsp. enterica serovar...        18.3   65.4  100%  0.12  100.00 Query_34216      
+NZ_CP007245.1 Salmonella enterica subsp. enterica serovar...      18.3   65.4  100%  0.12  100.00 Query_34215      
+NZ_CP015574.1 Salmonella enterica strain FORC_038, oric at...     18.3   51.0  100%  0.12  100.00 Query_34214      
+
+
+Alignments:
+>NC_016810.1 Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344, oric at 4104970 +- 1000
+Sequence ID: Query_34223 Length: 2000 
+Range 1: 1296 to 1304
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1304  TTATCCACA  1296
+
+
+
+
+Range 2: 1476 to 1484
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1476  TTATCCACA  1484
+
+
+
+
+Range 3: 623 to 629
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  623  TTATCCA  629
+
+
+
+
+Range 4: 1439 to 1445
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1445  TTATCCA  1439
+
+
+
+>NC_016854.1 Salmonella enterica subsp. enterica serovar Typhimurium str. D23580 oric at 4106620 +- 1000
+Sequence ID: Query_34222 Length: 2000 
+Range 1: 1211 to 1219
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1219  TTATCCACA  1211
+
+
+
+
+Range 2: 1391 to 1399
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1391  TTATCCACA  1399
+
+
+
+
+Range 3: 538 to 544
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  538  TTATCCA  544
+
+
+
+
+Range 4: 1354 to 1360
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1360  TTATCCA  1354
+
+
+
+>NC_003198.1 Salmonella enterica subsp. enterica serovar Typhi str. CT18, oric at 3765460 +- 1000
+Sequence ID: Query_34221 Length: 2000 
+Range 1: 620 to 628
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  628  TTATCCACA  620
+
+
+
+
+Range 2: 800 to 808
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  800  TTATCCACA  808
+
+
+
+
+Range 3: 659 to 665
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  659  TTATCCA  665
+
+
+
+
+Range 4: 1475 to 1481
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1481  TTATCCA  1475
+
+
+
+>NC_010102.1 Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7, oric at 4028930 +- 1000
+Sequence ID: Query_34220 Length: 2000 
+Range 1: 598 to 606
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  606  TTATCCACA  598
+
+
+
+
+Range 2: 778 to 786
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  778  TTATCCACA  786
+
+
+
+
+Range 3: 741 to 747
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  747  TTATCCA  741
+
+
+
+>NC_006511.1 Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150, oric at 3859360 +- 1000
+Sequence ID: Query_34219 Length: 2000 
+Range 1: 614 to 622
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  622  TTATCCACA  614
+
+
+
+
+Range 2: 794 to 802
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  794  TTATCCACA  802
+
+
+
+
+Range 3: 757 to 763
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  763  TTATCCA  757
+
+
+
+>NC_011080.1 Salmonella enterica subsp. enterica serovar Newport str. SL254, oric at 4049920 +- 1000
+Sequence ID: Query_34218 Length: 2000 
+Range 1: 1300 to 1308
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1308  TTATCCACA  1300
+
+
+
+
+Range 2: 1480 to 1488
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1480  TTATCCACA  1488
+
+
+
+
+Range 3: 627 to 633
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  627  TTATCCA  633
+
+
+
+
+Range 4: 1443 to 1449
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1449  TTATCCA  1443
+
+
+
+>NC_011083.1 Salmonella enterica subsp. enterica serovar Heidelberg str. SL476, oric at 4094240 +- 1000
+Sequence ID: Query_34217 Length: 2000 
+Range 1: 606 to 614
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  614  TTATCCACA  606
+
+
+
+
+Range 2: 786 to 794
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1    TTATCCACA  9
+            |||||||||
+Sbjct  786  TTATCCACA  794
+
+
+
+
+Range 3: 749 to 755
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  755  TTATCCA  749
+
+
+
+>NC_011294.1 Salmonella enterica subsp. enterica serovar Enteritidis str. P125109 oric at 3953990 +- 1000
+Sequence ID: Query_34216 Length: 2000 
+Range 1: 1303 to 1311
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1311  TTATCCACA  1303
+
+
+
+
+Range 2: 1483 to 1491
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1483  TTATCCACA  1491
+
+
+
+
+Range 3: 630 to 636
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  630  TTATCCA  636
+
+
+
+
+Range 4: 1446 to 1452
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1452  TTATCCA  1446
+
+
+
+>NZ_CP007245.1 Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120008, oric at 3976720 +- 1000
+Sequence ID: Query_34215 Length: 2000 
+Range 1: 1213 to 1221
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1221  TTATCCACA  1213
+
+
+
+
+Range 2: 1393 to 1401
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1393  TTATCCACA  1401
+
+
+
+
+Range 3: 540 to 546
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1    TTATCCA  7
+            |||||||
+Sbjct  540  TTATCCA  546
+
+
+
+
+Range 4: 1356 to 1362
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Minus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1362  TTATCCA  1356
+
+
+
+>NZ_CP015574.1 Salmonella enterica strain FORC_038, oric at 4902430 +- 1000
+Sequence ID: Query_34214 Length: 2000 
+Range 1: 1426 to 1434
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Minus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1434  TTATCCACA  1426
+
+
+
+
+Range 2: 1606 to 1614
+
+Score:18.3 bits(9), Expect:0.12, 
+Identities:9/9(100%),  Gaps:0/9(0%), Strand: Plus/Plus
+
+Query  1     TTATCCACA  9
+             |||||||||
+Sbjct  1606  TTATCCACA  1614
+
+
+
+
+Range 3: 1465 to 1471
+
+Score:14.4 bits(7), Expect:1.9, 
+Identities:7/7(100%),  Gaps:0/7(0%), Strand: Plus/Plus
+
+Query  1     TTATCCA  7
+             |||||||
+Sbjct  1465  TTATCCA  1471
+
+
+
+
+
+
+
+		
+
+
