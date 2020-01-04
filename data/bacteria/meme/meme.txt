@@ -97,7 +97,7 @@ COMMAND LINE SUMMARY
 This information can also be useful in the event you wish to report a
 problem with the MEME software.
 
-command: meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 
+command: meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta -dna -oc data/bacteria/meme -nostatus -time 30000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 
 
 model:  mod=           anr    nmotifs=         3    evt=           inf
 objective function:           em=       E-value of product of p-values
@@ -891,7 +891,7 @@ TGTGGATAA
 
 
 
-Time 128.16 secs.
+Time 125.25 secs.
 
 ********************************************************************************
 
@@ -1719,7 +1719,7 @@ GC[CG][CGT][GT][GC]GCC
 
 
 
-Time 222.31 secs.
+Time 243.39 secs.
 
 ********************************************************************************
 
@@ -1891,7 +1891,7 @@ GCTGGGATC
 
 
 
-Time 313.28 secs.
+Time 362.86 secs.
 
 ********************************************************************************
 

@@ -13,12 +13,12 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * [Antonia] AT Skew
 * [Tobias] (find and download reference sequences) 👍 @see download fasta files of genomes
 * (Skew quality: throw out low organisms with chaotic curves)
-* find minimum
-* Skew at minimum with higher resolution
+* find minimum 👍
+* [Tobias] Skew at minimum with higher resolution 👍 implemented with a resolution of 10: skew/create_oric_fasta.py
 * done! [Lena] DoriC: Where is the minimum related to DnaA motif in ecoli (expected relative position, high variance?)
 * [Tobias] create a fasta file with all OriC regions 👍 skript: skew/create_oric_fasta.py; results all bacteria reference sequences: data/bacteria/skew_regions.fasta
 * [Tobias] execute local version of meme 👍 results for all bacteria reference sequences: data/bacteria/meme/mast.html
-* [Tobias] test meme on species specific sequences (skew/Thermotoga) 👍 motif is shifted
+* [Tobias] test meme on species specific sequences (skew/Thermotoga) 👍 motif is shifted (data/ecoli/meme/meme.html) or no motif was found (data/thermotoga/meme/meme.html)
 * tasks from project sheet
 
 ## download fasta files of genomes
@@ -52,6 +52,17 @@ distance plot so it has a fixed height of the maximal Hamming score
 	* Can we somehow read the positions of the motifs directly or 
 even print them? Ideas?
 
+## GC-minimum related to oriC (for zoom function)
+* See xlxs dist_min_to_oriC
+	* E.coli: max range 451 nucleotides around min
+	* V. cholarea: max range 18331
+	* S. enterica: max range 781
+	* Thermotoga: max range 562
+* For Therotoga several other subspecies were used for the calcuation 
+too since only one genome file was available for T. petrophila
+* Note: did not consider the DnaA gene location since in many case it 
+does not even correspond to the oriC location
+
 ## HowTo meme
 + http://meme-suite.org/tools/meme
 + Input the primary sequences: Upload a fasta file with multiple sequences
@@ -63,6 +74,7 @@ even print them? Ideas?
 ## HowTo use meme cli
 + use Ubuntu terminal or Windows WSL: https://www.microsoft.com/de-de/p/ubuntu/9nblggh4msv6
 + sudo apt update
++ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
 + sudo apt install ghostscript zlib1g-dev perl libxml2-dev libexpat1-dev libxslt1.1 libxslt1-dev autoconf automake libtool libxml-parser-perl
 + tar zxf meme-5.1.0.tar.gz
 + cd meme-5.1.0
@@ -76,17 +88,6 @@ even print them? Ideas?
 + mast meme.xml /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta -oc . -nostatus
 
 -----
-
-## GC-minimum related to oriC (for zoom function)
-* See xlxs dist_min_to_oriC
-	* E.coli: max range 451 nucleotides around min
-	* V. cholarea: max range 18331
-	* S. enterica: max range 781
-	* Thermotoga: max range 562
-* For Therotoga several other subspecies were used for the calcuation 
-too since only one genome file was available for T. petrophila
-* Note: did not consider the DnaA gene location since in many case it 
-does not even correspond to the oriC location
 
 ## Literature
 ### Skew

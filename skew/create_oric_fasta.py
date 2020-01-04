@@ -20,7 +20,8 @@ def parseargs():
     parser.add_argument("folder", type=str, help="path to a directory containing FASTA files")
     parser.add_argument("out", type=str, help="path to a FASTA file where to write the resulting OriC sequences")
     parser.add_argument("--window", type=int, default=500, help="window size used for calculation of the GC skew")
-    parser.add_argument("--searchwindow", type=int, default=1000, help="specify size of region around the minimum of the GC skew in which motifs will be searched")
+    parser.add_argument("--zoomwindow", type=int, default=10, help="window size used for second more precise (zoomed) calculation of the GC skew")
+    parser.add_argument("--searchwindow", type=int, default=2000, help="specify size of region around the minimum of the GC skew in which motifs will be searched")
     args = parser.parse_args()
     return args
 
@@ -28,8 +29,8 @@ def parseargs():
 def get_min_sequence(sequence, idx_base_min, window):
     window = int(window)
 
-    idx_start = idx_base_min - window
-    idx_end = idx_base_min + window
+    idx_start = int(round(idx_base_min - window/2))
+    idx_end = int(round(idx_base_min + window/2))
 
     n = len(sequence)
     if idx_start < 0:
@@ -65,19 +66,19 @@ def main():
         skew = seq.GC_skew(fasta.seq, window=skew_window)
         skew = accumlate_skew(skew)
         from numpy import argmin
-        idx_base_min = argmin(skew).tolist() * skew_window
-        subsequence, sub_seq_start = get_min_sequence(fasta, idx_base_min, skew_window)
+        idx_base_min = int(argmin(skew).tolist()) * skew_window
+        subsequence, sub_seq_start = get_min_sequence(fasta, idx_base_min, skew_window*2)
 
         # plot(fasta, skew, skew_window, oric_window, True, dnaa='TTATCCACA', colors=['xkcd:blue' for i in range(4)])
 
-        skew = seq.GC_skew(subsequence.seq, window=10)
+        skew = seq.GC_skew(subsequence.seq, window=args.zoomwindow)
         skew = accumlate_skew(skew)
-        idx_base_min = sub_seq_start + argmin(skew).tolist() * 10
+        idx_base_min = sub_seq_start + argmin(skew).tolist() * args.zoomwindow
         oric_sequence = get_min_sequence(fasta, idx_base_min, oric_window)[0]
 
         oric_sequence.description = oric_sequence.description.replace('complete genome', '')
         oric_sequence.description = oric_sequence.description.replace('complete sequence', '')
-        oric_sequence.description = oric_sequence.description + 'oric at {} +- {}'.format(idx_base_min, oric_window)
+        oric_sequence.description = oric_sequence.description + '{} bases around gc minimum'.format(idx_base_min)
 
         oric_sequences.append(oric_sequence)
 

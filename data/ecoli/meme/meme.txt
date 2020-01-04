@@ -43,7 +43,7 @@ COMMAND LINE SUMMARY
 This information can also be useful in the event you wish to report a
 problem with the MEME software.
 
-command: meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/ecoli/skew_regions.fasta -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 
+command: meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/ecoli/skew_regions.fasta -dna -oc data/ecoli/meme -nostatus -time 30000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 
 
 model:  mod=           anr    nmotifs=         3    evt=           inf
 objective function:           em=       E-value of product of p-values
@@ -276,7 +276,7 @@ letter-probability matrix: alength= 4 w= 9 nsites= 50 E= 5.4e-030
 
 
 
-Time  5.34 secs.
+Time 12.83 secs.
 
 ********************************************************************************
 
@@ -490,7 +490,7 @@ GC[AG][CT]GA[AT]C[TC]
 
 
 
-Time 11.98 secs.
+Time 25.16 secs.
 
 ********************************************************************************
 
@@ -633,7 +633,7 @@ ATG[GC]TGATT
 
 
 
-Time 20.02 secs.
+Time 36.98 secs.
 
 ********************************************************************************
 

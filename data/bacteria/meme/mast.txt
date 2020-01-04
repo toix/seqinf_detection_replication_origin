@@ -23,7 +23,7 @@ REFERENCE
 DATABASE AND MOTIFS
 ********************************************************************************
 	DATABASE skew_regions.fasta (nucleotide)
-	Last updated on Fri Jan  3 19:42:26 2020
+	Last updated on Sat Jan  4 16:57:23 2020
 	Database contains 118 sequences, 235953 residues
 
 	Scores for positive and reverse complement strands are combined.
@@ -234,7 +234,7 @@ SECTION III: ANNOTATED SEQUENCES
 
 NC_016845.1
   Klebsiella pneumoniae subsp. pneumoniae HS11286 chromosome, oric at -130 +- 
-  1000
+  2000
   LENGTH = 1999  COMBINED P-VALUE = 1.30e-04  E-VALUE =    0.015
   DIAGRAM: 77-[+3]-36-[-3]-471-[+2]-473-[-3]-77-[+2]-117-[+1]-77-[+3]-11-[-1]-26-[+1]-9-[-3]-12-[-1]-44-[-3]-233-[+2]-219
 
@@ -294,7 +294,7 @@ NC_016845.1
 
 
 NC_002695.2
-  Escherichia coli O157:H7 str. Sakai DNA, oric at 4719160 +- 1000
+  Escherichia coli O157:H7 str. Sakai DNA, oric at 4719160 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 1.30e-04  E-VALUE =    0.015
   DIAGRAM: 217-[+2]-296-[-2]-465-[-3]-77-[+2]-35-[+3]-74-[+1]-77-[+3]-11-[-1]-26-[+1]-9-[-3]-12-[-1]-44-[-3]-459-[+3]-4-[+1]-68
 
@@ -372,7 +372,7 @@ NC_002695.2
 
 
 NC_017634.1
-  Escherichia coli O83:H1 str. NRG 857C chromosome, oric at 3946680 +- 1000
+  Escherichia coli O83:H1 str. NRG 857C chromosome, oric at 3946680 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 1.30e-04  E-VALUE =    0.015
   DIAGRAM: 215-[+2]-296-[-2]-434-[+2]-22-[-3]-77-[+2]-35-[+3]-74-[+1]-77-[+3]-11-[-1]-26-[+1]-9-[-3]-12-[-1]-44-[-3]-459-[+3]-4-[+1]-70
 
@@ -450,7 +450,7 @@ NC_017634.1
 
 
 NC_015663.1
-  Enterobacter aerogenes KCTC 2190 chromosome, oric at 1496990 +- 1000
+  Enterobacter aerogenes KCTC 2190 chromosome, oric at 1496990 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 1.30e-04  E-VALUE =    0.015
   DIAGRAM: 113-[-3]-78-[+2]-36-[+3]-73-[+1]-77-[+3]-11-[-1]-26-[+1]-9-[-3]-12-[-1]-45-[-3]-233-[+2]-226-[+3]-4-[+1]-104-[+1]-827
 
@@ -523,7 +523,7 @@ NC_015663.1
 
 NC_003197.2
   Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, oric at 
-  4084370 +- 1000
+  4084370 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 1.14e-03  E-VALUE =     0.13
   DIAGRAM: 358-[-2]-17-[-3]-77-[+2]-118-[+1]-77-[+3]-11-[-1]-26-[+1]-9-[-3]-12-[-1]-44-[-3]-74-[+2]-376-[+3]-4-[+1]-104-[+1]-214-[-3]-344
 
@@ -614,7 +614,7 @@ NC_003197.2
 
 NC_003198.1
   Salmonella enterica subsp. enterica serovar Typhi str. CT18, oric at 3765460 
-  +- 1000
+  +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 1.14e-03  E-VALUE =     0.13
   DIAGRAM: 85-[-1]-4-[-3]-376-[-2]-74-[+3]-44-[+1]-12-[+3]-9-[-1]-26-[+1]-11-[-3]-77-[-1]-118-[-2]-77-[+3]-17-[+2]-744-[-2]-200
 
@@ -674,7 +674,7 @@ NC_003198.1
 
 
 NC_006461.1
-  Thermus thermophilus HB8 chromosome, oric at 1849980 +- 1000
+  Thermus thermophilus HB8 chromosome, oric at 1849980 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 2.32e-03  E-VALUE =     0.27
   DIAGRAM: 146-[+2]-27-[+2]-6-[+2]-313-[+1]-2-[+1]-3-[+1]-12-[+1]-3-[+1]-2-[+1]-19-[+1]-8-[-1]-2-[-1]-1-[+2]-2-[-1]-4-[-1]-35-[-1]-617-[+2]-53-[-2]-57-[-2]-28-[+2]-273-[+2]-24-[+2]-8-[-2]-147
 
@@ -752,7 +752,7 @@ NC_006461.1
 
 
 NC_010397.1
-  Mycobacterium abscessus chromosome, oric at 5066860 +- 1000
+  Mycobacterium abscessus chromosome, oric at 5066860 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 2.93e-03  E-VALUE =     0.35
   DIAGRAM: 620-[-3]-584-[-1]-2-[+1]-362-[-2]-118-[-2]-99-[+2]-8-[-2]-143
 
@@ -794,7 +794,7 @@ NC_010397.1
 
 
 NC_018828.1
-  Bordetella parapertussis Bpp5, oric at 2960 +- 1000
+  Bordetella parapertussis Bpp5, oric at 2960 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 3.33e-03  E-VALUE =     0.39
   DIAGRAM: [-2]-270-[-2]-631-[+2]-239-[-3]-89-[-2]-114-[-3]-175-[-1]-269-[-2]-141
 
@@ -854,7 +854,7 @@ NC_018828.1
 
 
 NC_003062.2
-  Agrobacterium fabrum str. C58 chromosome circular, oric at 2841380 +- 1000
+  Agrobacterium fabrum str. C58 chromosome circular, oric at 2841380 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 3.96e-03  E-VALUE =     0.47
   DIAGRAM: 34-[+2]-254-[-2]-100-[-2]-94-[+2]-420-[-2]-272-[+1]-80-[+1]-59-[-1]-385-[+3]-220
 
@@ -921,7 +921,7 @@ NC_003062.2
 
 NC_008800.1
   Yersinia enterocolitica subsp. enterocolitica 8081 chromosome, oric at 
-  4615910 +- 1000
+  4615910 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 4.32e-03  E-VALUE =     0.51
   DIAGRAM: 74-[-3]-9-[+3]-382-[-1]-551-[+1]-4-[-1]-64-[+3]-11-[-1]-65-[-1]-513-[+3]-4-[+1]-105-[+1]-118
 
@@ -987,7 +987,7 @@ NC_008800.1
 
 
 NC_007005.1
-  Pseudomonas syringae pv. syringae B728a chromosome, oric at 6086840 +- 1000
+  Pseudomonas syringae pv. syringae B728a chromosome, oric at 6086840 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 6.62e-03  E-VALUE =     0.78
   DIAGRAM: 54-[-1]-197-[+2]-218-[+1]-399-[+2]-270-[+2]-817
 
@@ -1030,7 +1030,7 @@ NC_007005.1
 
 NC_004578.1
   [Pseudomonas syringae] pv. tomato str. DC3000 chromosome, oric at 6390420 +- 
-  1000
+  2000
   LENGTH = 2000  COMBINED P-VALUE = 7.94e-03  E-VALUE =     0.94
   DIAGRAM: 241-[-1]-197-[+2]-218-[+1]-334-[+1]-56-[+2]-270-[+2]-630
 
@@ -1085,7 +1085,7 @@ NC_004578.1
 
 NC_002505.1
   Vibrio cholerae O1 biovar El Tor str. N16961 chromosome I, oric at -260 +- 
-  1000
+  2000
   LENGTH = 1999  COMBINED P-VALUE = 8.05e-03  E-VALUE =     0.95
   DIAGRAM: 353-[-3]-9-[+3]-7-[+3]-599-[-3]-41-[+1]-278-[+1]-77-[+3]-11-[-1]-65-[-1]-49-[-1]-355-[+3]-56
 
@@ -1151,7 +1151,7 @@ NC_002505.1
 
 
 NC_003143.1
-  Yersinia pestis CO92 chromosome, oric at 1490 +- 1000
+  Yersinia pestis CO92 chromosome, oric at 1490 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 8.59e-03  E-VALUE =        1
   DIAGRAM: 269-[+3]-4-[+1]-105-[+1]-214-[-3]-108-[+3]-212-[-1]-477-[-1]-548
 
@@ -1193,7 +1193,7 @@ NC_003143.1
 
 
 NC_002947.4
-  Pseudomonas putida KT2440 chromosome, oric at 450 +- 1000
+  Pseudomonas putida KT2440 chromosome, oric at 450 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 8.69e-03  E-VALUE =        1
   DIAGRAM: 1148-[-2]-51-[-2]-28-[+3]-378-[+2]-63-[+2]-165-[-1]-112
 
@@ -1229,7 +1229,7 @@ NC_002947.4
 
 
 NC_013853.1
-  Streptococcus mitis B6, oric at 2144260 +- 1000
+  Streptococcus mitis B6, oric at 2144260 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 9.18e-03  E-VALUE =      1.1
   DIAGRAM: 362-[-3]-623-[-1]-46-[-1]-3-[+1]-930
 
@@ -1253,7 +1253,7 @@ NC_013853.1
 
 
 NC_009009.1
-  Streptococcus sanguinis SK36 chromosome, oric at 2387820 +- 1000
+  Streptococcus sanguinis SK36 chromosome, oric at 2387820 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 9.32e-03  E-VALUE =      1.1
   DIAGRAM: 1071-[-3]-196-[-1]-310-[-1]-94-[-1]-3-[+1]-34-[+1]-237
 
@@ -1289,7 +1289,7 @@ NC_009009.1
 
 
 NC_008596.1
-  Mycobacterium smegmatis str. MC2 155 chromosome, oric at 6988460 +- 1000
+  Mycobacterium smegmatis str. MC2 155 chromosome, oric at 6988460 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 1.09e-02  E-VALUE =      1.3
   DIAGRAM: 426-[-2]-8-[-2]-860-[+2]-371-[-2]-171-[-2]-39-[+3]-70
 
@@ -1331,7 +1331,7 @@ NC_008596.1
 
 
 NC_018658.1
-  Escherichia coli O104:H4 str. 2011C-3493 chromosome, oric at -410 +- 1000
+  Escherichia coli O104:H4 str. 2011C-3493 chromosome, oric at -410 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 1.24e-02  E-VALUE =      1.5
   DIAGRAM: 1224-[+1]-570-[-2]-75-[-2]-103
 
@@ -1355,7 +1355,7 @@ NC_018658.1
 
 
 NC_002946.2
-  Neisseria gonorrhoeae FA 1090 chromosome, oric at 1891450 +- 1000
+  Neisseria gonorrhoeae FA 1090 chromosome, oric at 1891450 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 1.64e-02  E-VALUE =      1.9
   DIAGRAM: 9-[+2]-424-[-2]-110-[-1]-66-[-1]-176-[-1]-108-[-1]-563-[-2]-25-[-2]-447
 
@@ -1415,7 +1415,7 @@ NC_002946.2
 
 
 NC_003112.2
-  Neisseria meningitidis MC58 chromosome, oric at 13690 +- 1000
+  Neisseria meningitidis MC58 chromosome, oric at 13690 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 1.64e-02  E-VALUE =      1.9
   DIAGRAM: 520-[+2]-25-[+2]-563-[+1]-291-[+1]-66-[+1]-490
 
@@ -1451,7 +1451,7 @@ NC_003112.2
 
 
 NC_007643.1
-  Rhodospirillum rubrum ATCC 11170 chromosome, oric at 4158870 +- 1000
+  Rhodospirillum rubrum ATCC 11170 chromosome, oric at 4158870 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 1.78e-02  E-VALUE =      2.1
   DIAGRAM: 235-[+2]-15-[+2]-72-[-3]-10-[-2]-183-[-2]-291-[+2]-609-[-2]-147-[-2]-117-[+2]-69-[-2]-162
 
@@ -1506,7 +1506,7 @@ NC_007643.1
 
 NC_014121.1
   Enterobacter cloacae subsp. cloacae ATCC 13047 chromosome, oric at 5288300 +- 
-  1000
+  2000
   LENGTH = 2000  COMBINED P-VALUE = 1.86e-02  E-VALUE =      2.2
   DIAGRAM: 5-[-2]-78-[+3]-235-[-3]-487-[-3]-30-[-2]-373-[+3]-738
 
@@ -1542,7 +1542,7 @@ NC_014121.1
 
 
 NC_000964.3
-  Bacillus subtilis subsp. subtilis str. 168 oric at 4215680 +- 1000
+  Bacillus subtilis subsp. subtilis str. 168 oric at 4215680 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 2.14e-02  E-VALUE =      2.5
   DIAGRAM: 603-[-2]-377-[+1]-4-[-1]-12-[+1]-85-[-1]-3-[+1]-35-[-1]-45-[-1]-763
 
@@ -1578,7 +1578,7 @@ NC_000964.3
 
 
 NC_007644.1
-  Moorella thermoacetica ATCC 39073 chromosome, oric at 2710 +- 1000
+  Moorella thermoacetica ATCC 39073 chromosome, oric at 2710 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 2.29e-02  E-VALUE =      2.7
   DIAGRAM: 108-[-1]-104-[+1]-799-[+2]-553-[-2]-65-[+2]-326
 
@@ -1620,7 +1620,7 @@ NC_007644.1
 
 
 NC_019382.1
-  Bordetella bronchiseptica 253, oric at 3687420 +- 1000
+  Bordetella bronchiseptica 253, oric at 3687420 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 2.31e-02  E-VALUE =      2.7
   DIAGRAM: 117-[-2]-13-[-2]-213-[-2]-93-[-2]-31-[+2]-468-[+2]-231-[-3]-771
 
@@ -1656,7 +1656,7 @@ NC_019382.1
 
 
 NC_002929.2
-  Bordetella pertussis Tohama I chromosome, oric at 69990 +- 1000
+  Bordetella pertussis Tohama I chromosome, oric at 69990 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 2.34e-02  E-VALUE =      2.8
   DIAGRAM: 188-[+2]-122-[-2]-27-[-3]-52-[+2]-23-[-2]-80-[+2]-224-[+2]-1189-[+2]-6-[+3]-8
 
@@ -1704,7 +1704,7 @@ NC_002929.2
 
 
 NC_006350.1
-  Burkholderia pseudomallei K96243 chromosome 1, oric at 4074470 +- 1000
+  Burkholderia pseudomallei K96243 chromosome 1, oric at 4074470 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 2.83e-02  E-VALUE =      3.3
   DIAGRAM: 288-[+2]-494-[+1]-160-[-1]-5-[-2]-292-[+2]-609-[+2]-97
 
@@ -1746,7 +1746,7 @@ NC_006350.1
 
 
 NC_010175.1
-  Chloroflexus aurantiacus J-10-fl chromosome, oric at 1967130 +- 1000
+  Chloroflexus aurantiacus J-10-fl chromosome, oric at 1967130 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 2.96e-02  E-VALUE =      3.5
   DIAGRAM: 401-[+2]-311-[+1]-65-[-1]-75-[-1]-11-[-1]-12-[-1]-502-[-2]-560
 
@@ -1788,7 +1788,7 @@ NC_010175.1
 
 
 NC_007606.1
-  Shigella dysenteriae Sd197 chromosome, oric at 4309300 +- 1000
+  Shigella dysenteriae Sd197 chromosome, oric at 4309300 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 3.20e-02  E-VALUE =      3.8
   DIAGRAM: 158-[-2]-1034-[+2]-589-[-1]-192
 
@@ -1818,7 +1818,7 @@ NC_007606.1
 
 
 NC_002937.3
-  Desulfovibrio vulgaris str. Hildenborough chromosome, oric at 3533710 +- 1000
+  Desulfovibrio vulgaris str. Hildenborough chromosome, oric at 3533710 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 3.25e-02  E-VALUE =      3.8
   DIAGRAM: 707-[+2]-9-[-2]-22-[-2]-168-[-2]-1058
 
@@ -1842,7 +1842,7 @@ NC_002937.3
 
 
 NC_004347.2
-  Shewanella oneidensis MR-1 chromosome, oric at 80 +- 1000
+  Shewanella oneidensis MR-1 chromosome, oric at 80 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 3.25e-02  E-VALUE =      3.8
   DIAGRAM: 418-[-1]-149-[-3]-400-[+1]-95-[-1]-64-[-1]-24-[+1]-130-[-1]-656
 
@@ -1890,7 +1890,7 @@ NC_004347.2
 
 
 NC_004337.2
-  Shigella flexneri 2a str. 301 chromosome, oric at 3821370 +- 1000
+  Shigella flexneri 2a str. 301 chromosome, oric at 3821370 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 4.23e-02  E-VALUE =        5
   DIAGRAM: 413-[+1]-1447-[-2]-122
 
@@ -1915,7 +1915,7 @@ NC_004337.2
 
 NC_002945.4
   Mycobacterium bovis AF2122/97 genome assembly, chromosome: 
-  Mycobacterium_bovis_AF2122/97oric at 4349590 +- 1000
+  Mycobacterium_bovis_AF2122/97oric at 4349590 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 4.39e-02  E-VALUE =      5.2
   DIAGRAM: 290-[+3]-279-[+2]-223-[-2]-69-[+2]-249-[-1]-60-[+1]-650-[+2]-116
 
@@ -1969,7 +1969,7 @@ NC_002945.4
 
 
 NC_000962.3
-  Mycobacterium tuberculosis H37Rv, oric at 4411220 +- 1000
+  Mycobacterium tuberculosis H37Rv, oric at 4411220 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 4.39e-02  E-VALUE =      5.2
   DIAGRAM: 288-[+3]-279-[+2]-223-[-2]-69-[+2]-249-[-1]-60-[+1]-650-[+2]-118
 
@@ -2023,7 +2023,7 @@ NC_000962.3
 
 
 NC_005125.1
-  Gloeobacter violaceus PCC 7421 chromosome, oric at 1729700 +- 1000
+  Gloeobacter violaceus PCC 7421 chromosome, oric at 1729700 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 4.52e-02  E-VALUE =      5.3
   DIAGRAM: 674-[+2]-453-[+2]-96-[-3]-303-[-2]-325-[+3]-89-[-2]-6
 
@@ -2072,7 +2072,7 @@ NC_005125.1
 
 NC_003902.1
   Xanthomonas campestris pv. campestris str. ATCC 33913 chromosome, oric at 
-  260970 +- 1000
+  260970 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 4.93e-02  E-VALUE =      5.8
   DIAGRAM: 280-[+2]-72-[+2]-463-[-2]-157-[+2]-75-[-2]-3-[+2]-14-[+3]-873
 
@@ -2114,7 +2114,7 @@ NC_003902.1
 
 
 NC_000922.1
-  Chlamydophila pneumoniae CWL029 chromosome, oric at 841450 +- 1000
+  Chlamydophila pneumoniae CWL029 chromosome, oric at 841450 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 6.02e-02  E-VALUE =      7.1
   DIAGRAM: 1102-[+1]-14-[+1]-98-[+1]-662-[-3]-88
 
@@ -2145,7 +2145,7 @@ NC_000922.1
 
 NC_013522.1
   Thermanaerovibrio acidaminovorans DSM 6589 chromosome, oric at 1791460 +- 
-  1000
+  2000
   LENGTH = 2000  COMBINED P-VALUE = 6.03e-02  E-VALUE =      7.1
   DIAGRAM: 493-[+2]-296-[-2]-537-[-2]-112-[+3]-203-[-2]-174-[+3]-131
 
@@ -2193,7 +2193,7 @@ NC_013522.1
 
 
 NC_008526.1
-  Lactobacillus paracasei ATCC 334 chromosome, oric at 2894940 +- 1000
+  Lactobacillus paracasei ATCC 334 chromosome, oric at 2894940 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 6.13e-02  E-VALUE =      7.2
   DIAGRAM: 755-[+1]-83-[-1]-69-[+1]-105-[+1]-738-[-2]-204
 
@@ -2229,7 +2229,7 @@ NC_008526.1
 
 
 NC_001263.1
-  Deinococcus radiodurans R1 chromosome 1, oric at 2493940 +- 1000
+  Deinococcus radiodurans R1 chromosome 1, oric at 2493940 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 6.30e-02  E-VALUE =      7.4
   DIAGRAM: 96-[+2]-3-[+2]-500-[+2]-112-[+2]-167-[-3]-25-[+2]-11-[+2]-274-[+2]-459-[-2]-272
 
@@ -2283,7 +2283,7 @@ NC_001263.1
 
 
 NC_014638.1
-  Bifidobacterium bifidum PRL2010 chromosome, oric at 2214490 +- 1000
+  Bifidobacterium bifidum PRL2010 chromosome, oric at 2214490 +- 2000
   LENGTH = 1999  COMBINED P-VALUE = 6.82e-02  E-VALUE =      8.1
   DIAGRAM: 994-[-1]-13-[-1]-25-[+1]-733-[+2]-198
 
@@ -2313,7 +2313,7 @@ NC_014638.1
 
 
 NC_002939.5
-  Geobacter sulfurreducens PCA chromosome, oric at 8840 +- 1000
+  Geobacter sulfurreducens PCA chromosome, oric at 8840 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 7.28e-02  E-VALUE =      8.6
   DIAGRAM: 220-[-3]-368-[+2]-452-[-2]-315-[+2]-207-[+2]-271-[-2]-113
 
@@ -2367,7 +2367,7 @@ NC_002939.5
 
 
 NC_013172.1
-  Brachybacterium faecium DSM 4810 chromosome, oric at 1750390 +- 1000
+  Brachybacterium faecium DSM 4810 chromosome, oric at 1750390 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 7.31e-02  E-VALUE =      8.6
   DIAGRAM: 250-[+3]-42-[-3]-25-[+2]-276-[+3]-14-[+2]-111-[+2]-343-[+2]-42-[+2]-5-[-2]-171-[-2]-255-[-3]-343-[-2]-15
 
@@ -2427,7 +2427,7 @@ NC_013172.1
 
 
 NC_002696.2
-  Caulobacter crescentus CB15 chromosome, oric at 4011490 +- 1000
+  Caulobacter crescentus CB15 chromosome, oric at 4011490 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 7.45e-02  E-VALUE =      8.8
   DIAGRAM: 44-[-2]-240-[+2]-192-[+3]-21-[+2]-285-[+2]-75-[+2]-73-[+2]-435-[-2]-61-[+3]-15-[-2]-104-[-2]-12-[-2]-147-[-2]-179
 
@@ -2517,7 +2517,7 @@ NC_002696.2
 
 
 NC_011916.1
-  Caulobacter crescentus NA1000, oric at 4037480 +- 1000
+  Caulobacter crescentus NA1000, oric at 4037480 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 7.45e-02  E-VALUE =      8.8
   DIAGRAM: 36-[-2]-240-[+2]-192-[+3]-21-[+2]-285-[+2]-75-[+2]-73-[+2]-435-[-2]-61-[+3]-15-[-2]-104-[-2]-12-[-2]-147-[-2]-187
 
@@ -2601,7 +2601,7 @@ NC_011916.1
 
 
 NC_002677.1
-  Mycobacterium leprae TN chromosome, oric at 1950 +- 1000
+  Mycobacterium leprae TN chromosome, oric at 1950 +- 2000
   LENGTH = 2000  COMBINED P-VALUE = 8.26e-02  E-VALUE =      9.7
   DIAGRAM: 346-[+2]-346-[+1]-81-[-1]-45-[-1]-227-[-2]-42-[-2]-859
 
@@ -2645,6 +2645,6 @@ NC_002677.1
 
 
 CPU: PC0028
-Time 0.094 secs.
+Time 0.125 secs.
 
-mast -oc . -nostatus meme.xml /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta
+mast -oc data/bacteria/meme -nostatus data/bacteria/meme/meme.xml /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta

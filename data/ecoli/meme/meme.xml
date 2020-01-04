@@ -212,7 +212,7 @@
 </letter_frequencies>
 </training_set>
 <model>
-<command_line>meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/ecoli/skew_regions.fasta -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 </command_line>
+<command_line>meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/ecoli/skew_regions.fasta -dna -oc data/ecoli/meme -nostatus -time 30000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 </command_line>
 <host>PC0028</host>
 <type>anr</type>
 <nmotifs>3</nmotifs>
@@ -256,7 +256,7 @@
 </background_frequencies>
 </model>
 <motifs>
-<motif id="motif_1" name="TGGATAAMT" alt="MEME-1" width="9" sites="50" ic="14.2" re="14.4" llr="498" p_value="1.7e-195" e_value="5.4e-030" bayes_threshold="9.76924" elapsed_time="5.343750">
+<motif id="motif_1" name="TGGATAAMT" alt="MEME-1" width="9" sites="50" ic="14.2" re="14.4" llr="498" p_value="1.7e-195" e_value="5.4e-030" bayes_threshold="9.76924" elapsed_time="12.828125">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
@@ -1129,7 +1129,7 @@
 </contributing_site>
 </contributing_sites>
 </motif>
-<motif id="motif_2" name="GCRCGAWCT" alt="MEME-2" width="9" sites="50" ic="13.1" re="13.0" llr="451" p_value="3.7e-175" e_value="1.2e-009" bayes_threshold="9.76924" elapsed_time="11.984375">
+<motif id="motif_2" name="GCRCGAWCT" alt="MEME-2" width="9" sites="50" ic="13.1" re="13.0" llr="451" p_value="3.7e-175" e_value="1.2e-009" bayes_threshold="9.76924" elapsed_time="25.156250">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
@@ -2002,7 +2002,7 @@ GC[AG][CT]GA[AT]C[TC]
 </contributing_site>
 </contributing_sites>
 </motif>
-<motif id="motif_3" name="ATGSTGATT" alt="MEME-3" width="9" sites="19" ic="16.7" re="16.9" llr="222" p_value="9.0e-080" e_value="1.9e-009" bayes_threshold="9.40198" elapsed_time="20.015625">
+<motif id="motif_3" name="ATGSTGATT" alt="MEME-3" width="9" sites="19" ic="16.7" re="16.9" llr="222" p_value="9.0e-080" e_value="1.9e-009" bayes_threshold="9.40198" elapsed_time="36.984375">
 <scores>
 <alphabet_matrix>
 <alphabet_array>

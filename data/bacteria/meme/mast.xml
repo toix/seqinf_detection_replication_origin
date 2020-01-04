@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <mast version="5.1.0" release="Fri Oct 11 15:53:28 2019 -0700">
-	<command_line><arg>mast</arg><arg>-oc</arg><arg>.</arg><arg>-nostatus</arg><arg>meme.xml</arg><arg>/mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta</arg></command_line>
+	<command_line><arg>mast</arg><arg>-oc</arg><arg>data/bacteria/meme</arg><arg>-nostatus</arg><arg>data/bacteria/meme/meme.xml</arg><arg>/mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta</arg></command_line>
 	<settings strand_handling="combine" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
 	<alphabet name="DNA" like="dna">
 		<letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
@@ -21,7 +21,7 @@
 	</alphabet>
 	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
 	<motif_dbs>
-		<motif_db source="meme.xml" last_mod_date="Fri Jan  3 19:47:41 2020">
+		<motif_db source="data/bacteria/meme/meme.xml" last_mod_date="Sat Jan  4 17:03:34 2020">
 			<background A="0.267465" C="0.232535" G="0.232535" T="0.267465"/>
 		</motif_db>
 	</motif_dbs>
@@ -66,10 +66,10 @@
 		<correlation idx_a="1" idx_b="2" value="0.41"/>
 	</correlations>
 	<sequence_dbs>
-		<sequence_db source="/mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta" last_mod_date="Fri Jan  3 19:42:26 2020" seq_count="118" residue_count="235953"/>
+		<sequence_db source="/mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta" last_mod_date="Sat Jan  4 16:57:23 2020" seq_count="118" residue_count="235953"/>
 	</sequence_dbs>
 	<sequences>
-		<sequence db="0" name="NC_016845.1" comment="Klebsiella pneumoniae subsp. pneumoniae HS11286 chromosome, oric at -130 +- 1000" length="1999">
+		<sequence db="0" name="NC_016845.1" comment="Klebsiella pneumoniae subsp. pneumoniae HS11286 chromosome, oric at -130 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="1.30e-04" evalue="0.015"/>
 			<seg start="76">
 				<data>
@@ -130,7 +130,7 @@ TCTCCTGCAGCGCGTCATAGAAGGGAACCAGGTTGTCGGGAACGTCGCCGGCGCCATGGGTGGAAGAGATAATTA
 				<hit pos="1772" idx="1" rc="n" pvalue="6.0e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_002695.2" comment="Escherichia coli O157:H7 str. Sakai DNA, oric at 4719160 +- 1000" length="2000">
+		<sequence db="0" name="NC_002695.2" comment="Escherichia coli O157:H7 str. Sakai DNA, oric at 4719160 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="1.30e-04" evalue="0.015"/>
 			<seg start="151">
 				<data>
@@ -199,7 +199,7 @@ TTTATTAAGAGTGGCGTATTGTACGCTGTGAACGCGTTGGGATCTACCTGTGGAAAAGTATGGGATTAAAAAAGC
 				<hit pos="1924" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_017634.1" comment="Escherichia coli O83:H1 str. NRG 857C chromosome, oric at 3946680 +- 1000" length="2000">
+		<sequence db="0" name="NC_017634.1" comment="Escherichia coli O83:H1 str. NRG 857C chromosome, oric at 3946680 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="1.30e-04" evalue="0.015"/>
 			<seg start="151">
 				<data>
@@ -265,7 +265,7 @@ TATTAAGAGTGGCGTATTGTACGCTGTGAAAGCGTTGGGATCTACCTGTGGAAAAGTATGGGATTAAAAAAGCCG
 				<hit pos="1922" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_015663.1" comment="Enterobacter aerogenes KCTC 2190 chromosome, oric at 1496990 +- 1000" length="2000">
+		<sequence db="0" name="NC_015663.1" comment="Enterobacter aerogenes KCTC 2190 chromosome, oric at 1496990 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="1.30e-04" evalue="0.015"/>
 			<seg start="76">
 				<data>
@@ -337,7 +337,7 @@ GGGTTTCAGTGGACTGAATTTCATCGATTGTTTGGATCTTGTTGATAAGTACCTGCTGCAGGGCATCGATGGATT
 				<hit pos="1165" idx="0" rc="n" pvalue="2.2e-05" match="+++ +++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_003197.2" comment="Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, oric at 4084370 +- 1000" length="2000">
+		<sequence db="0" name="NC_003197.2" comment="Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, oric at 4084370 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="1.14e-03" evalue="0.13"/>
 			<seg start="301">
 				<data>
@@ -413,7 +413,7 @@ CCCGGCCTGCTTCATTTTCTCGACGCGAACGTGAATGGTTCCAGGGCTAACGCCAAATTGTTTGGCCAGTTCGGC
 				<hit pos="1648" idx="2" rc="y" pvalue="4.2e-05" match="++++++ ++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_003198.1" comment="Salmonella enterica subsp. enterica serovar Typhi str. CT18, oric at 3765460 +- 1000" length="2000">
+		<sequence db="0" name="NC_003198.1" comment="Salmonella enterica subsp. enterica serovar Typhi str. CT18, oric at 3765460 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="1.14e-03" evalue="0.13"/>
 			<seg start="76">
 				<data>
@@ -475,7 +475,7 @@ ACCCATGACGTGATTCGTAATAACCTCGATCGTAGCCCAATGTACGCTGGCGTGATCGAAGGGATCGGCCCACGC
 				<hit pos="1792" idx="1" rc="y" pvalue="4.1e-05" match="+++++ +++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_006461.1" comment="Thermus thermophilus HB8 chromosome, oric at 1849980 +- 1000" length="1999">
+		<sequence db="0" name="NC_006461.1" comment="Thermus thermophilus HB8 chromosome, oric at 1849980 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="2.32e-03" evalue="0.27"/>
 			<seg start="76">
 				<data>
@@ -545,7 +545,7 @@ CCTACAACGCCCGCTACCTCCTCGAGGCCCTCGCCCCCGTGGGGGACCGGGCCCACCTGGGCATCTCCGGGCCCA
 				<hit pos="1844" idx="1" rc="y" pvalue="4.1e-05" match="++ ++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_010397.1" comment="Mycobacterium abscessus chromosome, oric at 5066860 +- 1000" length="1999">
+		<sequence db="0" name="NC_010397.1" comment="Mycobacterium abscessus chromosome, oric at 5066860 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="2.93e-03" evalue="0.35"/>
 			<seg start="601">
 				<data>
@@ -581,7 +581,7 @@ GGAGCATCCAACCGGTTCTCCCACGCCGCCGCCGTGGCCGTGTCCGAGGCCCCCGCTCGGGCCTACAACCCGCTG
 				<hit pos="1848" idx="1" rc="y" pvalue="2.7e-05" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_018828.1" comment="Bordetella parapertussis Bpp5, oric at 2960 +- 1000" length="2000">
+		<sequence db="0" name="NC_018828.1" comment="Bordetella parapertussis Bpp5, oric at 2960 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="3.33e-03" evalue="0.39"/>
 			<seg start="1">
 				<data>
@@ -633,7 +633,7 @@ CCTGGGCGGTTCGCACAGGAAGCAGGGCGCCTGCGTGGCCACGACGATGCGGCCACGGCCGAACACGCGGCGCGC
 				<hit pos="1851" idx="1" rc="y" pvalue="2.2e-05" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_003062.2" comment="Agrobacterium fabrum str. C58 chromosome circular, oric at 2841380 +- 1000" length="1999">
+		<sequence db="0" name="NC_003062.2" comment="Agrobacterium fabrum str. C58 chromosome circular, oric at 2841380 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="3.96e-03" evalue="0.47"/>
 			<seg start="1">
 				<data>
@@ -691,7 +691,7 @@ AGGCGGCGGGTGGGTGCGCAACACGCGCTGAATGCCGATTATTTCGCGCGGATCGAAGCACTCAATTTCGCCATG
 				<hit pos="1771" idx="2" rc="n" pvalue="2.1e-05" match="++  +++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_008800.1" comment="Yersinia enterocolitica subsp. enterocolitica 8081 chromosome, oric at 4615910 +- 1000" length="1999">
+		<sequence db="0" name="NC_008800.1" comment="Yersinia enterocolitica subsp. enterocolitica 8081 chromosome, oric at 4615910 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="4.32e-03" evalue="0.51"/>
 			<seg start="1">
 				<data>
@@ -743,7 +743,7 @@ TGATAAGTACCTGTTGCAGTGCATCTATCGATTTACACATGACCTTAATAAAGATGCTGTAATGGCCAGTGGTGT
 				<hit pos="1873" idx="0" rc="n" pvalue="2.2e-05" match="+++ +++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_007005.1" comment="Pseudomonas syringae pv. syringae B728a chromosome, oric at 6086840 +- 1000" length="2000">
+		<sequence db="0" name="NC_007005.1" comment="Pseudomonas syringae pv. syringae B728a chromosome, oric at 6086840 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="6.62e-03" evalue="0.78"/>
 			<seg start="1">
 				<data>
@@ -777,7 +777,7 @@ CGTATTTTGTCTTGATCTCGACCTGCTCGGCGACCTGGGGATCGGTGCAGCCCTGGCCAGTGATTGAAATCAGGC
 				<hit pos="1175" idx="1" rc="n" pvalue="9.6e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_004578.1" comment="[Pseudomonas syringae] pv. tomato str. DC3000 chromosome, oric at 6390420 +- 1000" length="2000">
+		<sequence db="0" name="NC_004578.1" comment="[Pseudomonas syringae] pv. tomato str. DC3000 chromosome, oric at 6390420 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="7.94e-03" evalue="0.94"/>
 			<seg start="226">
 				<data>
@@ -818,7 +818,7 @@ GGATCAGCACAGCCCTGGCCTGTGAGGGCAATCAGGCTGTTGTAATCGATTTCCGGACGGGTCAGCAGATTGAGC
 				<hit pos="1362" idx="1" rc="n" pvalue="9.6e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_002505.1" comment="Vibrio cholerae O1 biovar El Tor str. N16961 chromosome I, oric at -260 +- 1000" length="1999">
+		<sequence db="0" name="NC_002505.1" comment="Vibrio cholerae O1 biovar El Tor str. N16961 chromosome I, oric at -260 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="8.05e-03" evalue="0.95"/>
 			<seg start="301">
 				<data>
@@ -866,7 +866,7 @@ TATTATCCGGGTACTCACCAGCCCCGTGGGTTGAGGTGATGATCAGCCAAGTCCCTTTAGCAGGGATCTCACTCA
 				<hit pos="1935" idx="2" rc="n" pvalue="4.2e-05" match="++ ++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_003143.1" comment="Yersinia pestis CO92 chromosome, oric at 1490 +- 1000" length="2000">
+		<sequence db="0" name="NC_003143.1" comment="Yersinia pestis CO92 chromosome, oric at 1490 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="8.59e-03" evalue="1"/>
 			<seg start="226">
 				<data>
@@ -906,7 +906,7 @@ TGCCGGATCATATTCAGTTTATCCACAGTGAAAGCCTGCGGGCCAGATTCCCTGATTTAGATGCTAAAGGCCGTG
 				<hit pos="1444" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_002947.4" comment="Pseudomonas putida KT2440 chromosome, oric at 450 +- 1000" length="1999">
+		<sequence db="0" name="NC_002947.4" comment="Pseudomonas putida KT2440 chromosome, oric at 450 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="8.69e-03" evalue="1"/>
 			<seg start="1126">
 				<data>
@@ -940,7 +940,7 @@ ATGTTATCCACAAGGTCGCTGAGACCTTCCAGTGCGTAGTACTCACACTGCATGGGGATAATCACGCCATCGGAA
 				<hit pos="1879" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_013853.1" comment="Streptococcus mitis B6, oric at 2144260 +- 1000" length="2000">
+		<sequence db="0" name="NC_013853.1" comment="Streptococcus mitis B6, oric at 2144260 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="9.18e-03" evalue="1.1"/>
 			<seg start="301">
 				<data>
@@ -958,7 +958,7 @@ TATCCACAATCTGTGAAAAACTTTTGTGTTTAAGTTATAATTAAGCTAGTCAGTTTATACTTTCAGTAATTTCAA
 				<hit pos="1062" idx="0" rc="n" pvalue="8.9e-05" match="++++ + ++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_009009.1" comment="Streptococcus sanguinis SK36 chromosome, oric at 2387820 +- 1000" length="1999">
+		<sequence db="0" name="NC_009009.1" comment="Streptococcus sanguinis SK36 chromosome, oric at 2387820 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="9.32e-03" evalue="1.1"/>
 			<seg start="1051">
 				<data>
@@ -992,7 +992,7 @@ CTAACAATGTGAATTCTTTTCCAGTTCTTGTGGAAAACTTTGAACCTTTATGATAAAATAAGATGCGTATGAATC
 				<hit pos="1754" idx="0" rc="n" pvalue="9.7e-06" match="++++++ ++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_008596.1" comment="Mycobacterium smegmatis str. MC2 155 chromosome, oric at 6988460 +- 1000" length="1999">
+		<sequence db="0" name="NC_008596.1" comment="Mycobacterium smegmatis str. MC2 155 chromosome, oric at 6988460 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="1.09e-02" evalue="1.3"/>
 			<seg start="376">
 				<data>
@@ -1023,7 +1023,7 @@ CGAGGCCGCCAAGGCCGGCACGGACGGCAACCAGGTGCATCTGGCGCTGGGGTCCGGTGCGTCGGTCGGCAAGGA
 				<hit pos="1921" idx="2" rc="n" pvalue="1.3e-05" match="++++++ ++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_018658.1" comment="Escherichia coli O104:H4 str. 2011C-3493 chromosome, oric at -410 +- 1000" length="1999">
+		<sequence db="0" name="NC_018658.1" comment="Escherichia coli O104:H4 str. 2011C-3493 chromosome, oric at -410 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="1.24e-02" evalue="1.5"/>
 			<seg start="1201">
 				<data>
@@ -1044,7 +1044,7 @@ ATCTAACCAACTGGCGCGCGCGGCGGCTCGCCAGGTGGCGGATAACCCTGGCGGTGCCTATAACCCGTTGTTCCT
 				<hit pos="1888" idx="1" rc="y" pvalue="2.0e-05" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_002946.2" comment="Neisseria gonorrhoeae FA 1090 chromosome, oric at 1891450 +- 1000" length="2000">
+		<sequence db="0" name="NC_002946.2" comment="Neisseria gonorrhoeae FA 1090 chromosome, oric at 1891450 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="1.64e-02" evalue="1.9"/>
 			<seg start="1">
 				<data>
@@ -1092,7 +1092,7 @@ TTTGTTTGTCGGCGCGGGCGTATCCGGCGGCGAAGAAGGCGCGCGGCGCGGGCCGTCCATCATGCCGGGCGGGGA
 				<hit pos="1545" idx="1" rc="y" pvalue="3.0e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_003112.2" comment="Neisseria meningitidis MC58 chromosome, oric at 13690 +- 1000" length="2000">
+		<sequence db="0" name="NC_003112.2" comment="Neisseria meningitidis MC58 chromosome, oric at 13690 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="1.64e-02" evalue="1.9"/>
 			<seg start="451">
 				<data>
@@ -1121,7 +1121,7 @@ TTGTGTATAAGTAAACTTTCGGATGGGGATACGTAACGGAAACCTGTACCGCGTCATTCCCACGAACCTACATTC
 				<hit pos="1502" idx="0" rc="n" pvalue="1.6e-05" match="++++ ++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_007643.1" comment="Rhodospirillum rubrum ATCC 11170 chromosome, oric at 4158870 +- 1000" length="2000">
+		<sequence db="0" name="NC_007643.1" comment="Rhodospirillum rubrum ATCC 11170 chromosome, oric at 4158870 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="1.78e-02" evalue="2.1"/>
 			<seg start="226">
 				<data>
@@ -1174,7 +1174,7 @@ CTGTAGTTGATGACGTGGCTGCAGCCGTGGGCGCGGGCGAGGGCGGCCTTTTCGTCGCTGCCAACCGTGCCGATG
 				<hit pos="1830" idx="1" rc="y" pvalue="3.0e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_014121.1" comment="Enterobacter cloacae subsp. cloacae ATCC 13047 chromosome, oric at 5288300 +- 1000" length="2000">
+		<sequence db="0" name="NC_014121.1" comment="Enterobacter cloacae subsp. cloacae ATCC 13047 chromosome, oric at 5288300 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="1.86e-02" evalue="2.2"/>
 			<seg start="1">
 				<data>
@@ -1208,7 +1208,7 @@ ACAGGGCCTGCTGGCCGGTCTGAACGCCGCCCGTTTCTCTGCCGAGAAAGAGGGCTGGGCTCCGGCGCGTTCTCA
 				<hit pos="1254" idx="2" rc="n" pvalue="4.2e-05" match="++++++ ++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_000964.3" comment="Bacillus subtilis subsp. subtilis str. 168 oric at 4215680 +- 1000" length="1999">
+		<sequence db="0" name="NC_000964.3" comment="Bacillus subtilis subsp. subtilis str. 168 oric at 4215680 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="2.14e-02" evalue="2.5"/>
 			<seg start="601">
 				<data>
@@ -1240,7 +1240,7 @@ AAAGCTATTTATCTACTATATTATATGTTTTCAACATTTAATGTGTACGAATGGTAAGCGCCATTTGCTCTTTTT
 				<hit pos="1228" idx="0" rc="y" pvalue="6.2e-05" match="++ ++ +++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_007644.1" comment="Moorella thermoacetica ATCC 39073 chromosome, oric at 2710 +- 1000" length="2000">
+		<sequence db="0" name="NC_007644.1" comment="Moorella thermoacetica ATCC 39073 chromosome, oric at 2710 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="2.29e-02" evalue="2.7"/>
 			<seg start="76">
 				<data>
@@ -1274,7 +1274,7 @@ GCCATTGGTTACCTGGCCCTCGCCCGATCCTTCAGGCAGCAACAGGACCAGCAATTGTTGACCTGGGGAGCAAGC
 				<hit pos="1666" idx="1" rc="n" pvalue="1.3e-05" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_019382.1" comment="Bordetella bronchiseptica 253, oric at 3687420 +- 1000" length="2000">
+		<sequence db="0" name="NC_019382.1" comment="Bordetella bronchiseptica 253, oric at 3687420 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="2.31e-02" evalue="2.7"/>
 			<seg start="76">
 				<data>
@@ -1309,7 +1309,7 @@ TGGATATGTTGTGGTCGATGGATCGCAGCGCTCCGGAAAGCGAGCGGTCGTAGGCGATGTCGACCTGGTTGCGCA
 				<hit pos="1221" idx="2" rc="y" pvalue="9.5e-05" match="++++ ++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_002929.2" comment="Bordetella pertussis Tohama I chromosome, oric at 69990 +- 1000" length="2000">
+		<sequence db="0" name="NC_002929.2" comment="Bordetella pertussis Tohama I chromosome, oric at 69990 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="2.34e-02" evalue="2.8"/>
 			<seg start="151">
 				<data>
@@ -1352,7 +1352,7 @@ CGGGACGTTGGGCCGCGTGCCGGCGCCGTTCCTGCTGCGATCGGACAACG
 				<hit pos="1984" idx="2" rc="n" pvalue="9.5e-05" match="++++ ++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_006350.1" comment="Burkholderia pseudomallei K96243 chromosome 1, oric at 4074470 +- 1000" length="1999">
+		<sequence db="0" name="NC_006350.1" comment="Burkholderia pseudomallei K96243 chromosome 1, oric at 4074470 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="2.83e-02" evalue="3.3"/>
 			<seg start="226">
 				<data>
@@ -1387,7 +1387,7 @@ TTGCTGGAATGCGTGCGTGCCGCCGCCGCAAAGGCCGACGTTGAGCTGGTCGGCCGCGCTCACGAGCGTGTCGCG
 				<hit pos="1894" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_010175.1" comment="Chloroflexus aurantiacus J-10-fl chromosome, oric at 1967130 +- 1000" length="2000">
+		<sequence db="0" name="NC_010175.1" comment="Chloroflexus aurantiacus J-10-fl chromosome, oric at 1967130 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="2.96e-02" evalue="3.5"/>
 			<seg start="376">
 				<data>
@@ -1423,7 +1423,7 @@ CTGAATGGCCATCGCGATGGCATCGGCTTCAAACTGGCCGATCCAGATGGGCAGGTAGCGATTCCCTTCGGTTTC
 				<hit pos="1432" idx="1" rc="y" pvalue="9.9e-05" match="+++++ +++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_007606.1" comment="Shigella dysenteriae Sd197 chromosome, oric at 4309300 +- 1000" length="2000">
+		<sequence db="0" name="NC_007606.1" comment="Shigella dysenteriae Sd197 chromosome, oric at 4309300 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="3.20e-02" evalue="3.8"/>
 			<seg start="151">
 				<data>
@@ -1445,7 +1445,7 @@ TATCAACAGGTGACGGATCGCCATGACAAACTTCACGACCAGTACGCCGCATGACGCATTATTTAAATCCTTTCT
 				<hit pos="1800" idx="0" rc="y" pvalue="2.2e-05" match="+++++ +++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_002937.3" comment="Desulfovibrio vulgaris str. Hildenborough chromosome, oric at 3533710 +- 1000" length="2000">
+		<sequence db="0" name="NC_002937.3" comment="Desulfovibrio vulgaris str. Hildenborough chromosome, oric at 3533710 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="3.25e-02" evalue="3.8"/>
 			<seg start="676">
 				<data>
@@ -1467,7 +1467,7 @@ TTCCCACCCCGTCCGCAACAGCAGTCCCATACGGGACCCGGCCATACCTCGGGTTCAAGTGCCGCAAGGGCCGAC
 				<hit pos="934" idx="1" rc="y" pvalue="6.2e-05" match="++ ++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_004347.2" comment="Shewanella oneidensis MR-1 chromosome, oric at 80 +- 1000" length="1999">
+		<sequence db="0" name="NC_004347.2" comment="Shewanella oneidensis MR-1 chromosome, oric at 80 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="3.25e-02" evalue="3.8"/>
 			<seg start="376">
 				<data>
@@ -1508,7 +1508,7 @@ CCAACCACGCTAAAGCAGGGTCTTCTGGCACAGGATCTTGTTGTACATCGATCTGGATCTTATCCACAACGGCTT
 				<hit pos="1335" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_004337.2" comment="Shigella flexneri 2a str. 301 chromosome, oric at 3821370 +- 1000" length="2000">
+		<sequence db="0" name="NC_004337.2" comment="Shigella flexneri 2a str. 301 chromosome, oric at 3821370 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="4.23e-02" evalue="5"/>
 			<seg start="376">
 				<data>
@@ -1524,7 +1524,7 @@ GGCGGAAAATATTTTCACCCATGAGCAGTTGCTGCGCTATTTCCCTTATTACCTGCTGGTTAACTCCACTTTTGC
 				<hit pos="1870" idx="1" rc="y" pvalue="1.3e-05" match="+++++ +++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_002945.4" comment="Mycobacterium bovis AF2122/97 genome assembly, chromosome: Mycobacterium_bovis_AF2122/97oric at 4349590 +- 1000" length="1999">
+		<sequence db="0" name="NC_002945.4" comment="Mycobacterium bovis AF2122/97 genome assembly, chromosome: Mycobacterium_bovis_AF2122/97oric at 4349590 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="4.39e-02" evalue="5.2"/>
 			<seg start="226">
 				<data>
@@ -1570,7 +1570,7 @@ CCGCCGCCTTGGCGATCGCAGAAGCACCCGCCCGCGCTTACAACCCCCTGTTCATCTGGGGCGAGTCCGGTCTCG
 				<hit pos="1875" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_000962.3" comment="Mycobacterium tuberculosis H37Rv, oric at 4411220 +- 1000" length="1999">
+		<sequence db="0" name="NC_000962.3" comment="Mycobacterium tuberculosis H37Rv, oric at 4411220 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="4.39e-02" evalue="5.2"/>
 			<seg start="226">
 				<data>
@@ -1616,7 +1616,7 @@ GCCGCCTTGGCGATCGCAGAAGCACCCGCCCGCGCTTACAACCCCCTGTTCATCTGGGGCGAGTCCGGTCTCGGC
 				<hit pos="1873" idx="1" rc="n" pvalue="6.2e-05" match="++++ ++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_005125.1" comment="Gloeobacter violaceus PCC 7421 chromosome, oric at 1729700 +- 1000" length="2000">
+		<sequence db="0" name="NC_005125.1" comment="Gloeobacter violaceus PCC 7421 chromosome, oric at 1729700 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="4.52e-02" evalue="5.3"/>
 			<seg start="601">
 				<data>
@@ -1656,7 +1656,7 @@ GCGACGAATCGCCGAAGCCCGCCAGCCACACCTCCGGCGCCGGCTCGGCC
 				<hit pos="1986" idx="1" rc="y" pvalue="6.0e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_003902.1" comment="Xanthomonas campestris pv. campestris str. ATCC 33913 chromosome, oric at 260970 +- 1000" length="2000">
+		<sequence db="0" name="NC_003902.1" comment="Xanthomonas campestris pv. campestris str. ATCC 33913 chromosome, oric at 260970 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="4.93e-02" evalue="5.8"/>
 			<seg start="226">
 				<data>
@@ -1692,7 +1692,7 @@ TCCGGGCGCTTCCTGCATGAAGTGGCGCGCGACATCCTTGGCCCCAGCGTGCCGCTGGCCGTGGTGACCGGGCCC
 				<hit pos="1119" idx="2" rc="n" pvalue="4.2e-05" match="++ ++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_000922.1" comment="Chlamydophila pneumoniae CWL029 chromosome, oric at 841450 +- 1000" length="2000">
+		<sequence db="0" name="NC_000922.1" comment="Chlamydophila pneumoniae CWL029 chromosome, oric at 841450 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="6.02e-02" evalue="7.1"/>
 			<seg start="1051">
 				<data>
@@ -1719,7 +1719,7 @@ AAAGTTTTAGAGGATGCTCGAATTGGCGGATCCCCGCTAGAAAAGTCCACAAGATACGTCTATTTCGATCAAAAG
 				<hit pos="1904" idx="2" rc="y" pvalue="8.2e-06" match="++++++ ++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_013522.1" comment="Thermanaerovibrio acidaminovorans DSM 6589 chromosome, oric at 1791460 +- 1000" length="2000">
+		<sequence db="0" name="NC_013522.1" comment="Thermanaerovibrio acidaminovorans DSM 6589 chromosome, oric at 1791460 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="6.03e-02" evalue="7.1"/>
 			<seg start="451">
 				<data>
@@ -1759,7 +1759,7 @@ TCCCCTGGCGTCATTGGTGACCCCGAACCTGCCCGAGGCGGAGCGGCTGCTGGGCCTTCCGCCGGGATCCATAGC
 				<hit pos="1861" idx="2" rc="n" pvalue="4.2e-05" match="++ ++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_008526.1" comment="Lactobacillus paracasei ATCC 334 chromosome, oric at 2894940 +- 1000" length="1999">
+		<sequence db="0" name="NC_008526.1" comment="Lactobacillus paracasei ATCC 334 chromosome, oric at 2894940 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="6.13e-02" evalue="7.2"/>
 			<seg start="751">
 				<data>
@@ -1792,7 +1792,7 @@ AAACCCATTTAAATCCGAAATATACGTTTGACCACTTCGTGATTGGTAAGGGAAACCAAATGGCCCACGCGGCTG
 				<hit pos="1787" idx="1" rc="y" pvalue="4.1e-05" match="+++++ +++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_001263.1" comment="Deinococcus radiodurans R1 chromosome 1, oric at 2493940 +- 1000" length="2000">
+		<sequence db="0" name="NC_001263.1" comment="Deinococcus radiodurans R1 chromosome 1, oric at 2493940 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="6.30e-02" evalue="7.4"/>
 			<seg start="76">
 				<data>
@@ -1836,7 +1836,7 @@ CGCGGCGCGGCTGCGGCCAGAGCTCCCGATGGTCGGCATCACCGGCACGGCGGGCAAGGGCAGCACCACCGTTTT
 				<hit pos="1720" idx="1" rc="y" pvalue="5.6e-05" match="+++++ +++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_014638.1" comment="Bifidobacterium bifidum PRL2010 chromosome, oric at 2214490 +- 1000" length="1999">
+		<sequence db="0" name="NC_014638.1" comment="Bifidobacterium bifidum PRL2010 chromosome, oric at 2214490 +- 2000" length="1999">
 			<score strand="both" combined_pvalue="6.82e-02" evalue="8.1"/>
 			<seg start="976">
 				<data>
@@ -1859,7 +1859,7 @@ CGAGGGAACCGGGCAGGAATTCAACCCGTTGTGTATCTACGGCGGATCGGGACTGGGCAAGACCCACCTGCTCAA
 				<hit pos="1793" idx="1" rc="n" pvalue="6.8e-05" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_002939.5" comment="Geobacter sulfurreducens PCA chromosome, oric at 8840 +- 1000" length="2000">
+		<sequence db="0" name="NC_002939.5" comment="Geobacter sulfurreducens PCA chromosome, oric at 8840 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="7.28e-02" evalue="8.6"/>
 			<seg start="151">
 				<data>
@@ -1900,7 +1900,7 @@ CCGGGCCCCGGCTGAGCGGAGTCTGCGTCGGCTTGCTTTTCTGGGGTTCACGCCGGCGGGTGAAACTCCTGCTCC
 				<hit pos="1879" idx="1" rc="y" pvalue="4.5e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_013172.1" comment="Brachybacterium faecium DSM 4810 chromosome, oric at 1750390 +- 1000" length="2000">
+		<sequence db="0" name="NC_013172.1" comment="Brachybacterium faecium DSM 4810 chromosome, oric at 1750390 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="7.31e-02" evalue="8.6"/>
 			<seg start="226">
 				<data>
@@ -1960,7 +1960,7 @@ GCTGTTCGAGCAGATCCGCCGCCAGCGGCCGCGGCAGCGGTTCCACGGTC
 				<hit pos="1977" idx="1" rc="y" pvalue="5.6e-05" match="++++ ++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_002696.2" comment="Caulobacter crescentus CB15 chromosome, oric at 4011490 +- 1000" length="2000">
+		<sequence db="0" name="NC_002696.2" comment="Caulobacter crescentus CB15 chromosome, oric at 4011490 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="7.45e-02" evalue="8.8"/>
 			<seg start="1">
 				<data>
@@ -2030,7 +2030,7 @@ CCCCCTCGCCGAGGCCCGCGCGGCGCACGAGGCCCTGGAAGGCCGTCGCACCACCGGCGCCACCCTGCTCCTTCC
 				<hit pos="1813" idx="1" rc="y" pvalue="1.7e-05" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_011916.1" comment="Caulobacter crescentus NA1000, oric at 4037480 +- 1000" length="2000">
+		<sequence db="0" name="NC_011916.1" comment="Caulobacter crescentus NA1000, oric at 4037480 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="7.45e-02" evalue="8.8"/>
 			<seg start="1">
 				<data>
@@ -2099,7 +2099,7 @@ CCGAGGCCCGCGCGGCGCACGAGGCCCTGGAAGGCCGTCGCACCACCGGCGCCACCCTGCTCCTTCCGTAGGGCC
 				<hit pos="1805" idx="1" rc="y" pvalue="1.7e-05" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_002677.1" comment="Mycobacterium leprae TN chromosome, oric at 1950 +- 1000" length="2000">
+		<sequence db="0" name="NC_002677.1" comment="Mycobacterium leprae TN chromosome, oric at 1950 +- 2000" length="2000">
 			<score strand="both" combined_pvalue="8.26e-02" evalue="9.7"/>
 			<seg start="301">
 				<data>
@@ -2139,5 +2139,5 @@ GCGCCATGGACCTGGCCAAAACCAATGTTGGTTGCAGCGATTTAAAATTTTGTTTAGCACGTGAGTCGTTCGCCA
 			</seg>
 		</sequence>
 	</sequences>
-	<runtime host="PC0028" when="Fri Jan  3 19:47:41 2020" cycles="93750" seconds="0.094"/>
+	<runtime host="PC0028" when="Sat Jan  4 17:03:35 2020" cycles="125000" seconds="0.125"/>
 </mast>

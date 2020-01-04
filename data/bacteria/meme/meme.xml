@@ -320,7 +320,7 @@
 </letter_frequencies>
 </training_set>
 <model>
-<command_line>meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 </command_line>
+<command_line>meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta -dna -oc data/bacteria/meme -nostatus -time 30000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 </command_line>
 <host>PC0028</host>
 <type>anr</type>
 <nmotifs>3</nmotifs>
@@ -364,7 +364,7 @@
 </background_frequencies>
 </model>
 <motifs>
-<motif id="motif_1" name="TGTGGATAA" alt="MEME-1" width="9" sites="288" ic="15.0" re="14.7" llr="2929" p_value="3.6e-563" e_value="1.2e-086" bayes_threshold="11.0762" elapsed_time="128.156250">
+<motif id="motif_1" name="TGTGGATAA" alt="MEME-1" width="9" sites="288" ic="15.0" re="14.7" llr="2929" p_value="3.6e-563" e_value="1.2e-086" bayes_threshold="11.0762" elapsed_time="125.250000">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
@@ -4807,7 +4807,7 @@ TGTGGATAA
 </contributing_site>
 </contributing_sites>
 </motif>
-<motif id="motif_2" name="GCCBKSGCC" alt="MEME-2" width="9" sites="308" ic="11.5" re="12.3" llr="2615" p_value="3.6e-637" e_value="2.6e-020" bayes_threshold="11.3956" elapsed_time="222.312500">
+<motif id="motif_2" name="GCCBKSGCC" alt="MEME-2" width="9" sites="308" ic="11.5" re="12.3" llr="2615" p_value="3.6e-637" e_value="2.6e-020" bayes_threshold="11.3956" elapsed_time="243.390625">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
@@ -9550,7 +9550,7 @@ GC[CG][CGT][GT][GC]GCC
 </contributing_site>
 </contributing_sites>
 </motif>
-<motif id="motif_3" name="GCTGGGATC" alt="MEME-3" width="9" sites="31" ic="16.2" re="16.5" llr="354" p_value="4.3e-089" e_value="2.4e+003" bayes_threshold="13.5943" elapsed_time="313.281250">
+<motif id="motif_3" name="GCTGGGATC" alt="MEME-3" width="9" sites="31" ic="16.2" re="16.5" llr="354" p_value="4.3e-089" e_value="2.4e+003" bayes_threshold="13.5943" elapsed_time="362.859375">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
