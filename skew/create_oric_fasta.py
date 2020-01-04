@@ -73,7 +73,7 @@ def main():
 
         skew = seq.GC_skew(subsequence.seq, window=args.zoomwindow)
         skew = accumlate_skew(skew)
-        idx_base_min = sub_seq_start + argmin(skew).tolist() * args.zoomwindow
+        idx_base_min = sub_seq_start + int(argmin(skew).tolist()) * args.zoomwindow
         oric_sequence = get_min_sequence(fasta, idx_base_min, oric_window)[0]
 
         oric_sequence.description = oric_sequence.description.replace('complete genome', '')

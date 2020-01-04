@@ -1,0 +1,272 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.1.0 (Release date: Fri Oct 11 15:53:28 2019 -0700)
+
+	For further information on how to interpret these results please access http://meme-suite.org/.
+	To get a copy of the MAST software please access http://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE skew_regions.fasta (nucleotide)
+	Last updated on Sat Jan  4 23:21:02 2020
+	Database contains 3 sequences, 5998 residues
+
+	Scores for positive and reverse complement strands are combined.
+
+	MOTIFS meme.xml (nucleotide)
+	MOTIF ID        ALT ID WIDTH BEST POSSIBLE MATCH
+	----- --------- ------ ----- -------------------
+	    1 TTATCCACA MEME-1     9 TTATCCACA
+	    2 SSCGCSCCG MEME-2     9 CCCGCCCCG
+	    3 GMTTGMGGA MEME-3     9 GCTTGCGGA
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2
+	----- ----- -----
+	   2   0.17
+	   3   0.15  0.26
+	No overly similar pairs (correlation > 0.60) found.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.274 C 0.225 G 0.225 T 0.274 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 3 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+NC_004603.1                        Vibrio parahaemolyticus RI...    0.039   2000
+NC_006840.2                        Vibrio fischeri ES114 chro...    0.055   1999
+NC_002505.1                        Vibrio cholerae O1 biovar ...    0.061   1999
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [sn]  occurrence of motif `n' with p-value less than 0.0001.
+		    A minus sign indicates that the occurrence is on the
+		    reverse complement strand.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+NC_004603.1                           0.039  115-[-2]-69-[+2]-353-[+3]-34-[+1]-1393
+NC_006840.2                           0.055  396-[-1]-912-[-1]-76-[+3]-12-[+1]-65-[+1]-68-[+1]-416
+NC_002505.1                           0.061  600-[-2]-436-[-1]-278-[-1]-97-[+1]-26-[-1]-30-[+1]-49-[+1]-420
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence (a minus sign indicates that
+	  the occurrence is on the reverse complement strand),
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif (or its reverse complement), and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+NC_004603.1
+  Vibrio parahaemolyticus RIMD 2210633 chromosome 1, 1990 bases around gc 
+  minimum
+  LENGTH = 2000  COMBINED P-VALUE = 1.31e-02  E-VALUE =    0.039
+  DIAGRAM: 115-[-2]-69-[+2]-353-[+3]-34-[+1]-1393
+
+                                             [-2]
+                                             1.2e-05
+                                             CGGGGCGGG
+                                             +++++++++
+76   CAGATGTTGGGCTGCACGTTCTAGTGCGTCCAAGTGACGACGGCGCGCCATAAAGCCACCCTCAGTATTACCTGA
+
+                                                [+2]
+                                                1.2e-05
+                                                CCCGCCCCG
+                                                +++++++++
+151  GAAACCCATGCACTCTTTTAGGTGGTTACGCAGCGCATCGACACCCGCCCCGGTTTTTGCTGAAAGGCGAATCAG
+
+                                   [+3]                                       [+
+                                   9.2e-06                                    5.
+                                   GCTTGCGGA                                  TT
+                                   +++++++++                                  ++
+526  GTCACGCGTGGTACCTGCTATGTCTGTTACGATTGCGGACTCTTTGCCCGACAGCGCGTTCAGTAGGCTTGATTT
+
+     1]
+     2e-05
+     ATCCACA
+     ++++ ++
+601  ACCCGCATTTGGACGACCAGCAATCACTACTTTCATTCCTTCGCGCATGATCGCGCCTTGGTTCGCTTCTTTGCG
+
+
+NC_006840.2
+  Vibrio fischeri ES114 chromosome I, 2897290 bases around gc minimum
+  LENGTH = 1999  COMBINED P-VALUE = 1.83e-02  E-VALUE =    0.055
+  DIAGRAM: 396-[-1]-912-[-1]-76-[+3]-12-[+1]-65-[+1]-68-[+1]-416
+
+                          [-1]
+                          3.8e-05
+                          TGTGGATAA
+                          + +++++++
+376  CATCATGTGTTTTTTCATTAGTATGGGTAATAAAGCAATTTACTTGCTGTGGATGGTGCTCACGTTTACCTAAAA
+
+                                               [-1]
+                                               4.9e-06
+                                               TGTGGATAA
+                                               +++++++++
+1276 AAGAGATCTTTTATTAGATCTATTATATAGATCGTCGATCTCTGTGGATAAGTGATAAATGATCAATAGGATCAT
+
+                                                         [+3]                 [+
+                                                         9.2e-06              4.
+                                                         GCTTGCGGA            TT
+                                                         +++++++++            ++
+1351 ATACTTTAGATGGATCCAAAGTTGTTATCTTTCTTTGATCTTCGATCGGACAGCTTGAGGACAAAAGAGTTAGTT
+
+     1]                                                                      [+1
+     9e-06                                                                   4.9
+     ATCCACA                                                                 TTA
+     +++++++                                                                 +++
+1426 ATCCACAAGGGGGGAGGGCGTTAGATCTTATTCAATGGATAACTATAACTTGATCACTGGATCTTTCTATAGTTA
+
+     ]                                                                         [
+     e-06                                                                      2
+     TCCACA                                                                    T
+     ++++++                                                                    +
+1501 TCCACATAGTAGGTATCATCTATTTAATAACTTTTATAGATCGGACAACACTTTTTATTAACAAATGTGTTGTTT
+
+     +1]
+     .5e-05
+     TATCCACA
+     ++ +++++
+1576 TAGCCACAATTCTGCTGGTTCTTCAGGGATACTATTTTGAGTTACATCTATCTCTAATAGAGGGTACTTTTCGAT
+
+
+NC_002505.1
+  Vibrio cholerae O1 biovar El Tor str. N16961 chromosome I, -260 bases around 
+  gc minimum
+  LENGTH = 1999  COMBINED P-VALUE = 2.03e-02  E-VALUE =    0.061
+  DIAGRAM: 600-[-2]-436-[-1]-278-[-1]-97-[+1]-26-[-1]-30-[+1]-49-[+1]-420
+
+     [-2]
+     5.5e-05
+     CGGGGCGGG
+     +++ +++++
+601  CGGTGCGCCAAAGCGATCGATGGTGGATCCCCAGCACGACCCCCAGCATAGTTTTCAAGGCCGATATGGATCTTA
+
+                                                                           [-1]
+                                                                           8.9e-
+                                                                           TGTGG
+                                                                           +++++
+976  TTGACTAAATGACCTTTACCGATCCCACCAATGGCAGGGTTACAGGACATTTGGCCTAGGGTGTCAATATTGTGG
+
+     
+     06
+     ATAA
+     ++++
+1051 GTAAGAAGTAACGTACGCTGTCCTGTACGTGCTGCAGCGAGAGCGGCTTCCGTTCCTGCGTGACCGCCACCAACC
+
+                                                              [-1]
+                                                              4.9e-06
+                                                              TGTGGATAA
+                                                              +++++++++
+1276 TATAAAGATCTATATAGAGATCTTTTTATTAGATCTACTATTAAGGAGCAGGATCTTTGTGGATAAGTGAAAAAT
+
+                  [+1]                               [-1]
+                  1.5e-05                            2.1e-05
+                  TTATCCACA                          TGTGGATAA
+                  ++++ ++++                          + +++++++
+1426 TCAAAAACCTATGTTATACACAGCCACCTTGGGATCTAAAACTTGTTATATGGATAACTATAGGAAGATCACCGG
+
+                 [+1]                                                      [+1]
+                 4.9e-06                                                   4.9e-
+                 TTATCCACA                                                 TTATC
+                 +++++++++                                                 +++++
+1501 ATAATCGTATAGTTATCCACATGAGATTTGATTGAAAAAGCATCAATCAATTTTTTCACTACCGTTAAATTTATC
+
+     
+     06
+     CACA
+     ++++
+1576 CACAATCCAAAAAAAAGAGCGGCATTAAGCCGCTCTGCATGGAATAGGTCATTATTTAGAAGCGATTGATGACGC
+
+********************************************************************************
+
+
+CPU: PC0028
+Time 0.000 secs.
+
+mast -oc data/families/vibrionaceae/meme -nostatus data/families/vibrionaceae/meme/meme.xml data/families/vibrionaceae/skew_regions.fasta

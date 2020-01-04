@@ -1,0 +1,13 @@
+HistoryId: NCID_1_65105691_130.14.18.97_5555_1578172500_2333427778_0MetA0_S_HStore
+QueryKey: 8
+ReleaseType: RefSeq
+FileType: GENOME_FASTA
+Flat: true
+
+Query title: Search "Enterobacteriaceae"[Organism] AND "complete genome"[filter] AND "reference genome"[filter] AND latest[filter] AND  ( all[filter] NOT "derived from surveillance project"[filter] AND all[filter] NOT anomalous[filter] )   Sort by: SORTORDER
+Search results count: 12
+Entries to download: 12
+
+GENOME_FASTA files in archive: 12
+Total size (bytes): 18328495
+Total time: 10.3 seconds

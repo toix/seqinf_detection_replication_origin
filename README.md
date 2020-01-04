@@ -19,6 +19,9 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * [Tobias] create a fasta file with all OriC regions 👍 skript: skew/create_oric_fasta.py; results all bacteria reference sequences: data/bacteria/skew_regions.fasta
 * [Tobias] execute local version of meme 👍 results for all bacteria reference sequences: data/bacteria/meme/mast.html
 * [Tobias] test meme on species specific sequences (skew/Thermotoga) 👍 motif is shifted (data/ecoli/meme/meme.html) or no motif was found (data/thermotoga/meme/meme.html)
+* [Tobias] disable the meme sites limit for DoriC
+* [Tobias] compute motif for families 👍 worked for Escherichia coli, Vibrio cholerae and Salmonella enterica: data/families; there are no more sequences for Thermotogaceae family
+* [Tobias] profile alignment
 * [Kilian] task 3 of the project sheet asks to compute the motifs of the 4 species, since using meme only one species does not give clear results 
    I tried using BLAST on the cropped OriC regions with the common DNAa box of all bacteria as query, see the results in data/. The motif does not occur in thermotoga, but there is a very similar conserved motif.
    TTATCCACA is conserved in the three other species 
@@ -27,8 +30,9 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 ## download fasta files of genomes
 + URL: https://www.ncbi.nlm.nih.gov/assembly
 + example search query for ecoli: "Escherichia coli"[Organism] AND (bacteria[filter] AND "latest refseq"[filter] AND "complete genome"[filter] AND (all[filter] NOT "derived from surveillance project"[filter] AND all[filter] NOT anomalous[filter] AND all[filter] NOT partial[filter]))
-+ query for all bacteria reference sequences: bacteria[filter] AND "complete genome"[filter] AND "reference genome"[filter]
-+ For Organisms replace "bacteria"[Organism] with: "Escherichia coli"[Organism], "Vibrio cholerae"[Organism], "Thermotoga petrophila"[Organism], "Salmonella enterica"[Organism]
++ query for all bacteria reference sequences: "Bacteria"[Organism] AND "complete genome"[filter] AND "reference genome"[filter]
++ For Organisms replace "Bacteria"[Organism] with: "Escherichia coli"[Organism], "Vibrio cholerae"[Organism], "Thermotoga petrophila"[Organism], "Salmonella enterica"[Organism]
++ For Families replace "Bacteria"[Organism] with: "Enterobacteriaceae"[Organism], "Vibrionaceae"[Organism], "Thermotogaceae"[Organism]
 + keep the report.txt file for other downloads
 
 ## OriEval (evaluate skew)
