@@ -20,7 +20,7 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * [Tobias] execute local version of meme 👍 results for all bacteria reference sequences: data/bacteria/meme/mast.html
 * [Tobias] test meme on species specific sequences (skew/Thermotoga) 👍 motif is shifted (data/ecoli/meme/meme.html) or no motif was found (data/thermotoga/meme/meme.html)
 * [Tobias] disable the meme sites limit for DoriC
-* [Tobias] compute motif for families 👍 worked for Escherichia coli, Vibrio cholerae and Salmonella enterica: data/families; there are no more sequences for Thermotogaceae family
+* [Tobias] compute motif for families 👍 worked for Escherichia coli and Salmonella enterica: data/families/enterobacteriaceae/meme/meme.html; found the motif with low significance for Vibrio cholerae: data/families/vibrionaceae/meme/meme.html; there are no more sequences for Thermotogaceae family
 * [Tobias] profile alignment
 * [Kilian] task 3 of the project sheet asks to compute the motifs of the 4 species, since using meme only one species does not give clear results 
    I tried using BLAST on the cropped OriC regions with the common DNAa box of all bacteria as query, see the results in data/. The motif does not occur in thermotoga, but there is a very similar conserved motif.
