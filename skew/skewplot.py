@@ -2,15 +2,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 from skew.findmotif import *
 from skew.zoomeffect import zoom_effect
+from dnaa.alignment import align_motif_to_sequence
+
 
 def calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta):
-    half_regionsize = int(regionsize / 2)
     oriC_mid = np.argmin(np.array(skew_acc)) * windowsize + int(windowsize / 2)
     search_region = min_region(fasta.seq, oriC_mid, regionsize)
-    scores = motif_distances(search_region, dnaa)
-    motif_count = count_motif(scores)
-    x = range(oriC_mid-half_regionsize, oriC_mid+half_regionsize)
-    return x, scores, motif_count
+    scores = align_motif_to_sequence(search_region, dnaa)
+    half_align_size = int(len(scores) / 2)
+    x = range(oriC_mid-half_align_size, oriC_mid+half_align_size)
+    return x, scores, 0
+
 
 def accumlate_skew(skew):
     y = 0
@@ -84,7 +86,7 @@ def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors=None, save
         ax.set_xlim(1, (len(skew_acc)+1)*windowsize)
     plt.suptitle('GC skew')
     print('Position of minimum (OriC): ' + str(skew_acc.index(min(skew_acc))*windowsize)) #added *windowsize for correct position
-    print('Motif count (allows 1 mismatch): ' + str(motif_count))
+    # print('Motif count (allows 1 mismatch): ' + str(motif_count))
 
     plt.subplots_adjust(wspace=0, hspace=0.4, left=0.1, right=0.9)
 

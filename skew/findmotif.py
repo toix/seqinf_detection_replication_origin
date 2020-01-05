@@ -29,7 +29,7 @@ def motif_distances(seq, motif):
         if i+len(motif)-1 < len(seq):
             distances.append(hamming_dist(motif, seq[i:i+len(motif)]))
         else:
-            distances.append(hamming_dist(motif, seq[i:]+seq[:(i+len(motif))%len(seq)]))
+            distances.append(hamming_dist(motif, seq[i:]+seq[:(i+len(motif)) % len(seq)]))
     return distances
 
 #Counts motifs in zoom region, allows one mismatch in the motif
