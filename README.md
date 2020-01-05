@@ -25,7 +25,9 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * [Kilian] task 3 of the project sheet asks to compute the motifs of the 4 species, since using meme only one species does not give clear results 
    I tried using BLAST on the cropped OriC regions with the common DNAa box of all bacteria as query, see the results in data/. The motif does not occur in thermotoga, but there is a very similar conserved motif.
    TTATCCACA is conserved in the three other species 
-* tasks from project sheet
+* Compute the DnaA motifs for further genomes of your choice. 👍
+* [Lena?] Biologists long believed that each bacterial chromosome has only one oriC. Find a paper in which this has been shown not to be true.
+* [Kilian] 6. For the bacterium Wigglesworthia glossinidia how many minima do you detect in the skew diagram? Do you find DnaA boxes in the vicinity of both? What do you conclude?
 
 ## download fasta files of genomes
 + URL: https://www.ncbi.nlm.nih.gov/assembly
