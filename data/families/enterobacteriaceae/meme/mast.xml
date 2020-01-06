@@ -21,613 +21,469 @@
 	</alphabet>
 	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
 	<motif_dbs>
-		<motif_db source="data/families/enterobacteriaceae/meme/meme.xml" last_mod_date="Sat Jan  4 23:21:40 2020">
-			<background A="0.239" C="0.261" G="0.261" T="0.239"/>
+		<motif_db source="data/families/enterobacteriaceae/meme/meme.xml" last_mod_date="Mon Jan  6 00:52:12 2020">
+			<background A="0.236" C="0.264" G="0.264" T="0.236"/>
 		</motif_db>
 	</motif_dbs>
 	<motifs>
-		<motif db="0" id="TBTGGATAA" alt="MEME-1" length="9" nsites="57" evalue="1.1e-028">
-			<pos A="-1248" C="-1248" G="-1248" T="206"/>
-			<pos A="-1248" C="27" G="63" T="23"/>
-			<pos A="-1248" C="-31" G="-1248" T="172"/>
-			<pos A="-1248" C="-1248" G="183" T="-177"/>
-			<pos A="-1248" C="-231" G="166" T="-96"/>
-			<pos A="188" C="-1248" G="-109" T="-1248"/>
-			<pos A="-1248" C="-289" G="-1248" T="201"/>
-			<pos A="206" C="-1248" G="-1248" T="-1248"/>
-			<pos A="206" C="-1248" G="-1248" T="-1248"/>
+		<motif db="0" id="TTATCCAVA" alt="MEME-1" length="9" nsites="56" evalue="3.2e-031">
+			<pos A="-1245" C="-1245" G="-1245" T="208"/>
+			<pos A="-1245" C="-1245" G="-1245" T="208"/>
+			<pos A="192" C="-1245" G="-1245" T="-114"/>
+			<pos A="-1245" C="-108" G="-1245" T="189"/>
+			<pos A="-72" C="167" G="-1245" T="-372"/>
+			<pos A="-1245" C="192" G="-1245" T="-1245"/>
+			<pos A="167" C="-1245" G="-8" T="-1245"/>
+			<pos A="45" C="76" G="-19" T="-1245"/>
+			<pos A="208" C="-1245" G="-1245" T="-1245"/>
 		</motif>
-		<motif db="0" id="KATTAAAAA" alt="MEME-2" length="9" nsites="26" evalue="3.8e-002">
-			<pos A="-163" C="-118" G="4" T="117"/>
-			<pos A="206" C="-1134" G="-1134" T="-1134"/>
-			<pos A="-1134" C="-276" G="-1134" T="201"/>
-			<pos A="-1134" C="-1134" G="4" T="161"/>
-			<pos A="206" C="-1134" G="-1134" T="-1134"/>
-			<pos A="201" C="-276" G="-1134" T="-1134"/>
-			<pos A="206" C="-1134" G="-1134" T="-1134"/>
-			<pos A="206" C="-1134" G="-1134" T="-1134"/>
-			<pos A="161" C="-1134" G="-1134" T="17"/>
+		<motif db="0" id="TATTAAAAA" alt="MEME-2" length="9" nsites="10" evalue="3.6e+002">
+			<pos A="-997" C="-997" G="-140" T="193"/>
+			<pos A="208" C="-997" G="-997" T="-997"/>
+			<pos A="-997" C="-140" G="-997" T="193"/>
+			<pos A="-997" C="-997" G="-997" T="208"/>
+			<pos A="208" C="-997" G="-997" T="-997"/>
+			<pos A="208" C="-997" G="-997" T="-997"/>
+			<pos A="208" C="-997" G="-997" T="-997"/>
+			<pos A="208" C="-997" G="-997" T="-997"/>
+			<pos A="193" C="-997" G="-997" T="-124"/>
 		</motif>
-		<motif db="0" id="GTKTMGTAT" alt="MEME-3" length="9" nsites="18" evalue="8.3e+004">
-			<pos A="-1081" C="-1081" G="194" T="-1081"/>
-			<pos A="-1081" C="-1081" G="-1081" T="206"/>
-			<pos A="-110" C="-1081" G="58" T="106"/>
-			<pos A="-1081" C="-1081" G="9" T="159"/>
-			<pos A="89" C="109" G="-1081" T="-1081"/>
-			<pos A="-1081" C="-1081" G="194" T="-1081"/>
-			<pos A="-1081" C="-1081" G="-1081" T="206"/>
-			<pos A="206" C="-1081" G="-1081" T="-1081"/>
-			<pos A="-1081" C="-1081" G="-1081" T="206"/>
+		<motif db="0" id="GTTTAGTAT" alt="MEME-3" length="9" nsites="9" evalue="1.9e+001">
+			<pos A="-982" C="-982" G="192" T="-982"/>
+			<pos A="-982" C="-982" G="-982" T="208"/>
+			<pos A="-982" C="-982" G="-982" T="208"/>
+			<pos A="-982" C="-982" G="-982" T="208"/>
+			<pos A="208" C="-982" G="-982" T="-982"/>
+			<pos A="-982" C="-982" G="192" T="-982"/>
+			<pos A="-982" C="-982" G="-982" T="208"/>
+			<pos A="208" C="-982" G="-982" T="-982"/>
+			<pos A="-982" C="-982" G="-982" T="208"/>
 		</motif>
 	</motifs>
 	<correlations>
-		<correlation idx_a="0" idx_b="1" value="0.36"/>
-		<correlation idx_a="0" idx_b="2" value="0.38"/>
-		<correlation idx_a="1" idx_b="2" value="0.29"/>
+		<correlation idx_a="0" idx_b="1" value="0.46"/>
+		<correlation idx_a="0" idx_b="2" value="0.23"/>
+		<correlation idx_a="1" idx_b="2" value="0.39"/>
 	</correlations>
 	<sequence_dbs>
-		<sequence_db source="data/families/enterobacteriaceae/skew_regions.fasta" last_mod_date="Sat Jan  4 23:20:54 2020" seq_count="12" residue_count="23998"/>
+		<sequence_db source="data/families/enterobacteriaceae/skew_regions.fasta" last_mod_date="Mon Jan  6 00:51:40 2020" seq_count="12" residue_count="23998"/>
 	</sequence_dbs>
 	<sequences>
-		<sequence db="0" name="NC_016845.1" comment="Klebsiella pneumoniae subsp. pneumoniae HS11286 chromosome, -130 bases around gc minimum" length="1999">
-			<score strand="both" combined_pvalue="1.84e-03" evalue="0.022"/>
+		<sequence db="0" name="NC_000913.3" comment="Escherichia coli str. K-12 substr. MG1655, 2000 bases around gc minimum at 3925500" length="2000">
+			<score strand="both" combined_pvalue="1.13e-03" evalue="0.014"/>
 			<seg start="151">
 				<data>
-GAGCGGACGATTTGCATTTGCACATCAAAGGGCAGGCTGGTGGATATACCGTTCGGATAAATTTCGTTTGAGGTC
+ATAGAGCGGACGATTTGCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCATTAGAG
 				</data>
-				<hit pos="202" idx="0" rc="n" pvalue="2.8e-05" match="++ ++++++"/>
+				<hit pos="205" idx="0" rc="y" pvalue="2.4e-05" match="++ ++++++"/>
 			</seg>
-			<seg start="826">
+			<seg start="601">
 				<data>
-ACGCGGTCAGCCTGGGCGCGGGTGGCGCGCACTGCCGGTCCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCC
+GGATCACCAGCACGGCCACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTG
 				</data>
-				<hit pos="876" idx="2" rc="n" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1126">
-				<data>
-AACAGGTGGTCTGCCTCGCATAAAGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTCG
-				</data>
-				<hit pos="1154" idx="1" rc="n" pvalue="6.8e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1201">
-				<data>
-TCTTTCGAGAAAGACTCCGGGATCCTGAGTATTAAAAAGAAGATCTTTATATAGAGATCTGTTCTATTGTGATCT
-				</data>
-				<hit pos="1230" idx="1" rc="n" pvalue="8.8e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1276">
-				<data>
-CTTATTAGGATCGACTCTCTTTGTGGATAAGTCGGATCCGCGAAGTAAGATCAAAAGCTTAAGAAGGATCACTAT
-				</data>
-				<hit pos="1297" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1351">
-				<data>
-CTGTGAATGATCGGTGATCCTGGTCCGTATAAGCTGGGATCAGAATGAAGGGTTATGCACAGCTCAAAAACCATA
-				</data>
-				<hit pos="1403" idx="0" rc="y" pvalue="8.4e-05" match="++++ ++++"/>
-			</seg>
-			<seg start="1426">
-				<data>
-CTACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTTAAGCATGGTTATCCACAGAAGATCGGACGATC
-				</data>
-				<hit pos="1438" idx="0" rc="n" pvalue="1.6e-05" match="+++++++++"/>
-				<hit pos="1477" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1651">
-				<data>
-CGCCGCAAAAGGTGTCGTATTCGCGGCTGCCGATCCCTATAGCGCCAAAGCGCACGGCGGAAAGATCGGCCTGCT
-				</data>
-				<hit pos="1662" idx="2" rc="n" pvalue="1.5e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1951">
-				<data>
-TAGATCGCCGATCGCCCGCTCAACTGTTCAGAGTGGCGTATTGTACGCT
-				</data>
-				<hit pos="1983" idx="2" rc="n" pvalue="3.2e-05" match="+++++++++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_003197.2" comment="Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, 4084370 bases around gc minimum" length="2000">
-			<score strand="both" combined_pvalue="1.84e-03" evalue="0.022"/>
-			<seg start="151">
-				<data>
-CGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCA
-				</data>
-				<hit pos="176" idx="2" rc="n" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="526">
-				<data>
-GGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGGATCGCGCCAGGCTGT
-GGATAACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGT
-				</data>
-				<hit pos="529" idx="1" rc="n" pvalue="8.8e-06" match="+++++++++"/>
-				<hit pos="598" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="628" idx="0" rc="n" pvalue="1.6e-05" match="+++++++ +"/>
 			</seg>
 			<seg start="676">
 				<data>
-CCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACTA
+AGCACGACGGCTTTGGCACGGAACTTCAGTCCCATTTGGGTAACAGCACCGACCACGCGATCGTTTTCGACAATA
 				</data>
-				<hit pos="704" idx="0" rc="y" pvalue="3.4e-05" match="++++ ++++"/>
-				<hit pos="739" idx="0" rc="n" pvalue="1.6e-05" match="+++++++++"/>
+				<hit pos="710" idx="0" rc="y" pvalue="6.7e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="826">
+				<data>
+AGCACACGATCCGCCTGAGCTCGGGTAGCGCGAACCGCCGGTCCTTTGCTTGCGTTTAGTATCCTAAACTGGATA
+				</data>
+				<hit pos="879" idx="2" rc="n" pvalue="5.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+ATACGCGCCGCGGCCATCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGA
+TAAAACATGGTGATTGCCTCGCATAACGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTT
+				</data>
+				<hit pos="1120" idx="0" rc="y" pvalue="4.2e-05" match="+  ++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+TGTCGGCTTGAGAAAGACCTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTG
+				</data>
+				<hit pos="1232" idx="1" rc="n" pvalue="8.8e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+ATCTCTTATTAGGATCGCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCA
+				</data>
+				<hit pos="1301" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TTAACTGTGAATGATCGGTGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAAC
+				</data>
+				<hit pos="1407" idx="0" rc="n" pvalue="3.0e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+TGAACAACAGTTGTTCTTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCAC
+				</data>
+				<hit pos="1442" idx="0" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+				<hit pos="1481" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_003197.2" comment="Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, 2000 bases around gc minimum at 4083700" length="2000">
+			<score strand="both" combined_pvalue="1.13e-03" evalue="0.014"/>
+			<seg start="526">
+				<data>
+AGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCC
+AGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCC
+				</data>
+				<hit pos="595" idx="0" rc="n" pvalue="1.6e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="826">
+				<data>
+ACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCG
+				</data>
+				<hit pos="846" idx="2" rc="n" pvalue="5.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+TGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTA
+TTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGGATCGCGCCAGGCTGTGGATA
+ACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGTCCGTA
+				</data>
+				<hit pos="1199" idx="1" rc="n" pvalue="8.8e-06" match="+++++++++"/>
+				<hit pos="1268" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACTACCGGT
+				</data>
+				<hit pos="1374" idx="0" rc="n" pvalue="3.0e-05" match="++++ ++++"/>
+				<hit pos="1409" idx="0" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+TGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAGTAAATTAATCCAG
+				</data>
+				<hit pos="1448" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1951">
+				<data>
+ATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGAAAAATGTGGGATT
+				</data>
+				<hit pos="1982" idx="0" rc="y" pvalue="5.0e-05" match="++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_002695.2" comment="Escherichia coli O157:H7 str. Sakai DNA, 2000 bases around gc minimum at 4719100" length="2000">
+			<score strand="both" combined_pvalue="1.13e-03" evalue="0.014"/>
+			<seg start="151">
+				<data>
+ACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAAGTCAGCCCTTCCGGTTCAAGGAAGATCTGAT
+				</data>
+				<hit pos="174" idx="0" rc="y" pvalue="2.4e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+GCAGCGGAAGTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGCCACCGCTGTAGTTAT
+CCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACGGCTTTGGCACGGAACTTCAGTC
+				</data>
+				<hit pos="597" idx="0" rc="n" pvalue="1.6e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="676">
+				<data>
+CCATTTGGGTAACAGCACCGACCACACGATCGTTTTCGACAATAAGATCTTCAACCGCCTGCTGGAAGATCATCA
+				</data>
+				<hit pos="679" idx="0" rc="y" pvalue="6.7e-05" match="+++++ +++"/>
+			</seg>
+			<seg start="826">
+				<data>
+GAACTGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGCTTTCGCCATCAGAC
+				</data>
+				<hit pos="848" idx="2" rc="n" pvalue="5.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTGCCTCGCATAACGCGG
+				</data>
+				<hit pos="1089" idx="0" rc="y" pvalue="4.2e-05" match="+  ++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+TATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTTATCTCTTATTAGGATCGCACTGCCCTGTGGA
+TAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATCGGTGATCCTGGACCG
+				</data>
+				<hit pos="1201" idx="1" rc="n" pvalue="8.8e-06" match="+++++++++"/>
+				<hit pos="1270" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAACAACGGTTGTTCTTTGGATAACTACCG
+				</data>
+				<hit pos="1376" idx="0" rc="n" pvalue="3.0e-05" match="++++ ++++"/>
+				<hit pos="1411" idx="0" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+GTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATTTGAGTAAATTAATCC
+				</data>
+				<hit pos="1450" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1951">
+				<data>
+GTATTGTACGCTGTGAACGCGTTGGGATCTACCTGTGGAAAAGTATGGGA
+				</data>
+				<hit pos="1984" idx="0" rc="y" pvalue="5.0e-05" match="++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_011750.1" comment="Escherichia coli IAI39 chromosome, 2000 bases around gc minimum at 4528900" length="2000">
+			<score strand="both" combined_pvalue="1.13e-03" evalue="0.014"/>
+			<seg start="226">
+				<data>
+GCGGACGATTTGCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAGGTCAG
+				</data>
+				<hit pos="275" idx="0" rc="y" pvalue="2.4e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+ACCAGCACGGCCACCGCTGTAGTTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACAGTGAGCAC
+				</data>
+				<hit pos="698" idx="0" rc="n" pvalue="1.6e-05" match="+++++++ +"/>
 			</seg>
 			<seg start="751">
 				<data>
-CCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAGTAAATTAA
+GACAGCTTTGGCACGGAACTTCAGTCCCATTTGGGTAACGGCTCCGACCACGCGATCATTTTCGACAATAAGATC
 				</data>
-				<hit pos="778" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="780" idx="0" rc="y" pvalue="6.7e-05" match="+++++ +++"/>
 			</seg>
 			<seg start="901">
 				<data>
-CAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCTC
+ACGATCTGCCTGAGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGC
 				</data>
-				<hit pos="963" idx="2" rc="n" pvalue="1.5e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1276">
-				<data>
-GCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGAAAAATGTGGGATTAAAAAAGCCGATCATGGCTT
-				</data>
-				<hit pos="1327" idx="1" rc="n" pvalue="1.6e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1351">
-				<data>
-GATGGTGCGCATGATCGGGTTCTGCAAGACGATCAGTGTCTCAGTGGACTGAATTTCATCAATTGTTTGGATCTT
-GTTGATAAGTACGTGCTGAAGCGCGTCGATTGATTTGCACATCACTTTTATAAAGATGCTGTAGTGACCGGTGGT
-				</data>
-				<hit pos="1425" idx="0" rc="n" pvalue="6.6e-05" match="+++ +++++"/>
-			</seg>
-			<seg start="1801">
-				<data>
-CGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATCAAAACCGAAGTTAGCT
-				</data>
-				<hit pos="1810" idx="0" rc="y" pvalue="8.9e-05" match="++++ ++++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_002695.2" comment="Escherichia coli O157:H7 str. Sakai DNA, 4719160 bases around gc minimum" length="2000">
-			<score strand="both" combined_pvalue="1.84e-03" evalue="0.022"/>
-			<seg start="76">
-				<data>
-GCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAAGTCAGCCCTTCCGGTT
-				</data>
-				<hit pos="114" idx="0" rc="n" pvalue="2.8e-05" match="++ ++++++"/>
-			</seg>
-			<seg start="526">
-				<data>
-CACCGCTGTAGTTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACGGCTTTGG
-				</data>
-				<hit pos="537" idx="0" rc="y" pvalue="9.7e-06" match="+++++++++"/>
-			</seg>
-			<seg start="601">
-				<data>
-CACGGAACTTCAGTCCCATTTGGGTAACAGCACCGACCACACGATCGTTTTCGACAATAAGATCTTCAACCGCCT
-				</data>
-				<hit pos="619" idx="0" rc="n" pvalue="6.6e-05" match="+++++ +++"/>
-			</seg>
-			<seg start="751">
-				<data>
-GAGCTCGGGTAGCGCGAACTGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCG
-				</data>
-				<hit pos="788" idx="2" rc="n" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="976">
-				<data>
-TCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTG
-				</data>
-				<hit pos="1029" idx="0" rc="n" pvalue="2.4e-05" match="++ ++++++"/>
-			</seg>
-			<seg start="1051">
-				<data>
-CCTCGCATAACGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTGTCGGCTTGAGAAAG
-				</data>
-				<hit pos="1066" idx="1" rc="n" pvalue="6.8e-05" match="+++++++++"/>
+				<hit pos="949" idx="2" rc="n" pvalue="5.9e-06" match="+++++++++"/>
 			</seg>
 			<seg start="1126">
 				<data>
-ACCTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTTATCTCTTATTAGGATC
+CGCCGCGGCCATCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAA
 				</data>
-				<hit pos="1141" idx="1" rc="n" pvalue="8.8e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1201">
-				<data>
-GCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATC
-				</data>
-				<hit pos="1210" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1190" idx="0" rc="y" pvalue="4.2e-05" match="+  ++++++"/>
 			</seg>
 			<seg start="1276">
 				<data>
-GGTGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAACAACGGTTGTTC
+GCTTGAGAAAGACCTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTGATCTC
 				</data>
-				<hit pos="1316" idx="0" rc="y" pvalue="3.4e-05" match="++++ ++++"/>
+				<hit pos="1302" idx="1" rc="n" pvalue="8.8e-06" match="+++++++++"/>
 			</seg>
 			<seg start="1351">
 				<data>
-TTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATT
+TTATTAGGATCGCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAAC
 				</data>
-				<hit pos="1351" idx="0" rc="n" pvalue="1.6e-05" match="+++++++++"/>
-				<hit pos="1390" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1371" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
 			</seg>
-			<seg start="1876">
+			<seg start="1426">
 				<data>
-TTTATTAAGAGTGGCGTATTGTACGCTGTGAACGCGTTGGGATCTACCTGTGGAAAAGTATGGGATTAAAAAAGC
+TGTGAATGATCGGTGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAAC
 				</data>
-				<hit pos="1886" idx="2" rc="n" pvalue="3.2e-05" match="+++++++++"/>
-				<hit pos="1939" idx="1" rc="n" pvalue="1.6e-05" match="+++++++++"/>
+				<hit pos="1477" idx="0" rc="n" pvalue="3.0e-05" match="++++ ++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+AACCGTTGTTCTTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTGGATCGCACGATCT
+				</data>
+				<hit pos="1512" idx="0" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+				<hit pos="1551" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_017634.1" comment="Escherichia coli O83:H1 str. NRG 857C chromosome, 3946680 bases around gc minimum" length="2000">
-			<score strand="both" combined_pvalue="1.84e-03" evalue="0.022"/>
-			<seg start="76">
+		<sequence db="0" name="NC_017634.1" comment="Escherichia coli O83:H1 str. NRG 857C chromosome, 2000 bases around gc minimum at 3946600" length="2000">
+			<score strand="both" combined_pvalue="1.13e-03" evalue="0.014"/>
+			<seg start="151">
 				<data>
-ATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTTGAGGTCAGCCCTTCCGGTTCA
+TTTGCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTTGAGGTCAGCCCTTCCG
 				</data>
-				<hit pos="112" idx="0" rc="n" pvalue="2.8e-05" match="++ ++++++"/>
-			</seg>
-			<seg start="526">
-				<data>
-CCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTTTGGCA
-				</data>
-				<hit pos="535" idx="0" rc="y" pvalue="9.7e-06" match="+++++++++"/>
+				<hit pos="192" idx="0" rc="y" pvalue="2.4e-05" match="++ ++++++"/>
 			</seg>
 			<seg start="601">
 				<data>
-CGGAACTTCAGTCCCATTTGGGTAACGGCACCGACCACGCGATCGTTTTCGACAATAAGATCTTCAACCGCCTGC
+GGCCACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTT
 				</data>
-				<hit pos="617" idx="0" rc="n" pvalue="6.6e-05" match="+++++ +++"/>
-			</seg>
-			<seg start="751">
-				<data>
-GCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGCT
-				</data>
-				<hit pos="786" idx="2" rc="n" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="976">
-				<data>
-GCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTGCC
-				</data>
-				<hit pos="1027" idx="0" rc="n" pvalue="2.4e-05" match="++ ++++++"/>
-			</seg>
-			<seg start="1051">
-				<data>
-TCGCATAACGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTGTCGGCTTGAGAAAGAC
-				</data>
-				<hit pos="1064" idx="1" rc="n" pvalue="6.8e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1126">
-				<data>
-CTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGGATCGC
-				</data>
-				<hit pos="1139" idx="1" rc="n" pvalue="8.8e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1201">
-				<data>
-GCTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATCGG
-				</data>
-				<hit pos="1208" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1276">
-				<data>
-TGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAACAACCGTTGTTCTT
-TGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATTTG
-				</data>
-				<hit pos="1314" idx="0" rc="y" pvalue="3.4e-05" match="++++ ++++"/>
-				<hit pos="1349" idx="0" rc="n" pvalue="1.6e-05" match="+++++++++"/>
-				<hit pos="1388" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1876">
-				<data>
-TATTAAGAGTGGCGTATTGTACGCTGTGAAAGCGTTGGGATCTACCTGTGGAAAAGTATGGGATTAAAAAAGCCG
-				</data>
-				<hit pos="1884" idx="2" rc="n" pvalue="3.2e-05" match="+++++++++"/>
-				<hit pos="1937" idx="1" rc="n" pvalue="1.6e-05" match="+++++++++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_003198.1" comment="Salmonella enterica subsp. enterica serovar Typhi str. CT18, 3765460 bases around gc minimum" length="2000">
-			<score strand="both" combined_pvalue="1.84e-03" evalue="0.022"/>
-			<seg start="1">
-				<data>
-AATTCAGTCCACTGAGACACTGATCGTCTTGCAGAACCCGATCATGCGCACCATCAAGCCATGATCGGCTTTTTT
-AATCCCACATTTTTCCACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGA
-				</data>
-				<hit pos="71" idx="1" rc="y" pvalue="1.6e-05" match="+++++++++"/>
-			</seg>
-			<seg start="376">
-				<data>
-ACGCAGAAACCCGATCTTTCCGCGGTACGTTTCGGCGCAATTGGCATTGGCAGTCGAGAATACGACACGTTTTGC
-				</data>
-				<hit pos="435" idx="2" rc="y" pvalue="1.5e-05" match="+++++++++"/>
-			</seg>
-			<seg start="601">
-				<data>
-TAAAGATCGTGCGATCTATTGTGGATAAATATGGTGAAAAGCTTGGATCAACCGGTAGTTATCCAAAGAATAACC
-				</data>
-				<hit pos="620" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
-				<hit pos="659" idx="0" rc="y" pvalue="1.6e-05" match="+++++++++"/>
+				<hit pos="615" idx="0" rc="n" pvalue="1.6e-05" match="+++++++ +"/>
 			</seg>
 			<seg start="676">
 				<data>
-TTTGTTCACTTTTTGAGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTC
+TGGCACGGAACTTCAGTCCCATTTGGGTAACGGCACCGACCACGCGATCGTTTTCGACAATAAGATCTTCAACCG
 				</data>
-				<hit pos="694" idx="0" rc="n" pvalue="3.4e-05" match="++++ ++++"/>
-			</seg>
-			<seg start="751">
-				<data>
-ACAGCTAGTGATCCTTTCCAACGCATTGATCTTTATTACAGGATCCGGGTTATCCACAGCCTGGTGCGATCCTAA
-				</data>
-				<hit pos="800" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="697" idx="0" rc="y" pvalue="6.7e-05" match="+++++ +++"/>
 			</seg>
 			<seg start="826">
 				<data>
-TAAGAGATCACAATAGAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCC
+CTTGAGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGA
 				</data>
-				<hit pos="869" idx="1" rc="y" pvalue="8.8e-06" match="+++++++++"/>
+				<hit pos="866" idx="2" rc="n" pvalue="5.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CCATCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGA
+				</data>
+				<hit pos="1107" idx="0" rc="y" pvalue="4.2e-05" match="+  ++++++"/>
 			</seg>
 			<seg start="1201">
 				<data>
-CAGGCAGGTATTCAGTTTAAGATACTAAACGCCAGCAAAGGTCCGGCCGTTCGCGCTACCCGAGCTCAGGCGGAT
+AAGACCTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGG
 				</data>
-				<hit pos="1222" idx="2" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+				<hit pos="1219" idx="1" rc="n" pvalue="8.8e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+ATCGCGCTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATG
+				</data>
+				<hit pos="1288" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+ATCGGTGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAACAACCGTTG
+				</data>
+				<hit pos="1394" idx="0" rc="n" pvalue="3.0e-05" match="++++ ++++"/>
 			</seg>
 			<seg start="1426">
 				<data>
-GTGGTGCTGACCGTCGGGACTTTCCTGGACGGCAAAATTCATATTGGTCTGGATAACTACAGCGGCGGTCGTGCT
+TTCTTTGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTT
 				</data>
-				<hit pos="1473" idx="0" rc="n" pvalue="9.7e-06" match="+++++++++"/>
+				<hit pos="1429" idx="0" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+				<hit pos="1468" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_015663.1" comment="Enterobacter aerogenes KCTC 2190 chromosome, 1496990 bases around gc minimum" length="2000">
-			<score strand="both" combined_pvalue="4.32e-03" evalue="0.052"/>
-			<seg start="226">
-				<data>
-TTTGCTCTTTCGAGAAAGGGGCCGGGATCCTGAGTATTAAAAAGAAGATCTTTTATTTAGAGATCTGTTCTATTG
-				</data>
-				<hit pos="260" idx="1" rc="n" pvalue="8.8e-06" match="+++++++++"/>
-			</seg>
-			<seg start="301">
-				<data>
-TGATCTCTTATTAGGATCGACTCTCTTTGTGGATAAGTCGGATCCACTGTTTAAGATCAAACGCTTAAGAAGGAT
-				</data>
-				<hit pos="328" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
-			</seg>
-			<seg start="376">
-				<data>
-CGCAATCTGTGAATGATCGGTGATCCTGTTCCGTATAAGCTGGGATCAGAATGAAGGGTTATGCACAGCTCAAAA
-				</data>
-				<hit pos="403" idx="2" rc="n" pvalue="9.3e-05" match="+++ +++++"/>
-				<hit pos="434" idx="0" rc="y" pvalue="8.4e-05" match="++++ ++++"/>
-			</seg>
-			<seg start="451">
-				<data>
-AGCGTACTCCGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTTGAGCAGGGTTATCCACAGAAGAAGCT
-				</data>
-				<hit pos="469" idx="0" rc="n" pvalue="1.6e-05" match="+++++++++"/>
-				<hit pos="508" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
-			</seg>
-			<seg start="976">
-				<data>
-TCTGCCATGATCGCCGATCGCTCGCTCAACTATTCTGAGTGGCGTATTGTACGCTGTGAGCGAGCTGGGATCTAC
-				</data>
-				<hit pos="1014" idx="2" rc="n" pvalue="3.2e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1051">
-				<data>
-CTGTGGAAAAATGTGGGATTAAAAAAAACGATCAGGGCTTGATGGTACGCATGATCGGGTTTTGCAGCACGATCA
-				</data>
-				<hit pos="1067" idx="1" rc="n" pvalue="1.6e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1126">
-				<data>
-GGGTTTCAGTGGACTGAATTTCATCGATTGTTTGGATCTTGTTGATAAGTACCTGCTGCAGGGCATCGATGGATT
-				</data>
-				<hit pos="1165" idx="0" rc="n" pvalue="6.6e-05" match="+++ +++++"/>
-			</seg>
-			<seg start="1576">
-				<data>
-TTTAGCTTTTTAATTTAATGAATCAAAACTCAAGGCGTCTTTTTATTGATTGATTATTGAATTCAGTGCCATTTC
-				</data>
-				<hit pos="1582" idx="1" rc="y" pvalue="6.1e-05" match="++++++++ "/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_000913.3" comment="Escherichia coli str. K-12 substr. MG1655, 3924640 bases around gc minimum" length="2000">
-			<score strand="both" combined_pvalue="8.83e-03" evalue="0.11"/>
-			<seg start="76">
-				<data>
-CGGGTGCTTACCAGGCATTTTTAATGCGTTATGCGCTACGACGCAGCATACCCTGTTTTTTCAGCCACACCAGCA
-				</data>
-				<hit pos="93" idx="1" rc="y" pvalue="3.9e-05" match="++++++++ "/>
-			</seg>
-			<seg start="376">
-				<data>
-CCGCCGCCTGTTCGTCTGTCAACGCAGGGGCAAACGGCGTCAGCGTGGTTAATTTTTCATAAGTCATTTCCGGAC
-				</data>
-				<hit pos="428" idx="1" rc="y" pvalue="3.2e-05" match="+++++++++"/>
-			</seg>
+		<sequence db="0" name="NC_003198.1" comment="Salmonella enterica subsp. enterica serovar Typhi str. CT18, 2000 bases around gc minimum at 3764800" length="2000">
+			<score strand="both" combined_pvalue="1.13e-03" evalue="0.014"/>
 			<seg start="676">
 				<data>
-GTAGCATCAGACGATATTCTGCGCGCGAAGTAAACATACGATACGGTTCTTTGGTTCCTAAAGTGCACAGGTCAT
+GACACTGATCGTCTTGCAGAACCCGATCATGCGCACCATCAAGCCATGATCGGCTTTTTTAATCCCACATTTTTC
+CACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGATCAATGGCAGACATT
 				</data>
-				<hit pos="711" idx="2" rc="y" pvalue="4.1e-05" match="++++++ ++"/>
+				<hit pos="731" idx="1" rc="y" pvalue="3.2e-05" match="++++++++ "/>
+				<hit pos="746" idx="0" rc="n" pvalue="5.0e-05" match="++ ++++++"/>
 			</seg>
-			<seg start="1051">
+			<seg start="1276">
 				<data>
-TGGTGGAGATACCGTTCGGATAAATTTCATTAGAGGTCAGTCCTTCCGGTTCAAGGAAGATCTGATGCTGATTTC
+CTATTGTGGATAAATATGGTGAAAAGCTTGGATCAACCGGTAGTTATCCAAAGAATAACCTTTGTTCACTTTTTG
 				</data>
-				<hit pos="1065" idx="0" rc="n" pvalue="2.8e-05" match="++ ++++++"/>
+				<hit pos="1280" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+				<hit pos="1319" idx="0" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+AGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTCACAGCTAGTGATCCT
+				</data>
+				<hit pos="1354" idx="0" rc="y" pvalue="3.0e-05" match="++++ ++++"/>
 			</seg>
 			<seg start="1426">
 				<data>
-GTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGCCACCGCTGTAATTATCCAGACCGA
+TTCCAACGCATTGATCTTTATTACAGGATCCGGGTTATCCACAGCCTGGTGCGATCCTAATAAGAGATCACAATA
 				</data>
-				<hit pos="1488" idx="0" rc="y" pvalue="9.7e-06" match="+++++++++"/>
+				<hit pos="1460" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
 			</seg>
 			<seg start="1501">
 				<data>
-TATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACGGCTTTGGCACGGAACTTCAGTCCCATTTGGG
-TAACAGCACCGACCACGCGATCGTTTTCGACAATAAGATCTTCAACCGCCTGCTGGAAGATCATCAGGTTCGGTT
+GAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTGA
 				</data>
-				<hit pos="1570" idx="0" rc="n" pvalue="6.6e-05" match="+++++ +++"/>
-			</seg>
-			<seg start="1726">
-				<data>
-GTCCTTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGTG
-				</data>
-				<hit pos="1739" idx="2" rc="n" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1951">
-				<data>
-CCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATT
-				</data>
-				<hit pos="1980" idx="0" rc="n" pvalue="2.4e-05" match="++ ++++++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_011750.1" comment="Escherichia coli IAI39 chromosome, 4528110 bases around gc minimum" length="2000">
-			<score strand="both" combined_pvalue="8.83e-03" evalue="0.11"/>
-			<seg start="76">
-				<data>
-CGGGTGCTTACCAGGCATTTTTAATGCGTTATGCGCTACGACGCAGCATACCCTGTTTTTTCAGCCACACCAGCA
-				</data>
-				<hit pos="93" idx="1" rc="y" pvalue="3.9e-05" match="++++++++ "/>
-			</seg>
-			<seg start="376">
-				<data>
-CCGCCGCCTGTTCGTCTGTCAACGCAGGGGCAAACGGCGTCAGCGTGGTTAATTTTTCATAAGTCATTTCCGGAC
-				</data>
-				<hit pos="428" idx="1" rc="y" pvalue="3.2e-05" match="+++++++++"/>
-			</seg>
-			<seg start="676">
-				<data>
-GCAGCATCAGACGATATTCTGCGCGCGAGGTAAACATACGATACGGTTCTTTGGTTCCTAAAGTGCACAGGTCAT
-				</data>
-				<hit pos="711" idx="2" rc="y" pvalue="4.1e-05" match="++++++ ++"/>
-			</seg>
-			<seg start="1051">
-				<data>
-TGGTGGAGATACCGTTCGGATAAATTTCGTTAGAGGTCAGCCCTTCCGGTTCAAGGAAGATCTGATGCTGATTTC
-				</data>
-				<hit pos="1065" idx="0" rc="n" pvalue="2.8e-05" match="++ ++++++"/>
-			</seg>
-			<seg start="1426">
-				<data>
-GTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGCCACCGCTGTAGTTATCCAGACCGA
-				</data>
-				<hit pos="1488" idx="0" rc="y" pvalue="9.7e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1501">
-				<data>
-TATGAATTTTACCGTCGAGGAACGTCCCAACAGTGAGCACGACAGCTTTGGCACGGAACTTCAGTCCCATTTGGG
-TAACGGCTCCGACCACGCGATCATTTTCGACAATAAGATCTTCAACTGCCTGCTGGAAGATCATCAGGTTCGGTT
-				</data>
-				<hit pos="1570" idx="0" rc="n" pvalue="6.6e-05" match="+++++ +++"/>
-			</seg>
-			<seg start="1726">
-				<data>
-GTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGTG
-				</data>
-				<hit pos="1739" idx="2" rc="n" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1951">
-				<data>
-CCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATT
-				</data>
-				<hit pos="1980" idx="0" rc="n" pvalue="2.4e-05" match="++ ++++++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_014121.1" comment="Enterobacter cloacae subsp. cloacae ATCC 13047 chromosome, 5288300 bases around gc minimum" length="2000">
-			<score strand="both" combined_pvalue="1.52e-02" evalue="0.18"/>
-			<seg start="1">
-				<data>
-TCCACGGCCCGGGCTTCAATCCATTTTCATACCGCTTTACGCGAGGCAGACCACCATGTTTTATCAGGATCCTTT
-				</data>
-				<hit pos="23" idx="1" rc="y" pvalue="6.8e-05" match="+++++++++"/>
-			</seg>
-			<seg start="301">
-				<data>
-GATACTAAACGCCAGTAAAGGCCCCGCTGTCCGTGCGACCCGCGCTCAGGCAGACCGGGTACTTTATCGTCAGGC
-				</data>
-				<hit pos="302" idx="2" rc="y" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="451">
-				<data>
-CGATCGTGTCGTTGGCGCGGTTACCCAGATGGGGCTCAAATTCCGCGCCAAAGCGGTTGTTCTGACCGTCGGGAC
-				</data>
-				<hit pos="471" idx="0" rc="y" pvalue="5.6e-05" match="+++ +++++"/>
-			</seg>
-			<seg start="526">
-				<data>
-ATTCCTGGACGGTAAGATCCATATCGGTCTGGATAATTACAGCGGCGGACGTGCTGGCGATCCGCCATCTATCCC
-				</data>
-				<hit pos="553" idx="0" rc="n" pvalue="9.7e-06" match="+++++++++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_018658.1" comment="Escherichia coli O104:H4 str. 2011C-3493 chromosome, -410 bases around gc minimum" length="1999">
-			<score strand="both" combined_pvalue="4.58e-02" evalue="0.55"/>
-			<seg start="151">
-				<data>
-GGGTGTAAAGGGTGGCATTTTAATACGCGTTTCACCGTCAACCAACTGCCTTTTATCACTCCAAACCTGCGCAAT
-				</data>
-				<hit pos="167" idx="1" rc="y" pvalue="2.5e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1201">
-				<data>
-CACTTAGCGAGTTCTGGAAAGTCCTGTGGATAAATCGGGAAAATCTGTGAGAAACAGAAGATCTCTTGCGCAGTT
-				</data>
-				<hit pos="1225" idx="0" rc="n" pvalue="4.9e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1951">
-				<data>
-TTATGGCGGCACGGGTCTGGGTAAAACTCACCTGCTGCATGCGGTGGGT
-				</data>
-				<hit pos="1966" idx="0" rc="n" pvalue="5.6e-05" match="+++++ +++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_007606.1" comment="Shigella dysenteriae Sd197 chromosome, 4309300 bases around gc minimum" length="2000">
-			<score strand="both" combined_pvalue="2.44e-01" evalue="2.9"/>
-			<seg start="1201">
-				<data>
-AGCCGGGGCCAGACTGACATCGGCATTAAAATCACGGACCACATTAATGATCCCTGGCTGGATCAGGTCCGTCGA
-				</data>
-				<hit pos="1224" idx="1" rc="n" pvalue="7.6e-05" match=" ++++++++"/>
-			</seg>
-			<seg start="1576">
-				<data>
-GTTGCATAGAAAATATACACCTTAAGTGTAATTAAAATTTGCGGTTAATCAAAAGAGTGCGGTGGAAAGGGGAAT
-				</data>
-				<hit pos="1605" idx="1" rc="n" pvalue="9.6e-05" match=" ++++++++"/>
-			</seg>
-			<seg start="1726">
-				<data>
-GCCTGGAAAGCACCTCGGGGAATGGGAAATTACCGGGTGAGAATGGTTTTGTTAGTCGCTAAAGTCGGGCCATCT
-TATCAACAGGTGACGGATCGCCATGACAAACTTCACGACCAGTACGCCGCATGACGCATTATTTAAATCCTTTCT
-				</data>
-				<hit pos="1800" idx="0" rc="y" pvalue="6.6e-05" match="+++++ +++"/>
+				<hit pos="1529" idx="1" rc="y" pvalue="8.8e-06" match="+++++++++"/>
 			</seg>
 			<seg start="1876">
 				<data>
-CACGCACCCTGACACCGCGCAGGATTTTATGGAGATCCACTTACCCAAAGATTTACGTGAACTGTGCGATCTCGA
+TTTAAGATACTAAACGCCAGCAAAGGTCCGGCCGTTCGCGCTACCCGAGCTCAGGCGGATCGAGTCTTATATCGC
 				</data>
-				<hit pos="1916" idx="0" rc="y" pvalue="6.6e-05" match="+++ +++++"/>
-			</seg>
-			<seg start="1951">
-				<data>
-CACCTTAAAACTGGAATCCGCCAGTTTTGTCGATGAAAAATTGCGGGCGC
-				</data>
-				<hit pos="1982" idx="1" rc="n" pvalue="5.2e-05" match="+++++++++"/>
+				<hit pos="1882" idx="2" rc="y" pvalue="5.9e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_004337.2" comment="Shigella flexneri 2a str. 301 chromosome, 3821370 bases around gc minimum" length="2000">
-			<score strand="both" combined_pvalue="2.47e-01" evalue="3"/>
+		<sequence db="0" name="NC_014121.1" comment="Enterobacter cloacae subsp. cloacae ATCC 13047 chromosome, 2000 bases around gc minimum at 5288200" length="2000">
+			<score strand="both" combined_pvalue="2.92e-03" evalue="0.035"/>
+			<seg start="1">
+				<data>
+TAATAAGAGATCACAATAGAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCAGGATCCCAATGCTTT
+				</data>
+				<hit pos="47" idx="1" rc="y" pvalue="8.8e-06" match="+++++++++"/>
+			</seg>
 			<seg start="376">
 				<data>
-TTATTTGTAAAATTAATTTATCTGACAATAACATTTATTGTTGATAATGAGAATCATTATTGACATAATTGTTAT
+TCGATCACGCAGGCATTCAGTTTAGGATACTAAACGCCAGTAAAGGCCCCGCTGTCCGTGCGACCCGCGCTCAGG
 				</data>
-				<hit pos="414" idx="0" rc="n" pvalue="6.6e-05" match="+++ +++++"/>
+				<hit pos="402" idx="2" rc="y" pvalue="5.9e-06" match="+++++++++"/>
 			</seg>
+			<seg start="526">
+				<data>
+CAGTGGAAGATCTTATCGTGGAGAACGATCGTGTCGTTGGCGCGGTTACCCAGATGGGGCTCAAATTCCGCGCCA
+				</data>
+				<hit pos="571" idx="0" rc="n" pvalue="8.1e-05" match="+++ +++ +"/>
+			</seg>
+			<seg start="601">
+				<data>
+AAGCGGTTGTTCTGACCGTCGGGACATTCCTGGACGGTAAGATCCATATCGGTCTGGATAATTACAGCGGCGGAC
+				</data>
+				<hit pos="653" idx="0" rc="y" pvalue="1.6e-05" match="+ +++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_015663.1" comment="Enterobacter aerogenes KCTC 2190 chromosome, 2000 bases around gc minimum at 1495100" length="2000">
+			<score strand="both" combined_pvalue="2.98e-02" evalue="0.36"/>
+			<seg start="1051">
+				<data>
+GTTTTCCATCCCCTGCATTGAACGGACGATTTGCATTTGCACATCAAACGGCAGGCTGGTGGAGATACCGTTTGG
+ATAAATTTCGTTTGAAGTCAGCCCTTCCGGTTCAAGGAAGATCTGATGCTGGTTGCGATCGGCAAAGCGCATGAC
+				</data>
+				<hit pos="1121" idx="0" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+TACCGCCTGGCGATACAGCACGCGGTCGGCCTGGGCGCGGGTCGCACGAACAGCTGGGCCTTTGCTACCGTTTAG
+TATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCACCGAGCGCGTCCACTTCTTTTACCAG
+				</data>
+				<hit pos="1795" idx="2" rc="n" pvalue="5.9e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_018658.1" comment="Escherichia coli O104:H4 str. 2011C-3493 chromosome, 2000 bases around gc minimum at -1000" length="1999">
+			<score strand="both" combined_pvalue="3.79e-02" evalue="0.46"/>
 			<seg start="751">
 				<data>
-ACGCCATCAACTGTTTCTGCCCGTTCCCCTCTGCGAAACTTTCCACCAGCGCGTGCTGGAAAGCCATGTCCATAC
-GCAACAGGCAATTGATGCCCGTCATGACTGGGCCGCTCTGCGTGAAAAAGCGTTGAATTTTGGCGAGGCTGAGCA
+GGTGGCATTTTAATACGCGTTTCACCGTCAACCAACTGCCTTTTATCACTCCAAACCTGCGCAATGCCTCAATTC
 				</data>
-				<hit pos="822" idx="2" rc="y" pvalue="2.4e-05" match="+++++++++"/>
+				<hit pos="757" idx="1" rc="y" pvalue="1.8e-05" match=" ++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+GTTAGCTTTATTACTTAGAAACGGTCAGACGAGCGCGGCCTTTAGCACGACGACGTGCCAGAACCTGACGACCAT
+TTTTAGTAGCCATACGAGCACGGAAGCCGTGAGAACGGTTGCGCTTCAGTACAGACGGTTGAAAAGTGCGTTTCA
+				</data>
+				<hit pos="1350" idx="1" rc="y" pvalue="3.2e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+CGCGCTTTTCCGCACCTTTTCGCAGGGAAAATGTACGACCTCACACCAGTGAAAACCAGCATGGCGCGCCGGGTG
+				</data>
+				<hit pos="1581" idx="0" rc="n" pvalue="9.4e-05" match="++ +++ ++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+GTTCTGGAAAGTCCTGTGGATAAATCGGGAAAATCTGTGAGAAACAGAAGATCTCTTGCGCAGTTTAGGCTATGA
+				</data>
+				<hit pos="1815" idx="0" rc="y" pvalue="4.9e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_016845.1" comment="Klebsiella pneumoniae subsp. pneumoniae HS11286 chromosome, 2000 bases around gc minimum at -1000" length="1999">
+			<score strand="both" combined_pvalue="5.62e-02" evalue="0.67"/>
+			<seg start="751">
+				<data>
+AGGTCATCTACCAGCACGCCGAGGTAAGCCTGATCGCGACGCGGCGCCCAGCCCTCTTTTTCCGCAGAGAAGCGG
+				</data>
+				<hit pos="808" idx="0" rc="n" pvalue="9.4e-05" match="++ +++ ++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+GGCAGGCTGGTGGATATACCGTTCGGATAAATTTCGTTTGAGGTCAGTCCTTCCGGCTCGAGGAAGATCTGATGC
+				</data>
+				<hit pos="1072" idx="0" rc="y" pvalue="2.4e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+ACTGCCGGTCCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCCGCCTGATCGATCGCTTTGGCCATCAAACCG
+				</data>
+				<hit pos="1746" idx="2" rc="n" pvalue="5.9e-06" match="+++++++++"/>
 			</seg>
 		</sequence>
 	</sequences>
-	<runtime host="PC0028" when="Sat Jan  4 23:21:40 2020" cycles="15625" seconds="0.016"/>
+	<runtime host="PC0028" when="Mon Jan  6 00:52:12 2020" cycles="31250" seconds="0.031"/>
 </mast>

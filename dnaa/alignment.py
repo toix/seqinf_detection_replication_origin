@@ -1,12 +1,19 @@
 from Bio import motifs
 
+
 def align_motif_to_sequence(sequence, motif_file):
+    """
+    https://biopython-tutorial.readthedocs.io/en/latest/notebooks/14%20-%20Sequence%20motif%20analysis%20using%20Bio.motifs.html
+    :param sequence:
+    :param motif_file: fasta file path containing motifs
+    :return:
+    """
     with open(motif_file) as handle:
         motif = motifs.read(handle, "sites")
         motif.pseudocounts = 1
-        distribution = motif.pssm.distribution(background=motif.background)
-        threshold = distribution.threshold_fpr(0.00001)
-        print("Alignment threshold: %5.3f" % threshold)
+        # distribution = motif.pssm.distribution(background=motif.background)
+        # threshold = distribution.threshold_fpr(0.0001)
+        # print("Alignment threshold: %5.3f" % threshold)
         # return motif.pssm.search(sequence, threshold=threshold)
         return motif.pssm.calculate(sequence)
 

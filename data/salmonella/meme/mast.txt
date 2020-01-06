@@ -23,7 +23,7 @@ REFERENCE
 DATABASE AND MOTIFS
 ********************************************************************************
 	DATABASE skew_regions.fasta (nucleotide)
-	Last updated on Fri Jan  3 19:43:34 2020
+	Last updated on Mon Jan  6 00:53:18 2020
 	Database contains 10 sequences, 20000 residues
 
 	Scores for positive and reverse complement strands are combined.
@@ -31,15 +31,15 @@ DATABASE AND MOTIFS
 	MOTIFS meme.xml (nucleotide)
 	MOTIF ID        ALT ID WIDTH BEST POSSIBLE MATCH
 	----- --------- ------ ----- -------------------
-	    1 ATCGTRGCC MEME-1     9 ATCGTGGCC
-	    2 GATGGVGAA MEME-2     9 GATGGAGAA
-	    3 RATGGATCG MEME-3     9 AATGGATCG
+	    1 YGGTCCGTW MEME-1     9 TGGTCCGTT
+	    2 GATGGVGAA MEME-2     9 GATGGCGAA
+	    3 GMGTACDAT MEME-3     9 GAGTACGAT
 
 	PAIRWISE MOTIF CORRELATIONS:
 	MOTIF     1     2
 	----- ----- -----
-	   2   0.16
-	   3   0.34  0.31
+	   2   0.18
+	   3   0.28  0.33
 	No overly similar pairs (correlation > 0.60) found.
 
 	Random model letter frequencies (from non-redundant database):
@@ -74,16 +74,16 @@ SECTION I: HIGH-SCORING SEQUENCES
 
 SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
 -------------                      -----------                   -------- ------
-NZ_CP007245.1                      Salmonella enterica subsp....   0.0026   2000
-NC_011294.1                        Salmonella enterica subsp....   0.0026   2000
-NC_011083.1                        Salmonella enterica subsp....   0.0026   2000
-NC_011080.1                        Salmonella enterica subsp....   0.0026   2000
-NC_010102.1                        Salmonella enterica subsp....   0.0026   2000
-NZ_CP015574.1                      Salmonella enterica strain...    0.005   2000
-NC_016854.1                        Salmonella enterica subsp....    0.005   2000
-NC_016810.1                        Salmonella enterica subsp....    0.005   2000
-NC_006511.1                        Salmonella enterica subsp....     0.01   2000
-NC_003198.1                        Salmonella enterica subsp....     0.01   2000
+NC_011083.1                        Salmonella enterica subsp....   0.0068   2000
+NC_016854.1                        Salmonella enterica subsp....    0.012   2000
+NC_016810.1                        Salmonella enterica subsp....    0.012   2000
+NZ_CP007245.1                      Salmonella enterica subsp....    0.016   2000
+NC_011294.1                        Salmonella enterica subsp....    0.016   2000
+NC_011080.1                        Salmonella enterica subsp....    0.016   2000
+NC_010102.1                        Salmonella enterica subsp....    0.026   2000
+NZ_CP015574.1                      Salmonella enterica strain...    0.046   2000
+NC_006511.1                        Salmonella enterica subsp....    0.049   2000
+NC_003198.1                        Salmonella enterica subsp....    0.061   2000
 
 ********************************************************************************
 
@@ -114,16 +114,16 @@ SECTION II: MOTIF DIAGRAMS
 
 SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
 -------------                      --------  -------------
-NZ_CP007245.1                        0.0026  7-[+1]-212-[-3]-21-[-1]-83-[-2]-52-[+3]-82-[+3]-48-[-2]-251-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-435
-NC_011294.1                          0.0026  97-[+1]-212-[-3]-21-[-1]-83-[-2]-52-[+3]-82-[+3]-48-[-2]-251-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-345
-NC_011083.1                          0.0026  212-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-599-[+3]-41-[+1]-184-[-2]-191
-NC_011080.1                          0.0026  94-[+1]-31-[-2]-163-[+1]-[-3]-21-[-1]-83-[-2]-52-[+3]-82-[+3]-48-[-2]-251-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-348
-NC_010102.1                          0.0026  204-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-599-[+3]-41-[+1]-184-[-2]-199
-NZ_CP015574.1                         0.005  410-[+2]-184-[-1]-41-[-3]-599-[+2]-37-[+2]-101-[-3]-109-[-1]-156-[-2]-34-[-3]-88-[-1]-138-[+2]-4
-NC_016854.1                           0.005  5-[+1]-31-[-2]-163-[+1]-[-3]-21-[-1]-83-[-2]-52-[+3]-82-[+3]-48-[-2]-251-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-437
-NC_016810.1                           0.005  90-[+1]-31-[-2]-163-[+1]-[-3]-21-[-1]-83-[-2]-52-[+3]-82-[+3]-48-[-2]-251-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-352
-NC_006511.1                            0.01  220-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-219-[-2]-37-[-2]-599-[+3]-41-[+1]-184-[-2]-183
-NC_003198.1                            0.01  455-[+2]-37-[+2]-219-[-1]-156-[-2]-34-[-3]-88-[-1]-138-[+2]-2-[-3]-308-[-3]-82-[-3]-52-[+2]-83-[+1]-21-[+3]-[-1]-199
+NC_011083.1                          0.0068  40-[-3]-15-[+3]-7-[-2]-10-[-1]-275-[-2]-57-[-3]-405-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-138-[-3]-63
+NC_016854.1                           0.012  25-[-3]-15-[+3]-7-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-138-[-3]-78
+NC_016810.1                           0.012  160-[-3]-15-[+3]-7-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-90
+NZ_CP007245.1                         0.016  27-[-3]-31-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-138-[-3]-76
+NC_011294.1                           0.016  187-[-3]-31-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-63
+NC_011080.1                           0.016  114-[-3]-15-[+3]-7-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-136
+NC_010102.1                           0.026  74-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-138-[-3]-423-[+1]-71-[-2]-69
+NZ_CP015574.1                         0.046  237-[+3]-94-[+2]-71-[-1]-423-[+3]-138-[+1]-229-[+2]-215-[-1]-160-[-2]-278-[+2]-74
+NC_006511.1                           0.049  92-[+3]-7-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-138-[-3]-35
+NC_003198.1                           0.061  161-[+3]-94-[+2]-71-[-1]-423-[+3]-138-[+1]-229-[+2]-215-[-1]-160-[-2]-278-[+2]-150
 
 ********************************************************************************
 
@@ -156,828 +156,720 @@ SECTION III: ANNOTATED SEQUENCES
 ********************************************************************************
 
 
+NC_011083.1
+  Salmonella enterica subsp. enterica serovar Heidelberg str. SL476, 2000 bases 
+  around gc minimum at 4093600
+  LENGTH = 2000  COMBINED P-VALUE = 6.82e-04  E-VALUE =   0.0068
+  DIAGRAM: 40-[-3]-15-[+3]-7-[-2]-10-[-1]-275-[-2]-57-[-3]-405-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-138-[-3]-63
+
+                                             [-3]                    [+3]
+                                             4.0e-06                 3.2e-05
+                                             ATCGTACTC               GAGTACGAT
+                                             +++++++++               +++++++++
+1    TACTTTCCAGAGTCGGTTTCAGATCGCGCGGGTCGAAAAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCT
+
+          [-2]               [-1]
+          9.9e-05            2.9e-05
+          TTCGCCATC          AACGGACCA
+          ++++++++           +++++++ +
+76   TCGCGTTCTCCATGCCCTGCATGGAACGGACAATCTGCATCTGTACATCGAACGGCAGGCTGGTGGAGATACCGT
+
+             [-2]                                                              [
+             4.7e-05                                                           1
+             TTCGCCATC                                                         A
+             ++++++++                                                          +
+376  GAGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGA
+
+     -3]
+     .6e-05
+     TCGTACTC
+     ++++++++
+451  TAGTACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGC
+
+                                           [-2]
+                                           1.1e-05
+                                           TTCGCCATC
+                                           +++++++++
+826  TTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTA
+
+                              [+2]
+                              1.1e-05
+                              GATGGCGAA
+                              +++++++++
+1126 CGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATT
+
+                                                 [+1]
+                                                 2.9e-05
+                                                 TGGTCCGTT
+                                                 +++++++++
+1276 CAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGAGTA
+
+                                                [-2]
+                                                2.1e-05
+                                                TTCGCCATC
+                                                +++++++++
+1501 GATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCA
+
+                                                             [-1]
+                                                             3.3e-06
+                                                             AACGGACCA
+                                                             +++++++++
+1726 CGCCGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCATGCACCGTTT
+
+                                                          [-3]
+                                                          2.1e-05
+                                                          ATCGTACTC
+                                                          +++++++++
+1876 CGCTGATAAGAGTAATGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAACGAGCTG
+
+
+NC_016854.1
+  Salmonella enterica subsp. enterica serovar Typhimurium str. D23580 2000 
+  bases around gc minimum at 4106600
+  LENGTH = 2000  COMBINED P-VALUE = 1.21e-03  E-VALUE =    0.012
+  DIAGRAM: 25-[-3]-15-[+3]-7-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-138-[-3]-78
+
+                              [-3]                    [+3]            [-2]
+                              4.0e-06                 3.2e-05         4.7e-05
+                              ATCGTACTC               GAGTACGAT       TTCGCCATC
+                              +++++++++               +++++++++       ++++++++
+1    GTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATAC
+
+              [-1]
+              2.9e-05
+              AACGGACCA
+              +++++++ +
+76   CCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAGGGTAAATCTCGT
+
+                                                                         [-2]
+                                                                         4.7e-05
+                                                                         TTCGCCA
+                                                                         +++++++
+301  TCACGTCATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCA
+
+                                                                [-3]
+                                                                1.6e-05
+     TC                                                         ATCGTACTC
+     +                                                          +++++++++
+376  TAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAA
+
+                                                         [-2]
+                                                         4.7e-05
+                                                         TTCGCCATC
+                                                         ++ ++++++
+526  ATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGA
+
+     [+1]
+     4.2e-05
+     TGGTCCGTT
+     +++++++++
+601  CGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAACGCGATCGTTTTCGA
+
+                            [-2]
+                            1.1e-05
+                            TTCGCCATC
+                            +++++++++
+826  GAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTC
+
+               [+2]
+               1.1e-05
+               GATGGCGAA
+               +++++++++
+1126 AACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTA
+
+                                  [+1]
+                                  6.6e-06
+                                  TGGTCCGTT
+                                  +++++++++
+1276 GATCACTAGCTGTGAATGATCGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCA
+
+                                 [-2]
+                                 2.1e-05
+                                 TTCGCCATC
+                                 +++++++++
+1501 CATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTT
+
+                                              [-1]
+                                              9.2e-06
+                                              AACGGACCA
+                                              +++++++++
+1726 TGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACCGG
+
+                                           [-3]
+                                           2.1e-05
+                                           ATCGTACTC
+                                           +++++++++
+1876 TGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGA
+
+
+NC_016810.1
+  Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344, 2000 
+  bases around gc minimum at 4104900
+  LENGTH = 2000  COMBINED P-VALUE = 1.21e-03  E-VALUE =    0.012
+  DIAGRAM: 160-[-3]-15-[+3]-7-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-90
+
+               [-3]                    [+3]            [-2]               [-1]
+               4.0e-06                 3.2e-05         4.7e-05            2.9e-0
+               ATCGTACTC               GAGTACGAT       TTCGCCATC          AACGGA
+               +++++++++               +++++++++       ++++++++           ++++++
+151  GGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCATGGAACGGA
+
+     
+     5
+     CCA
+     + +
+226  CAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAGGGTAAATCTCGTTAGAGGTCAGTCCTT
+
+                                                          [-2]
+                                                          4.7e-05
+                                                          TTCGCCATC
+                                                          ++++++++
+451  TCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCG
+
+                                                 [-3]
+                                                 1.6e-05
+                                                 ATCGTACTC
+                                                 +++++++++
+526  GCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGC
+
+                                          [-2]                   [+1]
+                                          4.7e-05                4.2e-05
+                                          TTCGCCATC              TGGTCCGTT
+                                          ++ ++++++              +++++++++
+676  CACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCG
+
+             [-2]
+             1.1e-05
+             TTCGCCATC
+             +++++++++
+976  CGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCG
+
+                                                                           [+2]
+                                                                           1.1e-
+                                                                           GATGG
+                                                                           +++++
+1201 TAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGG
+
+     
+     05
+     CGAA
+     ++++
+1276 AGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATT
+
+                   [+1]
+                   6.6e-06
+                   TGGTCCGTT
+                   +++++++++
+1426 ATGATCGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGG
+
+                  [-2]
+                  2.1e-05
+                  TTCGCCATC
+                  +++++++++
+1651 TGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGC
+
+                               [-1]
+                               9.2e-06
+                               AACGGACCA
+                               +++++++++
+1876 TCCCGGAAGTTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACCGGCAGCTTCCAGCTTTT
+
+
 NZ_CP007245.1
-  Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120008, oric 
-  at 3976720 +- 1000
-  LENGTH = 2000  COMBINED P-VALUE = 2.56e-04  E-VALUE =   0.0026
-  DIAGRAM: 7-[+1]-212-[-3]-21-[-1]-83-[-2]-52-[+3]-82-[+3]-48-[-2]-251-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-435
+  Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120008, 2000 
+  bases around gc minimum at 3976700
+  LENGTH = 2000  COMBINED P-VALUE = 1.61e-03  E-VALUE =    0.016
+  DIAGRAM: 27-[-3]-31-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-138-[-3]-76
 
-            [+1]
-            6.7e-05
-            ATCGTGGCC
-            ++++++ ++
-1    CGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCGCGTTCTCCATGCCCTGCATGGAACGGACAA
+                                [-3]                                    [-2]
+                                4.0e-06                                 9.9e-05
+                                ATCGTACTC                               TTCGCCAT
+                                +++++++++                               ++++++++
+1    CGGTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCGCGTTCTCCAT
 
-        [-3]                          [-1]
-        3.6e-05                       6.0e-06
-        CGATCCATT                     GGCCACGAT
-        ++++++ ++                     +++++++++
-226  GGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGTCATGGGTTTTCT
+                [-1]
+                2.9e-05
+     C          AACGGACCA
+                +++++++ +
+76   GCCCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAGGGTAAATCTC
 
-                                                       [-2]
-                                                       4.7e-05
-                                                       TTCTCCATC
-                                                       ++++++++
-301  CATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCA
+                                                                           [-2]
+                                                                           4.7e-
+                                                                           TTCGC
+                                                                           +++++
+301  AATCACGTCATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCC
 
-                                         [+3]
-                                         4.4e-05
-                                         AATGGATCG
-                                         +++++++ +
-376  TCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGG
+                                                                  [-3]
+     05                                                           1.6e-05
+     CATC                                                         ATCGTACTC
+     +++                                                          +++++++++
+376  CATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATC
 
-                                                         [+3]
-                                                         5.5e-05
-                                                         AATGGATCG
-                                                         +++++++ +
-451  TTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCAC
-
-                                       [-2]
-                                       4.7e-05
-                                       TTCTCCATC
-                                       ++ ++++++
-526  GACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTT
-
-                                                                          [+3]
-                                                                          3.6e-0
-                                                                          AATGGA
-                                                                          ++++++
-751  CCTGAGCCCGGGTAGCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGA
-
-          [-2]
-     5    1.1e-05
-     TCG  TTCTCCATC
-     +++  +++++++++
-826  TCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCCG
+                                                           [-2]
+                                                           4.7e-05
+                                                           TTCGCCATC
+                                                           ++ ++++++
+526  GGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCC
 
        [+1]
-       1.4e-05
-       ATCGTGGCC
+       4.2e-05
+       TGGTCCGTT
        +++++++++
-976  CCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTAA
+601  GACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAACGCGATCGTTTTC
 
-                             [+3]                                       [+2]
-                             2.1e-05                                    4.0e-06
-                             AATGGATCG                                  GATGGAGA
-                             +++++++ +                                  ++++++++
-1051 TTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGA
+                              [-2]
+                              1.1e-05
+                              TTCGCCATC
+                              +++++++++
+826  CTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTT
 
-     
-     
-     A
-     +
-1126 AAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGG
+                 [+2]
+                 1.1e-05
+                 GATGGCGAA
+                 +++++++++
+1126 TCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTC
 
-            [+1]
-            2.7e-06
-            ATCGTGGCC
-            +++++++++
-1276 ATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTA
+                                    [+1]
+                                    2.9e-05
+                                    TGGTCCGTT
+                                    +++++++++
+1276 AGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACT
 
-                                                       [+3]
-                                                       4.0e-06
-                                                       AATGGATCG
-                                                       +++++++++
-1351 TTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTT
+                                   [-2]
+                                   2.1e-05
+                                   TTCGCCATC
+                                   +++++++++
+1501 CTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTTCCGCTTCTAT
 
-               [-2]                                          [-2]
-               3.1e-05                                       8.3e-05
-               TTCTCCATC                                     TTCTCCATC
-               +++++++ +                                     +++++ +++
-1501 TCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAA
+                                                [-1]
+                                                9.2e-06
+                                                AACGGACCA
+                                                +++++++++
+1726 GCTGATTATCAGCCAGATCCCGGAAGCTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACC
+
+                                             [-3]
+                                             2.1e-05
+                                             ATCGTACTC
+                                             +++++++++
+1876 AATGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTG
 
 
 NC_011294.1
-  Salmonella enterica subsp. enterica serovar Enteritidis str. P125109 oric at 
-  3953990 +- 1000
-  LENGTH = 2000  COMBINED P-VALUE = 2.56e-04  E-VALUE =   0.0026
-  DIAGRAM: 97-[+1]-212-[-3]-21-[-1]-83-[-2]-52-[+3]-82-[+3]-48-[-2]-251-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-345
+  Salmonella enterica subsp. enterica serovar Enteritidis str. P125109 2000 
+  bases around gc minimum at 3953900
+  LENGTH = 2000  COMBINED P-VALUE = 1.61e-03  E-VALUE =    0.016
+  DIAGRAM: 187-[-3]-31-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-63
 
-                           [+1]
-                           6.7e-05
-                           ATCGTGGCC
-                           ++++++ ++
-76   TCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCGCGTTCTCCATGCCCT
+                                          [-3]
+                                          4.0e-06
+                                          ATCGTACTC
+                                          +++++++++
+151  TTTCCAGAGTCGGTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCG
 
-                       [-3]                          [-1]
-                       3.6e-05                       6.0e-06
-                       CGATCCATT                     GGCCACGAT
-                       ++++++ ++                     +++++++++
-301  AAGGACAGTAGCGCGGGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCA
+       [-2]               [-1]
+       9.9e-05            2.9e-05
+       TTCGCCATC          AACGGACCA
+       ++++++++           +++++++ +
+226  CGTTCTCCATGCCCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAG
 
-                                                                      [-2]
-                                                                      4.7e-05
-                                                                      TTCTCCATC
-                                                                      ++++++++
-376  CGTCATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAA
+          [-2]                                                              [-3]
+          4.7e-05                                                           1.6e
+          TTCGCCATC                                                         ATCG
+          ++++++++                                                          ++++
+526  AAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAG
 
-                                                        [+3]
-                                                        4.4e-05
-                                                        AATGGATCG
-                                                        +++++++ +
-451  ACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATAC
+     
+     -05
+     TACTC
+     +++++
+601  TACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAG
 
-                                                                        [+3]
-                                                                        5.5e-05
-                                                                        AATGGATC
-                                                                        +++++++
-526  GCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATG
+                                                                     [-2]
+                                                                     4.7e-05
+                                                                     TTCGCCATC
+                                                                     ++ ++++++
+676  ACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCA
 
-                                                      [-2]
-                                                      4.7e-05
-     G                                                TTCTCCATC
-     +                                                ++ ++++++
-601  GCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGG
+                 [+1]
+                 4.2e-05
+                 TGGTCCGTT
+                 +++++++++
+751  GGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAACGC
 
-              [+3]       [-2]
-              3.6e-05    1.1e-05
-              AATGGATCG  TTCTCCATC
-              +++++++++  +++++++++
-901  TACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAA
+                                        [-2]
+                                        1.1e-05
+                                        TTCGCCATC
+                                        +++++++++
+976  GTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCA
 
-                      [+1]
-                      1.4e-05
-                      ATCGTGGCC
-                      +++++++++
-1051 CCATACGCGCTGCGGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCT
-
-                                            [+3]
-                                            2.1e-05
-                                            AATGGATCG
-                                            +++++++ +
-1126 GATAAAACATGGTAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAAC
-
-            [+2]
-            4.0e-06
-            GATGGAGAA
-            +++++++++
-1201 TTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTG
-
-                           [+1]
-                           2.7e-06
-                           ATCGTGGCC
+                           [+2]
+                           1.1e-05
+                           GATGGCGAA
                            +++++++++
-1351 CACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAA
+1276 TGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAG
 
-                                                                      [+3]
-                                                                      4.0e-06
-                                                                      AATGGATCG
-                                                                      +++++++++
-1426 AGTGAACAACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGC
+                                              [+1]
+                                              2.9e-05
+                                              TGGTCCGTT
+                                              +++++++++
+1426 TGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTT
 
-                              [-2]                                          [-2]
-                              3.1e-05                                       8.3e
-                              TTCTCCATC                                     TTCT
-                              +++++++ +                                     ++++
-1576 GTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTTCCGCTTCTATTTTCT
+                                             [-2]
+                                             2.1e-05
+                                             TTCGCCATC
+                                             +++++++++
+1651 CTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTT
+
+                                                          [-1]
+                                                          9.2e-06
+                                                          AACGGACCA
+                                                          +++++++++
+1876 CGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGCTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGG
+
+
+NC_011080.1
+  Salmonella enterica subsp. enterica serovar Newport str. SL254, 2000 bases 
+  around gc minimum at 4049900
+  LENGTH = 2000  COMBINED P-VALUE = 1.61e-03  E-VALUE =    0.016
+  DIAGRAM: 114-[-3]-15-[+3]-7-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-136
+
+                                            [-3]                    [+3]
+                                            4.0e-06                 3.2e-05
+                                            ATCGTACTC               GAGTACGAT
+                                            +++++++++               +++++++++
+76   ACTTTCCAGAGTCGGTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTT
+
+         [-2]               [-1]
+         4.7e-05            2.9e-05
+         TTCGCCATC          AACGGACCA
+         ++++++++           +++++++ +
+151  CGCGTTCTCCATACCCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTT
+
+            [-2]                                                              [-
+            4.7e-05                                                           1.
+            TTCGCCATC                                                         AT
+            ++++++++                                                          ++
+451  AGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGAT
+
+     3]
+     6e-05
+     CGTACTC
+     +++++++
+526  AGTACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCG
+
+                                                                       [-2]
+                                                                       4.7e-05
+                                                                       TTCGCCATC
+                                                                       ++ ++++++
+601  AGACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATC
+
+                   [+1]
+                   4.2e-05
+                   TGGTCCGTT
+                   +++++++++
+676  CAGGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAAC
+
+                                          [-2]
+                                          1.1e-05
+                                          TTCGCCATC
+                                          +++++++++
+901  TAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTAC
+
+                             [+2]
+                             1.1e-05
+                             GATGGCGAA
+                             +++++++++
+1201 GGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTT
+
+                                                [+1]
+                                                2.9e-05
+                                                TGGTCCGTT
+                                                +++++++++
+1351 AATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTAC
+
+                                               [-2]
+                                               2.1e-05
+                                               TTCGCCATC
+                                               +++++++++
+1576 ATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAG
+
+                                                            [-1]
+                                                            9.2e-06
+                                                            AACGGACCA
+                                                            +++++++++
+1801 GCCGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCGTGCACCGTTTC
+
+
+NC_010102.1
+  Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7, 2000 bases 
+  around gc minimum at 4028800
+  LENGTH = 2000  COMBINED P-VALUE = 2.64e-03  E-VALUE =    0.026
+  DIAGRAM: 74-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-138-[-3]-423-[+1]-71-[-2]-69
+
+                                                                               [
+                                                                               4
+                                                                               T
+                                                                               +
+1    AGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATT
+
+     -2]                   [+1]
+     .7e-05                9.0e-05
+     TCGCCATC              TGGTCCGTT
+     + ++++++              + +++++++
+76   TTGCCATCCAGGAAGGTTCCGACTGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCG
+
+                                                  [-2]
+                                                  1.1e-05
+                                                  TTCGCCATC
+                                                  +++++++++
+301  CTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACC
+
+                                     [+2]
+                                     1.1e-05
+                                     GATGGCGAA
+                                     +++++++++
+601  GCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCT
+
+                                                        [+1]
+                                                        2.9e-05
+                                                        TGGTCCGTT
+                                                        +++++++++
+751  TAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAA
+
+                                                       [-2]
+                                                       2.1e-05
+                                                       TTCGCCATC
+                                                       +++++++++
+976  TCCGCTGGATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCG
+
+                                                                    [-1]
+                                                                    3.3e-06
+                                                                    AACGGACCA
+                                                                    +++++++++
+1201 TCTCCGGCGCCGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCATGC
+
+                                                                 [-3]
+                                                                 2.1e-05
+                                                                 ATCGTACTC
+                                                                 +++++++++
+1351 GTGCTGCCGCTGATAAGAGTAATGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAA
+
+                                               [+1]
+                                               5.4e-05
+                                               TGGTCCGTT
+                                               +++++++++
+1801 CGACGCGAACGTGAATGGTTCCAGGGCTAACGCCAAATTGTTTGGCCAGTTCGGCGTAGGCAGTGCGGGCATTTC
+
+                                                    [-2]
+                                                    4.7e-05
+                                                    TTCGCCATC
+                                                    ++ ++++++
+1876 CCATTAAGGCGTCAAGGATGCCGCGGTCCAGATTGTCGATCTGATAATTTTCCATCGCTTTTTCTTATGCAGATT
+
+
+NZ_CP015574.1
+  Salmonella enterica strain FORC_038, 2000 bases around gc minimum at 4902500
+  LENGTH = 2000  COMBINED P-VALUE = 4.62e-03  E-VALUE =    0.046
+  DIAGRAM: 237-[+3]-94-[+2]-71-[-1]-423-[+3]-138-[+1]-229-[+2]-215-[-1]-160-[-2]-278-[+2]-74
+
+                 [+3]
+                 6.5e-05
+                 GAGTACGAT
+                 +++ +++++
+226  GCAACAAAACGAGAGCACTATTCAATAATCAACAGATAAAAAGCTAACTTCGATTTTGATTCGTTAAAAATAATG
+
+                                             [+2]
+                                             4.7e-05
+                                             GATGGCGAA
+                                             ++++++ ++
+301  GCTAAAATAGAGATAATTATTAATCTGCATAAGAAAAAGCGATGGAAAATTATCAGATCGACAATCTGGACCGCG
+
+                                                  [-1]
+                                                  5.4e-05
+                                                  AACGGACCA
+                                                  +++++++++
+376  GCATACTTGACGCCTTAATGGAAAATGCCCGCACCGCCTACGCCGAACTGGCCAAACAATTTGGCGTTAGCCCTG
+
+                                [+3]
+                                2.1e-05
+                                GAGTACGAT
+                                +++++++++
+826  CCACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGATCAATGGCAGACAT
+
+                             [+1]
+                             9.2e-06
+                             TGGTCCGTT
+                             +++++++++
+976  CGGTTTTTCAACCGAAACGGTGCACGGTCCGTTATTAGAGGATCTGTCAACTTCCGGGATCTGGCTGATAATCAG
+
+                                          [+2]
+                                          2.1e-05
+                                          GATGGCGAA
+                                          +++++++++
+1201 AATAGAAGCGGAACTGAAAGACACTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAACATCCTTGAACATGA
+
+                                         [-1]
+                                         6.6e-06
+                                         AACGGACCA
+                                         +++++++++
+1426 GAGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGACCACGATCACCGATCATTCACAGCTAGTGATCC
+
+                                                            [-2]
+                                                            1.1e-05
+                                                            TTCGCCATC
+                                                            +++++++++
+1576 AGAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTG
+
+                                               [+2]
+                                               1.1e-05
+                                               GATGGCGAA
+                                               +++++++++
+1876 AAAGGGACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCGATCGATCAGGCAGGTATTCA
+
+
+NC_006511.1
+  Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150, 2000 
+  bases around gc minimum at 3858700
+  LENGTH = 2000  COMBINED P-VALUE = 4.95e-03  E-VALUE =    0.049
+  DIAGRAM: 92-[+3]-7-[-2]-10-[-1]-275-[-2]-57-[-3]-134-[-2]-14-[+1]-239-[-2]-278-[+2]-160-[+1]-215-[-2]-229-[-1]-138-[-3]-35
+
+                      [+3]            [-2]               [-1]
+                      3.2e-05         9.9e-05            2.9e-05
+                      GAGTACGAT       TTCGCCATC          AACGGACCA
+                      +++++++++       ++++++++           +++++++ +
+76   TCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATGCCCTGCATGGAACGGACAATCTGCATCTGCACG
+
+                                         [-2]
+                                         4.7e-05
+                                         TTCGCCATC
+                                         ++++++++
+376  ATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCA
+
+                                [-3]
+                                1.6e-05
+                                ATCGTACTC
+                                +++++++++
+451  TGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTG
+
+                         [-2]                   [+1]
+                         4.7e-05                4.2e-05
+                         TTCGCCATC              TGGTCCGTT
+                         ++ ++++++              +++++++++
+601  TTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTG
+
+                                                                       [-2]
+                                                                       1.1e-05
+                                                                       TTCGCCATC
+                                                                       +++++++++
+826  GCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATC
+
+                                                          [+2]
+                                                          1.1e-05
+                                                          GATGGCGAA
+                                                          +++++++++
+1126 GCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCC
+
+                                                                             [+1
+                                                                             2.9
+                                                                             TGG
+                                                                             +++
+1276 TGGATAACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGG
+
+     ]
+     e-05
+     TCCGTT
+     ++++++
+1351 CCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACT
+
+                                                                            [-2]
+                                                                            2.1e
+                                                                            TTCG
+                                                                            ++++
+1501 ATCCAGGATCCGAGCCAAATCTCCGCTGGATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCC
 
      
      -05
      CCATC
-     + +++
-1651 CAATCGCGCCGCAAAACGTGTCGTATTCTCGACTACCAATGCCAATTGCGCCGAAACGTACCGCGGAAAGATCGG
-
-
-NC_011083.1
-  Salmonella enterica subsp. enterica serovar Heidelberg str. SL476, oric at 
-  4094240 +- 1000
-  LENGTH = 2000  COMBINED P-VALUE = 2.56e-04  E-VALUE =   0.0026
-  DIAGRAM: 212-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-599-[+3]-41-[+1]-184-[-2]-191
-
-                                                                   [+3]       [-
-                                                                   3.6e-05    1.
-                                                                   AATGGATCG  TT
-                                                                   +++++++++  ++
-151  CCGGGTAGCGCGAACAGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTT
-
-     2]
-     1e-05
-     CTCCATC
-     +++++++
-226  CGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCCGGGTTGCA
-
-                                                                           [+1]
-                                                                           1.4e-
-                                                                           ATCGT
-                                                                           +++++
-301  GCTCATCTGTCCCAACGTGTCAATATTGTGTGTCAAAAGCAGAGTCTGTTGACCCATACGCGCTGCGGCCATCGC
-
-     
-     05
-     GGCC
-     ++++
-376  GGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTAATTGCCTC
-
-                      [+3]                                       [+2]
-                      2.1e-05                                    4.0e-06
-                      AATGGATCG                                  GATGGAGAA
-                      +++++++ +                                  +++++++++
-451  GCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCC
-
-     [+1]
-     2.7e-06
-     ATCGTGGCC
-     +++++++++
-676  ATCGTGGCCCGTATAAGCTGGGATCAAAACGAGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTG
-
-                                                [+3]
-                                                4.0e-06
-                                                AATGGATCG
-                                                +++++++++
-751  GATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAG
-
-        [-2]                                          [-2]
-        3.1e-05                                       8.3e-05
-        TTCTCCATC                                     TTCTCCATC
-        +++++++ +                                     +++++ +++
-901  TGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTC
-
-                                                              [+3]
-                                                              8.2e-05
-                                                              AATGGATCG
-                                                              ++ ++++ +
-1501 CCGGTGGTGTAATACGCTTCTGTCACCTCATCCAGGCTTTCCAGCCGGGCCAGTGCGGAGGGATAGTCTTTGGCG
-
-                                     [+1]
-                                     6.0e-06
-                                     ATCGTGGCC
-                                     +++++++++
-1576 CTTTTGAGGATGATGCCAATAAAGCAGCCCACATCGTAGCCCAGTTGTTTAGGGCTGACGTCAATCCGTGCGCCC
-
-     [-2]
-     2.4e-05
-     TTCTCCATC
-     ++ ++++++
-1801 TTTTCCATCGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATCAAAACCGA
-
-
-NC_011080.1
-  Salmonella enterica subsp. enterica serovar Newport str. SL254, oric at 
-  4049920 +- 1000
-  LENGTH = 2000  COMBINED P-VALUE = 2.56e-04  E-VALUE =   0.0026
-  DIAGRAM: 94-[+1]-31-[-2]-163-[+1]-[-3]-21-[-1]-83-[-2]-52-[+3]-82-[+3]-48-[-2]-251-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-348
-
-                        [+1]                                    [-2]
-                        6.7e-05                                 2.4e-05
-                        ATCGTGGCC                               TTCTCCATC
-                        ++++++ ++                               ++++++++
-76   GATCGCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCA
-
-           [+1]     [-3]                          [-1]
-           8.1e-05  3.6e-05                       6.0e-06
-           ATCGTGGCCCGATCCATT                     GGCCACGAT
-           + +++++ +++++++ ++                     +++++++++
-301  GACAGTAGCGTGGGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGT
-
-                                                                   [-2]
-                                                                   4.7e-05
-                                                                   TTCTCCATC
-                                                                   ++++++++
-376  CATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACG
-
-                                                     [+3]
-                                                     4.4e-05
-                                                     AATGGATCG
-                                                     +++++++ +
-451  AGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCG
-
-                                                                     [+3]
-                                                                     5.5e-05
-                                                                     AATGGATCG
-                                                                     +++++++ +
-526  GCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCG
-
-                                                   [-2]
-                                                   4.7e-05
-                                                   TTCTCCATC
-                                                   ++ ++++++
-601  GATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCA
-
-           [+3]       [-2]
-           3.6e-05    1.1e-05
-           AATGGATCG  TTCTCCATC
-           +++++++++  +++++++++
-901  CTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATAC
-
-                   [+1]
-                   1.4e-05
-                   ATCGTGGCC
-                   +++++++++
-1051 TACGCGCTGCGGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGAT
-
-                                         [+3]
-                                         2.1e-05
-                                         AATGGATCG
-                                         +++++++ +
-1126 AAAACATGGTAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTT
-
-         [+2]
-         4.0e-06
-         GATGGAGAA
-         +++++++++
-1201 AGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGA
-
-                        [+1]
-                        2.7e-06
-                        ATCGTGGCC
-                        +++++++++
-1351 TAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGT
-
-                                                                   [+3]
-                                                                   4.0e-06
-                                                                   AATGGATCG
-                                                                   +++++++++
-1426 GAACAACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACG
-
-                           [-2]                                          [-2]
-                           3.1e-05                                       8.3e-05
-                           TTCTCCATC                                     TTCTCCA
-                           +++++++ +                                     +++++ +
-1576 CAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAA
-
-     
-     
-     TC
-     ++
-1651 TCGCGCCGCAAAACGTGTCGTATTCTCGACTGCCAATGCCAATTGCGCCGAAACGTACCGCGGAAAGATCGGGTT
-
-
-NC_010102.1
-  Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7, oric at 
-  4028930 +- 1000
-  LENGTH = 2000  COMBINED P-VALUE = 2.56e-04  E-VALUE =   0.0026
-  DIAGRAM: 204-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-599-[+3]-41-[+1]-184-[-2]-199
-
-                                                           [+3]       [-2]
-                                                           3.6e-05    1.1e-05
-                                                           AATGGATCG  TTCTCCATC
-                                                           +++++++++  +++++++++
-151  CGCGAACAGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCA
-
-                                                                   [+1]
-                                                                   1.4e-05
-                                                                   ATCGTGGCC
-                                                                   +++++++++
-301  GCCCCAACGTGTCAATATTGTGTGTCAAAAGCAGAGTCTGTTGACCCATACGCGCTGCGGCCATCGCGGCCTCAG
-
-              [+3]                                       [+2]
-              2.1e-05                                    4.0e-06
-              AATGGATCG                                  GATGGAGAA
-              +++++++ +                                  +++++++++
-451  CGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCG
-
-                                                                        [+1]
-                                                                        2.7e-06
-                                                                        ATCGTGGC
-                                                                        ++++++++
-601  GGATAACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGC
-
-     
-     
-     C
-     +
-676  CCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACTA
-
-                                        [+3]
-                                        4.0e-06
-                                        AATGGATCG
-                                        +++++++++
-751  CCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAGTAAATTAA
-
-                                                                           [-2]
-                                                                           3.1e-
-                                                                           TTCTC
-                                                                           +++++
-826  TCCAGGATCCGAGCCAAATCTCCGCTGGATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCC
-
-                                              [-2]
-     05                                       8.3e-05
-     CATC                                     TTCTCCATC
-     ++ +                                     +++++ +++
-901  CAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCTC
-
-                                                      [+3]
-                                                      8.2e-05
-                                                      AATGGATCG
-                                                      ++ ++++ +
-1501 GTAATACGCTTCCGTCACCTCATCCAGGCTTTCCAGCCGGGCCAGTGCGGAGGGATAGTCTTTGGCGCTTTTGAG
-
-                             [+1]
-                             6.0e-06
-                             ATCGTGGCC
-                             +++++++++
-1576 GATGATGCCAATAAAGCAGCCCACATCGTAGCCCAGTTGTTTAGGGCTGACGTCAATCCGTGCGCCCGTAATGAT
-
-                                                                        [-2]
-                                                                        2.4e-05
-                                                                        TTCTCCAT
-                                                                        ++ +++++
-1726 GTAGGCAGTGCGGGCATTTCCCATTAAGGCGTCAAGGATGCCGCGGTCCAGATTGTCGATCTGATAATTTTCCAT
-
-     
-     
-     C
-     +
-1801 CGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATCAAAACCGAAGTTAGCT
-
-
-NZ_CP015574.1
-  Salmonella enterica strain FORC_038, oric at 4902430 +- 1000
-  LENGTH = 2000  COMBINED P-VALUE = 5.01e-04  E-VALUE =    0.005
-  DIAGRAM: 410-[+2]-184-[-1]-41-[-3]-599-[+2]-37-[+2]-101-[-3]-109-[-1]-156-[-2]-34-[-3]-88-[-1]-138-[+2]-4
-
-                                        [+2]
-                                        2.4e-05
-                                        GATGGAGAA
-                                        ++++++ ++
-376  AATAGAGATAATTATTAATCTGCATAAGAAAAAGCGATGGAAAATTATCAGATCGACAATCTGGACCGCGGCATA
-
-        [-1]                                              [-3]
-        6.0e-06                                           8.2e-05
-        GGCCACGAT                                         CGATCCATT
-        +++++++++                                         + ++++ ++
-601  CTGGGCTACGATGTGGGCTGCTTTATTGGCATCATTCTCAAAAGCGCCAAAGACTATCCCTCCGCACTGGCCCGG
-
-                                                                  [+2]
-                                                                  8.3e-05
-                                                                  GATGGAGAA
-                                                                  +++ +++++
-1201 CCGCGGTACGTTTCGGCGCAATTGGCATTGGCAGTCGAGAATACGACACGTTTTGCGGCGCGATTGAGAAAATAG
-
-                                     [+2]
-                                     3.1e-05
-                                     GATGGAGAA
-                                     + +++++++
-1276 AAGCGGAACTGAAAGACACTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAACATCCTTGAACATGAGATTC
-
-                                                                        [-3]
-                                                                        4.0e-06
-                                                                        CGATCCAT
-                                                                        ++++++++
-1351 CGGAAGATCCAGCGGAGATTTGGCTCGGATCCTGGATTAATTTACTCAAATAAGTGTAAAGATCGTGCGATCCAT
-
-     
-     
-     T
-     +
-1426 TGTGGATAAATCTGGTGGAAAGCTTGGATCAACCGGTAGTTATCCAAAGAATAACCGTTGTTCACTTTTTGAGTT
-
-                                        [-1]
-                                        9.2e-06
-                                        GGCCACGAT
-                                        +++++++++
-1501 GTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGACCACGATCACCGATCATTCACAGCTAGTGATCCTTTCC
-
-                                                       [-2]
-                                                       4.0e-06
-                                                       TTCTCCATC
-                                                       +++++++++
-1651 AGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTGAGTAG
-
-                       [-3]
-                       2.1e-05
-                       CGATCCATT
-                       + +++++++
-1726 AATCCACCGCCCGGGCTTCAATCCATTTTCACACCGCGTTATGCGAGGCAATTACCATGTTTTATCAGGATCCTT
-
-                                             [-1]
-                                             1.4e-05
-                                             GGCCACGAT
-                                             +++++++++
-1801 TTGACGTCATTATTATTGGCGGGGGTCATGCAGGCACTGAGGCCGCGATGGCCGCAGCGCGTATGGGTCAACAGA
-
-                                          [+2]
-                                          1.1e-05
-                                          GATGGAGAA
-                                          +++++++++
-1951 GACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCG
-
-
-NC_016854.1
-  Salmonella enterica subsp. enterica serovar Typhimurium str. D23580 oric at 
-  4106620 +- 1000
-  LENGTH = 2000  COMBINED P-VALUE = 5.01e-04  E-VALUE =    0.005
-  DIAGRAM: 5-[+1]-31-[-2]-163-[+1]-[-3]-21-[-1]-83-[-2]-52-[+3]-82-[+3]-48-[-2]-251-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-437
-
-          [+1]                                    [-2]
-          6.7e-05                                 2.4e-05
-          ATCGTGGCC                               TTCTCCATC
-          ++++++ ++                               ++++++++
-1    AAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCATGGAACGGACAATC
-
-                                                                        [+1]
-                                                                        8.1e-05
-                                                                        ATCGTGGC
-                                                                        + +++++
-151  TCAAGGAAGATCTGATGCTGGTTACGATCGGCAAAACGCATCACCTTGTCTTCGATCGAAGGACAGTAGCGTGGG
-
-      [-3]                          [-1]
-      3.6e-05                       6.0e-06
-     CCGATCCATT                     GGCCACGAT
-     +++++++ ++                     +++++++++
-226  CCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGTCATGGGTTTTCTCA
-
-                                                     [-2]
-                                                     4.7e-05
-                                                     TTCTCCATC
-                                                     ++++++++
-301  TTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCATC
-
-                                       [+3]
-                                       4.4e-05
-                                       AATGGATCG
-                                       +++++++ +
-376  GGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGGTT
-
-                                                       [+3]
-                                                       5.5e-05
-                                                       AATGGATCG
-                                                       +++++++ +
-451  TTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCACGA
-
-                                     [-2]
-                                     4.7e-05
-                                     TTCTCCATC
-                                     ++ ++++++
-526  CCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTTTC
-
-                                                                        [+3]
-                                                                        3.6e-05
-                                                                        AATGGATC
-                                                                        ++++++++
-751  TGAGCCCGGGTAGCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATC
-
-        [-2]
-        1.1e-05
-     G  TTCTCCATC
-     +  +++++++++
-826  GCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCCGGG
-
-     [+1]
-     1.4e-05
-     ATCGTGGCC
-     +++++++++
-976  ATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTAATT
-
-                           [+3]                                       [+2]
-                           2.1e-05                                    4.0e-06
-                           AATGGATCG                                  GATGGAGAA
-                           +++++++ +                                  +++++++++
-1051 GCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAA
-
-          [+1]
-          9.2e-06
-          ATCGTGGCC
-          +++++++++
-1276 CGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATT
-
-                                                     [+3]
-                                                     4.0e-06
-                                                     AATGGATCG
-                                                     +++++++++
-1351 CTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACATTTAT
-
-             [-2]                                          [-2]
-             3.1e-05                                       8.3e-05
-             TTCTCCATC                                     TTCTCCATC
-             +++++++ +                                     +++++ +++
-1501 TTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAAC
-
-
-NC_016810.1
-  Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344, oric at 
-  4104970 +- 1000
-  LENGTH = 2000  COMBINED P-VALUE = 5.01e-04  E-VALUE =    0.005
-  DIAGRAM: 90-[+1]-31-[-2]-163-[+1]-[-3]-21-[-1]-83-[-2]-52-[+3]-82-[+3]-48-[-2]-251-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-109-[+3]-101-[-2]-37-[-2]-352
-
-                    [+1]                                    [-2]
-                    6.7e-05                                 2.4e-05
-                    ATCGTGGCC                               TTCTCCATC
-                    ++++++ ++                               ++++++++
-76   GCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCATGGA
-
-       [+1]     [-3]                          [-1]
-       8.1e-05  3.6e-05                       6.0e-06
-       ATCGTGGCCCGATCCATT                     GGCCACGAT
-       + +++++ +++++++ ++                     +++++++++
-301  GTAGCGTGGGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGTCATG
-
-                                                               [-2]
-                                                               4.7e-05
-                                                               TTCTCCATC
-                                                               ++++++++
-376  GGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAA
-
-                                                 [+3]
-                                                 4.4e-05
-                                                 AATGGATCG
-                                                 +++++++ +
-451  AACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGG
-
-                                                                 [+3]
-                                                                 5.5e-05
-                                                                 AATGGATCG
-                                                                 +++++++ +
-526  TGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATC
-
-                                               [-2]
-                                               4.7e-05
-                                               TTCTCCATC
-                                               ++ ++++++
-601  GCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTAC
-
-       [+3]       [-2]
-       3.6e-05    1.1e-05
-       AATGGATCG  TTCTCCATC
-       +++++++++  +++++++++
-901  CTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCC
-
-               [+1]
-               1.4e-05
-               ATCGTGGCC
-               +++++++++
-1051 CGCTGCGGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAA
-
-                                     [+3]
-                                     2.1e-05
-                                     AATGGATCG
-                                     +++++++ +
-1126 CATGGTAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCC
-
-     [+2]
-     4.0e-06
-     GATGGAGAA
-     +++++++++
-1201 GATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTC
-
-                    [+1]
-                    9.2e-06
-                    ATCGTGGCC
-                    +++++++++
-1351 TGTGAATGATCGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAAC
-
-                                                               [+3]
-                                                               4.0e-06
-                                                               AATGGATCG
-                                                               +++++++++
-1426 AACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCT
-
-                       [-2]                                          [-2]
-                       3.1e-05                                       8.3e-05
-                       TTCTCCATC                                     TTCTCCATC
-                       +++++++ +                                     +++++ +++
-1576 GATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGC
-
-
-NC_006511.1
-  Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150, oric 
-  at 3859360 +- 1000
-  LENGTH = 2000  COMBINED P-VALUE = 1.01e-03  E-VALUE =     0.01
-  DIAGRAM: 220-[+3]-2-[-2]-138-[+1]-88-[+3]-34-[+2]-156-[+1]-219-[-2]-37-[-2]-599-[+3]-41-[+1]-184-[-2]-183
-
-                                                                           [+3]
-                                                                           3.6e-
-                                                                           AATGG
-                                                                           +++++
-151  GCCTGAGCCCGGGTAGCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCG
-
-           [-2]
-     05    1.1e-05
-     ATCG  TTCTCCATC
-     ++++  +++++++++
-226  ATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCC
-
-        [+1]
-        1.4e-05
-        ATCGTGGCC
-        +++++++++
-376  GCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTA
-
-                              [+3]                                       [+2]
-                              2.1e-05                                    4.0e-06
-                              AATGGATCG                                  GATGGAG
-                              +++++++ +                                  +++++++
-451  ATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAG
-
-     
-     
-     AA
-     ++
-526  AAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAG
-
-             [+1]
-             2.7e-06
-             ATCGTGGCC
-             +++++++++
-676  GATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTT
-
-                [-2]                                          [-2]
-                3.1e-05                                       8.3e-05
-                TTCTCCATC                                     TTCTCCATC
-                +++++++ +                                     +++++ +++
-901  ATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAA
-
-                                                                      [+3]
-                                                                      8.2e-05
-                                                                      AATGGATCG
-                                                                      ++ ++++ +
-1501 TGTAGTGACCGGTGGTGTAATACGCTTCCGTCACCTCATCCAGGCTTTCCAGCCGGGCCAGTGCGGAGGGATAGT
-
-                                             [+1]
-                                             6.0e-06
-                                             ATCGTGGCC
-                                             +++++++++
-1576 CTTTGGCGCTTTTGAGAATGATGCCAATAAAGCAGCCCACATCGTAGCCCAGCTGTTTAGGGCTGACGTCAATCC
-
-             [-2]
-             2.4e-05
-             TTCTCCATC
-             ++ ++++++
-1801 TCTGATAATTTTCCATCGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATC
+     +++++
+1576 CCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCT
+
+              [-1]
+              9.2e-06
+              AACGGACCA
+              +++++++++
+1801 TCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACCGGCAGCTTCCAGCTTTTCCGCCAGATGTTCCGCG
+
+           [-3]
+           2.1e-05
+           ATCGTACTC
+           +++++++++
+1951 GGCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGAAAAATGT
 
 
 NC_003198.1
-  Salmonella enterica subsp. enterica serovar Typhi str. CT18, oric at 3765460 
-  +- 1000
-  LENGTH = 2000  COMBINED P-VALUE = 1.01e-03  E-VALUE =     0.01
-  DIAGRAM: 455-[+2]-37-[+2]-219-[-1]-156-[-2]-34-[-3]-88-[-1]-138-[+2]-2-[-3]-308-[-3]-82-[-3]-52-[+2]-83-[+1]-21-[+3]-[-1]-199
+  Salmonella enterica subsp. enterica serovar Typhi str. CT18, 2000 bases 
+  around gc minimum at 3764800
+  LENGTH = 2000  COMBINED P-VALUE = 6.07e-03  E-VALUE =    0.061
+  DIAGRAM: 161-[+3]-94-[+2]-71-[-1]-423-[+3]-138-[+1]-229-[+2]-215-[-1]-160-[-2]-278-[+2]-150
 
-          [+2]                                          [+2]
-          8.3e-05                                       3.1e-05
-          GATGGAGAA                                     GATGGAGAA
-          +++ +++++                                     + +++++++
-451  GGCGCGATTGAGAAAATAGAAGCGGAACTGAAAGGCGCTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAAC
+                [+3]
+                6.5e-05
+                GAGTACGAT
+                +++ +++++
+151  CAACAAAACGAGAGCACTATTCAATAATCAACAGATAAAAAGCTAACTTCGATTTTGATTCGTTAAAAATAATGG
 
-                                                           [-1]
-                                                           2.7e-06
-                                                           GGCCACGAT
+                                            [+2]
+                                            4.7e-05
+                                            GATGGCGAA
+                                            ++++++ ++
+226  CTAAAATAGAGATAATCATTAATCTGCATAAGAAAAAGCGATGGAAAATTATCAGATCGACAATCTGGACCGCGG
+
+                                                 [-1]
+                                                 5.4e-05
+                                                 AACGGACCA
+                                                 +++++++++
+301  CATACTTGACGCCTTAATGGAAAATGCCCGCACCGCCTACGCCGAACTGGCCAAACAATTTGGCGTTAGCCCTGG
+
+                               [+3]
+                               2.1e-05
+                               GAGTACGAT
+                               +++++++++
+751  CACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGATCAATGGCAGACATT
+
+                            [+1]
+                            9.2e-06
+                            TGGTCCGTT
+                            +++++++++
+901  GGTTTTTCAACCGAAACGGTGCACGGTCCGTTATTAGAGGATCTGTCAACTTCCGGGATCTGGCTGATAATCAGC
+
+                                         [+2]
+                                         2.1e-05
+                                         GATGGCGAA
+                                         +++++++++
+1126 ATAGAAGCGGAACTGAAAGGCGCTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAACATCCTTGAACATGAG
+
+                                        [-1]
+                                        2.9e-05
+                                        AACGGACCA
+                                        +++++++++
+1351 AGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTCACAGCTAGTGATCCT
+
+                                                           [-2]
+                                                           1.1e-05
+                                                           TTCGCCATC
                                                            +++++++++
-676  TTTGTTCACTTTTTGAGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTC
+1501 GAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTGA
 
-                                                                          [-2]
-                                                                          4.0e-0
-                                                                          TTCTCC
-                                                                          ++++++
-826  TAAGAGATCACAATAGAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCC
-
-                                          [-3]
-     6                                    2.1e-05
-     ATC                                  CGATCCATT
-     +++                                  + +++++++
-901  ATCGGCTAAAGTTGAGTAGAATCCACCGCCCGGGCTTCAATCCATTTTCACACCGCGTTATGCGAGGCAATTACC
-
-                                                                [-1]
-                                                                1.4e-05
-                                                                GGCCACGAT
-                                                                +++++++++
-976  ATGTTTTATCAGGATCCTTTTGACGTCATTATTATTGGCGGGGGTCATGCAGGCACTGAGGCCGCGATGGCCGCA
-
-                                                             [+2]       [-3]
-                                                             1.1e-05    3.6e-05
-                                                             GATGGAGAA  CGATCCAT
-                                                             +++++++++  ++++++++
-1126 ATCGGCGGTATTGGCAAGGGACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCGATCGAT
-
-     
-     
-     T
-     +
-1201 CAGGCAGGTATTCAGTTTAAGATACTAAACGCCAGCAAAGGTCCGGCCGTTCGCGCTACCCGAGCTCAGGCGGAT
-
-              [-3]
-              5.5e-05
-              CGATCCATT
-              + +++++++
-1501 GGCGATCCGCCATCCATCCCGCTGTCTCGCCGTCTGCGTGAGCTTCCGCTACGCGTCAGCCGCCTGAAAACCGGC
-
-                              [-3]
-                              4.4e-05
-                              CGATCCATT
-                              + +++++++
-1576 ACACCGCCGCGTATTGATGCGCGTACTATCGATTTCAGCGTGTTGGCTCAACAGCATGGCGATAACCCGATGCCG
-
-                [+2]
-                4.7e-05
-                GATGGAGAA
-                 ++++++++
-1651 GTTTTCTCGTTTATGGGGAATGCTTTTCAGCATCCGCAACAGGTGCCGTGTTACATCACGCATACCAATGAGAAA
-
-                                 [+1]                          [+3]     [-1]
-                                 6.0e-06                       3.6e-05  8.1e-05
-                                 ATCGTGGCC                     AATGGATCGGGCCACGA
-                                 +++++++++                     ++ +++++++ +++++
-1726 ACCCATGACGTGATTCGTAATAACCTCGATCGTAGCCCAATGTACGCTGGCGTGATCGAAGGGATCGGCCCACGC
-
-     
-     
-     T
-     +
-1801 TACTGTCCTTCGATCGAAGACAAGGTGATGCGTTTTGCCGATCGTAACCAGCATCAGATCTTCCTTGAGCCGGAA
+                                              [+2]
+                                              1.1e-05
+                                              GATGGCGAA
+                                              +++++++++
+1801 AAGGGACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCGATCGATCAGGCAGGTATTCAG
 
 ********************************************************************************
 
 
 CPU: PC0028
-Time 0.016 secs.
+Time 0.031 secs.
 
-mast -oc . -nostatus meme.xml /mnt/c/drive/uni/seq_inf/seqinf_project/data/salmonella/skew_regions.fasta
+mast -oc data/salmonella/meme -nostatus data/salmonella/meme/meme.xml data/salmonella/skew_regions.fasta

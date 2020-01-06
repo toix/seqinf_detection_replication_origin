@@ -1,0 +1,8 @@
+NC_000913.3	RefSeq	origin_of_replication	3925744	3925975	.	+	.	ID=id-8369;Note=oriC;gbkey=rep_origin
+NC_003047.1	RefSeq	origin_of_replication	1	477	.	+	.	ID=id1;Note=oriC OR SMc04880~ ORIGIN OF REPLICATION~predicted by Homology;gbkey=rep_origin
+NC_000117.1	RefSeq	origin_of_replication	719988	720258	.	+	.	ID=id27;gbkey=rep_origin
+NC_003131.1	RefSeq	origin_of_replication	55956	57150	.	-	.	ID=id3135;Note=oriR%3B similar to Escherichia coli oriR sequence (EMBL:X70131);gbkey=rep_origin
+NC_003134.1	RefSeq	origin_of_replication	46207	48116	.	+	.	ID=id3196;gbkey=rep_origin
+NC_003134.1	RefSeq	origin_of_replication	70063	70336	.	-	.	ID=id3252;Note=similar to Escherichia coli F plasmid RepF1b region found in GenBank Accession Number M26308;gbkey=rep_origin
+NC_003132.1	RefSeq	origin_of_replication	2924	4176	.	+	.	ID=id3270;Note=similar to ColE1 ori;gbkey=rep_origin
+NC_008791.1	RefSeq	origin_of_replication	1	650	.	+	.	ID=id7450;Note=oriR%3B putative;gbkey=rep_origin

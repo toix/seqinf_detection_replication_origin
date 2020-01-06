@@ -10,8 +10,9 @@
         "version": "5.1.0",
         "release": "Fri Oct 11 15:53:28 2019 -0700",
         "cmd": [
-          "mast", "-oc", ".", "-nostatus", "meme.xml",
-          "/mnt/c/drive/uni/seq_inf/seqinf_project/data/salmonella/skew_regions.fasta"
+          "mast", "-oc", "data/salmonella/meme", "-nostatus",
+          "data/salmonella/meme/meme.xml",
+          "data/salmonella/skew_regions.fasta"
         ],
         "settings": {
           "strand_handling": "combine",
@@ -102,25 +103,25 @@
         },
         "motif_dbs": [
           {
-            "source": "meme.xml",
-            "last_mod_date": "Fri Jan  3 19:44:01 2020",
-            "bg": [0.248, 0.252, 0.252, 0.248]
+            "source": "data/salmonella/meme/meme.xml",
+            "last_mod_date": "Mon Jan  6 00:53:45 2020",
+            "bg": [0.245, 0.255, 0.255, 0.245]
           }
         ],
         "motifs": [
           {
             "db": 0,
-            "id": "ATCGTRGCC",
+            "id": "YGGTCCGTW",
             "alt": "MEME-1",
             "len": 9,
-            "nsites": 49,
-            "evalue": "3.8e-004",
+            "nsites": 37,
+            "evalue": "3.7e-004",
             "psm": [
-              [201, -1226, -1226, -1226], [-1226, -1226, -104, 182], 
-              [-160, 186, -1226, -1226], [-160, -1226, 186, -1226], 
-              [-1226, -4, -1226, 161], [65, -1226, 128, -1226], 
-              [-1226, -46, 169, -1226], [-1226, 113, -31, -2], 
-              [-1226, 199, -1226, -1226]
+              [-1185, 67, -1185, 128], [-1185, -1185, 162, -18], 
+              [-1185, -1185, 197, -1185], [-1185, 8, -1185, 157], 
+              [-1185, 197, -1185, -1185], [14, 152, -1185, -1185], 
+              [-1185, -1185, 197, -1185], [-1185, -1185, -1185, 203], 
+              [91, -1185, -1185, 114]
             ]
           }, {
             "db": 0,
@@ -128,37 +129,37 @@
             "alt": "MEME-2",
             "len": 9,
             "nsites": 50,
-            "evalue": "3.3e-026",
+            "evalue": "3.5e-020",
             "psm": [
-              [-1229, -1229, 170, -46], [169, -1229, -1229, -31], 
-              [-1229, -1229, -1229, 201], [-1229, -1229, 193, -263], 
-              [-1229, -1229, 199, -1229], [62, 25, 34, -1229], 
-              [-46, -1229, 170, -1229], [201, -1229, -1229, -1229], 
-              [201, -1229, -1229, -1229]
+              [-1229, -267, 158, -29], [163, -1229, -1229, -3], 
+              [-1229, -1229, -1229, 203], [-1229, -1229, 197, -1229], 
+              [-1229, -267, 191, -1229], [39, 41, 41, -1229], 
+              [-29, -1229, 165, -1229], [203, -1229, -1229, -1229], 
+              [203, -1229, -1229, -1229]
             ]
           }, {
             "db": 0,
-            "id": "RATGGATCG",
+            "id": "GMGTACDAT",
             "alt": "MEME-3",
             "len": 9,
-            "nsites": 50,
-            "evalue": "7.5e-013",
+            "nsites": 29,
+            "evalue": "3.4e-001",
             "psm": [
-              [132, -1229, 59, -1229], [201, -1229, -1229, -1229], 
-              [-363, -1229, -34, 165], [-1229, 34, 143, -1229], 
-              [-1229, -1229, 199, -1229], [195, -1229, -1229, -263], 
-              [-1229, -1229, -1229, 201], [-17, 87, -107, -31], 
-              [-1229, -1229, 199, -1229]
+              [-183, -1150, 187, -1150], [108, 92, -1150, -1150], 
+              [-1150, -1150, 197, -1150], [-2, -189, -1150, 149], 
+              [203, -1150, -1150, -1150], [-1150, 197, -1150, -1150], 
+              [-2, -1150, 81, 34], [203, -1150, -1150, -1150], 
+              [-1150, -1150, -1150, 203]
             ]
           }
         ],
         "correlation": [
-          [null, 0.16, 0.34], [0.16, null, 0.31], [0.34, 0.31, null]
+          [null, 0.18, 0.28], [0.18, null, 0.33], [0.28, 0.33, null]
         ],
         "sequence_dbs": [
           {
-            "source": "/mnt/c/drive/uni/seq_inf/seqinf_project/data/salmonella/skew_regions.fasta",
-            "last_mod_date": "Fri Jan  3 19:43:34 2020",
+            "source": "data/salmonella/skew_regions.fasta",
+            "last_mod_date": "Mon Jan  6 00:53:18 2020",
             "sequence_count": 10,
             "residue_count": 20000
           }
@@ -166,983 +167,139 @@
         "sequences": [
           {
             "db": 0,
-            "name": "NZ_CP007245.1",
-            "comment": "Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120008, oric at 3976720 +- 1000",
+            "name": "NC_011083.1",
+            "comment": "Salmonella enterica subsp. enterica serovar Heidelberg str. SL476, 2000 bases around gc minimum at 4093600",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 2.56e-04,
-                "evalue": 0.0026
+                "combined_pvalue": 6.82e-04,
+                "evalue": 0.0068
               }
             ],
             "segs": [
               {
                 "pos": 0,
-                "data": "CGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCGCGTTCTCCATGCCCTGCATGGAACGGACAA",
+                "data": "TACTTTCCAGAGTCGGTTTCAGATCGCGCGGGTCGAAAAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCT",
                 "hits": [
                   {
-                    "pos": 7,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 6.7e-05,
-                    "match": "++++++ ++"
-                  }
-                ]
-              }, {
-                "pos": 225,
-                "data": "GGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGTCATGGGTTTTCT",
-                "hits": [
-                  {
-                    "pos": 228,
+                    "pos": 40,
                     "idx": 2,
                     "rc": true,
-                    "pvalue": 3.6e-05,
-                    "match": "++++++ ++"
-                  }, {
-                    "pos": 258,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 6.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 300,
-                "data": "CATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCA",
-                "hits": [
-                  {
-                    "pos": 350,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 4.7e-05,
-                    "match": "++++++++ "
-                  }
-                ]
-              }, {
-                "pos": 375,
-                "data": "TCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGG",
-                "hits": [
-                  {
-                    "pos": 411,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 4.4e-05,
-                    "match": "+++++++ +"
-                  }
-                ]
-              }, {
-                "pos": 450,
-                "data": "TTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCAC",
-                "hits": [
-                  {
-                    "pos": 502,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 5.5e-05,
-                    "match": "+++++++ +"
-                  }
-                ]
-              }, {
-                "pos": 525,
-                "data": "GACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTT",
-                "hits": [
-                  {
-                    "pos": 559,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 4.7e-05,
-                    "match": "++ ++++++"
-                  }
-                ]
-              }, {
-                "pos": 750,
-                "data": "CCTGAGCCCGGGTAGCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCCG",
-                "hits": [
-                  {
-                    "pos": 819,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 3.6e-05,
-                    "match": "+++++++++"
-                  }, {
-                    "pos": 830,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 1.1e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 975,
-                "data": "CCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTAA",
-                "hits": [
-                  {
-                    "pos": 977,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 1.4e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1050,
-                "data": "TTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGG",
-                "hits": [
-                  {
-                    "pos": 1074,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 2.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 1117,
-                    "idx": 1,
-                    "rc": false,
                     "pvalue": 4.0e-06,
                     "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1275,
-                "data": "ATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTA",
-                "hits": [
-                  {
-                    "pos": 1282,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 2.7e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1350,
-                "data": "TTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTT",
-                "hits": [
-                  {
-                    "pos": 1400,
+                  }, {
+                    "pos": 64,
                     "idx": 2,
                     "rc": false,
-                    "pvalue": 4.0e-06,
+                    "pvalue": 3.2e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 1500,
-                "data": "TCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAA",
-                "hits": [
-                  {
-                    "pos": 1510,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 3.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 1556,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 8.3e-05,
-                    "match": "+++++ +++"
-                  }
-                ]
-              }
-            ]
-          }, {
-            "db": 0,
-            "name": "NC_011294.1",
-            "comment": "Salmonella enterica subsp. enterica serovar Enteritidis str. P125109 oric at 3953990 +- 1000",
-            "length": 2000,
-            "score": [
-              {
-                "combined_pvalue": 2.56e-04,
-                "evalue": 0.0026
-              }
-            ],
-            "segs": [
-              {
                 "pos": 75,
-                "data": "TCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCGCGTTCTCCATGCCCT",
+                "data": "TCGCGTTCTCCATGCCCTGCATGGAACGGACAATCTGCATCTGTACATCGAACGGCAGGCTGGTGGAGATACCGT",
                 "hits": [
                   {
-                    "pos": 97,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 6.7e-05,
-                    "match": "++++++ ++"
-                  }
-                ]
-              }, {
-                "pos": 300,
-                "data": "AAGGACAGTAGCGCGGGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCA",
-                "hits": [
-                  {
-                    "pos": 318,
-                    "idx": 2,
+                    "pos": 80,
+                    "idx": 1,
                     "rc": true,
-                    "pvalue": 3.6e-05,
-                    "match": "++++++ ++"
+                    "pvalue": 9.9e-05,
+                    "match": "++++++++ "
                   }, {
-                    "pos": 348,
+                    "pos": 99,
                     "idx": 0,
                     "rc": true,
-                    "pvalue": 6.0e-06,
-                    "match": "+++++++++"
+                    "pvalue": 2.9e-05,
+                    "match": "+++++++ +"
                   }
                 ]
               }, {
                 "pos": 375,
-                "data": "CGTCATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAA",
+                "data": "GAGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGC",
                 "hits": [
                   {
-                    "pos": 440,
+                    "pos": 383,
                     "idx": 1,
                     "rc": true,
                     "pvalue": 4.7e-05,
                     "match": "++++++++ "
-                  }
-                ]
-              }, {
-                "pos": 450,
-                "data": "ACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATAC",
-                "hits": [
-                  {
-                    "pos": 501,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 4.4e-05,
-                    "match": "+++++++ +"
-                  }
-                ]
-              }, {
-                "pos": 525,
-                "data": "GCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGG",
-                "hits": [
-                  {
-                    "pos": 592,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 5.5e-05,
-                    "match": "+++++++ +"
                   }, {
-                    "pos": 649,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 4.7e-05,
-                    "match": "++ ++++++"
-                  }
-                ]
-              }, {
-                "pos": 900,
-                "data": "TACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAA",
-                "hits": [
-                  {
-                    "pos": 909,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 3.6e-05,
-                    "match": "+++++++++"
-                  }, {
-                    "pos": 920,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 1.1e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1050,
-                "data": "CCATACGCGCTGCGGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCT",
-                "hits": [
-                  {
-                    "pos": 1067,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 1.4e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1125,
-                "data": "GATAAAACATGGTAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAAC",
-                "hits": [
-                  {
-                    "pos": 1164,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 2.1e-05,
-                    "match": "+++++++ +"
-                  }
-                ]
-              }, {
-                "pos": 1200,
-                "data": "TTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTG",
-                "hits": [
-                  {
-                    "pos": 1207,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1350,
-                "data": "CACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAA",
-                "hits": [
-                  {
-                    "pos": 1372,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 2.7e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1425,
-                "data": "AGTGAACAACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGC",
-                "hits": [
-                  {
-                    "pos": 1490,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1575,
-                "data": "GTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCTCGACTACCAATGCCAATTGCGCCGAAACGTACCGCGGAAAGATCGG",
-                "hits": [
-                  {
-                    "pos": 1600,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 3.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 1646,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 8.3e-05,
-                    "match": "+++++ +++"
-                  }
-                ]
-              }
-            ]
-          }, {
-            "db": 0,
-            "name": "NC_011083.1",
-            "comment": "Salmonella enterica subsp. enterica serovar Heidelberg str. SL476, oric at 4094240 +- 1000",
-            "length": 2000,
-            "score": [
-              {
-                "combined_pvalue": 2.56e-04,
-                "evalue": 0.0026
-              }
-            ],
-            "segs": [
-              {
-                "pos": 150,
-                "data": "CCGGGTAGCGCGAACAGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCCGGGTTGCA",
-                "hits": [
-                  {
-                    "pos": 212,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 3.6e-05,
-                    "match": "+++++++++"
-                  }, {
-                    "pos": 223,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 1.1e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 300,
-                "data": "GCTCATCTGTCCCAACGTGTCAATATTGTGTGTCAAAAGCAGAGTCTGTTGACCCATACGCGCTGCGGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTAATTGCCTC",
-                "hits": [
-                  {
-                    "pos": 370,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 1.4e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 450,
-                "data": "GCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCC",
-                "hits": [
-                  {
-                    "pos": 467,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 2.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 510,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 675,
-                "data": "ATCGTGGCCCGTATAAGCTGGGATCAAAACGAGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTG",
-                "hits": [
-                  {
-                    "pos": 675,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 2.7e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 750,
-                "data": "GATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAG",
-                "hits": [
-                  {
-                    "pos": 793,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 900,
-                "data": "TGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTC",
-                "hits": [
-                  {
-                    "pos": 903,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 3.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 949,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 8.3e-05,
-                    "match": "+++++ +++"
-                  }
-                ]
-              }, {
-                "pos": 1500,
-                "data": "CCGGTGGTGTAATACGCTTCTGTCACCTCATCCAGGCTTTCCAGCCGGGCCAGTGCGGAGGGATAGTCTTTGGCG",
-                "hits": [
-                  {
-                    "pos": 1557,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 8.2e-05,
-                    "match": "++ ++++ +"
-                  }
-                ]
-              }, {
-                "pos": 1575,
-                "data": "CTTTTGAGGATGATGCCAATAAAGCAGCCCACATCGTAGCCCAGTTGTTTAGGGCTGACGTCAATCCGTGCGCCC",
-                "hits": [
-                  {
-                    "pos": 1607,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 6.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1800,
-                "data": "TTTTCCATCGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATCAAAACCGA",
-                "hits": [
-                  {
-                    "pos": 1800,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 2.4e-05,
-                    "match": "++ ++++++"
-                  }
-                ]
-              }
-            ]
-          }, {
-            "db": 0,
-            "name": "NC_011080.1",
-            "comment": "Salmonella enterica subsp. enterica serovar Newport str. SL254, oric at 4049920 +- 1000",
-            "length": 2000,
-            "score": [
-              {
-                "combined_pvalue": 2.56e-04,
-                "evalue": 0.0026
-              }
-            ],
-            "segs": [
-              {
-                "pos": 75,
-                "data": "GATCGCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCA",
-                "hits": [
-                  {
-                    "pos": 94,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 6.7e-05,
-                    "match": "++++++ ++"
-                  }, {
-                    "pos": 134,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 2.4e-05,
-                    "match": "++++++++ "
-                  }
-                ]
-              }, {
-                "pos": 300,
-                "data": "GACAGTAGCGTGGGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGT",
-                "hits": [
-                  {
-                    "pos": 306,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 8.1e-05,
-                    "match": "+ +++++ +"
-                  }, {
-                    "pos": 315,
+                    "pos": 449,
                     "idx": 2,
                     "rc": true,
-                    "pvalue": 3.6e-05,
-                    "match": "++++++ ++"
-                  }, {
-                    "pos": 345,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 6.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 375,
-                "data": "CATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACG",
-                "hits": [
-                  {
-                    "pos": 437,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 4.7e-05,
-                    "match": "++++++++ "
-                  }
-                ]
-              }, {
-                "pos": 450,
-                "data": "AGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCG",
-                "hits": [
-                  {
-                    "pos": 498,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 4.4e-05,
-                    "match": "+++++++ +"
-                  }
-                ]
-              }, {
-                "pos": 525,
-                "data": "GCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCG",
-                "hits": [
-                  {
-                    "pos": 589,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 5.5e-05,
-                    "match": "+++++++ +"
-                  }
-                ]
-              }, {
-                "pos": 600,
-                "data": "GATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCA",
-                "hits": [
-                  {
-                    "pos": 646,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 4.7e-05,
-                    "match": "++ ++++++"
-                  }
-                ]
-              }, {
-                "pos": 900,
-                "data": "CTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATAC",
-                "hits": [
-                  {
-                    "pos": 906,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 3.6e-05,
-                    "match": "+++++++++"
-                  }, {
-                    "pos": 917,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 1.1e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1050,
-                "data": "TACGCGCTGCGGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGAT",
-                "hits": [
-                  {
-                    "pos": 1064,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 1.4e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1125,
-                "data": "AAAACATGGTAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTT",
-                "hits": [
-                  {
-                    "pos": 1161,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 2.1e-05,
-                    "match": "+++++++ +"
-                  }
-                ]
-              }, {
-                "pos": 1200,
-                "data": "AGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGA",
-                "hits": [
-                  {
-                    "pos": 1204,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1350,
-                "data": "TAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGT",
-                "hits": [
-                  {
-                    "pos": 1369,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 2.7e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1425,
-                "data": "GAACAACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACG",
-                "hits": [
-                  {
-                    "pos": 1487,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1575,
-                "data": "CAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCTCGACTGCCAATGCCAATTGCGCCGAAACGTACCGCGGAAAGATCGGGTT",
-                "hits": [
-                  {
-                    "pos": 1597,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 3.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 1643,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 8.3e-05,
-                    "match": "+++++ +++"
-                  }
-                ]
-              }
-            ]
-          }, {
-            "db": 0,
-            "name": "NC_010102.1",
-            "comment": "Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7, oric at 4028930 +- 1000",
-            "length": 2000,
-            "score": [
-              {
-                "combined_pvalue": 2.56e-04,
-                "evalue": 0.0026
-              }
-            ],
-            "segs": [
-              {
-                "pos": 150,
-                "data": "CGCGAACAGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCA",
-                "hits": [
-                  {
-                    "pos": 204,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 3.6e-05,
-                    "match": "+++++++++"
-                  }, {
-                    "pos": 215,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 1.1e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 300,
-                "data": "GCCCCAACGTGTCAATATTGTGTGTCAAAAGCAGAGTCTGTTGACCCATACGCGCTGCGGCCATCGCGGCCTCAG",
-                "hits": [
-                  {
-                    "pos": 362,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 1.4e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 450,
-                "data": "CGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCG",
-                "hits": [
-                  {
-                    "pos": 459,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 2.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 502,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 600,
-                "data": "GGATAACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACTA",
-                "hits": [
-                  {
-                    "pos": 667,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 2.7e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 750,
-                "data": "CCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAGTAAATTAA",
-                "hits": [
-                  {
-                    "pos": 785,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
+                    "pvalue": 1.6e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 825,
-                "data": "TCCAGGATCCGAGCCAAATCTCCGCTGGATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCTC",
+                "data": "TTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTA",
                 "hits": [
                   {
-                    "pos": 895,
+                    "pos": 863,
                     "idx": 1,
                     "rc": true,
-                    "pvalue": 3.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 941,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 8.3e-05,
-                    "match": "+++++ +++"
-                  }
-                ]
-              }, {
-                "pos": 1500,
-                "data": "GTAATACGCTTCCGTCACCTCATCCAGGCTTTCCAGCCGGGCCAGTGCGGAGGGATAGTCTTTGGCGCTTTTGAG",
-                "hits": [
-                  {
-                    "pos": 1549,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 8.2e-05,
-                    "match": "++ ++++ +"
-                  }
-                ]
-              }, {
-                "pos": 1575,
-                "data": "GATGATGCCAATAAAGCAGCCCACATCGTAGCCCAGTTGTTTAGGGCTGACGTCAATCCGTGCGCCCGTAATGAT",
-                "hits": [
-                  {
-                    "pos": 1599,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 6.0e-06,
+                    "pvalue": 1.1e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 1725,
-                "data": "GTAGGCAGTGCGGGCATTTCCCATTAAGGCGTCAAGGATGCCGCGGTCCAGATTGTCGATCTGATAATTTTCCATCGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATCAAAACCGAAGTTAGCT",
+                "pos": 1125,
+                "data": "CGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATT",
                 "hits": [
                   {
-                    "pos": 1792,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 2.4e-05,
-                    "match": "++ ++++++"
-                  }
-                ]
-              }
-            ]
-          }, {
-            "db": 0,
-            "name": "NZ_CP015574.1",
-            "comment": "Salmonella enterica strain FORC_038, oric at 4902430 +- 1000",
-            "length": 2000,
-            "score": [
-              {
-                "combined_pvalue": 5.01e-04,
-                "evalue": 0.005
-              }
-            ],
-            "segs": [
-              {
-                "pos": 375,
-                "data": "AATAGAGATAATTATTAATCTGCATAAGAAAAAGCGATGGAAAATTATCAGATCGACAATCTGGACCGCGGCATA",
-                "hits": [
-                  {
-                    "pos": 410,
+                    "pos": 1150,
                     "idx": 1,
                     "rc": false,
-                    "pvalue": 2.4e-05,
-                    "match": "++++++ ++"
-                  }
-                ]
-              }, {
-                "pos": 600,
-                "data": "CTGGGCTACGATGTGGGCTGCTTTATTGGCATCATTCTCAAAAGCGCCAAAGACTATCCCTCCGCACTGGCCCGG",
-                "hits": [
-                  {
-                    "pos": 603,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 6.0e-06,
+                    "pvalue": 1.1e-05,
                     "match": "+++++++++"
-                  }, {
-                    "pos": 653,
-                    "idx": 2,
-                    "rc": true,
-                    "pvalue": 8.2e-05,
-                    "match": "+ ++++ ++"
-                  }
-                ]
-              }, {
-                "pos": 1200,
-                "data": "CCGCGGTACGTTTCGGCGCAATTGGCATTGGCAGTCGAGAATACGACACGTTTTGCGGCGCGATTGAGAAAATAG",
-                "hits": [
-                  {
-                    "pos": 1261,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 8.3e-05,
-                    "match": "+++ +++++"
                   }
                 ]
               }, {
                 "pos": 1275,
-                "data": "AAGCGGAACTGAAAGACACTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAACATCCTTGAACATGAGATTC",
+                "data": "CAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGAGTA",
                 "hits": [
                   {
-                    "pos": 1307,
-                    "idx": 1,
+                    "pos": 1319,
+                    "idx": 0,
                     "rc": false,
-                    "pvalue": 3.1e-05,
-                    "match": "+ +++++++"
-                  }
-                ]
-              }, {
-                "pos": 1350,
-                "data": "CGGAAGATCCAGCGGAGATTTGGCTCGGATCCTGGATTAATTTACTCAAATAAGTGTAAAGATCGTGCGATCCATTGTGGATAAATCTGGTGGAAAGCTTGGATCAACCGGTAGTTATCCAAAGAATAACCGTTGTTCACTTTTTGAGTT",
-                "hits": [
-                  {
-                    "pos": 1417,
-                    "idx": 2,
-                    "rc": true,
-                    "pvalue": 4.0e-06,
+                    "pvalue": 2.9e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 1500,
-                "data": "GTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGACCACGATCACCGATCATTCACAGCTAGTGATCCTTTCC",
+                "data": "GATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCA",
                 "hits": [
                   {
-                    "pos": 1535,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 9.2e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1650,
-                "data": "AGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTGAGTAG",
-                "hits": [
-                  {
-                    "pos": 1700,
+                    "pos": 1543,
                     "idx": 1,
                     "rc": true,
-                    "pvalue": 4.0e-06,
+                    "pvalue": 2.1e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 1725,
-                "data": "AATCCACCGCCCGGGCTTCAATCCATTTTCACACCGCGTTATGCGAGGCAATTACCATGTTTTATCAGGATCCTT",
+                "data": "CGCCGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCATGCACCGTTT",
                 "hits": [
                   {
-                    "pos": 1743,
-                    "idx": 2,
-                    "rc": true,
-                    "pvalue": 2.1e-05,
-                    "match": "+ +++++++"
-                  }
-                ]
-              }, {
-                "pos": 1800,
-                "data": "TTGACGTCATTATTATTGGCGGGGGTCATGCAGGCACTGAGGCCGCGATGGCCGCAGCGCGTATGGGTCAACAGA",
-                "hits": [
-                  {
-                    "pos": 1840,
+                    "pos": 1781,
                     "idx": 0,
                     "rc": true,
-                    "pvalue": 1.4e-05,
+                    "pvalue": 3.3e-06,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 1950,
-                "data": "GACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCG",
+                "pos": 1875,
+                "data": "CGCTGATAAGAGTAATGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAACGAGCTG",
                 "hits": [
                   {
-                    "pos": 1987,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 1.1e-05,
+                    "pos": 1928,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
                     "match": "+++++++++"
                   }
                 ]
@@ -1151,63 +308,33 @@
           }, {
             "db": 0,
             "name": "NC_016854.1",
-            "comment": "Salmonella enterica subsp. enterica serovar Typhimurium str. D23580 oric at 4106620 +- 1000",
+            "comment": "Salmonella enterica subsp. enterica serovar Typhimurium str. D23580 2000 bases around gc minimum at 4106600",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 5.01e-04,
-                "evalue": 0.005
+                "combined_pvalue": 1.21e-03,
+                "evalue": 0.012
               }
             ],
             "segs": [
               {
                 "pos": 0,
-                "data": "AAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCATGGAACGGACAATC",
+                "data": "GTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATAC",
                 "hits": [
                   {
-                    "pos": 5,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 6.7e-05,
-                    "match": "++++++ ++"
-                  }, {
-                    "pos": 45,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 2.4e-05,
-                    "match": "++++++++ "
-                  }
-                ]
-              }, {
-                "pos": 150,
-                "data": "TCAAGGAAGATCTGATGCTGGTTACGATCGGCAAAACGCATCACCTTGTCTTCGATCGAAGGACAGTAGCGTGGGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGTCATGGGTTTTCTCA",
-                "hits": [
-                  {
-                    "pos": 217,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 8.1e-05,
-                    "match": "+ +++++ +"
-                  }, {
-                    "pos": 226,
+                    "pos": 25,
                     "idx": 2,
                     "rc": true,
-                    "pvalue": 3.6e-05,
-                    "match": "++++++ ++"
-                  }, {
-                    "pos": 256,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 6.0e-06,
+                    "pvalue": 4.0e-06,
                     "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 300,
-                "data": "TTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCATC",
-                "hits": [
-                  {
-                    "pos": 348,
+                  }, {
+                    "pos": 49,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 3.2e-05,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 65,
                     "idx": 1,
                     "rc": true,
                     "pvalue": 4.7e-05,
@@ -1215,35 +342,497 @@
                   }
                 ]
               }, {
-                "pos": 375,
-                "data": "GGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGGTT",
+                "pos": 75,
+                "data": "CCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAGGGTAAATCTCGT",
                 "hits": [
                   {
-                    "pos": 409,
+                    "pos": 84,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 2.9e-05,
+                    "match": "+++++++ +"
+                  }
+                ]
+              }, {
+                "pos": 300,
+                "data": "TCACGTCATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAA",
+                "hits": [
+                  {
+                    "pos": 368,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++++++++ "
+                  }, {
+                    "pos": 434,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 1.6e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 525,
+                "data": "ATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGA",
+                "hits": [
+                  {
+                    "pos": 577,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++ ++++++"
+                  }
+                ]
+              }, {
+                "pos": 600,
+                "data": "CGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAACGCGATCGTTTTCGA",
+                "hits": [
+                  {
+                    "pos": 600,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 4.2e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 825,
+                "data": "GAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTC",
+                "hits": [
+                  {
+                    "pos": 848,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1125,
+                "data": "AACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTA",
+                "hits": [
+                  {
+                    "pos": 1135,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1275,
+                "data": "GATCACTAGCTGTGAATGATCGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCA",
+                "hits": [
+                  {
+                    "pos": 1304,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 6.6e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1500,
+                "data": "CATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTT",
+                "hits": [
+                  {
+                    "pos": 1528,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1725,
+                "data": "TGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACCGG",
+                "hits": [
+                  {
+                    "pos": 1766,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 9.2e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1875,
+                "data": "TGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGA",
+                "hits": [
+                  {
+                    "pos": 1913,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }
+            ]
+          }, {
+            "db": 0,
+            "name": "NC_016810.1",
+            "comment": "Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344, 2000 bases around gc minimum at 4104900",
+            "length": 2000,
+            "score": [
+              {
+                "combined_pvalue": 1.21e-03,
+                "evalue": 0.012
+              }
+            ],
+            "segs": [
+              {
+                "pos": 150,
+                "data": "GGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAGGGTAAATCTCGTTAGAGGTCAGTCCTT",
+                "hits": [
+                  {
+                    "pos": 160,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 184,
                     "idx": 2,
                     "rc": false,
-                    "pvalue": 4.4e-05,
+                    "pvalue": 3.2e-05,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 200,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++++++++ "
+                  }, {
+                    "pos": 219,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 2.9e-05,
                     "match": "+++++++ +"
                   }
                 ]
               }, {
                 "pos": 450,
-                "data": "TTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCACGA",
+                "data": "TCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCG",
                 "hits": [
                   {
-                    "pos": 500,
+                    "pos": 503,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++++++++ "
+                  }
+                ]
+              }, {
+                "pos": 525,
+                "data": "GCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGC",
+                "hits": [
+                  {
+                    "pos": 569,
                     "idx": 2,
+                    "rc": true,
+                    "pvalue": 1.6e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 675,
+                "data": "CACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCG",
+                "hits": [
+                  {
+                    "pos": 712,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++ ++++++"
+                  }, {
+                    "pos": 735,
+                    "idx": 0,
                     "rc": false,
-                    "pvalue": 5.5e-05,
+                    "pvalue": 4.2e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 975,
+                "data": "CGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCG",
+                "hits": [
+                  {
+                    "pos": 983,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1200,
+                "data": "TAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATT",
+                "hits": [
+                  {
+                    "pos": 1270,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1425,
+                "data": "ATGATCGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGG",
+                "hits": [
+                  {
+                    "pos": 1439,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 6.6e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1650,
+                "data": "TGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGC",
+                "hits": [
+                  {
+                    "pos": 1663,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1875,
+                "data": "TCCCGGAAGTTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACCGGCAGCTTCCAGCTTTT",
+                "hits": [
+                  {
+                    "pos": 1901,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 9.2e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }
+            ]
+          }, {
+            "db": 0,
+            "name": "NZ_CP007245.1",
+            "comment": "Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120008, 2000 bases around gc minimum at 3976700",
+            "length": 2000,
+            "score": [
+              {
+                "combined_pvalue": 1.61e-03,
+                "evalue": 0.016
+              }
+            ],
+            "segs": [
+              {
+                "pos": 0,
+                "data": "CGGTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCGCGTTCTCCATGCCCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAGGGTAAATCTC",
+                "hits": [
+                  {
+                    "pos": 27,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 67,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 9.9e-05,
+                    "match": "++++++++ "
+                  }, {
+                    "pos": 86,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 2.9e-05,
+                    "match": "+++++++ +"
+                  }
+                ]
+              }, {
+                "pos": 300,
+                "data": "AATCACGTCATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATC",
+                "hits": [
+                  {
+                    "pos": 370,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++++++++ "
+                  }, {
+                    "pos": 436,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 1.6e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 525,
+                "data": "GGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCC",
+                "hits": [
+                  {
+                    "pos": 579,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++ ++++++"
+                  }
+                ]
+              }, {
+                "pos": 600,
+                "data": "GACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAACGCGATCGTTTTC",
+                "hits": [
+                  {
+                    "pos": 602,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 4.2e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 825,
+                "data": "CTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTT",
+                "hits": [
+                  {
+                    "pos": 850,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1125,
+                "data": "TCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTC",
+                "hits": [
+                  {
+                    "pos": 1137,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1275,
+                "data": "AGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACT",
+                "hits": [
+                  {
+                    "pos": 1306,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 2.9e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1500,
+                "data": "CTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTTCCGCTTCTAT",
+                "hits": [
+                  {
+                    "pos": 1530,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1725,
+                "data": "GCTGATTATCAGCCAGATCCCGGAAGCTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACC",
+                "hits": [
+                  {
+                    "pos": 1768,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 9.2e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1875,
+                "data": "AATGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTG",
+                "hits": [
+                  {
+                    "pos": 1915,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }
+            ]
+          }, {
+            "db": 0,
+            "name": "NC_011294.1",
+            "comment": "Salmonella enterica subsp. enterica serovar Enteritidis str. P125109 2000 bases around gc minimum at 3953900",
+            "length": 2000,
+            "score": [
+              {
+                "combined_pvalue": 1.61e-03,
+                "evalue": 0.016
+              }
+            ],
+            "segs": [
+              {
+                "pos": 150,
+                "data": "TTTCCAGAGTCGGTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCG",
+                "hits": [
+                  {
+                    "pos": 187,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 225,
+                "data": "CGTTCTCCATGCCCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAG",
+                "hits": [
+                  {
+                    "pos": 227,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 9.9e-05,
+                    "match": "++++++++ "
+                  }, {
+                    "pos": 246,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 2.9e-05,
                     "match": "+++++++ +"
                   }
                 ]
               }, {
                 "pos": 525,
-                "data": "CCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTTTC",
+                "data": "AAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAG",
                 "hits": [
                   {
-                    "pos": 557,
+                    "pos": 530,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++++++++ "
+                  }, {
+                    "pos": 596,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 1.6e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 675,
+                "data": "ACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCA",
+                "hits": [
+                  {
+                    "pos": 739,
                     "idx": 1,
                     "rc": true,
                     "pvalue": 4.7e-05,
@@ -1252,16 +841,22 @@
                 ]
               }, {
                 "pos": 750,
-                "data": "TGAGCCCGGGTAGCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCCGGG",
+                "data": "GGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAACGC",
                 "hits": [
                   {
-                    "pos": 817,
-                    "idx": 2,
+                    "pos": 762,
+                    "idx": 0,
                     "rc": false,
-                    "pvalue": 3.6e-05,
+                    "pvalue": 4.2e-05,
                     "match": "+++++++++"
-                  }, {
-                    "pos": 828,
+                  }
+                ]
+              }, {
+                "pos": 975,
+                "data": "GTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCA",
+                "hits": [
+                  {
+                    "pos": 1010,
                     "idx": 1,
                     "rc": true,
                     "pvalue": 1.1e-05,
@@ -1269,175 +864,127 @@
                   }
                 ]
               }, {
-                "pos": 975,
-                "data": "ATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTAATT",
+                "pos": 1275,
+                "data": "TGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAG",
                 "hits": [
                   {
-                    "pos": 975,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 1.4e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1050,
-                "data": "GCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAA",
-                "hits": [
-                  {
-                    "pos": 1072,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 2.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 1115,
+                    "pos": 1297,
                     "idx": 1,
                     "rc": false,
-                    "pvalue": 4.0e-06,
+                    "pvalue": 1.1e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 1275,
-                "data": "CGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATT",
+                "pos": 1425,
+                "data": "TGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTT",
                 "hits": [
                   {
-                    "pos": 1280,
+                    "pos": 1466,
                     "idx": 0,
                     "rc": false,
+                    "pvalue": 2.9e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1650,
+                "data": "CTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTT",
+                "hits": [
+                  {
+                    "pos": 1690,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1875,
+                "data": "CGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGCTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGG",
+                "hits": [
+                  {
+                    "pos": 1928,
+                    "idx": 0,
+                    "rc": true,
                     "pvalue": 9.2e-06,
                     "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1350,
-                "data": "CTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACATTTAT",
-                "hits": [
-                  {
-                    "pos": 1398,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1500,
-                "data": "TTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAAC",
-                "hits": [
-                  {
-                    "pos": 1508,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 3.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 1554,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 8.3e-05,
-                    "match": "+++++ +++"
                   }
                 ]
               }
             ]
           }, {
             "db": 0,
-            "name": "NC_016810.1",
-            "comment": "Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344, oric at 4104970 +- 1000",
+            "name": "NC_011080.1",
+            "comment": "Salmonella enterica subsp. enterica serovar Newport str. SL254, 2000 bases around gc minimum at 4049900",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 5.01e-04,
-                "evalue": 0.005
+                "combined_pvalue": 1.61e-03,
+                "evalue": 0.016
               }
             ],
             "segs": [
               {
                 "pos": 75,
-                "data": "GCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCATGGA",
+                "data": "ACTTTCCAGAGTCGGTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTT",
                 "hits": [
                   {
-                    "pos": 90,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 6.7e-05,
-                    "match": "++++++ ++"
-                  }, {
-                    "pos": 130,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 2.4e-05,
-                    "match": "++++++++ "
-                  }
-                ]
-              }, {
-                "pos": 300,
-                "data": "GTAGCGTGGGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGTCATG",
-                "hits": [
-                  {
-                    "pos": 302,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 8.1e-05,
-                    "match": "+ +++++ +"
-                  }, {
-                    "pos": 311,
+                    "pos": 114,
                     "idx": 2,
                     "rc": true,
-                    "pvalue": 3.6e-05,
-                    "match": "++++++ ++"
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
                   }, {
-                    "pos": 341,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 6.0e-06,
+                    "pos": 138,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 3.2e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 375,
-                "data": "GGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAA",
+                "pos": 150,
+                "data": "CGCGTTCTCCATACCCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTT",
                 "hits": [
                   {
-                    "pos": 433,
+                    "pos": 154,
                     "idx": 1,
                     "rc": true,
                     "pvalue": 4.7e-05,
                     "match": "++++++++ "
+                  }, {
+                    "pos": 173,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 2.9e-05,
+                    "match": "+++++++ +"
                   }
                 ]
               }, {
                 "pos": 450,
-                "data": "AACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGG",
+                "data": "AGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCG",
                 "hits": [
                   {
-                    "pos": 494,
+                    "pos": 457,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++++++++ "
+                  }, {
+                    "pos": 523,
                     "idx": 2,
-                    "rc": false,
-                    "pvalue": 4.4e-05,
-                    "match": "+++++++ +"
-                  }
-                ]
-              }, {
-                "pos": 525,
-                "data": "TGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATC",
-                "hits": [
-                  {
-                    "pos": 585,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 5.5e-05,
-                    "match": "+++++++ +"
+                    "rc": true,
+                    "pvalue": 1.6e-05,
+                    "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 600,
-                "data": "GCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTAC",
+                "data": "AGACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATC",
                 "hits": [
                   {
-                    "pos": 642,
+                    "pos": 666,
                     "idx": 1,
                     "rc": true,
                     "pvalue": 4.7e-05,
@@ -1445,17 +992,23 @@
                   }
                 ]
               }, {
-                "pos": 900,
-                "data": "CTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCC",
+                "pos": 675,
+                "data": "CAGGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAAC",
                 "hits": [
                   {
-                    "pos": 902,
-                    "idx": 2,
+                    "pos": 689,
+                    "idx": 0,
                     "rc": false,
-                    "pvalue": 3.6e-05,
+                    "pvalue": 4.2e-05,
                     "match": "+++++++++"
-                  }, {
-                    "pos": 913,
+                  }
+                ]
+              }, {
+                "pos": 900,
+                "data": "TAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTAC",
+                "hits": [
+                  {
+                    "pos": 937,
                     "idx": 1,
                     "rc": true,
                     "pvalue": 1.1e-05,
@@ -1463,47 +1016,249 @@
                   }
                 ]
               }, {
-                "pos": 1050,
-                "data": "CGCTGCGGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAA",
-                "hits": [
-                  {
-                    "pos": 1060,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 1.4e-05,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1125,
-                "data": "CATGGTAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCC",
-                "hits": [
-                  {
-                    "pos": 1157,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 2.1e-05,
-                    "match": "+++++++ +"
-                  }
-                ]
-              }, {
                 "pos": 1200,
-                "data": "GATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTC",
+                "data": "GGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTT",
                 "hits": [
                   {
-                    "pos": 1200,
+                    "pos": 1224,
                     "idx": 1,
                     "rc": false,
-                    "pvalue": 4.0e-06,
+                    "pvalue": 1.1e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 1350,
-                "data": "TGTGAATGATCGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAAC",
+                "data": "AATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTAC",
                 "hits": [
                   {
-                    "pos": 1365,
+                    "pos": 1393,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 2.9e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1575,
+                "data": "ATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAG",
+                "hits": [
+                  {
+                    "pos": 1617,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1800,
+                "data": "GCCGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCGTGCACCGTTTC",
+                "hits": [
+                  {
+                    "pos": 1855,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 9.2e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }
+            ]
+          }, {
+            "db": 0,
+            "name": "NC_010102.1",
+            "comment": "Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7, 2000 bases around gc minimum at 4028800",
+            "length": 2000,
+            "score": [
+              {
+                "combined_pvalue": 2.64e-03,
+                "evalue": 0.026
+              }
+            ],
+            "segs": [
+              {
+                "pos": 0,
+                "data": "AGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACTGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCG",
+                "hits": [
+                  {
+                    "pos": 74,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++ ++++++"
+                  }, {
+                    "pos": 97,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 9.0e-05,
+                    "match": "+ +++++++"
+                  }
+                ]
+              }, {
+                "pos": 300,
+                "data": "CTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACC",
+                "hits": [
+                  {
+                    "pos": 345,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 600,
+                "data": "GCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCT",
+                "hits": [
+                  {
+                    "pos": 632,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 750,
+                "data": "TAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAA",
+                "hits": [
+                  {
+                    "pos": 801,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 2.9e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 975,
+                "data": "TCCGCTGGATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCG",
+                "hits": [
+                  {
+                    "pos": 1025,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1200,
+                "data": "TCTCCGGCGCCGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCATGC",
+                "hits": [
+                  {
+                    "pos": 1263,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 3.3e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1350,
+                "data": "GTGCTGCCGCTGATAAGAGTAATGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAA",
+                "hits": [
+                  {
+                    "pos": 1410,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1800,
+                "data": "CGACGCGAACGTGAATGGTTCCAGGGCTAACGCCAAATTGTTTGGCCAGTTCGGCGTAGGCAGTGCGGGCATTTC",
+                "hits": [
+                  {
+                    "pos": 1842,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 5.4e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1875,
+                "data": "CCATTAAGGCGTCAAGGATGCCGCGGTCCAGATTGTCGATCTGATAATTTTCCATCGCTTTTTCTTATGCAGATT",
+                "hits": [
+                  {
+                    "pos": 1922,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++ ++++++"
+                  }
+                ]
+              }
+            ]
+          }, {
+            "db": 0,
+            "name": "NZ_CP015574.1",
+            "comment": "Salmonella enterica strain FORC_038, 2000 bases around gc minimum at 4902500",
+            "length": 2000,
+            "score": [
+              {
+                "combined_pvalue": 4.62e-03,
+                "evalue": 0.046
+              }
+            ],
+            "segs": [
+              {
+                "pos": 225,
+                "data": "GCAACAAAACGAGAGCACTATTCAATAATCAACAGATAAAAAGCTAACTTCGATTTTGATTCGTTAAAAATAATG",
+                "hits": [
+                  {
+                    "pos": 237,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 6.5e-05,
+                    "match": "+++ +++++"
+                  }
+                ]
+              }, {
+                "pos": 300,
+                "data": "GCTAAAATAGAGATAATTATTAATCTGCATAAGAAAAAGCGATGGAAAATTATCAGATCGACAATCTGGACCGCG",
+                "hits": [
+                  {
+                    "pos": 340,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 4.7e-05,
+                    "match": "++++++ ++"
+                  }
+                ]
+              }, {
+                "pos": 375,
+                "data": "GCATACTTGACGCCTTAATGGAAAATGCCCGCACCGCCTACGCCGAACTGGCCAAACAATTTGGCGTTAGCCCTG",
+                "hits": [
+                  {
+                    "pos": 420,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 5.4e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 825,
+                "data": "CCACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGATCAATGGCAGACAT",
+                "hits": [
+                  {
+                    "pos": 852,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 975,
+                "data": "CGGTTTTTCAACCGAAACGGTGCACGGTCCGTTATTAGAGGATCTGTCAACTTCCGGGATCTGGCTGATAATCAG",
+                "hits": [
+                  {
+                    "pos": 999,
                     "idx": 0,
                     "rc": false,
                     "pvalue": 9.2e-06,
@@ -1511,33 +1266,51 @@
                   }
                 ]
               }, {
-                "pos": 1425,
-                "data": "AACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCT",
+                "pos": 1200,
+                "data": "AATAGAAGCGGAACTGAAAGACACTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAACATCCTTGAACATGA",
                 "hits": [
                   {
-                    "pos": 1483,
-                    "idx": 2,
+                    "pos": 1237,
+                    "idx": 1,
                     "rc": false,
-                    "pvalue": 4.0e-06,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1425,
+                "data": "GAGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGACCACGATCACCGATCATTCACAGCTAGTGATCC",
+                "hits": [
+                  {
+                    "pos": 1461,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 6.6e-06,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 1575,
-                "data": "GATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGC",
+                "data": "AGAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTG",
                 "hits": [
                   {
-                    "pos": 1593,
+                    "pos": 1630,
                     "idx": 1,
                     "rc": true,
-                    "pvalue": 3.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 1639,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1875,
+                "data": "AAAGGGACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCGATCGATCAGGCAGGTATTCA",
+                "hits": [
+                  {
+                    "pos": 1917,
                     "idx": 1,
-                    "rc": true,
-                    "pvalue": 8.3e-05,
-                    "match": "+++++ +++"
+                    "rc": false,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
                   }
                 ]
               }
@@ -1545,27 +1318,87 @@
           }, {
             "db": 0,
             "name": "NC_006511.1",
-            "comment": "Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150, oric at 3859360 +- 1000",
+            "comment": "Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150, 2000 bases around gc minimum at 3858700",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 1.01e-03,
-                "evalue": 0.01
+                "combined_pvalue": 4.95e-03,
+                "evalue": 0.049
               }
             ],
             "segs": [
               {
-                "pos": 150,
-                "data": "GCCTGAGCCCGGGTAGCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCC",
+                "pos": 75,
+                "data": "TCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATGCCCTGCATGGAACGGACAATCTGCATCTGCACG",
                 "hits": [
                   {
-                    "pos": 220,
+                    "pos": 92,
                     "idx": 2,
                     "rc": false,
-                    "pvalue": 3.6e-05,
+                    "pvalue": 3.2e-05,
                     "match": "+++++++++"
                   }, {
-                    "pos": 231,
+                    "pos": 108,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 9.9e-05,
+                    "match": "++++++++ "
+                  }, {
+                    "pos": 127,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 2.9e-05,
+                    "match": "+++++++ +"
+                  }
+                ]
+              }, {
+                "pos": 375,
+                "data": "ATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCA",
+                "hits": [
+                  {
+                    "pos": 411,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++++++++ "
+                  }
+                ]
+              }, {
+                "pos": 450,
+                "data": "TGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTG",
+                "hits": [
+                  {
+                    "pos": 477,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 1.6e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 600,
+                "data": "TTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTG",
+                "hits": [
+                  {
+                    "pos": 620,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.7e-05,
+                    "match": "++ ++++++"
+                  }, {
+                    "pos": 643,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 4.2e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 825,
+                "data": "GCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATC",
+                "hits": [
+                  {
+                    "pos": 891,
                     "idx": 1,
                     "rc": true,
                     "pvalue": 1.1e-05,
@@ -1573,99 +1406,63 @@
                   }
                 ]
               }, {
-                "pos": 375,
-                "data": "GCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTA",
+                "pos": 1125,
+                "data": "GCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCC",
                 "hits": [
                   {
-                    "pos": 378,
+                    "pos": 1178,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1275,
+                "data": "TGGATAACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACT",
+                "hits": [
+                  {
+                    "pos": 1347,
                     "idx": 0,
                     "rc": false,
-                    "pvalue": 1.4e-05,
+                    "pvalue": 2.9e-05,
                     "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 450,
-                "data": "ATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAG",
-                "hits": [
-                  {
-                    "pos": 475,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 2.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 518,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 675,
-                "data": "GATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTT",
-                "hits": [
-                  {
-                    "pos": 683,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 2.7e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 900,
-                "data": "ATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAA",
-                "hits": [
-                  {
-                    "pos": 911,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 3.1e-05,
-                    "match": "+++++++ +"
-                  }, {
-                    "pos": 957,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 8.3e-05,
-                    "match": "+++++ +++"
                   }
                 ]
               }, {
                 "pos": 1500,
-                "data": "TGTAGTGACCGGTGGTGTAATACGCTTCCGTCACCTCATCCAGGCTTTCCAGCCGGGCCAGTGCGGAGGGATAGT",
+                "data": "ATCCAGGATCCGAGCCAAATCTCCGCTGGATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCT",
                 "hits": [
                   {
-                    "pos": 1565,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 8.2e-05,
-                    "match": "++ ++++ +"
-                  }
-                ]
-              }, {
-                "pos": 1575,
-                "data": "CTTTGGCGCTTTTGAGAATGATGCCAATAAAGCAGCCCACATCGTAGCCCAGCTGTTTAGGGCTGACGTCAATCC",
-                "hits": [
-                  {
-                    "pos": 1615,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 6.0e-06,
+                    "pos": 1571,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 1800,
-                "data": "TCTGATAATTTTCCATCGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATC",
+                "data": "TCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACCGGCAGCTTCCAGCTTTTCCGCCAGATGTTCCGCG",
                 "hits": [
                   {
-                    "pos": 1808,
-                    "idx": 1,
+                    "pos": 1809,
+                    "idx": 0,
                     "rc": true,
-                    "pvalue": 2.4e-05,
-                    "match": "++ ++++++"
+                    "pvalue": 9.2e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1950,
+                "data": "GGCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGAAAAATGT",
+                "hits": [
+                  {
+                    "pos": 1956,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
                   }
                 ]
               }
@@ -1673,151 +1470,121 @@
           }, {
             "db": 0,
             "name": "NC_003198.1",
-            "comment": "Salmonella enterica subsp. enterica serovar Typhi str. CT18, oric at 3765460 +- 1000",
+            "comment": "Salmonella enterica subsp. enterica serovar Typhi str. CT18, 2000 bases around gc minimum at 3764800",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 1.01e-03,
-                "evalue": 0.01
+                "combined_pvalue": 6.07e-03,
+                "evalue": 0.061
               }
             ],
             "segs": [
               {
-                "pos": 450,
-                "data": "GGCGCGATTGAGAAAATAGAAGCGGAACTGAAAGGCGCTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAAC",
+                "pos": 150,
+                "data": "CAACAAAACGAGAGCACTATTCAATAATCAACAGATAAAAAGCTAACTTCGATTTTGATTCGTTAAAAATAATGG",
                 "hits": [
                   {
-                    "pos": 455,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 8.3e-05,
-                    "match": "+++ +++++"
-                  }, {
-                    "pos": 501,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 3.1e-05,
-                    "match": "+ +++++++"
-                  }
-                ]
-              }, {
-                "pos": 675,
-                "data": "TTTGTTCACTTTTTGAGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTC",
-                "hits": [
-                  {
-                    "pos": 729,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 2.7e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 825,
-                "data": "TAAGAGATCACAATAGAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTGAGTAGAATCCACCGCCCGGGCTTCAATCCATTTTCACACCGCGTTATGCGAGGCAATTACC",
-                "hits": [
-                  {
-                    "pos": 894,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }, {
-                    "pos": 937,
+                    "pos": 161,
                     "idx": 2,
-                    "rc": true,
-                    "pvalue": 2.1e-05,
-                    "match": "+ +++++++"
+                    "rc": false,
+                    "pvalue": 6.5e-05,
+                    "match": "+++ +++++"
                   }
                 ]
               }, {
-                "pos": 975,
-                "data": "ATGTTTTATCAGGATCCTTTTGACGTCATTATTATTGGCGGGGGTCATGCAGGCACTGAGGCCGCGATGGCCGCA",
+                "pos": 225,
+                "data": "CTAAAATAGAGATAATCATTAATCTGCATAAGAAAAAGCGATGGAAAATTATCAGATCGACAATCTGGACCGCGG",
                 "hits": [
                   {
-                    "pos": 1034,
+                    "pos": 264,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 4.7e-05,
+                    "match": "++++++ ++"
+                  }
+                ]
+              }, {
+                "pos": 300,
+                "data": "CATACTTGACGCCTTAATGGAAAATGCCCGCACCGCCTACGCCGAACTGGCCAAACAATTTGGCGTTAGCCCTGG",
+                "hits": [
+                  {
+                    "pos": 344,
                     "idx": 0,
                     "rc": true,
-                    "pvalue": 1.4e-05,
+                    "pvalue": 5.4e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 750,
+                "data": "CACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGATCAATGGCAGACATT",
+                "hits": [
+                  {
+                    "pos": 776,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 2.1e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 900,
+                "data": "GGTTTTTCAACCGAAACGGTGCACGGTCCGTTATTAGAGGATCTGTCAACTTCCGGGATCTGGCTGATAATCAGC",
+                "hits": [
+                  {
+                    "pos": 923,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 9.2e-06,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 1125,
-                "data": "ATCGGCGGTATTGGCAAGGGACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCGATCGATCAGGCAGGTATTCAGTTTAAGATACTAAACGCCAGCAAAGGTCCGGCCGTTCGCGCTACCCGAGCTCAGGCGGAT",
+                "data": "ATAGAAGCGGAACTGAAAGGCGCTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAACATCCTTGAACATGAG",
                 "hits": [
                   {
-                    "pos": 1181,
+                    "pos": 1161,
                     "idx": 1,
                     "rc": false,
-                    "pvalue": 1.1e-05,
+                    "pvalue": 2.1e-05,
                     "match": "+++++++++"
-                  }, {
-                    "pos": 1192,
-                    "idx": 2,
+                  }
+                ]
+              }, {
+                "pos": 1350,
+                "data": "AGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTCACAGCTAGTGATCCT",
+                "hits": [
+                  {
+                    "pos": 1385,
+                    "idx": 0,
                     "rc": true,
-                    "pvalue": 3.6e-05,
+                    "pvalue": 2.9e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 1500,
-                "data": "GGCGATCCGCCATCCATCCCGCTGTCTCGCCGTCTGCGTGAGCTTCCGCTACGCGTCAGCCGCCTGAAAACCGGC",
+                "data": "GAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTGA",
                 "hits": [
                   {
-                    "pos": 1509,
-                    "idx": 2,
+                    "pos": 1554,
+                    "idx": 1,
                     "rc": true,
-                    "pvalue": 5.5e-05,
-                    "match": "+ +++++++"
+                    "pvalue": 1.1e-05,
+                    "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 1575,
-                "data": "ACACCGCCGCGTATTGATGCGCGTACTATCGATTTCAGCGTGTTGGCTCAACAGCATGGCGATAACCCGATGCCG",
+                "pos": 1800,
+                "data": "AAGGGACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCGATCGATCAGGCAGGTATTCAG",
                 "hits": [
                   {
-                    "pos": 1600,
-                    "idx": 2,
-                    "rc": true,
-                    "pvalue": 4.4e-05,
-                    "match": "+ +++++++"
-                  }
-                ]
-              }, {
-                "pos": 1650,
-                "data": "GTTTTCTCGTTTATGGGGAATGCTTTTCAGCATCCGCAACAGGTGCCGTGTTACATCACGCATACCAATGAGAAA",
-                "hits": [
-                  {
-                    "pos": 1661,
+                    "pos": 1841,
                     "idx": 1,
                     "rc": false,
-                    "pvalue": 4.7e-05,
-                    "match": " ++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1725,
-                "data": "ACCCATGACGTGATTCGTAATAACCTCGATCGTAGCCCAATGTACGCTGGCGTGATCGAAGGGATCGGCCCACGCTACTGTCCTTCGATCGAAGACAAGGTGATGCGTTTTGCCGATCGTAACCAGCATCAGATCTTCCTTGAGCCGGAA",
-                "hits": [
-                  {
-                    "pos": 1753,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 6.0e-06,
+                    "pvalue": 1.1e-05,
                     "match": "+++++++++"
-                  }, {
-                    "pos": 1783,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 3.6e-05,
-                    "match": "++ ++++++"
-                  }, {
-                    "pos": 1792,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 8.1e-05,
-                    "match": "+ +++++ +"
                   }
                 ]
               }
@@ -1826,9 +1593,9 @@
         ],
         "runtime": {
           "host": "PC0028",
-          "when": "Fri Jan  3 19:44:01 2020",
-          "cycles": 15625,
-          "seconds": 0.016
+          "when": "Mon Jan  6 00:53:45 2020",
+          "cycles": 31250,
+          "seconds": 0.031
         }
       };
     </script>

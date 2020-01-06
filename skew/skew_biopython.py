@@ -10,8 +10,8 @@ def parseargs():
     parser.add_argument("fasta", help="enter path to your FASTA sequence file", )
     parser.add_argument("--plot", default=True, action='store_true', help="specify this option if you want to show the plot of the GC skew")
     parser.add_argument("--saveplot", default=None, type=str, help="specify the path for saving the plot of the GC skew")
-    parser.add_argument("--window", type=int, default=500, help="window size used for calculation of the GC skew")
-    parser.add_argument("--searchwindow", type=int, default=1000, help="specify size of region around the minimum of the GC skew in which motifs will be searched")
+    parser.add_argument("--skewwindow", type=int, default=500, help="window size used for calculation of the GC skew")
+    parser.add_argument("--searchwindow", type=int, default=2000, help="specify size of region around the minimum of the GC skew in which motifs will be searched")
     parser.add_argument("--motif", default='data/bacteria/dnaa.fna', help="specify fasta file with motif sequences")
     parser.add_argument("--colors", default=['xkcd:blue' for i in range(4)], nargs=4, help="specify colors for plot")
     args = parser.parse_args()
@@ -20,19 +20,19 @@ def parseargs():
 
 if __name__ == '__main__':
     args = parseargs()
-    fasta = seqio.read(args.fasta, 'fasta')
+    fasta = next(seqio.parse(args.fasta, "fasta"))
     print('Genome: ' + fasta.description)
     print('Length of genome: ' + str(len(fasta.seq)))
     print('GC skew: (G-C)/(G+C)')
-    skew = seq.GC_skew(fasta.seq, window=args.window)
+    skew = seq.GC_skew(fasta.seq, window=args.skewwindow)
     if args.plot and args.saveplot != None:
-        plot(fasta, skew, args.window, args.searchwindow, True, dnaa=args.motif, save=args.saveplot,
+        plot(fasta, skew, args.skewwindow, args.searchwindow, True, dnaa=args.motif, save=args.saveplot,
              colors=args.colors)
     elif args.plot:
-        plot(fasta, skew, args.window, args.searchwindow, True, dnaa=args.motif,
+        plot(fasta, skew, args.skewwindow, args.searchwindow, True, dnaa=args.motif,
              colors=args.colors)
     elif args.saveplot != None:
-        plot(fasta, skew, args.window, args.searchwindow, False, dnaa=args.motif, save=args.saveplot,
+        plot(fasta, skew, args.skewwindow, args.searchwindow, False, dnaa=args.motif, save=args.saveplot,
              colors=args.colors)
 
 

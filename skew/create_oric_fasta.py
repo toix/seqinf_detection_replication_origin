@@ -19,8 +19,8 @@ def parseargs():
         description='Calculate and plot GC-skew, find motif')
     parser.add_argument("folder", type=str, help="path to a directory containing FASTA files")
     parser.add_argument("out", type=str, help="path to a FASTA file where to write the resulting OriC sequences")
-    parser.add_argument("--window", type=int, default=500, help="window size used for calculation of the GC skew")
-    parser.add_argument("--zoomwindow", type=int, default=10, help="window size used for second more precise (zoomed) calculation of the GC skew")
+    parser.add_argument("--skewwindow", type=int, default=1000, help="window size used for calculation of the GC skew")
+    parser.add_argument("--zoomwindow", type=int, default=100, help="window size used for second more precise (zoomed) calculation of the GC skew")
     parser.add_argument("--searchwindow", type=int, default=2000, help="specify size of region around the minimum of the GC skew in which motifs will be searched")
     args = parser.parse_args()
     return args
@@ -46,7 +46,7 @@ def main():
     args = parseargs()
     in_path = args.folder
     out_file = args.out
-    skew_window = args.window
+    skew_window = args.skewwindow
     oric_window = args.searchwindow
 
     oric_sequences = []
@@ -78,7 +78,7 @@ def main():
 
         oric_sequence.description = oric_sequence.description.replace('complete genome', '')
         oric_sequence.description = oric_sequence.description.replace('complete sequence', '')
-        oric_sequence.description = oric_sequence.description + '{} bases around gc minimum'.format(idx_base_min)
+        oric_sequence.description = oric_sequence.description + '{} bases around gc minimum at {}'.format(oric_window, idx_base_min)
 
         oric_sequences.append(oric_sequence)
 

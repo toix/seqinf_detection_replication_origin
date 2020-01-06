@@ -23,7 +23,7 @@ REFERENCE
 DATABASE AND MOTIFS
 ********************************************************************************
 	DATABASE skew_regions.fasta (nucleotide)
-	Last updated on Sat Jan  4 23:20:54 2020
+	Last updated on Mon Jan  6 00:51:40 2020
 	Database contains 12 sequences, 23998 residues
 
 	Scores for positive and reverse complement strands are combined.
@@ -31,15 +31,15 @@ DATABASE AND MOTIFS
 	MOTIFS meme.xml (nucleotide)
 	MOTIF ID        ALT ID WIDTH BEST POSSIBLE MATCH
 	----- --------- ------ ----- -------------------
-	    1 TBTGGATAA MEME-1     9 TGTGGATAA
-	    2 KATTAAAAA MEME-2     9 TATTAAAAA
-	    3 GTKTMGTAT MEME-3     9 GTTTCGTAT
+	    1 TTATCCAVA MEME-1     9 TTATCCACA
+	    2 TATTAAAAA MEME-2     9 TATTAAAAA
+	    3 GTTTAGTAT MEME-3     9 GTTTAGTAT
 
 	PAIRWISE MOTIF CORRELATIONS:
 	MOTIF     1     2
 	----- ----- -----
-	   2   0.36
-	   3   0.38  0.29
+	   2   0.46
+	   3   0.23  0.39
 	No overly similar pairs (correlation > 0.60) found.
 
 	Random model letter frequencies (from non-redundant database):
@@ -50,7 +50,7 @@ DATABASE AND MOTIFS
 ********************************************************************************
 SECTION I: HIGH-SCORING SEQUENCES
 ********************************************************************************
-	- Each of the following 12 sequences has E-value less than 10.
+	- Each of the following 10 sequences has E-value less than 10.
 	- The E-value of a sequence is the expected number of sequences
 	  in a random database of the same size that would match the motifs as
 	  well as the sequence does and is equal to the combined p-value of the
@@ -74,18 +74,16 @@ SECTION I: HIGH-SCORING SEQUENCES
 
 SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
 -------------                      -----------                   -------- ------
-NC_016845.1                        Klebsiella pneumoniae subs...    0.022   1999
-NC_003197.2                        Salmonella enterica subsp....    0.022   2000
-NC_002695.2                        Escherichia coli O157:H7 s...    0.022   2000
-NC_017634.1                        Escherichia coli O83:H1 st...    0.022   2000
-NC_003198.1                        Salmonella enterica subsp....    0.022   2000
-NC_015663.1                        Enterobacter aerogenes KCT...    0.052   2000
-NC_000913.3                        Escherichia coli str. K-12...     0.11   2000
-NC_011750.1                        Escherichia coli IAI39 chr...     0.11   2000
-NC_014121.1                        Enterobacter cloacae subsp...     0.18   2000
-NC_018658.1                        Escherichia coli O104:H4 s...     0.55   1999
-NC_007606.1                        Shigella dysenteriae Sd197...      2.9   2000
-NC_004337.2                        Shigella flexneri 2a str. ...        3   2000
+NC_000913.3                        Escherichia coli str. K-12...    0.014   2000
+NC_003197.2                        Salmonella enterica subsp....    0.014   2000
+NC_002695.2                        Escherichia coli O157:H7 s...    0.014   2000
+NC_011750.1                        Escherichia coli IAI39 chr...    0.014   2000
+NC_017634.1                        Escherichia coli O83:H1 st...    0.014   2000
+NC_003198.1                        Salmonella enterica subsp....    0.014   2000
+NC_014121.1                        Enterobacter cloacae subsp...    0.035   2000
+NC_015663.1                        Enterobacter aerogenes KCT...     0.36   2000
+NC_018658.1                        Escherichia coli O104:H4 s...     0.46   1999
+NC_016845.1                        Klebsiella pneumoniae subs...     0.67   1999
 
 ********************************************************************************
 
@@ -116,18 +114,16 @@ SECTION II: MOTIF DIAGRAMS
 
 SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
 -------------                      --------  -------------
-NC_016845.1                           0.022  201-[+1]-665-[+3]-269-[+2]-67-[+2]-58-[+1]-97-[-1]-26-[+1]-30-[-1]-176-[+3]-312-[+3]-8
-NC_003197.2                           0.022  175-[+3]-344-[+2]-60-[+1]-97-[-1]-26-[+1]-30-[-1]-176-[+3]-355-[+2]-89-[+1]-376-[-1]-182
-NC_002695.2                           0.022  113-[+1]-414-[-1]-73-[+1]-160-[+3]-232-[+1]-28-[+2]-66-[+2]-60-[+1]-97-[-1]-26-[+1]-30-[-1]-487-[+3]-44-[+2]-53
-NC_017634.1                           0.022  111-[+1]-414-[-1]-73-[+1]-160-[+3]-232-[+1]-28-[+2]-66-[+2]-60-[+1]-97-[-1]-26-[+1]-30-[-1]-487-[+3]-44-[+2]-55
-NC_003198.1                           0.022  70-[-2]-355-[-3]-176-[+1]-30-[-1]-26-[+1]-97-[-1]-60-[-2]-344-[-3]-242-[+1]-519
-NC_015663.1                           0.052  259-[+2]-59-[+1]-66-[+3]-22-[-1]-26-[+1]-30-[-1]-497-[+3]-44-[+2]-89-[+1]-408-[-2]-410
-NC_000913.3                            0.11  92-[-2]-326-[-2]-274-[-3]-345-[+1]-414-[-1]-73-[+1]-160-[+3]-232-[+1]-12
-NC_011750.1                            0.11  92-[-2]-326-[-2]-274-[-3]-345-[+1]-414-[-1]-73-[+1]-160-[+3]-232-[+1]-12
-NC_014121.1                            0.18  22-[-2]-270-[-3]-160-[-1]-73-[+1]-1439
-NC_018658.1                            0.55  166-[-2]-1049-[+1]-732-[+1]-25
-NC_007606.1                             2.9  1223-[+2]-372-[+2]-186-[-1]-107-[-1]-57-[+2]-10
-NC_004337.2                               3  413-[+1]-399-[-3]-1170
+NC_000913.3                           0.014  204-[-1]-414-[+1]-73-[-1]-160-[+3]-232-[-1]-103-[+2]-60-[-1]-97-[+1]-26-[-1]-30-[+1]-511
+NC_003197.2                           0.014  594-[+1]-242-[+3]-344-[+2]-60-[-1]-97-[+1]-26-[-1]-30-[+1]-525-[-1]-10
+NC_002695.2                           0.014  173-[-1]-414-[+1]-73-[-1]-160-[+3]-232-[-1]-103-[+2]-60-[-1]-97-[+1]-26-[-1]-30-[+1]-525-[-1]-8
+NC_011750.1                           0.014  274-[-1]-414-[+1]-73-[-1]-160-[+3]-232-[-1]-103-[+2]-60-[-1]-97-[+1]-26-[-1]-30-[+1]-441
+NC_017634.1                           0.014  191-[-1]-414-[+1]-73-[-1]-160-[+3]-232-[-1]-103-[+2]-60-[-1]-97-[+1]-26-[-1]-30-[+1]-524
+NC_003198.1                           0.014  730-[-2]-6-[+1]-525-[-1]-30-[+1]-26-[-1]-97-[+1]-60-[-2]-344-[-3]-110
+NC_014121.1                           0.035  46-[-2]-346-[-3]-160-[+1]-73-[-1]-1339
+NC_015663.1                            0.36  1120-[-1]-665-[+3]-197
+NC_018658.1                            0.46  756-[-2]-584-[-2]-222-[+1]-225-[-1]-176
+NC_016845.1                            0.67  807-[+1]-255-[-1]-665-[+3]-245
 
 ********************************************************************************
 
@@ -160,639 +156,504 @@ SECTION III: ANNOTATED SEQUENCES
 ********************************************************************************
 
 
-NC_016845.1
-  Klebsiella pneumoniae subsp. pneumoniae HS11286 chromosome, -130 bases around 
-  gc minimum
-  LENGTH = 1999  COMBINED P-VALUE = 1.84e-03  E-VALUE =    0.022
-  DIAGRAM: 201-[+1]-665-[+3]-269-[+2]-67-[+2]-58-[+1]-97-[-1]-26-[+1]-30-[-1]-176-[+3]-312-[+3]-8
+NC_000913.3
+  Escherichia coli str. K-12 substr. MG1655, 2000 bases around gc minimum at 
+  3925500
+  LENGTH = 2000  COMBINED P-VALUE = 1.13e-03  E-VALUE =    0.014
+  DIAGRAM: 204-[-1]-414-[+1]-73-[-1]-160-[+3]-232-[-1]-103-[+2]-60-[-1]-97-[+1]-26-[-1]-30-[+1]-511
 
-                                                        [+1]
-                                                        2.8e-05
-                                                        TGTGGATAA
-                                                        ++ ++++++
-151  GAGCGGACGATTTGCATTTGCACATCAAAGGGCAGGCTGGTGGATATACCGTTCGGATAAATTTCGTTTGAGGTC
+                                                           [-1]
+                                                           2.4e-05
+                                                           TGTGGATAA
+                                                           ++ ++++++
+151  ATAGAGCGGACGATTTGCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCATTAGAG
 
-                                                       [+3]
-                                                       1.1e-05
-                                                       GTTTCGTAT
-                                                       +++++++++
-826  ACGCGGTCAGCCTGGGCGCGGGTGGCGCGCACTGCCGGTCCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCC
+                                [+1]
+                                1.6e-05
+                                TTATCCACA
+                                +++++++ +
+601  GGATCACCAGCACGGCCACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTG
 
-                                 [+2]
-                                 6.8e-05
-                                 TATTAAAAA
-                                 +++++++++
-1126 AACAGGTGGTCTGCCTCGCATAAAGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTCG
+                                       [-1]
+                                       6.7e-05
+                                       TGTGGATAA
+                                       +++++ +++
+676  AGCACGACGGCTTTGGCACGGAACTTCAGTCCCATTTGGGTAACAGCACCGACCACGCGATCGTTTTCGACAATA
 
-                                  [+2]
-                                  8.8e-06
-                                  TATTAAAAA
-                                  +++++++++
-1201 TCTTTCGAGAAAGACTCCGGGATCCTGAGTATTAAAAAGAAGATCTTTATATAGAGATCTGTTCTATTGTGATCT
+                                                          [+3]
+                                                          5.9e-06
+                                                          GTTTAGTAT
+                                                          +++++++++
+826  AGCACACGATCCGCCTGAGCTCGGGTAGCGCGAACCGCCGGTCCTTTGCTTGCGTTTAGTATCCTAAACTGGATA
 
-                          [+1]
-                          4.9e-06
-                          TGTGGATAA
-                          +++++++++
-1276 CTTATTAGGATCGACTCTCTTTGTGGATAAGTCGGATCCGCGAAGTAAGATCAAAAGCTTAAGAAGGATCACTAT
+                                                                          [-1]
+                                                                          4.2e-0
+                                                                          TGTGGA
+                                                                          +  +++
+1051 ATACGCGCCGCGGCCATCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGA
 
-                                                         [-1]
-                                                         8.4e-05
-                                                         TTATCCACA
-                                                         ++++ ++++
-1351 CTGTGAATGATCGGTGATCCTGGTCCGTATAAGCTGGGATCAGAATGAAGGGTTATGCACAGCTCAAAAACCATA
+     
+     5
+     TAA
+     +++
+1126 TAAAACATGGTGATTGCCTCGCATAACGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTT
 
-                 [+1]                                   [-1]
-                 1.6e-05                                4.9e-06
-                 TGTGGATAA                              TTATCCACA
-                 +++++++++                              +++++++++
-1426 CTACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTTAAGCATGGTTATCCACAGAAGATCGGACGATC
+                                    [+2]
+                                    8.8e-06
+                                    TATTAAAAA
+                                    +++++++++
+1201 TGTCGGCTTGAGAAAGACCTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTG
 
-                [+3]
-                1.5e-05
-                GTTTCGTAT
-                +++++++++
-1651 CGCCGCAAAAGGTGTCGTATTCGCGGCTGCCGATCCCTATAGCGCCAAAGCGCACGGCGGAAAGATCGGCCTGCT
+                              [-1]
+                              4.9e-06
+                              TGTGGATAA
+                              +++++++++
+1276 ATCTCTTATTAGGATCGCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCA
 
-                                     [+3]
-                                     3.2e-05
-                                     GTTTCGTAT
-                                     +++++++++
-1951 TAGATCGCCGATCGCCCGCTCAACTGTTCAGAGTGGCGTATTGTACGCT
+                                                             [+1]
+                                                             3.0e-05
+                                                             TTATCCACA
+                                                             ++++ ++++
+1351 TTAACTGTGAATGATCGGTGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAAC
+
+                     [-1]                                   [+1]
+                     1.1e-05                                4.9e-06
+                     TGTGGATAA                              TTATCCACA
+                     +++++++++                              +++++++++
+1426 TGAACAACAGTTGTTCTTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCAC
 
 
 NC_003197.2
-  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, 4084370 
-  bases around gc minimum
-  LENGTH = 2000  COMBINED P-VALUE = 1.84e-03  E-VALUE =    0.022
-  DIAGRAM: 175-[+3]-344-[+2]-60-[+1]-97-[-1]-26-[+1]-30-[-1]-176-[+3]-355-[+2]-89-[+1]-376-[-1]-182
+  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, 2000 bases 
+  around gc minimum at 4083700
+  LENGTH = 2000  COMBINED P-VALUE = 1.13e-03  E-VALUE =    0.014
+  DIAGRAM: 594-[+1]-242-[+3]-344-[+2]-60-[-1]-97-[+1]-26-[-1]-30-[+1]-525-[-1]-10
 
-                              [+3]
-                              1.1e-05
-                              GTTTCGTAT
-                              +++++++++
-151  CGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCA
+                                                                          [+1]
+                                                                          1.6e-0
+                                                                          TTATCC
+                                                                          ++++++
+526  AGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCC
 
-        [+2]                                                                 [+1
-        8.8e-06                                                              4.9
-        TATTAAAAA                                                            TGT
-        +++++++++                                                            +++
-526  GGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGGATCGCGCCAGGCTGT
+     
+     5
+     ACA
+     + +
+601  AGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCC
 
-     ]
-     e-06
-     GGATAA
-     ++++++
-601  GGATAACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGT
+                         [+3]
+                         5.9e-06
+                         GTTTAGTAT
+                         +++++++++
+826  ACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCG
 
-                                 [-1]                               [+1]
-                                 3.4e-05                            1.6e-05
-                                 TTATCCACA                          TGTGGATAA
-                                 ++++ ++++                          +++++++++
-676  CCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACTA
+                                                                              [+
+                                                                              8.
+                                                                              TA
+                                                                              ++
+1126 TGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTA
 
-                                [-1]
-                                4.9e-06
-                                TTATCCACA
-                                +++++++++
-751  CCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAGTAAATTAA
+     2]                                                                 [-1]
+     8e-06                                                              4.9e-06
+     TTAAAAA                                                            TGTGGATA
+     +++++++                                                            ++++++++
+1201 TTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGGATCGCGCCAGGCTGTGGATA
 
-                                                                   [+3]
-                                                                   1.5e-05
-                                                                   GTTTCGTAT
-                                                                   +++++++++
-901  CAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCTC
+     
+     
+     A
+     +
+1276 ACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGTCCGTA
 
-                                                        [+2]
-                                                        1.6e-05
-                                                        TATTAAAAA
-                                                        +++++++++
-1276 GCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGAAAAATGTGGGATTAAAAAAGCCGATCATGGCTT
+                            [+1]                               [-1]
+                            3.0e-05                            1.1e-05
+                            TTATCCACA                          TGTGGATAA
+                            ++++ ++++                          +++++++++
+1351 TAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACTACCGGT
 
-                                                                               [
-                                                                               6
-                                                                               T
-                                                                               +
-1351 GATGGTGCGCATGATCGGGTTCTGCAAGACGATCAGTGTCTCAGTGGACTGAATTTCATCAATTGTTTGGATCTT
+                           [+1]
+                           4.9e-06
+                           TTATCCACA
+                           +++++++++
+1426 TGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAGTAAATTAATCCAG
 
-     +1]
-     .6e-05
-     GTGGATAA
-     ++ +++++
-1426 GTTGATAAGTACGTGCTGAAGCGCGTCGATTGATTTGCACATCACTTTTATAAAGATGCTGTAGTGACCGGTGGT
-
-              [-1]
-              8.9e-05
-              TTATCCACA
-              ++++ ++++
-1801 CGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATCAAAACCGAAGTTAGCT
+                                    [-1]
+                                    5.0e-05
+                                    TGTGGATAA
+                                    ++++++ ++
+1951 ATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGAAAAATGTGGGATT
 
 
 NC_002695.2
-  Escherichia coli O157:H7 str. Sakai DNA, 4719160 bases around gc minimum
-  LENGTH = 2000  COMBINED P-VALUE = 1.84e-03  E-VALUE =    0.022
-  DIAGRAM: 113-[+1]-414-[-1]-73-[+1]-160-[+3]-232-[+1]-28-[+2]-66-[+2]-60-[+1]-97-[-1]-26-[+1]-30-[-1]-487-[+3]-44-[+2]-53
-
-                                           [+1]
-                                           2.8e-05
-                                           TGTGGATAA
-                                           ++ ++++++
-76   GCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAAGTCAGCCCTTCCGGTT
-
-                [-1]
-                9.7e-06
-                TTATCCACA
-                +++++++++
-526  CACCGCTGTAGTTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACGGCTTTGG
-
-                       [+1]
-                       6.6e-05
-                       TGTGGATAA
-                       +++++ +++
-601  CACGGAACTTCAGTCCCATTTGGGTAACAGCACCGACCACACGATCGTTTTCGACAATAAGATCTTCAACCGCCT
-
-                                          [+3]
-                                          1.1e-05
-                                          GTTTCGTAT
-                                          +++++++++
-751  GAGCTCGGGTAGCGCGAACTGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCG
-
-                                                          [+1]
-                                                          2.4e-05
-                                                          TGTGGATAA
-                                                          ++ ++++++
-976  TCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTG
-
-                    [+2]
-                    6.8e-05
-                    TATTAAAAA
-                    +++++++++
-1051 CCTCGCATAACGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTGTCGGCTTGAGAAAG
-
-                    [+2]
-                    8.8e-06
-                    TATTAAAAA
-                    +++++++++
-1126 ACCTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTTATCTCTTATTAGGATC
-
-              [+1]
-              4.9e-06
-              TGTGGATAA
-              +++++++++
-1201 GCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATC
-
-                                             [-1]
-                                             3.4e-05
-                                             TTATCCACA
-                                             ++++ ++++
-1276 GGTGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAACAACGGTTGTTC
-
-     [+1]                                   [-1]
-     1.6e-05                                4.9e-06
-     TGTGGATAA                              TTATCCACA
-     +++++++++                              +++++++++
-1351 TTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATT
-
-               [+3]                                                 [+2]
-               3.2e-05                                              1.6e-05
-               GTTTCGTAT                                            TATTAAAAA
-               +++++++++                                            +++++++++
-1876 TTTATTAAGAGTGGCGTATTGTACGCTGTGAACGCGTTGGGATCTACCTGTGGAAAAGTATGGGATTAAAAAAGC
-
-
-NC_017634.1
-  Escherichia coli O83:H1 str. NRG 857C chromosome, 3946680 bases around gc 
-  minimum
-  LENGTH = 2000  COMBINED P-VALUE = 1.84e-03  E-VALUE =    0.022
-  DIAGRAM: 111-[+1]-414-[-1]-73-[+1]-160-[+3]-232-[+1]-28-[+2]-66-[+2]-60-[+1]-97-[-1]-26-[+1]-30-[-1]-487-[+3]-44-[+2]-55
-
-                                         [+1]
-                                         2.8e-05
-                                         TGTGGATAA
-                                         ++ ++++++
-76   ATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTTGAGGTCAGCCCTTCCGGTTCA
-
-              [-1]
-              9.7e-06
-              TTATCCACA
-              +++++++++
-526  CCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTTTGGCA
-
-                     [+1]
-                     6.6e-05
-                     TGTGGATAA
-                     +++++ +++
-601  CGGAACTTCAGTCCCATTTGGGTAACGGCACCGACCACGCGATCGTTTTCGACAATAAGATCTTCAACCGCCTGC
-
-                                        [+3]
-                                        1.1e-05
-                                        GTTTCGTAT
-                                        +++++++++
-751  GCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGCT
-
-                                                        [+1]
-                                                        2.4e-05
-                                                        TGTGGATAA
-                                                        ++ ++++++
-976  GCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTGCC
-
-                  [+2]
-                  6.8e-05
-                  TATTAAAAA
-                  +++++++++
-1051 TCGCATAACGCGGTATGAAAATGGATTGAAGCCCGGGCCGTGGATTCTACTCAACTTTGTCGGCTTGAGAAAGAC
-
-                  [+2]
-                  8.8e-06
-                  TATTAAAAA
-                  +++++++++
-1126 CTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGGATCGC
-
-            [+1]
-            4.9e-06
-            TGTGGATAA
-            +++++++++
-1201 GCTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATCGG
-
-                                           [-1]                               [+
-                                           3.4e-05                            1.
-                                           TTATCCACA                          TG
-                                           ++++ ++++                          ++
-1276 TGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAACAACCGTTGTTCTT
-
-     1]                                   [-1]
-     6e-05                                4.9e-06
-     TGGATAA                              TTATCCACA
-     +++++++                              +++++++++
-1351 TGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATTTG
-
-             [+3]                                                 [+2]
-             3.2e-05                                              1.6e-05
-             GTTTCGTAT                                            TATTAAAAA
-             +++++++++                                            +++++++++
-1876 TATTAAGAGTGGCGTATTGTACGCTGTGAAAGCGTTGGGATCTACCTGTGGAAAAGTATGGGATTAAAAAAGCCG
-
-
-NC_003198.1
-  Salmonella enterica subsp. enterica serovar Typhi str. CT18, 3765460 bases 
-  around gc minimum
-  LENGTH = 2000  COMBINED P-VALUE = 1.84e-03  E-VALUE =    0.022
-  DIAGRAM: 70-[-2]-355-[-3]-176-[+1]-30-[-1]-26-[+1]-97-[-1]-60-[-2]-344-[-3]-242-[+1]-519
-
-                                                                           [-2]
-                                                                           1.6e-
-                                                                           TTTTT
-                                                                           +++++
-1    AATTCAGTCCACTGAGACACTGATCGTCTTGCAGAACCCGATCATGCGCACCATCAAGCCATGATCGGCTTTTTT
-
-     
-     05
-     AATA
-     ++++
-76   AATCCCACATTTTTCCACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGA
-
-                                                                [-3]
-                                                                1.5e-05
-                                                                ATACGAAAC
-                                                                +++++++++
-376  ACGCAGAAACCCGATCTTTCCGCGGTACGTTTCGGCGCAATTGGCATTGGCAGTCGAGAATACGACACGTTTTGC
-
-                        [+1]                                   [-1]
-                        4.9e-06                                1.6e-05
-                        TGTGGATAA                              TTATCCACA
-                        +++++++++                              +++++++++
-601  TAAAGATCGTGCGATCTATTGTGGATAAATATGGTGAAAAGCTTGGATCAACCGGTAGTTATCCAAAGAATAACC
-
-                       [+1]
-                       3.4e-05
-                       TGTGGATAA
-                       ++++ ++++
-676  TTTGTTCACTTTTTGAGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTC
-
-                                                      [-1]
-                                                      4.9e-06
-                                                      TTATCCACA
-                                                      +++++++++
-751  ACAGCTAGTGATCCTTTCCAACGCATTGATCTTTATTACAGGATCCGGGTTATCCACAGCCTGGTGCGATCCTAA
-
-                                                [-2]
-                                                8.8e-06
-                                                TTTTTAATA
-                                                +++++++++
-826  TAAGAGATCACAATAGAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCC
-
-                          [-3]
-                          1.1e-05
-                          ATACGAAAC
-                          +++++++++
-1201 CAGGCAGGTATTCAGTTTAAGATACTAAACGCCAGCAAAGGTCCGGCCGTTCGCGCTACCCGAGCTCAGGCGGAT
-
-                                                    [+1]
-                                                    9.7e-06
-                                                    TGTGGATAA
-                                                    +++++++++
-1426 GTGGTGCTGACCGTCGGGACTTTCCTGGACGGCAAAATTCATATTGGTCTGGATAACTACAGCGGCGGTCGTGCT
-
-
-NC_015663.1
-  Enterobacter aerogenes KCTC 2190 chromosome, 1496990 bases around gc minimum
-  LENGTH = 2000  COMBINED P-VALUE = 4.32e-03  E-VALUE =    0.052
-  DIAGRAM: 259-[+2]-59-[+1]-66-[+3]-22-[-1]-26-[+1]-30-[-1]-497-[+3]-44-[+2]-89-[+1]-408-[-2]-410
-
-                                       [+2]
-                                       8.8e-06
-                                       TATTAAAAA
-                                       +++++++++
-226  TTTGCTCTTTCGAGAAAGGGGCCGGGATCCTGAGTATTAAAAAGAAGATCTTTTATTTAGAGATCTGTTCTATTG
-
-                                [+1]
-                                4.9e-06
-                                TGTGGATAA
-                                +++++++++
-301  TGATCTCTTATTAGGATCGACTCTCTTTGTGGATAAGTCGGATCCACTGTTTAAGATCAAACGCTTAAGAAGGAT
-
-                                [+3]                           [-1]
-                                9.3e-05                        8.4e-05
-                                GTTTCGTAT                      TTATCCACA
-                                +++ +++++                      ++++ ++++
-376  CGCAATCTGTGAATGATCGGTGATCCTGTTCCGTATAAGCTGGGATCAGAATGAAGGGTTATGCACAGCTCAAAA
-
-                       [+1]                                   [-1]
-                       1.6e-05                                4.9e-06
-                       TGTGGATAA                              TTATCCACA
-                       +++++++++                              +++++++++
-451  AGCGTACTCCGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTTGAGCAGGGTTATCCACAGAAGAAGCT
-
-                                           [+3]
-                                           3.2e-05
-                                           GTTTCGTAT
-                                           +++++++++
-976  TCTGCCATGATCGCCGATCGCTCGCTCAACTATTCTGAGTGGCGTATTGTACGCTGTGAGCGAGCTGGGATCTAC
-
-                     [+2]
-                     1.6e-05
-                     TATTAAAAA
-                     +++++++++
-1051 CTGTGGAAAAATGTGGGATTAAAAAAAACGATCAGGGCTTGATGGTACGCATGATCGGGTTTTGCAGCACGATCA
-
-                                            [+1]
-                                            6.6e-05
-                                            TGTGGATAA
-                                            +++ +++++
-1126 GGGTTTCAGTGGACTGAATTTCATCGATTGTTTGGATCTTGTTGATAAGTACCTGCTGCAGGGCATCGATGGATT
-
-           [-2]
-           6.1e-05
-           TTTTTAATA
-           ++++++++
-1576 TTTAGCTTTTTAATTTAATGAATCAAAACTCAAGGCGTCTTTTTATTGATTGATTATTGAATTCAGTGCCATTTC
-
-
-NC_000913.3
-  Escherichia coli str. K-12 substr. MG1655, 3924640 bases around gc minimum
-  LENGTH = 2000  COMBINED P-VALUE = 8.83e-03  E-VALUE =     0.11
-  DIAGRAM: 92-[-2]-326-[-2]-274-[-3]-345-[+1]-414-[-1]-73-[+1]-160-[+3]-232-[+1]-12
-
-                      [-2]
-                      3.9e-05
-                      TTTTTAATA
-                      ++++++++
-76   CGGGTGCTTACCAGGCATTTTTAATGCGTTATGCGCTACGACGCAGCATACCCTGTTTTTTCAGCCACACCAGCA
-
-                                                         [-2]
-                                                         3.2e-05
-                                                         TTTTTAATA
-                                                         +++++++++
-376  CCGCCGCCTGTTCGTCTGTCAACGCAGGGGCAAACGGCGTCAGCGTGGTTAATTTTTCATAAGTCATTTCCGGAC
-
-                                        [-3]
-                                        4.1e-05
-                                        ATACGAAAC
-                                        ++++++ ++
-676  GTAGCATCAGACGATATTCTGCGCGCGAAGTAAACATACGATACGGTTCTTTGGTTCCTAAAGTGCACAGGTCAT
-
-                   [+1]
-                   2.8e-05
-                   TGTGGATAA
-                   ++ ++++++
-1051 TGGTGGAGATACCGTTCGGATAAATTTCATTAGAGGTCAGTCCTTCCGGTTCAAGGAAGATCTGATGCTGATTTC
-
-                                                                   [-1]
-                                                                   9.7e-06
-                                                                   TTATCCACA
-                                                                   +++++++++
-1426 GTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGCCACCGCTGTAATTATCCAGACCGA
-
-                                                                          [+1]
-                                                                          6.6e-0
-                                                                          TGTGGA
-                                                                          +++++
-1501 TATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACGGCTTTGGCACGGAACTTCAGTCCCATTTGGG
-
-     
-     5
-     TAA
-     +++
-1576 TAACAGCACCGACCACGCGATCGTTTTCGACAATAAGATCTTCAACCGCCTGCTGGAAGATCATCAGGTTCGGTT
-
-                  [+3]
-                  1.1e-05
-                  GTTTCGTAT
-                  +++++++++
-1726 GTCCTTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGTG
-
-                                  [+1]
-                                  2.4e-05
-                                  TGTGGATAA
-                                  ++ ++++++
-1951 CCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATT
-
-
-NC_011750.1
-  Escherichia coli IAI39 chromosome, 4528110 bases around gc minimum
-  LENGTH = 2000  COMBINED P-VALUE = 8.83e-03  E-VALUE =     0.11
-  DIAGRAM: 92-[-2]-326-[-2]-274-[-3]-345-[+1]-414-[-1]-73-[+1]-160-[+3]-232-[+1]-12
-
-                      [-2]
-                      3.9e-05
-                      TTTTTAATA
-                      ++++++++
-76   CGGGTGCTTACCAGGCATTTTTAATGCGTTATGCGCTACGACGCAGCATACCCTGTTTTTTCAGCCACACCAGCA
-
-                                                         [-2]
-                                                         3.2e-05
-                                                         TTTTTAATA
-                                                         +++++++++
-376  CCGCCGCCTGTTCGTCTGTCAACGCAGGGGCAAACGGCGTCAGCGTGGTTAATTTTTCATAAGTCATTTCCGGAC
-
-                                        [-3]
-                                        4.1e-05
-                                        ATACGAAAC
-                                        ++++++ ++
-676  GCAGCATCAGACGATATTCTGCGCGCGAGGTAAACATACGATACGGTTCTTTGGTTCCTAAAGTGCACAGGTCAT
-
-                   [+1]
-                   2.8e-05
-                   TGTGGATAA
-                   ++ ++++++
-1051 TGGTGGAGATACCGTTCGGATAAATTTCGTTAGAGGTCAGCCCTTCCGGTTCAAGGAAGATCTGATGCTGATTTC
-
-                                                                   [-1]
-                                                                   9.7e-06
-                                                                   TTATCCACA
-                                                                   +++++++++
-1426 GTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGCCACCGCTGTAGTTATCCAGACCGA
-
-                                                                          [+1]
-                                                                          6.6e-0
-                                                                          TGTGGA
-                                                                          +++++
-1501 TATGAATTTTACCGTCGAGGAACGTCCCAACAGTGAGCACGACAGCTTTGGCACGGAACTTCAGTCCCATTTGGG
-
-     
-     5
-     TAA
-     +++
-1576 TAACGGCTCCGACCACGCGATCATTTTCGACAATAAGATCTTCAACTGCCTGCTGGAAGATCATCAGGTTCGGTT
-
-                  [+3]
-                  1.1e-05
-                  GTTTCGTAT
-                  +++++++++
-1726 GTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGTG
-
-                                  [+1]
-                                  2.4e-05
-                                  TGTGGATAA
-                                  ++ ++++++
-1951 CCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATT
-
-
-NC_014121.1
-  Enterobacter cloacae subsp. cloacae ATCC 13047 chromosome, 5288300 bases 
-  around gc minimum
-  LENGTH = 2000  COMBINED P-VALUE = 1.52e-02  E-VALUE =     0.18
-  DIAGRAM: 22-[-2]-270-[-3]-160-[-1]-73-[+1]-1439
-
-                           [-2]
-                           6.8e-05
-                           TTTTTAATA
-                           +++++++++
-1    TCCACGGCCCGGGCTTCAATCCATTTTCATACCGCTTTACGCGAGGCAGACCACCATGTTTTATCAGGATCCTTT
-
-      [-3]
-      1.1e-05
-      ATACGAAAC
-      +++++++++
-301  GATACTAAACGCCAGTAAAGGCCCCGCTGTCCGTGCGACCCGCGCTCAGGCAGACCGGGTACTTTATCGTCAGGC
-
-                         [-1]
-                         5.6e-05
-                         TTATCCACA
-                         +++ +++++
-451  CGATCGTGTCGTTGGCGCGGTTACCCAGATGGGGCTCAAATTCCGCGCCAAAGCGGTTGTTCTGACCGTCGGGAC
-
-                                [+1]
-                                9.7e-06
-                                TGTGGATAA
-                                +++++++++
-526  ATTCCTGGACGGTAAGATCCATATCGGTCTGGATAATTACAGCGGCGGACGTGCTGGCGATCCGCCATCTATCCC
-
-
-NC_018658.1
-  Escherichia coli O104:H4 str. 2011C-3493 chromosome, -410 bases around gc 
-  minimum
-  LENGTH = 1999  COMBINED P-VALUE = 4.58e-02  E-VALUE =     0.55
-  DIAGRAM: 166-[-2]-1049-[+1]-732-[+1]-25
-
-                     [-2]
-                     2.5e-05
-                     TTTTTAATA
-                     +++++++++
-151  GGGTGTAAAGGGTGGCATTTTAATACGCGTTTCACCGTCAACCAACTGCCTTTTATCACTCCAAACCTGCGCAAT
-
-                             [+1]
-                             4.9e-06
-                             TGTGGATAA
-                             +++++++++
-1201 CACTTAGCGAGTTCTGGAAAGTCCTGTGGATAAATCGGGAAAATCTGTGAGAAACAGAAGATCTCTTGCGCAGTT
-
-                    [+1]
-                    5.6e-05
-                    TGTGGATAA
-                    +++++ +++
-1951 TTATGGCGGCACGGGTCTGGGTAAAACTCACCTGCTGCATGCGGTGGGT
-
-
-NC_007606.1
-  Shigella dysenteriae Sd197 chromosome, 4309300 bases around gc minimum
-  LENGTH = 2000  COMBINED P-VALUE = 2.44e-01  E-VALUE =      2.9
-  DIAGRAM: 1223-[+2]-372-[+2]-186-[-1]-107-[-1]-57-[+2]-10
-
-                            [+2]
-                            7.6e-05
-                            TATTAAAAA
-                             ++++++++
-1201 AGCCGGGGCCAGACTGACATCGGCATTAAAATCACGGACCACATTAATGATCCCTGGCTGGATCAGGTCCGTCGA
-
-                                  [+2]
-                                  9.6e-05
-                                  TATTAAAAA
-                                   ++++++++
-1576 GTTGCATAGAAAATATACACCTTAAGTGTAATTAAAATTTGCGGTTAATCAAAAGAGTGCGGTGGAAAGGGGAAT
-
-                                                                               [
-                                                                               6
-                                                                               T
-                                                                               +
-1726 GCCTGGAAAGCACCTCGGGGAATGGGAAATTACCGGGTGAGAATGGTTTTGTTAGTCGCTAAAGTCGGGCCATCT
-
-     -1]
-     .6e-05
-     TATCCACA
-     ++++ +++
-1801 TATCAACAGGTGACGGATCGCCATGACAAACTTCACGACCAGTACGCCGCATGACGCATTATTTAAATCCTTTCT
-
-                                             [-1]
-                                             6.6e-05
-                                             TTATCCACA
-                                             +++ +++++
-1876 CACGCACCCTGACACCGCGCAGGATTTTATGGAGATCCACTTACCCAAAGATTTACGTGAACTGTGCGATCTCGA
-
-                                    [+2]
-                                    5.2e-05
-                                    TATTAAAAA
-                                    +++++++++
-1951 CACCTTAAAACTGGAATCCGCCAGTTTTGTCGATGAAAAATTGCGGGCGC
-
-
-NC_004337.2
-  Shigella flexneri 2a str. 301 chromosome, 3821370 bases around gc minimum
-  LENGTH = 2000  COMBINED P-VALUE = 2.47e-01  E-VALUE =        3
-  DIAGRAM: 413-[+1]-399-[-3]-1170
-
-                                           [+1]
-                                           6.6e-05
-                                           TGTGGATAA
-                                           +++ +++++
-376  TTATTTGTAAAATTAATTTATCTGACAATAACATTTATTGTTGATAATGAGAATCATTATTGACATAATTGTTAT
-
-                                                                            [-3]
-                                                                            2.4e
-                                                                            ATAC
+  Escherichia coli O157:H7 str. Sakai DNA, 2000 bases around gc minimum at 
+  4719100
+  LENGTH = 2000  COMBINED P-VALUE = 1.13e-03  E-VALUE =    0.014
+  DIAGRAM: 173-[-1]-414-[+1]-73-[-1]-160-[+3]-232-[-1]-103-[+2]-60-[-1]-97-[+1]-26-[-1]-30-[+1]-525-[-1]-8
+
+                            [-1]
+                            2.4e-05
+                            TGTGGATAA
+                            ++ ++++++
+151  ACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAAGTCAGCCCTTCCGGTTCAAGGAAGATCTGAT
+
+                                                                            [+1]
+                                                                            1.6e
+                                                                            TTAT
                                                                             ++++
-751  ACGCCATCAACTGTTTCTGCCCGTTCCCCTCTGCGAAACTTTCCACCAGCGCGTGCTGGAAAGCCATGTCCATAC
+526  GCAGCGGAAGTTCACGCAAACGGCGAGAAAGCGGAATGGACGGCGGATCACCAGCACGGCCACCGCTGTAGTTAT
 
      
      -05
-     GAAAC
-     +++++
-826  GCAACAGGCAATTGATGCCCGTCATGACTGGGCCGCTCTGCGTGAAAAAGCGTTGAATTTTGGCGAGGCTGAGCA
+     CCACA
+     +++ +
+601  CCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACGGCTTTGGCACGGAACTTCAGTC
+
+        [-1]
+        6.7e-05
+        TGTGGATAA
+        +++++ +++
+676  CCATTTGGGTAACAGCACCGACCACACGATCGTTTTCGACAATAAGATCTTCAACCGCCTGCTGGAAGATCATCA
+
+                           [+3]
+                           5.9e-06
+                           GTTTAGTAT
+                           +++++++++
+826  GAACTGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGATCGCTTTCGCCATCAGAC
+
+                                           [-1]
+                                           4.2e-05
+                                           TGTGGATAA
+                                           +  ++++++
+1051 CTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGATTGCCTCGCATAACGCGG
+
+     [+2]                                                                 [-1]
+     8.8e-06                                                              4.9e-0
+     TATTAAAAA                                                            TGTGGA
+     +++++++++                                                            ++++++
+1201 TATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTTATCTCTTATTAGGATCGCACTGCCCTGTGGA
+
+     
+     6
+     TAA
+     +++
+1276 TAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATGATCGGTGATCCTGGACCG
+
+                              [+1]                               [-1]
+                              3.0e-05                            1.1e-05
+                              TTATCCACA                          TGTGGATAA
+                              ++++ ++++                          +++++++++
+1351 TATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAACAACGGTTGTTCTTTGGATAACTACCG
+
+                             [+1]
+                             4.9e-06
+                             TTATCCACA
+                             +++++++++
+1426 GTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTTATTTGAGTAAATTAATCC
+
+                                      [-1]
+                                      5.0e-05
+                                      TGTGGATAA
+                                      ++++++ ++
+1951 GTATTGTACGCTGTGAACGCGTTGGGATCTACCTGTGGAAAAGTATGGGA
+
+
+NC_011750.1
+  Escherichia coli IAI39 chromosome, 2000 bases around gc minimum at 4528900
+  LENGTH = 2000  COMBINED P-VALUE = 1.13e-03  E-VALUE =    0.014
+  DIAGRAM: 274-[-1]-414-[+1]-73-[-1]-160-[+3]-232-[-1]-103-[+2]-60-[-1]-97-[+1]-26-[-1]-30-[+1]-441
+
+                                                      [-1]
+                                                      2.4e-05
+                                                      TGTGGATAA
+                                                      ++ ++++++
+226  GCGGACGATTTGCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTAGAGGTCAG
+
+                           [+1]
+                           1.6e-05
+                           TTATCCACA
+                           +++++++ +
+676  ACCAGCACGGCCACCGCTGTAGTTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACAGTGAGCAC
+
+                                  [-1]
+                                  6.7e-05
+                                  TGTGGATAA
+                                  +++++ +++
+751  GACAGCTTTGGCACGGAACTTCAGTCCCATTTGGGTAACGGCTCCGACCACGCGATCATTTTCGACAATAAGATC
+
+                                                     [+3]
+                                                     5.9e-06
+                                                     GTTTAGTAT
+                                                     +++++++++
+901  ACGATCTGCCTGAGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGC
+
+                                                                     [-1]
+                                                                     4.2e-05
+                                                                     TGTGGATAA
+                                                                     +  ++++++
+1126 CGCCGCGGCCATCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAA
+
+                               [+2]
+                               8.8e-06
+                               TATTAAAAA
+                               +++++++++
+1276 GCTTGAGAAAGACCTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTGATCTC
+
+                         [-1]
+                         4.9e-06
+                         TGTGGATAA
+                         +++++++++
+1351 TTATTAGGATCGCACTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAAC
+
+                                                        [+1]
+                                                        3.0e-05
+                                                        TTATCCACA
+                                                        ++++ ++++
+1426 TGTGAATGATCGGTGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAAC
+
+                [-1]                                   [+1]
+                1.1e-05                                4.9e-06
+                TGTGGATAA                              TTATCCACA
+                +++++++++                              +++++++++
+1501 AACCGTTGTTCTTTGGATAACTACCGGTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTGGATCGCACGATCT
+
+
+NC_017634.1
+  Escherichia coli O83:H1 str. NRG 857C chromosome, 2000 bases around gc 
+  minimum at 3946600
+  LENGTH = 2000  COMBINED P-VALUE = 1.13e-03  E-VALUE =    0.014
+  DIAGRAM: 191-[-1]-414-[+1]-73-[-1]-160-[+3]-232-[-1]-103-[+2]-60-[-1]-97-[+1]-26-[-1]-30-[+1]-524
+
+                                              [-1]
+                                              2.4e-05
+                                              TGTGGATAA
+                                              ++ ++++++
+151  TTTGCATCTGCACATCGAACGGCAGGCTGGTGGAGATACCGTTCGGATAAATTTCGTTTGAGGTCAGCCCTTCCG
+
+                   [+1]
+                   1.6e-05
+                   TTATCCACA
+                   +++++++ +
+601  GGCCACCGCTGTAATTATCCAGACCGATATGAATTTTACCGTCGAGGAACGTCCCAACGGTGAGCACGACAGCTT
+
+                          [-1]
+                          6.7e-05
+                          TGTGGATAA
+                          +++++ +++
+676  TGGCACGGAACTTCAGTCCCATTTGGGTAACGGCACCGACCACGCGATCGTTTTCGACAATAAGATCTTCAACCG
+
+                                             [+3]
+                                             5.9e-06
+                                             GTTTAGTAT
+                                             +++++++++
+826  CTTGAGCTCGGGTAGCGCGAACCGCCGGTCCCTTGCTTGCGTTTAGTATCCTAAACTGGATACCCGCCTGATCGA
+
+                                                             [-1]
+                                                             4.2e-05
+                                                             TGTGGATAA
+                                                             +  ++++++
+1051 CCATCGCGGCCTCGGTGCCTGCATGACCCCCGCCAATGATGATGACGTCAAAAGGATCCGGATAAAACATGGTGA
+
+                       [+2]
+                       8.8e-06
+                       TATTAAAAA
+                       +++++++++
+1201 AAGACCTGGGATCCTGGGTATTAAAAAGAAGATCTATTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGG
+
+                 [-1]
+                 4.9e-06
+                 TGTGGATAA
+                 +++++++++
+1276 ATCGCGCTGCCCTGTGGATAACAAGGATCCGGCTTTTAAGATCAACAACCTGGAAAGGATCATTAACTGTGAATG
+
+                                                [+1]
+                                                3.0e-05
+                                                TTATCCACA
+                                                ++++ ++++
+1351 ATCGGTGATCCTGGACCGTATAAGCTGGGATCAGAATGAGGGGTTATACACAACTCAAAAACTGAACAACCGTTG
+
+        [-1]                                   [+1]
+        1.1e-05                                4.9e-06
+        TGTGGATAA                              TTATCCACA
+        +++++++++                              +++++++++
+1426 TTCTTTGGATAACTACCGTTTGATCCAAGCTTCCTGACAGAGTTATCCACAGTAGATCGCACGATCTGTATACTT
+
+
+NC_003198.1
+  Salmonella enterica subsp. enterica serovar Typhi str. CT18, 2000 bases 
+  around gc minimum at 3764800
+  LENGTH = 2000  COMBINED P-VALUE = 1.13e-03  E-VALUE =    0.014
+  DIAGRAM: 730-[-2]-6-[+1]-525-[-1]-30-[+1]-26-[-1]-97-[+1]-60-[-2]-344-[-3]-110
+
+                                                            [-2]           [+1]
+                                                            3.2e-05        5.0e-
+                                                            TTTTTAATA      TTATC
+                                                            ++++++++       ++ ++
+676  GACACTGATCGTCTTGCAGAACCCGATCATGCGCACCATCAAGCCATGATCGGCTTTTTTAATCCCACATTTTTC
+
+     
+     05
+     CACA
+     ++++
+751  CACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGATCAATGGCAGACATT
+
+         [-1]                                   [+1]
+         4.9e-06                                1.1e-05
+         TGTGGATAA                              TTATCCACA
+         +++++++++                              +++++++++
+1276 CTATTGTGGATAAATATGGTGAAAAGCTTGGATCAACCGGTAGTTATCCAAAGAATAACCTTTGTTCACTTTTTG
+
+        [-1]
+        3.0e-05
+        TGTGGATAA
+        ++++ ++++
+1351 AGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTCACAGCTAGTGATCCT
+
+                                       [+1]
+                                       4.9e-06
+                                       TTATCCACA
+                                       +++++++++
+1426 TTCCAACGCATTGATCTTTATTACAGGATCCGGGTTATCCACAGCCTGGTGCGATCCTAATAAGAGATCACAATA
+
+                                 [-2]
+                                 8.8e-06
+                                 TTTTTAATA
+                                 +++++++++
+1501 GAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTGA
+
+           [-3]
+           5.9e-06
+           ATACTAAAC
+           +++++++++
+1876 TTTAAGATACTAAACGCCAGCAAAGGTCCGGCCGTTCGCGCTACCCGAGCTCAGGCGGATCGAGTCTTATATCGC
+
+
+NC_014121.1
+  Enterobacter cloacae subsp. cloacae ATCC 13047 chromosome, 2000 bases around 
+  gc minimum at 5288200
+  LENGTH = 2000  COMBINED P-VALUE = 2.92e-03  E-VALUE =    0.035
+  DIAGRAM: 46-[-2]-346-[-3]-160-[+1]-73-[-1]-1339
+
+                                                   [-2]
+                                                   8.8e-06
+                                                   TTTTTAATA
+                                                   +++++++++
+1    TAATAAGAGATCACAATAGAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCAGGATCCCAATGCTTT
+
+                               [-3]
+                               5.9e-06
+                               ATACTAAAC
+                               +++++++++
+376  TCGATCACGCAGGCATTCAGTTTAGGATACTAAACGCCAGTAAAGGCCCCGCTGTCCGTGCGACCCGCGCTCAGG
+
+                                                  [+1]
+                                                  8.1e-05
+                                                  TTATCCACA
+                                                  +++ +++ +
+526  CAGTGGAAGATCTTATCGTGGAGAACGATCGTGTCGTTGGCGCGGTTACCCAGATGGGGCTCAAATTCCGCGCCA
+
+                                                         [-1]
+                                                         1.6e-05
+                                                         TGTGGATAA
+                                                         + +++++++
+601  AAGCGGTTGTTCTGACCGTCGGGACATTCCTGGACGGTAAGATCCATATCGGTCTGGATAATTACAGCGGCGGAC
+
+
+NC_015663.1
+  Enterobacter aerogenes KCTC 2190 chromosome, 2000 bases around gc minimum at 
+  1495100
+  LENGTH = 2000  COMBINED P-VALUE = 2.98e-02  E-VALUE =     0.36
+  DIAGRAM: 1120-[-1]-665-[+3]-197
+
+                                                                           [-1]
+                                                                           1.1e-
+                                                                           TGTGG
+                                                                           +++++
+1051 GTTTTCCATCCCCTGCATTGAACGGACGATTTGCATTTGCACATCAAACGGCAGGCTGGTGGAGATACCGTTTGG
+
+     
+     05
+     ATAA
+     ++++
+1126 ATAAATTTCGTTTGAAGTCAGCCCTTCCGGTTCAAGGAAGATCTGATGCTGGTTGCGATCGGCAAAGCGCATGAC
+
+                                                                          [+3]
+                                                                          5.9e-0
+                                                                          GTTTAG
+                                                                          ++++++
+1726 TACCGCCTGGCGATACAGCACGCGGTCGGCCTGGGCGCGGGTCGCACGAACAGCTGGGCCTTTGCTACCGTTTAG
+
+     
+     6
+     TAT
+     +++
+1801 TATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCACCGAGCGCGTCCACTTCTTTTACCAG
+
+
+NC_018658.1
+  Escherichia coli O104:H4 str. 2011C-3493 chromosome, 2000 bases around gc 
+  minimum at -1000
+  LENGTH = 1999  COMBINED P-VALUE = 3.79e-02  E-VALUE =     0.46
+  DIAGRAM: 756-[-2]-584-[-2]-222-[+1]-225-[-1]-176
+
+           [-2]
+           1.8e-05
+           TTTTTAATA
+            ++++++++
+751  GGTGGCATTTTAATACGCGTTTCACCGTCAACCAACTGCCTTTTATCACTCCAAACCTGCGCAATGCCTCAATTC
+
+                                                                               [
+                                                                               3
+                                                                               T
+                                                                               +
+1276 GTTAGCTTTATTACTTAGAAACGGTCAGACGAGCGCGGCCTTTAGCACGACGACGTGCCAGAACCTGACGACCAT
+
+     -2]
+     .2e-05
+     TTTTAATA
+     +++++ ++
+1351 TTTTAGTAGCCATACGAGCACGGAAGCCGTGAGAACGGTTGCGCTTCAGTACAGACGGTTGAAAAGTGCGTTTCA
+
+          [+1]
+          9.4e-05
+          TTATCCACA
+          ++ +++ ++
+1576 CGCGCTTTTCCGCACCTTTTCGCAGGGAAAATGTACGACCTCACACCAGTGAAAACCAGCATGGCGCGCCGGGTG
+
+                   [-1]
+                   4.9e-06
+                   TGTGGATAA
+                   +++++++++
+1801 GTTCTGGAAAGTCCTGTGGATAAATCGGGAAAATCTGTGAGAAACAGAAGATCTCTTGCGCAGTTTAGGCTATGA
+
+
+NC_016845.1
+  Klebsiella pneumoniae subsp. pneumoniae HS11286 chromosome, 2000 bases around 
+  gc minimum at -1000
+  LENGTH = 1999  COMBINED P-VALUE = 5.62e-02  E-VALUE =     0.67
+  DIAGRAM: 807-[+1]-255-[-1]-665-[+3]-245
+
+                                                              [+1]
+                                                              9.4e-05
+                                                              TTATCCACA
+                                                              ++ +++ ++
+751  AGGTCATCTACCAGCACGCCGAGGTAAGCCTGATCGCGACGCGGCGCCCAGCCCTCTTTTTCCGCAGAGAAGCGG
+
+                          [-1]
+                          2.4e-05
+                          TGTGGATAA
+                          ++ ++++++
+1051 GGCAGGCTGGTGGATATACCGTTCGGATAAATTTCGTTTGAGGTCAGTCCTTCCGGCTCGAGGAAGATCTGATGC
+
+                         [+3]
+                         5.9e-06
+                         GTTTAGTAT
+                         +++++++++
+1726 ACTGCCGGTCCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCCGCCTGATCGATCGCTTTGGCCATCAAACCG
 
 ********************************************************************************
 
 
 CPU: PC0028
-Time 0.016 secs.
+Time 0.031 secs.
 
 mast -oc data/families/enterobacteriaceae/meme -nostatus data/families/enterobacteriaceae/meme/meme.xml data/families/enterobacteriaceae/skew_regions.fasta

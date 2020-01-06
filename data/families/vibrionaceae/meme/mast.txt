@@ -23,8 +23,8 @@ REFERENCE
 DATABASE AND MOTIFS
 ********************************************************************************
 	DATABASE skew_regions.fasta (nucleotide)
-	Last updated on Sat Jan  4 23:21:02 2020
-	Database contains 3 sequences, 5998 residues
+	Last updated on Mon Jan  6 00:53:09 2020
+	Database contains 3 sequences, 5997 residues
 
 	Scores for positive and reverse complement strands are combined.
 
@@ -32,14 +32,14 @@ DATABASE AND MOTIFS
 	MOTIF ID        ALT ID WIDTH BEST POSSIBLE MATCH
 	----- --------- ------ ----- -------------------
 	    1 TTATCCACA MEME-1     9 TTATCCACA
-	    2 SSCGCSCCG MEME-2     9 CCCGCCCCG
-	    3 GMTTGMGGA MEME-3     9 GCTTGCGGA
+	    2 CCWRCGGTC MEME-2     9 CCAGCGGTC
+	    3 MGGAGMTGA MEME-3     9 CGGAGCTGA
 
 	PAIRWISE MOTIF CORRELATIONS:
 	MOTIF     1     2
 	----- ----- -----
-	   2   0.17
-	   3   0.15  0.26
+	   2   0.18
+	   3   0.19  0.22
 	No overly similar pairs (correlation > 0.60) found.
 
 	Random model letter frequencies (from non-redundant database):
@@ -74,9 +74,9 @@ SECTION I: HIGH-SCORING SEQUENCES
 
 SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
 -------------                      -----------                   -------- ------
-NC_004603.1                        Vibrio parahaemolyticus RI...    0.039   2000
-NC_006840.2                        Vibrio fischeri ES114 chro...    0.055   1999
-NC_002505.1                        Vibrio cholerae O1 biovar ...    0.061   1999
+NC_004603.1                        Vibrio parahaemolyticus RI...   0.0071   1999
+NC_002505.1                        Vibrio cholerae O1 biovar ...    0.014   1999
+NC_006840.2                        Vibrio fischeri ES114 chro...     0.04   1999
 
 ********************************************************************************
 
@@ -107,9 +107,9 @@ SECTION II: MOTIF DIAGRAMS
 
 SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
 -------------                      --------  -------------
-NC_004603.1                           0.039  115-[-2]-69-[+2]-353-[+3]-34-[+1]-1393
-NC_006840.2                           0.055  396-[-1]-912-[-1]-76-[+3]-12-[+1]-65-[+1]-68-[+1]-416
-NC_002505.1                           0.061  600-[-2]-436-[-1]-278-[-1]-97-[+1]-26-[-1]-30-[+1]-49-[+1]-420
+NC_004603.1                          0.0071  27-[+1]-393-[+2]-634-[-1]-97-[+1]-26-[-1]-30-[+1]-50-[+1]-32-[+3]-638
+NC_002505.1                           0.014  785-[-1]-278-[-1]-97-[+1]-65-[+1]-49-[+1]-542-[+3]-129
+NC_006840.2                            0.04  758-[+2]-143-[-1]-488-[-1]-97-[+1]-65-[+1]-68-[+1]-326
 
 ********************************************************************************
 
@@ -143,125 +143,137 @@ SECTION III: ANNOTATED SEQUENCES
 
 
 NC_004603.1
-  Vibrio parahaemolyticus RIMD 2210633 chromosome 1, 1990 bases around gc 
-  minimum
-  LENGTH = 2000  COMBINED P-VALUE = 1.31e-02  E-VALUE =    0.039
-  DIAGRAM: 115-[-2]-69-[+2]-353-[+3]-34-[+1]-1393
+  Vibrio parahaemolyticus RIMD 2210633 chromosome 1, 2000 bases around gc 
+  minimum at 0
+  LENGTH = 1999  COMBINED P-VALUE = 2.38e-03  E-VALUE =   0.0071
+  DIAGRAM: 27-[+1]-393-[+2]-634-[-1]-97-[+1]-26-[-1]-30-[+1]-50-[+1]-32-[+3]-638
 
-                                             [-2]
-                                             1.2e-05
-                                             CGGGGCGGG
-                                             +++++++++
-76   CAGATGTTGGGCTGCACGTTCTAGTGCGTCCAAGTGACGACGGCGCGCCATAAAGCCACCCTCAGTATTACCTGA
+                                [+1]
+                                2.3e-05
+                                TTATCCACA
+                                ++++++ ++
+1    GGTTCAATGAAAATTTGGTGGCTGTTCTTATCCGCAAAGCGCATCACTTTGTCTTCGATAGACGGACAGTAACGT
 
-                                                [+2]
-                                                1.2e-05
-                                                CCCGCCCCG
-                                                +++++++++
-151  GAAACCCATGCACTCTTTTAGGTGGTTACGCAGCGCATCGACACCCGCCCCGGTTTTTGCTGAAAGGCGAATCAG
+                                                           [+2]
+                                                           9.8e-06
+                                                           CCAGCGGTC
+                                                           +++++++++
+376  CGACCGCCTGAAGAACTTTCCATACCAATGTGGATCTTACCACCAAGGAAAGTACCTACGGTCAGCACAACCGCT
 
-                                   [+3]                                       [+
-                                   9.2e-06                                    5.
-                                   GCTTGCGGA                                  TT
-                                   +++++++++                                  ++
-526  GTCACGCGTGGTACCTGCTATGTCTGTTACGATTGCGGACTCTTTGCCCGACAGCGCGTTCAGTAGGCTTGATTT
+                           [-1]
+                           4.9e-06
+                           TGTGGATAA
+                           +++++++++
+1051 TATTATTAGGATCGACGACTTCTGTGGATAAGTGAAAAATGATCAACAAGATCATGGATCTTCTTTGGATCATAT
 
-     1]
-     2e-05
-     ATCCACA
-     ++++ ++
-601  ACCCGCATTTGGACGACCAGCAATCACTACTTTCATTCCTTCGCGCATGATCGCGCCTTGGTTCGCTTCTTTGCG
+                                                          [+1]
+                                                          1.1e-05
+                                                          TTATCCACA
+                                                          ++++ ++++
+1126 CTTGTGATCATGGTTGGATCTGATCGAGGATTACCTGGGATCAAAAATGGGGTTTATACACAGGGGTTAAAATAG
 
+                  [-1]                                   [+1]
+                  3.5e-05                                4.9e-06
+                  TGTGGATAA                              TTATCCACA
+                  + +++++++                              +++++++++
+1201 ATCAAAGTTGTTATTTGGATAACTAAAGGAAAACCACTGGATCTTACCTGACTTATCCACAGATGGTTTGGGTGT
 
-NC_006840.2
-  Vibrio fischeri ES114 chromosome I, 2897290 bases around gc minimum
-  LENGTH = 1999  COMBINED P-VALUE = 1.83e-02  E-VALUE =    0.055
-  DIAGRAM: 396-[-1]-912-[-1]-76-[+3]-12-[+1]-65-[+1]-68-[+1]-416
+                                         [+1]
+                                         2.9e-05
+                                         TTATCCACA
+                                         ++++ ++++
+1276 TTTTTGTTCAGTTGAAAAGATTTTTTCTACGGAAGGTTATTCACAGAGGGGAAATCAGAGCCGCATCGCGACTCT
 
-                          [-1]
-                          3.8e-05
-                          TGTGGATAA
-                          + +++++++
-376  CATCATGTGTTTTTTCATTAGTATGGGTAATAAAGCAATTTACTTGCTGTGGATGGTGCTCACGTTTACCTAAAA
-
-                                               [-1]
-                                               4.9e-06
-                                               TGTGGATAA
-                                               +++++++++
-1276 AAGAGATCTTTTATTAGATCTATTATATAGATCGTCGATCTCTGTGGATAAGTGATAAATGATCAATAGGATCAT
-
-                                                         [+3]                 [+
-                                                         9.2e-06              4.
-                                                         GCTTGCGGA            TT
-                                                         +++++++++            ++
-1351 ATACTTTAGATGGATCCAAAGTTGTTATCTTTCTTTGATCTTCGATCGGACAGCTTGAGGACAAAAGAGTTAGTT
-
-     1]                                                                      [+1
-     9e-06                                                                   4.9
-     ATCCACA                                                                 TTA
-     +++++++                                                                 +++
-1426 ATCCACAAGGGGGGAGGGCGTTAGATCTTATTCAATGGATAACTATAACTTGATCACTGGATCTTTCTATAGTTA
-
-     ]                                                                         [
-     e-06                                                                      2
-     TCCACA                                                                    T
-     ++++++                                                                    +
-1501 TCCACATAGTAGGTATCATCTATTTAATAACTTTTATAGATCGGACAACACTTTTTATTAACAAATGTGTTGTTT
-
-     +1]
-     .5e-05
-     TATCCACA
-     ++ +++++
-1576 TAGCCACAATTCTGCTGGTTCTTCAGGGATACTATTTTGAGTTACATCTATCTCTAATAGAGGGTACTTTTCGAT
+       [+3]
+       1.3e-05
+       CGGAGCTGA
+       +++++++++
+1351 GTAGGAGATGAGTATGGGGTTAAAAGCGCTCGATATTCTCTTTTAACCATGCTTCTGCAGCATCTTCTGGGACGT
 
 
 NC_002505.1
-  Vibrio cholerae O1 biovar El Tor str. N16961 chromosome I, -260 bases around 
-  gc minimum
-  LENGTH = 1999  COMBINED P-VALUE = 2.03e-02  E-VALUE =    0.061
-  DIAGRAM: 600-[-2]-436-[-1]-278-[-1]-97-[+1]-26-[-1]-30-[+1]-49-[+1]-420
+  Vibrio cholerae O1 biovar El Tor str. N16961 chromosome I, 2000 bases around 
+  gc minimum at 0
+  LENGTH = 1999  COMBINED P-VALUE = 4.81e-03  E-VALUE =    0.014
+  DIAGRAM: 785-[-1]-278-[-1]-97-[+1]-65-[+1]-49-[+1]-542-[+3]-129
 
-     [-2]
-     5.5e-05
-     CGGGGCGGG
-     +++ +++++
-601  CGGTGCGCCAAAGCGATCGATGGTGGATCCCCAGCACGACCCCCAGCATAGTTTTCAAGGCCGATATGGATCTTA
+                                        [-1]
+                                        1.9e-05
+                                        TGTGGATAA
+                                        +++++ +++
+751  AGGGTTACAGGACATTTGGCCTAGGGTGTCAATATTGTGGGTAAGAAGTAACGTACGCTGTCCTGTACGTGCTGC
 
-                                                                           [-1]
-                                                                           8.9e-
-                                                                           TGTGG
-                                                                           +++++
-976  TTGACTAAATGACCTTTACCGATCCCACCAATGGCAGGGTTACAGGACATTTGGCCTAGGGTGTCAATATTGTGG
+                           [-1]
+                           4.9e-06
+                           TGTGGATAA
+                           +++++++++
+1051 TACTATTAAGGAGCAGGATCTTTGTGGATAAGTGAAAAATGATCAACAAGATCATGCGATTCAGAAGGATCAGAT
 
-     
-     06
-     ATAA
-     ++++
-1051 GTAAGAAGTAACGTACGCTGTCCTGTACGTGCTGCAGCGAGAGCGGCTTCCGTTCCTGCGTGACCGCCACCAACC
+                                                          [+1]
+                                                          1.1e-05
+                                                          TTATCCACA
+                                                          ++++ ++++
+1126 CGTGTGATCAACCACTGATCTGTTCAAGGATTAGCTGGGATCAAAAACCTATGTTATACACAGCCACCTTGGGAT
+
+                                                         [+1]
+                                                         4.9e-06
+                                                         TTATCCACA
+                                                         +++++++++
+1201 CTAAAACTTGTTATATGGATAACTATAGGAAGATCACCGGATAATCGTATAGTTATCCACATGAGATTTGATTGA
+
+                                        [+1]
+                                        4.9e-06
+                                        TTATCCACA
+                                        +++++++++
+1276 AAAAGCATCAATCAATTTTTTCACTACCGTTAAATTTATCCACAATCCAAAAAAAAGAGCGGCATTAAGCCGCTC
+
+                                                                  [+3]
+                                                                  2.7e-06
+                                                                  CGGAGCTGA
+                                                                  +++++++++
+1801 ATCATAGCGTTACTCTATTTCCCAATACAGAATGATGAAAAAATGCGGCCAAGCAGATCATCGGAGCTGAACTCG
+
+
+NC_006840.2
+  Vibrio fischeri ES114 chromosome I, 2000 bases around gc minimum at 2897200
+  LENGTH = 1999  COMBINED P-VALUE = 1.32e-02  E-VALUE =     0.04
+  DIAGRAM: 758-[+2]-143-[-1]-488-[-1]-97-[+1]-65-[+1]-68-[+1]-326
+
+             [+2]
+             4.4e-06
+             CCAGCGGTC
+             +++++++++
+751  AAAAGGTTCCAGCGGTCAATACAACGGATTTAGCACGGAATTTAAGGCCCATTTGAGTTACAGCACCCATCACCT
+
+               [-1]
+               5.6e-05
+               TGTGGATAA
+               + ++ ++++
+901  GAACATAAGCTTTGTATAACGCTCTATCTGCTTGTGCGCGAGTAGCTCGAACAGCTGGACCTTTTGAAGCATTCA
 
                                                               [-1]
                                                               4.9e-06
                                                               TGTGGATAA
                                                               +++++++++
-1276 TATAAAGATCTATATAGAGATCTTTTTATTAGATCTACTATTAAGGAGCAGGATCTTTGTGGATAAGTGAAAAAT
+1351 ATATAAGATCTTTTAAAGAGATCTTTTATTAGATCTATTATATAGATCGTCGATCTCTGTGGATAAGTGATAAAT
 
-                  [+1]                               [-1]
-                  1.5e-05                            2.1e-05
-                  TTATCCACA                          TGTGGATAA
-                  ++++ ++++                          + +++++++
-1426 TCAAAAACCTATGTTATACACAGCCACCTTGGGATCTAAAACTTGTTATATGGATAACTATAGGAAGATCACCGG
+                  [+1]
+                  4.9e-06
+                  TTATCCACA
+                  +++++++++
+1501 ACAAAAGAGTTAGTTATCCACAAGGGGGGAGGGCGTTAGATCTTATTCAATGGATAACTATAACTTGATCACTGG
 
-                 [+1]                                                      [+1]
-                 4.9e-06                                                   4.9e-
-                 TTATCCACA                                                 TTATC
-                 +++++++++                                                 +++++
-1501 ATAATCGTATAGTTATCCACATGAGATTTGATTGAAAAAGCATCAATCAATTTTTTCACTACCGTTAAATTTATC
+                 [+1]
+                 4.9e-06
+                 TTATCCACA
+                 +++++++++
+1576 ATCTTTCTATAGTTATCCACATAGTAGGTATCATCTATTTAATAACTTTTATAGATCGGACAACACTTTTTATTA
 
-     
-     06
-     CACA
-     ++++
-1576 CACAATCCAAAAAAAAGAGCGGCATTAAGCCGCTCTGCATGGAATAGGTCATTATTTAGAAGCGATTGATGACGC
+                   [+1]
+                   1.9e-05
+                   TTATCCACA
+                   +++ +++++
+1651 ACAAATGTGTTGTTTTAGCCACAATTCTGCTGGTTCTTCAGGGATACTATTTTGAGTTACATCTATCTCTAATAG
 
 ********************************************************************************
 

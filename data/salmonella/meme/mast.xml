@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <mast version="5.1.0" release="Fri Oct 11 15:53:28 2019 -0700">
-	<command_line><arg>mast</arg><arg>-oc</arg><arg>.</arg><arg>-nostatus</arg><arg>meme.xml</arg><arg>/mnt/c/drive/uni/seq_inf/seqinf_project/data/salmonella/skew_regions.fasta</arg></command_line>
+	<command_line><arg>mast</arg><arg>-oc</arg><arg>data/salmonella/meme</arg><arg>-nostatus</arg><arg>data/salmonella/meme/meme.xml</arg><arg>data/salmonella/skew_regions.fasta</arg></command_line>
 	<settings strand_handling="combine" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
 	<alphabet name="DNA" like="dna">
 		<letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
@@ -21,783 +21,693 @@
 	</alphabet>
 	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
 	<motif_dbs>
-		<motif_db source="meme.xml" last_mod_date="Fri Jan  3 19:44:01 2020">
-			<background A="0.248" C="0.252" G="0.252" T="0.248"/>
+		<motif_db source="data/salmonella/meme/meme.xml" last_mod_date="Mon Jan  6 00:53:45 2020">
+			<background A="0.245" C="0.255" G="0.255" T="0.245"/>
 		</motif_db>
 	</motif_dbs>
 	<motifs>
-		<motif db="0" id="ATCGTRGCC" alt="MEME-1" length="9" nsites="49" evalue="3.8e-004">
-			<pos A="201" C="-1226" G="-1226" T="-1226"/>
-			<pos A="-1226" C="-1226" G="-104" T="182"/>
-			<pos A="-160" C="186" G="-1226" T="-1226"/>
-			<pos A="-160" C="-1226" G="186" T="-1226"/>
-			<pos A="-1226" C="-4" G="-1226" T="161"/>
-			<pos A="65" C="-1226" G="128" T="-1226"/>
-			<pos A="-1226" C="-46" G="169" T="-1226"/>
-			<pos A="-1226" C="113" G="-31" T="-2"/>
-			<pos A="-1226" C="199" G="-1226" T="-1226"/>
+		<motif db="0" id="YGGTCCGTW" alt="MEME-1" length="9" nsites="37" evalue="3.7e-004">
+			<pos A="-1185" C="67" G="-1185" T="128"/>
+			<pos A="-1185" C="-1185" G="162" T="-18"/>
+			<pos A="-1185" C="-1185" G="197" T="-1185"/>
+			<pos A="-1185" C="8" G="-1185" T="157"/>
+			<pos A="-1185" C="197" G="-1185" T="-1185"/>
+			<pos A="14" C="152" G="-1185" T="-1185"/>
+			<pos A="-1185" C="-1185" G="197" T="-1185"/>
+			<pos A="-1185" C="-1185" G="-1185" T="203"/>
+			<pos A="91" C="-1185" G="-1185" T="114"/>
 		</motif>
-		<motif db="0" id="GATGGVGAA" alt="MEME-2" length="9" nsites="50" evalue="3.3e-026">
-			<pos A="-1229" C="-1229" G="170" T="-46"/>
-			<pos A="169" C="-1229" G="-1229" T="-31"/>
-			<pos A="-1229" C="-1229" G="-1229" T="201"/>
-			<pos A="-1229" C="-1229" G="193" T="-263"/>
-			<pos A="-1229" C="-1229" G="199" T="-1229"/>
-			<pos A="62" C="25" G="34" T="-1229"/>
-			<pos A="-46" C="-1229" G="170" T="-1229"/>
-			<pos A="201" C="-1229" G="-1229" T="-1229"/>
-			<pos A="201" C="-1229" G="-1229" T="-1229"/>
+		<motif db="0" id="GATGGVGAA" alt="MEME-2" length="9" nsites="50" evalue="3.5e-020">
+			<pos A="-1229" C="-267" G="158" T="-29"/>
+			<pos A="163" C="-1229" G="-1229" T="-3"/>
+			<pos A="-1229" C="-1229" G="-1229" T="203"/>
+			<pos A="-1229" C="-1229" G="197" T="-1229"/>
+			<pos A="-1229" C="-267" G="191" T="-1229"/>
+			<pos A="39" C="41" G="41" T="-1229"/>
+			<pos A="-29" C="-1229" G="165" T="-1229"/>
+			<pos A="203" C="-1229" G="-1229" T="-1229"/>
+			<pos A="203" C="-1229" G="-1229" T="-1229"/>
 		</motif>
-		<motif db="0" id="RATGGATCG" alt="MEME-3" length="9" nsites="50" evalue="7.5e-013">
-			<pos A="132" C="-1229" G="59" T="-1229"/>
-			<pos A="201" C="-1229" G="-1229" T="-1229"/>
-			<pos A="-363" C="-1229" G="-34" T="165"/>
-			<pos A="-1229" C="34" G="143" T="-1229"/>
-			<pos A="-1229" C="-1229" G="199" T="-1229"/>
-			<pos A="195" C="-1229" G="-1229" T="-263"/>
-			<pos A="-1229" C="-1229" G="-1229" T="201"/>
-			<pos A="-17" C="87" G="-107" T="-31"/>
-			<pos A="-1229" C="-1229" G="199" T="-1229"/>
+		<motif db="0" id="GMGTACDAT" alt="MEME-3" length="9" nsites="29" evalue="3.4e-001">
+			<pos A="-183" C="-1150" G="187" T="-1150"/>
+			<pos A="108" C="92" G="-1150" T="-1150"/>
+			<pos A="-1150" C="-1150" G="197" T="-1150"/>
+			<pos A="-2" C="-189" G="-1150" T="149"/>
+			<pos A="203" C="-1150" G="-1150" T="-1150"/>
+			<pos A="-1150" C="197" G="-1150" T="-1150"/>
+			<pos A="-2" C="-1150" G="81" T="34"/>
+			<pos A="203" C="-1150" G="-1150" T="-1150"/>
+			<pos A="-1150" C="-1150" G="-1150" T="203"/>
 		</motif>
 	</motifs>
 	<correlations>
-		<correlation idx_a="0" idx_b="1" value="0.16"/>
-		<correlation idx_a="0" idx_b="2" value="0.34"/>
-		<correlation idx_a="1" idx_b="2" value="0.31"/>
+		<correlation idx_a="0" idx_b="1" value="0.18"/>
+		<correlation idx_a="0" idx_b="2" value="0.28"/>
+		<correlation idx_a="1" idx_b="2" value="0.33"/>
 	</correlations>
 	<sequence_dbs>
-		<sequence_db source="/mnt/c/drive/uni/seq_inf/seqinf_project/data/salmonella/skew_regions.fasta" last_mod_date="Fri Jan  3 19:43:34 2020" seq_count="10" residue_count="20000"/>
+		<sequence_db source="data/salmonella/skew_regions.fasta" last_mod_date="Mon Jan  6 00:53:18 2020" seq_count="10" residue_count="20000"/>
 	</sequence_dbs>
 	<sequences>
-		<sequence db="0" name="NZ_CP007245.1" comment="Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120008, oric at 3976720 +- 1000" length="2000">
-			<score strand="both" combined_pvalue="2.56e-04" evalue="0.0026"/>
+		<sequence db="0" name="NC_011083.1" comment="Salmonella enterica subsp. enterica serovar Heidelberg str. SL476, 2000 bases around gc minimum at 4093600" length="2000">
+			<score strand="both" combined_pvalue="6.82e-04" evalue="0.0068"/>
 			<seg start="1">
 				<data>
-CGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCGCGTTCTCCATGCCCTGCATGGAACGGACAA
+TACTTTCCAGAGTCGGTTTCAGATCGCGCGGGTCGAAAAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCT
 				</data>
-				<hit pos="8" idx="0" rc="n" pvalue="6.7e-05" match="++++++ ++"/>
+				<hit pos="41" idx="2" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+				<hit pos="65" idx="2" rc="n" pvalue="3.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+TCGCGTTCTCCATGCCCTGCATGGAACGGACAATCTGCATCTGTACATCGAACGGCAGGCTGGTGGAGATACCGT
+				</data>
+				<hit pos="81" idx="1" rc="y" pvalue="9.9e-05" match="++++++++ "/>
+				<hit pos="100" idx="0" rc="y" pvalue="2.9e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="376">
+				<data>
+GAGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGA
+TAGTACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGC
+				</data>
+				<hit pos="384" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
+				<hit pos="450" idx="2" rc="y" pvalue="1.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTA
+				</data>
+				<hit pos="864" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+CGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATT
+				</data>
+				<hit pos="1151" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+CAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGAGTA
+				</data>
+				<hit pos="1320" idx="0" rc="n" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+GATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCA
+				</data>
+				<hit pos="1544" idx="1" rc="y" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+CGCCGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCATGCACCGTTT
+				</data>
+				<hit pos="1782" idx="0" rc="y" pvalue="3.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+CGCTGATAAGAGTAATGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAACGAGCTG
+				</data>
+				<hit pos="1929" idx="2" rc="y" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_016854.1" comment="Salmonella enterica subsp. enterica serovar Typhimurium str. D23580 2000 bases around gc minimum at 4106600" length="2000">
+			<score strand="both" combined_pvalue="1.21e-03" evalue="0.012"/>
+			<seg start="1">
+				<data>
+GTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATAC
+				</data>
+				<hit pos="26" idx="2" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+				<hit pos="50" idx="2" rc="n" pvalue="3.2e-05" match="+++++++++"/>
+				<hit pos="66" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
+			</seg>
+			<seg start="76">
+				<data>
+CCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAGGGTAAATCTCGT
+				</data>
+				<hit pos="85" idx="0" rc="y" pvalue="2.9e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="301">
+				<data>
+TCACGTCATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCA
+TAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAA
+				</data>
+				<hit pos="369" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
+				<hit pos="435" idx="2" rc="y" pvalue="1.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+ATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGA
+				</data>
+				<hit pos="578" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+CGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAACGCGATCGTTTTCGA
+				</data>
+				<hit pos="601" idx="0" rc="n" pvalue="4.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+GAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTC
+				</data>
+				<hit pos="849" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+AACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTA
+				</data>
+				<hit pos="1136" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+GATCACTAGCTGTGAATGATCGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCA
+				</data>
+				<hit pos="1305" idx="0" rc="n" pvalue="6.6e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+CATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTT
+				</data>
+				<hit pos="1529" idx="1" rc="y" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+TGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACCGG
+				</data>
+				<hit pos="1767" idx="0" rc="y" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+TGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGA
+				</data>
+				<hit pos="1914" idx="2" rc="y" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_016810.1" comment="Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344, 2000 bases around gc minimum at 4104900" length="2000">
+			<score strand="both" combined_pvalue="1.21e-03" evalue="0.012"/>
+			<seg start="151">
+				<data>
+GGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCATGGAACGGA
+CAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAGGGTAAATCTCGTTAGAGGTCAGTCCTT
+				</data>
+				<hit pos="161" idx="2" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+				<hit pos="185" idx="2" rc="n" pvalue="3.2e-05" match="+++++++++"/>
+				<hit pos="201" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
+				<hit pos="220" idx="0" rc="y" pvalue="2.9e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="451">
+				<data>
+TCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCG
+				</data>
+				<hit pos="504" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
+			</seg>
+			<seg start="526">
+				<data>
+GCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGC
+				</data>
+				<hit pos="570" idx="2" rc="y" pvalue="1.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+CACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCG
+				</data>
+				<hit pos="713" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
+				<hit pos="736" idx="0" rc="n" pvalue="4.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+CGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCG
+				</data>
+				<hit pos="984" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+TAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGG
+AGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATT
+				</data>
+				<hit pos="1271" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+ATGATCGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGG
+				</data>
+				<hit pos="1440" idx="0" rc="n" pvalue="6.6e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1651">
+				<data>
+TGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGC
+				</data>
+				<hit pos="1664" idx="1" rc="y" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+TCCCGGAAGTTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACCGGCAGCTTCCAGCTTTT
+				</data>
+				<hit pos="1902" idx="0" rc="y" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NZ_CP007245.1" comment="Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120008, 2000 bases around gc minimum at 3976700" length="2000">
+			<score strand="both" combined_pvalue="1.61e-03" evalue="0.016"/>
+			<seg start="1">
+				<data>
+CGGTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCGCGTTCTCCAT
+GCCCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAGGGTAAATCTC
+				</data>
+				<hit pos="28" idx="2" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+				<hit pos="68" idx="1" rc="y" pvalue="9.9e-05" match="++++++++ "/>
+				<hit pos="87" idx="0" rc="y" pvalue="2.9e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="301">
+				<data>
+AATCACGTCATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCC
+CATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATC
+				</data>
+				<hit pos="371" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
+				<hit pos="437" idx="2" rc="y" pvalue="1.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="526">
+				<data>
+GGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCC
+				</data>
+				<hit pos="580" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+GACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAACGCGATCGTTTTC
+				</data>
+				<hit pos="603" idx="0" rc="n" pvalue="4.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+CTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTT
+				</data>
+				<hit pos="851" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+TCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTC
+				</data>
+				<hit pos="1138" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+AGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACT
+				</data>
+				<hit pos="1307" idx="0" rc="n" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+CTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTTCCGCTTCTAT
+				</data>
+				<hit pos="1531" idx="1" rc="y" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+GCTGATTATCAGCCAGATCCCGGAAGCTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACC
+				</data>
+				<hit pos="1769" idx="0" rc="y" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+AATGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTG
+				</data>
+				<hit pos="1916" idx="2" rc="y" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_011294.1" comment="Salmonella enterica subsp. enterica serovar Enteritidis str. P125109 2000 bases around gc minimum at 3953900" length="2000">
+			<score strand="both" combined_pvalue="1.61e-03" evalue="0.016"/>
+			<seg start="151">
+				<data>
+TTTCCAGAGTCGGTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCG
+				</data>
+				<hit pos="188" idx="2" rc="y" pvalue="4.0e-06" match="+++++++++"/>
 			</seg>
 			<seg start="226">
 				<data>
-GGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGTCATGGGTTTTCT
+CGTTCTCCATGCCCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTTAG
 				</data>
-				<hit pos="229" idx="2" rc="y" pvalue="3.6e-05" match="++++++ ++"/>
-				<hit pos="259" idx="0" rc="y" pvalue="6.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="301">
-				<data>
-CATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCA
-				</data>
-				<hit pos="351" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
-			</seg>
-			<seg start="376">
-				<data>
-TCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGG
-				</data>
-				<hit pos="412" idx="2" rc="n" pvalue="4.4e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="451">
-				<data>
-TTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCAC
-				</data>
-				<hit pos="503" idx="2" rc="n" pvalue="5.5e-05" match="+++++++ +"/>
+				<hit pos="228" idx="1" rc="y" pvalue="9.9e-05" match="++++++++ "/>
+				<hit pos="247" idx="0" rc="y" pvalue="2.9e-05" match="+++++++ +"/>
 			</seg>
 			<seg start="526">
 				<data>
-GACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTT
+AAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAG
+TACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAG
 				</data>
-				<hit pos="560" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
-			</seg>
-			<seg start="751">
-				<data>
-CCTGAGCCCGGGTAGCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGA
-TCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCCG
-				</data>
-				<hit pos="820" idx="2" rc="n" pvalue="3.6e-05" match="+++++++++"/>
-				<hit pos="831" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="976">
-				<data>
-CCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTAA
-				</data>
-				<hit pos="978" idx="0" rc="n" pvalue="1.4e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1051">
-				<data>
-TTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGA
-AAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAGG
-				</data>
-				<hit pos="1075" idx="2" rc="n" pvalue="2.1e-05" match="+++++++ +"/>
-				<hit pos="1118" idx="1" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1276">
-				<data>
-ATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTA
-				</data>
-				<hit pos="1283" idx="0" rc="n" pvalue="2.7e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1351">
-				<data>
-TTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTT
-				</data>
-				<hit pos="1401" idx="2" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1501">
-				<data>
-TCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAA
-				</data>
-				<hit pos="1511" idx="1" rc="y" pvalue="3.1e-05" match="+++++++ +"/>
-				<hit pos="1557" idx="1" rc="y" pvalue="8.3e-05" match="+++++ +++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_011294.1" comment="Salmonella enterica subsp. enterica serovar Enteritidis str. P125109 oric at 3953990 +- 1000" length="2000">
-			<score strand="both" combined_pvalue="2.56e-04" evalue="0.0026"/>
-			<seg start="76">
-				<data>
-TCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCATAACCAGGACGAACGATCTTCGCGTTCTCCATGCCCT
-				</data>
-				<hit pos="98" idx="0" rc="n" pvalue="6.7e-05" match="++++++ ++"/>
-			</seg>
-			<seg start="301">
-				<data>
-AAGGACAGTAGCGCGGGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCA
-				</data>
-				<hit pos="319" idx="2" rc="y" pvalue="3.6e-05" match="++++++ ++"/>
-				<hit pos="349" idx="0" rc="y" pvalue="6.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="376">
-				<data>
-CGTCATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAA
-				</data>
-				<hit pos="441" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
-			</seg>
-			<seg start="451">
-				<data>
-ACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATAC
-				</data>
-				<hit pos="502" idx="2" rc="n" pvalue="4.4e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="526">
-				<data>
-GCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATG
-GCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGG
-				</data>
-				<hit pos="593" idx="2" rc="n" pvalue="5.5e-05" match="+++++++ +"/>
-				<hit pos="650" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
-			</seg>
-			<seg start="901">
-				<data>
-TACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAA
-				</data>
-				<hit pos="910" idx="2" rc="n" pvalue="3.6e-05" match="+++++++++"/>
-				<hit pos="921" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1051">
-				<data>
-CCATACGCGCTGCGGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCT
-				</data>
-				<hit pos="1068" idx="0" rc="n" pvalue="1.4e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1126">
-				<data>
-GATAAAACATGGTAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAAC
-				</data>
-				<hit pos="1165" idx="2" rc="n" pvalue="2.1e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="1201">
-				<data>
-TTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTG
-				</data>
-				<hit pos="1208" idx="1" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1351">
-				<data>
-CACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAA
-				</data>
-				<hit pos="1373" idx="0" rc="n" pvalue="2.7e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1426">
-				<data>
-AGTGAACAACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGC
-				</data>
-				<hit pos="1491" idx="2" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1576">
-				<data>
-GTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTTCCGCTTCTATTTTCT
-CAATCGCGCCGCAAAACGTGTCGTATTCTCGACTACCAATGCCAATTGCGCCGAAACGTACCGCGGAAAGATCGG
-				</data>
-				<hit pos="1601" idx="1" rc="y" pvalue="3.1e-05" match="+++++++ +"/>
-				<hit pos="1647" idx="1" rc="y" pvalue="8.3e-05" match="+++++ +++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_011083.1" comment="Salmonella enterica subsp. enterica serovar Heidelberg str. SL476, oric at 4094240 +- 1000" length="2000">
-			<score strand="both" combined_pvalue="2.56e-04" evalue="0.0026"/>
-			<seg start="151">
-				<data>
-CCGGGTAGCGCGAACAGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTT
-CGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCCGGGTTGCA
-				</data>
-				<hit pos="213" idx="2" rc="n" pvalue="3.6e-05" match="+++++++++"/>
-				<hit pos="224" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="301">
-				<data>
-GCTCATCTGTCCCAACGTGTCAATATTGTGTGTCAAAAGCAGAGTCTGTTGACCCATACGCGCTGCGGCCATCGC
-GGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTAATTGCCTC
-				</data>
-				<hit pos="371" idx="0" rc="n" pvalue="1.4e-05" match="+++++++++"/>
-			</seg>
-			<seg start="451">
-				<data>
-GCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCC
-				</data>
-				<hit pos="468" idx="2" rc="n" pvalue="2.1e-05" match="+++++++ +"/>
-				<hit pos="511" idx="1" rc="n" pvalue="4.0e-06" match="+++++++++"/>
+				<hit pos="531" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
+				<hit pos="597" idx="2" rc="y" pvalue="1.6e-05" match="+++++++++"/>
 			</seg>
 			<seg start="676">
 				<data>
-ATCGTGGCCCGTATAAGCTGGGATCAAAACGAGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTG
+ACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCA
 				</data>
-				<hit pos="676" idx="0" rc="n" pvalue="2.7e-06" match="+++++++++"/>
+				<hit pos="740" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
 			</seg>
 			<seg start="751">
 				<data>
-GATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAG
+GGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAACGC
 				</data>
-				<hit pos="794" idx="2" rc="n" pvalue="4.0e-06" match="+++++++++"/>
+				<hit pos="763" idx="0" rc="n" pvalue="4.2e-05" match="+++++++++"/>
 			</seg>
-			<seg start="901">
+			<seg start="976">
 				<data>
-TGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTC
+GTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCA
 				</data>
-				<hit pos="904" idx="1" rc="y" pvalue="3.1e-05" match="+++++++ +"/>
-				<hit pos="950" idx="1" rc="y" pvalue="8.3e-05" match="+++++ +++"/>
-			</seg>
-			<seg start="1501">
-				<data>
-CCGGTGGTGTAATACGCTTCTGTCACCTCATCCAGGCTTTCCAGCCGGGCCAGTGCGGAGGGATAGTCTTTGGCG
-				</data>
-				<hit pos="1558" idx="2" rc="n" pvalue="8.2e-05" match="++ ++++ +"/>
-			</seg>
-			<seg start="1576">
-				<data>
-CTTTTGAGGATGATGCCAATAAAGCAGCCCACATCGTAGCCCAGTTGTTTAGGGCTGACGTCAATCCGTGCGCCC
-				</data>
-				<hit pos="1608" idx="0" rc="n" pvalue="6.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1801">
-				<data>
-TTTTCCATCGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATCAAAACCGA
-				</data>
-				<hit pos="1801" idx="1" rc="y" pvalue="2.4e-05" match="++ ++++++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_011080.1" comment="Salmonella enterica subsp. enterica serovar Newport str. SL254, oric at 4049920 +- 1000" length="2000">
-			<score strand="both" combined_pvalue="2.56e-04" evalue="0.0026"/>
-			<seg start="76">
-				<data>
-GATCGCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCA
-				</data>
-				<hit pos="95" idx="0" rc="n" pvalue="6.7e-05" match="++++++ ++"/>
-				<hit pos="135" idx="1" rc="y" pvalue="2.4e-05" match="++++++++ "/>
-			</seg>
-			<seg start="301">
-				<data>
-GACAGTAGCGTGGGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGT
-				</data>
-				<hit pos="307" idx="0" rc="n" pvalue="8.1e-05" match="+ +++++ +"/>
-				<hit pos="316" idx="2" rc="y" pvalue="3.6e-05" match="++++++ ++"/>
-				<hit pos="346" idx="0" rc="y" pvalue="6.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="376">
-				<data>
-CATGGGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACG
-				</data>
-				<hit pos="438" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
-			</seg>
-			<seg start="451">
-				<data>
-AGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCG
-				</data>
-				<hit pos="499" idx="2" rc="n" pvalue="4.4e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="526">
-				<data>
-GCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCG
-				</data>
-				<hit pos="590" idx="2" rc="n" pvalue="5.5e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="601">
-				<data>
-GATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCA
-				</data>
-				<hit pos="647" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
-			</seg>
-			<seg start="901">
-				<data>
-CTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATAC
-				</data>
-				<hit pos="907" idx="2" rc="n" pvalue="3.6e-05" match="+++++++++"/>
-				<hit pos="918" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1051">
-				<data>
-TACGCGCTGCGGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGAT
-				</data>
-				<hit pos="1065" idx="0" rc="n" pvalue="1.4e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1126">
-				<data>
-AAAACATGGTAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTT
-				</data>
-				<hit pos="1162" idx="2" rc="n" pvalue="2.1e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="1201">
-				<data>
-AGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGA
-				</data>
-				<hit pos="1205" idx="1" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1351">
-				<data>
-TAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGT
-				</data>
-				<hit pos="1370" idx="0" rc="n" pvalue="2.7e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1426">
-				<data>
-GAACAACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACG
-				</data>
-				<hit pos="1488" idx="2" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1576">
-				<data>
-CAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAA
-TCGCGCCGCAAAACGTGTCGTATTCTCGACTGCCAATGCCAATTGCGCCGAAACGTACCGCGGAAAGATCGGGTT
-				</data>
-				<hit pos="1598" idx="1" rc="y" pvalue="3.1e-05" match="+++++++ +"/>
-				<hit pos="1644" idx="1" rc="y" pvalue="8.3e-05" match="+++++ +++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_010102.1" comment="Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7, oric at 4028930 +- 1000" length="2000">
-			<score strand="both" combined_pvalue="2.56e-04" evalue="0.0026"/>
-			<seg start="151">
-				<data>
-CGCGAACAGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCA
-				</data>
-				<hit pos="205" idx="2" rc="n" pvalue="3.6e-05" match="+++++++++"/>
-				<hit pos="216" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="301">
-				<data>
-GCCCCAACGTGTCAATATTGTGTGTCAAAAGCAGAGTCTGTTGACCCATACGCGCTGCGGCCATCGCGGCCTCAG
-				</data>
-				<hit pos="363" idx="0" rc="n" pvalue="1.4e-05" match="+++++++++"/>
-			</seg>
-			<seg start="451">
-				<data>
-CGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCG
-				</data>
-				<hit pos="460" idx="2" rc="n" pvalue="2.1e-05" match="+++++++ +"/>
-				<hit pos="503" idx="1" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="601">
-				<data>
-GGATAACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGC
-CCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACTA
-				</data>
-				<hit pos="668" idx="0" rc="n" pvalue="2.7e-06" match="+++++++++"/>
-			</seg>
-			<seg start="751">
-				<data>
-CCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACACTTATTTGAGTAAATTAA
-				</data>
-				<hit pos="786" idx="2" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="826">
-				<data>
-TCCAGGATCCGAGCCAAATCTCCGCTGGATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCC
-CAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCTC
-				</data>
-				<hit pos="896" idx="1" rc="y" pvalue="3.1e-05" match="+++++++ +"/>
-				<hit pos="942" idx="1" rc="y" pvalue="8.3e-05" match="+++++ +++"/>
-			</seg>
-			<seg start="1501">
-				<data>
-GTAATACGCTTCCGTCACCTCATCCAGGCTTTCCAGCCGGGCCAGTGCGGAGGGATAGTCTTTGGCGCTTTTGAG
-				</data>
-				<hit pos="1550" idx="2" rc="n" pvalue="8.2e-05" match="++ ++++ +"/>
-			</seg>
-			<seg start="1576">
-				<data>
-GATGATGCCAATAAAGCAGCCCACATCGTAGCCCAGTTGTTTAGGGCTGACGTCAATCCGTGCGCCCGTAATGAT
-				</data>
-				<hit pos="1600" idx="0" rc="n" pvalue="6.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1726">
-				<data>
-GTAGGCAGTGCGGGCATTTCCCATTAAGGCGTCAAGGATGCCGCGGTCCAGATTGTCGATCTGATAATTTTCCAT
-CGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATCAAAACCGAAGTTAGCT
-				</data>
-				<hit pos="1793" idx="1" rc="y" pvalue="2.4e-05" match="++ ++++++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NZ_CP015574.1" comment="Salmonella enterica strain FORC_038, oric at 4902430 +- 1000" length="2000">
-			<score strand="both" combined_pvalue="5.01e-04" evalue="0.005"/>
-			<seg start="376">
-				<data>
-AATAGAGATAATTATTAATCTGCATAAGAAAAAGCGATGGAAAATTATCAGATCGACAATCTGGACCGCGGCATA
-				</data>
-				<hit pos="411" idx="1" rc="n" pvalue="2.4e-05" match="++++++ ++"/>
-			</seg>
-			<seg start="601">
-				<data>
-CTGGGCTACGATGTGGGCTGCTTTATTGGCATCATTCTCAAAAGCGCCAAAGACTATCCCTCCGCACTGGCCCGG
-				</data>
-				<hit pos="604" idx="0" rc="y" pvalue="6.0e-06" match="+++++++++"/>
-				<hit pos="654" idx="2" rc="y" pvalue="8.2e-05" match="+ ++++ ++"/>
-			</seg>
-			<seg start="1201">
-				<data>
-CCGCGGTACGTTTCGGCGCAATTGGCATTGGCAGTCGAGAATACGACACGTTTTGCGGCGCGATTGAGAAAATAG
-				</data>
-				<hit pos="1262" idx="1" rc="n" pvalue="8.3e-05" match="+++ +++++"/>
+				<hit pos="1011" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
 			</seg>
 			<seg start="1276">
 				<data>
-AAGCGGAACTGAAAGACACTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAACATCCTTGAACATGAGATTC
+TGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAG
 				</data>
-				<hit pos="1308" idx="1" rc="n" pvalue="3.1e-05" match="+ +++++++"/>
+				<hit pos="1298" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
 			</seg>
-			<seg start="1351">
+			<seg start="1426">
 				<data>
-CGGAAGATCCAGCGGAGATTTGGCTCGGATCCTGGATTAATTTACTCAAATAAGTGTAAAGATCGTGCGATCCAT
-TGTGGATAAATCTGGTGGAAAGCTTGGATCAACCGGTAGTTATCCAAAGAATAACCGTTGTTCACTTTTTGAGTT
+TGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTT
 				</data>
-				<hit pos="1418" idx="2" rc="y" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1501">
-				<data>
-GTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGACCACGATCACCGATCATTCACAGCTAGTGATCCTTTCC
-				</data>
-				<hit pos="1536" idx="0" rc="y" pvalue="9.2e-06" match="+++++++++"/>
+				<hit pos="1467" idx="0" rc="n" pvalue="2.9e-05" match="+++++++++"/>
 			</seg>
 			<seg start="1651">
 				<data>
-AGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTGAGTAG
+CTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGTCTTTCAGTT
 				</data>
-				<hit pos="1701" idx="1" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+				<hit pos="1691" idx="1" rc="y" pvalue="2.1e-05" match="+++++++++"/>
 			</seg>
-			<seg start="1726">
+			<seg start="1876">
 				<data>
-AATCCACCGCCCGGGCTTCAATCCATTTTCACACCGCGTTATGCGAGGCAATTACCATGTTTTATCAGGATCCTT
+CGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGCTGACAGATCCTCTAATAACGGACCGTGCACCGTTTCGG
 				</data>
-				<hit pos="1744" idx="2" rc="y" pvalue="2.1e-05" match="+ +++++++"/>
+				<hit pos="1929" idx="0" rc="y" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_011080.1" comment="Salmonella enterica subsp. enterica serovar Newport str. SL254, 2000 bases around gc minimum at 4049900" length="2000">
+			<score strand="both" combined_pvalue="1.61e-03" evalue="0.016"/>
+			<seg start="76">
+				<data>
+ACTTTCCAGAGTCGGTTTCAGATCGCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTT
+				</data>
+				<hit pos="115" idx="2" rc="y" pvalue="4.0e-06" match="+++++++++"/>
+				<hit pos="139" idx="2" rc="n" pvalue="3.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CGCGTTCTCCATACCCTGCATGGAACGGACAATCTGCATCTGCACGTCAAACGGCAGGCTGGTGGAGATACCGTT
+				</data>
+				<hit pos="155" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
+				<hit pos="174" idx="0" rc="y" pvalue="2.9e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="451">
+				<data>
+AGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGAT
+AGTACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCG
+				</data>
+				<hit pos="458" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
+				<hit pos="524" idx="2" rc="y" pvalue="1.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+AGACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATC
+				</data>
+				<hit pos="667" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="676">
+				<data>
+CAGGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCGCCGACAAC
+				</data>
+				<hit pos="690" idx="0" rc="n" pvalue="4.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+TAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTAC
+				</data>
+				<hit pos="938" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+GGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTT
+				</data>
+				<hit pos="1225" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+AATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTAC
+				</data>
+				<hit pos="1394" idx="0" rc="n" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+ATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAG
+				</data>
+				<hit pos="1618" idx="1" rc="y" pvalue="2.1e-05" match="+++++++++"/>
 			</seg>
 			<seg start="1801">
 				<data>
-TTGACGTCATTATTATTGGCGGGGGTCATGCAGGCACTGAGGCCGCGATGGCCGCAGCGCGTATGGGTCAACAGA
+GCCGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCGTGCACCGTTTC
 				</data>
-				<hit pos="1841" idx="0" rc="y" pvalue="1.4e-05" match="+++++++++"/>
+				<hit pos="1856" idx="0" rc="y" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_010102.1" comment="Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7, 2000 bases around gc minimum at 4028800" length="2000">
+			<score strand="both" combined_pvalue="2.64e-03" evalue="0.026"/>
+			<seg start="1">
+				<data>
+AGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATT
+TTGCCATCCAGGAAGGTTCCGACTGTCAGTACCACCGCTTTCGCGCGGAATTTGAGCCCCATTTGGGTCACGGCG
+				</data>
+				<hit pos="75" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
+				<hit pos="98" idx="0" rc="n" pvalue="9.0e-05" match="+ +++++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+CTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACC
+				</data>
+				<hit pos="346" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+GCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCT
+				</data>
+				<hit pos="633" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="751">
+				<data>
+TAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAA
+				</data>
+				<hit pos="802" idx="0" rc="n" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+TCCGCTGGATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCG
+				</data>
+				<hit pos="1026" idx="1" rc="y" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+TCTCCGGCGCCGTGCGTTGAGCTGATTATCAGCCAGATCCCGGAAGTTGACAGATCCTCTAATAACGGACCATGC
+				</data>
+				<hit pos="1264" idx="0" rc="y" pvalue="3.3e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+GTGCTGCCGCTGATAAGAGTAATGTCTGCCATTGATCGCTCGCTCAGGTAAAGAGGCTGCATTGTACTCTGTGAA
+				</data>
+				<hit pos="1411" idx="2" rc="y" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+CGACGCGAACGTGAATGGTTCCAGGGCTAACGCCAAATTGTTTGGCCAGTTCGGCGTAGGCAGTGCGGGCATTTC
+				</data>
+				<hit pos="1843" idx="0" rc="n" pvalue="5.4e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+CCATTAAGGCGTCAAGGATGCCGCGGTCCAGATTGTCGATCTGATAATTTTCCATCGCTTTTTCTTATGCAGATT
+				</data>
+				<hit pos="1923" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NZ_CP015574.1" comment="Salmonella enterica strain FORC_038, 2000 bases around gc minimum at 4902500" length="2000">
+			<score strand="both" combined_pvalue="4.62e-03" evalue="0.046"/>
+			<seg start="226">
+				<data>
+GCAACAAAACGAGAGCACTATTCAATAATCAACAGATAAAAAGCTAACTTCGATTTTGATTCGTTAAAAATAATG
+				</data>
+				<hit pos="238" idx="2" rc="n" pvalue="6.5e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+GCTAAAATAGAGATAATTATTAATCTGCATAAGAAAAAGCGATGGAAAATTATCAGATCGACAATCTGGACCGCG
+				</data>
+				<hit pos="341" idx="1" rc="n" pvalue="4.7e-05" match="++++++ ++"/>
+			</seg>
+			<seg start="376">
+				<data>
+GCATACTTGACGCCTTAATGGAAAATGCCCGCACCGCCTACGCCGAACTGGCCAAACAATTTGGCGTTAGCCCTG
+				</data>
+				<hit pos="421" idx="0" rc="y" pvalue="5.4e-05" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+CCACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGATCAATGGCAGACAT
+				</data>
+				<hit pos="853" idx="2" rc="n" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="976">
+				<data>
+CGGTTTTTCAACCGAAACGGTGCACGGTCCGTTATTAGAGGATCTGTCAACTTCCGGGATCTGGCTGATAATCAG
+				</data>
+				<hit pos="1000" idx="0" rc="n" pvalue="9.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+AATAGAAGCGGAACTGAAAGACACTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAACATCCTTGAACATGA
+				</data>
+				<hit pos="1238" idx="1" rc="n" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+GAGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGACCACGATCACCGATCATTCACAGCTAGTGATCC
+				</data>
+				<hit pos="1462" idx="0" rc="y" pvalue="6.6e-06" match="+++++++++"/>
+			</seg>
+			<seg start="1576">
+				<data>
+AGAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTG
+				</data>
+				<hit pos="1631" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1876">
+				<data>
+AAAGGGACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCGATCGATCAGGCAGGTATTCA
+				</data>
+				<hit pos="1918" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NC_006511.1" comment="Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150, 2000 bases around gc minimum at 3858700" length="2000">
+			<score strand="both" combined_pvalue="4.95e-03" evalue="0.049"/>
+			<seg start="76">
+				<data>
+TCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATGCCCTGCATGGAACGGACAATCTGCATCTGCACG
+				</data>
+				<hit pos="93" idx="2" rc="n" pvalue="3.2e-05" match="+++++++++"/>
+				<hit pos="109" idx="1" rc="y" pvalue="9.9e-05" match="++++++++ "/>
+				<hit pos="128" idx="0" rc="y" pvalue="2.9e-05" match="+++++++ +"/>
+			</seg>
+			<seg start="376">
+				<data>
+ATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCATCGGGTTATCGCCA
+				</data>
+				<hit pos="412" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
+			</seg>
+			<seg start="451">
+				<data>
+TGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGGTTTTCAGGCGGCTG
+				</data>
+				<hit pos="478" idx="2" rc="y" pvalue="1.6e-05" match="+++++++++"/>
+			</seg>
+			<seg start="601">
+				<data>
+TTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTTTCGCGCGGAATTTG
+				</data>
+				<hit pos="621" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
+				<hit pos="644" idx="0" rc="n" pvalue="4.2e-05" match="+++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+GCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATCGCTTTCGCCATC
+				</data>
+				<hit pos="892" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1126">
+				<data>
+GCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAAGCCCCGGGATCC
+				</data>
+				<hit pos="1179" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1276">
+				<data>
+TGGATAACCCGGATCCTGTAATAAAGATCAATGCGTTGGAAAGGATCACTAGCTGTGAATGATCGGTGATCGTGG
+CCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATTCTTTGGATAACT
+				</data>
+				<hit pos="1348" idx="0" rc="n" pvalue="2.9e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1501">
+				<data>
+ATCCAGGATCCGAGCCAAATCTCCGCTGGATCTTCCGGAATCTCATGTTCAAGGATGTTGATCTTCAGTGTTTCC
+CCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAACGTGTCGTATTCT
+				</data>
+				<hit pos="1572" idx="1" rc="y" pvalue="2.1e-05" match="+++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+TCCTCTAATAACGGACCGTGCACCGTTTCGGTTGAAAAACCGGCAGCTTCCAGCTTTTCCGCCAGATGTTCCGCG
+				</data>
+				<hit pos="1810" idx="0" rc="y" pvalue="9.2e-06" match="+++++++++"/>
 			</seg>
 			<seg start="1951">
 				<data>
-GACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCG
+GGCTGCATTGTACTCTGTGAACGAGCTGGGATCTACCTGTGGAAAAATGT
 				</data>
-				<hit pos="1988" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
+				<hit pos="1957" idx="2" rc="y" pvalue="2.1e-05" match="+++++++++"/>
 			</seg>
 		</sequence>
-		<sequence db="0" name="NC_016854.1" comment="Salmonella enterica subsp. enterica serovar Typhimurium str. D23580 oric at 4106620 +- 1000" length="2000">
-			<score strand="both" combined_pvalue="5.01e-04" evalue="0.005"/>
-			<seg start="1">
-				<data>
-AAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCATGGAACGGACAATC
-				</data>
-				<hit pos="6" idx="0" rc="n" pvalue="6.7e-05" match="++++++ ++"/>
-				<hit pos="46" idx="1" rc="y" pvalue="2.4e-05" match="++++++++ "/>
-			</seg>
+		<sequence db="0" name="NC_003198.1" comment="Salmonella enterica subsp. enterica serovar Typhi str. CT18, 2000 bases around gc minimum at 3764800" length="2000">
+			<score strand="both" combined_pvalue="6.07e-03" evalue="0.061"/>
 			<seg start="151">
 				<data>
-TCAAGGAAGATCTGATGCTGGTTACGATCGGCAAAACGCATCACCTTGTCTTCGATCGAAGGACAGTAGCGTGGG
-CCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGTCATGGGTTTTCTCA
+CAACAAAACGAGAGCACTATTCAATAATCAACAGATAAAAAGCTAACTTCGATTTTGATTCGTTAAAAATAATGG
 				</data>
-				<hit pos="218" idx="0" rc="n" pvalue="8.1e-05" match="+ +++++ +"/>
-				<hit pos="227" idx="2" rc="y" pvalue="3.6e-05" match="++++++ ++"/>
-				<hit pos="257" idx="0" rc="y" pvalue="6.0e-06" match="+++++++++"/>
+				<hit pos="162" idx="2" rc="n" pvalue="6.5e-05" match="+++ +++++"/>
+			</seg>
+			<seg start="226">
+				<data>
+CTAAAATAGAGATAATCATTAATCTGCATAAGAAAAAGCGATGGAAAATTATCAGATCGACAATCTGGACCGCGG
+				</data>
+				<hit pos="265" idx="1" rc="n" pvalue="4.7e-05" match="++++++ ++"/>
 			</seg>
 			<seg start="301">
 				<data>
-TTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAAAACCGGCATC
+CATACTTGACGCCTTAATGGAAAATGCCCGCACCGCCTACGCCGAACTGGCCAAACAATTTGGCGTTAGCCCTGG
 				</data>
-				<hit pos="349" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
-			</seg>
-			<seg start="376">
-				<data>
-GGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGGTGTGCCGGTT
-				</data>
-				<hit pos="410" idx="2" rc="n" pvalue="4.4e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="451">
-				<data>
-TTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATCGCCAGCACGA
-				</data>
-				<hit pos="501" idx="2" rc="n" pvalue="5.5e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="526">
-				<data>
-CCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTACCACCGCTTTC
-				</data>
-				<hit pos="558" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
+				<hit pos="345" idx="0" rc="y" pvalue="5.4e-05" match="+++++++++"/>
 			</seg>
 			<seg start="751">
 				<data>
-TGAGCCCGGGTAGCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCGATC
-GCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCCGGG
+CACAGGTAGATCCCAGCTCGTTCACAGAGTACAATGCAGCCTCTTTACCTGAGCGAGCGATCAATGGCAGACATT
 				</data>
-				<hit pos="818" idx="2" rc="n" pvalue="3.6e-05" match="+++++++++"/>
-				<hit pos="829" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="976">
-				<data>
-ATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTAATT
-				</data>
-				<hit pos="976" idx="0" rc="n" pvalue="1.4e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1051">
-				<data>
-GCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAGAAA
-				</data>
-				<hit pos="1073" idx="2" rc="n" pvalue="2.1e-05" match="+++++++ +"/>
-				<hit pos="1116" idx="1" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1276">
-				<data>
-CGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTTATT
-				</data>
-				<hit pos="1281" idx="0" rc="n" pvalue="9.2e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1351">
-				<data>
-CTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCTTTACATTTAT
-				</data>
-				<hit pos="1399" idx="2" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1501">
-				<data>
-TTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAAAAC
-				</data>
-				<hit pos="1509" idx="1" rc="y" pvalue="3.1e-05" match="+++++++ +"/>
-				<hit pos="1555" idx="1" rc="y" pvalue="8.3e-05" match="+++++ +++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_016810.1" comment="Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344, oric at 4104970 +- 1000" length="2000">
-			<score strand="both" combined_pvalue="5.01e-04" evalue="0.005"/>
-			<seg start="76">
-				<data>
-GCGCGGGTCGAAGAAATCGTACTCAATCGCGTAACCAGGGCGAACGATCTTCGCGTTCTCCATACCCTGCATGGA
-				</data>
-				<hit pos="91" idx="0" rc="n" pvalue="6.7e-05" match="++++++ ++"/>
-				<hit pos="131" idx="1" rc="y" pvalue="2.4e-05" match="++++++++ "/>
-			</seg>
-			<seg start="301">
-				<data>
-GTAGCGTGGGCCGATCCCTTCGATCACGCCAGCGTACATTGGGCTACGATCGAGGTTATTACGAATCACGTCATG
-				</data>
-				<hit pos="303" idx="0" rc="n" pvalue="8.1e-05" match="+ +++++ +"/>
-				<hit pos="312" idx="2" rc="y" pvalue="3.6e-05" match="++++++ ++"/>
-				<hit pos="342" idx="0" rc="y" pvalue="6.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="376">
-				<data>
-GGTTTTCTCATTGGTATGCGTGATGTAACACGGCACCTGTTGCGGATGCTGAGAAGCATTCCCCATAAACGAGAA
-				</data>
-				<hit pos="434" idx="1" rc="y" pvalue="4.7e-05" match="++++++++ "/>
-			</seg>
-			<seg start="451">
-				<data>
-AACCGGCATCGGGTTATCGCCATGCTGTTGAGCCAACACGCTGAAATCGATAGTACGCGCATCAATACGCGGCGG
-				</data>
-				<hit pos="495" idx="2" rc="n" pvalue="4.4e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="526">
-				<data>
-TGTGCCGGTTTTCAGGCGGCTGACGCGTAGCGGAAGCTCACGCAGACGGCGAGACAGCGGGATGGATGGCGGATC
-				</data>
-				<hit pos="586" idx="2" rc="n" pvalue="5.5e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="601">
-				<data>
-GCCAGCACGACCGCCGCTGTAGTTATCCAGACCAATATGAATTTTGCCATCCAGGAAGGTTCCGACGGTCAGTAC
-				</data>
-				<hit pos="643" idx="1" rc="y" pvalue="4.7e-05" match="++ ++++++"/>
+				<hit pos="777" idx="2" rc="n" pvalue="2.1e-05" match="+++++++++"/>
 			</seg>
 			<seg start="901">
 				<data>
-CTGATCGATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCC
+GGTTTTTCAACCGAAACGGTGCACGGTCCGTTATTAGAGGATCTGTCAACTTCCGGGATCTGGCTGATAATCAGC
 				</data>
-				<hit pos="903" idx="2" rc="n" pvalue="3.6e-05" match="+++++++++"/>
-				<hit pos="914" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1051">
-				<data>
-CGCTGCGGCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAA
-				</data>
-				<hit pos="1061" idx="0" rc="n" pvalue="1.4e-05" match="+++++++++"/>
+				<hit pos="924" idx="0" rc="n" pvalue="9.2e-06" match="+++++++++"/>
 			</seg>
 			<seg start="1126">
 				<data>
-CATGGTAATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCC
+ATAGAAGCGGAACTGAAAGGCGCTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAACATCCTTGAACATGAG
 				</data>
-				<hit pos="1158" idx="2" rc="n" pvalue="2.1e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="1201">
-				<data>
-GATGGAGAAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTC
-				</data>
-				<hit pos="1201" idx="1" rc="n" pvalue="4.0e-06" match="+++++++++"/>
+				<hit pos="1162" idx="1" rc="n" pvalue="2.1e-05" match="+++++++++"/>
 			</seg>
 			<seg start="1351">
 				<data>
-TGTGAATGATCGGTGATCGTGGTCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAAC
+AGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTCACAGCTAGTGATCCT
 				</data>
-				<hit pos="1366" idx="0" rc="n" pvalue="9.2e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1426">
-				<data>
-AACGGTTATTCTTTGGATAACTACCGGTTGATCCAAGCTTTCCACCAGATTTATCCACAATGGATCGCACGATCT
-				</data>
-				<hit pos="1484" idx="2" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1576">
-				<data>
-GATGTTGATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGC
-				</data>
-				<hit pos="1594" idx="1" rc="y" pvalue="3.1e-05" match="+++++++ +"/>
-				<hit pos="1640" idx="1" rc="y" pvalue="8.3e-05" match="+++++ +++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_006511.1" comment="Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150, oric at 3859360 +- 1000" length="2000">
-			<score strand="both" combined_pvalue="1.01e-03" evalue="0.01"/>
-			<seg start="151">
-				<data>
-GCCTGAGCCCGGGTAGCGCGAACGGCCGGACCTTTGCTGGCGTTTAGTATCCTAAACTGAATACCTGCCTGATCG
-ATCGCTTTCGCCATCAGACCGCCGAGCGCATCCACCTCTTTTACCAGATGTCCCTTTCCAATACCGCCGATCGCC
-				</data>
-				<hit pos="221" idx="2" rc="n" pvalue="3.6e-05" match="+++++++++"/>
-				<hit pos="232" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
-			</seg>
-			<seg start="376">
-				<data>
-GCCATCGCGGCCTCAGTGCCTGCATGACCCCCGCCAATAATAATGACGTCAAAAGGATCCTGATAAAACATGGTA
-				</data>
-				<hit pos="379" idx="0" rc="n" pvalue="1.4e-05" match="+++++++++"/>
-			</seg>
-			<seg start="451">
-				<data>
-ATTGCCTCGCATAACGCGGTGTGAAAATGGATTGAAGCCCGGGCGGTGGATTCTACTCAACTTTAGCCGATGGAG
-AAAGCCCCGGGATCCGGGCTATTAAAAAGAAGATCTTTTTATTTAGAGATCTGTTCTATTGTGATCTCTTATTAG
-				</data>
-				<hit pos="476" idx="2" rc="n" pvalue="2.1e-05" match="+++++++ +"/>
-				<hit pos="519" idx="1" rc="n" pvalue="4.0e-06" match="+++++++++"/>
-			</seg>
-			<seg start="676">
-				<data>
-GATCGGTGATCGTGGCCCGTATAAGCTGGGATCAAAACGGGTACTTATACACAACTCAAAAAGTGAACAACGGTT
-				</data>
-				<hit pos="684" idx="0" rc="n" pvalue="2.7e-06" match="+++++++++"/>
-			</seg>
-			<seg start="901">
-				<data>
-ATCTTCAGTGTTTCCCCAACCTGTTTTGCGCCAGCGCCTTTCAGTTCCGCTTCTATTTTCTCAATCGCGCCGCAA
-				</data>
-				<hit pos="912" idx="1" rc="y" pvalue="3.1e-05" match="+++++++ +"/>
-				<hit pos="958" idx="1" rc="y" pvalue="8.3e-05" match="+++++ +++"/>
+				<hit pos="1386" idx="0" rc="y" pvalue="2.9e-05" match="+++++++++"/>
 			</seg>
 			<seg start="1501">
 				<data>
-TGTAGTGACCGGTGGTGTAATACGCTTCCGTCACCTCATCCAGGCTTTCCAGCCGGGCCAGTGCGGAGGGATAGT
+GAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCCATCGGCTAAAGTTGA
 				</data>
-				<hit pos="1566" idx="2" rc="n" pvalue="8.2e-05" match="++ ++++ +"/>
-			</seg>
-			<seg start="1576">
-				<data>
-CTTTGGCGCTTTTGAGAATGATGCCAATAAAGCAGCCCACATCGTAGCCCAGCTGTTTAGGGCTGACGTCAATCC
-				</data>
-				<hit pos="1616" idx="0" rc="n" pvalue="6.0e-06" match="+++++++++"/>
+				<hit pos="1555" idx="1" rc="y" pvalue="1.1e-05" match="+++++++++"/>
 			</seg>
 			<seg start="1801">
 				<data>
-TCTGATAATTTTCCATCGCTTTTTCTTATGCAGATTAATGATTATCTCTATTTTAGCCATTATTTTTAACGAATC
+AAGGGACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCGATCGATCAGGCAGGTATTCAG
 				</data>
-				<hit pos="1809" idx="1" rc="y" pvalue="2.4e-05" match="++ ++++++"/>
-			</seg>
-		</sequence>
-		<sequence db="0" name="NC_003198.1" comment="Salmonella enterica subsp. enterica serovar Typhi str. CT18, oric at 3765460 +- 1000" length="2000">
-			<score strand="both" combined_pvalue="1.01e-03" evalue="0.01"/>
-			<seg start="451">
-				<data>
-GGCGCGATTGAGAAAATAGAAGCGGAACTGAAAGGCGCTGGCGCAAAACAGGTTGGGGAAACACTGAAGATCAAC
-				</data>
-				<hit pos="456" idx="1" rc="n" pvalue="8.3e-05" match="+++ +++++"/>
-				<hit pos="502" idx="1" rc="n" pvalue="3.1e-05" match="+ +++++++"/>
-			</seg>
-			<seg start="676">
-				<data>
-TTTGTTCACTTTTTGAGTTGTGTATAAGTACCCGTTTTGATCCCAGCTTATACGGGCCACGATCACCGATCATTC
-				</data>
-				<hit pos="730" idx="0" rc="y" pvalue="2.7e-06" match="+++++++++"/>
-			</seg>
-			<seg start="826">
-				<data>
-TAAGAGATCACAATAGAACAGATCTCTAAATAAAAAGATCTTCTTTTTAATAGCCCGGATCCCGGGGCTTTCTCC
-ATCGGCTAAAGTTGAGTAGAATCCACCGCCCGGGCTTCAATCCATTTTCACACCGCGTTATGCGAGGCAATTACC
-				</data>
-				<hit pos="895" idx="1" rc="y" pvalue="4.0e-06" match="+++++++++"/>
-				<hit pos="938" idx="2" rc="y" pvalue="2.1e-05" match="+ +++++++"/>
-			</seg>
-			<seg start="976">
-				<data>
-ATGTTTTATCAGGATCCTTTTGACGTCATTATTATTGGCGGGGGTCATGCAGGCACTGAGGCCGCGATGGCCGCA
-				</data>
-				<hit pos="1035" idx="0" rc="y" pvalue="1.4e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1126">
-				<data>
-ATCGGCGGTATTGGCAAGGGACATCTGGTAAAAGAGGTGGATGCGCTCGGCGGTCTGATGGCGAAAGCGATCGAT
-CAGGCAGGTATTCAGTTTAAGATACTAAACGCCAGCAAAGGTCCGGCCGTTCGCGCTACCCGAGCTCAGGCGGAT
-				</data>
-				<hit pos="1182" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
-				<hit pos="1193" idx="2" rc="y" pvalue="3.6e-05" match="+++++++++"/>
-			</seg>
-			<seg start="1501">
-				<data>
-GGCGATCCGCCATCCATCCCGCTGTCTCGCCGTCTGCGTGAGCTTCCGCTACGCGTCAGCCGCCTGAAAACCGGC
-				</data>
-				<hit pos="1510" idx="2" rc="y" pvalue="5.5e-05" match="+ +++++++"/>
-			</seg>
-			<seg start="1576">
-				<data>
-ACACCGCCGCGTATTGATGCGCGTACTATCGATTTCAGCGTGTTGGCTCAACAGCATGGCGATAACCCGATGCCG
-				</data>
-				<hit pos="1601" idx="2" rc="y" pvalue="4.4e-05" match="+ +++++++"/>
-			</seg>
-			<seg start="1651">
-				<data>
-GTTTTCTCGTTTATGGGGAATGCTTTTCAGCATCCGCAACAGGTGCCGTGTTACATCACGCATACCAATGAGAAA
-				</data>
-				<hit pos="1662" idx="1" rc="n" pvalue="4.7e-05" match=" ++++++++"/>
-			</seg>
-			<seg start="1726">
-				<data>
-ACCCATGACGTGATTCGTAATAACCTCGATCGTAGCCCAATGTACGCTGGCGTGATCGAAGGGATCGGCCCACGC
-TACTGTCCTTCGATCGAAGACAAGGTGATGCGTTTTGCCGATCGTAACCAGCATCAGATCTTCCTTGAGCCGGAA
-				</data>
-				<hit pos="1754" idx="0" rc="n" pvalue="6.0e-06" match="+++++++++"/>
-				<hit pos="1784" idx="2" rc="n" pvalue="3.6e-05" match="++ ++++++"/>
-				<hit pos="1793" idx="0" rc="y" pvalue="8.1e-05" match="+ +++++ +"/>
+				<hit pos="1842" idx="1" rc="n" pvalue="1.1e-05" match="+++++++++"/>
 			</seg>
 		</sequence>
 	</sequences>
-	<runtime host="PC0028" when="Fri Jan  3 19:44:01 2020" cycles="15625" seconds="0.016"/>
+	<runtime host="PC0028" when="Mon Jan  6 00:53:45 2020" cycles="31250" seconds="0.031"/>
 </mast>

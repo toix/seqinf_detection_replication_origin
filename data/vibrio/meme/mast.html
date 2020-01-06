@@ -10,8 +10,8 @@
         "version": "5.1.0",
         "release": "Fri Oct 11 15:53:28 2019 -0700",
         "cmd": [
-          "mast", "-oc", ".", "-nostatus", "meme.xml",
-          "/mnt/c/drive/uni/seq_inf/seqinf_project/data/cholerae/skew_regions.fasta"
+          "mast", "-oc", "data/vibrio/meme", "-nostatus",
+          "data/vibrio/meme/meme.xml", "data/vibrio/skew_regions.fasta"
         ],
         "settings": {
           "strand_handling": "combine",
@@ -102,63 +102,63 @@
         },
         "motif_dbs": [
           {
-            "source": "meme.xml",
-            "last_mod_date": "Fri Jan  3 19:43:59 2020",
-            "bg": [0.265, 0.235, 0.235, 0.265]
+            "source": "data/vibrio/meme/meme.xml",
+            "last_mod_date": "Mon Jan  6 00:53:07 2020",
+            "bg": [0.266, 0.234, 0.234, 0.266]
           }
         ],
         "motifs": [
           {
             "db": 0,
-            "id": "GAWGTGATC",
+            "id": "TYAYCCACA",
             "alt": "MEME-1",
             "len": 9,
-            "nsites": 28,
-            "evalue": "4.5e-007",
+            "nsites": 41,
+            "evalue": "2.6e+000",
             "psm": [
-              [-1145, -1145, 209, -1145], [192, -1145, -1145, -1145], 
-              [57, -1145, -1145, 120], [-1145, -72, 187, -1145], 
-              [-1145, -1145, -13, 157], [-1145, -1145, 209, -1145], 
-              [192, -1145, -1145, -1145], [-57, -1145, -272, 157], 
-              [-1145, 209, -1145, -1145]
+              [-1200, -1200, -168, 180], [-144, 73, -1200, 95], 
+              [191, -1200, -1200, -1200], [-1200, 126, -326, 64], 
+              [-244, 154, 19, -1200], [-1200, 190, -94, -1200], 
+              [188, -1200, -1200, -344], [-1200, 198, -1200, -186], 
+              [191, -1200, -1200, -1200]
             ]
           }, {
             "db": 0,
-            "id": "TGTCCTGYA",
+            "id": "GATCACWTC",
             "alt": "MEME-2",
             "len": 9,
-            "nsites": 13,
-            "evalue": "1.8e+001",
+            "nsites": 32,
+            "evalue": "3.7e-005",
             "psm": [
-              [-1035, -1035, -1035, 192], [-1035, -1035, 209, -1035], 
-              [-1035, -1035, -1035, 192], [-1035, 209, -1035, -1035], 
-              [-1035, 197, -1035, -178], [-1035, -1035, -1035, 192], 
-              [-1035, -1035, 209, -1035], [-1035, 97, -1035, 102], 
-              [192, -1035, -1035, -1035]
+              [-1164, -59, 185, -1164], [150, -91, -1164, -109], 
+              [-1164, -1164, -1164, 191], [-1164, 209, -1164, -1164], 
+              [161, -32, -1164, -1164], [-1164, 190, -91, -1164], 
+              [100, -1164, -1164, 82], [-1164, -1164, -1164, 191], 
+              [-1164, 209, -1164, -1164]
             ]
           }, {
             "db": 0,
-            "id": "TGACTCAGA",
+            "id": "AGCGGCTTC",
             "alt": "MEME-3",
             "len": 9,
-            "nsites": 2,
-            "evalue": "2.0e+007",
+            "nsites": 20,
+            "evalue": "1.6e-004",
             "psm": [
-              [-765, -765, -765, 191], [-765, -765, 208, -765], 
-              [191, -765, -765, -765], [-765, 208, -765, -765], 
-              [-765, -765, -765, 191], [-765, 208, -765, -765], 
-              [191, -765, -765, -765], [-765, -765, 208, -765], 
-              [191, -765, -765, -765]
+              [150, -223, -23, -1097], [-1097, -1097, 209, -1097], 
+              [-1097, 209, -1097, -1097], [-1097, -1097, 209, -1097], 
+              [-1097, -1097, 209, -1097], [-1097, 209, -1097, -1097], 
+              [-82, -123, -1097, 150], [-1097, -1097, -1097, 191], 
+              [-141, 194, -1097, -1097]
             ]
           }
         ],
         "correlation": [
-          [null, 0.17, 0.22], [0.17, null, 0.31], [0.22, 0.31, null]
+          [null, 0.39, 0.23], [0.39, null, 0.35], [0.23, 0.35, null]
         ],
         "sequence_dbs": [
           {
-            "source": "/mnt/c/drive/uni/seq_inf/seqinf_project/data/cholerae/skew_regions.fasta",
-            "last_mod_date": "Fri Jan  3 19:43:29 2020",
+            "source": "data/vibrio/skew_regions.fasta",
+            "last_mod_date": "Mon Jan  6 00:52:41 2020",
             "sequence_count": 10,
             "residue_count": 19998
           }
@@ -167,69 +167,75 @@
           {
             "db": 0,
             "name": "NC_012578.1",
-            "comment": "Vibrio cholerae M66-2 chromosome I, oric at -260 +- 1000",
+            "comment": "Vibrio cholerae M66-2 chromosome I, 2000 bases around gc minimum at 0",
             "length": 1999,
             "score": [
               {
-                "combined_pvalue": 5.90e-04,
-                "evalue": 0.0059
+                "combined_pvalue": 2.55e-04,
+                "evalue": 0.0026
               }
             ],
             "segs": [
               {
-                "pos": 0,
-                "data": "ATCAAGCCTTGCGCAGCGGCTTCTTCGTAACCTGTAGTACCGTTGATTTGTCCTGCAAAGAACAAACCATGGATA",
+                "pos": 75,
+                "data": "CGGGCCGATCCCTTCGATGATCCCGGCATACATAGGGCTGCGATCAAGGTTAGCGCGGATCACATCATGGGTGCG",
                 "hits": [
                   {
-                    "pos": 48,
+                    "pos": 81,
                     "idx": 1,
                     "rc": false,
-                    "pvalue": 7.3e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 300,
-                "data": "CGCATCACTTTATCTTCGATCGATGGACAGTAACGCGGGCCGATCCCTTCGATGATCCCGGCATACATAGGGCTG",
-                "hits": [
-                  {
-                    "pos": 341,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 1.9e-05,
+                    "pvalue": 1.5e-05,
                     "match": "++++ ++++"
-                  }
-                ]
-              }, {
-                "pos": 375,
-                "data": "CGATCAAGGTTAGCGCGGATCACATCATGGGTGCGCTCATTGGTGTGCGTGATGTAACACGGAATTTGGCGTGGA",
-                "hits": [
-                  {
-                    "pos": 392,
-                    "idx": 0,
-                    "rc": true,
+                  }, {
+                    "pos": 132,
+                    "idx": 1,
+                    "rc": false,
                     "pvalue": 4.0e-06,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 675,
-                "data": "CCGCCAAGGAAAGTCCCGACGGTTAACACTACCGCTTTGGCATGAAATTTCAGGCCCATCTGAGTCACAACACCA",
+                "pos": 150,
+                "data": "CTCATTGGTGTGCGTGATGTAACACGGAATTTGGCGTGGATGGTGCTCACGCTTGCCCATGAAGGAAAAAACTGG",
                 "hits": [
                   {
-                    "pos": 733,
-                    "idx": 2,
+                    "pos": 158,
+                    "idx": 0,
                     "rc": true,
+                    "pvalue": 2.3e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 450,
+                "data": "TTTGGCATGAAATTTCAGGCCCATCTGAGTCACAACACCACGAATATGATCATGCTCGACGATCACATCATCTAC",
+                "hits": [
+                  {
+                    "pos": 510,
+                    "idx": 1,
+                    "rc": false,
                     "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 525,
+                "data": "CGCTTGTTGGAACAGGGTGAGATTCGGGGTGTTTTCTAACACATTACGCACATAGGCTTTGTACAGAGCACGATC",
+                "hits": [
+                  {
+                    "pos": 568,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 2.0e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 750,
-                "data": "CGAATATGATCATGCTCGACGATCACATCATCTACCGCTTGTTGGAACAGGGTGAGATTCGGGGTGTTTTCTAAC",
+                "data": "AGGGTTACAGGACATTTGGCCTAGGGTGTCAATATTGTGGGTAAGAAGTAACGTACGCTGTCCTGTACGTGCTGC",
                 "hits": [
                   {
-                    "pos": 770,
+                    "pos": 785,
                     "idx": 0,
                     "rc": true,
                     "pvalue": 4.0e-06,
@@ -237,39 +243,87 @@
                   }
                 ]
               }, {
-                "pos": 975,
-                "data": "TTGACTAAATGACCTTTACCGATCCCACCAATGGCAGGGTTACAGGACATTTGGCCTAGGGTGTCAATATTGTGG",
+                "pos": 825,
+                "data": "AGCGAGAGCGGCTTCCGTTCCTGCGTGACCGCCACCAACCACAATGACGTCAAATGTTTCGTGATAAAGCATGAA",
                 "hits": [
                   {
-                    "pos": 1015,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 7.3e-06,
+                    "pos": 831,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 2.7e-06,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 1050,
-                "data": "GTAAGAAGTAACGTACGCTGTCCTGTACGTGCTGCAGCGAGAGCGGCTTCCGTTCCTGCGTGACCGCCACCAACC",
+                "data": "TACTATTAAGGAGCAGGATCTTTGTGGATAAGTGAAAAATGATCAACAAGATCATGCGATTCAGAAGGATCAGATCGTGTGATCAACCACTGATCTGTTCAAGGATTAGCTGGGATCAAAAACCTATGTTATACACAGCCACCTTGGGAT",
                 "hits": [
                   {
-                    "pos": 1068,
+                    "pos": 1072,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 1.2e-05,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 1117,
                     "idx": 1,
                     "rc": false,
-                    "pvalue": 7.3e-06,
+                    "pvalue": 4.1e-05,
+                    "match": "+++++ +++"
+                  }
+                ]
+              }, {
+                "pos": 1200,
+                "data": "CTAAAACTTGTTATATGGATAACTATAGGAAGATCACCGGATAATCGTATAGTTATCCACATGAGATTTGATTGA",
+                "hits": [
+                  {
+                    "pos": 1252,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 1.2e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 1350,
-                "data": "GATCAACAAGATCATGCGATTCAGAAGGATCAGATCGTGTGATCAACCACTGATCTGTTCAAGGATTAGCTGGGA",
+                "pos": 1275,
+                "data": "AAAAGCATCAATCAATTTTTTCACTACCGTTAAATTTATCCACAATCCAAAAAAAAGAGCGGCATTAAGCCGCTC",
                 "hits": [
                   {
-                    "pos": 1377,
+                    "pos": 1310,
                     "idx": 0,
+                    "rc": false,
+                    "pvalue": 1.2e-05,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 1340,
+                    "idx": 2,
                     "rc": true,
-                    "pvalue": 2.3e-05,
-                    "match": "+++++ +++"
+                    "pvalue": 1.3e-05,
+                    "match": " ++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1350,
+                "data": "TGCATGGAATAGGTCATTATTTAGAAGCGATTGATGACGCGTTTGAGCCAAGCTTCAGCGGCATCTTCAGGCACT",
+                "hits": [
+                  {
+                    "pos": 1406,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 7.6e-06,
+                    "match": "++++++ ++"
+                  }
+                ]
+              }, {
+                "pos": 1725,
+                "data": "TGTTCTTGCAGTAAATCACTCAGGTGGTCACCCACATATTCCGCACCGCCTAGGGTGCTGCCAGTAATGATATGA",
+                "hits": [
+                  {
+                    "pos": 1752,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 7.3e-06,
+                    "match": "+++++++++"
                   }
                 ]
               }
@@ -277,109 +331,163 @@
           }, {
             "db": 0,
             "name": "NC_016445.1",
-            "comment": "Vibrio cholerae O1 str. 2010EL-1786 chromosome 1, oric at 2555250 +- 1000",
+            "comment": "Vibrio cholerae O1 str. 2010EL-1786 chromosome 1, 2000 bases around gc minimum at 2554200",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 5.91e-04,
-                "evalue": 0.0059
+                "combined_pvalue": 2.56e-04,
+                "evalue": 0.0026
               }
             ],
             "segs": [
               {
-                "pos": 75,
-                "data": "ACATTTGACGTCATTGTGGTTGGTGGCGGTCACGCAGGAACGGAAGCCGCTCTCGCTGCAGCACGTACAGGACAG",
+                "pos": 225,
+                "data": "ACCCTAGGCGGTGCGGAATATGTGGGTGACCACCTGAGTGATTTACTGCAAGAACAAGGCTTTGACACCAAAATT",
                 "hits": [
                   {
-                    "pos": 140,
-                    "idx": 1,
+                    "pos": 245,
+                    "idx": 0,
                     "rc": true,
                     "pvalue": 7.3e-06,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 150,
-                "data": "CGTACGTTACTTCTTACCCACAATATTGACACCCTAGGCCAAATGTCCTGTAACCCTGCCATTGGTGGGATCGGT",
+                "pos": 525,
+                "data": "GATATTGGTGCTAAACCTCTGGCCAACTGCTTTACCATCGATGTACAAGAGCACCCAGTGCCTGAAGATGCCGCT",
                 "hits": [
                   {
-                    "pos": 193,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 7.3e-06,
-                    "match": "+++++++++"
+                    "pos": 591,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 7.6e-06,
+                    "match": "++ ++++++"
                   }
                 ]
               }, {
-                "pos": 375,
-                "data": "GCCTATGTGCGTAATGTGTTAGAAAACACCCCGAATCTCACCCTGTTCCAACAAGCGGTAGATGATGTGATCGTC",
+                "pos": 600,
+                "data": "GAAGCTTGGCTCAAACGCGTCATCAATCGCTTCTAAATAATGACCTATTCCATGCAGAGCGGCTTAATGCCGCTC",
                 "hits": [
                   {
-                    "pos": 438,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 450,
-                "data": "GAGCATGATCATATTCGTGGTGTTGTGACTCAGATGGGCCTGAAATTTCATGCCAAAGCGGTAGTGTTAACCGTC",
-                "hits": [
-                  {
-                    "pos": 475,
+                    "pos": 657,
                     "idx": 2,
                     "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
+                    "pvalue": 1.3e-05,
+                    "match": "++++++++ "
                   }
                 ]
               }, {
-                "pos": 750,
-                "data": "GGCAAGCGTGAGCACCATCCACGCCAAATTCCGTGTTACATCACGCACACCAATGAGCGCACCCATGATGTGATC",
+                "pos": 675,
+                "data": "TTTTTTTTGGATTGTGGATAAATTTAACGGTAGTGAAAAAATTGATTGATGCTTTTTCAATCAAATCTCATGTGGATAACTATACGATTATCCGGTGATCTTCCTATAGTTATCCATATAACAAGTTTTAGATCCCAAGGTGGCTGTGTA",
                 "hits": [
                   {
-                    "pos": 816,
+                    "pos": 687,
                     "idx": 0,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
+                    "rc": true,
+                    "pvalue": 1.2e-05,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 745,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 1.2e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 825,
-                "data": "CGCGCTAACCTTGATCGCAGCCCTATGTATGCCGGGATCATCGAAGGGATCGGCCCGCGTTACTGTCCATCGATC",
+                "data": "TAACATAGGTTTTTGATCCCAGCTAATCCTTGAACAGATCAGTGGTTGATCACACGATCTGATCCTTCTGAATCG",
                 "hits": [
                   {
-                    "pos": 867,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 1.9e-05,
-                    "match": "++++ ++++"
+                    "pos": 880,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.1e-05,
+                    "match": "+++ +++++"
                   }
                 ]
               }, {
-                "pos": 1125,
-                "data": "ACGTATGAAACCAAATATATCCATGGTTTGTTCTTTGCAGGACAAATCAACGGTACTACAGGTTACGAAGAAGCC",
+                "pos": 900,
+                "data": "CATGATCTTGTTGATCATTTTTCACTTATCCACAAAGATCCTGCTCCTTAATAGTAGATCTAATAAAAAGATCTC",
                 "hits": [
                   {
-                    "pos": 1160,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 7.3e-06,
+                    "pos": 925,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 1.2e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 1275,
-                "data": "GATCAGGCGTACATGGGCGTGTTGATCGACGATCTTTCGACCATGGGCACTAAAGAACCTTACCGTATGTTCACTTCGCGTGCGGAATATCGTCTGCTGCTGCGTGAAGACAACGCTGATCTGCGTTTGACCGAAAAAGCGCGTGAGCTT",
+                "pos": 1125,
+                "data": "ACATTTGACGTCATTGTGGTTGGTGGCGGTCACGCAGGAACGGAAGCCGCTCTCGCTGCAGCACGTACAGGACAG",
                 "hits": [
                   {
-                    "pos": 1343,
+                    "pos": 1167,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 2.7e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1200,
+                "data": "CGTACGTTACTTCTTACCCACAATATTGACACCCTAGGCCAAATGTCCTGTAACCCTGCCATTGGTGGGATCGGT",
+                "hits": [
+                  {
+                    "pos": 1213,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1425,
+                "data": "GCCTATGTGCGTAATGTGTTAGAAAACACCCCGAATCTCACCCTGTTCCAACAAGCGGTAGATGATGTGATCGTC",
+                "hits": [
+                  {
+                    "pos": 1430,
                     "idx": 0,
                     "rc": true,
-                    "pvalue": 2.7e-05,
-                    "match": "+ +++++++"
+                    "pvalue": 2.0e-05,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 1488,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1800,
+                "data": "GGCAAGCGTGAGCACCATCCACGCCAAATTCCGTGTTACATCACGCACACCAATGAGCGCACCCATGATGTGATC",
+                "hits": [
+                  {
+                    "pos": 1840,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 2.3e-05,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 1866,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1875,
+                "data": "CGCGCTAACCTTGATCGCAGCCCTATGTATGCCGGGATCATCGAAGGGATCGGCCCGCGTTACTGTCCATCGATC",
+                "hits": [
+                  {
+                    "pos": 1917,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 1.5e-05,
+                    "match": "++++ ++++"
                   }
                 ]
               }
@@ -387,189 +495,133 @@
           }, {
             "db": 0,
             "name": "NC_009457.1",
-            "comment": "Vibrio cholerae O395 chromosome 2, oric at 2669570 +- 1000",
+            "comment": "Vibrio cholerae O395 chromosome 2, 2000 bases around gc minimum at 2670300",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 5.91e-04,
-                "evalue": 0.0059
+                "combined_pvalue": 2.56e-04,
+                "evalue": 0.0026
               }
             ],
             "segs": [
               {
-                "pos": 600,
-                "data": "TCCTTGAACAGATCAGTGGTTGATCACACGATCTGATCCTTCTGAATCGCATGATCTTGTTGATCATTTTTCACT",
+                "pos": 150,
+                "data": "GACGTCATTGTGGTTGGTGGCGGTCACGCAGGAACGGAAGCCGCTCTCGCTGCAGCACGTACAGGACAGCGTACG",
                 "hits": [
                   {
-                    "pos": 629,
+                    "pos": 186,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 2.7e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 225,
+                "data": "TTACTTCTTACCCACAATATTGACACCCTAGGCCAAATGTCCTGTAACCCTGCCATTGGTGGGATCGGTAAAGGT",
+                "hits": [
+                  {
+                    "pos": 232,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 375,
+                "data": "ACACTGAACGCTTCAAAAGGGCCAGCCGTGCGTGCAACTCGTGCACAAGCCGATCGTGCTCTGTACAAAGCCTATGTGCGTAATGTGTTAGAAAACACCCCGAATCTCACCCTGTTCCAACAAGCGGTAGATGATGTGATCGTCGAGCAT",
+                "hits": [
+                  {
+                    "pos": 449,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 2.0e-05,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 507,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 825,
+                "data": "CGTGAGCACCATCCACGCCAAATTCCGTGTTACATCACGCACACCAATGAGCGCACCCATGATGTGATCCGCGCT",
+                "hits": [
+                  {
+                    "pos": 859,
                     "idx": 0,
                     "rc": false,
                     "pvalue": 2.3e-05,
-                    "match": "+++ +++++"
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 885,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 900,
-                "data": "CGGTCACGCAGGAACGGAAGCCGCTCTCGCTGCAGCACGTACAGGACAGCGTACGTTACTTCTTACCCACAATAT",
+                "data": "AACCTTGATCGCAGCCCTATGTATGCCGGGATCATCGAAGGGATCGGCCCGCGTTACTGTCCATCGATCGAAGAT",
                 "hits": [
                   {
-                    "pos": 939,
+                    "pos": 936,
                     "idx": 1,
                     "rc": true,
-                    "pvalue": 7.3e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 975,
-                "data": "TGACACCCTAGGCCAAATGTCCTGTAACCCTGCCATTGGTGGGATCGGTAAAGGTCATTTAGTCAAAGAAGTGGA",
-                "hits": [
-                  {
-                    "pos": 992,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 7.3e-06,
-                    "match": "+++++++++"
+                    "pvalue": 1.5e-05,
+                    "match": "++++ ++++"
                   }
                 ]
               }, {
                 "pos": 1200,
-                "data": "CACCCCGAATCTCACCCTGTTCCAACAAGCGGTAGATGATGTGATCGTCGAGCATGATCATATTCGTGGTGTTGTGACTCAGATGGGCCTGAAATTTCATGCCAAAGCGGTAGTGTTAACCGTCGGGACTTTCCTTGGCGGTAAGATCCA",
+                "data": "GAAACCAAATATATCCATGGTTTGTTCTTTGCAGGACAAATCAACGGTACTACAGGTTACGAAGAAGCCGCTGCG",
                 "hits": [
                   {
-                    "pos": 1237,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }, {
-                    "pos": 1274,
+                    "pos": 1263,
                     "idx": 2,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1575,
-                "data": "AATTCCGTGTTACATCACGCACACCAATGAGCGCACCCATGATGTGATCCGCGCTAACCTTGATCGCAGCCCTAT",
-                "hits": [
-                  {
-                    "pos": 1615,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1650,
-                "data": "GTATGCCGGGATCATCGAAGGGATCGGCCCGCGTTACTGTCCATCGATCGAAGATAAAGTGATGCGTTTTGCCGA",
-                "hits": [
-                  {
-                    "pos": 1666,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 1.9e-05,
-                    "match": "++++ ++++"
-                  }
-                ]
-              }, {
-                "pos": 1950,
-                "data": "TTTGTTCTTTGCAGGACAAATCAACGGTACTACAGGTTACGAAGAAGCCG",
-                "hits": [
-                  {
-                    "pos": 1959,
-                    "idx": 1,
                     "rc": true,
-                    "pvalue": 7.3e-06,
+                    "pvalue": 2.7e-06,
                     "match": "+++++++++"
-                  }
-                ]
-              }
-            ]
-          }, {
-            "db": 0,
-            "name": "NZ_CP010811.1",
-            "comment": "Vibrio cholerae strain 1154-74, oric at 3919750 +- 1000",
-            "length": 2000,
-            "score": [
-              {
-                "combined_pvalue": 5.91e-04,
-                "evalue": 0.0059
-              }
-            ],
-            "segs": [
-              {
-                "pos": 825,
-                "data": "CAGACGATATTCCGCGCGCGAAGTGAACATACGGTAAGGCTCTTTAGTGCCCATGGTCGAAAGATCGTCGATCAA",
-                "hits": [
-                  {
-                    "pos": 844,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 2.7e-05,
-                    "match": "+++++++ +"
-                  }
-                ]
-              }, {
-                "pos": 975,
-                "data": "CGCCATCAAGCCTTGCGCAGCGGCTTCTTCGTAACCAGTAGTGCCGTTGATTTGTCCTGCAAAGAACAAACCATG",
-                "hits": [
-                  {
-                    "pos": 1027,
-                    "idx": 1,
-                    "rc": false,
-                    "pvalue": 7.3e-06,
-                    "match": "+++++++++"
-                  }
-                ]
-              }, {
-                "pos": 1275,
-                "data": "AAAACGCATCACTTTATCTTCGATCGATGGACAGTAACGCGGGCCGATCCCTTCGATGATCCCGGCATACATAGG",
-                "hits": [
-                  {
-                    "pos": 1320,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 1.9e-05,
-                    "match": "++++ ++++"
                   }
                 ]
               }, {
                 "pos": 1350,
-                "data": "GCTGCGATCAAGGTTAGCTCGGATCACATCATGGGTGCGCTCATTGGTGTGCGTTATGTAACACGGAATTTGGCG",
+                "data": "GCGTACATGGGCGTGTTGATCGACGATCTTTCGACCATGGGCACTAAAGAACCTTACCGTATGTTCACTTCGCGT",
                 "hits": [
                   {
-                    "pos": 1371,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
+                    "pos": 1412,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 3.7e-05,
+                    "match": "+ +++++++"
                   }
                 ]
               }, {
-                "pos": 1650,
-                "data": "CTTACCGCCAAGGAAAGTCCCGACGGTTAACACTACCGCTTTGGCATGAAATTTCAGGCCCATCTGAGTCACAAC",
+                "pos": 1425,
+                "data": "GCGGAATATCGTCTGCTGCTGCGTGAAGACAACGCTGATCTGCGTTTGACCGAAAAAGCGCGTGAGCTTGGCCTTGTGGATGATGCGCGTTGGGCACGTTTCAACCAAAAAATCGACAACATGGCCAAAGAGCGTCAACGCTTACAAGAA",
                 "hits": [
                   {
-                    "pos": 1712,
-                    "idx": 2,
+                    "pos": 1499,
+                    "idx": 0,
                     "rc": true,
-                    "pvalue": 4.0e-06,
+                    "pvalue": 1.6e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 1725,
-                "data": "ACCACGAATATGATCATGCTCGACGATCACATCATCTACCGCTTGTTGGAACAGGGTGAGATTCGGGGTGTTTTC",
+                "data": "TTGGAAGATGCAGAAGCCGCCGAACAGGTAGAGATTCAAGTTAAATACGATGGCTACATTCAGCGCCAGCAAGAT",
                 "hits": [
                   {
-                    "pos": 1749,
-                    "idx": 0,
+                    "pos": 1737,
+                    "idx": 2,
                     "rc": true,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
+                    "pvalue": 4.9e-06,
+                    "match": "++++++++ "
                   }
                 ]
               }
@@ -577,72 +629,144 @@
           }, {
             "db": 0,
             "name": "NZ_CP010812.1",
-            "comment": "Vibrio cholerae strain 10432-62, oric at 4042220 +- 1000",
+            "comment": "Vibrio cholerae strain 10432-62, 2000 bases around gc minimum at 4042300",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 7.73e-03,
-                "evalue": 0.077
+                "combined_pvalue": 2.56e-04,
+                "evalue": 0.0026
               }
             ],
             "segs": [
               {
-                "pos": 825,
-                "data": "CAGACGATATTCCGCGCGCGAAGTGAACATACGGTAAGGCTCTTTAGTGCCCATGGTCGAAAGATCGTCGATCAA",
+                "pos": 0,
+                "data": "ACCAACATTTCCATTGGATCCCGCACAGAAGTGAGGTTATAAGCTTTGTTCCATTTGTCGAGCAGCTGCACATAC",
                 "hits": [
                   {
-                    "pos": 844,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 2.7e-05,
-                    "match": "+++++++ +"
+                    "pos": 27,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 8.1e-05,
+                    "match": "+++++++  "
                   }
                 ]
               }, {
-                "pos": 975,
-                "data": "CGCCATCAAGCCTTGCGCAGCGGCTTCTTCGTAACCAGTAGTGCCGTTGATTTGTCCTGCAAAGAACAAACCATG",
+                "pos": 375,
+                "data": "TTTCAATTTCATCTTGCTGGCGTTGAATGTAGCCATCGTATTTAACTTGAATCTCTACCTGTTCGGCGGCTTCAG",
                 "hits": [
                   {
-                    "pos": 1027,
-                    "idx": 1,
+                    "pos": 439,
+                    "idx": 2,
                     "rc": false,
-                    "pvalue": 7.3e-06,
+                    "pvalue": 4.9e-06,
+                    "match": " ++++++++"
+                  }
+                ]
+              }, {
+                "pos": 675,
+                "data": "CATCATCCACAAGGCCAAGCTCACGCGCTTTTTCGGTCAAACGCAGATCAGCGTTGTCTTCACGCAGCAGCAGAC",
+                "hits": [
+                  {
+                    "pos": 677,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 1.6e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 1275,
-                "data": "AAAACGCATCACTTTATCTTCGATCGATGGACAGTAACGCGGGCCGATCCCTTCGATGATCCCGGCATACATAGG",
+                "pos": 750,
+                "data": "GATATTCCGCGCGCGAAGTGAACATACGGTAAGGCTCTTTAGTGCCCATGGTCGAAAGATCGTCGATCAACACGC",
                 "hits": [
                   {
-                    "pos": 1320,
-                    "idx": 0,
+                    "pos": 764,
+                    "idx": 1,
                     "rc": true,
-                    "pvalue": 1.9e-05,
+                    "pvalue": 3.7e-05,
+                    "match": "+++++++ +"
+                  }
+                ]
+              }, {
+                "pos": 900,
+                "data": "TCAAGCCTTGCGCAGCGGCTTCTTCGTAACCAGTAGTGCCGTTGATTTGTCCTGCAAAGAACAAACCATGGATAA",
+                "hits": [
+                  {
+                    "pos": 913,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 2.7e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1200,
+                "data": "GCATCACTTTATCTTCGATCGATGGACAGTAACGCGGGCCGATCCCTTCGATGATCCCGGCATACATAGGGCTGC",
+                "hits": [
+                  {
+                    "pos": 1240,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 1.5e-05,
                     "match": "++++ ++++"
                   }
                 ]
               }, {
-                "pos": 1350,
-                "data": "GCTGCGATCAAGGTTAGCGCGGATCACATCATGGGTGCGCTCATTGGTGTGCGTGATGTAACACGGAATTTGGCG",
+                "pos": 1275,
+                "data": "GATCAAGGTTAGCGCGGATCACATCATGGGTGCGCTCATTGGTGTGCGTGATGTAACACGGAATTTGGCGTGGAT",
                 "hits": [
                   {
-                    "pos": 1371,
+                    "pos": 1291,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 1317,
                     "idx": 0,
                     "rc": true,
+                    "pvalue": 2.3e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1650,
+                "data": "GAATATGATCATGCTCGACGATCACATCATCTACCGCTTGTTGGAACAGGGTGAGATTCGGGGTGTTTTCTAACA",
+                "hits": [
+                  {
+                    "pos": 1669,
+                    "idx": 1,
+                    "rc": false,
                     "pvalue": 4.0e-06,
                     "match": "+++++++++"
                   }
                 ]
               }, {
                 "pos": 1725,
-                "data": "ACCACGAATATGATCATGCTCGACGATCACATCATCTACCGCTTGTTGGAACAGGGTGAGATTCGGGGTGTTTTC",
+                "data": "CATTACGCACATAGGCTTTGTACAGAGCACGATCGGCTTGTGCACGAGTTGCACGCACGGCTGGCCCTTTTGAAG",
                 "hits": [
                   {
-                    "pos": 1749,
+                    "pos": 1727,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 2.0e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1875,
+                "data": "TGACTAAATGACCTTTACCTATCCCACCAATGGCAGGGTTACAGGACATTTGGCCTAGGGTGTCAATATTGTGGGTAAGAAGTAACGTACGCTGTCCTGTACGTGCTGCAGCGAGAGCGGCTTCC",
+                "hits": [
+                  {
+                    "pos": 1944,
                     "idx": 0,
                     "rc": true,
                     "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 1990,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 2.7e-06,
                     "match": "+++++++++"
                   }
                 ]
@@ -651,60 +775,260 @@
           }, {
             "db": 0,
             "name": "NC_012668.1",
-            "comment": "Vibrio cholerae MJ-1236 chromosome 1, oric at 508620 +- 1000",
+            "comment": "Vibrio cholerae MJ-1236 chromosome 1, 2000 bases around gc minimum at 508900",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 1.71e-02,
-                "evalue": 0.17
+                "combined_pvalue": 8.19e-04,
+                "evalue": 0.0082
               }
             ],
             "segs": [
               {
-                "pos": 1275,
-                "data": "AGCGTTGTCTTCACGCAGCAGCAGACGATATTCCGCACGCGAAGTGAACATACGGTAAGGTTCTTTAGTGCCCAT",
+                "pos": 150,
+                "data": "CTCTTTATCTGGGTGCATGATCGCAAGCGGAATACCAGGCAATCCAGGCCCAGAACCCACATCAATAAAGCGCTCACCGACAAGATGCGGACTGACCACCAAACTATCAAGAATGTGTTTCACCAACATTTCCATCGGATCCCGCACGGAAGTGAGGTTATAAGCTTTGTTCCATTTGTCGAGCAGCTGCACATACCCAACGAGCTGCTCACGTTGCTGCTCTGT",
                 "hits": [
                   {
-                    "pos": 1315,
+                    "pos": 223,
                     "idx": 0,
                     "rc": false,
-                    "pvalue": 2.7e-05,
-                    "match": "+++++++ +"
+                    "pvalue": 4.8e-05,
+                    "match": "+++++ +++"
+                  }, {
+                    "pos": 298,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 8.1e-05,
+                    "match": "+++++++  "
                   }
                 ]
               }, {
-                "pos": 1425,
-                "data": "GTACAAGCTGGCGTTCAGACCCGCCATCAAGCCTTGCGCAGCGGCTTCTTCGTAACCTGTAGTACCGTTGATTTGTCCTGCAAAGAACAAACCATGGATATATTTGGTTTCATACGTTTGCTTCAAATCACGTGGATCGAAGAAGTCGTA",
+                "pos": 675,
+                "data": "TAGCCATCGTATTTAACTTGAATCTCTACCTGTTCGGCGGCTTCTGCATCTTCCAAAGCAGGGGCAAAAGCCGGC",
                 "hits": [
                   {
-                    "pos": 1498,
-                    "idx": 1,
+                    "pos": 710,
+                    "idx": 2,
                     "rc": false,
-                    "pvalue": 7.3e-06,
+                    "pvalue": 4.9e-06,
+                    "match": " ++++++++"
+                  }
+                ]
+              }, {
+                "pos": 900,
+                "data": "TCTTTGGCCATGTTGTCGATTTTTTGGTTGAAACGTGCCCAACGCGCATCATCCACAAGGCCAAGCTCACGCGCT",
+                "hits": [
+                  {
+                    "pos": 948,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 1.6e-05,
                     "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 1725,
-                "data": "TTGGTGACTGTCTTTATCGGCAAAACGCATCACTTTATCTTCGATCGATGGACAGTAACGCGGGCCGATCCCTTC",
+                "pos": 975,
+                "data": "TTTTCGGTCAAACGCAGATCAGCGTTGTCTTCACGCAGCAGCAGACGATATTCCGCACGCGAAGTGAACATACGG",
                 "hits": [
                   {
-                    "pos": 1791,
-                    "idx": 0,
+                    "pos": 1035,
+                    "idx": 1,
                     "rc": true,
-                    "pvalue": 1.9e-05,
-                    "match": "++++ ++++"
+                    "pvalue": 3.7e-05,
+                    "match": "+++++++ +"
                   }
                 ]
               }, {
-                "pos": 1800,
-                "data": "GATGATCCCGGCATACATAGGGCTGCGATCAAGGTTAGCGCGGATCACATCATGGGTGCGCTCATTGGTGTGCGT",
+                "pos": 1125,
+                "data": "CAGCCTTCTTTGTCTTGGCTGTACAAGCTGGCGTTCAGACCCGCCATCAAGCCTTGCGCAGCGGCTTCTTCGTAA",
                 "hits": [
                   {
-                    "pos": 1842,
+                    "pos": 1184,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 2.7e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1500,
+                "data": "TAACGCGGGCCGATCCCTTCGATGATCCCGGCATACATAGGGCTGCGATCAAGGTTAGCGCGGATCACATCATGG",
+                "hits": [
+                  {
+                    "pos": 1511,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 1.5e-05,
+                    "match": "++++ ++++"
+                  }, {
+                    "pos": 1562,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1575,
+                "data": "GTGCGCTCATTGGTGTGCGTGATGTAACACGGAATTTGGCGTGGATGGTGCTCACGCTTGCCCATGAAGGAAAAA",
+                "hits": [
+                  {
+                    "pos": 1588,
                     "idx": 0,
                     "rc": true,
+                    "pvalue": 2.3e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1875,
+                "data": "ACCGCTTTGGCATGAAATTTCAGGCCCATCTGAGTCACAACACCACGAATATGATCATGCTCGACGATCACATCA",
+                "hits": [
+                  {
+                    "pos": 1940,
+                    "idx": 1,
+                    "rc": false,
                     "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }
+            ]
+          }, {
+            "db": 0,
+            "name": "NZ_CP010811.1",
+            "comment": "Vibrio cholerae strain 1154-74, 2000 bases around gc minimum at 3919700",
+            "length": 2000,
+            "score": [
+              {
+                "combined_pvalue": 8.19e-04,
+                "evalue": 0.0082
+              }
+            ],
+            "segs": [
+              {
+                "pos": 0,
+                "data": "CAGCACAAACTCTTTATCTGGGTGCATGATCGCAAGCGGGATCCCTGGCAATCCAGGCCCAGTACCCACATCAAT",
+                "hits": [
+                  {
+                    "pos": 61,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 5.7e-05,
+                    "match": " ++++++++"
+                  }
+                ]
+              }, {
+                "pos": 75,
+                "data": "AAAGCGCTCACCGACAAGATGCGGACTGACCACCAAACTATCGAGAATATGTTTCACCAACATTTCCATCGGATC",
+                "hits": [
+                  {
+                    "pos": 82,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 4.8e-05,
+                    "match": "+++++ +++"
+                  }
+                ]
+              }, {
+                "pos": 150,
+                "data": "GCGCACAGAAGTGAGGTTATAAGCTTTGTTCCATTTGTCGAGCAGCTGCACATACCCAACGAGCTGCTCACGTTG",
+                "hits": [
+                  {
+                    "pos": 157,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 8.1e-05,
+                    "match": "+++++++  "
+                  }
+                ]
+              }, {
+                "pos": 525,
+                "data": "CGCTGAATGTAGCCATCGTATTTAACTTGAATCTCTACCTGTTCGGCGGCTTCTGCATCTTCCAAAGCAGGGGCA",
+                "hits": [
+                  {
+                    "pos": 569,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 4.9e-06,
+                    "match": " ++++++++"
+                  }
+                ]
+              }, {
+                "pos": 750,
+                "data": "CGTTGACGCTCTTTGGCCATGTTGTCGATTTTTTGGTTGAAACGCGCCCAACGCGCATCATCCACAAGGCCAAGC",
+                "hits": [
+                  {
+                    "pos": 807,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 1.6e-05,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 825,
+                "data": "TCACGCGCTTTTTCGGTCAAACGCAGATCAGCGTTGTCTTCACGCAGCAGCAGACGATATTCCGCGCGCGAAGTGAACATACGGTAAGGCTCTTTAGTGCCCATGGTCGAAAGATCGTCGATCAACACGCCCATGTACGCCTGATCGCGA",
+                "hits": [
+                  {
+                    "pos": 894,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 3.7e-05,
+                    "match": "+++++++ +"
+                  }
+                ]
+              }, {
+                "pos": 975,
+                "data": "CGTGGACTCCAGCCTTCTTTGTCTTGGCTGTACAAGCTGGCGTTCAGACCCGCCATCAAGCCTTGCGCAGCGGCTTCTTCGTAACCAGTAGTGCCGTTGATTTGTCCTGCAAAGAACAAACCATGGATAAATTTGGTTTCATACGTTTGC",
+                "hits": [
+                  {
+                    "pos": 1043,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 2.7e-06,
+                    "match": "+++++++++"
+                  }
+                ]
+              }, {
+                "pos": 1350,
+                "data": "GATGGACAGTAACGCGGGCCGATCCCTTCGATGATCCCGGCATACATAGGGCTGCGATCAAGGTTAGCTCGGATCACATCATGGGTGCGCTCATTGGTGTGCGTTATGTAACACGGAATTTGGCGTGGATGGTGCTCACGCTTGCCCATG",
+                "hits": [
+                  {
+                    "pos": 1370,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 1.5e-05,
+                    "match": "++++ ++++"
+                  }, {
+                    "pos": 1421,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 1447,
+                    "idx": 0,
+                    "rc": true,
+                    "pvalue": 7.2e-05,
+                    "match": "+++++++ +"
+                  }
+                ]
+              }, {
+                "pos": 1725,
+                "data": "GTTAACACTACCGCTTTGGCATGAAATTTCAGGCCCATCTGAGTCACAACACCACGAATATGATCATGCTCGACGATCACATCATCTACCGCTTGTTGGAACAGGGTGAGATTCGGGGTGTTTTCTAACACATTACGCACATAGGCTTTG",
+                "hits": [
+                  {
+                    "pos": 1799,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
+                  }, {
+                    "pos": 1857,
+                    "idx": 0,
+                    "rc": false,
+                    "pvalue": 2.0e-05,
                     "match": "+++++++++"
                   }
                 ]
@@ -713,37 +1037,37 @@
           }, {
             "db": 0,
             "name": "NC_012667.1",
-            "comment": "Vibrio cholerae MJ-1236 chromosome 2, oric at 269990 +- 1000",
+            "comment": "Vibrio cholerae MJ-1236 chromosome 2, 2000 bases around gc minimum at 269900",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 6.24e-02,
-                "evalue": 0.62
+                "combined_pvalue": 1.55e-02,
+                "evalue": 0.16
               }
             ],
             "segs": [
               {
-                "pos": 1200,
-                "data": "TCGGGATAGAAAGCACTGAGTCAGGATTTTGCCAAATCGTAGGCAAAAAAAGAGCGAGCTATTTAAACTCGCTTA",
+                "pos": 1650,
+                "data": "GCTGTTGTAGAGCTCAAGCAGCTTGCTCAATGTCGGGTATTGGATCACATCGTTTTCAACACGCAGCCAATCTAG",
                 "hits": [
                   {
-                    "pos": 1214,
-                    "idx": 2,
-                    "rc": true,
-                    "pvalue": 5.7e-05,
-                    "match": " ++++++++"
+                    "pos": 1692,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 4.0e-06,
+                    "match": "+++++++++"
                   }
                 ]
               }, {
-                "pos": 1575,
-                "data": "AAGCAGCTTGCTCAATGTCGGGTATTGGATCACATCGTTTTCAACACGCAGCCAATCTAGCTTGTCTATGAGCTC",
+                "pos": 1875,
+                "data": "ATGTTTACGTAGCTTCACGCGCCGACCTAAGCGGCCTCTCGGCGAAGGGGCTTTGCGCTGGATTGGTTCAAATTC",
                 "hits": [
                   {
-                    "pos": 1602,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
+                    "pos": 1904,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 9.8e-06,
+                    "match": "++++++ ++"
                   }
                 ]
               }
@@ -751,37 +1075,49 @@
           }, {
             "db": 0,
             "name": "NC_016446.1",
-            "comment": "Vibrio cholerae O1 str. 2010EL-1786 chromosome 2, oric at 771830 +- 1000",
+            "comment": "Vibrio cholerae O1 str. 2010EL-1786 chromosome 2, 2000 bases around gc minimum at 772100",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 9.62e-02,
-                "evalue": 0.96
+                "combined_pvalue": 1.86e-02,
+                "evalue": 0.19
               }
             ],
             "segs": [
               {
-                "pos": 300,
-                "data": "CTCTTTGCCCGCCAAGATACAAGACATGCGACGACGGCTACCATCAAGCACTTCGATTTTGCCATCTGCGGTTTT",
+                "pos": 1350,
+                "data": "GCACGCCAGCGGCATCCATCAACATATGCGCTTCGGAAAGAGAGATAGAGTAGTGATTCGCGTTATTTTTGGTAA",
                 "hits": [
                   {
-                    "pos": 317,
-                    "idx": 1,
-                    "rc": true,
-                    "pvalue": 1.6e-05,
-                    "match": "++++ ++++"
+                    "pos": 1357,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 7.6e-06,
+                    "match": "++++++ ++"
                   }
                 ]
               }, {
-                "pos": 600,
-                "data": "TTCTGCAGGCGTCGTTGCACGGCGCTTATCCGCCTTTCCAAACAGCTTTGCGTTCAGTTCAGAAGTTTTAATTGC",
+                "pos": 1725,
+                "data": "CACACATATTGGAGTATTAACAGAAAATTGATACCAAACGAACAAAGTTAAGTATAAAAACCGCGTTTAAATAACCCACATATTCTTCGATAAGGAGAAAACATTTTAAATATTACAGTGTCACTTATTTACAATGTAAAGCCACGTTTT",
                 "hits": [
                   {
-                    "pos": 651,
+                    "pos": 1796,
                     "idx": 0,
+                    "rc": false,
+                    "pvalue": 3.6e-05,
+                    "match": "+ +++++++"
+                  }
+                ]
+              }, {
+                "pos": 1875,
+                "data": "GAAGTGATGATGAATAAATAAAAGCGAGCCGTAAGCGGAACGATTAAACCGAGCCACTAAGTTACGGTGAATGCC",
+                "hits": [
+                  {
+                    "pos": 1875,
+                    "idx": 1,
                     "rc": true,
-                    "pvalue": 5.8e-05,
-                    "match": "+ +++ +++"
+                    "pvalue": 3.3e-05,
+                    "match": "++++++++ "
                   }
                 ]
               }
@@ -789,37 +1125,73 @@
           }, {
             "db": 0,
             "name": "NC_012580.1",
-            "comment": "Vibrio cholerae M66-2 chromosome II, oric at 1930 +- 1000",
+            "comment": "Vibrio cholerae M66-2 chromosome II, 2000 bases around gc minimum at 1900",
             "length": 2000,
             "score": [
               {
-                "combined_pvalue": 1.85e-01,
-                "evalue": 1.8
+                "combined_pvalue": 3.21e-02,
+                "evalue": 0.32
               }
             ],
             "segs": [
               {
-                "pos": 1425,
-                "data": "ACATCGAATGGCGACGGTTTTCTATGGATCTGATCCGCGAACTTCGTCGTCTCTCCGAAGGGAAGGGGAGTGAAG",
+                "pos": 300,
+                "data": "TCTCTGAAGCCGCGATTGACTGGATTGAACAGTATCAACACTTTAAAGGTGTCACGAAAAGCATTGTTGAACTTT",
                 "hits": [
                   {
-                    "pos": 1451,
+                    "pos": 305,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 1.5e-05,
+                    "match": "++++++++ "
+                  }
+                ]
+              }, {
+                "pos": 900,
+                "data": "TCGACGATCTGATGACTTTGTTTGCCTTATTCACTTTAACAGTGCAATACCATGATCATCACCAAGATGATTACC",
+                "hits": [
+                  {
+                    "pos": 905,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 9.2e-05,
+                    "match": "+++ ++++ "
+                  }
+                ]
+              }, {
+                "pos": 975,
+                "data": "ATTTCAATGCTAAACAAGCACCAAACAAAACGCCGCTGTATATCACCGACATTCTCTCTTTACGTGGCAAAAAAG",
+                "hits": [
+                  {
+                    "pos": 1017,
                     "idx": 0,
                     "rc": false,
-                    "pvalue": 2.3e-05,
+                    "pvalue": 4.8e-05,
+                    "match": "+++++ +++"
+                  }
+                ]
+              }, {
+                "pos": 1425,
+                "data": "TGAGTGAACTCAACCAAAAATTGGCCAGAAACATCGAATGGCGACGGTTTTCTATGGATCTGATCCGCGAACTTC",
+                "hits": [
+                  {
+                    "pos": 1481,
+                    "idx": 1,
+                    "rc": true,
+                    "pvalue": 4.1e-05,
                     "match": "+++ +++++"
                   }
                 ]
               }, {
-                "pos": 1950,
-                "data": "AGCTCATAGACAAGCTAGATTGGCTGCGTGTTGAAAACGATGTGATCCAA",
+                "pos": 1800,
+                "data": "CGCCGAGAGGCCGCTTAGGTCGGCGCGTGAAGCTACGTAAACATCTTGTCGAAATCAATGCTGATGAAATCACCA",
                 "hits": [
                   {
-                    "pos": 1988,
-                    "idx": 0,
-                    "rc": false,
-                    "pvalue": 4.0e-06,
-                    "match": "+++++++++"
+                    "pos": 1806,
+                    "idx": 2,
+                    "rc": true,
+                    "pvalue": 9.8e-06,
+                    "match": "++ ++++++"
                   }
                 ]
               }
@@ -827,37 +1199,37 @@
           }, {
             "db": 0,
             "name": "NC_009456.1",
-            "comment": "Vibrio cholerae O395 chromosome 1, oric at 1108350 +- 1000",
+            "comment": "Vibrio cholerae O395 chromosome 1, 2000 bases around gc minimum at 1108200",
             "length": 1999,
             "score": [
               {
-                "combined_pvalue": 2.89e-01,
-                "evalue": 2.9
+                "combined_pvalue": 2.29e-01,
+                "evalue": 2.3
               }
             ],
             "segs": [
               {
-                "pos": 450,
-                "data": "GACTACCAATACAAAACTCGTGAAAGCAATCGCGACTAAGTCGATCAAACCTGTCTCAGATGGCAAAGGATTGCC",
-                "hits": [
-                  {
-                    "pos": 501,
-                    "idx": 2,
-                    "rc": false,
-                    "pvalue": 5.7e-05,
-                    "match": "++ ++++++"
-                  }
-                ]
-              }, {
-                "pos": 825,
+                "pos": 975,
                 "data": "CGCCATTTCTTTACTGCGGTGATGCTCACATCTGTACTGTGAGTTCCGATAGTAGAGGTTTATACCATCGCAAAA",
                 "hits": [
                   {
-                    "pos": 848,
-                    "idx": 0,
-                    "rc": true,
-                    "pvalue": 4.4e-05,
+                    "pos": 998,
+                    "idx": 1,
+                    "rc": false,
+                    "pvalue": 2.2e-05,
                     "match": "+ +++++++"
+                  }
+                ]
+              }, {
+                "pos": 1050,
+                "data": "CAATGAGGTCACTATGTTCGAGCTCTTCAAACCGGCTGCGCATACGCAGCGGCTGCCATCCGATAAGGTGGACAG",
+                "hits": [
+                  {
+                    "pos": 1097,
+                    "idx": 2,
+                    "rc": false,
+                    "pvalue": 6.2e-05,
+                    "match": "+++++++ +"
                   }
                 ]
               }
@@ -866,7 +1238,7 @@
         ],
         "runtime": {
           "host": "PC0028",
-          "when": "Fri Jan  3 19:44:00 2020",
+          "when": "Mon Jan  6 00:53:07 2020",
           "cycles": 31250,
           "seconds": 0.031
         }

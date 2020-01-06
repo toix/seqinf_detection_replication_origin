@@ -13,9 +13,9 @@
         "cmd": [
           "meme", "data/families/enterobacteriaceae/skew_regions.fasta",
           "-dna", "-oc", "data/families/enterobacteriaceae/meme", "-nostatus",
-          "-time", "30000", "-mod", "anr", "-nmotifs", "3", "-minw", "9",
-          "-maxw", "9", "-objfun", "classic", "-revcomp", "-markov_order",
-          "4"
+          "-mod", "anr", "-nmotifs", "3", "-minw", "9", "-maxw", "9",
+          "-objfun", "classic", "-revcomp", "-markov_order", "4", "-cons",
+          "TTATCCACA"
         ],
         "options": {
           "mod": "anr",
@@ -42,7 +42,7 @@
           "wg": 11,
           "ws": 1,
           "noendgaps": false,
-          "substring": true,
+          "substring": false,
           "seed": 0,
           "brief": 1000
         },
@@ -123,7 +123,7 @@
         "background": {
           "source": "--sequences--",
           "order": 4,
-          "freqs": [0.239, 0.261, 0.261, 0.239]
+          "freqs": [0.236, 0.264, 0.264, 0.236]
         },
         "sequence_db": {
           "primary_source": "data/families/enterobacteriaceae/skew_regions.fasta",
@@ -132,7 +132,7 @@
           "control_source": "--none--",
           "control_count": 0,
           "control_positions": 0,
-          "freqs": [0.239, 0.261, 0.261, 0.239],
+          "freqs": [0.236, 0.264, 0.264, 0.236],
           "sequences": [
             {
               "name": "NC_000913.3",
@@ -188,759 +188,623 @@
         "motifs": [
           {
             "db": 0,
-            "id": "TBTGGATAA",
+            "id": "TTATCCAVA",
             "alt": "MEME-1",
             "len": 9,
-            "nsites": 57,
-            "evalue": "1.1e-028",
-            "ic": 13.7,
-            "re": 14.0,
+            "nsites": 56,
+            "evalue": "3.2e-031",
+            "ic": 13.9,
+            "re": 14.2,
             "llr": 551,
-            "bt": 9.94645,
-            "time": 17.625000,
+            "bt": 10.696,
+            "time": 1.531250,
             "psm": [
-              [-1248, -1248, -1248, 206], [-1248, 27, 63, 23], 
-              [-1248, -31, -1248, 172], [-1248, -1248, 183, -177], 
-              [-1248, -231, 166, -96], [188, -1248, -109, -1248], 
-              [-1248, -289, -1248, 201], [206, -1248, -1248, -1248], 
-              [206, -1248, -1248, -1248]
+              [-1245, -1245, -1245, 208], [-1245, -1245, -1245, 208], 
+              [192, -1245, -1245, -114], [-1245, -108, -1245, 189], 
+              [-72, 167, -1245, -372], [-1245, 192, -1245, -1245], 
+              [167, -1245, -8, -1245], [45, 76, -19, -1245], 
+              [208, -1245, -1245, -1245]
             ],
             "pwm": [
               [0.000000, 0.000000, 0.000000, 1.000000], 
-              [0.000000, 0.315789, 0.403509, 0.280702], 
-              [0.000000, 0.210526, 0.000000, 0.789474], 
-              [0.000000, 0.000000, 0.929825, 0.070175], 
-              [0.000000, 0.052632, 0.824561, 0.122807], 
-              [0.877193, 0.000000, 0.122807, 0.000000], 
-              [0.000000, 0.035088, 0.000000, 0.964912], 
-              [1.000000, 0.000000, 0.000000, 0.000000], 
+              [0.000000, 0.000000, 0.000000, 1.000000], 
+              [0.892857, 0.000000, 0.000000, 0.107143], 
+              [0.000000, 0.125000, 0.000000, 0.875000], 
+              [0.142857, 0.839286, 0.000000, 0.017857], 
+              [0.000000, 1.000000, 0.000000, 0.000000], 
+              [0.750000, 0.000000, 0.250000, 0.000000], 
+              [0.321429, 0.446429, 0.232143, 0.000000], 
               [1.000000, 0.000000, 0.000000, 0.000000]
             ],
             "sites": [
               {
                 "seq": 11,
-                "pos": 1224,
+                "pos": 1814,
+                "rc": true,
+                "pvalue": 3.18e-06,
+                "lflank": "TTTTCCCGAT",
+                "match": "TTATCCACA",
+                "rflank": "GGACTTTCCA"
+              }, {
+                "seq": 8,
+                "pos": 1459,
                 "rc": false,
-                "pvalue": 3.31e-06,
-                "lflank": "TGGAAAGTCC",
-                "match": "TGTGGATAA",
-                "rflank": "ATCGGGAAAA"
+                "pvalue": 3.18e-06,
+                "lflank": "AGGATCCGGG",
+                "match": "TTATCCACA",
+                "rflank": "GCCTGGTGCG"
+              }, {
+                "seq": 8,
+                "pos": 1279,
+                "rc": true,
+                "pvalue": 3.18e-06,
+                "lflank": "TTCACCATAT",
+                "match": "TTATCCACA",
+                "rflank": "ATAGATCGCA"
+              }, {
+                "seq": 7,
+                "pos": 1467,
+                "rc": false,
+                "pvalue": 3.18e-06,
+                "lflank": "CCTGACAGAG",
+                "match": "TTATCCACA",
+                "rflank": "GTAGATCGCA"
+              }, {
+                "seq": 7,
+                "pos": 1287,
+                "rc": true,
+                "pvalue": 3.18e-06,
+                "lflank": "CGGATCCTTG",
+                "match": "TTATCCACA",
+                "rflank": "GGGCAGCGCG"
+              }, {
+                "seq": 6,
+                "pos": 1550,
+                "rc": false,
+                "pvalue": 3.18e-06,
+                "lflank": "CCTGACAGAG",
+                "match": "TTATCCACA",
+                "rflank": "GTGGATCGCA"
+              }, {
+                "seq": 6,
+                "pos": 1370,
+                "rc": true,
+                "pvalue": 3.18e-06,
+                "lflank": "CGGATCCTTG",
+                "match": "TTATCCACA",
+                "rflank": "GGGCAGTGCG"
+              }, {
+                "seq": 3,
+                "pos": 1449,
+                "rc": false,
+                "pvalue": 3.18e-06,
+                "lflank": "CCTGACAGAG",
+                "match": "TTATCCACA",
+                "rflank": "GTAGATCGCA"
+              }, {
+                "seq": 3,
+                "pos": 1269,
+                "rc": true,
+                "pvalue": 3.18e-06,
+                "lflank": "CGGATCCTTG",
+                "match": "TTATCCACA",
+                "rflank": "GGGCAGTGCG"
+              }, {
+                "seq": 2,
+                "pos": 1447,
+                "rc": false,
+                "pvalue": 3.18e-06,
+                "lflank": "TCCACCAGAT",
+                "match": "TTATCCACA",
+                "rflank": "ATGGATCGCA"
+              }, {
+                "seq": 2,
+                "pos": 1267,
+                "rc": true,
+                "pvalue": 3.18e-06,
+                "lflank": "AGGATCCGGG",
+                "match": "TTATCCACA",
+                "rflank": "GCCTGGCGCG"
+              }, {
+                "seq": 0,
+                "pos": 1480,
+                "rc": false,
+                "pvalue": 3.18e-06,
+                "lflank": "CCTGACAGAG",
+                "match": "TTATCCACA",
+                "rflank": "GTAGATCGCA"
+              }, {
+                "seq": 0,
+                "pos": 1300,
+                "rc": true,
+                "pvalue": 3.18e-06,
+                "lflank": "CGGATCCTTG",
+                "match": "TTATCCACA",
+                "rflank": "GGGCAGTGCG"
+              }, {
+                "seq": 9,
+                "pos": 1120,
+                "rc": true,
+                "pvalue": 6.02e-06,
+                "lflank": "CAAACGAAAT",
+                "match": "TTATCCAAA",
+                "rflank": "CGGTATCTCC"
+              }, {
+                "seq": 8,
+                "pos": 1318,
+                "rc": false,
+                "pvalue": 6.02e-06,
+                "lflank": "CAACCGGTAG",
+                "match": "TTATCCAAA",
+                "rflank": "GAATAACCTT"
+              }, {
+                "seq": 7,
+                "pos": 1428,
+                "rc": true,
+                "pvalue": 6.02e-06,
+                "lflank": "CAAACGGTAG",
+                "match": "TTATCCAAA",
+                "rflank": "GAACAACGGT"
+              }, {
+                "seq": 6,
+                "pos": 1511,
+                "rc": true,
+                "pvalue": 6.02e-06,
+                "lflank": "CAACCGGTAG",
+                "match": "TTATCCAAA",
+                "rflank": "GAACAACGGT"
+              }, {
+                "seq": 3,
+                "pos": 1410,
+                "rc": true,
+                "pvalue": 6.02e-06,
+                "lflank": "CAACCGGTAG",
+                "match": "TTATCCAAA",
+                "rflank": "GAACAACCGT"
+              }, {
+                "seq": 2,
+                "pos": 1408,
+                "rc": true,
+                "pvalue": 6.02e-06,
+                "lflank": "CAACCGGTAG",
+                "match": "TTATCCAAA",
+                "rflank": "GAATAACCGT"
+              }, {
+                "seq": 0,
+                "pos": 1441,
+                "rc": true,
+                "pvalue": 6.02e-06,
+                "lflank": "CAACCGGTAG",
+                "match": "TTATCCAAA",
+                "rflank": "GAACAACTGT"
+              }, {
+                "seq": 7,
+                "pos": 614,
+                "rc": false,
+                "pvalue": 9.20e-06,
+                "lflank": "ACCGCTGTAA",
+                "match": "TTATCCAGA",
+                "rflank": "CCGATATGAA"
+              }, {
+                "seq": 6,
+                "pos": 697,
+                "rc": false,
+                "pvalue": 9.20e-06,
+                "lflank": "ACCGCTGTAG",
+                "match": "TTATCCAGA",
+                "rflank": "CCGATATGAA"
+              }, {
+                "seq": 5,
+                "pos": 652,
+                "rc": true,
+                "pvalue": 9.20e-06,
+                "lflank": "GCCGCTGTAA",
+                "match": "TTATCCAGA",
+                "rflank": "CCGATATGGA"
+              }, {
+                "seq": 3,
+                "pos": 596,
+                "rc": false,
+                "pvalue": 9.20e-06,
+                "lflank": "ACCGCTGTAG",
+                "match": "TTATCCAGA",
+                "rflank": "CCGATATGAA"
+              }, {
+                "seq": 2,
+                "pos": 594,
+                "rc": false,
+                "pvalue": 9.20e-06,
+                "lflank": "GCCGCTGTAG",
+                "match": "TTATCCAGA",
+                "rflank": "CCAATATGAA"
+              }, {
+                "seq": 0,
+                "pos": 627,
+                "rc": false,
+                "pvalue": 9.20e-06,
+                "lflank": "ACCGCTGTAA",
+                "match": "TTATCCAGA",
+                "rflank": "CCGATATGAA"
               }, {
                 "seq": 10,
+                "pos": 1071,
+                "rc": true,
+                "pvalue": 1.59e-05,
+                "lflank": "CAAACGAAAT",
+                "match": "TTATCCGAA",
+                "rflank": "CGGTATATCC"
+              }, {
+                "seq": 7,
+                "pos": 191,
+                "rc": true,
+                "pvalue": 1.59e-05,
+                "lflank": "CAAACGAAAT",
+                "match": "TTATCCGAA",
+                "rflank": "CGGTATCTCC"
+              }, {
+                "seq": 6,
+                "pos": 274,
+                "rc": true,
+                "pvalue": 1.59e-05,
+                "lflank": "CTAACGAAAT",
+                "match": "TTATCCGAA",
+                "rflank": "CGGTATCTCC"
+              }, {
+                "seq": 3,
+                "pos": 173,
+                "rc": true,
+                "pvalue": 1.59e-05,
+                "lflank": "CTAACGAAAT",
+                "match": "TTATCCGAA",
+                "rflank": "CGGTATCTCC"
+              }, {
+                "seq": 0,
+                "pos": 204,
+                "rc": true,
+                "pvalue": 1.59e-05,
+                "lflank": "CTAATGAAAT",
+                "match": "TTATCCGAA",
+                "rflank": "CGGTATCTCC"
+              }, {
+                "seq": 8,
+                "pos": 1353,
+                "rc": true,
+                "pvalue": 1.88e-05,
+                "lflank": "AAACGGGTAC",
+                "match": "TTATACACA",
+                "rflank": "ACTCAAAAAG"
+              }, {
+                "seq": 7,
+                "pos": 1393,
+                "rc": false,
+                "pvalue": 1.88e-05,
+                "lflank": "GAATGAGGGG",
+                "match": "TTATACACA",
+                "rflank": "ACTCAAAAAC"
+              }, {
+                "seq": 6,
                 "pos": 1476,
-                "rc": true,
-                "pvalue": 3.31e-06,
-                "lflank": "TCCGATCTTC",
-                "match": "TGTGGATAA",
-                "rflank": "CCATGCTTAA"
-              }, {
-                "seq": 10,
-                "pos": 1296,
                 "rc": false,
-                "pvalue": 3.31e-06,
-                "lflank": "CGACTCTCTT",
-                "match": "TGTGGATAA",
-                "rflank": "GTCGGATCCG"
-              }, {
-                "seq": 9,
-                "pos": 507,
-                "rc": true,
-                "pvalue": 3.31e-06,
-                "lflank": "CAGCTTCTTC",
-                "match": "TGTGGATAA",
-                "rflank": "CCCTGCTCAA"
-              }, {
-                "seq": 9,
-                "pos": 327,
-                "rc": false,
-                "pvalue": 3.31e-06,
-                "lflank": "CGACTCTCTT",
-                "match": "TGTGGATAA",
-                "rflank": "GTCGGATCCA"
-              }, {
-                "seq": 8,
-                "pos": 799,
-                "rc": true,
-                "pvalue": 3.31e-06,
-                "lflank": "CGCACCAGGC",
-                "match": "TGTGGATAA",
-                "rflank": "CCCGGATCCT"
-              }, {
-                "seq": 8,
-                "pos": 619,
-                "rc": false,
-                "pvalue": 3.31e-06,
-                "lflank": "TGCGATCTAT",
-                "match": "TGTGGATAA",
-                "rflank": "ATATGGTGAA"
-              }, {
-                "seq": 7,
-                "pos": 1387,
-                "rc": true,
-                "pvalue": 3.31e-06,
-                "lflank": "TGCGATCTAC",
-                "match": "TGTGGATAA",
-                "rflank": "CTCTGTCAGG"
-              }, {
-                "seq": 7,
-                "pos": 1207,
-                "rc": false,
-                "pvalue": 3.31e-06,
-                "lflank": "CGCGCTGCCC",
-                "match": "TGTGGATAA",
-                "rflank": "CAAGGATCCG"
+                "pvalue": 1.88e-05,
+                "lflank": "GAATGAGGGG",
+                "match": "TTATACACA",
+                "rflank": "ACTCAAAAAC"
               }, {
                 "seq": 3,
-                "pos": 1389,
-                "rc": true,
-                "pvalue": 3.31e-06,
-                "lflank": "TGCGATCTAC",
-                "match": "TGTGGATAA",
-                "rflank": "CTCTGTCAGG"
-              }, {
-                "seq": 3,
-                "pos": 1209,
+                "pos": 1375,
                 "rc": false,
-                "pvalue": 3.31e-06,
-                "lflank": "CGCACTGCCC",
-                "match": "TGTGGATAA",
-                "rflank": "CAAGGATCCG"
+                "pvalue": 1.88e-05,
+                "lflank": "GAATGAGGGG",
+                "match": "TTATACACA",
+                "rflank": "ACTCAAAAAC"
               }, {
                 "seq": 2,
-                "pos": 777,
-                "rc": true,
-                "pvalue": 3.31e-06,
-                "lflank": "TGCGATCCAT",
-                "match": "TGTGGATAA",
-                "rflank": "ATCTGGTGGA"
-              }, {
-                "seq": 2,
-                "pos": 597,
-                "rc": false,
-                "pvalue": 3.31e-06,
-                "lflank": "CGCGCCAGGC",
-                "match": "TGTGGATAA",
-                "rflank": "CCCGGATCCT"
-              }, {
-                "seq": 8,
-                "pos": 1472,
-                "rc": false,
-                "pvalue": 6.63e-06,
-                "lflank": "TTCATATTGG",
-                "match": "TCTGGATAA",
-                "rflank": "CTACAGCGGC"
-              }, {
-                "seq": 7,
-                "pos": 534,
-                "rc": true,
-                "pvalue": 6.63e-06,
-                "lflank": "TTCATATCGG",
-                "match": "TCTGGATAA",
-                "rflank": "TTACAGCGGT"
-              }, {
-                "seq": 6,
-                "pos": 1487,
-                "rc": true,
-                "pvalue": 6.63e-06,
-                "lflank": "TTCATATCGG",
-                "match": "TCTGGATAA",
-                "rflank": "CTACAGCGGT"
-              }, {
-                "seq": 5,
-                "pos": 552,
-                "rc": false,
-                "pvalue": 6.63e-06,
-                "lflank": "TCCATATCGG",
-                "match": "TCTGGATAA",
-                "rflank": "TTACAGCGGC"
-              }, {
-                "seq": 3,
-                "pos": 536,
-                "rc": true,
-                "pvalue": 6.63e-06,
-                "lflank": "TTCATATCGG",
-                "match": "TCTGGATAA",
-                "rflank": "CTACAGCGGT"
-              }, {
-                "seq": 0,
-                "pos": 1487,
-                "rc": true,
-                "pvalue": 6.63e-06,
-                "lflank": "TTCATATCGG",
-                "match": "TCTGGATAA",
-                "rflank": "TTACAGCGGT"
-              }, {
-                "seq": 10,
-                "pos": 1437,
-                "rc": false,
-                "pvalue": 9.66e-06,
-                "lflank": "ACGGTTATTC",
-                "match": "TTTGGATAA",
-                "rflank": "CTACCGGTTG"
-              }, {
-                "seq": 9,
-                "pos": 468,
-                "rc": false,
-                "pvalue": 9.66e-06,
-                "lflank": "CCGGTTATTC",
-                "match": "TTTGGATAA",
-                "rflank": "CTACCGGTTG"
-              }, {
-                "seq": 8,
-                "pos": 658,
-                "rc": true,
-                "pvalue": 9.66e-06,
-                "lflank": "AAGGTTATTC",
-                "match": "TTTGGATAA",
-                "rflank": "CTACCGGTTG"
-              }, {
-                "seq": 7,
-                "pos": 1348,
-                "rc": false,
-                "pvalue": 9.66e-06,
-                "lflank": "ACCGTTGTTC",
-                "match": "TTTGGATAA",
-                "rflank": "CTACCGTTTG"
-              }, {
-                "seq": 3,
-                "pos": 1350,
-                "rc": false,
-                "pvalue": 9.66e-06,
-                "lflank": "ACGGTTGTTC",
-                "match": "TTTGGATAA",
-                "rflank": "CTACCGGTTG"
-              }, {
-                "seq": 2,
-                "pos": 738,
-                "rc": false,
-                "pvalue": 9.66e-06,
-                "lflank": "ACGGTTATTC",
-                "match": "TTTGGATAA",
-                "rflank": "CTACCGGTTG"
-              }, {
-                "seq": 7,
-                "pos": 1026,
-                "rc": false,
-                "pvalue": 1.69e-05,
-                "lflank": "GTCAAAAGGA",
-                "match": "TCCGGATAA",
-                "rflank": "AACATGGTGA"
-              }, {
-                "seq": 6,
-                "pos": 1979,
-                "rc": false,
-                "pvalue": 1.69e-05,
-                "lflank": "GTCAAAAGGA",
-                "match": "TCCGGATAA",
-                "rflank": "AACATGGTGA"
-              }, {
-                "seq": 3,
-                "pos": 1028,
-                "rc": false,
-                "pvalue": 1.69e-05,
-                "lflank": "GTCAAAAGGA",
-                "match": "TCCGGATAA",
-                "rflank": "AACATGGTGA"
-              }, {
-                "seq": 0,
-                "pos": 1979,
-                "rc": false,
-                "pvalue": 1.69e-05,
-                "lflank": "GTCAAAAGGA",
-                "match": "TCCGGATAA",
-                "rflank": "AACATGGTGA"
-              }, {
-                "seq": 10,
-                "pos": 201,
-                "rc": false,
-                "pvalue": 2.02e-05,
-                "lflank": "GGATATACCG",
-                "match": "TTCGGATAA",
-                "rflank": "ATTTCGTTTG"
-              }, {
-                "seq": 7,
-                "pos": 111,
-                "rc": false,
-                "pvalue": 2.02e-05,
-                "lflank": "GGAGATACCG",
-                "match": "TTCGGATAA",
-                "rflank": "ATTTCGTTTG"
-              }, {
-                "seq": 6,
-                "pos": 1064,
-                "rc": false,
-                "pvalue": 2.02e-05,
-                "lflank": "GGAGATACCG",
-                "match": "TTCGGATAA",
-                "rflank": "ATTTCGTTAG"
-              }, {
-                "seq": 3,
-                "pos": 113,
-                "rc": false,
-                "pvalue": 2.02e-05,
-                "lflank": "GGAGATACCG",
-                "match": "TTCGGATAA",
-                "rflank": "ATTTCGTTAG"
-              }, {
-                "seq": 0,
-                "pos": 1064,
-                "rc": false,
-                "pvalue": 2.02e-05,
-                "lflank": "GGAGATACCG",
-                "match": "TTCGGATAA",
-                "rflank": "ATTTCATTAG"
-              }, {
-                "seq": 8,
-                "pos": 693,
-                "rc": false,
-                "pvalue": 2.32e-05,
-                "lflank": "CTTTTTGAGT",
-                "match": "TGTGTATAA",
-                "rflank": "GTACCCGTTT"
-              }, {
-                "seq": 7,
-                "pos": 1313,
-                "rc": true,
-                "pvalue": 2.32e-05,
-                "lflank": "GTTTTTGAGT",
-                "match": "TGTGTATAA",
-                "rflank": "CCCCTCATTC"
-              }, {
-                "seq": 3,
-                "pos": 1315,
-                "rc": true,
-                "pvalue": 2.32e-05,
-                "lflank": "GTTTTTGAGT",
-                "match": "TGTGTATAA",
-                "rflank": "CCCCTCATTC"
-              }, {
-                "seq": 2,
-                "pos": 703,
-                "rc": true,
-                "pvalue": 2.32e-05,
-                "lflank": "CTTTTTGAGT",
-                "match": "TGTGTATAA",
-                "rflank": "GTACCCGTTT"
-              }, {
-                "seq": 11,
-                "pos": 1965,
-                "rc": false,
-                "pvalue": 3.63e-05,
-                "lflank": "GCGGCACGGG",
-                "match": "TCTGGGTAA",
-                "rflank": "AACTCACCTG"
-              }, {
-                "seq": 5,
-                "pos": 470,
-                "rc": true,
-                "pvalue": 3.63e-05,
-                "lflank": "TTGAGCCCCA",
-                "match": "TCTGGGTAA",
-                "rflank": "CCGCGCCAAC"
-              }, {
-                "seq": 9,
-                "pos": 1164,
-                "rc": false,
-                "pvalue": 4.26e-05,
-                "lflank": "GTTTGGATCT",
-                "match": "TGTTGATAA",
-                "rflank": "GTACCTGCTG"
-              }, {
-                "seq": 7,
-                "pos": 616,
-                "rc": false,
-                "pvalue": 4.26e-05,
-                "lflank": "TTCAGTCCCA",
-                "match": "TTTGGGTAA",
-                "rflank": "CGGCACCGAC"
-              }, {
-                "seq": 6,
-                "pos": 1569,
-                "rc": false,
-                "pvalue": 4.26e-05,
-                "lflank": "TTCAGTCCCA",
-                "match": "TTTGGGTAA",
-                "rflank": "CGGCTCCGAC"
-              }, {
-                "seq": 4,
-                "pos": 1915,
-                "rc": true,
-                "pvalue": 4.26e-05,
-                "lflank": "CACGTAAATC",
-                "match": "TTTGGGTAA",
-                "rflank": "GTGGATCTCC"
-              }, {
-                "seq": 4,
-                "pos": 1799,
-                "rc": true,
-                "pvalue": 4.26e-05,
-                "lflank": "ATCCGTCACC",
-                "match": "TGTTGATAA",
-                "rflank": "GATGGCCCGA"
-              }, {
-                "seq": 3,
-                "pos": 618,
-                "rc": false,
-                "pvalue": 4.26e-05,
-                "lflank": "TTCAGTCCCA",
-                "match": "TTTGGGTAA",
-                "rflank": "CAGCACCGAC"
-              }, {
-                "seq": 2,
-                "pos": 1424,
-                "rc": false,
-                "pvalue": 4.26e-05,
-                "lflank": "GTTTGGATCT",
-                "match": "TGTTGATAA",
-                "rflank": "GTACGTGCTG"
-              }, {
-                "seq": 1,
-                "pos": 413,
-                "rc": false,
-                "pvalue": 4.26e-05,
-                "lflank": "TAACATTTAT",
-                "match": "TGTTGATAA",
-                "rflank": "TGAGAATCAT"
-              }, {
-                "seq": 0,
-                "pos": 1569,
-                "rc": false,
-                "pvalue": 4.26e-05,
-                "lflank": "TTCAGTCCCA",
-                "match": "TTTGGGTAA",
-                "rflank": "CAGCACCGAC"
-              }, {
-                "seq": 10,
-                "pos": 1402,
-                "rc": true,
-                "pvalue": 5.18e-05,
-                "lflank": "GTTTTTGAGC",
-                "match": "TGTGCATAA",
-                "rflank": "CCCTTCATTC"
-              }, {
-                "seq": 9,
-                "pos": 433,
-                "rc": true,
-                "pvalue": 5.18e-05,
-                "lflank": "CTTTTTGAGC",
-                "match": "TGTGCATAA",
-                "rflank": "CCCTTCATTC"
-              }, {
-                "seq": 2,
-                "pos": 1809,
-                "rc": true,
-                "pvalue": 5.51e-05,
-                "lflank": "TAATCATTAA",
-                "match": "TCTGCATAA",
-                "rflank": "GAAAAAGCGA"
-              }, {
-                "seq": 10,
                 "pos": 1373,
                 "rc": false,
-                "pvalue": 6.84e-05,
-                "lflank": "GTGATCCTGG",
-                "match": "TCCGTATAA",
-                "rflank": "GCTGGGATCA"
+                "pvalue": 1.88e-05,
+                "lflank": "AAACGGGTAC",
+                "match": "TTATACACA",
+                "rflank": "ACTCAAAAAG"
               }, {
-                "seq": 9,
-                "pos": 404,
+                "seq": 0,
+                "pos": 1406,
                 "rc": false,
-                "pvalue": 6.84e-05,
-                "lflank": "GTGATCCTGT",
-                "match": "TCCGTATAA",
-                "rflank": "GCTGGGATCA"
+                "pvalue": 1.88e-05,
+                "lflank": "GAATGAGGGG",
+                "match": "TTATACACA",
+                "rflank": "ACTCAAAAAC"
+              }, {
+                "seq": 7,
+                "pos": 1106,
+                "rc": true,
+                "pvalue": 2.49e-05,
+                "lflank": "TCACCATGTT",
+                "match": "TTATCCGGA",
+                "rflank": "TCCTTTTGAC"
+              }, {
+                "seq": 6,
+                "pos": 1189,
+                "rc": true,
+                "pvalue": 2.49e-05,
+                "lflank": "TCACCATGTT",
+                "match": "TTATCCGGA",
+                "rflank": "TCCTTTTGAC"
+              }, {
+                "seq": 3,
+                "pos": 1088,
+                "rc": true,
+                "pvalue": 2.49e-05,
+                "lflank": "TCACCATGTT",
+                "match": "TTATCCGGA",
+                "rflank": "TCCTTTTGAC"
+              }, {
+                "seq": 0,
+                "pos": 1119,
+                "rc": true,
+                "pvalue": 2.49e-05,
+                "lflank": "TCACCATGTT",
+                "match": "TTATCCGGA",
+                "rflank": "TCCTTTTGAC"
+              }, {
+                "seq": 8,
+                "pos": 745,
+                "rc": false,
+                "pvalue": 3.16e-05,
+                "lflank": "AATCCCACAT",
+                "match": "TTTTCCACA",
+                "rflank": "GGTAGATCCC"
+              }, {
+                "seq": 3,
+                "pos": 1983,
+                "rc": true,
+                "pvalue": 3.16e-05,
+                "lflank": "TCCCATAC",
+                "match": "TTTTCCACA",
+                "rflank": "GGTAGATCCC"
               }, {
                 "seq": 2,
-                "pos": 674,
+                "pos": 1981,
+                "rc": true,
+                "pvalue": 3.16e-05,
+                "lflank": "AATCCCACAT",
+                "match": "TTTTCCACA",
+                "rflank": "GGTAGATCCC"
+              }, {
+                "seq": 7,
+                "pos": 696,
+                "rc": true,
+                "pvalue": 4.05e-05,
+                "lflank": "GTCGGTGCCG",
+                "match": "TTACCCAAA",
+                "rflank": "TGGGACTGAA"
+              }, {
+                "seq": 6,
+                "pos": 779,
+                "rc": true,
+                "pvalue": 4.05e-05,
+                "lflank": "GTCGGAGCCG",
+                "match": "TTACCCAAA",
+                "rflank": "TGGGACTGAA"
+              }, {
+                "seq": 3,
+                "pos": 678,
+                "rc": true,
+                "pvalue": 4.05e-05,
+                "lflank": "GTCGGTGCTG",
+                "match": "TTACCCAAA",
+                "rflank": "TGGGACTGAA"
+              }, {
+                "seq": 0,
+                "pos": 709,
+                "rc": true,
+                "pvalue": 4.05e-05,
+                "lflank": "GTCGGTGCTG",
+                "match": "TTACCCAAA",
+                "rflank": "TGGGACTGAA"
+              }, {
+                "seq": 5,
+                "pos": 570,
                 "rc": false,
-                "pvalue": 6.84e-05,
-                "lflank": "GTGATCGTGG",
-                "match": "TCCGTATAA",
-                "rflank": "GCTGGGATCA"
+                "pvalue": 5.04e-05,
+                "lflank": "GTTGGCGCGG",
+                "match": "TTACCCAGA",
+                "rflank": "TGGGGCTCAA"
+              }, {
+                "seq": 11,
+                "pos": 1580,
+                "rc": false,
+                "pvalue": 6.08e-05,
+                "lflank": "TTTACCGCGC",
+                "match": "TTTTCCGCA",
+                "rflank": "CCTTTTCGCA"
               }, {
                 "seq": 10,
-                "pos": 624,
+                "pos": 807,
+                "rc": false,
+                "pvalue": 6.08e-05,
+                "lflank": "CCAGCCCTCT",
+                "match": "TTTTCCGCA",
+                "rflank": "GAGAAGCGGG"
+              }, {
+                "seq": 11,
+                "pos": 420,
                 "rc": true,
-                "pvalue": 7.90e-05,
-                "lflank": "TCCATATTGG",
-                "match": "TCTGGACAA",
-                "rflank": "CTACAGCGGC"
+                "pvalue": 7.07e-05,
+                "lflank": "TGCTGCCTGC",
+                "match": "TTACCCGAA",
+                "rflank": "AGAGCTGAAC"
+              }, {
+                "seq": 2,
+                "pos": 1344,
+                "rc": true,
+                "pvalue": 7.07e-05,
+                "lflank": "TGATCCCAGC",
+                "match": "TTATACGGA",
+                "rflank": "CCACGATCAC"
               }, {
                 "seq": 1,
-                "pos": 1766,
+                "pos": 1889,
+                "rc": false,
+                "pvalue": 7.95e-05,
+                "lflank": "GAGGCAAACA",
+                "match": "TTATTCACA",
+                "rflank": "GCAGATATGG"
+              }, {
+                "seq": 1,
+                "pos": 48,
                 "rc": true,
-                "pvalue": 7.90e-05,
-                "lflank": "TCCCCAAGCA",
-                "match": "TCTGGACAA",
-                "rflank": "GAATATTTTG"
+                "pvalue": 8.75e-05,
+                "lflank": "GATAAATTAA",
+                "match": "TTTTACAAA",
+                "rflank": "TAAACACAAT"
+              }, {
+                "seq": 1,
+                "pos": 1106,
+                "rc": true,
+                "pvalue": 9.50e-05,
+                "lflank": "TCCTCCTGCA",
+                "match": "TTACCCGGA",
+                "rflank": "AAGTCGGGAA"
               }
             ]
           }, {
             "db": 0,
-            "id": "KATTAAAAA",
+            "id": "TATTAAAAA",
             "alt": "MEME-2",
             "len": 9,
-            "nsites": 26,
-            "evalue": "3.8e-002",
-            "ic": 14.2,
-            "re": 14.7,
-            "llr": 265,
-            "bt": 11.4739,
-            "time": 32.500000,
+            "nsites": 10,
+            "evalue": "3.6e+002",
+            "ic": 16.6,
+            "re": 17.3,
+            "llr": 120,
+            "bt": 12.6966,
+            "time": 16.703125,
             "psm": [
-              [-163, -118, 4, 117], [206, -1134, -1134, -1134], 
-              [-1134, -276, -1134, 201], [-1134, -1134, 4, 161], 
-              [206, -1134, -1134, -1134], [201, -276, -1134, -1134], 
-              [206, -1134, -1134, -1134], [206, -1134, -1134, -1134], 
-              [161, -1134, -1134, 17]
+              [-997, -997, -140, 193], [208, -997, -997, -997], 
+              [-997, -140, -997, 193], [-997, -997, -997, 208], 
+              [208, -997, -997, -997], [208, -997, -997, -997], 
+              [208, -997, -997, -997], [208, -997, -997, -997], 
+              [193, -997, -997, -124]
             ],
             "pwm": [
-              [0.076923, 0.115385, 0.269231, 0.538462], 
+              [0.000000, 0.000000, 0.100000, 0.900000], 
               [1.000000, 0.000000, 0.000000, 0.000000], 
-              [0.000000, 0.038462, 0.000000, 0.961538], 
-              [0.000000, 0.000000, 0.269231, 0.730769], 
-              [1.000000, 0.000000, 0.000000, 0.000000], 
-              [0.961538, 0.038462, 0.000000, 0.000000], 
+              [0.000000, 0.100000, 0.000000, 0.900000], 
+              [0.000000, 0.000000, 0.000000, 1.000000], 
               [1.000000, 0.000000, 0.000000, 0.000000], 
               [1.000000, 0.000000, 0.000000, 0.000000], 
-              [0.730769, 0.000000, 0.000000, 0.269231]
+              [1.000000, 0.000000, 0.000000, 0.000000], 
+              [1.000000, 0.000000, 0.000000, 0.000000], 
+              [0.900000, 0.000000, 0.000000, 0.100000]
             ],
             "sites": [
               {
-                "seq": 10,
-                "pos": 1229,
-                "rc": false,
-                "pvalue": 2.54e-06,
-                "lflank": "GGATCCTGAG",
-                "match": "TATTAAAAA",
-                "rflank": "GAAGATCTTT"
-              }, {
-                "seq": 9,
-                "pos": 259,
-                "rc": false,
-                "pvalue": 2.54e-06,
-                "lflank": "GGATCCTGAG",
-                "match": "TATTAAAAA",
-                "rflank": "GAAGATCTTT"
-              }, {
                 "seq": 8,
-                "pos": 868,
+                "pos": 1528,
                 "rc": true,
-                "pvalue": 2.54e-06,
+                "pvalue": 2.27e-06,
                 "lflank": "GGATCCGGGC",
                 "match": "TATTAAAAA",
                 "rflank": "GAAGATCTTT"
               }, {
                 "seq": 7,
-                "pos": 1138,
+                "pos": 1218,
                 "rc": false,
-                "pvalue": 2.54e-06,
+                "pvalue": 2.27e-06,
                 "lflank": "GGATCCTGGG",
                 "match": "TATTAAAAA",
                 "rflank": "GAAGATCTAT"
               }, {
-                "seq": 3,
-                "pos": 1140,
+                "seq": 6,
+                "pos": 1301,
                 "rc": false,
-                "pvalue": 2.54e-06,
+                "pvalue": 2.27e-06,
+                "lflank": "GGATCCTGGG",
+                "match": "TATTAAAAA",
+                "rflank": "GAAGATCTAT"
+              }, {
+                "seq": 5,
+                "pos": 46,
+                "rc": true,
+                "pvalue": 2.27e-06,
+                "lflank": "GATCCTGGGC",
+                "match": "TATTAAAAA",
+                "rflank": "GAAGATCTTT"
+              }, {
+                "seq": 3,
+                "pos": 1200,
+                "rc": false,
+                "pvalue": 2.27e-06,
                 "lflank": "GGATCCTGGG",
                 "match": "TATTAAAAA",
                 "rflank": "GAAGATCTAT"
               }, {
                 "seq": 2,
-                "pos": 528,
+                "pos": 1198,
                 "rc": false,
-                "pvalue": 2.54e-06,
+                "pvalue": 2.27e-06,
                 "lflank": "GGATCCGGGC",
                 "match": "TATTAAAAA",
                 "rflank": "GAAGATCTTT"
               }, {
-                "seq": 9,
-                "pos": 1066,
+                "seq": 0,
+                "pos": 1231,
                 "rc": false,
-                "pvalue": 5.32e-06,
-                "lflank": "AAAAATGTGG",
-                "match": "GATTAAAAA",
-                "rflank": "AAACGATCAG"
-              }, {
-                "seq": 8,
-                "pos": 70,
-                "rc": true,
-                "pvalue": 5.32e-06,
-                "lflank": "AAAAATGTGG",
-                "match": "GATTAAAAA",
-                "rflank": "AGCCGATCAT"
-              }, {
-                "seq": 7,
-                "pos": 1936,
-                "rc": false,
-                "pvalue": 5.32e-06,
-                "lflank": "AAAAGTATGG",
-                "match": "GATTAAAAA",
-                "rflank": "AGCCGATCAG"
-              }, {
-                "seq": 3,
-                "pos": 1938,
-                "rc": false,
-                "pvalue": 5.32e-06,
-                "lflank": "AAAAGTATGG",
-                "match": "GATTAAAAA",
-                "rflank": "AGCCGATCAG"
-              }, {
-                "seq": 2,
-                "pos": 1326,
-                "rc": false,
-                "pvalue": 5.32e-06,
-                "lflank": "AAAAATGTGG",
-                "match": "GATTAAAAA",
-                "rflank": "AGCCGATCAT"
+                "pvalue": 2.27e-06,
+                "lflank": "GGATCCTGGG",
+                "match": "TATTAAAAA",
+                "rflank": "GAAGATCTAT"
               }, {
                 "seq": 11,
-                "pos": 166,
+                "pos": 756,
                 "rc": true,
-                "pvalue": 7.87e-06,
+                "pvalue": 4.54e-06,
                 "lflank": "GTGAAACGCG",
                 "match": "TATTAAAAT",
                 "rflank": "GCCACCCTTT"
               }, {
-                "seq": 6,
-                "pos": 427,
-                "rc": true,
-                "pvalue": 1.06e-05,
-                "lflank": "GGAAATGACT",
-                "match": "TATGAAAAA",
-                "rflank": "TTAACCACGC"
-              }, {
-                "seq": 0,
-                "pos": 427,
-                "rc": true,
-                "pvalue": 1.06e-05,
-                "lflank": "GGAAATGACT",
-                "match": "TATGAAAAA",
-                "rflank": "TTAACCACGC"
-              }, {
-                "seq": 6,
-                "pos": 92,
-                "rc": true,
-                "pvalue": 1.34e-05,
-                "lflank": "GCGCATAACG",
-                "match": "CATTAAAAA",
-                "rflank": "TGCCTGGTAA"
-              }, {
-                "seq": 0,
-                "pos": 92,
-                "rc": true,
-                "pvalue": 1.34e-05,
-                "lflank": "GCGCATAACG",
-                "match": "CATTAAAAA",
-                "rflank": "TGCCTGGTAA"
-              }, {
-                "seq": 4,
-                "pos": 1981,
-                "rc": false,
-                "pvalue": 1.92e-05,
-                "lflank": "CAGTTTTGTC",
-                "match": "GATGAAAAA",
-                "rflank": "TTGCGGGCGC"
-              }, {
-                "seq": 9,
-                "pos": 1581,
-                "rc": true,
-                "pvalue": 2.18e-05,
-                "lflank": "TGATTCATTA",
-                "match": "AATTAAAAA",
-                "rflank": "GCTAAAATAG"
-              }, {
-                "seq": 10,
-                "pos": 1153,
-                "rc": false,
-                "pvalue": 2.46e-05,
-                "lflank": "CATAAAGCGG",
-                "match": "TATGAAAAT",
-                "rflank": "GGATTGAAGC"
-              }, {
-                "seq": 7,
-                "pos": 1063,
-                "rc": false,
-                "pvalue": 2.46e-05,
-                "lflank": "CATAACGCGG",
-                "match": "TATGAAAAT",
-                "rflank": "GGATTGAAGC"
-              }, {
-                "seq": 5,
-                "pos": 22,
-                "rc": true,
-                "pvalue": 2.46e-05,
-                "lflank": "CGTAAAGCGG",
-                "match": "TATGAAAAT",
-                "rflank": "GGATTGAAGC"
-              }, {
-                "seq": 3,
-                "pos": 1065,
-                "rc": false,
-                "pvalue": 2.46e-05,
-                "lflank": "CATAACGCGG",
-                "match": "TATGAAAAT",
-                "rflank": "GGATTGAAGC"
-              }, {
-                "seq": 4,
-                "pos": 1223,
-                "rc": false,
-                "pvalue": 2.73e-05,
-                "lflank": "CTGACATCGG",
-                "match": "CATTAAAAT",
-                "rflank": "CACGGACCAC"
-              }, {
-                "seq": 4,
-                "pos": 1604,
-                "rc": false,
-                "pvalue": 3.60e-05,
-                "lflank": "CCTTAAGTGT",
-                "match": "AATTAAAAT",
-                "rflank": "TTGCGGTTAA"
-              }, {
                 "seq": 11,
-                "pos": 759,
+                "pos": 1349,
                 "rc": true,
-                "pvalue": 4.43e-05,
+                "pvalue": 9.62e-06,
                 "lflank": "CTCGTATGGC",
                 "match": "TACTAAAAA",
                 "rflank": "TGGTCGTCAG"
               }, {
-                "seq": 4,
-                "pos": 1531,
-                "rc": false,
-                "pvalue": 5.62e-05,
-                "lflank": "AATGTATAAC",
-                "match": "GATTACAAA",
-                "rflank": "TAGTCATCAG"
+                "seq": 8,
+                "pos": 730,
+                "rc": true,
+                "pvalue": 9.62e-06,
+                "lflank": "AAAAATGTGG",
+                "match": "GATTAAAAA",
+                "rflank": "AGCCGATCAT"
               }
             ]
           }, {
             "db": 0,
-            "id": "GTKTMGTAT",
+            "id": "GTTTAGTAT",
             "alt": "MEME-3",
             "len": 9,
-            "nsites": 18,
-            "evalue": "8.3e+004",
-            "ic": 14.8,
-            "re": 14.9,
-            "llr": 187,
-            "bt": 11.2223,
-            "time": 44.515625,
+            "nsites": 9,
+            "evalue": "1.9e+001",
+            "ic": 18.0,
+            "re": 18.4,
+            "llr": 115,
+            "bt": 11.5087,
+            "time": 30.562500,
             "psm": [
-              [-1081, -1081, 194, -1081], [-1081, -1081, -1081, 206], 
-              [-110, -1081, 58, 106], [-1081, -1081, 9, 159], 
-              [89, 109, -1081, -1081], [-1081, -1081, 194, -1081], 
-              [-1081, -1081, -1081, 206], [206, -1081, -1081, -1081], 
-              [-1081, -1081, -1081, 206]
+              [-982, -982, 192, -982], [-982, -982, -982, 208], 
+              [-982, -982, -982, 208], [-982, -982, -982, 208], 
+              [208, -982, -982, -982], [-982, -982, 192, -982], 
+              [-982, -982, -982, 208], [208, -982, -982, -982], 
+              [-982, -982, -982, 208]
             ],
             "pwm": [
               [0.000000, 0.000000, 1.000000, 0.000000], 
               [0.000000, 0.000000, 0.000000, 1.000000], 
-              [0.111111, 0.000000, 0.388889, 0.500000], 
-              [0.000000, 0.000000, 0.277778, 0.722222], 
-              [0.444444, 0.555556, 0.000000, 0.000000], 
+              [0.000000, 0.000000, 0.000000, 1.000000], 
+              [0.000000, 0.000000, 0.000000, 1.000000], 
+              [1.000000, 0.000000, 0.000000, 0.000000], 
               [0.000000, 0.000000, 1.000000, 0.000000], 
               [0.000000, 0.000000, 0.000000, 1.000000], 
               [1.000000, 0.000000, 0.000000, 0.000000], 
@@ -949,756 +813,512 @@
             "sites": [
               {
                 "seq": 10,
-                "pos": 875,
+                "pos": 1745,
                 "rc": false,
-                "pvalue": 6.35e-06,
+                "pvalue": 2.84e-06,
                 "lflank": "CTTTGCTGGC",
                 "match": "GTTTAGTAT",
                 "rflank": "CCTAAACTGA"
               }, {
+                "seq": 9,
+                "pos": 1794,
+                "rc": false,
+                "pvalue": 2.84e-06,
+                "lflank": "CTTTGCTACC",
+                "match": "GTTTAGTAT",
+                "rflank": "CCTAAACTGA"
+              }, {
                 "seq": 8,
-                "pos": 1221,
+                "pos": 1881,
                 "rc": true,
-                "pvalue": 6.35e-06,
+                "pvalue": 2.84e-06,
                 "lflank": "CTTTGCTGGC",
                 "match": "GTTTAGTAT",
                 "rflank": "CTTAAACTGA"
               }, {
                 "seq": 7,
-                "pos": 785,
+                "pos": 865,
                 "rc": false,
-                "pvalue": 6.35e-06,
+                "pvalue": 2.84e-06,
                 "lflank": "CCTTGCTTGC",
                 "match": "GTTTAGTAT",
                 "rflank": "CCTAAACTGG"
               }, {
                 "seq": 6,
-                "pos": 1738,
+                "pos": 948,
                 "rc": false,
-                "pvalue": 6.35e-06,
+                "pvalue": 2.84e-06,
                 "lflank": "CCTTGCTTGC",
                 "match": "GTTTAGTAT",
                 "rflank": "CCTAAACTGG"
               }, {
                 "seq": 5,
-                "pos": 301,
+                "pos": 401,
                 "rc": true,
-                "pvalue": 6.35e-06,
+                "pvalue": 2.84e-06,
                 "lflank": "CTTTACTGGC",
                 "match": "GTTTAGTAT",
                 "rflank": "CCTAAACTGA"
               }, {
                 "seq": 3,
-                "pos": 787,
+                "pos": 847,
                 "rc": false,
-                "pvalue": 6.35e-06,
+                "pvalue": 2.84e-06,
                 "lflank": "CCTTGCTTGC",
                 "match": "GTTTAGTAT",
                 "rflank": "CCTAAACTGG"
               }, {
                 "seq": 2,
-                "pos": 175,
+                "pos": 845,
                 "rc": false,
-                "pvalue": 6.35e-06,
+                "pvalue": 2.84e-06,
                 "lflank": "CTTTGCTGGC",
                 "match": "GTTTAGTAT",
                 "rflank": "CCTAAACTGA"
               }, {
                 "seq": 0,
-                "pos": 1738,
+                "pos": 878,
                 "rc": false,
-                "pvalue": 6.35e-06,
+                "pvalue": 2.84e-06,
                 "lflank": "CTTTGCTTGC",
                 "match": "GTTTAGTAT",
                 "rflank": "CCTAAACTGG"
-              }, {
-                "seq": 10,
-                "pos": 1661,
-                "rc": false,
-                "pvalue": 9.97e-06,
-                "lflank": "GCCGCAAAAG",
-                "match": "GTGTCGTAT",
-                "rflank": "TCGCGGCTGC"
-              }, {
-                "seq": 8,
-                "pos": 434,
-                "rc": true,
-                "pvalue": 9.97e-06,
-                "lflank": "GCCGCAAAAC",
-                "match": "GTGTCGTAT",
-                "rflank": "TCTCGACTGC"
-              }, {
-                "seq": 2,
-                "pos": 962,
-                "rc": false,
-                "pvalue": 9.97e-06,
-                "lflank": "GCCGCAAAAC",
-                "match": "GTGTCGTAT",
-                "rflank": "TCTCGACTGC"
-              }, {
-                "seq": 1,
-                "pos": 821,
-                "rc": true,
-                "pvalue": 1.69e-05,
-                "lflank": "TCAATTGCCT",
-                "match": "GTTGCGTAT",
-                "rflank": "GGACATGGCT"
-              }, {
-                "seq": 10,
-                "pos": 1982,
-                "rc": false,
-                "pvalue": 2.42e-05,
-                "lflank": "ACTGTTCAGA",
-                "match": "GTGGCGTAT",
-                "rflank": "TGTACGCT"
-              }, {
-                "seq": 9,
-                "pos": 1013,
-                "rc": false,
-                "pvalue": 2.42e-05,
-                "lflank": "ACTATTCTGA",
-                "match": "GTGGCGTAT",
-                "rflank": "TGTACGCTGT"
-              }, {
-                "seq": 7,
-                "pos": 1883,
-                "rc": false,
-                "pvalue": 2.42e-05,
-                "lflank": "TTTATTAAGA",
-                "match": "GTGGCGTAT",
-                "rflank": "TGTACGCTGT"
-              }, {
-                "seq": 3,
-                "pos": 1885,
-                "rc": false,
-                "pvalue": 2.42e-05,
-                "lflank": "TTTATTAAGA",
-                "match": "GTGGCGTAT",
-                "rflank": "TGTACGCTGT"
-              }, {
-                "seq": 6,
-                "pos": 710,
-                "rc": true,
-                "pvalue": 3.11e-05,
-                "lflank": "CCAAAGAACC",
-                "match": "GTATCGTAT",
-                "rflank": "GTTTACCTCG"
-              }, {
-                "seq": 0,
-                "pos": 710,
-                "rc": true,
-                "pvalue": 3.11e-05,
-                "lflank": "CCAAAGAACC",
-                "match": "GTATCGTAT",
-                "rflank": "GTTTACTTCG"
               }
             ]
           }
         ],
         "scan": [
           {
-            "pvalue": 1.81e-03,
+            "pvalue": 1.36e-04,
             "sites": [
               {
-                "motif": 1,
-                "pos": 92,
+                "motif": 0,
+                "pos": 204,
                 "rc": true,
-                "pvalue": 1.34e-05
+                "pvalue": 1.59e-05
               }, {
-                "motif": 1,
-                "pos": 427,
+                "motif": 0,
+                "pos": 627,
+                "rc": false,
+                "pvalue": 9.20e-06
+              }, {
+                "motif": 0,
+                "pos": 709,
                 "rc": true,
-                "pvalue": 1.06e-05
+                "pvalue": 4.05e-05
               }, {
                 "motif": 2,
-                "pos": 710,
+                "pos": 878,
+                "rc": false,
+                "pvalue": 2.84e-06
+              }, {
+                "motif": 0,
+                "pos": 1119,
                 "rc": true,
-                "pvalue": 3.11e-05
+                "pvalue": 2.49e-05
               }, {
-                "motif": 0,
-                "pos": 1064,
+                "motif": 1,
+                "pos": 1231,
                 "rc": false,
-                "pvalue": 2.02e-05
+                "pvalue": 2.27e-06
               }, {
                 "motif": 0,
-                "pos": 1487,
+                "pos": 1300,
                 "rc": true,
-                "pvalue": 6.63e-06
+                "pvalue": 3.18e-06
               }, {
                 "motif": 0,
-                "pos": 1569,
+                "pos": 1406,
                 "rc": false,
-                "pvalue": 4.26e-05
-              }, {
-                "motif": 2,
-                "pos": 1738,
-                "rc": false,
-                "pvalue": 6.35e-06
+                "pvalue": 1.88e-05
               }, {
                 "motif": 0,
-                "pos": 1979,
+                "pos": 1441,
+                "rc": true,
+                "pvalue": 6.02e-06
+              }, {
+                "motif": 0,
+                "pos": 1480,
                 "rc": false,
-                "pvalue": 1.69e-05
+                "pvalue": 3.18e-06
               }
             ]
           }, {
-            "pvalue": 1.30e-01,
+            "pvalue": 6.96e-01,
             "sites": [
               {
                 "motif": 0,
-                "pos": 413,
-                "rc": false,
-                "pvalue": 4.26e-05
-              }, {
-                "motif": 2,
-                "pos": 821,
+                "pos": 48,
                 "rc": true,
-                "pvalue": 1.69e-05
+                "pvalue": 8.75e-05
               }, {
                 "motif": 0,
-                "pos": 1436,
-                "rc": false,
-                "pvalue": 8.62e-05
+                "pos": 1106,
+                "rc": true,
+                "pvalue": 9.50e-05
               }, {
                 "motif": 0,
-                "pos": 1766,
-                "rc": true,
-                "pvalue": 7.90e-05
+                "pos": 1889,
+                "rc": false,
+                "pvalue": 7.95e-05
               }
             ]
           }, {
-            "pvalue": 3.08e-04,
-            "sites": [
-              {
-                "motif": 2,
-                "pos": 175,
-                "rc": false,
-                "pvalue": 6.35e-06
-              }, {
-                "motif": 0,
-                "pos": 416,
-                "rc": false,
-                "pvalue": 9.98e-05
-              }, {
-                "motif": 1,
-                "pos": 528,
-                "rc": false,
-                "pvalue": 2.54e-06
-              }, {
-                "motif": 0,
-                "pos": 597,
-                "rc": false,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 0,
-                "pos": 674,
-                "rc": false,
-                "pvalue": 6.84e-05
-              }, {
-                "motif": 0,
-                "pos": 703,
-                "rc": true,
-                "pvalue": 2.32e-05
-              }, {
-                "motif": 0,
-                "pos": 738,
-                "rc": false,
-                "pvalue": 9.66e-06
-              }, {
-                "motif": 0,
-                "pos": 777,
-                "rc": true,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 2,
-                "pos": 962,
-                "rc": false,
-                "pvalue": 9.97e-06
-              }, {
-                "motif": 1,
-                "pos": 1326,
-                "rc": false,
-                "pvalue": 5.32e-06
-              }, {
-                "motif": 0,
-                "pos": 1424,
-                "rc": false,
-                "pvalue": 4.26e-05
-              }, {
-                "motif": 0,
-                "pos": 1809,
-                "rc": true,
-                "pvalue": 5.51e-05
-              }
-            ]
-          }, {
-            "pvalue": 3.08e-04,
+            "pvalue": 1.36e-04,
             "sites": [
               {
                 "motif": 0,
-                "pos": 113,
+                "pos": 594,
                 "rc": false,
-                "pvalue": 2.02e-05
-              }, {
-                "motif": 0,
-                "pos": 536,
-                "rc": true,
-                "pvalue": 6.63e-06
-              }, {
-                "motif": 0,
-                "pos": 618,
-                "rc": false,
-                "pvalue": 4.26e-05
+                "pvalue": 9.20e-06
               }, {
                 "motif": 2,
-                "pos": 787,
+                "pos": 845,
                 "rc": false,
-                "pvalue": 6.35e-06
-              }, {
-                "motif": 0,
-                "pos": 1028,
-                "rc": false,
-                "pvalue": 1.69e-05
+                "pvalue": 2.84e-06
               }, {
                 "motif": 1,
-                "pos": 1065,
+                "pos": 1198,
                 "rc": false,
-                "pvalue": 2.46e-05
-              }, {
-                "motif": 1,
-                "pos": 1140,
-                "rc": false,
-                "pvalue": 2.54e-06
+                "pvalue": 2.27e-06
               }, {
                 "motif": 0,
-                "pos": 1209,
-                "rc": false,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 0,
-                "pos": 1315,
+                "pos": 1267,
                 "rc": true,
-                "pvalue": 2.32e-05
+                "pvalue": 3.18e-06
               }, {
                 "motif": 0,
-                "pos": 1350,
-                "rc": false,
-                "pvalue": 9.66e-06
-              }, {
-                "motif": 0,
-                "pos": 1389,
+                "pos": 1344,
                 "rc": true,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 2,
-                "pos": 1885,
-                "rc": false,
-                "pvalue": 2.42e-05
-              }, {
-                "motif": 1,
-                "pos": 1938,
-                "rc": false,
-                "pvalue": 5.32e-06
-              }
-            ]
-          }, {
-            "pvalue": 8.42e-02,
-            "sites": [
-              {
-                "motif": 1,
-                "pos": 728,
-                "rc": false,
-                "pvalue": 9.82e-05
-              }, {
-                "motif": 1,
-                "pos": 1223,
-                "rc": false,
-                "pvalue": 2.73e-05
-              }, {
-                "motif": 1,
-                "pos": 1531,
-                "rc": false,
-                "pvalue": 5.62e-05
-              }, {
-                "motif": 1,
-                "pos": 1604,
-                "rc": false,
-                "pvalue": 3.60e-05
-              }, {
-                "motif": 0,
-                "pos": 1799,
-                "rc": true,
-                "pvalue": 4.26e-05
-              }, {
-                "motif": 0,
-                "pos": 1915,
-                "rc": true,
-                "pvalue": 4.26e-05
-              }, {
-                "motif": 1,
-                "pos": 1981,
-                "rc": false,
-                "pvalue": 1.92e-05
-              }
-            ]
-          }, {
-            "pvalue": 3.51e-03,
-            "sites": [
-              {
-                "motif": 1,
-                "pos": 22,
-                "rc": true,
-                "pvalue": 2.46e-05
-              }, {
-                "motif": 0,
-                "pos": 60,
-                "rc": true,
-                "pvalue": 9.98e-05
-              }, {
-                "motif": 2,
-                "pos": 301,
-                "rc": true,
-                "pvalue": 6.35e-06
-              }, {
-                "motif": 0,
-                "pos": 470,
-                "rc": true,
-                "pvalue": 3.63e-05
-              }, {
-                "motif": 0,
-                "pos": 552,
-                "rc": false,
-                "pvalue": 6.63e-06
-              }
-            ]
-          }, {
-            "pvalue": 1.81e-03,
-            "sites": [
-              {
-                "motif": 1,
-                "pos": 92,
-                "rc": true,
-                "pvalue": 1.34e-05
-              }, {
-                "motif": 1,
-                "pos": 427,
-                "rc": true,
-                "pvalue": 1.06e-05
-              }, {
-                "motif": 2,
-                "pos": 710,
-                "rc": true,
-                "pvalue": 3.11e-05
-              }, {
-                "motif": 0,
-                "pos": 1064,
-                "rc": false,
-                "pvalue": 2.02e-05
-              }, {
-                "motif": 0,
-                "pos": 1487,
-                "rc": true,
-                "pvalue": 6.63e-06
-              }, {
-                "motif": 0,
-                "pos": 1569,
-                "rc": false,
-                "pvalue": 4.26e-05
-              }, {
-                "motif": 2,
-                "pos": 1738,
-                "rc": false,
-                "pvalue": 6.35e-06
-              }, {
-                "motif": 0,
-                "pos": 1979,
-                "rc": false,
-                "pvalue": 1.69e-05
-              }
-            ]
-          }, {
-            "pvalue": 3.08e-04,
-            "sites": [
-              {
-                "motif": 0,
-                "pos": 111,
-                "rc": false,
-                "pvalue": 2.02e-05
-              }, {
-                "motif": 0,
-                "pos": 534,
-                "rc": true,
-                "pvalue": 6.63e-06
-              }, {
-                "motif": 0,
-                "pos": 616,
-                "rc": false,
-                "pvalue": 4.26e-05
-              }, {
-                "motif": 2,
-                "pos": 785,
-                "rc": false,
-                "pvalue": 6.35e-06
-              }, {
-                "motif": 0,
-                "pos": 1026,
-                "rc": false,
-                "pvalue": 1.69e-05
-              }, {
-                "motif": 1,
-                "pos": 1063,
-                "rc": false,
-                "pvalue": 2.46e-05
-              }, {
-                "motif": 1,
-                "pos": 1138,
-                "rc": false,
-                "pvalue": 2.54e-06
-              }, {
-                "motif": 0,
-                "pos": 1207,
-                "rc": false,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 0,
-                "pos": 1313,
-                "rc": true,
-                "pvalue": 2.32e-05
-              }, {
-                "motif": 0,
-                "pos": 1348,
-                "rc": false,
-                "pvalue": 9.66e-06
-              }, {
-                "motif": 0,
-                "pos": 1387,
-                "rc": true,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 2,
-                "pos": 1883,
-                "rc": false,
-                "pvalue": 2.42e-05
-              }, {
-                "motif": 1,
-                "pos": 1936,
-                "rc": false,
-                "pvalue": 5.32e-06
-              }
-            ]
-          }, {
-            "pvalue": 3.08e-04,
-            "sites": [
-              {
-                "motif": 1,
-                "pos": 70,
-                "rc": true,
-                "pvalue": 5.32e-06
-              }, {
-                "motif": 2,
-                "pos": 434,
-                "rc": true,
-                "pvalue": 9.97e-06
-              }, {
-                "motif": 0,
-                "pos": 619,
-                "rc": false,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 0,
-                "pos": 658,
-                "rc": true,
-                "pvalue": 9.66e-06
-              }, {
-                "motif": 0,
-                "pos": 693,
-                "rc": false,
-                "pvalue": 2.32e-05
-              }, {
-                "motif": 0,
-                "pos": 799,
-                "rc": true,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 1,
-                "pos": 868,
-                "rc": true,
-                "pvalue": 2.54e-06
-              }, {
-                "motif": 0,
-                "pos": 980,
-                "rc": true,
-                "pvalue": 9.98e-05
-              }, {
-                "motif": 2,
-                "pos": 1221,
-                "rc": true,
-                "pvalue": 6.35e-06
-              }, {
-                "motif": 0,
-                "pos": 1472,
-                "rc": false,
-                "pvalue": 6.63e-06
-              }
-            ]
-          }, {
-            "pvalue": 9.27e-04,
-            "sites": [
-              {
-                "motif": 0,
-                "pos": 145,
-                "rc": false,
-                "pvalue": 9.98e-05
-              }, {
-                "motif": 1,
-                "pos": 259,
-                "rc": false,
-                "pvalue": 2.54e-06
-              }, {
-                "motif": 0,
-                "pos": 327,
-                "rc": false,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 2,
-                "pos": 402,
-                "rc": false,
-                "pvalue": 6.82e-05
-              }, {
-                "motif": 0,
-                "pos": 433,
-                "rc": true,
-                "pvalue": 5.18e-05
-              }, {
-                "motif": 0,
-                "pos": 468,
-                "rc": false,
-                "pvalue": 9.66e-06
-              }, {
-                "motif": 0,
-                "pos": 507,
-                "rc": true,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 2,
-                "pos": 1013,
-                "rc": false,
-                "pvalue": 2.42e-05
-              }, {
-                "motif": 1,
-                "pos": 1066,
-                "rc": false,
-                "pvalue": 5.32e-06
-              }, {
-                "motif": 0,
-                "pos": 1164,
-                "rc": false,
-                "pvalue": 4.26e-05
-              }, {
-                "motif": 1,
-                "pos": 1581,
-                "rc": true,
-                "pvalue": 2.18e-05
-              }
-            ]
-          }, {
-            "pvalue": 3.08e-04,
-            "sites": [
-              {
-                "motif": 0,
-                "pos": 201,
-                "rc": false,
-                "pvalue": 2.02e-05
-              }, {
-                "motif": 0,
-                "pos": 624,
-                "rc": true,
-                "pvalue": 7.90e-05
-              }, {
-                "motif": 2,
-                "pos": 875,
-                "rc": false,
-                "pvalue": 6.35e-06
-              }, {
-                "motif": 0,
-                "pos": 1116,
-                "rc": false,
-                "pvalue": 9.98e-05
-              }, {
-                "motif": 1,
-                "pos": 1153,
-                "rc": false,
-                "pvalue": 2.46e-05
-              }, {
-                "motif": 1,
-                "pos": 1229,
-                "rc": false,
-                "pvalue": 2.54e-06
-              }, {
-                "motif": 0,
-                "pos": 1296,
-                "rc": false,
-                "pvalue": 3.31e-06
+                "pvalue": 7.07e-05
               }, {
                 "motif": 0,
                 "pos": 1373,
                 "rc": false,
-                "pvalue": 6.84e-05
+                "pvalue": 1.88e-05
               }, {
                 "motif": 0,
-                "pos": 1402,
+                "pos": 1408,
                 "rc": true,
-                "pvalue": 5.18e-05
+                "pvalue": 6.02e-06
               }, {
                 "motif": 0,
-                "pos": 1437,
+                "pos": 1447,
                 "rc": false,
-                "pvalue": 9.66e-06
+                "pvalue": 3.18e-06
               }, {
                 "motif": 0,
-                "pos": 1476,
+                "pos": 1981,
                 "rc": true,
-                "pvalue": 3.31e-06
-              }, {
-                "motif": 2,
-                "pos": 1661,
-                "rc": false,
-                "pvalue": 9.97e-06
-              }, {
-                "motif": 2,
-                "pos": 1982,
-                "rc": false,
-                "pvalue": 2.42e-05
+                "pvalue": 3.16e-05
               }
             ]
           }, {
-            "pvalue": 1.38e-02,
+            "pvalue": 1.36e-04,
+            "sites": [
+              {
+                "motif": 0,
+                "pos": 173,
+                "rc": true,
+                "pvalue": 1.59e-05
+              }, {
+                "motif": 0,
+                "pos": 596,
+                "rc": false,
+                "pvalue": 9.20e-06
+              }, {
+                "motif": 0,
+                "pos": 678,
+                "rc": true,
+                "pvalue": 4.05e-05
+              }, {
+                "motif": 2,
+                "pos": 847,
+                "rc": false,
+                "pvalue": 2.84e-06
+              }, {
+                "motif": 0,
+                "pos": 1088,
+                "rc": true,
+                "pvalue": 2.49e-05
+              }, {
+                "motif": 1,
+                "pos": 1200,
+                "rc": false,
+                "pvalue": 2.27e-06
+              }, {
+                "motif": 0,
+                "pos": 1269,
+                "rc": true,
+                "pvalue": 3.18e-06
+              }, {
+                "motif": 0,
+                "pos": 1375,
+                "rc": false,
+                "pvalue": 1.88e-05
+              }, {
+                "motif": 0,
+                "pos": 1410,
+                "rc": true,
+                "pvalue": 6.02e-06
+              }, {
+                "motif": 0,
+                "pos": 1449,
+                "rc": false,
+                "pvalue": 3.18e-06
+              }, {
+                "motif": 0,
+                "pos": 1983,
+                "rc": true,
+                "pvalue": 3.16e-05
+              }
+            ]
+          }, {
+            "pvalue": 9.76e-01,
+            "sites": []
+          }, {
+            "pvalue": 3.35e-04,
             "sites": [
               {
                 "motif": 1,
-                "pos": 166,
+                "pos": 46,
                 "rc": true,
-                "pvalue": 7.87e-06
+                "pvalue": 2.27e-06
               }, {
-                "motif": 1,
-                "pos": 759,
+                "motif": 2,
+                "pos": 401,
                 "rc": true,
-                "pvalue": 4.43e-05
-              }, {
-                "motif": 1,
-                "pos": 938,
-                "rc": true,
-                "pvalue": 6.17e-05
+                "pvalue": 2.84e-06
               }, {
                 "motif": 0,
-                "pos": 1224,
+                "pos": 570,
                 "rc": false,
-                "pvalue": 3.31e-06
+                "pvalue": 5.04e-05
               }, {
                 "motif": 0,
-                "pos": 1965,
+                "pos": 652,
+                "rc": true,
+                "pvalue": 9.20e-06
+              }
+            ]
+          }, {
+            "pvalue": 1.36e-04,
+            "sites": [
+              {
+                "motif": 0,
+                "pos": 274,
+                "rc": true,
+                "pvalue": 1.59e-05
+              }, {
+                "motif": 0,
+                "pos": 697,
                 "rc": false,
-                "pvalue": 3.63e-05
+                "pvalue": 9.20e-06
+              }, {
+                "motif": 0,
+                "pos": 779,
+                "rc": true,
+                "pvalue": 4.05e-05
+              }, {
+                "motif": 2,
+                "pos": 948,
+                "rc": false,
+                "pvalue": 2.84e-06
+              }, {
+                "motif": 0,
+                "pos": 1189,
+                "rc": true,
+                "pvalue": 2.49e-05
+              }, {
+                "motif": 1,
+                "pos": 1301,
+                "rc": false,
+                "pvalue": 2.27e-06
+              }, {
+                "motif": 0,
+                "pos": 1370,
+                "rc": true,
+                "pvalue": 3.18e-06
+              }, {
+                "motif": 0,
+                "pos": 1476,
+                "rc": false,
+                "pvalue": 1.88e-05
+              }, {
+                "motif": 0,
+                "pos": 1511,
+                "rc": true,
+                "pvalue": 6.02e-06
+              }, {
+                "motif": 0,
+                "pos": 1550,
+                "rc": false,
+                "pvalue": 3.18e-06
+              }
+            ]
+          }, {
+            "pvalue": 1.36e-04,
+            "sites": [
+              {
+                "motif": 0,
+                "pos": 191,
+                "rc": true,
+                "pvalue": 1.59e-05
+              }, {
+                "motif": 0,
+                "pos": 614,
+                "rc": false,
+                "pvalue": 9.20e-06
+              }, {
+                "motif": 0,
+                "pos": 696,
+                "rc": true,
+                "pvalue": 4.05e-05
+              }, {
+                "motif": 2,
+                "pos": 865,
+                "rc": false,
+                "pvalue": 2.84e-06
+              }, {
+                "motif": 0,
+                "pos": 1106,
+                "rc": true,
+                "pvalue": 2.49e-05
+              }, {
+                "motif": 1,
+                "pos": 1218,
+                "rc": false,
+                "pvalue": 2.27e-06
+              }, {
+                "motif": 0,
+                "pos": 1287,
+                "rc": true,
+                "pvalue": 3.18e-06
+              }, {
+                "motif": 0,
+                "pos": 1393,
+                "rc": false,
+                "pvalue": 1.88e-05
+              }, {
+                "motif": 0,
+                "pos": 1428,
+                "rc": true,
+                "pvalue": 6.02e-06
+              }, {
+                "motif": 0,
+                "pos": 1467,
+                "rc": false,
+                "pvalue": 3.18e-06
+              }
+            ]
+          }, {
+            "pvalue": 1.36e-04,
+            "sites": [
+              {
+                "motif": 1,
+                "pos": 730,
+                "rc": true,
+                "pvalue": 9.62e-06
+              }, {
+                "motif": 0,
+                "pos": 745,
+                "rc": false,
+                "pvalue": 3.16e-05
+              }, {
+                "motif": 0,
+                "pos": 1279,
+                "rc": true,
+                "pvalue": 3.18e-06
+              }, {
+                "motif": 0,
+                "pos": 1318,
+                "rc": false,
+                "pvalue": 6.02e-06
+              }, {
+                "motif": 0,
+                "pos": 1353,
+                "rc": true,
+                "pvalue": 1.88e-05
+              }, {
+                "motif": 0,
+                "pos": 1459,
+                "rc": false,
+                "pvalue": 3.18e-06
+              }, {
+                "motif": 1,
+                "pos": 1528,
+                "rc": true,
+                "pvalue": 2.27e-06
+              }, {
+                "motif": 2,
+                "pos": 1881,
+                "rc": true,
+                "pvalue": 2.84e-06
+              }
+            ]
+          }, {
+            "pvalue": 8.04e-03,
+            "sites": [
+              {
+                "motif": 0,
+                "pos": 1120,
+                "rc": true,
+                "pvalue": 6.02e-06
+              }, {
+                "motif": 2,
+                "pos": 1794,
+                "rc": false,
+                "pvalue": 2.84e-06
+              }
+            ]
+          }, {
+            "pvalue": 2.40e-02,
+            "sites": [
+              {
+                "motif": 0,
+                "pos": 807,
+                "rc": false,
+                "pvalue": 6.08e-05
+              }, {
+                "motif": 0,
+                "pos": 1071,
+                "rc": true,
+                "pvalue": 1.59e-05
+              }, {
+                "motif": 2,
+                "pos": 1745,
+                "rc": false,
+                "pvalue": 2.84e-06
+              }
+            ]
+          }, {
+            "pvalue": 8.79e-03,
+            "sites": [
+              {
+                "motif": 0,
+                "pos": 420,
+                "rc": true,
+                "pvalue": 7.07e-05
+              }, {
+                "motif": 1,
+                "pos": 756,
+                "rc": true,
+                "pvalue": 4.54e-06
+              }, {
+                "motif": 1,
+                "pos": 1349,
+                "rc": true,
+                "pvalue": 9.62e-06
+              }, {
+                "motif": 0,
+                "pos": 1580,
+                "rc": false,
+                "pvalue": 6.08e-05
+              }, {
+                "motif": 0,
+                "pos": 1814,
+                "rc": true,
+                "pvalue": 3.18e-06
               }
             ]
           }
