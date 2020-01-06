@@ -1,8 +1,9 @@
-# dependencies
+### dependencies
 pip install numpy
 pip install matplotlib
 pip install biopython
 
+### meme
 # preparation
 export PATH=/mnt/c/drive/uni/seq_inf/seqinf_project/tools/meme/bin:/mnt/c/drive/uni/seq_inf/seqinf_project/tools/meme/libexec/meme-5.1.0:$PATH
 export PYTHONPATH=$PYTHONPATH:/mnt/c/drive/uni/seq_inf/seqinf_project

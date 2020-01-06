@@ -1,0 +1,13 @@
+HistoryId: NCID_1_70248214_130.14.22.76_5555_1578333867_3505328050_0MetA0_S_HStore
+QueryKey: 20
+ReleaseType: RefSeq
+FileType: GENOME_FASTA
+Flat: true
+
+Query title: Search NC_000913.3[Accession] or NC_003047.1[Accession] or NC_000117.1[Accession]   Sort by: SORTORDER
+Search results count: 3
+Entries to download: 3
+
+GENOME_FASTA files in archive: 3
+Total size (bytes): 3691126
+Total time: 1.59 seconds

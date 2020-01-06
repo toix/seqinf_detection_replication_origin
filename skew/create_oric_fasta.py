@@ -44,24 +44,18 @@ def get_min_sequence(sequence, idx_base_min, window):
 
 def main():
     args = parseargs()
-    in_path = args.folder
+    folder = args.folder
     out_file = args.out
     skew_window = args.skewwindow
     oric_window = args.searchwindow
 
     oric_sequences = []
 
-    for file in os.listdir(in_path):
+    for file in os.listdir(folder):
         if not file.endswith("fna") and not file.endswith("fasta"):
             continue
 
-        try:
-            # fasta = seqio.read(path+file, 'fasta')
-            fasta = next(seqio.parse(in_path +'/'+ file, "fasta"))
-        except ValueError:
-            print("Probably there is more than one read in: " + file)
-            continue
-
+        fasta = next(seqio.parse(folder +'/'+ file, "fasta"))
 
         skew = seq.GC_skew(fasta.seq, window=skew_window)
         skew = accumlate_skew(skew)

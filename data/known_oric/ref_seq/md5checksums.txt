@@ -1,0 +1,3 @@
+c13d459b5caa702ff7e1f26fe44b8ad7  GCF_000005845.2_ASM584v2_genomic.fna.gz
+547d80c4ab6dede9cc62a2e40fbf49a6  GCF_000006965.1_ASM696v1_genomic.fna.gz
+338f84c98962f86911a9fff3364b2fd7  GCF_000008725.1_ASM872v1_genomic.fna.gz

@@ -3,6 +3,7 @@ desktop.ini
 
 # bacteria whole genome
 data/bacteria/ref_seq/*.fna
+data/bacteria/annotations/*.gff
 
 # tools
 tools/meme/*

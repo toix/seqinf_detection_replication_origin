@@ -1,3 +1,5 @@
+from os import makedirs, path
+
 import matplotlib.pyplot as plt
 import numpy as np
 from skew.findmotif import *
@@ -39,7 +41,8 @@ def cwindowskew(skew):
 
 
 def getFastaName(fasta):
-    name = ' '.join(fasta.description.split()[1:5])
+    name = ','.join(fasta.description.split(',')[:-1])
+    name = ' '.join(name.split()[1:])
     if name.endswith(' '):
         name = name[:-1]
     if name.endswith(','):
@@ -47,61 +50,49 @@ def getFastaName(fasta):
     return name
 
 
-def plot(fasta, skew_window, oric_window, regionsize, show, dnaa=None, colors=None, save=None):
+def plot(fasta, skew, skew_window, oric_window, show, dnaa_motif=None, save=None, colors=None):
     if colors == None:
         colors = ['xkcd:blue' for i in range(4)]
     fig, (ax1, ax2, ax3) = plt.subplots(3, 1, sharex=False, figsize=(16, 6))
-    pos = [x * oric_window + oric_window / 2 for x in range(1, len(skew_window) + 1)]
+    pos = [x * skew_window + skew_window / 2 for x in range(1, len(skew) + 1)]
 
     # ax1
-    ax1.plot(pos, skew_window, colors[0])
+    ax1.plot(pos, skew, colors[0])
 
     # ax2
-    skew_acc = accumlate_skew(skew_window)
+    skew_acc = accumlate_skew(skew)
     ax2.plot(pos, skew_acc,color=colors[1])
 
-    # other quality score
-    #x = 0
-    #for i in range(len(skew_acc)-100):
-    #    x += ((skew_acc[i+51]-skew_acc[i+50]) - (skew_acc[i+100] - skew_acc[i])/100)**2
-    #x = x/(len(skew_acc)-100)
-    #print(x)
-
-    # descent = (max(skew_acc) - min(skew_acc)) / abs(np.argmin(np.array(skew_acc)) - np.argmax(np.array(skew_acc)))
-    # x = 0
-    # for i in range(len(skew_acc)-1):
-    #     x += (abs(skew_acc[i+1]-skew_acc[i]) - descent)**2
-    # x = x/len(skew_acc)
-    # print(x)
-    #window_skew_acc = cwindowskew(skew)
-    #ax2.plot(pos, window_skew_acc, color='r')
-
     # ax3
-    x, scores, motif_count = calcmotif(regionsize, dnaa, skew_acc, oric_window, fasta)
+    x, scores, motif_count = calcmotif(oric_window, dnaa_motif, skew_acc, skew_window, fasta)
     ax3.plot(x, scores, color=colors[2])
     ax3.set_xlim(x[0], x[-1])
-    ax3.set_ylim(0, len(dnaa))  # limit y-axis to motif length
+    ax3.set_ylim(0, 9*2)  # limit y-axis to motif length
 
     ax3.set_xlabel('Genome Position', labelpad=10)
     ax1.set_ylabel('GC skew')
     ax2.set_ylabel('cumulative GC skew')
     ax3.set_ylabel('motif scores')
-    zoom_effect(ax2,ax3, x[0], x[-1], color=colors[3])
+    zoom_effect(ax2, ax3, x[0], x[-1], color=colors[3])
     ax2.xaxis.tick_top()
     ax2.xaxis.set_ticklabels([])
     ax1.tick_params(axis='both', which='major', pad=8)
     fig.align_ylabels([ax1,ax2,ax3])
     for ax in [ax1, ax2]:
-        ax.set_xlim(1, (len(skew_acc)+1) * oric_window)
+        ax.set_xlim(1, (len(skew_acc)+1) * skew_window)
 
     name = getFastaName(fasta)
     plt.suptitle('OriC Analysis for "{}"'.format(name))
-    print('Position of minimum (OriC): ' + str(skew_acc.index(min(skew_acc)) * oric_window)) #added *windowsize for correct position
+    print('Position of minimum (OriC): ' + str(skew_acc.index(min(skew_acc)) * skew_window)) #added *windowsize for correct position
     # print('Motif count (allows 1 mismatch): ' + str(motif_count))
 
     plt.subplots_adjust(wspace=0, hspace=0.4, left=.06, right=.98)
 
-    if save != None:
+    if save is not None:
+        if not path.exists(path.dirname(save)):
+            makedirs(path.dirname(save))
         fig.savefig(save)
-    if show == True:
+        print("File '" + save + "' written.")
+    if show:
         plt.show()
+    plt.close()
