@@ -38,7 +38,7 @@ mast data/families/enterobacteriaceae/meme/meme.xml data/families/enterobacteria
 # thermotoga
 python skew/create_oric_fasta.py skew/Thermotoga/genomes data/thermotoga/skew_regions.fasta
 
-meme data/thermotoga/skew_regions.fasta -dna -oc data/thermotoga/meme -nostatus -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 -cons TTATCCACA
+meme data/thermotoga/skew_regions.fasta -dna -oc data/thermotoga/meme -nostatus -mod anr -nmotifs 3 -minw 12 -maxw 12 -objfun classic -revcomp -markov_order 4 -cons AAACCTACCACC
 mast data/thermotoga/meme/meme.xml data/thermotoga/skew_regions.fasta -oc data/thermotoga/meme -nostatus
 #cmd.exe /C start 'C:\drive\uni\seq_inf\seqinf_project\data\thermotoga\meme\meme.html'
 

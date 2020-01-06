@@ -21,342 +21,509 @@
 	</alphabet>
 	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
 	<motif_dbs>
-		<motif_db source="data/thermotoga/meme/meme.xml" last_mod_date="Mon Jan  6 00:52:38 2020">
+		<motif_db source="data/thermotoga/meme/meme.xml" last_mod_date="Mon Jan  6 23:52:15 2020">
 			<background A="0.288577" C="0.211423" G="0.211423" T="0.288577"/>
 		</motif_db>
 	</motif_dbs>
 	<motifs>
-		<motif db="0" id="TTASCCACG" alt="MEME-1" length="9" nsites="9" evalue="1.3e+003">
-			<pos A="-982" C="-982" G="-982" T="179"/>
-			<pos A="-982" C="-982" G="-982" T="179"/>
-			<pos A="179" C="-982" G="-982" T="-982"/>
-			<pos A="-982" C="66" G="166" T="-982"/>
-			<pos A="-982" C="224" G="-982" T="-982"/>
-			<pos A="-982" C="224" G="-982" T="-982"/>
-			<pos A="179" C="-982" G="-982" T="-982"/>
-			<pos A="-982" C="224" G="-982" T="-982"/>
-			<pos A="-982" C="-982" G="224" T="-982"/>
+		<motif db="0" id="WTACAWACMATW" alt="MEME-1" length="12" nsites="23" evalue="3.7e-005">
+			<pos A="73" C="-1117" G="-1117" T="85"/>
+			<pos A="-1117" C="-128" G="30" T="118"/>
+			<pos A="179" C="-1117" G="-1117" T="-1117"/>
+			<pos A="-1117" C="211" G="-128" T="-1117"/>
+			<pos A="166" C="-1117" G="-128" T="-1117"/>
+			<pos A="108" C="-1117" G="-1117" T="44"/>
+			<pos A="173" C="-1117" G="-1117" T="-273"/>
+			<pos A="-1117" C="224" G="-1117" T="-1117"/>
+			<pos A="118" C="72" G="-1117" T="-1117"/>
+			<pos A="166" C="-1117" G="-128" T="-1117"/>
+			<pos A="-1117" C="-1117" G="-1117" T="179"/>
+			<pos A="118" C="-1117" G="-1117" T="27"/>
 		</motif>
-		<motif db="0" id="GTGGATRCG" alt="MEME-2" length="9" nsites="12" evalue="1.4e+003">
-			<pos A="-1023" C="-1023" G="224" T="-1023"/>
-			<pos A="-1023" C="-1023" G="-1023" T="179"/>
-			<pos A="-1023" C="-1023" G="211" T="-179"/>
-			<pos A="-1023" C="-1023" G="224" T="-1023"/>
-			<pos A="153" C="-1023" G="-34" T="-1023"/>
-			<pos A="-1023" C="-1023" G="-1023" T="179"/>
-			<pos A="121" C="-1023" G="66" T="-1023"/>
-			<pos A="-1023" C="224" G="-1023" T="-1023"/>
-			<pos A="-1023" C="-1023" G="224" T="-1023"/>
+		<motif db="0" id="CGGCRGSTRCMM" alt="MEME-2" length="12" nsites="25" evalue="1.5e-022">
+			<pos A="-1129" C="177" G="-1129" T="-4"/>
+			<pos A="-1129" C="-240" G="218" T="-1129"/>
+			<pos A="-1129" C="-240" G="218" T="-1129"/>
+			<pos A="-27" C="184" G="-1129" T="-1129"/>
+			<pos A="73" C="-1129" G="130" T="-1129"/>
+			<pos A="-1129" C="-1129" G="224" T="-1129"/>
+			<pos A="-1129" C="130" G="118" T="-1129"/>
+			<pos A="-1129" C="-1129" G="-1129" T="179"/>
+			<pos A="85" C="-1129" G="118" T="-1129"/>
+			<pos A="-1129" C="224" G="-1129" T="-1129"/>
+			<pos A="85" C="118" G="-1129" T="-1129"/>
+			<pos A="73" C="130" G="-1129" T="-1129"/>
 		</motif>
-		<motif db="0" id="GAACMVGST" alt="MEME-3" length="9" nsites="27" evalue="1.3e-005">
-			<pos A="-1140" C="-1140" G="224" T="-1140"/>
-			<pos A="174" C="-1140" G="-251" T="-1140"/>
+		<motif db="0" id="SRAGCBKGTTCA" alt="MEME-3" length="12" nsites="27" evalue="2.3e-021">
+			<pos A="-1140" C="119" G="129" T="-1140"/>
+			<pos A="4" C="-93" G="149" T="-1140"/>
 			<pos A="179" C="-1140" G="-1140" T="-1140"/>
+			<pos A="-38" C="-19" G="149" T="-1140"/>
 			<pos A="-1140" C="224" G="-1140" T="-1140"/>
-			<pos A="50" C="149" G="-1140" T="-1140"/>
-			<pos A="50" C="49" G="49" T="-1140"/>
+			<pos A="-1140" C="107" G="49" T="-15"/>
+			<pos A="-1140" C="-1140" G="107" T="95"/>
 			<pos A="-1140" C="-1140" G="224" T="-1140"/>
-			<pos A="-1140" C="166" G="66" T="-1140"/>
 			<pos A="-1140" C="-1140" G="-1140" T="179"/>
+			<pos A="-1140" C="-1140" G="-1140" T="179"/>
+			<pos A="-1140" C="224" G="-1140" T="-1140"/>
+			<pos A="150" C="-1140" G="-19" T="-1140"/>
 		</motif>
 	</motifs>
 	<correlations>
-		<correlation idx_a="0" idx_b="1" value="0.27"/>
-		<correlation idx_a="0" idx_b="2" value="0.23"/>
-		<correlation idx_a="1" idx_b="2" value="0.31"/>
+		<correlation idx_a="0" idx_b="1" value="0.17"/>
+		<correlation idx_a="0" idx_b="2" value="0.20"/>
+		<correlation idx_a="1" idx_b="2" value="0.32"/>
 	</correlations>
 	<sequence_dbs>
-		<sequence_db source="data/thermotoga/skew_regions.fasta" last_mod_date="Mon Jan  6 00:52:14 2020" seq_count="10" residue_count="20000"/>
+		<sequence_db source="data/thermotoga/skew_regions.fasta" last_mod_date="Mon Jan  6 23:52:02 2020" seq_count="10" residue_count="20000"/>
 	</sequence_dbs>
 	<sequences>
 		<sequence db="0" name="NC_000853.1" comment="Thermotoga maritima MSB8 chromosome, 2000 bases around gc minimum at 156900" length="2000">
-			<score strand="both" combined_pvalue="4.91e-04" evalue="0.0049"/>
-			<seg start="1">
-				<data>
-CAGTTTACCCACGATTGAAGTGGCACCAAGAAAGAGAGGACCAGTGGCACCAGCGCTCACAAACGCATCCACTTT
-				</data>
-				<hit pos="5" idx="0" rc="n" pvalue="6.6e-06" match="+++++++++"/>
-				<hit pos="64" idx="1" rc="y" pvalue="6.0e-06" match="+++++++++"/>
-			</seg>
+			<score strand="both" combined_pvalue="6.31e-08" evalue="6.3e-07"/>
 			<seg start="826">
 				<data>
 TTATCTCAACACGAGCGGGTTCAAGACATCTGGCACAGGGGTGTTCTACCGCCGTGTGAACGTATCCACCAACGG
 				</data>
-				<hit pos="839" idx="2" rc="y" pvalue="8.7e-06" match="+++++++++"/>
-				<hit pos="886" idx="1" rc="y" pvalue="3.3e-06" match="+++++++++"/>
+				<hit pos="837" idx="2" rc="n" pvalue="3.3e-07" match="++++++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+TGAAACCATCTTTTGTCTTTGCAACGACCATTTTCACCTGAACAGGTTCCAGGAATCTGCAAAAGCCAACATCGA
+				</data>
+				<hit pos="939" idx="2" rc="y" pvalue="1.1e-06" match="++++++++ +++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+TCCAGTTCATTTTCTATCACCTCTTTTCAGGATCAATTATACTGCTATTATTAGTAGTAGTAAATAATAGGGGAC
+				</data>
+				<hit pos="1077" idx="0" rc="n" pvalue="8.8e-05" match="+ +  + +++++"/>
 			</seg>
 			<seg start="1126">
 				<data>
 GCAGGTGGTAGGTTTCGAGTATTGAAATTTTTGAACAGGCTTCTGATGAGGCTTTTAATGATGTCTGCAACTTAC
 				</data>
-				<hit pos="1158" idx="2" rc="n" pvalue="2.8e-05" match="+++++++++"/>
+				<hit pos="1157" idx="2" rc="y" pvalue="6.4e-07" match="++++++++++++"/>
 			</seg>
-			<seg start="1651">
+			<seg start="1276">
 				<data>
-AAAGAGAAACTCGCAGAGCACGTGGCTAACAACTTAAGAAAAAAGAAACATGAGGTATGGATTGCTCGTGATCGT
+TAGGTTTTCTGTAACGCTCATTAAAAGGACGTTGTAGAATCTTGAATCTGAACGGTAATATTGTTTGTAAAGACT
 				</data>
-				<hit pos="1671" idx="0" rc="y" pvalue="3.3e-06" match="+++++++++"/>
+				<hit pos="1334" idx="0" rc="y" pvalue="1.2e-07" match="++++++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+TGGTAGGTTTGCTTTGCATATATTCAGTTTCATGCAATTGTTTGTCTATTTAATACAATATATGGTATGTATTTA
+				</data>
+				<hit pos="1461" idx="0" rc="y" pvalue="2.6e-06" match="++++++++++++"/>
+				<hit pos="1486" idx="0" rc="y" pvalue="1.3e-06" match="++++++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+GAAGAAATTCTTGAGAGAGTGAAAGAGCTTATCCCGGAGGGTGCAACGGTATCGGCTGGTGGTTCCCTCACCCTG
+				</data>
+				<hit pos="1760" idx="1" rc="n" pvalue="2.6e-06" match="+++ ++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+GCAGATACAGGTGTGATTGAACTTTTGCGCAGCGGCAGGTACAACTTCCTTGACAGGGCAGCTGCCAAAACGAGG
+				</data>
+				<hit pos="1833" idx="1" rc="n" pvalue="1.0e-06" match="++++++++++++"/>
+				<hit pos="1856" idx="1" rc="y" pvalue="1.4e-06" match="+++++++++++ "/>
+			</seg>
+			<seg start="1951">
+				<data>
+GATGGAAAATTGGTCTTTCTCGATGGGAACGGTAACAGGGTAGCCGCCGT
+				</data>
+				<hit pos="1988" idx="1" rc="y" pvalue="9.2e-08" match="++++++++++++"/>
 			</seg>
 		</sequence>
 		<sequence db="0" name="NZ_CP011108.1" comment="Thermotoga maritima strain Tma100, 2000 bases around gc minimum at 156900" length="2000">
-			<score strand="both" combined_pvalue="4.91e-04" evalue="0.0049"/>
-			<seg start="1">
-				<data>
-CAGTTTACCCACGATTGAAGTGGCACCAAGAAAGAGAGGACCAGTGGCACCAGCGCTCACAAACGCATCCACTTT
-				</data>
-				<hit pos="5" idx="0" rc="n" pvalue="6.6e-06" match="+++++++++"/>
-				<hit pos="64" idx="1" rc="y" pvalue="6.0e-06" match="+++++++++"/>
-			</seg>
+			<score strand="both" combined_pvalue="6.31e-08" evalue="6.3e-07"/>
 			<seg start="826">
 				<data>
 TTATCTCAACACGAGCGGGTTCAAGACATCTGGCACAGGGGTGTTCTACCGCCGTGTGAACGTATCCACCAACGG
 				</data>
-				<hit pos="839" idx="2" rc="y" pvalue="8.7e-06" match="+++++++++"/>
-				<hit pos="886" idx="1" rc="y" pvalue="3.3e-06" match="+++++++++"/>
+				<hit pos="837" idx="2" rc="n" pvalue="3.3e-07" match="++++++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+TGAAACCATCTTTTGTCTTTGCAACGACCATTTTCACCTGAACAGGTTCCAGGAATCTGCAAAAGCCAACATCGA
+				</data>
+				<hit pos="939" idx="2" rc="y" pvalue="1.1e-06" match="++++++++ +++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+TCCAGTTCATTTTCTATCACCTCTTTTCAGGATCAATTATACTGCTATTATTAGTAGTAGTAAATAATAGGGGAC
+				</data>
+				<hit pos="1077" idx="0" rc="n" pvalue="8.8e-05" match="+ +  + +++++"/>
 			</seg>
 			<seg start="1126">
 				<data>
 GCAGGTGGTAGGTTTCGAGTATTGAAATTTTTGAACAGGCTTCTGATGAGGCTTTTAATGATGTCTGCAACTTAC
 				</data>
-				<hit pos="1158" idx="2" rc="n" pvalue="2.8e-05" match="+++++++++"/>
+				<hit pos="1157" idx="2" rc="y" pvalue="6.4e-07" match="++++++++++++"/>
 			</seg>
-			<seg start="1651">
+			<seg start="1276">
 				<data>
-AAAGAGAAACTCGCAGAGCACGTGGCTAACAACTTAAGAAAAAAGAAACATGAGGTATGGATTGCTCGTGATCGT
+TAGGTTTTCTGTAACGCTCATTAAAAGGACGTTGTAGAATCTTGAATCTGAACGGTAATATTGTTTGTAAAGACT
 				</data>
-				<hit pos="1671" idx="0" rc="y" pvalue="3.3e-06" match="+++++++++"/>
+				<hit pos="1334" idx="0" rc="y" pvalue="1.2e-07" match="++++++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+TGGTAGGTTTGCTTTGCATATATTCAGTTTCATGCAATTGTTTGTCTATTTAATACAATATATGGTATGTATTTA
+				</data>
+				<hit pos="1461" idx="0" rc="y" pvalue="2.6e-06" match="++++++++++++"/>
+				<hit pos="1486" idx="0" rc="y" pvalue="1.3e-06" match="++++++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+GAAGAAATTCTTGAGAGAGTGAAAGAGCTTATCCCGGAGGGTGCAACGGTATCGGCTGGTGGTTCCCTCACCCTG
+				</data>
+				<hit pos="1760" idx="1" rc="n" pvalue="2.6e-06" match="+++ ++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+GCAGATACAGGTGTGATTGAACTTTTGCGCAGCGGCAGGTACAACTTCCTTGACAGGGCAGCTGCCAAAACGAGG
+				</data>
+				<hit pos="1833" idx="1" rc="n" pvalue="1.0e-06" match="++++++++++++"/>
+				<hit pos="1856" idx="1" rc="y" pvalue="1.4e-06" match="+++++++++++ "/>
+			</seg>
+			<seg start="1951">
+				<data>
+GATGGAAAATTGGTCTTTCTCGATGGGAACGGTAACAGGGTAGCCGCCGT
+				</data>
+				<hit pos="1988" idx="1" rc="y" pvalue="9.2e-08" match="++++++++++++"/>
 			</seg>
 		</sequence>
 		<sequence db="0" name="NZ_CP010967.1" comment="Thermotoga maritima strain Tma200, 2000 bases around gc minimum at 156900" length="2000">
-			<score strand="both" combined_pvalue="4.91e-04" evalue="0.0049"/>
-			<seg start="1">
-				<data>
-CAGTTTACCCACGATTGAAGTGGCACCAAGAAAGAGAGGACCAGTGGCACCAGCGCTCACAAACGCATCCACTTT
-				</data>
-				<hit pos="5" idx="0" rc="n" pvalue="6.6e-06" match="+++++++++"/>
-				<hit pos="64" idx="1" rc="y" pvalue="6.0e-06" match="+++++++++"/>
-			</seg>
+			<score strand="both" combined_pvalue="6.31e-08" evalue="6.3e-07"/>
 			<seg start="826">
 				<data>
 TTATCTCAACACGAGCGGGTTCAAGACATCTGGCACAGGGGTGTTCTACCGCCGTGTGAACGTATCCACCAACGG
 				</data>
-				<hit pos="839" idx="2" rc="y" pvalue="8.7e-06" match="+++++++++"/>
-				<hit pos="886" idx="1" rc="y" pvalue="3.3e-06" match="+++++++++"/>
+				<hit pos="837" idx="2" rc="n" pvalue="3.3e-07" match="++++++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+TGAAACCATCTTTTGTCTTTGCAACGACCATTTTCACCTGAACAGGTTCCAGGAATCTGCAAAAGCCAACATCGA
+				</data>
+				<hit pos="939" idx="2" rc="y" pvalue="1.1e-06" match="++++++++ +++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+TCCAGTTCATTTTCTATCACCTCTTTTCAGGATCAATTATACTGCTATTATTAGTAGTAGTAAATAATAGGGGAC
+				</data>
+				<hit pos="1077" idx="0" rc="n" pvalue="8.8e-05" match="+ +  + +++++"/>
 			</seg>
 			<seg start="1126">
 				<data>
 GCAGGTGGTAGGTTTCGAGTATTGAAATTTTTGAACAGGCTTCTGATGAGGCTTTTAATGATGTCTGCAACTTAC
 				</data>
-				<hit pos="1158" idx="2" rc="n" pvalue="2.8e-05" match="+++++++++"/>
+				<hit pos="1157" idx="2" rc="y" pvalue="6.4e-07" match="++++++++++++"/>
 			</seg>
-			<seg start="1651">
+			<seg start="1276">
 				<data>
-AAAGAGAAACTCGCAGAGCACGTGGCTAACAACTTAAGAAAAAAGAAACATGAGGTATGGATTGCTCGTGATCGT
+TAGGTTTTCTGTAACGCTCATTAAAAGGACGTTGTAGAATCTTGAATCTGAACGGTAATATTGTTTGTAAAGACT
 				</data>
-				<hit pos="1671" idx="0" rc="y" pvalue="3.3e-06" match="+++++++++"/>
+				<hit pos="1334" idx="0" rc="y" pvalue="1.2e-07" match="++++++++++++"/>
+			</seg>
+			<seg start="1426">
+				<data>
+TGGTAGGTTTGCTTTGCATATATTCAGTTTCATGCAATTGTTTGTCTATTTAATACAATATATGGTATGTATTTA
+				</data>
+				<hit pos="1461" idx="0" rc="y" pvalue="2.6e-06" match="++++++++++++"/>
+				<hit pos="1486" idx="0" rc="y" pvalue="1.3e-06" match="++++++++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+GAAGAAATTCTTGAGAGAGTGAAAGAGCTTATCCCGGAGGGTGCAACGGTATCGGCTGGTGGTTCCCTCACCCTG
+				</data>
+				<hit pos="1760" idx="1" rc="n" pvalue="2.6e-06" match="+++ ++++++++"/>
+			</seg>
+			<seg start="1801">
+				<data>
+GCAGATACAGGTGTGATTGAACTTTTGCGCAGCGGCAGGTACAACTTCCTTGACAGGGCAGCTGCCAAAACGAGG
+				</data>
+				<hit pos="1833" idx="1" rc="n" pvalue="1.0e-06" match="++++++++++++"/>
+				<hit pos="1856" idx="1" rc="y" pvalue="1.4e-06" match="+++++++++++ "/>
+			</seg>
+			<seg start="1951">
+				<data>
+GATGGAAAATTGGTCTTTCTCGATGGGAACGGTAACAGGGTAGCCGCCGT
+				</data>
+				<hit pos="1988" idx="1" rc="y" pvalue="9.2e-08" match="++++++++++++"/>
 			</seg>
 		</sequence>
 		<sequence db="0" name="NC_009486.1" comment="Thermotoga petrophila RKU-1, 2000 bases around gc minimum at 786600" length="2000">
-			<score strand="both" combined_pvalue="4.91e-04" evalue="0.0049"/>
-			<seg start="76">
-				<data>
-GAGTGGATTGCAAGAGAGTATCTCTCAAGGAGGGGCGGCGTCAGATTCAGACCAGACCAGCTCGTTCCATCGAAA
-				</data>
-				<hit pos="134" idx="2" rc="y" pvalue="1.0e-04" match="++++ ++++"/>
-			</seg>
+			<score strand="both" combined_pvalue="6.31e-08" evalue="6.3e-07"/>
 			<seg start="601">
 				<data>
 TTCATCGGAGAGATGTATCTCAGCCTTTCTCTCGCCTCCTCTACGTCTTTCACCACCTTGTTCACACTCGCTATC
 				</data>
-				<hit pos="655" idx="2" rc="y" pvalue="3.8e-05" match="+++++++++"/>
+				<hit pos="653" idx="2" rc="n" pvalue="8.2e-06" match="+ + + ++++++"/>
 			</seg>
-			<seg start="976">
+			<seg start="676">
 				<data>
-TCACGATCACGAGCAATCCATACCTCATGTTTCTTTTTTCTTAAGTTGTTAGCCACGTGCTCTGCGAGTTTCTCT
+ACAACCACGTTTTTTGGTCCAAAAACAACGGCGGCTACCCTGTTACCGTTCCCGTCGAGAAAGACCAATTTTCCA
 				</data>
-				<hit pos="1024" idx="0" rc="n" pvalue="3.3e-06" match="+++++++++"/>
+				<hit pos="704" idx="1" rc="n" pvalue="9.2e-08" match="++++++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TCCCTCGTTTTGGCAGCTGCCCTGTCAAGGAAGTTGTACCTGCCGCTGCGCAAAAGTTCAATCACACCTGTATCT
+				</data>
+				<hit pos="836" idx="1" rc="n" pvalue="1.4e-06" match=" +++++++++++"/>
+				<hit pos="859" idx="1" rc="y" pvalue="1.0e-06" match="++++++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+GCCAGAGTGAGGGAACCACCAGCCGATACCGTTGCACCCTCCGGGATAAGCTCTTTCACTCTCTCAAGAATTTCT
+				</data>
+				<hit pos="932" idx="1" rc="y" pvalue="2.6e-06" match="++++++++ +++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+TTTAATTACATACCGTATATTGTATTAAATTGACGAACAATTGCATGGAATTGAATATATGCAAAACAAACCTAC
+				</data>
+				<hit pos="1206" idx="0" rc="n" pvalue="6.8e-06" match="+++++++++ ++"/>
+				<hit pos="1231" idx="0" rc="n" pvalue="1.0e-05" match="++++ +++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TTAGTCTTTACAAACAATATTACCGTTCAGATTCAAGATTCTACAACGCTGTTTTAATGGGCGTTGCAGAAAACT
+				</data>
+				<hit pos="1358" idx="0" rc="n" pvalue="1.2e-07" match="++++++++++++"/>
 			</seg>
 			<seg start="1501">
 				<data>
 TGGTAAGTTGCAGACATTATTAAAAACCTCATCAGAAGCTTGTTCAAAAATTTCAATACTCGAAACCTACCACCT
 				</data>
-				<hit pos="1537" idx="2" rc="y" pvalue="2.8e-05" match="+++++++++"/>
+				<hit pos="1535" idx="2" rc="n" pvalue="2.2e-06" match="+++++ ++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+ACTCGATGTGGGTTTCTGCAGATTCTTGGAACCTGTTCGAGTGAAAATGGTCGTTGCAAAGACAAAAGATGGTTT
+				</data>
+				<hit pos="1753" idx="2" rc="n" pvalue="4.1e-06" match="+++ +++++++ "/>
 			</seg>
 			<seg start="1801">
 				<data>
 CACAGTCGGTGGATACGTTCACACGGCAATAGAACATCCCTGTGCCAGGTGTCTTGAACCCGCTCGTGTCGAAAT
 				</data>
-				<hit pos="1809" idx="1" rc="n" pvalue="3.3e-06" match="+++++++++"/>
-				<hit pos="1856" idx="2" rc="n" pvalue="8.7e-06" match="+++++++++"/>
+				<hit pos="1855" idx="2" rc="y" pvalue="3.3e-07" match="++++++++++++"/>
 			</seg>
 		</sequence>
 		<sequence db="0" name="NZ_CP003408.1" comment="Thermotoga sp. 2812B, 2000 bases around gc minimum at 826900" length="2000">
-			<score strand="both" combined_pvalue="4.91e-04" evalue="0.0049"/>
+			<score strand="both" combined_pvalue="6.31e-08" evalue="6.3e-07"/>
 			<seg start="76">
 				<data>
 TCATCGGAGAGATGTATCTCAGCCTTTCTCTCGCCTCCTCTACGTCTTTCACCACCTTGTTCACACTCGCTATCA
 				</data>
-				<hit pos="129" idx="2" rc="y" pvalue="3.8e-05" match="+++++++++"/>
+				<hit pos="127" idx="2" rc="n" pvalue="8.2e-06" match="+ + + ++++++"/>
 			</seg>
-			<seg start="451">
+			<seg start="151">
 				<data>
-CACGATCACGAGCAATCCATACCTCATGTTTCTTTTTTCTTAAGTTGTTAGCCACGTGCTCTGCGAGTTTCTCTT
+CAACCACGTTTTTTGGTCCAAAAACAACGGCGGCTACCCTGTTACCGTTCCCATCGAGAAAGACCAATTTTCCAT
 				</data>
-				<hit pos="498" idx="0" rc="n" pvalue="3.3e-06" match="+++++++++"/>
+				<hit pos="178" idx="1" rc="n" pvalue="9.2e-08" match="++++++++++++"/>
+			</seg>
+			<seg start="301">
+				<data>
+CCCTCGTTTTGGCAGCTGCCCTGTCGAGGAAGTTGTACCTGCCACTGCGCAAAAGTTCGATCACACCTGTATCTG
+				</data>
+				<hit pos="310" idx="1" rc="n" pvalue="1.4e-06" match=" +++++++++++"/>
+				<hit pos="333" idx="1" rc="y" pvalue="3.3e-06" match="+++++++++++ "/>
+			</seg>
+			<seg start="376">
+				<data>
+CCAGGGTGAGGGAACCACCAGCCGATACCGTTGCACCCTCCGGGATAAGCTCTTTCACTCTCTCAAGAATTTCTT
+				</data>
+				<hit pos="406" idx="1" rc="y" pvalue="2.6e-06" match="++++++++ +++"/>
+			</seg>
+			<seg start="676">
+				<data>
+TTAAATACATACCATATATTGTATTAAATAGACAAACAATTGCATGAAACTGAATATATGCAAAGCAAACCTACC
+				</data>
+				<hit pos="680" idx="0" rc="n" pvalue="1.3e-06" match="++++++++++++"/>
+				<hit pos="705" idx="0" rc="n" pvalue="2.6e-06" match="++++++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+TAGTCTTTACAAACAATATTACCGTTCAGATTCAAGATTCTACAACGTCCTTTTAATGAGCGTTACAGAAAACCT
+				</data>
+				<hit pos="832" idx="0" rc="n" pvalue="1.2e-07" match="++++++++++++"/>
 			</seg>
 			<seg start="976">
 				<data>
 GGTAAGTTGCAGACATCATTAAAAGCCTCATCAGAAGCCTGTTCAAAAATTTCAATACTCGAAACCTACCACCTG
 				</data>
-				<hit pos="1011" idx="2" rc="y" pvalue="2.8e-05" match="+++++++++"/>
+				<hit pos="1009" idx="2" rc="n" pvalue="6.4e-07" match="++++++++++++"/>
+			</seg>
+			<seg start="1051">
+				<data>
+CGTCCCCTATTATTTACTACTACTAATAATAGCAGTATAATTGATCCTGAAAAGAGGTGATAGAAAATGAACTGG
+				</data>
+				<hit pos="1089" idx="0" rc="y" pvalue="8.8e-05" match="+++++ +  + +"/>
+			</seg>
+			<seg start="1201">
+				<data>
+CTCGATGTTGGCTTTTGCAGATTCCTGGAACCTGTTCAGGTGAAAATGGTCGTTGCAAAGACAAAAGATGGTTTC
+				</data>
+				<hit pos="1227" idx="2" rc="n" pvalue="1.1e-06" match="+++ ++++++++"/>
 			</seg>
 			<seg start="1276">
 				<data>
 ACCGTTGGTGGATACGTTCACACGGCGGTAGAACACCCCTGTGCCAGATGTCTTGAACCCGCTCGTGTTGAGATA
 				</data>
-				<hit pos="1283" idx="1" rc="n" pvalue="3.3e-06" match="+++++++++"/>
-				<hit pos="1330" idx="2" rc="n" pvalue="8.7e-06" match="+++++++++"/>
+				<hit pos="1329" idx="2" rc="y" pvalue="3.3e-07" match="++++++++++++"/>
 			</seg>
 		</sequence>
 		<sequence db="0" name="NC_010483.1" comment="Thermotoga sp. RQ2, 2000 bases around gc minimum at 821600" length="2000">
-			<score strand="both" combined_pvalue="4.91e-04" evalue="0.0049"/>
-			<seg start="76">
-				<data>
-TCATGCCGGAGTGGATTGCAAGAGAGTATCTCTCAAGGAGGGGCGGCGTCAGATTCAGACCAGACCAGCTCGTTC
-				</data>
-				<hit pos="142" idx="2" rc="y" pvalue="1.0e-04" match="++++ ++++"/>
-			</seg>
+			<score strand="both" combined_pvalue="6.31e-08" evalue="6.3e-07"/>
 			<seg start="601">
 				<data>
 GTTTCGAATTCATCGGAGAGATGTATCTCAGCCTTTCTCTCGCCTCCTCTACGTCTTTCACCACCTTGTTCACAC
 				</data>
-				<hit pos="663" idx="2" rc="y" pvalue="3.8e-05" match="+++++++++"/>
+				<hit pos="661" idx="2" rc="n" pvalue="8.2e-06" match="+ + + ++++++"/>
 			</seg>
-			<seg start="976">
+			<seg start="676">
 				<data>
-GAATTTCTTCACGATCACGAGCAATCCATACCTCATGTTTCTTTTTTCTTAAGTTGTTAGCCACGTGCTCTGCGA
+TCGCTATCACAACCACGTTTTTTGGTCCAAAAACAACGGCGGCTACCCTGTTACCGTTCCCATCGAGAAAGACCA
 				</data>
-				<hit pos="1032" idx="0" rc="n" pvalue="3.3e-06" match="+++++++++"/>
+				<hit pos="712" idx="1" rc="n" pvalue="9.2e-08" match="++++++++++++"/>
+			</seg>
+			<seg start="826">
+				<data>
+CCACTTCCTCCCTCGTTTTGGCAGCTGCCCTGTCAAGGAAGTTGTACCTGCCGCTGCGCAAAAGTTCAATCACAC
+				</data>
+				<hit pos="844" idx="1" rc="n" pvalue="1.4e-06" match=" +++++++++++"/>
+				<hit pos="867" idx="1" rc="y" pvalue="1.0e-06" match="++++++++++++"/>
+			</seg>
+			<seg start="901">
+				<data>
+CTGTATCTGCCAGGGTGAGGGAACCACCAGCCGATACCGTTGCACCCTCCGGGATAAGCTCTTTCACTCTCTCAA
+				</data>
+				<hit pos="940" idx="1" rc="y" pvalue="2.6e-06" match="++++++++ +++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+ATCTGATTTTTAATTACATACCGTATATTGTATTAAATTGACGAACAATTGCATGAAACTGAATATATGCAAAGC
+				</data>
+				<hit pos="1214" idx="0" rc="n" pvalue="6.8e-06" match="+++++++++ ++"/>
+				<hit pos="1239" idx="0" rc="n" pvalue="1.0e-05" match="++++ +++++++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+AGACTATTTTAGTCTTTACAAACAATATTACCGTTCAGATTCAAGATTCTACAACGTCCTTTTAATGAGCGTTGC
+				</data>
+				<hit pos="1366" idx="0" rc="n" pvalue="1.2e-07" match="++++++++++++"/>
 			</seg>
 			<seg start="1501">
 				<data>
 CACCCGGGTGGTAAGTTGCAGACATTATTAAAAACCTCATCAGAAGCTTGTTCAAAAATTTCAATACTCGAAACC
 				</data>
-				<hit pos="1545" idx="2" rc="y" pvalue="2.8e-05" match="+++++++++"/>
+				<hit pos="1543" idx="2" rc="n" pvalue="2.2e-06" match="+++++ ++++++"/>
+			</seg>
+			<seg start="1726">
+				<data>
+GGTATAGAACTCGATGTTGGCTTTTGTAGATTCCTGGAACCTGTTCAGGTGAAAATGGTCGTTGCAAAAACGAAA
+				</data>
+				<hit pos="1761" idx="2" rc="n" pvalue="1.1e-06" match="+++ ++++++++"/>
 			</seg>
 			<seg start="1801">
 				<data>
 GATGGTTTTACAGTCGGTGGATACGTTCACACGGCAATAGAACACCCCTGTGCCAGATGTCTTGAACCCGCTCGT
 				</data>
-				<hit pos="1817" idx="1" rc="n" pvalue="3.3e-06" match="+++++++++"/>
-				<hit pos="1864" idx="2" rc="n" pvalue="8.7e-06" match="+++++++++"/>
+				<hit pos="1863" idx="2" rc="y" pvalue="3.3e-07" match="++++++++++++"/>
 			</seg>
 		</sequence>
 		<sequence db="0" name="NC_011978.1" comment="Thermotoga neapolitana DSM 4359, 2000 bases around gc minimum at 538800" length="2000">
-			<score strand="both" combined_pvalue="3.52e-02" evalue="0.35"/>
-			<seg start="1">
-				<data>
-TCTTCTTGAGCAGATCATAGACACACCCGGAACCAGGTACATCCTCGTTCCAAACCAACACATAGGAGTCTACAA
-				</data>
-				<hit pos="30" idx="2" rc="n" pvalue="2.8e-05" match="+++++++++"/>
-			</seg>
+			<score strand="both" combined_pvalue="1.65e-03" evalue="0.016"/>
 			<seg start="76">
 				<data>
 GGTCGGATTCATGCCGGAGTGGATCGCAAGGGAGTACCTCTCAAGAAGAGGAGGAGTGAAATTCAAACCGAACCA
 GCTCGTGCCGTCAAAATGTGCTCTGCTTGGATTTTCACTCAAGGAAATGAAGATCGAAGGAATAACGATCCCCAA
 				</data>
-				<hit pos="145" idx="2" rc="n" pvalue="8.7e-06" match="+++++++++"/>
+				<hit pos="144" idx="2" rc="y" pvalue="3.0e-06" match=" +++++ +++++"/>
 			</seg>
 			<seg start="301">
 				<data>
 CTTCTTCAAGAGAGAACTCAAAAAATTCCTCACAGAGGATCTGAACCCGGTTGGAAGAGAGATCATCCAGTGCTG
 				</data>
-				<hit pos="343" idx="2" rc="n" pvalue="2.8e-05" match="+++++++++"/>
+				<hit pos="342" idx="2" rc="y" pvalue="4.8e-06" match="++++++++ +++"/>
 			</seg>
-			<seg start="676">
+			<seg start="1201">
 				<data>
-TTCACGCTTGCGATCACGATCACATTCCTGGGACCGTAGACAACCGCTGCCACCCTGTTCCCGTTTCCATCGAGA
+CTTATGGTATCTATTGGTAGAAAACACACAACATGAAGTAGAAAAAGTGATGAAGAATCATTCTTTGCTTCTTTT
 				</data>
-				<hit pos="727" idx="2" rc="y" pvalue="3.8e-05" match="+++++++++"/>
+				<hit pos="1203" idx="0" rc="y" pvalue="9.5e-06" match="++++++++ +++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TCACCAAAAGAGCACTTTAGTTCTCACAAACAATTTTACCGTAAAATCTTCGTTCTTTGAAATCCTCTTCTGAAG
+				</data>
+				<hit pos="1374" idx="0" rc="n" pvalue="4.7e-06" match="+ ++++++++++"/>
 			</seg>
 			<seg start="1726">
 				<data>
 AATAGAACTGGATGTGGGTTTTTGTAAGTTCCTGGAGCCGGTTCGGGTGAAGATGGTTGTTGCAAAGACCAAAGA
 				</data>
-				<hit pos="1761" idx="2" rc="y" pvalue="8.7e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1801">
-				<data>
-TGGATTCACCATCGGTGGGTACGTTCACACAGCGATAGAGCACCCGTGTGCCAGATGTCTGGAACCAACGCGTGT
-				</data>
-				<hit pos="1815" idx="1" rc="n" pvalue="8.7e-06" match="++++ ++++"/>
+				<hit pos="1759" idx="2" rc="n" pvalue="8.9e-07" match="+++++++++++ "/>
 			</seg>
 		</sequence>
 		<sequence db="0" name="NZ_CP007633.1" comment="Thermotoga sp. RQ7, 2000 bases around gc minimum at 815900" length="2000">
-			<score strand="both" combined_pvalue="3.52e-02" evalue="0.35"/>
-			<seg start="1">
-				<data>
-GGAAAGATGGTGAGGCTCGCCAACATTCTTCTTGAGCAGATCATAGACACACCCGGAACCAGGTACATCCTCGTT
-				</data>
-				<hit pos="56" idx="2" rc="n" pvalue="2.8e-05" match="+++++++++"/>
-			</seg>
+			<score strand="both" combined_pvalue="1.65e-03" evalue="0.016"/>
 			<seg start="151">
 				<data>
 GGAGGAGTGAAATTCAAACCGAACCAGCTCGTGCCGTCAAAATGTGCTCTGCTTGGATTTTCACTCAAGGAAATG
 				</data>
-				<hit pos="171" idx="2" rc="n" pvalue="8.7e-06" match="+++++++++"/>
+				<hit pos="170" idx="2" rc="y" pvalue="3.0e-06" match=" +++++ +++++"/>
 			</seg>
 			<seg start="301">
 				<data>
 GAAAAAGGAGCACAGCAACTCAGAGACTTCTTCAAGAGAGAACTCAAAAAATTCCTCACAGAGGATCTGAACCCG
 GTTGGAAGAGAGATCATCCAGTGCTGCCTCGACGATGGGTCCCTTGAGGATTATCTGAAGATCATTCCCATGAAC
 				</data>
-				<hit pos="369" idx="2" rc="n" pvalue="2.8e-05" match="+++++++++"/>
+				<hit pos="368" idx="2" rc="y" pvalue="4.8e-06" match="++++++++ +++"/>
 			</seg>
-			<seg start="751">
+			<seg start="1201">
 				<data>
-CCACCCTGTTCCCGTTTCCATCGAGAAAGACCAGTTTTCCATCCTCCGTTATAGCATTTGCACTGGTGAAGTAGT
+GTTTAGTGGTAGGTTTCTGAACACTACTTATGGTATCTATTGGTAGAAAACACACAACATGAAGTAGAAAAAGTG
 				</data>
-				<hit pos="753" idx="2" rc="y" pvalue="3.8e-05" match="+++++++++"/>
+				<hit pos="1229" idx="0" rc="y" pvalue="9.5e-06" match="++++++++ +++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+TTGAAGGTGGTAGGTTTCTGTATGATTCACCAAAAGAGCACTTTAGTTCTCACAAACAATTTTACCGTAAAATCT
+				</data>
+				<hit pos="1400" idx="0" rc="n" pvalue="4.7e-06" match="+ ++++++++++"/>
 			</seg>
 			<seg start="1726">
 				<data>
 GAAGGTGAGTACAAAAGTGAAGGAATAGAACTGGATGTGGGTTTTTGTAAGTTCCTGGAGCCGGTTCGGGTGAAG
 				</data>
-				<hit pos="1784" idx="2" rc="y" pvalue="8.7e-06" match="+++++++++"/>
-			</seg>
-			<seg start="1801">
-				<data>
-ATGGTTGTTGCAAAGACCAAAGATGGATTCACCATCGGTGGGTACGTTCACACAGCGATAGAGCACCCGTGTGCC
-				</data>
-				<hit pos="1838" idx="1" rc="n" pvalue="8.7e-06" match="++++ ++++"/>
+				<hit pos="1782" idx="2" rc="n" pvalue="8.9e-07" match="+++++++++++ "/>
 			</seg>
 		</sequence>
 		<sequence db="0" name="NC_013642.1" comment="Thermotoga naphthophila RKU-10, 2000 bases around gc minimum at 141800" length="2000">
-			<score strand="both" combined_pvalue="2.81e-01" evalue="2.8"/>
-			<seg start="226">
+			<score strand="both" combined_pvalue="2.30e-01" evalue="2.3"/>
+			<seg start="601">
 				<data>
-ACCATCTCCTATTTCCCCCCTTGAAACCTGAAGGGGAGGTCCCCTTCAGGCCAGCTGGTCCATCATCTTTCCGTA
+CCAGGAATAAACTATCGTTCCGCCTCCGTCTACCACGTAAACAGCCCTCTTCGCAGCGGTGTAGCCGGGGATATT
 				</data>
-				<hit pos="278" idx="2" rc="y" pvalue="4.6e-05" match="+++++++ +"/>
-			</seg>
-			<seg start="1801">
-				<data>
-AAGGGATGATTAACATGAAAATACTTTTCTTACTTTTTCTGGTGACCGCTTCCCTGCTTCTCATGATGGGAACCA
-GCTGTGAATCGAGGGTTCAGGTGCCGGTGCCTCTTCCCAAAGTGGATGTCGAAATGCCGAAGGTGGACCTCGGTT
-				</data>
-				<hit pos="1870" idx="2" rc="n" pvalue="8.7e-06" match="+++++++++"/>
+				<hit pos="659" idx="1" rc="y" pvalue="1.4e-05" match="+++++++++  +"/>
 			</seg>
 		</sequence>
 		<sequence db="0" name="NC_009828.1" comment="Pseudothermotoga lettingae TMO, 2000 bases around gc minimum at 140800" length="2000">
-			<score strand="both" combined_pvalue="4.79e-01" evalue="4.8"/>
-			<seg start="1351">
+			<score strand="both" combined_pvalue="3.87e-01" evalue="3.9"/>
+			<seg start="526">
 				<data>
-AGATCATTCAATGCTCGAACACCTTTTGAATATTACGCATCAACAGCCGATACACCCAGGAAATTAAGAGATGTG
+TGGAACACCTTCAAGCCTTGTTCTGACAACAAAAATCGAATAAATTCCATAACCTGTTAGCATATTGAATGTATC
 				</data>
-				<hit pos="1386" idx="1" rc="y" pvalue="1.8e-05" match="++++++ ++"/>
+				<hit pos="588" idx="0" rc="y" pvalue="1.2e-05" match="+++++ ++++++"/>
 			</seg>
 		</sequence>
 	</sequences>
-	<runtime host="PC0028" when="Mon Jan  6 00:52:39 2020" cycles="15625" seconds="0.016"/>
+	<runtime host="PC0028" when="Mon Jan  6 23:52:15 2020" cycles="15625" seconds="0.016"/>
 </mast>

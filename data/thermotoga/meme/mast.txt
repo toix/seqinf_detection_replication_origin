@@ -23,23 +23,23 @@ REFERENCE
 DATABASE AND MOTIFS
 ********************************************************************************
 	DATABASE skew_regions.fasta (nucleotide)
-	Last updated on Mon Jan  6 00:52:14 2020
+	Last updated on Mon Jan  6 23:52:02 2020
 	Database contains 10 sequences, 20000 residues
 
 	Scores for positive and reverse complement strands are combined.
 
 	MOTIFS meme.xml (nucleotide)
-	MOTIF ID        ALT ID WIDTH BEST POSSIBLE MATCH
-	----- --------- ------ ----- -------------------
-	    1 TTASCCACG MEME-1     9 TTAGCCACG
-	    2 GTGGATRCG MEME-2     9 GTGGATACG
-	    3 GAACMVGST MEME-3     9 GAACCAGCT
+	MOTIF ID           ALT ID WIDTH BEST POSSIBLE MATCH
+	----- ------------ ------ ----- -------------------
+	    1 WTACAWACMATW MEME-1    12 TTACAAACAATA
+	    2 CGGCRGSTRCMM MEME-2    12 CGGCGGCTGCCC
+	    3 SRAGCBKGTTCA MEME-3    12 GGAGCCGGTTCA
 
 	PAIRWISE MOTIF CORRELATIONS:
 	MOTIF     1     2
 	----- ----- -----
-	   2   0.27
-	   3   0.23  0.31
+	   2   0.17
+	   3   0.20  0.32
 	No overly similar pairs (correlation > 0.60) found.
 
 	Random model letter frequencies (from non-redundant database):
@@ -74,16 +74,16 @@ SECTION I: HIGH-SCORING SEQUENCES
 
 SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
 -------------                      -----------                   -------- ------
-NC_000853.1                        Thermotoga maritima MSB8 c...   0.0049   2000
-NZ_CP011108.1                      Thermotoga maritima strain...   0.0049   2000
-NZ_CP010967.1                      Thermotoga maritima strain...   0.0049   2000
-NC_009486.1                        Thermotoga petrophila RKU-...   0.0049   2000
-NZ_CP003408.1                      Thermotoga sp. 2812B, 2000...   0.0049   2000
-NC_010483.1                        Thermotoga sp. RQ2, 2000 b...   0.0049   2000
-NC_011978.1                        Thermotoga neapolitana DSM...     0.35   2000
-NZ_CP007633.1                      Thermotoga sp. RQ7, 2000 b...     0.35   2000
-NC_013642.1                        Thermotoga naphthophila RK...      2.8   2000
-NC_009828.1                        Pseudothermotoga lettingae...      4.8   2000
+NC_000853.1                        Thermotoga maritima MSB8 c...  6.3e-07   2000
+NZ_CP011108.1                      Thermotoga maritima strain...  6.3e-07   2000
+NZ_CP010967.1                      Thermotoga maritima strain...  6.3e-07   2000
+NC_009486.1                        Thermotoga petrophila RKU-...  6.3e-07   2000
+NZ_CP003408.1                      Thermotoga sp. 2812B, 2000...  6.3e-07   2000
+NC_010483.1                        Thermotoga sp. RQ2, 2000 b...  6.3e-07   2000
+NC_011978.1                        Thermotoga neapolitana DSM...    0.016   2000
+NZ_CP007633.1                      Thermotoga sp. RQ7, 2000 b...    0.016   2000
+NC_013642.1                        Thermotoga naphthophila RK...      2.3   2000
+NC_009828.1                        Pseudothermotoga lettingae...      3.9   2000
 
 ********************************************************************************
 
@@ -114,16 +114,16 @@ SECTION II: MOTIF DIAGRAMS
 
 SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
 -------------                      --------  -------------
-NC_000853.1                          0.0049  4-[+1]-50-[-2]-766-[-3]-38-[-2]-263-[+3]-504-[-1]-321
-NZ_CP011108.1                        0.0049  4-[+1]-50-[-2]-766-[-3]-38-[-2]-263-[+3]-504-[-1]-321
-NZ_CP010967.1                        0.0049  4-[+1]-50-[-2]-766-[-3]-38-[-2]-263-[+3]-504-[-1]-321
-NC_009486.1                          0.0049  133-<-3>-512-[-3]-360-[+1]-504-[-3]-263-[+2]-38-[+3]-136
-NZ_CP003408.1                        0.0049  128-[-3]-360-[+1]-504-[-3]-263-[+2]-38-[+3]-662
-NC_010483.1                          0.0049  141-<-3>-512-[-3]-360-[+1]-504-[-3]-263-[+2]-38-[+3]-128
-NC_011978.1                            0.35  29-[+3]-106-[+3]-189-[+3]-375-[-3]-1025-[-3]-45-[+2]-177
-NZ_CP007633.1                          0.35  55-[+3]-106-[+3]-189-[+3]-375-[-3]-1022-[-3]-45-[+2]-154
-NC_013642.1                             2.8  277-[-3]-1583-[+3]-122
-NC_009828.1                             4.8  1385-[-2]-606
+NC_000853.1                         6.3e-07  836-[+3]-90-[-3]-126-[+1]-68-[-3]-165-[-1]-115-[-1]-13-[-1]-262-[+2]-61-[+2]-11-[-2]-120-[-2]-1
+NZ_CP011108.1                       6.3e-07  836-[+3]-90-[-3]-126-[+1]-68-[-3]-165-[-1]-115-[-1]-13-[-1]-262-[+2]-61-[+2]-11-[-2]-120-[-2]-1
+NZ_CP010967.1                       6.3e-07  836-[+3]-90-[-3]-126-[+1]-68-[-3]-165-[-1]-115-[-1]-13-[-1]-262-[+2]-61-[+2]-11-[-2]-120-[-2]-1
+NC_009486.1                         6.3e-07  652-[+3]-39-[+2]-120-[+2]-11-[-2]-61-[-2]-262-[+1]-13-[+1]-115-[+1]-165-[+3]-206-[+3]-90-[-3]-134
+NZ_CP003408.1                       6.3e-07  126-[+3]-39-[+2]-120-[+2]-11-[-2]-61-[-2]-262-[+1]-13-[+1]-115-[+1]-165-[+3]-68-[-1]-126-[+3]-90-[-3]-660
+NC_010483.1                         6.3e-07  660-[+3]-39-[+2]-120-[+2]-11-[-2]-61-[-2]-262-[+1]-13-[+1]-115-[+1]-165-[+3]-206-[+3]-90-[-3]-126
+NC_011978.1                           0.016  143-[-3]-186-[-3]-849-[-1]-159-[+1]-373-[+3]-230
+NZ_CP007633.1                         0.016  169-[-3]-186-[-3]-849-[-1]-159-[+1]-370-[+3]-207
+NC_013642.1                             2.3  658-[-2]-1330
+NC_009828.1                             3.9  587-[-1]-1401
 
 ********************************************************************************
 
@@ -158,326 +158,476 @@ SECTION III: ANNOTATED SEQUENCES
 
 NC_000853.1
   Thermotoga maritima MSB8 chromosome, 2000 bases around gc minimum at 156900
-  LENGTH = 2000  COMBINED P-VALUE = 4.91e-04  E-VALUE =   0.0049
-  DIAGRAM: 4-[+1]-50-[-2]-766-[-3]-38-[-2]-263-[+3]-504-[-1]-321
+  LENGTH = 2000  COMBINED P-VALUE = 6.31e-08  E-VALUE =  6.3e-07
+  DIAGRAM: 836-[+3]-90-[-3]-126-[+1]-68-[-3]-165-[-1]-115-[-1]-13-[-1]-262-[+2]-61-[+2]-11-[-2]-120-[-2]-1
 
-         [+1]                                                       [-2]
-         6.6e-06                                                    6.0e-06
-         TTAGCCACG                                                  CGTATCCAC
-         +++++++++                                                  +++++++++
-1    CAGTTTACCCACGATTGAAGTGGCACCAAGAAAGAGAGGACCAGTGGCACCAGCGCTCACAAACGCATCCACTTT
-
-                  [-3]                                           [-2]
-                  8.7e-06                                        3.3e-06
-                  AGCTGGTTC                                      CGTATCCAC
-                  +++++++++                                      +++++++++
+                [+3]
+                3.3e-07
+                GGAGCCGGTTCA
+                ++++++++++++
 826  TTATCTCAACACGAGCGGGTTCAAGACATCTGGCACAGGGGTGTTCTACCGCCGTGTGAACGTATCCACCAACGG
 
-                                     [+3]
-                                     2.8e-05
-                                     GAACCAGCT
-                                     +++++++++
+                                           [-3]
+                                           1.1e-06
+                                           TGAACCGGCTCC
+                                           ++++++++ +++
+901  TGAAACCATCTTTTGTCTTTGCAACGACCATTTTCACCTGAACAGGTTCCAGGAATCTGCAAAAGCCAACATCGA
+
+                               [+1]
+                               8.8e-05
+                               TTACAAACAATA
+                               + +  + +++++
+1051 TCCAGTTCATTTTCTATCACCTCTTTTCAGGATCAATTATACTGCTATTATTAGTAGTAGTAAATAATAGGGGAC
+
+                                    [-3]
+                                    6.4e-07
+                                    TGAACCGGCTCC
+                                    ++++++++++++
 1126 GCAGGTGGTAGGTTTCGAGTATTGAAATTTTTGAACAGGCTTCTGATGAGGCTTTTAATGATGTCTGCAACTTAC
 
-                         [-1]
-                         3.3e-06
-                         CGTGGCTAA
-                         +++++++++
-1651 AAAGAGAAACTCGCAGAGCACGTGGCTAACAACTTAAGAAAAAAGAAACATGAGGTATGGATTGCTCGTGATCGT
+                                                               [-1]
+                                                               1.2e-07
+                                                               TATTGTTTGTAA
+                                                               ++++++++++++
+1276 TAGGTTTTCTGTAACGCTCATTAAAAGGACGTTGTAGAATCTTGAATCTGAACGGTAATATTGTTTGTAAAGACT
+
+                                        [-1]                     [-1]
+                                        2.6e-06                  1.3e-06
+                                        TATTGTTTGTAA             TATTGTTTGTAA
+                                        ++++++++++++             ++++++++++++
+1426 TGGTAGGTTTGCTTTGCATATATTCAGTTTCATGCAATTGTTTGTCTATTTAATACAATATATGGTATGTATTTA
+
+                                       [+2]
+                                       2.6e-06
+                                       CGGCGGCTGCCC
+                                       +++ ++++++++
+1726 GAAGAAATTCTTGAGAGAGTGAAAGAGCTTATCCCGGAGGGTGCAACGGTATCGGCTGGTGGTTCCCTCACCCTG
+
+                                     [+2]                   [-2]
+                                     1.0e-06                1.4e-06
+                                     CGGCGGCTGCCC           GGGCAGCCGCCG
+                                     ++++++++++++           +++++++++++
+1801 GCAGATACAGGTGTGATTGAACTTTTGCGCAGCGGCAGGTACAACTTCCTTGACAGGGCAGCTGCCAAAACGAGG
+
+                                          [-2]
+                                          9.2e-08
+                                          GGGCAGCCGCCG
+                                          ++++++++++++
+1951 GATGGAAAATTGGTCTTTCTCGATGGGAACGGTAACAGGGTAGCCGCCGT
 
 
 NZ_CP011108.1
   Thermotoga maritima strain Tma100, 2000 bases around gc minimum at 156900
-  LENGTH = 2000  COMBINED P-VALUE = 4.91e-04  E-VALUE =   0.0049
-  DIAGRAM: 4-[+1]-50-[-2]-766-[-3]-38-[-2]-263-[+3]-504-[-1]-321
+  LENGTH = 2000  COMBINED P-VALUE = 6.31e-08  E-VALUE =  6.3e-07
+  DIAGRAM: 836-[+3]-90-[-3]-126-[+1]-68-[-3]-165-[-1]-115-[-1]-13-[-1]-262-[+2]-61-[+2]-11-[-2]-120-[-2]-1
 
-         [+1]                                                       [-2]
-         6.6e-06                                                    6.0e-06
-         TTAGCCACG                                                  CGTATCCAC
-         +++++++++                                                  +++++++++
-1    CAGTTTACCCACGATTGAAGTGGCACCAAGAAAGAGAGGACCAGTGGCACCAGCGCTCACAAACGCATCCACTTT
-
-                  [-3]                                           [-2]
-                  8.7e-06                                        3.3e-06
-                  AGCTGGTTC                                      CGTATCCAC
-                  +++++++++                                      +++++++++
+                [+3]
+                3.3e-07
+                GGAGCCGGTTCA
+                ++++++++++++
 826  TTATCTCAACACGAGCGGGTTCAAGACATCTGGCACAGGGGTGTTCTACCGCCGTGTGAACGTATCCACCAACGG
 
-                                     [+3]
-                                     2.8e-05
-                                     GAACCAGCT
-                                     +++++++++
+                                           [-3]
+                                           1.1e-06
+                                           TGAACCGGCTCC
+                                           ++++++++ +++
+901  TGAAACCATCTTTTGTCTTTGCAACGACCATTTTCACCTGAACAGGTTCCAGGAATCTGCAAAAGCCAACATCGA
+
+                               [+1]
+                               8.8e-05
+                               TTACAAACAATA
+                               + +  + +++++
+1051 TCCAGTTCATTTTCTATCACCTCTTTTCAGGATCAATTATACTGCTATTATTAGTAGTAGTAAATAATAGGGGAC
+
+                                    [-3]
+                                    6.4e-07
+                                    TGAACCGGCTCC
+                                    ++++++++++++
 1126 GCAGGTGGTAGGTTTCGAGTATTGAAATTTTTGAACAGGCTTCTGATGAGGCTTTTAATGATGTCTGCAACTTAC
 
-                         [-1]
-                         3.3e-06
-                         CGTGGCTAA
-                         +++++++++
-1651 AAAGAGAAACTCGCAGAGCACGTGGCTAACAACTTAAGAAAAAAGAAACATGAGGTATGGATTGCTCGTGATCGT
+                                                               [-1]
+                                                               1.2e-07
+                                                               TATTGTTTGTAA
+                                                               ++++++++++++
+1276 TAGGTTTTCTGTAACGCTCATTAAAAGGACGTTGTAGAATCTTGAATCTGAACGGTAATATTGTTTGTAAAGACT
+
+                                        [-1]                     [-1]
+                                        2.6e-06                  1.3e-06
+                                        TATTGTTTGTAA             TATTGTTTGTAA
+                                        ++++++++++++             ++++++++++++
+1426 TGGTAGGTTTGCTTTGCATATATTCAGTTTCATGCAATTGTTTGTCTATTTAATACAATATATGGTATGTATTTA
+
+                                       [+2]
+                                       2.6e-06
+                                       CGGCGGCTGCCC
+                                       +++ ++++++++
+1726 GAAGAAATTCTTGAGAGAGTGAAAGAGCTTATCCCGGAGGGTGCAACGGTATCGGCTGGTGGTTCCCTCACCCTG
+
+                                     [+2]                   [-2]
+                                     1.0e-06                1.4e-06
+                                     CGGCGGCTGCCC           GGGCAGCCGCCG
+                                     ++++++++++++           +++++++++++
+1801 GCAGATACAGGTGTGATTGAACTTTTGCGCAGCGGCAGGTACAACTTCCTTGACAGGGCAGCTGCCAAAACGAGG
+
+                                          [-2]
+                                          9.2e-08
+                                          GGGCAGCCGCCG
+                                          ++++++++++++
+1951 GATGGAAAATTGGTCTTTCTCGATGGGAACGGTAACAGGGTAGCCGCCGT
 
 
 NZ_CP010967.1
   Thermotoga maritima strain Tma200, 2000 bases around gc minimum at 156900
-  LENGTH = 2000  COMBINED P-VALUE = 4.91e-04  E-VALUE =   0.0049
-  DIAGRAM: 4-[+1]-50-[-2]-766-[-3]-38-[-2]-263-[+3]-504-[-1]-321
+  LENGTH = 2000  COMBINED P-VALUE = 6.31e-08  E-VALUE =  6.3e-07
+  DIAGRAM: 836-[+3]-90-[-3]-126-[+1]-68-[-3]-165-[-1]-115-[-1]-13-[-1]-262-[+2]-61-[+2]-11-[-2]-120-[-2]-1
 
-         [+1]                                                       [-2]
-         6.6e-06                                                    6.0e-06
-         TTAGCCACG                                                  CGTATCCAC
-         +++++++++                                                  +++++++++
-1    CAGTTTACCCACGATTGAAGTGGCACCAAGAAAGAGAGGACCAGTGGCACCAGCGCTCACAAACGCATCCACTTT
-
-                  [-3]                                           [-2]
-                  8.7e-06                                        3.3e-06
-                  AGCTGGTTC                                      CGTATCCAC
-                  +++++++++                                      +++++++++
+                [+3]
+                3.3e-07
+                GGAGCCGGTTCA
+                ++++++++++++
 826  TTATCTCAACACGAGCGGGTTCAAGACATCTGGCACAGGGGTGTTCTACCGCCGTGTGAACGTATCCACCAACGG
 
-                                     [+3]
-                                     2.8e-05
-                                     GAACCAGCT
-                                     +++++++++
+                                           [-3]
+                                           1.1e-06
+                                           TGAACCGGCTCC
+                                           ++++++++ +++
+901  TGAAACCATCTTTTGTCTTTGCAACGACCATTTTCACCTGAACAGGTTCCAGGAATCTGCAAAAGCCAACATCGA
+
+                               [+1]
+                               8.8e-05
+                               TTACAAACAATA
+                               + +  + +++++
+1051 TCCAGTTCATTTTCTATCACCTCTTTTCAGGATCAATTATACTGCTATTATTAGTAGTAGTAAATAATAGGGGAC
+
+                                    [-3]
+                                    6.4e-07
+                                    TGAACCGGCTCC
+                                    ++++++++++++
 1126 GCAGGTGGTAGGTTTCGAGTATTGAAATTTTTGAACAGGCTTCTGATGAGGCTTTTAATGATGTCTGCAACTTAC
 
-                         [-1]
-                         3.3e-06
-                         CGTGGCTAA
-                         +++++++++
-1651 AAAGAGAAACTCGCAGAGCACGTGGCTAACAACTTAAGAAAAAAGAAACATGAGGTATGGATTGCTCGTGATCGT
+                                                               [-1]
+                                                               1.2e-07
+                                                               TATTGTTTGTAA
+                                                               ++++++++++++
+1276 TAGGTTTTCTGTAACGCTCATTAAAAGGACGTTGTAGAATCTTGAATCTGAACGGTAATATTGTTTGTAAAGACT
+
+                                        [-1]                     [-1]
+                                        2.6e-06                  1.3e-06
+                                        TATTGTTTGTAA             TATTGTTTGTAA
+                                        ++++++++++++             ++++++++++++
+1426 TGGTAGGTTTGCTTTGCATATATTCAGTTTCATGCAATTGTTTGTCTATTTAATACAATATATGGTATGTATTTA
+
+                                       [+2]
+                                       2.6e-06
+                                       CGGCGGCTGCCC
+                                       +++ ++++++++
+1726 GAAGAAATTCTTGAGAGAGTGAAAGAGCTTATCCCGGAGGGTGCAACGGTATCGGCTGGTGGTTCCCTCACCCTG
+
+                                     [+2]                   [-2]
+                                     1.0e-06                1.4e-06
+                                     CGGCGGCTGCCC           GGGCAGCCGCCG
+                                     ++++++++++++           +++++++++++
+1801 GCAGATACAGGTGTGATTGAACTTTTGCGCAGCGGCAGGTACAACTTCCTTGACAGGGCAGCTGCCAAAACGAGG
+
+                                          [-2]
+                                          9.2e-08
+                                          GGGCAGCCGCCG
+                                          ++++++++++++
+1951 GATGGAAAATTGGTCTTTCTCGATGGGAACGGTAACAGGGTAGCCGCCGT
 
 
 NC_009486.1
   Thermotoga petrophila RKU-1, 2000 bases around gc minimum at 786600
-  LENGTH = 2000  COMBINED P-VALUE = 4.91e-04  E-VALUE =   0.0049
-  DIAGRAM: 133-<-3>-512-[-3]-360-[+1]-504-[-3]-263-[+2]-38-[+3]-136
+  LENGTH = 2000  COMBINED P-VALUE = 6.31e-08  E-VALUE =  6.3e-07
+  DIAGRAM: 652-[+3]-39-[+2]-120-[+2]-11-[-2]-61-[-2]-262-[+1]-13-[+1]-115-[+1]-165-[+3]-206-[+3]-90-[-3]-134
 
-                                                               <-3>
-                                                               1.0e-04
-                                                               AGCTGGTTC
-                                                               ++++ ++++
-76   GAGTGGATTGCAAGAGAGTATCTCTCAAGGAGGGGCGGCGTCAGATTCAGACCAGACCAGCTCGTTCCATCGAAA
-
-                                                           [-3]
-                                                           3.8e-05
-                                                           AGCTGGTTC
-                                                           +++++++++
+                                                         [+3]
+                                                         8.2e-06
+                                                         GGAGCCGGTTCA
+                                                         + + + ++++++
 601  TTCATCGGAGAGATGTATCTCAGCCTTTCTCTCGCCTCCTCTACGTCTTTCACCACCTTGTTCACACTCGCTATC
 
-                                                     [+1]
-                                                     3.3e-06
-                                                     TTAGCCACG
-                                                     +++++++++
-976  TCACGATCACGAGCAATCCATACCTCATGTTTCTTTTTTCTTAAGTTGTTAGCCACGTGCTCTGCGAGTTTCTCT
+                                 [+2]
+                                 9.2e-08
+                                 CGGCGGCTGCCC
+                                 ++++++++++++
+676  ACAACCACGTTTTTTGGTCCAAAAACAACGGCGGCTACCCTGTTACCGTTCCCGTCGAGAAAGACCAATTTTCCA
 
-                                         [-3]
-                                         2.8e-05
-                                         AGCTGGTTC
-                                         +++++++++
+               [+2]                   [-2]
+               1.4e-06                1.0e-06
+               CGGCGGCTGCCC           GGGCAGCCGCCG
+                +++++++++++           ++++++++++++
+826  TCCCTCGTTTTGGCAGCTGCCCTGTCAAGGAAGTTGTACCTGCCGCTGCGCAAAAGTTCAATCACACCTGTATCT
+
+                                    [-2]
+                                    2.6e-06
+                                    GGGCAGCCGCCG
+                                    ++++++++ +++
+901  GCCAGAGTGAGGGAACCACCAGCCGATACCGTTGCACCCTCCGGGATAAGCTCTTTCACTCTCTCAAGAATTTCT
+
+          [+1]                     [+1]
+          6.8e-06                  1.0e-05
+          TTACAAACAATA             TTACAAACAATA
+          +++++++++ ++             ++++ +++++++
+1201 TTTAATTACATACCGTATATTGTATTAAATTGACGAACAATTGCATGGAATTGAATATATGCAAAACAAACCTAC
+
+            [+1]
+            1.2e-07
+            TTACAAACAATA
+            ++++++++++++
+1351 TTAGTCTTTACAAACAATATTACCGTTCAGATTCAAGATTCTACAACGCTGTTTTAATGGGCGTTGCAGAAAACT
+
+                                       [+3]
+                                       2.2e-06
+                                       GGAGCCGGTTCA
+                                       +++++ ++++++
 1501 TGGTAAGTTGCAGACATTATTAAAAACCTCATCAGAAGCTTGTTCAAAAATTTCAATACTCGAAACCTACCACCT
 
-             [+2]                                           [+3]
-             3.3e-06                                        8.7e-06
-             GTGGATACG                                      GAACCAGCT
-             +++++++++                                      +++++++++
+                                [+3]
+                                4.1e-06
+                                GGAGCCGGTTCA
+                                +++ +++++++
+1726 ACTCGATGTGGGTTTCTGCAGATTCTTGGAACCTGTTCGAGTGAAAATGGTCGTTGCAAAGACAAAAGATGGTTT
+
+                                                           [-3]
+                                                           3.3e-07
+                                                           TGAACCGGCTCC
+                                                           ++++++++++++
 1801 CACAGTCGGTGGATACGTTCACACGGCAATAGAACATCCCTGTGCCAGGTGTCTTGAACCCGCTCGTGTCGAAAT
 
 
 NZ_CP003408.1
   Thermotoga sp. 2812B, 2000 bases around gc minimum at 826900
-  LENGTH = 2000  COMBINED P-VALUE = 4.91e-04  E-VALUE =   0.0049
-  DIAGRAM: 128-[-3]-360-[+1]-504-[-3]-263-[+2]-38-[+3]-662
+  LENGTH = 2000  COMBINED P-VALUE = 6.31e-08  E-VALUE =  6.3e-07
+  DIAGRAM: 126-[+3]-39-[+2]-120-[+2]-11-[-2]-61-[-2]-262-[+1]-13-[+1]-115-[+1]-165-[+3]-68-[-1]-126-[+3]-90-[-3]-660
 
-                                                          [-3]
-                                                          3.8e-05
-                                                          AGCTGGTTC
-                                                          +++++++++
+                                                        [+3]
+                                                        8.2e-06
+                                                        GGAGCCGGTTCA
+                                                        + + + ++++++
 76   TCATCGGAGAGATGTATCTCAGCCTTTCTCTCGCCTCCTCTACGTCTTTCACCACCTTGTTCACACTCGCTATCA
 
-                                                    [+1]
-                                                    3.3e-06
-                                                    TTAGCCACG
-                                                    +++++++++
-451  CACGATCACGAGCAATCCATACCTCATGTTTCTTTTTTCTTAAGTTGTTAGCCACGTGCTCTGCGAGTTTCTCTT
+                                [+2]
+                                9.2e-08
+                                CGGCGGCTGCCC
+                                ++++++++++++
+151  CAACCACGTTTTTTGGTCCAAAAACAACGGCGGCTACCCTGTTACCGTTCCCATCGAGAAAGACCAATTTTCCAT
 
-                                        [-3]
-                                        2.8e-05
-                                        AGCTGGTTC
-                                        +++++++++
+              [+2]                   [-2]
+              1.4e-06                3.3e-06
+              CGGCGGCTGCCC           GGGCAGCCGCCG
+               +++++++++++           +++++++++++
+301  CCCTCGTTTTGGCAGCTGCCCTGTCGAGGAAGTTGTACCTGCCACTGCGCAAAAGTTCGATCACACCTGTATCTG
+
+                                   [-2]
+                                   2.6e-06
+                                   GGGCAGCCGCCG
+                                   ++++++++ +++
+376  CCAGGGTGAGGGAACCACCAGCCGATACCGTTGCACCCTCCGGGATAAGCTCTTTCACTCTCTCAAGAATTTCTT
+
+         [+1]                     [+1]
+         1.3e-06                  2.6e-06
+         TTACAAACAATA             TTACAAACAATA
+         ++++++++++++             ++++++++++++
+676  TTAAATACATACCATATATTGTATTAAATAGACAAACAATTGCATGAAACTGAATATATGCAAAGCAAACCTACC
+
+           [+1]
+           1.2e-07
+           TTACAAACAATA
+           ++++++++++++
+826  TAGTCTTTACAAACAATATTACCGTTCAGATTCAAGATTCTACAACGTCCTTTTAATGAGCGTTACAGAAAACCT
+
+                                      [+3]
+                                      6.4e-07
+                                      GGAGCCGGTTCA
+                                      ++++++++++++
 976  GGTAAGTTGCAGACATCATTAAAAGCCTCATCAGAAGCCTGTTCAAAAATTTCAATACTCGAAACCTACCACCTG
 
-            [+2]                                           [+3]
-            3.3e-06                                        8.7e-06
-            GTGGATACG                                      GAACCAGCT
-            +++++++++                                      +++++++++
+                                           [-1]
+                                           8.8e-05
+                                           TATTGTTTGTAA
+                                           +++++ +  + +
+1051 CGTCCCCTATTATTTACTACTACTAATAATAGCAGTATAATTGATCCTGAAAAGAGGTGATAGAAAATGAACTGG
+
+                               [+3]
+                               1.1e-06
+                               GGAGCCGGTTCA
+                               +++ ++++++++
+1201 CTCGATGTTGGCTTTTGCAGATTCCTGGAACCTGTTCAGGTGAAAATGGTCGTTGCAAAGACAAAAGATGGTTTC
+
+                                                          [-3]
+                                                          3.3e-07
+                                                          TGAACCGGCTCC
+                                                          ++++++++++++
 1276 ACCGTTGGTGGATACGTTCACACGGCGGTAGAACACCCCTGTGCCAGATGTCTTGAACCCGCTCGTGTTGAGATA
 
 
 NC_010483.1
   Thermotoga sp. RQ2, 2000 bases around gc minimum at 821600
-  LENGTH = 2000  COMBINED P-VALUE = 4.91e-04  E-VALUE =   0.0049
-  DIAGRAM: 141-<-3>-512-[-3]-360-[+1]-504-[-3]-263-[+2]-38-[+3]-128
+  LENGTH = 2000  COMBINED P-VALUE = 6.31e-08  E-VALUE =  6.3e-07
+  DIAGRAM: 660-[+3]-39-[+2]-120-[+2]-11-[-2]-61-[-2]-262-[+1]-13-[+1]-115-[+1]-165-[+3]-206-[+3]-90-[-3]-126
 
-                                                                       <-3>
-                                                                       1.0e-04
-                                                                       AGCTGGTTC
-                                                                       ++++ ++++
-76   TCATGCCGGAGTGGATTGCAAGAGAGTATCTCTCAAGGAGGGGCGGCGTCAGATTCAGACCAGACCAGCTCGTTC
-
-                                                                   [-3]
-                                                                   3.8e-05
-                                                                   AGCTGGTTC
-                                                                   +++++++++
+                                                                 [+3]
+                                                                 8.2e-06
+                                                                 GGAGCCGGTTCA
+                                                                 + + + ++++++
 601  GTTTCGAATTCATCGGAGAGATGTATCTCAGCCTTTCTCTCGCCTCCTCTACGTCTTTCACCACCTTGTTCACAC
 
-                                                             [+1]
-                                                             3.3e-06
-                                                             TTAGCCACG
-                                                             +++++++++
-976  GAATTTCTTCACGATCACGAGCAATCCATACCTCATGTTTCTTTTTTCTTAAGTTGTTAGCCACGTGCTCTGCGA
+                                         [+2]
+                                         9.2e-08
+                                         CGGCGGCTGCCC
+                                         ++++++++++++
+676  TCGCTATCACAACCACGTTTTTTGGTCCAAAAACAACGGCGGCTACCCTGTTACCGTTCCCATCGAGAAAGACCA
 
-                                                 [-3]
-                                                 2.8e-05
-                                                 AGCTGGTTC
-                                                 +++++++++
+                       [+2]                   [-2]
+                       1.4e-06                1.0e-06
+                       CGGCGGCTGCCC           GGGCAGCCGCCG
+                        +++++++++++           ++++++++++++
+826  CCACTTCCTCCCTCGTTTTGGCAGCTGCCCTGTCAAGGAAGTTGTACCTGCCGCTGCGCAAAAGTTCAATCACAC
+
+                                            [-2]
+                                            2.6e-06
+                                            GGGCAGCCGCCG
+                                            ++++++++ +++
+901  CTGTATCTGCCAGGGTGAGGGAACCACCAGCCGATACCGTTGCACCCTCCGGGATAAGCTCTTTCACTCTCTCAA
+
+                  [+1]                     [+1]
+                  6.8e-06                  1.0e-05
+                  TTACAAACAATA             TTACAAACAATA
+                  +++++++++ ++             ++++ +++++++
+1201 ATCTGATTTTTAATTACATACCGTATATTGTATTAAATTGACGAACAATTGCATGAAACTGAATATATGCAAAGC
+
+                    [+1]
+                    1.2e-07
+                    TTACAAACAATA
+                    ++++++++++++
+1351 AGACTATTTTAGTCTTTACAAACAATATTACCGTTCAGATTCAAGATTCTACAACGTCCTTTTAATGAGCGTTGC
+
+                                               [+3]
+                                               2.2e-06
+                                               GGAGCCGGTTCA
+                                               +++++ ++++++
 1501 CACCCGGGTGGTAAGTTGCAGACATTATTAAAAACCTCATCAGAAGCTTGTTCAAAAATTTCAATACTCGAAACC
 
-                     [+2]                                           [+3]
-                     3.3e-06                                        8.7e-06
-                     GTGGATACG                                      GAACCAGCT
-                     +++++++++                                      +++++++++
+                                        [+3]
+                                        1.1e-06
+                                        GGAGCCGGTTCA
+                                        +++ ++++++++
+1726 GGTATAGAACTCGATGTTGGCTTTTGTAGATTCCTGGAACCTGTTCAGGTGAAAATGGTCGTTGCAAAAACGAAA
+
+                                                                   [-3]
+                                                                   3.3e-07
+                                                                   TGAACCGGCTCC
+                                                                   ++++++++++++
 1801 GATGGTTTTACAGTCGGTGGATACGTTCACACGGCAATAGAACACCCCTGTGCCAGATGTCTTGAACCCGCTCGT
 
 
 NC_011978.1
   Thermotoga neapolitana DSM 4359, 2000 bases around gc minimum at 538800
-  LENGTH = 2000  COMBINED P-VALUE = 3.52e-02  E-VALUE =     0.35
-  DIAGRAM: 29-[+3]-106-[+3]-189-[+3]-375-[-3]-1025-[-3]-45-[+2]-177
+  LENGTH = 2000  COMBINED P-VALUE = 1.65e-03  E-VALUE =    0.016
+  DIAGRAM: 143-[-3]-186-[-3]-849-[-1]-159-[+1]-373-[+3]-230
 
-                                  [+3]
-                                  2.8e-05
-                                  GAACCAGCT
-                                  +++++++++
-1    TCTTCTTGAGCAGATCATAGACACACCCGGAACCAGGTACATCCTCGTTCCAAACCAACACATAGGAGTCTACAA
-
-                                                                          [+3]
-                                                                          8.7e-0
-                                                                          GAACCA
-                                                                          ++++++
+                                                                         [-3]
+                                                                         3.0e-06
+                                                                         TGAACCG
+                                                                          +++++
 76   GGTCGGATTCATGCCGGAGTGGATCGCAAGGGAGTACCTCTCAAGAAGAGGAGGAGTGAAATTCAAACCGAACCA
 
      
-     6
-     GCT
-     +++
+     
+     GCTCC
+     +++++
 151  GCTCGTGCCGTCAAAATGTGCTCTGCTTGGATTTTCACTCAAGGAAATGAAGATCGAAGGAATAACGATCCCCAA
 
-                                               [+3]
-                                               2.8e-05
-                                               GAACCAGCT
-                                               +++++++++
+                                              [-3]
+                                              4.8e-06
+                                              TGAACCGGCTCC
+                                              ++++++++ +++
 301  CTTCTTCAAGAGAGAACTCAAAAAATTCCTCACAGAGGATCTGAACCCGGTTGGAAGAGAGATCATCCAGTGCTG
 
-                                                        [-3]
-                                                        3.8e-05
-                                                        AGCTGGTTC
-                                                        +++++++++
-676  TTCACGCTTGCGATCACGATCACATTCCTGGGACCGTAGACAACCGCTGCCACCCTGTTCCCGTTTCCATCGAGA
+       [-1]
+       9.5e-06
+       TATTGTTTGTAA
+       ++++++++ +++
+1201 CTTATGGTATCTATTGGTAGAAAACACACAACATGAAGTAGAAAAAGTGATGAAGAATCATTCTTTGCTTCTTTT
 
-                                        [-3]
-                                        8.7e-06
-                                        AGCTGGTTC
-                                        +++++++++
+                            [+1]
+                            4.7e-06
+                            TTACAAACAATA
+                            + ++++++++++
+1351 TCACCAAAAGAGCACTTTAGTTCTCACAAACAATTTTACCGTAAAATCTTCGTTCTTTGAAATCCTCTTCTGAAG
+
+                                      [+3]
+                                      8.9e-07
+                                      GGAGCCGGTTCA
+                                      +++++++++++
 1726 AATAGAACTGGATGTGGGTTTTTGTAAGTTCCTGGAGCCGGTTCGGGTGAAGATGGTTGTTGCAAAGACCAAAGA
-
-                   [+2]
-                   8.7e-06
-                   GTGGATACG
-                   ++++ ++++
-1801 TGGATTCACCATCGGTGGGTACGTTCACACAGCGATAGAGCACCCGTGTGCCAGATGTCTGGAACCAACGCGTGT
 
 
 NZ_CP007633.1
   Thermotoga sp. RQ7, 2000 bases around gc minimum at 815900
-  LENGTH = 2000  COMBINED P-VALUE = 3.52e-02  E-VALUE =     0.35
-  DIAGRAM: 55-[+3]-106-[+3]-189-[+3]-375-[-3]-1022-[-3]-45-[+2]-154
+  LENGTH = 2000  COMBINED P-VALUE = 1.65e-03  E-VALUE =    0.016
+  DIAGRAM: 169-[-3]-186-[-3]-849-[-1]-159-[+1]-370-[+3]-207
 
-                                                            [+3]
-                                                            2.8e-05
-                                                            GAACCAGCT
-                                                            +++++++++
-1    GGAAAGATGGTGAGGCTCGCCAACATTCTTCTTGAGCAGATCATAGACACACCCGGAACCAGGTACATCCTCGTT
-
-                         [+3]
-                         8.7e-06
-                         GAACCAGCT
-                         +++++++++
+                        [-3]
+                        3.0e-06
+                        TGAACCGGCTCC
+                         +++++ +++++
 151  GGAGGAGTGAAATTCAAACCGAACCAGCTCGTGCCGTCAAAATGTGCTCTGCTTGGATTTTCACTCAAGGAAATG
 
-                                                                         [+3]
-                                                                         2.8e-05
-                                                                         GAACCAG
-                                                                         +++++++
+                                                                        [-3]
+                                                                        4.8e-06
+                                                                        TGAACCGG
+                                                                        ++++++++
 301  GAAAAAGGAGCACAGCAACTCAGAGACTTCTTCAAGAGAGAACTCAAAAAATTCCTCACAGAGGATCTGAACCCG
 
      
      
-     CT
-     ++
+     CTCC
+      +++
 376  GTTGGAAGAGAGATCATCCAGTGCTGCCTCGACGATGGGTCCCTTGAGGATTATCTGAAGATCATTCCCATGAAC
 
-       [-3]
-       3.8e-05
-       AGCTGGTTC
-       +++++++++
-751  CCACCCTGTTCCCGTTTCCATCGAGAAAGACCAGTTTTCCATCCTCCGTTATAGCATTTGCACTGGTGAAGTAGT
+                                 [-1]
+                                 9.5e-06
+                                 TATTGTTTGTAA
+                                 ++++++++ +++
+1201 GTTTAGTGGTAGGTTTCTGAACACTACTTATGGTATCTATTGGTAGAAAACACACAACATGAAGTAGAAAAAGTG
 
-                                                               [-3]
-                                                               8.7e-06
-                                                               AGCTGGTTC
-                                                               +++++++++
+                                                      [+1]
+                                                      4.7e-06
+                                                      TTACAAACAATA
+                                                      + ++++++++++
+1351 TTGAAGGTGGTAGGTTTCTGTATGATTCACCAAAAGAGCACTTTAGTTCTCACAAACAATTTTACCGTAAAATCT
+
+                                                             [+3]
+                                                             8.9e-07
+                                                             GGAGCCGGTTCA
+                                                             +++++++++++
 1726 GAAGGTGAGTACAAAAGTGAAGGAATAGAACTGGATGTGGGTTTTTGTAAGTTCCTGGAGCCGGTTCGGGTGAAG
-
-                                          [+2]
-                                          8.7e-06
-                                          GTGGATACG
-                                          ++++ ++++
-1801 ATGGTTGTTGCAAAGACCAAAGATGGATTCACCATCGGTGGGTACGTTCACACAGCGATAGAGCACCCGTGTGCC
 
 
 NC_013642.1
   Thermotoga naphthophila RKU-10, 2000 bases around gc minimum at 141800
-  LENGTH = 2000  COMBINED P-VALUE = 2.81e-01  E-VALUE =      2.8
-  DIAGRAM: 277-[-3]-1583-[+3]-122
+  LENGTH = 2000  COMBINED P-VALUE = 2.30e-01  E-VALUE =      2.3
+  DIAGRAM: 658-[-2]-1330
 
-                                                         [-3]
-                                                         4.6e-05
-                                                         AGCTGGTTC
-                                                         +++++++ +
-226  ACCATCTCCTATTTCCCCCCTTGAAACCTGAAGGGGAGGTCCCCTTCAGGCCAGCTGGTCCATCATCTTTCCGTA
-
-                                                                          [+3]
-                                                                          8.7e-0
-                                                                          GAACCA
-                                                                          ++++++
-1801 AAGGGATGATTAACATGAAAATACTTTTCTTACTTTTTCTGGTGACCGCTTCCCTGCTTCTCATGATGGGAACCA
-
-     
-     6
-     GCT
-     +++
-1876 GCTGTGAATCGAGGGTTCAGGTGCCGGTGCCTCTTCCCAAAGTGGATGTCGAAATGCCGAAGGTGGACCTCGGTT
+                                                               [-2]
+                                                               1.4e-05
+                                                               GGGCAGCCGCCG
+                                                               +++++++++  +
+601  CCAGGAATAAACTATCGTTCCGCCTCCGTCTACCACGTAAACAGCCCTCTTCGCAGCGGTGTAGCCGGGGATATT
 
 
 NC_009828.1
   Pseudothermotoga lettingae TMO, 2000 bases around gc minimum at 140800
-  LENGTH = 2000  COMBINED P-VALUE = 4.79e-01  E-VALUE =      4.8
-  DIAGRAM: 1385-[-2]-606
+  LENGTH = 2000  COMBINED P-VALUE = 3.87e-01  E-VALUE =      3.9
+  DIAGRAM: 587-[-1]-1401
 
-                                        [-2]
-                                        1.8e-05
-                                        CGTATCCAC
-                                        ++++++ ++
-1351 AGATCATTCAATGCTCGAACACCTTTTGAATATTACGCATCAACAGCCGATACACCCAGGAAATTAAGAGATGTG
+                                                                   [-1]
+                                                                   1.2e-05
+                                                                   TATTGTTTGTAA
+                                                                   +++++ ++++++
+526  TGGAACACCTTCAAGCCTTGTTCTGACAACAAAAATCGAATAAATTCCATAACCTGTTAGCATATTGAATGTATC
 
 ********************************************************************************
 
