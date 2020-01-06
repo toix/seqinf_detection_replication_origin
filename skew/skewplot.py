@@ -38,17 +38,26 @@ def cwindowskew(skew):
     return window_skew.tolist()
 
 
-def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors=None, save=None):
+def getFastaName(fasta):
+    name = ' '.join(fasta.description.split()[1:5])
+    if name.endswith(' '):
+        name = name[:-1]
+    if name.endswith(','):
+        name = name[:-1]
+    return name
+
+
+def plot(fasta, skew_window, oric_window, regionsize, show, dnaa=None, colors=None, save=None):
     if colors == None:
         colors = ['xkcd:blue' for i in range(4)]
-    fig, (ax1, ax2, ax3) = plt.subplots(3, 1, sharex=False, figsize=(20, 5))
-    pos = [x * windowsize + windowsize / 2 for x in range(1, len(skew) + 1)]
+    fig, (ax1, ax2, ax3) = plt.subplots(3, 1, sharex=False, figsize=(16, 6))
+    pos = [x * oric_window + oric_window / 2 for x in range(1, len(skew_window) + 1)]
 
     # ax1
-    ax1.plot(pos, skew, colors[0])
+    ax1.plot(pos, skew_window, colors[0])
 
     # ax2
-    skew_acc = accumlate_skew(skew)
+    skew_acc = accumlate_skew(skew_window)
     ax2.plot(pos, skew_acc,color=colors[1])
 
     # other quality score
@@ -68,7 +77,7 @@ def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors=None, save
     #ax2.plot(pos, window_skew_acc, color='r')
 
     # ax3
-    x, scores, motif_count = calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta)
+    x, scores, motif_count = calcmotif(regionsize, dnaa, skew_acc, oric_window, fasta)
     ax3.plot(x, scores, color=colors[2])
     ax3.set_xlim(x[0], x[-1])
     ax3.set_ylim(0, len(dnaa))  # limit y-axis to motif length
@@ -83,12 +92,14 @@ def plot(fasta, skew, windowsize, regionsize, show, dnaa=None, colors=None, save
     ax1.tick_params(axis='both', which='major', pad=8)
     fig.align_ylabels([ax1,ax2,ax3])
     for ax in [ax1, ax2]:
-        ax.set_xlim(1, (len(skew_acc)+1)*windowsize)
-    plt.suptitle('GC skew')
-    print('Position of minimum (OriC): ' + str(skew_acc.index(min(skew_acc))*windowsize)) #added *windowsize for correct position
+        ax.set_xlim(1, (len(skew_acc)+1) * oric_window)
+
+    name = getFastaName(fasta)
+    plt.suptitle('OriC Analysis for "{}"'.format(name))
+    print('Position of minimum (OriC): ' + str(skew_acc.index(min(skew_acc)) * oric_window)) #added *windowsize for correct position
     # print('Motif count (allows 1 mismatch): ' + str(motif_count))
 
-    plt.subplots_adjust(wspace=0, hspace=0.4, left=0.1, right=0.9)
+    plt.subplots_adjust(wspace=0, hspace=0.4, left=.06, right=.98)
 
     if save != None:
         fig.savefig(save)

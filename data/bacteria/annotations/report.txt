@@ -1,0 +1,13 @@
+HistoryId: NCID_1_67278120_130.14.18.97_5555_1578253180_3239560966_0MetA0_S_HStore
+QueryKey: 14
+ReleaseType: RefSeq
+FileType: GENOME_GFF
+Flat: true
+
+Query title: Search "Bacteria"[Organism] AND "complete genome"[filter] AND "reference genome"[filter] AND latest[filter] AND  ( all[filter] NOT "derived from surveillance project"[filter] AND all[filter] NOT anomalous[filter] )   Sort by: SORTORDER
+Search results count: 118
+Entries to download: 118
+
+GENOME_GFF files in archive: 118
+Total size (bytes): 35495423
+Total time: 5.72 seconds

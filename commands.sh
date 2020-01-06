@@ -9,14 +9,9 @@ export PYTHONPATH=$PYTHONPATH:/mnt/c/drive/uni/seq_inf/seqinf_project
 cd /mnt/c/drive/uni/seq_inf/seqinf_project
 
 # DoriC
-meme data/bacteria/doric_bactria.fasta -dna -oc data/bacteria/meme_doric -mod anr -nmotifs 5 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 -csites 5000
+meme data/bacteria/doric_bactria.fasta -dna -oc data/bacteria/meme_doric -mod anr -nmotifs 5 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 -csites 9000 -cons TTATCCACA -p 3
 mast data/bacteria/meme_doric/meme.xml data/bacteria/doric_bactria.fasta -oc data/bacteria/meme_doric -nostatus
 cmd.exe /C start 'C:\drive\uni\seq_inf\seqinf_project\data\bacteria\meme_doric\meme.html'
-
-# DoriC 500
-meme data/bacteria/doric_bactria_500.fasta -dna -oc data/bacteria/meme_doric_500 -nostatus -mod anr -nmotifs 5 -minw 9 -maxw 30 -objfun classic -revcomp -markov_order 4
-mast data/bacteria/meme_doric_500/meme.xml data/bacteria/doric_bactria_500.fasta -oc data/bacteria/meme_doric_500 -nostatus
-cmd.exe /C start 'C:\drive\uni\seq_inf\seqinf_project\data\bacteria\meme_doric_500\meme.html'
 
 # bacteria
 python skew/create_oric_fasta.py data/bacteria/ref_seq data/bacteria/skew_regions.fasta --searchwindow 4000

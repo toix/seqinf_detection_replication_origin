@@ -12,7 +12,7 @@
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="false" />
     <option name="SCRIPT_NAME" value="$PROJECT_DIR$/skew/skew_biopython.py" />
-    <option name="PARAMETERS" value="data/ecoli/ref_seq/GCF_000005845.2_ASM584v2_genomic.fna --motif data/bacteria/dnaa.fna" />
+    <option name="PARAMETERS" value="data/ecoli/ref_seq/GCF_000005845.2_ASM584v2_genomic.fna" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
     <option name="MODULE_MODE" value="false" />
