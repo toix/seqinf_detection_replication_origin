@@ -40,8 +40,15 @@ def cwindowskew(skew):
     return window_skew.tolist()
 
 
-def getFastaName(fasta):
-    name = ','.join(fasta.description.split(',')[:-1])
+def get_species_name(fasta):
+    """
+    remove accession and additional notes
+    :param fasta:
+    :return:
+    """
+    name = fasta.description
+    if ',' in name:
+        name = ','.join(name.split(',')[:-1])
     name = ' '.join(name.split()[1:])
     if name.endswith(' '):
         name = name[:-1]
@@ -81,9 +88,8 @@ def plot(fasta, skew, skew_window, oric_window, show, dnaa_motif=None, save=None
     for ax in [ax1, ax2]:
         ax.set_xlim(1, (len(skew_acc)+1) * skew_window)
 
-    name = getFastaName(fasta)
-    plt.suptitle('OriC Analysis for "{}"'.format(name))
-    print('Position of minimum (OriC): ' + str(skew_acc.index(min(skew_acc)) * skew_window)) #added *windowsize for correct position
+    species_name = get_species_name(fasta)
+    gc_min_pos = skew_acc.index(min(skew_acc)) * skew_window
     # print('Motif count (allows 1 mismatch): ' + str(motif_count))
 
     plt.subplots_adjust(wspace=0, hspace=0.4, left=.06, right=.98)
@@ -96,3 +102,4 @@ def plot(fasta, skew, skew_window, oric_window, show, dnaa_motif=None, save=None
     if show:
         plt.show()
     plt.close()
+    return species_name, gc_min_pos

@@ -26,13 +26,16 @@ if __name__ == '__main__':
     print('GC skew: (G-C)/(G+C)')
     skew = seq.GC_skew(fasta.seq, window=args.skewwindow)
     if args.plot and args.saveplot != None:
-        plot(fasta, skew, args.skewwindow, args.searchwindow, True, dnaa_motif=args.motif, save=args.saveplot,
+        name, gc_min_pos = plot(fasta, skew, args.skewwindow, args.searchwindow, True, dnaa_motif=args.motif, save=args.saveplot,
              colors=args.colors)
     elif args.plot:
-        plot(fasta, skew, args.skewwindow, args.searchwindow, True, dnaa_motif=args.motif,
+        name, gc_min_pos = plot(fasta, skew, args.skewwindow, args.searchwindow, True, dnaa_motif=args.motif,
              colors=args.colors)
     elif args.saveplot != None:
-        plot(fasta, skew, args.skewwindow, args.searchwindow, False, dnaa_motif=args.motif, save=args.saveplot,
+        name, gc_min_pos = plot(fasta, skew, args.skewwindow, args.searchwindow, False, dnaa_motif=args.motif, save=args.saveplot,
              colors=args.colors)
+
+    plt.suptitle('OriC Analysis for "{}"'.format(name))
+    print('Position of minimum (OriC): {}'.format(gc_min_pos))
 
 

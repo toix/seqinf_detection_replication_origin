@@ -1,0 +1,65 @@
+folder,accession,name,length,GC min pos
+data/ecoli/ref_seq,NC_000913.3,Escherichia coli str. K-12 substr. MG1655,4641652,3925500
+data/ecoli/ref_seq,NC_002695.2,Escherichia coli O157:H7 str. Sakai DNA,5498578,4719100
+data/ecoli/ref_seq,NC_011750.1,Escherichia coli IAI39 chromosome,5132068,4529000
+data/ecoli/ref_seq,NC_017634.1,Escherichia coli O83:H1 str. NRG 857C chromosome,4747819,3946600
+data/ecoli/ref_seq,NC_018658.1,Escherichia coli O104:H4 str. 2011C-3493 chromosome,5273097,400
+data/families/enterobacteriaceae/ref_seq,NC_000913.3,Escherichia coli str. K-12 substr. MG1655,4641652,3925500
+data/families/enterobacteriaceae/ref_seq,NC_004337.2,Shigella flexneri 2a str. 301 chromosome,4607202,3821700
+data/families/enterobacteriaceae/ref_seq,NC_003197.2,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,4857450,4083700
+data/families/enterobacteriaceae/ref_seq,NC_002695.2,Escherichia coli O157:H7 str. Sakai DNA,5498578,4719100
+data/families/enterobacteriaceae/ref_seq,NC_007606.1,Shigella dysenteriae Sd197 chromosome,4369232,4309800
+data/families/enterobacteriaceae/ref_seq,NC_014121.1,Enterobacter cloacae subsp. cloacae ATCC 13047 chromosome,5314581,5288200
+data/families/enterobacteriaceae/ref_seq,NC_011750.1,Escherichia coli IAI39 chromosome,5132068,4529000
+data/families/enterobacteriaceae/ref_seq,NC_017634.1,Escherichia coli O83:H1 str. NRG 857C chromosome,4747819,3946600
+data/families/enterobacteriaceae/ref_seq,NC_003198.1,Salmonella enterica subsp. enterica serovar Typhi str. CT18,4809037,3764800
+data/families/enterobacteriaceae/ref_seq,NC_015663.1,Enterobacter aerogenes KCTC 2190 chromosome,5280350,1495100
+data/families/enterobacteriaceae/ref_seq,NC_016845.1,Klebsiella pneumoniae subsp. pneumoniae HS11286 chromosome,5333942,700
+data/families/enterobacteriaceae/ref_seq,NC_018658.1,Escherichia coli O104:H4 str. 2011C-3493 chromosome,5273097,400
+data/families/vibrionaceae/ref_seq,NC_002505.1,Vibrio cholerae O1 biovar El Tor str. N16961 chromosome I,2961149,0
+data/families/vibrionaceae/ref_seq,NC_006840.2,Vibrio fischeri ES114 chromosome I,2897536,2897200
+data/families/vibrionaceae/ref_seq,NC_004603.1,Vibrio parahaemolyticus RIMD 2210633 chromosome 1,3288558,0
+data/known_oric/ref_seq,NC_000913.3,Escherichia coli str. K-12 substr. MG1655,4641652,3925500
+data/known_oric/ref_seq,NC_003047.1,Sinorhizobium meliloti 1021 chromosome,3654135,3628500
+data/known_oric/ref_seq,NC_000117.1,Chlamydia trachomatis D/UW-3/CX chromosome,1042519,720300
+skew/Ecoli/genomes,NC_008253.1,Escherichia coli 536,4938920,4109300
+skew/Ecoli/genomes,NC_008563.1,Escherichia coli APEC O1,5082025,4219200
+skew/Ecoli/genomes,NC_004431.1,Escherichia coli CFT073,5231428,4427400
+skew/Ecoli/genomes,NC_009800.1,Escherichia coli HS,4643538,3952700
+skew/Ecoli/genomes,NC_011750.1,Escherichia coli IAI39 chromosome,5132068,4529000
+skew/Ecoli/genomes,NC_018658.1,Escherichia coli O104:H4 str. 2011C-3493 chromosome,5273097,400
+skew/Ecoli/genomes,NC_002695.2,Escherichia coli O157:H7 str. Sakai DNA,5498578,4719100
+skew/Ecoli/genomes,NC_017634.1,Escherichia coli O83:H1 str. NRG 857C chromosome,4747819,3946600
+skew/Ecoli/genomes,NC_000913.3,Escherichia coli str. K-12 substr. MG1655,4641652,3925500
+skew/Ecoli/genomes,NC_007946.1,Escherichia coli UTI89,5065741,4186400
+skew/Salmonella/genomes,NZ_CP015574.1,Salmonella enterica strain FORC_038,4938076,4903100
+skew/Salmonella/genomes,NZ_CP007245.1,Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120008,4711924,3977500
+skew/Salmonella/genomes,NC_011294.1,Salmonella enterica subsp. enterica serovar Enteritidis str. P125109 complete genome,4685848,3954600
+skew/Salmonella/genomes,NC_011083.1,Salmonella enterica subsp. enterica serovar Heidelberg str. SL476,4888768,4094400
+skew/Salmonella/genomes,NC_011080.1,Salmonella enterica subsp. enterica serovar Newport str. SL254,4827641,4050500
+skew/Salmonella/genomes,NC_006511.1,Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150,4585229,3859300
+skew/Salmonella/genomes,NC_010102.1,Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7,4858887,4029100
+skew/Salmonella/genomes,NC_003198.1,Salmonella enterica subsp. enterica serovar Typhi str. CT18,4809037,3764800
+skew/Salmonella/genomes,NC_016854.1,Salmonella enterica subsp. enterica serovar Typhimurium str. D23580 complete genome,4879400,4107100
+skew/Salmonella/genomes,NC_016810.1,Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344,4878012,4105600
+skew/Thermotoga/genomes,NC_009828.1,Pseudothermotoga lettingae TMO,2135342,140800
+skew/Thermotoga/genomes,NC_000853.1,Thermotoga maritima MSB8 chromosome,1860725,156900
+skew/Thermotoga/genomes,NZ_CP011108.1,Thermotoga maritima strain Tma100,1869610,156900
+skew/Thermotoga/genomes,NZ_CP010967.1,Thermotoga maritima strain Tma200,1859582,156900
+skew/Thermotoga/genomes,NC_013642.1,Thermotoga naphthophila RKU-10,1809823,141800
+skew/Thermotoga/genomes,NC_011978.1,Thermotoga neapolitana DSM 4359,1884562,539300
+skew/Thermotoga/genomes,NC_009486.1,Thermotoga petrophila RKU-1,1823511,787100
+skew/Thermotoga/genomes,NZ_CP003408.1,Thermotoga sp. 2812B,1843731,826900
+skew/Thermotoga/genomes,NC_010483.1,Thermotoga sp. RQ2,1877693,822100
+skew/Thermotoga/genomes,NZ_CP007633.1,Thermotoga sp. RQ7,1851618,816400
+skew/Vibrio/genomes,NC_012578.1,Vibrio cholerae M66-2 chromosome I,2892523,0
+skew/Vibrio/genomes,NC_012580.1,Vibrio cholerae M66-2 chromosome II,1046382,2200
+skew/Vibrio/genomes,NC_012668.1,Vibrio cholerae MJ-1236 chromosome 1,3149584,509000
+skew/Vibrio/genomes,NC_012667.1,Vibrio cholerae MJ-1236 chromosome 2,1086784,271100
+skew/Vibrio/genomes,NC_016445.1,Vibrio cholerae O1 str. 2010EL-1786 chromosome 1,3031375,2555300
+skew/Vibrio/genomes,NC_016446.1,Vibrio cholerae O1 str. 2010EL-1786 chromosome 2,1046365,774700
+skew/Vibrio/genomes,NC_009456.1,Vibrio cholerae O395 chromosome 1,1108250,1108100
+skew/Vibrio/genomes,NC_009457.1,Vibrio cholerae O395 chromosome 2,3024069,2670300
+skew/Vibrio/genomes,NZ_CP010812.1,Vibrio cholerae strain 10432-62,4077462,4042300
+skew/Vibrio/genomes,NZ_CP010811.1,Vibrio cholerae strain 1154-74,3928357,3919700
+skew/Wigglesworthia/genomes,NC_004344.2,Wigglesworthia glossinidia endosymbiont of Glossina brevipalpis DNA,697724,591200
