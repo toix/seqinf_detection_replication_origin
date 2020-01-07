@@ -8,6 +8,12 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * git clone https://github.com/toix/seqinf_detection_replication_origin.git seqinf_project<br/>
 
 
+## Run a python script on windows cli
++ cd <project root directory>
++ set PYTHONPATH=%PYTHONPATH%;%cd%
++ python skew/create_all_plots.py
+
+
 ## TODOs
 * [Tobias] test meme on multiple ecoli oriC sequences 👍 worked for DoriC of all ecoli references (first motif is DnaA): http://meme-suite.org/opal-jobs/appMEME_5.1.015761936134292082624049/mast.html
 * [Antonia] AT Skew
