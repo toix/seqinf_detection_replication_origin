@@ -4,16 +4,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 from skew.findmotif import *
 from skew.zoomeffect import zoom_effect
-from dnaa.alignment import align_motif_to_sequence
+from dnaa.alignment import get_positive_motif_scores
 
 
 def calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta):
     oriC_mid = np.argmin(np.array(skew_acc)) * windowsize + int(windowsize / 2)
     search_region = min_region(fasta.seq, oriC_mid, regionsize)
-    scores = align_motif_to_sequence(search_region, dnaa)
+    scores, motif = get_positive_motif_scores(search_region, dnaa)
     half_align_size = int(len(scores) / 2)
     positions = range(oriC_mid - half_align_size, oriC_mid + half_align_size)
-    return positions, scores, 0
+    return positions, scores, 0, len(motif)
 
 
 def accumlate_skew(skew):
@@ -78,7 +78,7 @@ def plot(fasta, skew, skew_window, oric_window, show, dnaa_motif=None, save=None
     ax2.plot(pos, skew_acc, color=colors[1])
 
     # ax3
-    positions, scores, motif_count = calcmotif(oric_window, dnaa_motif, skew_acc, skew_window, fasta)
+    positions, scores, motif_count, motif_length = calcmotif(oric_window, dnaa_motif, skew_acc, skew_window, fasta)
     ax3.plot(positions, scores, color=colors[2])
     # fix circular axis
     score_positions = circular_range(ax3.get_xticks(), modulo=len(fasta))
@@ -87,7 +87,8 @@ def plot(fasta, skew, skew_window, oric_window, show, dnaa_motif=None, save=None
     # limit y-axis to motif length
     ax3.set_xlim(positions[0], positions[-1])
     # limit y-axis to motif length * 2 bit
-    ax3.set_ylim(-9*2, 9*2)
+    max_score = motif_length * 2
+    ax3.set_ylim(-max_score, max_score)
 
     ax3.set_xlabel('Genome Position', labelpad=10)
     ax1.set_ylabel('GC skew')
