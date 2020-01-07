@@ -1,21 +1,18 @@
-from Bio import motifs
+from Bio import motifs, SeqRecord
 
 
-def align_motif_to_sequence(sequence, motif_file):
+def get_positive_motif_scores(sequence, motif_file):
     """
-    if score of reverse complement is higher -> use it instead
+    complement is with negative score;
+
     https://biopython-tutorial.readthedocs.io/en/latest/notebooks/14%20-%20Sequence%20motif%20analysis%20using%20Bio.motifs.html
     :param sequence:
     :param motif_file: fasta file path containing motifs
-    :return:
+    :return: all positive scores
     """
     with open(motif_file) as handle:
         motif = motifs.read(handle, "sites")
         motif.pseudocounts = 1
-        # distribution = motif.pssm.distribution(background=motif.background)
-        # threshold = distribution.threshold_fpr(0.0001)
-        # print("Alignment threshold: %5.3f" % threshold)
-        # return motif.pssm.search(sequence, threshold=threshold)
         pssm = motif.pssm
         scores = pssm.reverse_complement().calculate(sequence)
         scores_rev = pssm.calculate(sequence)
@@ -24,14 +21,42 @@ def align_motif_to_sequence(sequence, motif_file):
                 scores[pos] = 0
             elif scores_rev[pos] > scores[pos]:
                 scores[pos] = -scores_rev[pos]
-        return scores
+        return scores, motif
 
 
+def find_motif_matches(sequence, motif_file, approx_fales_positive_rate):
+    """
+    complement has negative position
 
-# prf_aligner = ProfileAligner('data/bacteria/dnaa.fna')
-# from Bio import SeqIO
-# fasta = SeqIO.read('data/ecoli/ref_seq/GCF_000005845.2_ASM584v2_genomic.fna', 'fasta')
-# alignment = prf_aligner.find_motif(fasta.seq)
-# for position, score in alignment:
-#     print("Position %d: score = %5.3f %s" % (position, score, fasta.seq[position:(position+10)]))
-# print(alignment)
+    approximate false positive rate: 0.0002
+
+    https://biopython-tutorial.readthedocs.io/en/latest/notebooks/14%20-%20Sequence%20motif%20analysis%20using%20Bio.motifs.html
+    :param sequence:
+    :param motif_file: fasta file path containing motifs
+    :return:
+    """
+    with open(motif_file) as handle:
+        motif = motifs.read(handle, "sites")
+        motif.pseudocounts = 1
+        pssm = motif.pssm
+        distribution = pssm.distribution(background=motif.background)
+        threshold = distribution.threshold_fpr(approx_fales_positive_rate)
+        print("Alignment threshold: %5.3f" % threshold)
+        return pssm.search(sequence, threshold=threshold), len(motif)
+
+
+def compute_motif_from_occurances(sequence, motif_file, approx_fales_positive_rate):
+    if type(sequence) is SeqRecord:
+        sequence = sequence.seq
+
+    motif_matches, motif_length = find_motif_matches(sequence, motif_file, approx_fales_positive_rate)
+    found_sequences = []
+    for pos, score in motif_matches:
+        if pos >= 0:
+            found_sequences.append(sequence[pos:pos+motif_length])
+        else:
+            found_sequences.append(sequence[pos:pos+motif_length].reverse_complement())
+
+    if len(found_sequences) < 1:
+        return None
+    return motifs.create(found_sequences)

@@ -1,7 +1,6 @@
 import argparse
 from Bio import SeqIO as seqio
 from Bio import SeqUtils as seq
-# from inspect import signature
 from skew.skewplot import *
 
 def parseargs():

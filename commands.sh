@@ -37,6 +37,13 @@ meme data/ecoli/skew_regions.fasta -dna -oc data/ecoli/meme -nostatus -mod anr -
 mast data/ecoli/meme/meme.xml data/ecoli/skew_regions.fasta -oc data/ecoli/meme -nostatus
 #cmd.exe /C start 'C:\drive\uni\seq_inf\seqinf_project\data\ecoli\meme\meme.html'
 
+# ecoli reference
+python skew/create_oric_fasta.py data/ecoli/ref_seq data/ecoli/skew_regions_ref.fasta
+
+meme data/ecoli/skew_regions_ref.fasta -dna -oc data/ecoli/meme_ref -nostatus -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 -cons TTATCCACA
+mast data/ecoli/meme_ref/meme.xml data/ecoli/skew_regions_ref.fasta -oc data/ecoli/meme_ref -nostatus
+cmd.exe /C start 'C:\drive\uni\seq_inf\seqinf_project\data\ecoli\meme_ref\meme.html'
+
 # ecoli family + salmonella family
 python skew/create_oric_fasta.py data/families/enterobacteriaceae/ref_seq data/families/enterobacteriaceae/skew_regions.fasta
 
