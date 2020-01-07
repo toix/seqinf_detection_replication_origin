@@ -27,21 +27,21 @@ if __name__ == '__main__':
     args = parseargs()
 
     data_sets = [
-        {'folder': 'data/ecoli/ref_seq', 'type': 'species reference'},
-        {'folder': 'data/salmonella/ref_seq', 'type': 'species reference'},
-        {'folder': 'data/thermotoga/ref_seq', 'type': 'species reference'},
-        {'folder': 'data/vibrio/ref_seq', 'type': 'species reference'},
-        {'folder': 'data/families/enterobacteriaceae/ref_seq', 'type': 'family'},
-        {'folder': 'data/families/vibrionaceae/ref_seq', 'type': 'family'},
-        {'folder': 'data/known_oric/ref_seq', 'type': 'bacteri references with known oric'},
-        {'folder': 'skew/Ecoli/genomes', 'type': 'species'},
-        {'folder': 'skew/Salmonella/genomes', 'type': 'species'},
-        {'folder': 'skew/Thermotoga/genomes', 'type': 'species'},
-        {'folder': 'skew/Vibrio/genomes', 'type': 'species'},
-        {'folder': 'skew/Wigglesworthia/genomes', 'type': 'species'},
+        {'folder': 'data/ecoli/ref_seq'},
+        {'folder': 'data/salmonella/ref_seq'},
+        {'folder': 'data/thermotoga/ref_seq'},
+        {'folder': 'data/vibrio/ref_seq'},
+        {'folder': 'data/families/enterobacteriaceae/ref_seq'},
+        {'folder': 'data/families/vibrionaceae/ref_seq'},
+        {'folder': 'data/known_oric/ref_seq'},
+        {'folder': 'skew/Ecoli/genomes'},
+        {'folder': 'skew/Salmonella/genomes'},
+        {'folder': 'skew/Thermotoga/genomes'},
+        {'folder': 'skew/Vibrio/genomes'},
+        {'folder': 'skew/Wigglesworthia/genomes'},
     ]
 
-    evaluation_data = [['folder', 'accession', 'name', 'length', 'GC min pos']]
+    evaluation_data = [['folder', 'file', 'accession', 'name', 'length', 'GC min pos']]
 
     for data_set in data_sets:
         folder = '/'.join(data_set['folder'].split('/')[:-1])
@@ -55,7 +55,7 @@ if __name__ == '__main__':
             plot_file = folder + '/plots/{}.pdf'.format(file_name)
             species_name, gc_min_pos = plot(fasta, skew, args.skewwindow, args.searchwindow, show=False, dnaa_motif='data/bacteria/dnaa.fna', save=plot_file)
 
-            evaluation_data.append([data_set['folder'], fasta.description.split()[0], species_name, len(fasta.seq), gc_min_pos])
+            evaluation_data.append([data_set['folder'], file_name, fasta.description.split()[0], species_name, len(fasta.seq), gc_min_pos])
 
     list_to_file(evaluation_data, 'OriEval.csv')
 
