@@ -8,7 +8,7 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 * git clone https://github.com/toix/seqinf_detection_replication_origin.git seqinf_project<br/>
 
 
-## Run a python script on windows cli
+## Run a python script using windows cli (cmd)
 + cd <project root directory>
 + set PYTHONPATH=%PYTHONPATH%;%cd%
 + python skew/create_all_plots.py

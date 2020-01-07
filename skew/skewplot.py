@@ -12,8 +12,8 @@ def calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta):
     search_region = min_region(fasta.seq, oriC_mid, regionsize)
     scores = align_motif_to_sequence(search_region, dnaa)
     half_align_size = int(len(scores) / 2)
-    x = range(oriC_mid-half_align_size, oriC_mid+half_align_size)
-    return x, scores, 0
+    positions = range(oriC_mid-half_align_size, oriC_mid+half_align_size)
+    return positions, scores, 0
 
 
 def accumlate_skew(skew):
@@ -68,19 +68,19 @@ def plot(fasta, skew, skew_window, oric_window, show, dnaa_motif=None, save=None
 
     # ax2
     skew_acc = accumlate_skew(skew)
-    ax2.plot(pos, skew_acc,color=colors[1])
+    ax2.plot(pos, skew_acc, color=colors[1])
 
     # ax3
-    x, scores, motif_count = calcmotif(oric_window, dnaa_motif, skew_acc, skew_window, fasta)
-    ax3.plot(x, scores, color=colors[2])
-    ax3.set_xlim(x[0], x[-1])
-    ax3.set_ylim(0, 9*2)  # limit y-axis to motif length
+    positions, scores, motif_count = calcmotif(oric_window, dnaa_motif, skew_acc, skew_window, fasta)
+    ax3.plot(positions, scores, color=colors[2])
+    ax3.set_xlim(positions[0], positions[-1])
+    ax3.set_ylim(-9*2, 9*2)  # limit y-axis to motif length
 
     ax3.set_xlabel('Genome Position', labelpad=10)
     ax1.set_ylabel('GC skew')
     ax2.set_ylabel('cumulative GC skew')
     ax3.set_ylabel('motif scores')
-    zoom_effect(ax2, ax3, x[0], x[-1], color=colors[3])
+    zoom_effect(ax2, ax3, positions[0], positions[-1], color=colors[3])
     ax2.xaxis.tick_top()
     ax2.xaxis.set_ticklabels([])
     ax1.tick_params(axis='both', which='major', pad=8)

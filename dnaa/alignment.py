@@ -3,6 +3,7 @@ from Bio import motifs
 
 def align_motif_to_sequence(sequence, motif_file):
     """
+    if score of reverse complement is higher -> use it instead
     https://biopython-tutorial.readthedocs.io/en/latest/notebooks/14%20-%20Sequence%20motif%20analysis%20using%20Bio.motifs.html
     :param sequence:
     :param motif_file: fasta file path containing motifs
@@ -15,7 +16,16 @@ def align_motif_to_sequence(sequence, motif_file):
         # threshold = distribution.threshold_fpr(0.0001)
         # print("Alignment threshold: %5.3f" % threshold)
         # return motif.pssm.search(sequence, threshold=threshold)
-        return motif.pssm.calculate(sequence)
+        pssm = motif.pssm
+        scores = pssm.reverse_complement().calculate(sequence)
+        scores_rev = pssm.calculate(sequence)
+        for pos in range(0, len(scores)):
+            if scores_rev[pos] < 0 and scores[pos] < 0:
+                scores[pos] = 0
+            elif scores_rev[pos] > scores[pos]:
+                scores[pos] = -scores_rev[pos]
+        return scores
+
 
 
 # prf_aligner = ProfileAligner('data/bacteria/dnaa.fna')
