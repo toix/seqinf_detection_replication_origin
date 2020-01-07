@@ -3,12 +3,21 @@ pip install numpy
 pip install matplotlib
 pip install biopython
 
-### meme
-# preparation
-export PATH=/mnt/c/drive/uni/seq_inf/seqinf_project/tools/meme/bin:/mnt/c/drive/uni/seq_inf/seqinf_project/tools/meme/libexec/meme-5.1.0:$PATH
-export PYTHONPATH=$PYTHONPATH:/mnt/c/drive/uni/seq_inf/seqinf_project
-cd /mnt/c/drive/uni/seq_inf/seqinf_project
 
+### preparation
+## Windows
+cd C:\drive\uni\seq_inf\seqinf_project
+set PYTHONPATH=%PYTHONPATH%;%cd%
+python skew/create_all_plots.py
+
+## WSL
+cd /mnt/c/drive/uni/seq_inf/seqinf_project
+export PYTHONPATH=$PYTHONPATH:$(pwd)
+# meme
+export PATH=/mnt/c/drive/uni/seq_inf/seqinf_project/tools/meme/bin:/mnt/c/drive/uni/seq_inf/seqinf_project/tools/meme/libexec/meme-5.1.0:$PATH
+
+
+### meme
 # DoriC
 meme data/bacteria/doric_bactria.fasta -dna -oc data/bacteria/meme_doric -mod anr -nmotifs 5 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4 -csites 9000 -cons TTATCCACA -p 3
 mast data/bacteria/meme_doric/meme.xml data/bacteria/doric_bactria.fasta -oc data/bacteria/meme_doric -nostatus

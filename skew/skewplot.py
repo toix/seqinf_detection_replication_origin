@@ -12,8 +12,8 @@ def calcmotif(regionsize, dnaa, skew_acc, windowsize, fasta):
     search_region = min_region(fasta.seq, oriC_mid, regionsize)
     scores = align_motif_to_sequence(search_region, dnaa)
     half_align_size = int(len(scores) / 2)
-    x = range(oriC_mid-half_align_size, oriC_mid+half_align_size)
-    return x, scores, 0
+    positions = range(oriC_mid - half_align_size, oriC_mid + half_align_size)
+    return positions, scores, 0
 
 
 def accumlate_skew(skew):
@@ -57,10 +57,17 @@ def get_species_name(fasta):
     return name
 
 
+def circular_range(range1, modulo=None):
+    range_list = []
+    for i in range1:
+        range_list.append(int(i % modulo))
+    return range_list
+
+
 def plot(fasta, skew, skew_window, oric_window, show, dnaa_motif=None, save=None, colors=None):
     if colors == None:
         colors = ['xkcd:blue' for i in range(4)]
-    fig, (ax1, ax2, ax3) = plt.subplots(3, 1, sharex=False, figsize=(16, 6))
+    fig, (ax1, ax2, ax3) = plt.subplots(3, 1, sharex=False, figsize=(16, 7))
     pos = [x * skew_window + skew_window / 2 for x in range(1, len(skew) + 1)]
 
     # ax1
@@ -68,19 +75,25 @@ def plot(fasta, skew, skew_window, oric_window, show, dnaa_motif=None, save=None
 
     # ax2
     skew_acc = accumlate_skew(skew)
-    ax2.plot(pos, skew_acc,color=colors[1])
+    ax2.plot(pos, skew_acc, color=colors[1])
 
     # ax3
-    x, scores, motif_count = calcmotif(oric_window, dnaa_motif, skew_acc, skew_window, fasta)
-    ax3.plot(x, scores, color=colors[2])
-    ax3.set_xlim(x[0], x[-1])
-    ax3.set_ylim(0, 9*2)  # limit y-axis to motif length
+    positions, scores, motif_count = calcmotif(oric_window, dnaa_motif, skew_acc, skew_window, fasta)
+    ax3.plot(positions, scores, color=colors[2])
+    # fix circular axis
+    score_positions = circular_range(ax3.get_xticks(), modulo=len(fasta))
+    plt.sca(ax3)
+    plt.xticks(ax3.get_xticks(), score_positions)
+    # limit y-axis to motif length
+    ax3.set_xlim(positions[0], positions[-1])
+    # limit y-axis to motif length * 2 bit
+    ax3.set_ylim(-9*2, 9*2)
 
     ax3.set_xlabel('Genome Position', labelpad=10)
     ax1.set_ylabel('GC skew')
     ax2.set_ylabel('cumulative GC skew')
     ax3.set_ylabel('motif scores')
-    zoom_effect(ax2, ax3, x[0], x[-1], color=colors[3])
+    zoom_effect(ax2, ax3, positions[0], positions[-1], color=colors[3])
     ax2.xaxis.tick_top()
     ax2.xaxis.set_ticklabels([])
     ax1.tick_params(axis='both', which='major', pad=8)
@@ -89,7 +102,7 @@ def plot(fasta, skew, skew_window, oric_window, show, dnaa_motif=None, save=None
         ax.set_xlim(1, (len(skew_acc)+1) * skew_window)
 
     species_name = get_species_name(fasta)
-    gc_min_pos = skew_acc.index(min(skew_acc)) * skew_window
+    plt.suptitle('OriC Analysis for "{}"'.format(species_name))
     # print('Motif count (allows 1 mismatch): ' + str(motif_count))
 
     plt.subplots_adjust(wspace=0, hspace=0.4, left=.06, right=.98)
@@ -102,4 +115,6 @@ def plot(fasta, skew, skew_window, oric_window, show, dnaa_motif=None, save=None
     if show:
         plt.show()
     plt.close()
+
+    gc_min_pos = skew_acc.index(min(skew_acc)) * skew_window
     return species_name, gc_min_pos
