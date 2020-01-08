@@ -55,6 +55,7 @@ if __name__ == '__main__':
     evaluation_data = [['folder', 'file', 'accession', 'name', 'length', 'GC min pos']]
 
     for data_set in data_sets:
+        search_regions = []
         folder = '/'.join(data_set['folder'].split('/')[:-1])
         for file in listdir(data_set['folder']):
             if not file.endswith("fna") and not file.endswith("fasta"):
@@ -67,19 +68,23 @@ if __name__ == '__main__':
             plot_file = folder + '/plots/{}.pdf'.format(file_name)
             species_name, gc_min_pos = plot(fasta, skew, args.skewwindow, args.searchwindow, show=False, dnaa_motif='data/bacteria/dnaa.fna', save=plot_file)
 
+            # evaluation
+            evaluation_data.append([data_set['folder'], file_name, fasta.description.split()[0], species_name, len(fasta.seq), gc_min_pos])
+
             # species motif
             skew_acc = accumlate_skew(skew)
             oriC_mid = np.argmin(np.array(skew_acc)) * args.skewwindow + int(args.skewwindow / 2)
-            search_region = min_region(fasta.seq, oriC_mid, args.searchwindow)
-            species_motif = compute_motif_from_occurances(search_region, motif_file='data/bacteria/dnaa.fna', approx_fales_positive_rate=0.0002)
+            search_regions.append(min_region(fasta.seq, oriC_mid, args.searchwindow))
 
+        if len(search_regions) > 0:
+            species_motif = compute_motif_from_occurances(search_regions, motif_file='data/bacteria/dnaa.fna', approx_fales_positive_rate=0.0002)
             if species_motif is not None:
-                logo_file = folder + '/motifs/{}.pdf'.format(file_name)
+                logo_file = folder + '/motif.pdf'
                 createLogoFile(logo_file, species_motif)
             else:
-                print("Warning: DnaA Boxes found in {}". format(species_name))
-
-            evaluation_data.append([data_set['folder'], file_name, fasta.description.split()[0], species_name, len(fasta.seq), gc_min_pos])
+                print("Warning: DnaA Boxes found for {}".format(folder))
+        else:
+            print("Warning: DnaA Boxes found for {}".format(folder))
 
     list_to_file(evaluation_data, 'OriEval.csv')
 

@@ -45,18 +45,16 @@ def find_motif_matches(sequence, motif_file, approx_fales_positive_rate):
         return pssm.search(sequence, threshold=threshold), len(motif)
 
 
-def compute_motif_from_occurances(sequence, motif_file, approx_fales_positive_rate):
-    if type(sequence) is SeqRecord:
-        sequence = sequence.seq
-
-    motif_matches, motif_length = find_motif_matches(sequence, motif_file, approx_fales_positive_rate)
+def compute_motif_from_occurances(sequences, motif_file, approx_fales_positive_rate):
     found_sequences = []
-    for pos, score in motif_matches:
-        if pos >= 0:
-            found_sequences.append(sequence[pos:pos+motif_length])
-        else:
-            found_sequences.append(sequence[pos:pos+motif_length].reverse_complement())
+    for sequence in sequences:
+        motif_matches, motif_length = find_motif_matches(sequence, motif_file, approx_fales_positive_rate)
+        for pos, score in motif_matches:
+            if pos >= 0:
+                found_sequences.append(sequence[pos:pos+motif_length])
+            else:
+                found_sequences.append(sequence[pos:pos+motif_length].reverse_complement())
 
-    if len(found_sequences) < 1:
-        return None
+        if len(found_sequences) < 1:
+            return None
     return motifs.create(found_sequences)
