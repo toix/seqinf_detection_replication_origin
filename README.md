@@ -9,9 +9,11 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 
 
 ## Run a python script using windows cli (cmd)
-+ cd <project root directory>
-+ set PYTHONPATH=%PYTHONPATH%;%cd%
-+ python skew/create_all_plots.py
+```shell script
+cd \<project root directory\>
+set PYTHONPATH=%PYTHONPATH%;%cd%
+python skew/create_all_plots.py
+```
 
 
 ## TODOs
@@ -37,11 +39,11 @@ Project No. 15: Detection of the Replication Origin in Bacterial Genomes
 
 ## download fasta files of genomes
 + URL: https://www.ncbi.nlm.nih.gov/assembly
-+ example search query for ecoli: "Escherichia coli"[Organism] AND (bacteria[filter] AND "latest refseq"[filter] AND "complete genome"[filter] AND (all[filter] NOT "derived from surveillance project"[filter] AND all[filter] NOT anomalous[filter] AND all[filter] NOT partial[filter]))
-+ query for all bacteria reference sequences: "Bacteria"[Organism] AND "complete genome"[filter] AND "reference genome"[filter]
++ Example search query for ecoli: "Escherichia coli"[Organism] AND (bacteria[filter] AND "latest refseq"[filter] AND "complete genome"[filter] AND (all[filter] NOT "derived from surveillance project"[filter] AND all[filter] NOT anomalous[filter] AND all[filter] NOT partial[filter]))
++ Query for all bacteria reference sequences: "Bacteria"[Organism] AND "complete genome"[filter] AND "reference genome"[filter]
 + For Organisms replace "Bacteria"[Organism] with: "Escherichia coli"[Organism], "Vibrio cholerae"[Organism], "Thermotoga petrophila"[Organism], "Salmonella enterica"[Organism]
 + For Families replace "Bacteria"[Organism] with: "Enterobacteriaceae"[Organism], "Vibrionaceae"[Organism], "Thermotogaceae"[Organism]
-+ keep the report.txt file for other downloads
++ Keep the report.txt file for other downloads
 
 ## OriEval (evaluate skew)
 * see plots, genomes, OriEval.xlsx
@@ -87,7 +89,8 @@ does not even correspond to the oriC location
 + How wide can motifs be: 9 to 9
 
 ## HowTo use meme cli
-+ use Ubuntu terminal or Windows WSL: https://www.microsoft.com/de-de/p/ubuntu/9nblggh4msv6
++ Use Ubuntu terminal or Windows WSL: https://www.microsoft.com/de-de/p/ubuntu/9nblggh4msv6
+```shell script
 + sudo apt update
 + sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
 + sudo apt install ghostscript zlib1g-dev perl libxml2-dev libexpat1-dev libxslt1.1 libxslt1-dev autoconf automake libtool libxml-parser-perl
@@ -101,6 +104,7 @@ does not even correspond to the oriC location
 + cd /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/meme
 + meme /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta -dna -oc . -nostatus -time 18000 -mod anr -nmotifs 3 -minw 9 -maxw 9 -objfun classic -revcomp -markov_order 4
 + mast meme.xml /mnt/c/drive/uni/seq_inf/seqinf_project/data/bacteria/skew_regions.fasta -oc . -nostatus
+```
 
 -----
 

@@ -60,7 +60,7 @@ if __name__ == '__main__':
             if not file.endswith("fna") and not file.endswith("fasta"):
                 continue
 
-            # plot
+            # save plot
             fasta = next(SeqIO.parse(data_set['folder'] + '/' + file, "fasta"))
             skew = SeqUtils.GC_skew(fasta.seq, window=args.skewwindow)
             file_name = '.'.join(file.split('.')[:-1])
