@@ -34,7 +34,9 @@ python skew/create_all_plots.py
    I tried using BLAST on the cropped OriC regions with the common DNAa box of all bacteria as query, see the results in data/. The motif does not occur in thermotoga, but there is a very similar conserved motif.
    TTATCCACA is conserved in the three other species 
 * Compute the DnaA motifs for further genomes of your choice. 👍
-* [Lena?] Biologists long believed that each bacterial chromosome has only one oriC. Find a paper in which this has been shown not to be true.
+* done![Lena] Biologists long believed that each bacterial chromosome 
+has 
+only one oriC. Find a paper in which this has been shown not to be true.
 * [Kilian] For the bacterium Wigglesworthia glossinidia how many minima do you detect in the skew diagram? Do you find DnaA boxes in the vicinity of both? What do you conclude? -> articles/Genome_sequence_of_wigglesworthia.pdf skew/Wigglesworthia/plots/Wigglesworthia glossinidia endosymbiont of Glossina brevipalpis.pdf
 
 ## download fasta files of genomes
