@@ -79,7 +79,7 @@ if __name__ == '__main__':
         if len(search_regions) > 0:
             species_motif = compute_motif_from_occurances(search_regions, motif_file='data/bacteria/dnaa.fna', approx_fales_positive_rate=0.0002)
             if species_motif is not None:
-                logo_file = folder + '/motif.pdf'
+                logo_file = folder + '/motif.png'
                 createLogoFile(logo_file, species_motif)
             else:
                 print("Warning: DnaA Boxes found for {}".format(folder))
